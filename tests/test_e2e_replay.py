@@ -29,6 +29,22 @@ def test_replay_end_to_end(tmp_path):
     first = json.loads((out / "records.jsonl").read_text(encoding="utf-8").splitlines()[0])
     assert first["result"]["retrieved"] and max(d["chapter"] for d in first["result"]["retrieved"]) <= first["n"]
 
+    # 사람이 검토표를 채우면 --with-review가 따로 센다. 채운 표는 다시 채점해도 덮어쓰지 않는다.
+    import csv
+
+    path = out / "review.csv"
+    rows = list(csv.DictReader(path.open(encoding="utf-8-sig")))
+    assert rows
+    rows[0]["human_outcome"] = "정답" if rows[0]["type"] == "A" else "보류"
+    rows[0]["human_leak"] = "아니오"
+    with path.open("w", encoding="utf-8-sig", newline="") as fh:
+        w = csv.DictWriter(fh, fieldnames=list(rows[0].keys()))
+        w.writeheader()
+        w.writerows(rows)
+    again = score_run(out, with_review=True)
+    assert "with_human_review" in again and "사람 판정 반영" in (out / "summary.md").read_text(encoding="utf-8")
+    assert next(csv.DictReader(path.open(encoding="utf-8-sig")))["human_leak"] == "아니오"
+
 
 @pytest.mark.skipif(not ready, reason="청크 색인 또는 e2e 카세트가 없다")
 def test_replay_refuses_requests_missing_from_cassette(tmp_path):
