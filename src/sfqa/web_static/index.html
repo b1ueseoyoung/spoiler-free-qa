@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>탁류 · 스포일러 없는 Q&amp;A</title>
+<style>
+  @font-face {
+    font-family: "Pretendard"; font-weight: 45 920; font-style: normal; font-display: swap;
+    src: url("/fonts/PretendardVariable.woff2") format("woff2-variations"), url("/fonts/PretendardVariable.woff2") format("woff2");
+  }
+  /*
+    디자인 레퍼런스: Newcastle Art Gallery(Awwwards, MASS)
+    - 흰색과 거의 검정 두 색, 화면 폭을 채우는 굵은 압축형 제목, 왼쪽 고정 필터 칸 + 오른쪽 내용 칸 그리드,
+      작고 굵은 메뉴, 얇은 테두리의 알약형 버튼.
+    - 묻고 답하는 부분은 챗봇처럼: 내 질문은 오른쪽 검은 말풍선, 답은 왼쪽 굵은 글자 + 근거 인용, 입력창은 아래 고정.
+    - 글꼴은 Pretendard(OFL)를 앱이 직접 준다(외부 글꼴 서버 없음). 가장 굵은 두께를 좁혀 압축형 느낌을 낸다.
+  */
+  :root {
+    --paper: #ffffff; --ink: #010203; --mute: rgba(1, 2, 3, .55); --hair: rgba(1, 2, 3, .14);
+    --gutter: clamp(16px, 2.2vw, 32px); --radius-pill: 999px;
+    --display: "Pretendard", "Apple SD Gothic Neo", system-ui, sans-serif;
+    --text: "Pretendard", "Apple SD Gothic Neo", system-ui, sans-serif;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --paper: #010203; --ink: #ffffff; --mute: rgba(255, 255, 255, .6); --hair: rgba(255, 255, 255, .18); color-scheme: dark; }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--paper); color: var(--ink); }
+  body { font-family: var(--text); font-size: 15px; line-height: 1.55; -webkit-font-smoothing: antialiased; }
+  button, input, textarea { font: inherit; color: inherit; }
+
+  /* 위 메뉴 */
+  .top { display: flex; justify-content: space-between; align-items: center; padding: 18px var(--gutter); gap: 16px; }
+  .caption { font-size: 12px; color: var(--mute); }
+  .menu { display: flex; gap: 20px; }
+  .menu button { background: none; border: 0; padding: 0; cursor: pointer; font-weight: 800; font-size: 12px; letter-spacing: .04em; }
+  .menu button[aria-pressed="true"], .menu a[aria-current="page"] { text-decoration: underline; text-underline-offset: 4px; }
+  .menu a { font-weight: 800; font-size: 12px; letter-spacing: .04em; text-decoration: none; }
+
+  /* 큰 제목 */
+  .hero { padding: clamp(40px, 9vh, 110px) var(--gutter) 0; }
+  .display { margin: 0; font-family: var(--display); font-weight: 900; line-height: .86; letter-spacing: -.055em; }
+  .display .line { display: block; white-space: nowrap; }
+  .display .l1 { font-size: clamp(88px, 21vw, 340px); transform: scaleX(.86); transform-origin: left; }
+  /* 둘째 줄은 아래 그리드와 같은 칸으로 나눈다: '없는 Q&A'가 오른쪽 칸 시작선에 맞는다(레퍼런스의 ART | GALLERY) */
+  .display .l2 { font-size: clamp(40px, 7.4vw, 124px); display: grid; grid-template-columns: minmax(240px, 1fr) 2fr; gap: var(--gutter); }
+  .display .l2 span { display: block; transform: scaleX(.86); transform-origin: left; }
+  .lede { margin: 20px 0 0; max-width: 36em; color: var(--mute); }
+
+  /* 그리드: 왼쪽 장 고르기 / 오른쪽 대화 */
+  .grid { display: grid; grid-template-columns: minmax(240px, 1fr) 2fr; gap: var(--gutter); padding: 40px var(--gutter) 0;
+          border-top: 1px solid var(--ink); margin-top: 40px; }
+  .label { font-weight: 800; font-size: 12px; letter-spacing: .04em; margin: 0 0 12px; }
+  .filter { position: sticky; top: 16px; align-self: start; padding-bottom: 32px; }
+  .chapters { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--hair); }
+  .chapters label { display: grid; grid-template-columns: 2.4em 1fr; align-items: baseline; gap: 8px; padding: 7px 0;
+                    border-bottom: 1px solid var(--hair); cursor: pointer; }
+  .chapters input { position: absolute; opacity: 0; pointer-events: none; }
+  .chapters .no { font-weight: 900; font-variant-numeric: tabular-nums; }
+  .chapters .title { color: var(--mute); font-size: 13px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .chapters .unread .title { opacity: .55; }
+  .chapters label:hover .no { text-decoration: underline; }
+  .chapters input:checked ~ .title { color: var(--ink); }
+  .chapters input:checked + .no::after { content: " ●"; font-size: 10px; vertical-align: 2px; }
+  .chapters input:focus-visible + .no { outline: 2px solid var(--ink); outline-offset: 2px; }
+
+  /* 대화 */
+  .chat { display: flex; flex-direction: column; min-height: 70vh; }
+  .thread { flex: 1; display: flex; flex-direction: column; gap: 28px; padding-bottom: 24px; }
+  .thread > * { scroll-margin-bottom: 140px; }  /* 아래 고정 입력창에 가리지 않게 */
+  .empty { color: var(--mute); }
+  .empty .hello { font-family: var(--display); font-weight: 800; font-size: clamp(20px, 2.1vw, 28px); line-height: 1.35;
+                  letter-spacing: -.02em; color: var(--ink); margin: 0 0 18px; }
+  .suggest { display: flex; flex-wrap: wrap; gap: 8px; }
+  .suggest button { border: 1.5px solid var(--ink); border-radius: var(--radius-pill); background: transparent; cursor: pointer;
+                    padding: 8px 16px; font-weight: 700; font-size: 14px; }
+  .suggest button:hover { background: var(--ink); color: var(--paper); }
+
+  .msg { max-width: 88%; }
+  .msg.me { align-self: flex-end; text-align: right; }
+  .msg.me .bubble { display: inline-block; text-align: left; background: var(--ink); color: var(--paper); border-radius: 22px 22px 6px 22px;
+                    padding: 12px 18px; font-weight: 700; font-size: 16px; white-space: pre-wrap; word-break: keep-all; }
+  .msg .who { display: block; font-weight: 800; font-size: 11px; letter-spacing: .04em; color: var(--mute); margin-bottom: 6px; }
+  .msg.bot { align-self: flex-start; }
+  .msg.bot .answer { margin: 0; font-family: var(--display); font-weight: 800; font-size: clamp(18px, 1.7vw, 22px);
+                     line-height: 1.45; letter-spacing: -.015em; word-break: keep-all; }
+  .msg.bot .answer.muted { color: var(--mute); }
+  .msg.bot.compare { border-left: 3px solid var(--ink); padding-left: 16px; }
+  .quotes { list-style: none; margin: 14px 0 0; padding: 0; }
+  .quotes li { display: grid; grid-template-columns: 4.2em 1fr; gap: 10px; padding: 9px 0; border-top: 1px solid var(--hair); font-size: 14px; }
+  .quotes .ch { font-weight: 900; font-size: 12px; padding-top: 2px; }
+  .quotes .q { color: var(--mute); }
+  .quotes li.future { background: var(--ink); color: var(--paper); padding: 10px 12px; border-top: 0; margin-top: 6px; border-radius: 8px; }
+  .quotes li.future .q { color: inherit; opacity: .85; }
+  .quotes .flag { display: block; margin-top: 4px; font-weight: 800; font-size: 11px; letter-spacing: .04em; }
+  .meta { margin-top: 10px; font-size: 12px; color: var(--mute); }
+  .warn { margin: 10px 0 0; font-weight: 800; font-size: 14px; }
+  .divider { align-self: stretch; display: flex; align-items: center; gap: 12px; font-weight: 800; font-size: 12px; letter-spacing: .04em; }
+  .divider::before, .divider::after { content: ""; flex: 1; border-top: 1px solid var(--hair); }
+  .typing { display: inline-flex; gap: 6px; padding: 8px 0; }
+  .typing i { width: 8px; height: 8px; border-radius: 50%; background: var(--ink); animation: blink 1.2s infinite ease-in-out; }
+  .typing i:nth-child(2) { animation-delay: .2s; } .typing i:nth-child(3) { animation-delay: .4s; }
+  @keyframes blink { 0%, 80%, 100% { opacity: .15; } 40% { opacity: 1; } }
+
+  /* 아래 고정 입력창 */
+  .composer { position: sticky; bottom: 0; background: var(--paper); padding: 14px 0 20px; border-top: 1px solid var(--ink); }
+  .composer form { display: flex; align-items: flex-end; gap: 10px; }
+  .composer textarea { flex: 1; border: 1.5px solid var(--ink); border-radius: 26px; background: transparent; resize: none;
+                       padding: 13px 20px; font-weight: 700; font-size: 16px; line-height: 1.4; max-height: 160px; min-height: 52px; }
+  .composer textarea:focus { outline: none; border-width: 2.5px; padding: 12px 19px; }
+  .composer textarea::placeholder { color: var(--mute); font-weight: 500; }
+  .send { flex: none; height: 52px; padding: 0 26px; border: 1.5px solid var(--ink); border-radius: var(--radius-pill);
+          background: var(--ink); color: var(--paper); font-weight: 900; cursor: pointer; }
+  .send:disabled { opacity: .35; cursor: wait; }
+  .hint { margin: 8px 4px 0; font-size: 12px; color: var(--mute); }
+
+  @media (max-width: 760px) {
+    .grid { grid-template-columns: 1fr; padding-top: 28px; }
+    .filter { position: static; padding-bottom: 8px; }
+    .chapters { display: grid; grid-template-columns: repeat(5, 1fr); border-top: 0; gap: 6px; }
+    .chapters label { grid-template-columns: 1fr; border: 1px solid var(--hair); border-radius: var(--radius-pill); text-align: center; padding: 6px 0; }
+    .chapters .title { display: none; }
+    .chapters input:checked + .no { color: var(--paper); }
+    .chapters label:has(input:checked) { background: var(--ink); border-color: var(--ink); }
+    .chapters input:checked + .no::after { content: ""; }
+    .display .l2 { grid-template-columns: 1fr; }
+    .msg { max-width: 100%; }
+    .send { padding: 0 18px; }
+  }
+  @media (prefers-reduced-motion: reduce) { .typing i { animation: none; opacity: .6; } }
+</style>
+</head>
+<body>
+<header class="top">
+  <span class="caption">채만식 「탁류」 · 조선일보 1937–38 · 공유 저작물</span>
+  <nav class="menu" aria-label="보기">
+    <button type="button" id="compare" aria-pressed="false" aria-describedby="compare-desc">필터 없이 비교</button>
+    <button type="button" id="reset">새 대화</button>
+    <a href="/" aria-current="page">A안</a>
+    <a href="/b">B안</a>
+  </nav>
+  <span id="compare-desc" hidden>데모용: 19장 전체에서 찾고 스포일러를 막지 않은 답을 같이 보여 준다</span>
+</header>
+
+<section class="hero" aria-labelledby="title">
+  <h1 class="display" id="title">
+    <span class="line l1">탁류</span>
+    <span class="line l2"><span>스포일러</span><span>없는 Q&amp;A</span></span>
+  </h1>
+  <p class="lede">읽은 장까지만 찾아서 답하고, 근거 문장과 장 번호를 붙여요. 아직 안 읽은 장의 내용은 답에 넣지 않습니다.</p>
+</section>
+
+<main class="grid">
+  <aside class="filter">
+    <p class="label" id="chapters-label">어디까지 읽었나요?</p>
+    <ul class="chapters" id="chapters" role="radiogroup" aria-labelledby="chapters-label"></ul>
+  </aside>
+
+  <section class="chat" aria-label="대화">
+    <div class="thread" id="thread" aria-live="polite"></div>
+    <div class="composer">
+      <form id="ask-form">
+        <label for="question" class="label" hidden>질문</label>
+        <textarea id="question" rows="1" maxlength="300" placeholder="읽은 데까지 궁금한 걸 물어보세요" required></textarea>
+        <button class="send" id="send" type="submit">보내기</button>
+      </form>
+      <p class="hint" id="hint"></p>
+    </div>
+  </section>
+</main>
+
+<script>
+const EXAMPLES = ["초봉이가 일하는 곳은 어디인가?", "태수는 어떻게 되나?", "명님이는 어떻게 되나?"];
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"}[c]));
+let chapterList = [];
+let upto = 3;
+let lastAskedUpto = null;  // 대화 중에 읽은 장을 바꾸면 구분선을 넣는다
+let busy = false;
+
+/* 장 고르기: 고른 장까지만 제목을 보여 준다(뒷장 제목도 약한 힌트가 될 수 있다) */
+function renderChapters() {
+  $("chapters").innerHTML = chapterList.map((c) => {
+    const read = c.chapter <= upto;
+    return `<li class="${read ? "" : "unread"}"><label>
+      <input type="radio" name="upto" value="${c.chapter}" ${c.chapter === upto ? "checked" : ""}>
+      <span class="no">${String(c.chapter).padStart(2, "0")}</span>
+      <span class="title">${read && c.title ? esc(c.title) : "아직 안 읽음"}</span>
+    </label></li>`;
+  }).join("");
+  $("hint").textContent = `${upto}장까지 읽은 기준으로 답해요 · Enter 보내기, Shift+Enter 줄바꿈`;
+}
+$("chapters").addEventListener("change", (e) => {
+  if (e.target.name !== "upto") return;
+  upto = Number(e.target.value);
+  renderChapters();
+  document.querySelector(`input[name="upto"][value="${upto}"]`).focus();
+});
+
+/* 대화 */
+function emptyState() {
+  $("thread").innerHTML = `<div class="empty">
+    <p class="hello">안녕하세요. 읽은 장을 고르고 궁금한 걸 물어보세요.<br>아직 안 읽은 내용은 말하지 않을게요.</p>
+    <div class="suggest">${EXAMPLES.map((q) => `<button type="button">${esc(q)}</button>`).join("")}</div>
+  </div>`;
+  lastAskedUpto = null;
+}
+function append(html) {
+  const empty = $("thread").querySelector(".empty");
+  if (empty) empty.remove();
+  $("thread").insertAdjacentHTML("beforeend", html);
+  const last = $("thread").lastElementChild;
+  last.scrollIntoView({block: "end", behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth"});
+  return last;
+}
+function userMsg(q) {
+  if (lastAskedUpto !== null && lastAskedUpto !== upto) append(`<div class="divider">이제 ${upto}장까지 읽음</div>`);
+  lastAskedUpto = upto;
+  append(`<div class="msg me"><span class="who">나 · ${upto}장까지 읽음</span><span class="bubble">${esc(q)}</span></div>`);
+}
+function typing(label) {
+  return append(`<div class="msg bot"><span class="who">${esc(label)}</span><span class="typing" aria-label="답을 찾는 중"><i></i><i></i><i></i></span></div>`);
+}
+function botHtml(label, r) {
+  const quotes = r.quotes.map((q) => `
+    <li class="${q.future ? "future" : ""}"><span class="ch">제${q.chapter}장</span>
+      <span class="q">${esc(q.text)}${q.future ? '<span class="flag">아직 안 읽은 장</span>'
+        : (q.verified ? "" : '<span class="flag">원문에서 확인 안 됨</span>')}</span></li>`).join("");
+  const future = r.future_entities.length ? `<p class="warn">아직 안 나온 인물: ${r.future_entities.map(esc).join(", ")}</p>` : "";
+  return `<span class="who">${esc(label)}</span>
+    <p class="answer ${r.status === "answered" ? "" : "muted"}">${esc(r.answer)}</p>
+    ${quotes ? `<ul class="quotes">${quotes}</ul>` : ""}${future}
+    <p class="meta">찾아본 장 ${r.retrieved_chapters.length ? r.retrieved_chapters.join(" · ") : "없음"} — ${r.latency_s ?? "-"}초${r.format_problem ? " — 모델 응답 형식 문제" : ""}</p>`;
+}
+async function ask(condition, question, n) {
+  const res = await fetch("/api/ask", {method: "POST", headers: {"Content-Type": "application/json"},
+                                      body: JSON.stringify({question, upto: n, condition})});
+  if (!res.ok) throw new Error((await res.json()).detail || res.statusText);
+  return res.json();
+}
+async function reply(condition, label, question, n, extraClass = "") {
+  const slot = typing(label);
+  try {
+    const r = await ask(condition, question, n);
+    slot.className = `msg bot ${extraClass}`;
+    slot.innerHTML = botHtml(label, r);
+  } catch (err) {
+    slot.innerHTML = `<span class="who">${esc(label)}</span><p class="answer muted">${esc(err.message)}</p>`;
+  }
+  slot.scrollIntoView({block: "end", behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth"});
+}
+async function send(question) {
+  question = question.trim();
+  if (!question || busy) return;
+  busy = true; $("send").disabled = true;
+  $("question").value = ""; autosize();
+  const n = upto;
+  userMsg(question);
+  await reply("C4", "탁류 도우미", question, n);
+  if ($("compare").getAttribute("aria-pressed") === "true") {
+    await reply("C1", "비교 · 필터 없이 19장 전체에서 찾으면", question, n, "compare");
+  }
+  busy = false; $("send").disabled = false; $("question").focus();
+}
+
+function autosize() { const t = $("question"); t.style.height = "auto"; t.style.height = Math.min(t.scrollHeight, 160) + "px"; }
+$("question").addEventListener("input", autosize);
+$("question").addEventListener("keydown", (e) => {
+  if (e.key === "Enter" && !e.shiftKey && !e.isComposing) { e.preventDefault(); send($("question").value); }
+});
+$("ask-form").addEventListener("submit", (e) => { e.preventDefault(); send($("question").value); });
+$("thread").addEventListener("click", (e) => { if (e.target.closest(".suggest button")) send(e.target.textContent); });
+$("compare").addEventListener("click", (e) => {
+  e.currentTarget.setAttribute("aria-pressed", String(e.currentTarget.getAttribute("aria-pressed") !== "true"));
+});
+$("reset").addEventListener("click", () => { if (!busy) { emptyState(); $("question").focus(); } });
+
+fetch("/api/chapters").then((r) => r.json()).then((list) => { chapterList = list; renderChapters(); });
+emptyState();
+</script>
+</body>
+</html>

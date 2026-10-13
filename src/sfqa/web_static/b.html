@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>탁류 · 스포일러 없는 Q&amp;A (B안)</title>
+<style>
+  @font-face {
+    font-family: "Pretendard"; font-weight: 45 920; font-style: normal; font-display: swap;
+    src: url("/fonts/PretendardVariable.woff2") format("woff2-variations"), url("/fonts/PretendardVariable.woff2") format("woff2");
+  }
+  /*
+    B안 디자인 레퍼런스: Botanical Footer(Bitnomial, Awwwards)
+    - 어두운 바탕 + 포인트 주황 하나, 작은 모노스페이스 대문자 라벨, 작은 주황 상자 버튼,
+      윗변이 꺾인 주황 푸터 판과 그 위의 큰 워드마크, 글자가 차오르는 등장 효과.
+    - 주황은 의미가 있는 곳에만 쓴다: 보내기, 답마다 붙는 '찾은 범위', 비교 모드의 '아직 안 읽은 장' 인용.
+    - 답하지 않을 때 '스포일러 막음' 같은 표시는 하지 않는다. 그 표시 자체가 '뒤에 뭔가 있다'는 힌트가 된다.
+    - 글꼴은 Pretendard(OFL)를 앱이 직접 준다(외부 글꼴 서버 없음).
+  */
+  :root {
+    --bg: #121212; --panel: #1b1b1b; --ink: #f2efe9; --mute: rgba(242, 239, 233, .56); --hair: rgba(242, 239, 233, .12);
+    /* 포인트 색: 레퍼런스의 #ff5a36(채도 100%)은 너무 진해서, 같은 주황 계열에서 채도를 낮춘 산호빛을 쓴다 */
+    --accent: #dd8b6e; --on-accent: #121212;
+    --gutter: clamp(16px, 2.4vw, 36px);
+    --sans: "Pretendard", "Apple SD Gothic Neo", system-ui, sans-serif;
+    /* 숫자·영문은 모노스페이스, 한글은 모노 글꼴에 없으므로 Pretendard로 이어진다 */
+    --mono: ui-monospace, "SF Mono", Menlo, "Pretendard", monospace;
+    color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--bg); color: var(--ink); }
+  body { font-family: var(--sans); font-size: 15px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+  button, input, textarea, a { font: inherit; color: inherit; }
+  .mono { font-family: var(--mono); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; }
+
+  /* 위 */
+  .top { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 18px var(--gutter);
+         border-bottom: 1px solid var(--hair); }
+  .brand { display: flex; align-items: center; gap: 14px; }
+  .brand b { font-weight: 700; font-size: 15px; letter-spacing: -.01em; text-transform: none; font-family: var(--sans); }
+  .chip { display: inline-flex; align-items: center; gap: 6px; background: var(--accent); color: var(--on-accent);
+          padding: 4px 8px; font-family: var(--mono); font-size: 10px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+  .menu { display: flex; gap: 18px; align-items: center; }
+  .menu button, .menu a { background: none; border: 0; padding: 0; cursor: pointer; color: var(--mute); text-decoration: none; }
+  .menu button:hover, .menu a:hover, .menu [aria-pressed="true"], .menu [aria-current="page"] { color: var(--ink); }
+  .menu [aria-pressed="true"]::before { content: "● "; color: var(--accent); }
+
+  /* 소개 */
+  .intro { padding: clamp(32px, 7vh, 72px) var(--gutter) clamp(24px, 5vh, 48px); display: grid;
+           grid-template-columns: minmax(220px, 1fr) 2fr; gap: var(--gutter); align-items: end; }
+  .intro h1 { grid-column: 2; margin: 0; font-weight: 600; font-size: clamp(30px, 4.2vw, 60px); line-height: 1.12; letter-spacing: -.035em; }
+  .intro h1 em { font-style: normal; color: var(--accent); }
+  .intro p { grid-column: 2; margin: 0; color: var(--mute); max-width: 34em; }
+
+  /* 본문 그리드 */
+  .grid { display: grid; grid-template-columns: minmax(220px, 1fr) 2fr; gap: var(--gutter); padding: 0 var(--gutter); }
+  .filter { position: sticky; top: 16px; align-self: start; padding-bottom: 40px; }
+  .filter .mono { color: var(--mute); margin: 0 0 10px; }
+  .chapters { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--hair); }
+  .chapters label { display: grid; grid-template-columns: 2.6em 1fr auto; align-items: baseline; gap: 8px; padding: 7px 0;
+                    border-bottom: 1px solid var(--hair); cursor: pointer; }
+  .chapters input { position: absolute; opacity: 0; pointer-events: none; }
+  .chapters .no { font-family: var(--mono); font-size: 12px; color: var(--mute); }
+  .chapters .title { font-size: 13px; color: var(--mute); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .chapters .unread .title { opacity: .45; }
+  .chapters label:hover .title, .chapters label:hover .no { color: var(--ink); }
+  .chapters input:checked ~ .no, .chapters input:checked ~ .title { color: var(--ink); }
+  .chapters input:checked ~ .mark { width: 8px; height: 8px; background: var(--accent); align-self: center; }
+  .chapters input:focus-visible ~ .no { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  /* 대화 */
+  .chat { display: flex; flex-direction: column; min-height: 68vh; border-left: 1px solid var(--hair); padding-left: var(--gutter); }
+  .thread { flex: 1; display: flex; flex-direction: column; gap: 30px; padding: 4px 0 28px; }
+  .thread > * { scroll-margin-bottom: 140px; }
+  .hello { margin: 0 0 16px; font-weight: 600; font-size: clamp(19px, 1.8vw, 24px); line-height: 1.4; letter-spacing: -.02em; }
+  .hello span { color: var(--mute); }
+  .suggest { display: flex; flex-wrap: wrap; gap: 8px; }
+  .suggest button { border: 1px solid var(--hair); background: transparent; cursor: pointer; padding: 8px 12px;
+                    font-size: 14px; }
+  .suggest button:hover { border-color: var(--accent); color: var(--accent); }
+
+  .msg { max-width: 86%; }
+  .who { display: block; color: var(--mute); margin-bottom: 8px; }
+  .msg.me { align-self: flex-end; text-align: right; }
+  .msg.me .bubble { display: inline-block; text-align: left; background: var(--ink); color: var(--bg); padding: 12px 16px;
+                    font-weight: 600; font-size: 16px; white-space: pre-wrap; word-break: keep-all; }
+  .msg.bot { align-self: flex-start; }
+  .msg.bot .head { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+  .msg.bot .head .who { margin: 0; }
+  .answer { margin: 0; font-weight: 500; font-size: clamp(17px, 1.5vw, 20px); line-height: 1.6; letter-spacing: -.01em; word-break: keep-all; }
+  .answer.muted { color: var(--mute); }
+  .msg.compare { border: 1px dashed var(--hair); padding: 16px; }
+  .quotes { list-style: none; margin: 14px 0 0; padding: 0; }
+  .quotes li { display: grid; grid-template-columns: 4.6em 1fr; gap: 10px; padding: 9px 0; border-top: 1px solid var(--hair); font-size: 14px; }
+  .quotes .ch { font-family: var(--mono); font-size: 11px; color: var(--mute); padding-top: 3px; }
+  .quotes .q { color: var(--mute); }
+  .quotes li.future { background: var(--accent); color: var(--on-accent); padding: 10px 12px; border-top: 0; margin-top: 6px; }
+  .quotes li.future .ch, .quotes li.future .q { color: var(--on-accent); }
+  .quotes .flag { display: block; margin-top: 4px; font-family: var(--mono); font-size: 10px; font-weight: 700; letter-spacing: .08em; }
+  .meta { margin-top: 10px; color: var(--mute); }
+  .warn { margin: 10px 0 0; color: var(--accent); font-weight: 600; font-size: 14px; }
+  .divider { align-self: stretch; display: flex; align-items: center; gap: 12px; color: var(--mute); }
+  .divider::before, .divider::after { content: ""; flex: 1; border-top: 1px solid var(--hair); }
+  .typing { display: inline-flex; gap: 6px; padding: 6px 0; }
+  .typing i { width: 7px; height: 7px; background: var(--accent); animation: blink 1.2s infinite ease-in-out; }
+  .typing i:nth-child(2) { animation-delay: .2s; } .typing i:nth-child(3) { animation-delay: .4s; }
+  @keyframes blink { 0%, 80%, 100% { opacity: .2; } 40% { opacity: 1; } }
+
+  /* 아래 고정 입력창 */
+  .composer { position: sticky; bottom: 0; background: var(--bg); padding: 14px 0 20px; border-top: 1px solid var(--hair); }
+  .composer form { display: flex; align-items: stretch; gap: 8px; }
+  .composer textarea { flex: 1; border: 1px solid var(--hair); background: var(--panel); resize: none; padding: 13px 16px;
+                       font-size: 16px; line-height: 1.4; max-height: 160px; min-height: 50px; }
+  .composer textarea:focus { outline: none; border-color: var(--accent); }
+  .composer textarea::placeholder { color: var(--mute); }
+  .send { flex: none; border: 0; background: var(--accent); color: var(--on-accent); padding: 0 18px; cursor: pointer;
+          font-family: var(--mono); font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+  .send:hover:not(:disabled) { filter: brightness(1.08); }
+  .send:disabled { opacity: .4; cursor: wait; }
+  .hint { margin: 8px 0 0; color: var(--mute); }
+
+  /* 주황 푸터 + 큰 워드마크 */
+  footer { margin-top: 72px; background: var(--accent); color: var(--on-accent); padding: 64px var(--gutter) 18px;
+           clip-path: polygon(0 28px, 31% 28px, 31% 0, 100% 0, 100% 100%, 0 100%); }
+  .foot { display: flex; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
+  .foot p { margin: 0; max-width: 30em; font-size: 15px; line-height: 1.5; }
+  .foot ul { list-style: none; margin: 0; padding: 0; text-align: right; display: grid; gap: 4px; }
+  .wordmark { margin: clamp(24px, 4vw, 48px) 0 0; font-weight: 700; font-size: clamp(110px, 27vw, 420px); line-height: .82;
+              letter-spacing: -.06em; display: flex; overflow: hidden; padding-bottom: .04em; }
+  .wordmark span { display: inline-block; transform: translateY(105%); transition: transform .9s cubic-bezier(.2, .7, 0, 1); }
+  .wordmark.in span { transform: none; }
+  .wordmark span:nth-child(2) { transition-delay: .08s; }
+  .copy { margin-top: 10px; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+
+  @media (max-width: 760px) {
+    .intro, .grid { grid-template-columns: 1fr; }
+    .intro h1, .intro p { grid-column: 1; }
+    .filter { position: static; padding-bottom: 12px; }
+    .chapters { display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; border-top: 0; }
+    .chapters label { grid-template-columns: 1fr; border: 1px solid var(--hair); text-align: center; padding: 6px 0; }
+    .chapters .title, .chapters .mark { display: none; }
+    .chapters label:has(input:checked) { background: var(--accent); border-color: var(--accent); }
+    .chapters input:checked ~ .no { color: var(--on-accent); }
+    .chat { border-left: 0; padding-left: 0; }
+    .msg { max-width: 100%; }
+    .brand .chip { display: none; }
+    footer { clip-path: polygon(0 20px, 45% 20px, 45% 0, 100% 0, 100% 100%, 0 100%); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .wordmark span { transform: none; transition: none; }
+    .typing i { animation: none; opacity: .7; }
+  }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <b>탁류 Q&amp;A</b>
+    <span class="chip" aria-hidden="true">↳ 읽은 데까지만</span>
+  </div>
+  <nav class="menu mono" aria-label="보기">
+    <button type="button" id="compare" aria-pressed="false" aria-describedby="compare-desc">필터 없이 비교</button>
+    <button type="button" id="reset">새 대화</button>
+    <a href="/">A안</a>
+    <a href="/b" aria-current="page">B안</a>
+  </nav>
+  <span id="compare-desc" hidden>데모용: 19장 전체에서 찾고 스포일러를 막지 않은 답을 같이 보여 준다</span>
+</header>
+
+<section class="intro" aria-labelledby="title">
+  <h1 id="title">읽은 데까지만 답하는<br>「탁류」 <em>도우미</em></h1>
+  <p>읽은 장까지만 찾아서 답하고, 근거 문장과 장 번호를 붙여요. 아직 안 읽은 장의 내용은 답에 넣지 않습니다.</p>
+</section>
+
+<main class="grid">
+  <aside class="filter">
+    <p class="mono" id="chapters-label">어디까지 읽었나요?</p>
+    <ul class="chapters" id="chapters" role="radiogroup" aria-labelledby="chapters-label"></ul>
+  </aside>
+
+  <section class="chat" aria-label="대화">
+    <div class="thread" id="thread" aria-live="polite"></div>
+    <div class="composer">
+      <form id="ask-form">
+        <label for="question" hidden>질문</label>
+        <textarea id="question" rows="1" maxlength="300" placeholder="읽은 데까지 궁금한 걸 물어보세요" required></textarea>
+        <button class="send" id="send" type="submit">보내기 ↵</button>
+      </form>
+      <p class="hint mono" id="hint"></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="foot">
+    <p>읽은 장까지만 찾아서 답하는 소설 도우미입니다. 모든 처리는 이 컴퓨터 안에서만 돌아가요.</p>
+    <ul class="mono">
+      <li>채만식 「탁류」</li>
+      <li>조선일보 1937–38</li>
+      <li>공유 저작물 · 위키문헌</li>
+    </ul>
+  </div>
+  <div class="wordmark" id="wordmark" aria-hidden="true"><span>탁</span><span>류</span></div>
+  <div class="copy mono"><span>SPOILER-FREE Q&amp;A · LOCAL LM STUDIO</span><span>PROTOTYPE · 2026</span></div>
+</footer>
+
+<script>
+const EXAMPLES = ["초봉이가 일하는 곳은 어디인가?", "태수는 어떻게 되나?", "명님이는 어떻게 되나?"];
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"}[c]));
+const pad = (n) => String(n).padStart(2, "0");
+const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+let chapterList = [];
+let upto = 3;
+let lastAskedUpto = null;
+let busy = false;
+
+/* 장 고르기: 고른 장까지만 제목을 보여 준다 */
+function renderChapters() {
+  $("chapters").innerHTML = chapterList.map((c) => {
+    const read = c.chapter <= upto;
+    return `<li class="${read ? "" : "unread"}"><label>
+      <input type="radio" name="upto" value="${c.chapter}" ${c.chapter === upto ? "checked" : ""}>
+      <span class="no">${pad(c.chapter)}</span>
+      <span class="title">${read && c.title ? esc(c.title) : "아직 안 읽음"}</span>
+      <span class="mark"></span>
+    </label></li>`;
+  }).join("");
+  $("hint").textContent = `${pad(upto)}장까지 읽은 기준 · Enter 보내기 · Shift+Enter 줄바꿈`;
+}
+$("chapters").addEventListener("change", (e) => {
+  if (e.target.name !== "upto") return;
+  upto = Number(e.target.value);
+  renderChapters();
+  document.querySelector(`input[name="upto"][value="${upto}"]`).focus();
+});
+
+/* 대화 */
+function emptyState() {
+  $("thread").innerHTML = `<div class="empty">
+    <p class="hello">안녕하세요. 읽은 장을 고르고 물어보세요.<br><span>아직 안 읽은 내용은 말하지 않을게요.</span></p>
+    <div class="suggest">${EXAMPLES.map((q) => `<button type="button">${esc(q)}</button>`).join("")}</div>
+  </div>`;
+  lastAskedUpto = null;
+}
+function append(html) {
+  $("thread").querySelector(".empty")?.remove();
+  $("thread").insertAdjacentHTML("beforeend", html);
+  const last = $("thread").lastElementChild;
+  last.scrollIntoView({block: "end", behavior: reduce ? "auto" : "smooth"});
+  return last;
+}
+function userMsg(q) {
+  if (lastAskedUpto !== null && lastAskedUpto !== upto) append(`<div class="divider mono">이제 ${pad(upto)}장까지 읽음</div>`);
+  lastAskedUpto = upto;
+  append(`<div class="msg me"><span class="who mono">나 · ${pad(upto)}장까지 읽음</span><span class="bubble">${esc(q)}</span></div>`);
+}
+function head(label, scope) {
+  return `<div class="head"><span class="who mono">${esc(label)}</span>${scope ? `<span class="chip">${esc(scope)}</span>` : ""}</div>`;
+}
+function typing(label) {
+  return append(`<div class="msg bot">${head(label)}<span class="typing" aria-label="답을 찾는 중"><i></i><i></i><i></i></span></div>`);
+}
+function botHtml(label, scope, r) {
+  const quotes = r.quotes.map((q) => `
+    <li class="${q.future ? "future" : ""}"><span class="ch">제${q.chapter}장</span>
+      <span class="q">${esc(q.text)}${q.future ? '<span class="flag">아직 안 읽은 장</span>'
+        : (q.verified ? "" : '<span class="flag">원문에서 확인 안 됨</span>')}</span></li>`).join("");
+  const future = r.future_entities.length ? `<p class="warn">아직 안 나온 인물: ${r.future_entities.map(esc).join(", ")}</p>` : "";
+  return `${head(label, scope)}
+    <p class="answer ${r.status === "answered" ? "" : "muted"}">${esc(r.answer)}</p>
+    ${quotes ? `<ul class="quotes">${quotes}</ul>` : ""}${future}
+    <p class="meta mono">찾아본 장 ${r.retrieved_chapters.length ? r.retrieved_chapters.map(pad).join(" · ") : "없음"} — ${r.latency_s ?? "-"}초${r.format_problem ? " — 응답 형식 문제" : ""}</p>`;
+}
+async function ask(condition, question, n) {
+  const res = await fetch("/api/ask", {method: "POST", headers: {"Content-Type": "application/json"},
+                                      body: JSON.stringify({question, upto: n, condition})});
+  if (!res.ok) throw new Error((await res.json()).detail || res.statusText);
+  return res.json();
+}
+async function reply(condition, label, scope, question, n, extraClass = "") {
+  const slot = typing(label);
+  try {
+    const r = await ask(condition, question, n);
+    slot.className = `msg bot ${extraClass}`;
+    slot.innerHTML = botHtml(label, scope, r);
+  } catch (err) {
+    slot.innerHTML = `${head(label)}<p class="answer muted">${esc(err.message)}</p>`;
+  }
+  slot.scrollIntoView({block: "end", behavior: reduce ? "auto" : "smooth"});
+}
+async function send(question) {
+  question = question.trim();
+  if (!question || busy) return;
+  busy = true; $("send").disabled = true;
+  $("question").value = ""; autosize();
+  const n = upto;
+  userMsg(question);
+  // 범위 표시는 답했든 안 했든 똑같이 붙인다(답하지 않았다는 사실이 '뒤에 뭔가 있다'는 힌트가 되지 않게).
+  await reply("C4", "탁류 도우미", `↳ 01–${pad(n)}장에서 찾음`, question, n);
+  if ($("compare").getAttribute("aria-pressed") === "true") {
+    await reply("C1", "비교 · 필터 없이 19장 전체에서 찾으면", "↳ 01–19장", question, n, "compare");
+  }
+  busy = false; $("send").disabled = false; $("question").focus();
+}
+
+function autosize() { const t = $("question"); t.style.height = "auto"; t.style.height = Math.min(t.scrollHeight, 160) + "px"; }
+$("question").addEventListener("input", autosize);
+$("question").addEventListener("keydown", (e) => {
+  if (e.key === "Enter" && !e.shiftKey && !e.isComposing) { e.preventDefault(); send($("question").value); }
+});
+$("ask-form").addEventListener("submit", (e) => { e.preventDefault(); send($("question").value); });
+$("thread").addEventListener("click", (e) => { if (e.target.closest(".suggest button")) send(e.target.textContent); });
+$("compare").addEventListener("click", (e) => {
+  e.currentTarget.setAttribute("aria-pressed", String(e.currentTarget.getAttribute("aria-pressed") !== "true"));
+});
+$("reset").addEventListener("click", () => { if (!busy) { emptyState(); $("question").focus(); } });
+
+/* 푸터 워드마크: 화면에 들어오면 글자가 아래에서 차오른다 */
+if (reduce || !("IntersectionObserver" in window)) {
+  $("wordmark").classList.add("in");
+} else {
+  new IntersectionObserver((entries, obs) => {
+    if (entries.some((e) => e.isIntersecting)) { $("wordmark").classList.add("in"); obs.disconnect(); }
+  }, {threshold: 0.3}).observe($("wordmark"));
+}
+
+fetch("/api/chapters").then((r) => r.json()).then((list) => { chapterList = list; renderChapters(); });
+emptyState();
+</script>
+</body>
+</html>

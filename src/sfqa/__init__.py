@@ -30,6 +30,8 @@ def main(argv: list[str] | None = None) -> int:
     p_score = sub.add_parser("eval-score", help="실행 기록을 모델 없이 채점한다")
     p_score.add_argument("run_dir")
     p_score.add_argument("--with-review", action="store_true", help="review.csv의 사람 판정을 따로 반영해 센다")
+    p_web = sub.add_parser("web", help="로컬 웹 데모를 연다(127.0.0.1만)")
+    p_web.add_argument("--port", type=int, default=8765)
     p_ask = sub.add_parser("ask", help="질문 하나에 답한다(LM Studio를 부른다)")
     p_ask.add_argument("--upto", type=int, required=True, help="독자가 읽은 마지막 장(1~19)")
     p_ask.add_argument("--condition", default="C4", help="C0~C4. 기본 C4(최종 시스템)")
@@ -54,6 +56,11 @@ def main(argv: list[str] | None = None) -> int:
         out = score_run(Path(args.run_dir), with_review=args.with_review)
         print((Path(args.run_dir) / "summary.md").read_text(encoding="utf-8"))
         print(f"eval-score: 사람 검토표 {out['review_rows']}행 → {Path(args.run_dir) / 'review.csv'}")
+        return 0
+    if args.cmd == "web":
+        from sfqa.web import serve
+
+        serve(port=args.port)
         return 0
     if args.cmd == "ask":
         from sfqa.answer import build_chain, make_env
