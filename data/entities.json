@@ -1,0 +1,718 @@
+[
+  {
+    "name": "정주사",
+    "aliases": [
+      "정 주사"
+    ],
+    "kind": "person",
+    "review": "pre-human-review",
+    "note": "초봉이네 아버지"
+  },
+  {
+    "name": "유씨",
+    "aliases": [],
+    "kind": "person",
+    "review": "pre-human-review",
+    "note": "정주사의 아내"
+  },
+  {
+    "name": "초봉",
+    "aliases": [
+      "초봉이"
+    ],
+    "kind": "person",
+    "review": "pre-human-review",
+    "note": "정주사의 맏딸"
+  },
+  {
+    "name": "계봉",
+    "aliases": [
+      "계봉이"
+    ],
+    "kind": "person",
+    "review": "pre-human-review",
+    "note": "정주사의 둘째 딸"
+  },
+  {
+    "name": "형주",
+    "aliases": [],
+    "kind": "person",
+    "review": "pre-human-review",
+    "note": "정주사의 아들"
+  },
+  {
+    "name": "병주",
+    "aliases": [],
+    "kind": "person",
+    "review": "pre-human-review",
+    "note": "정주사의 막내아들"
+  },
+  {
+    "name": "승재",
+    "aliases": [
+      "남승재"
+    ],
+    "kind": "person",
+    "review": "pre-human-review",
+    "note": "금호의원 조수, 뒤에 의사"
+  },
+  {
+    "name": "태수",
+    "aliases": [
+      "고태수",
+      "고서방"
+    ],
+    "kind": "person",
+    "review": "pre-human-review",
+    "note": "××은행 당좌계 행원"
+  },
+  {
+    "name": "형보",
+    "aliases": [
+      "장형보"
+    ],
+    "kind": "person",
+    "review": "pre-human-review",
+    "note": "미두장 중매점 사람"
+  },
+  {
+    "name": "제호",
+    "aliases": [
+      "박제호"
+    ],
+    "kind": "person",
+    "review": "pre-human-review",
+    "note": "제중당 약국 주인"
+  },
+  {
+    "name": "윤희",
+    "aliases": [],
+    "kind": "person",
+    "review": "pre-human-review",
+    "note": "제호의 아내"
+  },
+  {
+    "name": "한참봉",
+    "aliases": [
+      "탑삭부리",
+      "한서방"
+    ],
+    "kind": "person",
+    "review": "pre-human-review",
+    "note": "태수가 하숙하는 집 주인"
+  },
+  {
+    "name": "김씨",
+    "aliases": [],
+    "kind": "person",
+    "review": "pre-human-review",
+    "note": "한참봉의 아내"
+  },
+  {
+    "name": "행화",
+    "aliases": [],
+    "kind": "person",
+    "review": "pre-human-review",
+    "note": "기생"
+  },
+  {
+    "name": "명님",
+    "aliases": [
+      "명님이"
+    ],
+    "kind": "person",
+    "review": "pre-human-review",
+    "note": "개복동 양서방의 딸"
+  },
+  {
+    "name": "송희",
+    "aliases": [],
+    "kind": "person",
+    "review": "pre-human-review",
+    "note": "초봉이의 딸"
+  },
+  {
+    "name": "군산",
+    "aliases": [
+      "群山",
+      "군산부"
+    ],
+    "kind": "place",
+    "review": "pre-human-review",
+    "note": "금강 하구의 항구 도시, 이야기의 무대."
+  },
+  {
+    "name": "미두장",
+    "aliases": [
+      "米豆場",
+      "군산미곡취인소",
+      "群山米穀取引所",
+      "취인소"
+    ],
+    "kind": "org",
+    "review": "pre-human-review",
+    "note": "군산의 미곡 기미 시장."
+  },
+  {
+    "name": "마루강",
+    "aliases": [
+      "丸江"
+    ],
+    "kind": "org",
+    "review": "pre-human-review",
+    "note": "형보가 바다지로 있는 미두 중매점."
+  },
+  {
+    "name": "××은행 군산지점",
+    "aliases": [
+      "××은행"
+    ],
+    "kind": "org",
+    "review": "pre-human-review",
+    "note": "태수가 다니는 은행."
+  },
+  {
+    "name": "둔뱀이",
+    "aliases": [
+      "屯栗里"
+    ],
+    "kind": "place",
+    "review": "pre-human-review",
+    "note": "정주사네 셋집이 있는 언덕 동네."
+  },
+  {
+    "name": "개복동",
+    "aliases": [
+      "開福洞"
+    ],
+    "kind": "place",
+    "review": "pre-human-review",
+    "note": "한참봉네 싸전과 행화 집이 있는 조선인 동네."
+  },
+  {
+    "name": "콩나물고개",
+    "aliases": [],
+    "kind": "place",
+    "review": "pre-human-review",
+    "note": "개복동에서 둔뱀이로 넘어가는 고개."
+  },
+  {
+    "name": "서천",
+    "aliases": [
+      "舒川"
+    ],
+    "kind": "place",
+    "review": "pre-human-review",
+    "note": "정주사와 제호의 고향, 금강 건너편."
+  },
+  {
+    "name": "S여학교",
+    "aliases": [],
+    "kind": "org",
+    "review": "pre-human-review",
+    "note": "초봉이가 졸업하고 계봉이가 다니는 3년제 사립 여학교."
+  },
+  {
+    "name": "제중당",
+    "aliases": [
+      "濟衆堂"
+    ],
+    "kind": "org",
+    "review": "pre-human-review",
+    "note": "제호가 운영하는 양약국, 초봉이의 일터."
+  },
+  {
+    "name": "금호병원",
+    "aliases": [
+      "錦湖病院",
+      "금호의원"
+    ],
+    "kind": "org",
+    "review": "pre-human-review",
+    "note": "승재가 조수로 일하는 병원."
+  },
+  {
+    "name": "영정",
+    "aliases": [
+      "榮町"
+    ],
+    "kind": "place",
+    "review": "pre-human-review",
+    "note": "제중당이 있는 거리."
+  },
+  {
+    "name": "윤달식",
+    "aliases": [
+      "尹達植",
+      "달식"
+    ],
+    "kind": "person",
+    "review": "pre-human-review",
+    "note": "금호의원 원장, 승재를 거둔 의사의 동창."
+  },
+  {
+    "name": "장재동",
+    "aliases": [
+      "藏財洞"
+    ],
+    "kind": "place",
+    "review": "pre-human-review",
+    "note": "금호의원이 있는 동네."
+  },
+  {
+    "name": "백석",
+    "aliases": [
+      "백석이",
+      "白石"
+    ],
+    "kind": "person",
+    "review": "pre-human-review",
+    "note": "고리대금업자. 태수가 그의 소절수를 위조한다."
+  },
+  {
+    "name": "농산흥업회사",
+    "aliases": [],
+    "kind": "org",
+    "review": "pre-human-review",
+    "note": "태수가 소절수를 위조한 거래처."
+  },
+  {
+    "name": "마루나",
+    "aliases": [],
+    "kind": "org",
+    "review": "pre-human-review",
+    "note": "태수가 소절수를 위조한 큰 미두 중매점."
+  },
+  {
+    "name": "은적사",
+    "aliases": [
+      "恩積寺"
+    ],
+    "kind": "place",
+    "review": "pre-human-review",
+    "note": "태수 일행이 놀러 가는 군산 근교 절."
+  },
+  {
+    "name": "아현",
+    "aliases": [
+      "阿峴"
+    ],
+    "kind": "place",
+    "review": "pre-human-review",
+    "note": "태수의 어머니가 사는 서울 동네."
+  },
+  {
+    "name": "양서방",
+    "aliases": [
+      "명님이 아버지"
+    ],
+    "kind": "person",
+    "review": "pre-human-review",
+    "note": "명님이의 부친, 날품팔이 노동자"
+  },
+  {
+    "name": "먹곰보",
+    "aliases": [
+      "업동 아버지"
+    ],
+    "kind": "person",
+    "review": "pre-human-review",
+    "note": "명님이네 건넌방 세입자. 아이가 죽자 승재에게 행패를 부린다"
+  },
+  {
+    "name": "먹곰보네 아낙",
+    "aliases": [
+      "먹곰보네"
+    ],
+    "kind": "person",
+    "review": "pre-human-review",
+    "note": "먹곰보의 아내, 업동이의 어머니"
+  },
+  {
+    "name": "업동",
+    "aliases": [
+      "업동이"
+    ],
+    "kind": "person",
+    "review": "pre-human-review",
+    "note": "먹곰보네 어린아이. 백일해 끝에 폐렴으로 죽는다"
+  },
+  {
+    "name": "경쟁이",
+    "aliases": [],
+    "kind": "person",
+    "review": "pre-human-review",
+    "note": "먹곰보네 집에서 병 낫기를 비는 경을 읽던 사람"
+  },
+  {
+    "name": "장항",
+    "aliases": [
+      "長項"
+    ],
+    "kind": "place",
+    "review": "pre-human-review",
+    "note": "군산 강 건너편 지명(형보가 축항 이야기를 함)"
+  },
+  {
+    "name": "고무신가게",
+    "aliases": [],
+    "kind": "place",
+    "review": "pre-human-review",
+    "note": "금호의원 근처 네거리 모퉁이 가게. 8장부터 승재가 그 안 다다미방에 세 든다"
+  },
+  {
+    "name": "도립병원",
+    "aliases": [],
+    "kind": "place",
+    "review": "pre-human-review",
+    "note": "태수가 실려 가 숨지는 병원"
+  },
+  {
+    "name": "한참봉의 첩",
+    "aliases": [
+      "작은집",
+      "작은댁",
+      "작은여편네"
+    ],
+    "kind": "person",
+    "review": "pre-human-review",
+    "note": "탑삭부리 한참봉의 첩. 10장 사건 날이 그의 생일"
+  },
+  {
+    "name": "경부보",
+    "aliases": [],
+    "kind": "person",
+    "review": "pre-human-review",
+    "note": "도립병원에서 태수 사건을 맡은 경찰관(직함)"
+  },
+  {
+    "name": "호남선",
+    "aliases": [],
+    "kind": "place",
+    "review": "pre-human-review",
+    "note": "초봉이와 제호가 함께 탄 철도 노선(12장)"
+  },
+  {
+    "name": "대전",
+    "aliases": [
+      "大田",
+      "대전역"
+    ],
+    "kind": "place",
+    "review": "pre-human-review",
+    "note": "초봉이와 제호가 내려 유성온천으로 간 곳(12장)"
+  },
+  {
+    "name": "황등",
+    "aliases": [
+      "黃登"
+    ],
+    "kind": "place",
+    "review": "pre-human-review",
+    "note": "기차가 지나는 역(12장)"
+  },
+  {
+    "name": "함열",
+    "aliases": [
+      "咸悅"
+    ],
+    "kind": "place",
+    "review": "pre-human-review",
+    "note": "기차가 지나는 역(12장)"
+  },
+  {
+    "name": "논산",
+    "aliases": [],
+    "kind": "place",
+    "review": "pre-human-review",
+    "note": "초봉이가 수학여행 때 와 본 역(12장)"
+  },
+  {
+    "name": "팥거리",
+    "aliases": [
+      "豆溪"
+    ],
+    "kind": "place",
+    "review": "pre-human-review",
+    "note": "기차가 지나는 곳(12장)"
+  },
+  {
+    "name": "유성온천",
+    "aliases": [
+      "儒城溫泉"
+    ],
+    "kind": "place",
+    "review": "pre-human-review",
+    "note": "초봉이가 제호의 '아낙'이 된 대전 근처 온천(12장)"
+  },
+  {
+    "name": "Ｂ",
+    "aliases": [
+      "신온천"
+    ],
+    "kind": "place",
+    "review": "pre-human-review",
+    "note": "유성온천 신온천의 여관, 초봉이와 제호가 묵은 곳(12장)"
+  },
+  {
+    "name": "청진동",
+    "aliases": [],
+    "kind": "place",
+    "review": "pre-human-review",
+    "note": "제호가 윤희와 살림을 차린 서울 큰집(12장)"
+  },
+  {
+    "name": "신천",
+    "aliases": [],
+    "kind": "place",
+    "review": "pre-human-review",
+    "note": "윤희의 친정, 별거하며 내려간 곳(12장)"
+  },
+  {
+    "name": "동관",
+    "aliases": [],
+    "kind": "place",
+    "review": "pre-human-review",
+    "note": "초봉이가 제호와(뒤에는 형보와) 사는 서울 셋집 동네(12장)"
+  },
+  {
+    "name": "파주개",
+    "aliases": [],
+    "kind": "place",
+    "review": "pre-human-review",
+    "note": "제호의 제약회사가 있는 동관 파주개 이층 벽돌집(12장)"
+  },
+  {
+    "name": "삼방",
+    "aliases": [
+      "三防"
+    ],
+    "kind": "place",
+    "review": "pre-human-review",
+    "note": "제호가 피서 가고 싶어한 곳(12장)"
+  },
+  {
+    "name": "석왕사",
+    "aliases": [
+      "釋王寺"
+    ],
+    "kind": "place",
+    "review": "pre-human-review",
+    "note": "제호가 피서 가고 싶어한 곳(12장)"
+  },
+  {
+    "name": "Ｓ",
+    "aliases": [
+      "Ｓ군"
+    ],
+    "kind": "person",
+    "review": "pre-human-review",
+    "note": "제호의 친구인 산부인과 개업의, 초봉이의 위 세척과 해산을 맡음(13장). 15장의 'Ｓ여학교'와는 별개"
+  },
+  {
+    "name": "조선호텔",
+    "aliases": [],
+    "kind": "place",
+    "review": "pre-human-review",
+    "note": "제호가 한턱 쓰겠다고 말한 서울 호텔(13장)"
+  },
+  {
+    "name": "동인",
+    "aliases": [
+      "東仁"
+    ],
+    "kind": "person",
+    "review": "pre-human-review",
+    "note": "소설가 김동인. 서술자가 「발가락이 닮았다」를 들어 형보를 비꼬는 대목에만 나옴(14장)"
+  },
+  {
+    "name": "전봇대",
+    "aliases": [],
+    "kind": "person",
+    "review": "pre-human-review",
+    "note": "정주사와 함께 하바를 하는 키 큰 하바꾼의 별명(15장)"
+  },
+  {
+    "name": "이리 농림학교",
+    "aliases": [
+      "농림학교"
+    ],
+    "kind": "org",
+    "review": "pre-human-review",
+    "note": "형주가 입학해 통학하는 학교(15장)"
+  },
+  {
+    "name": "공설시장",
+    "aliases": [],
+    "kind": "place",
+    "review": "pre-human-review",
+    "note": "정주사가 가게 물건을 사는 군산 시장(15장)"
+  },
+  {
+    "name": "안스레",
+    "aliases": [],
+    "kind": "place",
+    "review": "pre-human-review",
+    "note": "정주사가 흥정하러 가는 생선장(15장)"
+  },
+  {
+    "name": "Ｓ여학교",
+    "aliases": [],
+    "kind": "org",
+    "review": "pre-human-review",
+    "note": "승재가 산술을 가르치는 야학을 여는 군산 학교(15장)"
+  },
+  {
+    "name": "실비병원",
+    "aliases": [],
+    "kind": "org",
+    "review": "pre-human-review",
+    "note": "승재의 친구가 서울 아현에 내려는 병원(15장)"
+  },
+  {
+    "name": "창윤",
+    "aliases": [
+      "창윤이"
+    ],
+    "kind": "person",
+    "review": "pre-human-review",
+    "note": "승재의 야학 학생(15장)"
+  },
+  {
+    "name": "종쇠",
+    "aliases": [],
+    "kind": "person",
+    "review": "pre-human-review",
+    "note": "아버지가 쌀을 훔쳐 잡혀간 야학 학생(15장)"
+  },
+  {
+    "name": "전서방",
+    "aliases": [],
+    "kind": "person",
+    "review": "pre-human-review",
+    "note": "종쇠의 아버지, 사젱이에 사는 선창 지게꾼(15장)"
+  },
+  {
+    "name": "사젱이",
+    "aliases": [],
+    "kind": "place",
+    "review": "pre-human-review",
+    "note": "전서방네가 사는 군산 동네(15장)"
+  },
+  {
+    "name": "개명옥",
+    "aliases": [
+      "開明屋"
+    ],
+    "kind": "place",
+    "review": "pre-human-review",
+    "note": "명님이가 팔려 간 개복동 색주가집(15장)"
+  },
+  {
+    "name": "홍도",
+    "aliases": [],
+    "kind": "person",
+    "review": "pre-human-review",
+    "note": "개명옥에서 명님이를 부르는 이름(명님과 같은 인물, 15장)"
+  },
+  {
+    "name": "오달식",
+    "aliases": [],
+    "kind": "person",
+    "review": "pre-human-review",
+    "note": "승재가 일하는 금호병원의 주인(15장)"
+  },
+  {
+    "name": "오꼼이",
+    "aliases": [],
+    "kind": "person",
+    "review": "pre-human-review",
+    "note": "××백화점 화장품 매장의 계봉이 동료 숍걸, 영화광"
+  },
+  {
+    "name": "주근깨",
+    "aliases": [],
+    "kind": "person",
+    "review": "pre-human-review",
+    "note": "화장품 매장 레지를 보는 계봉이 동료, 소설을 즐겨 읽음"
+  },
+  {
+    "name": "단발쟁이",
+    "aliases": [],
+    "kind": "person",
+    "review": "pre-human-review",
+    "note": "화장품 매장의 계봉이 동료 숍걸"
+  },
+  {
+    "name": "여드름바가지",
+    "aliases": [],
+    "kind": "person",
+    "review": "pre-human-review",
+    "note": "××고보 학생, 계봉이에게 반해 매일 화장품 매장에 와서 물건을 사고 편지를 두고 감"
+  },
+  {
+    "name": "소장변호사 영감",
+    "aliases": [
+      "변호사나리"
+    ],
+    "kind": "person",
+    "review": "pre-human-review",
+    "note": "계봉이에게 편지를 보내는 구애자(동료들이 놀리며 부르는 별명)"
+  },
+  {
+    "name": "하쿠라이 귀공자",
+    "aliases": [],
+    "kind": "person",
+    "review": "pre-human-review",
+    "note": "계봉이를 따라다니는 구애자(동료들이 부르는 별명)"
+  },
+  {
+    "name": "강씨",
+    "aliases": [],
+    "kind": "person",
+    "review": "pre-human-review",
+    "note": "아현에서 승재와 병원을 같이 하는 사람(15장의 '어느 친구'), 승재에게 새 양복을 선사"
+  },
+  {
+    "name": "아현실비의원",
+    "aliases": [],
+    "kind": "org",
+    "review": "pre-human-review",
+    "note": "승재가 일하는 아현의 낡은 이층 병원, 진찰 무료(15장에선 '아현 실비병원'으로만 언급)"
+  },
+  {
+    "name": "창경원",
+    "aliases": [],
+    "kind": "place",
+    "review": "pre-human-review",
+    "note": "계봉이가 놀러 가고 싶어하는 서울의 유원지"
+  },
+  {
+    "name": "화신",
+    "aliases": [],
+    "kind": "place",
+    "review": "pre-human-review",
+    "note": "종로의 건물, 승재와 계봉이가 저녁 뒤 화신 앞을 걸음"
+  },
+  {
+    "name": "아현고개",
+    "aliases": [],
+    "kind": "place",
+    "review": "pre-human-review",
+    "note": "승재 병원으로 가는 전차 정류장"
+  },
+  {
+    "name": "마포",
+    "aliases": [],
+    "kind": "place",
+    "review": "pre-human-review",
+    "note": "승재 병원 가는 길을 안내할 때 나오는 전차 행선지"
+  },
+  {
+    "name": "신촌",
+    "aliases": [],
+    "kind": "place",
+    "review": "pre-human-review",
+    "note": "승재 병원 가는 길 안내에 나오는 지명"
+  }
+]
