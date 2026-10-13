@@ -15,7 +15,50 @@ def main(argv: list[str] | None = None) -> int:
     sub.add_parser("clean", help="받은 원문에서 틀·각주를 지워 data/clean에 쓴다")
     sub.add_parser("gold-check", help="정답지를 모델 없이 검사한다(인용 원문 일치, 유형과 N, 인물 첫 등장)")
     sub.add_parser("gold-sheet", help="사람 검토용 표(eval/gold-review.csv)를 만든다")
+    sub.add_parser("index", help="청크를 나누고 임베딩 색인을 data/index에 만든다(LM Studio 임베딩을 부른다)")
+    p_ret = sub.add_parser("retrieval-eval", help="검색만 따로 잰다: A 문항 recall@k, L4 누출(생성 모델은 안 부른다)")
+    p_ret.add_argument("--method", default="dense", help="쉼표로 여러 개: dense")
     args = parser.parse_args(argv)
+
+    if args.cmd == "index":
+        from sfqa.config import load_settings
+        from sfqa.gold import load_texts
+        from sfqa.index import build_index
+        from sfqa.llm import make_embeddings
+
+        s = load_settings()
+        meta = build_index(s.embed_model, make_embeddings(s), load_texts())
+        print(f"index: 청크 {meta['n_chunks']}개, {meta['dim']}차원, {meta['embed_model']}")
+        return 0
+    if args.cmd == "retrieval-eval":
+        from sfqa.config import load_settings
+        from sfqa.gold import load_questions, load_texts
+        from sfqa.index import load_index
+        from sfqa.llm import make_embeddings
+        from sfqa.retrieval_eval import run
+        from sfqa.retrieve import ChapterIndex
+
+        s = load_settings()
+        texts = load_texts()
+        chunks, vectors, meta = load_index(s.embed_model, texts)
+        index = ChapterIndex(chunks, vectors)
+        emb = make_embeddings(s)
+        failed_gate = False
+        for method in args.method.split(","):
+            report, path = run(method.strip(), load_questions(), index, emb.embed_documents, texts, meta)
+            print(f"[{method}] 결과 파일: {path}")
+            for split, row in report["summary"].items():
+                cells = "  ".join(f"{k} {h}/{n}" for k, (h, n) in row.items())
+                print(f"[{method}] A {split:4}: {cells}")
+            gate = report["gate"]
+            print(f"[{method}] 검색 관문 recall@{gate['k']} ≥ {gate['threshold']}: {gate['hit']}/{gate['total']} "
+                  f"→ {'통과' if gate['pass'] else '미달'}")
+            print(f"[{method}] L4 누출이 있는 문항: {report['l4_leak_questions']}개")
+            for r in report["rows"]:
+                if r["type"] == "A" and (r["any_rank"] is None or r["any_rank"] > gate["k"]):
+                    print(f"  놓침 {r['id']} N={r['n']} 근거 {r['evidence_chapters']}장 순위 {r['any_rank']}: {r['question']}")
+            failed_gate |= not gate["pass"] or report["l4_leak_questions"] > 0
+        return 1 if failed_gate else 0
 
     if args.cmd == "gold-sheet":
         from sfqa.gold import load_questions, write_sheet

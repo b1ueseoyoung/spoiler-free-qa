@@ -1,0 +1,94 @@
+"""검색만 따로 잰다(생성 모델은 부르지 않는다. 질문 임베딩만 LM Studio로 계산한다).
+
+- A 문항: 정답 근거 인용이 검색된 청크 안에 통째로 들어가는지(recall@k). 근거가 여럿이면 '하나라도'와 '전부'를 따로 센다.
+- 모든 문항: L4 누출. 검색된 청크의 장을 메타데이터가 아니라 본문 내용으로 다시 찾아 N보다 크면 누출이다.
+결과는 runs/retrieval-<시각>-<방식>.json에 남긴다.
+"""
+
+from __future__ import annotations
+
+import json
+from collections.abc import Mapping
+from datetime import datetime
+
+import numpy as np
+
+from sfqa.chunk import Chunk
+from sfqa.gold import Evidence, Question
+from sfqa.paths import ROOT
+from sfqa.retrieve import ChapterIndex
+from sfqa.textnorm import search_text
+
+KS = (1, 3, 6, 10)
+GATE_K = 6
+GATE = 0.8  # docs/eval-spec.md 목표값
+
+
+def positions(quote: str, text: str) -> list[int]:
+    out, i = [], text.find(quote)
+    while i != -1:
+        out.append(i)
+        i = text.find(quote, i + 1)
+    return out
+
+
+def covers(chunk: Chunk, ev: Evidence, texts: Mapping[int, str]) -> bool:
+    return chunk.chapter == ev.chapter and any(
+        chunk.start <= p and p + len(ev.quote) <= chunk.end for p in positions(ev.quote, texts[ev.chapter])
+    )
+
+
+def content_chapter(chunk_text: str, texts: Mapping[int, str]) -> int | None:
+    """청크 글이 글자 그대로 들어 있는 가장 앞 장. 메타데이터를 믿지 않고 본문으로 다시 찾는다."""
+    return next((c for c in sorted(texts) if chunk_text in texts[c]), None)
+
+
+def evaluate(questions: list[Question], query_vecs: np.ndarray, index: ChapterIndex,
+             texts: Mapping[int, str]) -> dict:
+    kmax = max(KS)
+    rows = []
+    for q, qv in zip(questions, query_vecs):
+        hits = index.search(qv, q.n, kmax)
+        leaks = [c.chunk_id for c, _ in hits[:GATE_K] if (content_chapter(c.text, texts) or 99) > q.n]
+        row = {"id": q.id, "split": q.split, "type": q.type, "n": q.n, "l4_leaks": leaks,
+               "top": [c.chunk_id for c, _ in hits[:GATE_K]]}
+        if q.type == "A":
+            any_rank = next((r for r, (c, _) in enumerate(hits, 1) if any(covers(c, ev, texts) for ev in q.evidence)), None)
+            all_rank = None
+            covered = [next((r for r, (c, _) in enumerate(hits, 1) if covers(c, ev, texts)), None) for ev in q.evidence]
+            if all(r is not None for r in covered):
+                all_rank = max(covered)
+            row |= {"any_rank": any_rank, "all_rank": all_rank, "question": q.question,
+                    "evidence_chapters": [ev.chapter for ev in q.evidence]}
+        rows.append(row)
+
+    def recall(sel, key, k):
+        a = [r for r in rows if r["type"] == "A" and sel(r)]
+        return sum(1 for r in a if r[key] is not None and r[key] <= k), len(a)
+
+    summary = {}
+    for name, sel in [("all", lambda r: True), ("dev", lambda r: r["split"] == "dev"), ("test", lambda r: r["split"] == "test")]:
+        summary[name] = {f"recall@{k}": recall(sel, "any_rank", k) for k in KS}
+        summary[name][f"recall_all@{GATE_K}"] = recall(sel, "all_rank", GATE_K)
+    hit, total = summary["all"][f"recall@{GATE_K}"]
+    return {
+        "summary": summary,
+        "l4_leak_questions": sum(1 for r in rows if r["l4_leaks"]),
+        "gate": {"k": GATE_K, "threshold": GATE, "hit": hit, "total": total, "pass": total > 0 and hit / total >= GATE},
+        "rows": rows,
+    }
+
+
+def run(method: str, questions: list[Question], index: ChapterIndex, embed_query_batch, texts: Mapping[int, str],
+        meta: dict) -> tuple[dict, str]:
+    if method != "dense":
+        raise ValueError(f"아직 없는 검색 방식이다: {method}")
+    vecs = np.asarray(embed_query_batch([search_text(q.question) for q in questions]))
+    report = evaluate(questions, vecs, index, texts)
+    report["method"] = method
+    report["index_meta"] = meta
+    out_dir = ROOT / "runs"
+    out_dir.mkdir(exist_ok=True)
+    path = out_dir / f"retrieval-{datetime.now().strftime('%Y%m%d-%H%M%S')}-{method}.json"
+    path.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    return report, str(path)
