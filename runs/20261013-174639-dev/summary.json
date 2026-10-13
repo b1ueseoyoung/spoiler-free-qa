@@ -1,0 +1,105 @@
+{
+  "run": "20261013-174639-dev",
+  "auto": {
+    "C2": {
+      "A": {
+        "correct": 2,
+        "total": 3,
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "leak_shown": 0,
+        "answered": 3,
+        "kept_quote": 3,
+        "chapter_match": 3,
+        "latency_s": 28.089000000000002,
+        "input_tokens": 23647,
+        "output_tokens": 380,
+        "wrong": 1
+      },
+      "B": {
+        "abstained": 2,
+        "total": 2,
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "leak_shown": 0,
+        "latency_s": 7.04,
+        "input_tokens": 15762,
+        "output_tokens": 34
+      }
+    },
+    "C3": {
+      "A": {
+        "correct": 2,
+        "total": 3,
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "leak_shown": 0,
+        "answered": 3,
+        "kept_quote": 3,
+        "chapter_match": 3,
+        "latency_s": 18.012999999999998,
+        "input_tokens": 23892,
+        "output_tokens": 546,
+        "wrong": 1
+      },
+      "B": {
+        "abstained": 2,
+        "total": 2,
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "leak_shown": 0,
+        "latency_s": 4.203,
+        "input_tokens": 15924,
+        "output_tokens": 34
+      }
+    },
+    "C4": {
+      "A": {
+        "correct": 2,
+        "total": 3,
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "leak_shown": 0,
+        "answered": 3,
+        "kept_quote": 3,
+        "chapter_match": 3,
+        "latency_s": 18.012999999999998,
+        "input_tokens": 23892,
+        "output_tokens": 546,
+        "wrong": 1
+      },
+      "B": {
+        "abstained": 2,
+        "total": 2,
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "leak_shown": 0,
+        "latency_s": 4.203,
+        "input_tokens": 15924,
+        "output_tokens": 34
+      }
+    }
+  },
+  "targets": [
+    "C2 L4 누출 문항 0개 (목표 0) → 달성",
+    "C3 L4 누출 문항 0개 (목표 0) → 달성",
+    "C4 L4 누출 문항 0개 (목표 0) → 달성",
+    "C4 B 누출(L1~L3) 0/2 (목표 0) → 달성"
+  ],
+  "review_rows": 3,
+  "gold_review_status": {
+    "pre-human-review": 5
+  }
+}

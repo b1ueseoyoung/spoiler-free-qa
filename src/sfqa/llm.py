@@ -15,6 +15,7 @@ from pathlib import Path
 
 import httpx
 import openai
+from langchain_core.embeddings import Embeddings
 from langchain_core.language_models import BaseChatModel
 from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_openai import ChatOpenAI, OpenAIEmbeddings
@@ -124,6 +125,10 @@ class LiveClient:
         self._cache = _load_cassette(cassette)
         self.calls = 0  # 실제로 모델을 부른 횟수
 
+    def has(self, req: LLMRequest) -> bool:
+        """카세트나 이번 실행에서 이미 받은 응답이 있는가(있으면 모델을 부르지 않는다)."""
+        return req.key() in self._cache
+
     def complete(self, req: LLMRequest) -> LLMResponse:
         key = req.key()
         if key in self._cache:
@@ -163,6 +168,9 @@ class ReplayClient:
     def __init__(self, cassette: Path):
         self._responses = _load_cassette(cassette)
         self.calls = 0
+
+    def has(self, req: LLMRequest) -> bool:
+        return req.key() in self._responses
 
     def complete(self, req: LLMRequest) -> LLMResponse:
         if req.key() not in self._responses:
@@ -207,3 +215,38 @@ def make_client(s: Settings, chat: BaseChatModel | None = None) -> LiveClient | 
         return ReplayClient(s.cassette_path)
     cassette = s.cassette_path if s.cassette_mode == "record" else None
     return LiveClient(chat or make_chat(s), cassette)
+
+
+class CachedEmbeddings(Embeddings):
+    """질문 임베딩을 JSONL에 기록해 두고 다시 쓴다. replay면 기록에 없을 때 실패한다(네트워크로 가지 않는다).
+
+    키는 (임베딩 모델, 글)이다. 청크 임베딩은 data/index에 따로 저장되므로 여기서는 질문만 다룬다.
+    """
+
+    def __init__(self, inner: Embeddings | None, model: str, path: Path, replay: bool = False):
+        self.inner, self.model, self.path, self.replay = inner, model, path, replay
+        self._cache: dict[str, list[float]] = {}
+        if path.exists():
+            for line in path.read_text(encoding="utf-8").splitlines():
+                if line.strip():
+                    row = json.loads(line)
+                    self._cache[row["key"]] = row["vector"]
+
+    def _key(self, text: str) -> str:
+        return hashlib.sha256(json.dumps([self.model, text], ensure_ascii=False).encode()).hexdigest()
+
+    def embed_query(self, text: str) -> list[float]:
+        key = self._key(text)
+        if key in self._cache:
+            return self._cache[key]
+        if self.replay or self.inner is None:
+            raise KeyError(f"임베딩 카세트에 없는 질문이다: {text[:30]}")
+        vec = [round(float(x), 7) for x in self.inner.embed_query(text)]
+        self.path.parent.mkdir(parents=True, exist_ok=True)
+        with self.path.open("a", encoding="utf-8") as fh:
+            fh.write(json.dumps({"key": key, "vector": vec}) + "\n")
+        self._cache[key] = vec
+        return vec
+
+    def embed_documents(self, texts: list[str]) -> list[list[float]]:
+        return [self.embed_query(t) for t in texts]

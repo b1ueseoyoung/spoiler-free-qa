@@ -138,7 +138,7 @@ def check(questions: list[Question], texts: Mapping[int, str],
                 errors.append(f"{tag}: B인데 answer_ch({q.answer_ch})가 N 이하다")
             if not any(ev.chapter == q.answer_ch for ev in q.evidence):
                 errors.append(f"{tag}: B에 answer_ch 장의 근거가 없다")
-            leaked = [k for k in q.answer_keys if k in q.question]
+            leaked = [k for k in q.answer_keys if any(alt in q.question for alt in k.split("|"))]
             if leaked:
                 errors.append(f"{tag}: B 질문 문장에 정답 키워드가 들어 있다: {leaked}")
             if not q.future_facts:
@@ -147,7 +147,7 @@ def check(questions: list[Question], texts: Mapping[int, str],
             if q.answer_ch is not None or q.evidence:
                 errors.append(f"{tag}: C에는 answer_ch와 근거가 없어야 한다")
             # answer_keys는 본문 밖의 실제 답(연재 신문 등)이 있을 때만 둔다. 답 자체가 없는 세부 사항은 비워 둔다.
-            found = {k: [c for c in sorted(texts) if k in texts[c]] for k in q.answer_keys}
+            found = {alt: [c for c in sorted(texts) if alt in texts[c]] for k in q.answer_keys for alt in k.split("|")}
             found = {k: v for k, v in found.items() if v}
             if found:
                 errors.append(f"{tag}: C의 키워드가 본문에 있다: {found}")

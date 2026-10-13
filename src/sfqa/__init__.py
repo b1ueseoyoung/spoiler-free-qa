@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import sys
+from pathlib import Path
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -18,6 +19,17 @@ def main(argv: list[str] | None = None) -> int:
     sub.add_parser("index", help="청크를 나누고 임베딩 색인을 data/index에 만든다(LM Studio 임베딩을 부른다)")
     p_ret = sub.add_parser("retrieval-eval", help="검색만 따로 잰다: A 문항 recall@k, L4 누출(생성 모델은 안 부른다)")
     p_ret.add_argument("--method", default="dense", help="쉼표로 여러 개: dense, bm25, hybrid")
+    p_run = sub.add_parser("eval-run", help="정답지 문항을 조건별로 돌린다(카세트 기록, 호출 상한)")
+    p_run.add_argument("--split", default="dev", choices=["dev", "test", "all"])
+    p_run.add_argument("--conditions", default="C0,C1,C2,C3,C4")
+    p_run.add_argument("--max-calls", type=int, required=True, help="실제 모델 호출 상한(카세트에 있으면 세지 않는다)")
+    p_run.add_argument("--limit", type=int, help="앞에서부터 이 개수만")
+    p_run.add_argument("--k", type=int, default=18)
+    p_run.add_argument("--replay", action="store_true", help="카세트만 쓴다(네트워크 없음)")
+    p_run.add_argument("--cassette", help="카세트 이름(기본: split 이름). eval/cassettes/<이름>.jsonl")
+    p_score = sub.add_parser("eval-score", help="실행 기록을 모델 없이 채점한다")
+    p_score.add_argument("run_dir")
+    p_score.add_argument("--with-review", action="store_true", help="review.csv의 사람 판정을 따로 반영해 센다")
     p_ask = sub.add_parser("ask", help="질문 하나에 답한다(LM Studio를 부른다)")
     p_ask.add_argument("--upto", type=int, required=True, help="독자가 읽은 마지막 장(1~19)")
     p_ask.add_argument("--condition", default="C4", help="C0~C4. 기본 C4(최종 시스템)")
@@ -25,6 +37,24 @@ def main(argv: list[str] | None = None) -> int:
     p_ask.add_argument("question")
     args = parser.parse_args(argv)
 
+    if args.cmd == "eval-run":
+        from sfqa.config import load_settings
+        from sfqa.evaluate import run_eval
+
+        out, info = run_eval(load_settings(), args.split, [c.strip() for c in args.conditions.split(",")],
+                             args.max_calls, k=args.k, limit=args.limit, replay=args.replay, cassette_name=args.cassette)
+        print(f"eval-run: {out}")
+        print(f"  기록 {info['records']}건, 모델 호출 {info['model_calls']}회, "
+              + ("완료" if info["complete"] else f"중간에 멈춤({info['stopped']})"))
+        print(f"  채점: uv run sfqa eval-score {out.relative_to(Path.cwd()) if out.is_relative_to(Path.cwd()) else out}")
+        return 0 if info["complete"] else 3
+    if args.cmd == "eval-score":
+        from sfqa.score import score_run
+
+        out = score_run(Path(args.run_dir), with_review=args.with_review)
+        print((Path(args.run_dir) / "summary.md").read_text(encoding="utf-8"))
+        print(f"eval-score: 사람 검토표 {out['review_rows']}행 → {Path(args.run_dir) / 'review.csv'}")
+        return 0
     if args.cmd == "ask":
         from sfqa.answer import build_chain, make_env
         from sfqa.config import load_settings
