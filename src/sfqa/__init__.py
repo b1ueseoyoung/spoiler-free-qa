@@ -18,7 +18,36 @@ def main(argv: list[str] | None = None) -> int:
     sub.add_parser("index", help="청크를 나누고 임베딩 색인을 data/index에 만든다(LM Studio 임베딩을 부른다)")
     p_ret = sub.add_parser("retrieval-eval", help="검색만 따로 잰다: A 문항 recall@k, L4 누출(생성 모델은 안 부른다)")
     p_ret.add_argument("--method", default="dense", help="쉼표로 여러 개: dense, bm25, hybrid")
+    p_ask = sub.add_parser("ask", help="질문 하나에 답한다(LM Studio를 부른다)")
+    p_ask.add_argument("--upto", type=int, required=True, help="독자가 읽은 마지막 장(1~19)")
+    p_ask.add_argument("--condition", default="C4", help="C0~C4. 기본 C4(최종 시스템)")
+    p_ask.add_argument("--k", type=int, default=18, help="가져올 청크 수")
+    p_ask.add_argument("question")
     args = parser.parse_args(argv)
+
+    if args.cmd == "ask":
+        from sfqa.answer import build_chain, make_env
+        from sfqa.config import load_settings
+
+        if not 1 <= args.upto <= 19:
+            parser.error("--upto는 1~19다")
+        r = build_chain(make_env(load_settings(), k=args.k), args.condition).invoke(
+            {"question": args.question, "n": args.upto})
+        resp = r.response
+        print(f"[{r.condition}, {r.n}장까지] {r.status}: {r.answer}")
+        for q in r.quotes:
+            mark = {"verified": "", "chapter_fixed": f" (장 번호 고침 → {q['found_chapter']}장)"}.get(q["status"], f" [버림: {q['status']}]")
+            ctx = "" if q["in_context"] or q["status"] not in ("verified", "chapter_fixed") else " [발췌 밖, 기억에서 옮김]"
+            print(f"  - 제{q['chapter']}장: {q['text']}{mark}{ctx}")
+        if r.reasons:
+            print(f"  검증 메모: {'; '.join(r.reasons)}")
+        if r.status != r.model_status:
+            print(f"  모델 원래 답({r.model_status}): {r.model_answer}")
+        chapters = sorted({d['chapter'] for d in r.retrieved})
+        print(f"  검색: 청크 {len(r.retrieved)}개, 장 {chapters}")
+        print(f"  모델: 입력 {resp['input_tokens']} 출력 {resp['output_tokens']} 토큰, {resp['latency_s']}초"
+              + (", 잘림" if r.truncated else "") + (", 형식 실패" if r.invalid else ""))
+        return 0
 
     if args.cmd == "index":
         from sfqa.config import load_settings
