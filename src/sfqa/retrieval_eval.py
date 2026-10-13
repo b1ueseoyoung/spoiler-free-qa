@@ -16,11 +16,12 @@ import numpy as np
 from sfqa.chunk import Chunk
 from sfqa.gold import Evidence, Question
 from sfqa.paths import ROOT
-from sfqa.retrieve import ChapterIndex
+from sfqa.bm25 import tokenize_many
+from sfqa.retrieve import METHODS, ChapterIndex
 from sfqa.textnorm import search_text
 
-KS = (1, 3, 6, 10)
-GATE_K = 6
+KS = (1, 3, 6, 10, 18)
+GATE_K = 18  # 2026-10-13 6에서 18로 변경(docs/eval-spec.md 변경 기록)
 GATE = 0.8  # docs/eval-spec.md 목표값
 
 
@@ -43,12 +44,14 @@ def content_chapter(chunk_text: str, texts: Mapping[int, str]) -> int | None:
     return next((c for c in sorted(texts) if chunk_text in texts[c]), None)
 
 
-def evaluate(questions: list[Question], query_vecs: np.ndarray, index: ChapterIndex,
-             texts: Mapping[int, str]) -> dict:
+def evaluate(questions: list[Question], query_vecs: np.ndarray | None, query_terms: list[list[str]] | None,
+             index: ChapterIndex, texts: Mapping[int, str], method: str = "dense") -> dict:
     kmax = max(KS)
     rows = []
-    for q, qv in zip(questions, query_vecs):
-        hits = index.search(qv, q.n, kmax)
+    for i, q in enumerate(questions):
+        qv = None if query_vecs is None else query_vecs[i]
+        terms = None if query_terms is None else query_terms[i]
+        hits = index.search(qv, q.n, kmax, method, terms)
         leaks = [c.chunk_id for c, _ in hits[:GATE_K] if (content_chapter(c.text, texts) or 99) > q.n]
         row = {"id": q.id, "split": q.split, "type": q.type, "n": q.n, "l4_leaks": leaks,
                "top": [c.chunk_id for c, _ in hits[:GATE_K]]}
@@ -81,10 +84,11 @@ def evaluate(questions: list[Question], query_vecs: np.ndarray, index: ChapterIn
 
 def run(method: str, questions: list[Question], index: ChapterIndex, embed_query_batch, texts: Mapping[int, str],
         meta: dict) -> tuple[dict, str]:
-    if method != "dense":
-        raise ValueError(f"아직 없는 검색 방식이다: {method}")
-    vecs = np.asarray(embed_query_batch([search_text(q.question) for q in questions]))
-    report = evaluate(questions, vecs, index, texts)
+    if method not in METHODS:
+        raise ValueError(f"없는 검색 방식이다: {method} (가능: {', '.join(METHODS)})")
+    vecs = None if method == "bm25" else np.asarray(embed_query_batch([search_text(q.question) for q in questions]))
+    terms = None if method == "dense" else tokenize_many([q.question for q in questions])
+    report = evaluate(questions, vecs, terms, index, texts, method)
     report["method"] = method
     report["index_meta"] = meta
     out_dir = ROOT / "runs"

@@ -17,7 +17,7 @@ def main(argv: list[str] | None = None) -> int:
     sub.add_parser("gold-sheet", help="사람 검토용 표(eval/gold-review.csv)를 만든다")
     sub.add_parser("index", help="청크를 나누고 임베딩 색인을 data/index에 만든다(LM Studio 임베딩을 부른다)")
     p_ret = sub.add_parser("retrieval-eval", help="검색만 따로 잰다: A 문항 recall@k, L4 누출(생성 모델은 안 부른다)")
-    p_ret.add_argument("--method", default="dense", help="쉼표로 여러 개: dense")
+    p_ret.add_argument("--method", default="dense", help="쉼표로 여러 개: dense, bm25, hybrid")
     args = parser.parse_args(argv)
 
     if args.cmd == "index":
@@ -44,6 +44,7 @@ def main(argv: list[str] | None = None) -> int:
         index = ChapterIndex(chunks, vectors)
         emb = make_embeddings(s)
         failed_gate = False
+        ranks: dict[str, dict[str, int | None]] = {}
         for method in args.method.split(","):
             report, path = run(method.strip(), load_questions(), index, emb.embed_documents, texts, meta)
             print(f"[{method}] 결과 파일: {path}")
@@ -58,6 +59,16 @@ def main(argv: list[str] | None = None) -> int:
                 if r["type"] == "A" and (r["any_rank"] is None or r["any_rank"] > gate["k"]):
                     print(f"  놓침 {r['id']} N={r['n']} 근거 {r['evidence_chapters']}장 순위 {r['any_rank']}: {r['question']}")
             failed_gate |= not gate["pass"] or report["l4_leak_questions"] > 0
+            ranks[method.strip()] = {r["id"]: r["any_rank"] for r in report["rows"] if r["type"] == "A"}
+        if "dense" in ranks:
+            from sfqa.retrieval_eval import GATE_K as k
+            for method, rk in ranks.items():
+                if method == "dense":
+                    continue
+                hit = lambda r: r is not None and r <= k  # noqa: E731
+                gained = [i for i in rk if hit(rk[i]) and not hit(ranks["dense"][i])]
+                lost = [i for i in rk if hit(ranks["dense"][i]) and not hit(rk[i])]
+                print(f"[{method} 대 dense] recall@{k}에서 새로 찾음 {len(gained)}개 {gained}, 잃음 {len(lost)}개 {lost}")
         return 1 if failed_gate else 0
 
     if args.cmd == "gold-sheet":

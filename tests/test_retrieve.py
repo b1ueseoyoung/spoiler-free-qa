@@ -57,14 +57,50 @@ def test_covers_and_content_chapter(idx):
 
 
 def test_index_refuses_other_model_or_text(tmp_path, monkeypatch):
-    for name in ("INDEX_DIR", "VECTORS", "CHUNKS", "META"):
-        monkeypatch.setattr(index_mod, name, tmp_path / getattr(index_mod, name).name)
+    monkeypatch.setattr(index_mod, "INDEX_ROOT", tmp_path)
     texts = {1: TEXTS[1], 2: TEXTS[2]}
-    meta = index_mod.build_index("model-a", EMB, texts)
-    assert json.loads((tmp_path / "meta.json").read_text())["n_chunks"] == meta["n_chunks"]
-    chunks, vectors, _ = index_mod.load_index("model-a", texts)
+    meta = index_mod.build_index("org/model-a", EMB, texts)
+    assert json.loads((tmp_path / "org__model-a" / "meta.json").read_text())["n_chunks"] == meta["n_chunks"]
+    texts_ok = texts
+    chunks, vectors, _ = index_mod.load_index("org/model-a", texts_ok)
     assert len(chunks) == vectors.shape[0]
     with pytest.raises(index_mod.IndexMismatch):
-        index_mod.load_index("model-b", texts)
+        index_mod.load_index("org/model-b", texts)  # 다른 모델의 색인은 따로 있어야 한다
     with pytest.raises(index_mod.IndexMismatch):
-        index_mod.load_index("model-a", {1: TEXTS[1], 2: TEXTS[2] + " 고친 문장."})
+        index_mod.load_index("org/model-a", {1: TEXTS[1], 2: TEXTS[2] + " 고친 문장."})
+
+
+from sfqa.bm25 import PrefixBM25, tokenize_many  # noqa: E402
+from sfqa.retrieve import rrf  # noqa: E402
+
+
+@pytest.mark.parametrize("method", ["bm25", "hybrid"])
+@pytest.mark.parametrize("n", [1, 7, 19])
+def test_bm25_and_hybrid_never_return_after_n(idx, method, n):
+    q = np.asarray(EMB.embed_query("제19장의 3번째 문장이다."))
+    terms = tokenize_many(["제19장의 3번째 문장이다."])[0]
+    hits = idx.search(q, n, 50, method, terms)
+    assert hits and all(c.chapter <= n for c, _ in hits)
+
+
+def test_bm25_idf_uses_only_docs_up_to_n():
+    docs = [["초봉", "약국"], ["초봉", "서울"], ["형보", "서울"], ["서울", "서울"]]
+    bm = PrefixBM25(docs)
+    # '서울'은 앞 2개 문서에서 1번, 4개 문서 전체에서는 3번 나온다. 앞 2개만 볼 때 IDF가 더 커야 한다.
+    two = bm.scores(["서울"], 2)
+    four = bm.scores(["서울"], 4)
+    assert len(two) == 2 and two[1] > 0 and two[1] > four[1]
+    assert bm.scores(["형보"], 2).sum() == 0  # 3번째 문서에만 있는 낱말은 N 이하에서 점수가 없다
+
+
+def test_bm25_finds_name_match():
+    docs = tokenize_many(["초봉이는 제중당 약국에 다닌다.", "형보가 서울로 올라간다.", "승재가 개복동에 왕진을 간다."])
+    bm = PrefixBM25(docs)
+    assert int(np.argmax(bm.scores(tokenize_many(["초봉이가 일하는 약국은?"])[0], 3))) == 0
+    assert int(np.argmax(bm.scores(tokenize_many(["형보는 어디로 가나?"])[0], 3))) == 1
+
+
+def test_rrf_prefers_agreement_and_breaks_ties_stably():
+    out = rrf([[1, 2, 3], [2, 1, 3]], k=3)
+    assert [i for i, _ in out] == [1, 2, 3]  # 1과 2가 동점이면 앞 목록 순위가 높은 1
+    assert rrf([[5], [5]], k=1)[0][0] == 5

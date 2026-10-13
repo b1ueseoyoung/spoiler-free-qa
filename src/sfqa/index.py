@@ -19,10 +19,12 @@ from sfqa.chunk import Chunk, chunk_corpus
 from sfqa.paths import DATA
 from sfqa.textnorm import search_text
 
-INDEX_DIR = DATA / "index"
-VECTORS = INDEX_DIR / "vectors.npy"
-CHUNKS = INDEX_DIR / "chunks.jsonl"
-META = INDEX_DIR / "meta.json"
+INDEX_ROOT = DATA / "index"
+
+
+def index_dir(embed_model: str):
+    """모델마다 색인 폴더를 따로 둔다(data/index/<모델 이름>). 모델끼리 비교할 수 있게."""
+    return INDEX_ROOT / embed_model.replace("/", "__")
 
 
 class IndexMismatch(RuntimeError):
@@ -53,27 +55,29 @@ def normalize_rows(m: np.ndarray) -> np.ndarray:
 def build_index(embed_model: str, embeddings: Embeddings, texts: Mapping[int, str]) -> dict:
     chunks = chunk_corpus(texts)
     vectors = normalize_rows(np.asarray(embeddings.embed_documents([search_text(c.text) for c in chunks])))
-    INDEX_DIR.mkdir(parents=True, exist_ok=True)
-    np.save(VECTORS, vectors)
-    with CHUNKS.open("w", encoding="utf-8") as fh:
+    d = index_dir(embed_model)
+    d.mkdir(parents=True, exist_ok=True)
+    np.save(d / "vectors.npy", vectors)
+    with (d / "chunks.jsonl").open("w", encoding="utf-8") as fh:
         for c in chunks:
             fh.write(json.dumps(c.__dict__, ensure_ascii=False) + "\n")
     meta = {**expected_meta(embed_model, texts), "dim": int(vectors.shape[1]), "n_chunks": len(chunks),
             "created_at": datetime.now(timezone.utc).isoformat(timespec="seconds")}
-    META.write_text(json.dumps(meta, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    (d / "meta.json").write_text(json.dumps(meta, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return meta
 
 
 def load_index(embed_model: str, texts: Mapping[int, str]) -> tuple[list[Chunk], np.ndarray, dict]:
-    if not META.exists():
-        raise IndexMismatch("색인이 없다. `uv run sfqa index`로 먼저 만든다")
-    meta = json.loads(META.read_text(encoding="utf-8"))
+    d = index_dir(embed_model)
+    if not (d / "meta.json").exists():
+        raise IndexMismatch(f"{embed_model} 색인이 없다. `uv run sfqa index`로 먼저 만든다")
+    meta = json.loads((d / "meta.json").read_text(encoding="utf-8"))
     want = expected_meta(embed_model, texts)
     diff = [k for k in want if meta.get(k) != want[k]]
     if diff:
         raise IndexMismatch(f"색인이 지금 설정과 다르다({', '.join(diff)}). `uv run sfqa index`로 다시 만든다")
-    chunks = [Chunk(**json.loads(line)) for line in CHUNKS.read_text(encoding="utf-8").splitlines() if line]
-    vectors = np.load(VECTORS)
+    chunks = [Chunk(**json.loads(line)) for line in (d / "chunks.jsonl").read_text(encoding="utf-8").splitlines() if line]
+    vectors = np.load(d / "vectors.npy")
     if len(chunks) != vectors.shape[0]:
         raise IndexMismatch("청크 수와 벡터 수가 다르다. 다시 만든다")
     return chunks, vectors, meta
