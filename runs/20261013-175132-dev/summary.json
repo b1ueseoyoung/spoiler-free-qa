@@ -1,0 +1,103 @@
+{
+  "run": "20261013-175132-dev",
+  "auto": {
+    "C3": {
+      "A": {
+        "correct": 3,
+        "total": 6,
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "leak_shown": 0,
+        "answered": 5,
+        "kept_quote": 5,
+        "chapter_match": 4,
+        "latency_s": 17.994,
+        "input_tokens": 47320,
+        "output_tokens": 1005,
+        "wrong": 2,
+        "missed": 1
+      },
+      "B": {
+        "abstained": 3,
+        "total": 4,
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "leak_shown": 0,
+        "latency_s": 3.513,
+        "input_tokens": 31790,
+        "output_tokens": 158,
+        "answered": 1
+      },
+      "C": {
+        "abstained": 2,
+        "total": 2,
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "leak_shown": 0,
+        "latency_s": 1.3479999999999999,
+        "input_tokens": 16250,
+        "output_tokens": 34
+      }
+    },
+    "C4": {
+      "A": {
+        "correct": 3,
+        "total": 6,
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "leak_shown": 0,
+        "answered": 5,
+        "kept_quote": 5,
+        "chapter_match": 4,
+        "latency_s": 17.994,
+        "input_tokens": 47320,
+        "output_tokens": 1005,
+        "wrong": 2,
+        "missed": 1
+      },
+      "B": {
+        "abstained": 3,
+        "total": 4,
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "leak_shown": 0,
+        "latency_s": 3.513,
+        "input_tokens": 31790,
+        "output_tokens": 158,
+        "answered": 1
+      },
+      "C": {
+        "abstained": 2,
+        "total": 2,
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "leak_shown": 0,
+        "latency_s": 1.3479999999999999,
+        "input_tokens": 16250,
+        "output_tokens": 34
+      }
+    }
+  },
+  "targets": [
+    "C3 L4 누출 문항 0개 (목표 0) → 달성",
+    "C4 L4 누출 문항 0개 (목표 0) → 달성",
+    "C4 B 누출(L1~L3) 0/4 (목표 0) → 달성",
+    "C4 C 보류 2/2 (목표 90% 이상) → 달성"
+  ],
+  "review_rows": 8,
+  "gold_review_status": {
+    "pre-human-review": 12
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "split": "dev",
+  "conditions": [
+    "C0",
+    "C1",
+    "C2",
+    "C3",
+    "C4"
+  ],
+  "limit": null,
+  "k": 18,
+  "replay": false,
+  "questions": 12,
+  "max_calls": 60,
+  "git": {
+    "head": "5022933",
+    "dirty": false
+  },
+  "prompt_hash": "df715fb634899768",
+  "schema_sha": "d857be894638ab0d",
+  "gold_sha": "53977d12011faa64",
+  "entities_sha": "112f5527e4a4ea53",
+  "model": {
+    "llm": "qwen/qwen3.6-35b-a3b",
+    "embed": "text-embedding-kure-v1",
+    "seed": 20261013,
+    "temperature": 0,
+    "max_tokens": 800,
+    "reasoning_effort": "none",
+    "base_url": "http://127.0.0.1:1234/v1"
+  },
+  "cassette": "eval/cassettes/dev.jsonl",
+  "started_at": "2026-10-13T17:48:51",
+  "records": 60,
+  "complete": true,
+  "model_calls": 41,
+  "finished_at": "2026-10-13T17:50:57"
+}

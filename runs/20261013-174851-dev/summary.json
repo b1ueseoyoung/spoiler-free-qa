@@ -1,0 +1,236 @@
+{
+  "run": "20261013-174851-dev",
+  "auto": {
+    "C0": {
+      "A": {
+        "wrong": 1,
+        "total": 6,
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "leak_shown": 0,
+        "answered": 2,
+        "kept_quote": 0,
+        "chapter_match": 0,
+        "latency_s": 10.149,
+        "input_tokens": 1366,
+        "output_tokens": 213,
+        "missed": 4,
+        "correct": 1
+      },
+      "B": {
+        "answered": 2,
+        "total": 4,
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "leak_shown": 0,
+        "latency_s": 2.027,
+        "input_tokens": 908,
+        "output_tokens": 85,
+        "abstained": 2
+      },
+      "C": {
+        "ungrounded": 1,
+        "total": 2,
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "leak_shown": 0,
+        "latency_s": 0.8200000000000001,
+        "input_tokens": 450,
+        "output_tokens": 36,
+        "abstained": 1
+      }
+    },
+    "C1": {
+      "A": {
+        "correct": 4,
+        "total": 6,
+        "L1": 1,
+        "L2": 0,
+        "L3": 0,
+        "L4": 4,
+        "leak_shown": 1,
+        "answered": 5,
+        "kept_quote": 4,
+        "chapter_match": 3,
+        "latency_s": 31.04,
+        "input_tokens": 46836,
+        "output_tokens": 862,
+        "missed": 1,
+        "wrong": 1
+      },
+      "B": {
+        "answered": 3,
+        "total": 4,
+        "L1": 2,
+        "L2": 3,
+        "L3": 2,
+        "L4": 4,
+        "leak_shown": 3,
+        "latency_s": 20.023,
+        "input_tokens": 31284,
+        "output_tokens": 581,
+        "abstained": 1
+      },
+      "C": {
+        "abstained": 2,
+        "total": 2,
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 1,
+        "leak_shown": 0,
+        "latency_s": 7.782,
+        "input_tokens": 16198,
+        "output_tokens": 34
+      }
+    },
+    "C2": {
+      "A": {
+        "correct": 4,
+        "total": 6,
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "leak_shown": 0,
+        "answered": 6,
+        "kept_quote": 6,
+        "chapter_match": 5,
+        "latency_s": 24.319,
+        "input_tokens": 46828,
+        "output_tokens": 974,
+        "wrong": 2
+      },
+      "B": {
+        "abstained": 3,
+        "total": 4,
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "leak_shown": 0,
+        "latency_s": 9.629,
+        "input_tokens": 31466,
+        "output_tokens": 203,
+        "answered": 1
+      },
+      "C": {
+        "abstained": 2,
+        "total": 2,
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "leak_shown": 0,
+        "latency_s": 7.452999999999999,
+        "input_tokens": 16086,
+        "output_tokens": 34
+      }
+    },
+    "C3": {
+      "A": {
+        "correct": 4,
+        "total": 6,
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "leak_shown": 0,
+        "answered": 5,
+        "kept_quote": 5,
+        "chapter_match": 4,
+        "latency_s": 25.500000000000004,
+        "input_tokens": 47320,
+        "output_tokens": 1013,
+        "wrong": 1,
+        "missed": 1
+      },
+      "B": {
+        "abstained": 3,
+        "total": 4,
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "leak_shown": 0,
+        "latency_s": 12.972000000000001,
+        "input_tokens": 31790,
+        "output_tokens": 345,
+        "answered": 1
+      },
+      "C": {
+        "abstained": 2,
+        "total": 2,
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "leak_shown": 0,
+        "latency_s": 8.686,
+        "input_tokens": 16250,
+        "output_tokens": 34
+      }
+    },
+    "C4": {
+      "A": {
+        "correct": 4,
+        "total": 6,
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "leak_shown": 0,
+        "answered": 5,
+        "kept_quote": 5,
+        "chapter_match": 4,
+        "latency_s": 25.500000000000004,
+        "input_tokens": 47320,
+        "output_tokens": 1013,
+        "wrong": 1,
+        "missed": 1
+      },
+      "B": {
+        "abstained": 3,
+        "total": 4,
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "leak_shown": 0,
+        "latency_s": 12.972000000000001,
+        "input_tokens": 31790,
+        "output_tokens": 345,
+        "answered": 1
+      },
+      "C": {
+        "abstained": 2,
+        "total": 2,
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "leak_shown": 0,
+        "latency_s": 8.686,
+        "input_tokens": 16250,
+        "output_tokens": 34
+      }
+    }
+  },
+  "targets": [
+    "C2 L4 누출 문항 0개 (목표 0) → 달성",
+    "C3 L4 누출 문항 0개 (목표 0) → 달성",
+    "C4 L4 누출 문항 0개 (목표 0) → 달성",
+    "C4 B 누출(L1~L3) 0/4 (목표 0) → 달성",
+    "C4 C 보류 2/2 (목표 90% 이상) → 달성"
+  ],
+  "review_rows": 28,
+  "gold_review_status": {
+    "pre-human-review": 12
+  }
+}
