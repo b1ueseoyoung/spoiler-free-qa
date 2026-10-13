@@ -84,11 +84,6 @@ def create_app(env_factory: Callable[[], Env]) -> FastAPI:
     def index() -> FileResponse:
         return FileResponse(STATIC / "index.html")
 
-    @app.get("/b")
-    def variant_b() -> FileResponse:
-        """디자인 B안(Botanical 레퍼런스). A안과 같은 API를 쓴다."""
-        return FileResponse(STATIC / "b.html")
-
     @app.get("/api/chapters")
     def list_chapters() -> list[dict]:
         return chapters()

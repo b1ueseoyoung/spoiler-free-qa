@@ -63,9 +63,8 @@ def test_serve_refuses_non_loopback_host():
         serve(host="0.0.0.0")
 
 
-@pytest.mark.parametrize("path", ["/", "/b"])
-def test_pages_have_no_external_resources(path):
-    r = TestClient(create_app(lambda: None)).get(path)
+def test_page_has_no_external_resources():
+    r = TestClient(create_app(lambda: None)).get("/")
     assert r.status_code == 200 and "/api/ask" in r.text
     assert "http://" not in r.text and "https://" not in r.text  # 글꼴·CDN 없이 로컬에서만 돈다
 
@@ -75,5 +74,4 @@ def test_pretendard_is_served_locally_with_license():
     font = c.get("/fonts/PretendardVariable.woff2")
     assert font.status_code == 200 and len(font.content) > 1_000_000
     assert "SIL OPEN FONT LICENSE" in c.get("/fonts/OFL.txt").text.upper()
-    for path in ("/", "/b"):
-        assert "/fonts/PretendardVariable.woff2" in c.get(path).text
+    assert "/fonts/PretendardVariable.woff2" in c.get("/").text
