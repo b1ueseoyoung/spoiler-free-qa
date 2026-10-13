@@ -15,7 +15,7 @@
       윗변이 꺾인 주황 푸터 판과 그 위의 큰 워드마크, 글자가 차오르는 등장 효과.
     - 주황은 의미가 있는 곳에만 쓴다: 보내기, 답마다 붙는 '찾은 범위', 비교 모드의 '아직 안 읽은 장' 인용.
     - 답하지 않을 때 '스포일러 막음' 같은 표시는 하지 않는다. 그 표시 자체가 '뒤에 뭔가 있다'는 힌트가 된다.
-    - 글꼴은 Pretendard(OFL)를 앱이 직접 준다(외부 글꼴 서버 없음).
+    - 글꼴은 Pretendard(OFL) 하나로 통일한다(한글·영문·숫자 모두). 앱이 직접 준다(외부 글꼴 서버 없음).
   */
   :root {
     --bg: #121212; --panel: #1b1b1b; --ink: #f2efe9; --mute: rgba(242, 239, 233, .56); --hair: rgba(242, 239, 233, .12);
@@ -23,17 +23,14 @@
     --accent: #dd8b6e; --on-accent: #121212;
     --gutter: clamp(16px, 2.4vw, 36px);
     --sans: "Pretendard", "Apple SD Gothic Neo", system-ui, sans-serif;
-    /* 숫자·영문은 모노스페이스, 한글은 모노 글꼴에 없으므로 Pretendard로 이어진다 */
-    --mono: ui-monospace, "SF Mono", Menlo, "Pretendard", monospace;
     color-scheme: dark;
   }
   * { box-sizing: border-box; }
   html, body { margin: 0; background: var(--bg); color: var(--ink); }
   body { font-family: var(--sans); font-size: 15px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
   button, input, textarea, a { font: inherit; color: inherit; }
-  /* 작은 라벨: 한글이 들어가므로 Pretendard. 모노스페이스는 숫자·영문만 있는 곳(장 번호, 푸터 영문 줄)에만 쓴다 */
-  .small { font-family: var(--sans); font-size: 12px; font-weight: 500; letter-spacing: .01em; font-variant-numeric: tabular-nums; }
-  .mono { font-family: var(--mono); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; }
+  /* 작은 라벨. 한글·영문·숫자 모두 Pretendard 하나로 쓰고, 숫자는 폭을 맞춘다(tabular-nums) */
+  .small { font-size: 12px; font-weight: 500; letter-spacing: .01em; font-variant-numeric: tabular-nums; }
 
   /* 위 */
   .top { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 18px var(--gutter);
@@ -41,7 +38,7 @@
   .brand { display: flex; align-items: center; gap: 14px; }
   .brand b { font-weight: 700; font-size: 15px; letter-spacing: -.01em; text-transform: none; font-family: var(--sans); }
   .chip { display: inline-flex; align-items: center; gap: 6px; background: var(--accent); color: var(--on-accent);
-          padding: 4px 8px; font-family: var(--sans); font-size: 11px; font-weight: 700; letter-spacing: .01em;
+          padding: 4px 8px; font-size: 11px; font-weight: 700; letter-spacing: .01em;
           font-variant-numeric: tabular-nums; }
   .menu { display: flex; gap: 18px; align-items: center; }
   .menu button { background: none; border: 0; padding: 0; cursor: pointer; color: var(--mute); }
@@ -63,7 +60,7 @@
   .chapters label { display: grid; grid-template-columns: 2.6em 1fr auto; align-items: baseline; gap: 8px; padding: 7px 0;
                     border-bottom: 1px solid var(--hair); cursor: pointer; }
   .chapters input { position: absolute; opacity: 0; pointer-events: none; }
-  .chapters .no { font-family: var(--mono); font-size: 12px; color: var(--mute); font-variant-numeric: tabular-nums; }
+  .chapters .no { font-size: 12px; font-weight: 600; color: var(--mute); font-variant-numeric: tabular-nums; }
   .chapters .title { font-size: 13px; color: var(--mute); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .chapters .unread .title { opacity: .45; }
   .chapters label:hover .title, .chapters label:hover .no { color: var(--ink); }
@@ -202,7 +199,7 @@
     </ul>
   </div>
   <div class="wordmark" id="wordmark" aria-hidden="true"><span>탁</span><span>류</span></div>
-  <div class="copy mono"><span>SPOILER-FREE Q&amp;A · LOCAL LM STUDIO</span><span>PROTOTYPE · 2026</span></div>
+  <div class="copy small"><span>SPOILER-FREE Q&amp;A · LOCAL LM STUDIO</span><span>PROTOTYPE · 2026</span></div>
 </footer>
 
 <script>
