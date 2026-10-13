@@ -1,0 +1,223 @@
+{
+  "work": {
+    "page": "탁류",
+    "revid": 124457,
+    "timestamp": "2014-09-15T07:24:51Z",
+    "sha256": "dfae1108d56f56e373774ffb8823d18f1b88f1e4cdf332e1a8f332f98339ff2a",
+    "license_templates": [
+      "PD-old-50"
+    ]
+  },
+  "chapters": [
+    {
+      "chapter": 1,
+      "page": "탁류/제1장",
+      "toc_title": "인간기념물",
+      "revid": 228023,
+      "timestamp": "2021-12-21T12:54:41Z",
+      "sha256": "d9c5ec6a449e66f7fc097b4a9604aaec007aff63789c156b9281cdefbac8c27a",
+      "chars": 18765,
+      "fetched_at": "2026-10-13T06:21:08+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=228023"
+    },
+    {
+      "chapter": 2,
+      "page": "탁류/제2장",
+      "toc_title": "생활 제일과(第一課)",
+      "revid": 124459,
+      "timestamp": "2014-09-15T07:25:19Z",
+      "sha256": "7fdb2688347bc891c3fd38e0f8928c3232249870d7fd6be3b003dd4bf1ce84db",
+      "chars": 22247,
+      "fetched_at": "2026-10-13T06:21:08+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=124459"
+    },
+    {
+      "chapter": 3,
+      "page": "탁류/제3장",
+      "toc_title": "신판(新版)「흥부전(興甫傳)」",
+      "revid": 228024,
+      "timestamp": "2021-12-21T12:55:50Z",
+      "sha256": "137bbcc3d8e632c4e7670413d52e42f55cd93d3f188a20b693e2f7a4e3f200aa",
+      "chars": 18738,
+      "fetched_at": "2026-10-13T06:21:08+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=228024"
+    },
+    {
+      "chapter": 4,
+      "page": "탁류/제4장",
+      "toc_title": "'……생애는 방안지라!'",
+      "revid": 124461,
+      "timestamp": "2014-09-15T07:25:38Z",
+      "sha256": "4162f96d3e6db598be2935b2ae205ad895c01925598bc73dcb6a7b9928cec073",
+      "chars": 22626,
+      "fetched_at": "2026-10-13T06:21:08+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=124461"
+    },
+    {
+      "chapter": 5,
+      "page": "탁류/제5장",
+      "toc_title": "아씨 행장기(行狀記)",
+      "revid": 124462,
+      "timestamp": "2014-09-15T07:25:46Z",
+      "sha256": "cd2003825049f80cc0ffd0f33ce9320a3ebe7f0937fb3ab7db0b36c514dbe43a",
+      "chars": 12571,
+      "fetched_at": "2026-10-13T06:21:08+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=124462"
+    },
+    {
+      "chapter": 6,
+      "page": "탁류/제6장",
+      "toc_title": "조그마한 사업",
+      "revid": 124463,
+      "timestamp": "2014-09-15T07:25:54Z",
+      "sha256": "248ff236daf3ca453d81584a6e61bca54f1be4ab72b6bda2b890c99016dc3779",
+      "chars": 14895,
+      "fetched_at": "2026-10-13T06:21:08+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=124463"
+    },
+    {
+      "chapter": 7,
+      "page": "탁류/제7장",
+      "toc_title": "천냥만냥",
+      "revid": 228025,
+      "timestamp": "2021-12-21T12:58:47Z",
+      "sha256": "902bbf98b8da20eda26e397662063488ffd56671688e1cfd234b983cdc08eebc",
+      "chars": 27224,
+      "fetched_at": "2026-10-13T06:21:08+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=228025"
+    },
+    {
+      "chapter": 8,
+      "page": "탁류/제8장",
+      "toc_title": "외나무다리에서",
+      "revid": 124465,
+      "timestamp": "2014-09-15T07:26:12Z",
+      "sha256": "be3d2afe3999aec39dc3ea74b1eebcbbb330ef09d546b4fd7be37b3b8e883693",
+      "chars": 26583,
+      "fetched_at": "2026-10-13T06:21:08+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=124465"
+    },
+    {
+      "chapter": 9,
+      "page": "탁류/제9장",
+      "toc_title": "행화의 변(辯)",
+      "revid": 124466,
+      "timestamp": "2014-09-15T07:26:22Z",
+      "sha256": "8ccc0e381fd01260c674514b99da83c5ce34895e1c7435238f0437ed42c0bfac",
+      "chars": 9915,
+      "fetched_at": "2026-10-13T06:21:08+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=124466"
+    },
+    {
+      "chapter": 10,
+      "page": "탁류/제10장",
+      "toc_title": "태풍",
+      "revid": 124467,
+      "timestamp": "2014-09-15T07:26:32Z",
+      "sha256": "dac73da76db9db692c25c6998f63bcff9af8c76b550d50987496c30a44236d14",
+      "chars": 40436,
+      "fetched_at": "2026-10-13T06:21:08+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=124467"
+    },
+    {
+      "chapter": 11,
+      "page": "탁류/제11장",
+      "toc_title": "대피선(待避線)",
+      "revid": 124468,
+      "timestamp": "2014-09-15T07:26:39Z",
+      "sha256": "1b4ca6d70009be7c804b6fcf1c3159719c55d12df06d02660d7a7191dea17a49",
+      "chars": 4886,
+      "fetched_at": "2026-10-13T06:21:08+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=124468"
+    },
+    {
+      "chapter": 12,
+      "page": "탁류/제12장",
+      "toc_title": "만만한 자의 성명은……",
+      "revid": 124469,
+      "timestamp": "2014-09-15T07:26:49Z",
+      "sha256": "21cdb7468a04dcc30e33d4ef997d428b7b97015ec55e0651c1126fc1c95a2b04",
+      "chars": 24796,
+      "fetched_at": "2026-10-13T06:21:08+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=124469"
+    },
+    {
+      "chapter": 13,
+      "page": "탁류/제13장",
+      "toc_title": "흘렸던 씨앗",
+      "revid": 124470,
+      "timestamp": "2014-09-15T07:26:57Z",
+      "sha256": "0111212fd91d9bfad43e4a4a62f993969ab8eb2d176b6f0bc2c9737163c22e6c",
+      "chars": 25904,
+      "fetched_at": "2026-10-13T06:21:08+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=124470"
+    },
+    {
+      "chapter": 14,
+      "page": "탁류/제14장",
+      "toc_title": "슬픈 곡예사(曲藝師)",
+      "revid": 124471,
+      "timestamp": "2014-09-15T07:27:07Z",
+      "sha256": "6bcebac8c81a31364d70a8564d61d3c9d8ad51a46b160e9972c4638f12b0aa63",
+      "chars": 37739,
+      "fetched_at": "2026-10-13T06:21:08+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=124471"
+    },
+    {
+      "chapter": 15,
+      "page": "탁류/제15장",
+      "toc_title": "식욕의 방법론",
+      "revid": 124472,
+      "timestamp": "2014-09-15T07:27:15Z",
+      "sha256": "190e81245df985449521dcb6e234dd45d237e55abf9d9be100de192df706b6a4",
+      "chars": 39261,
+      "fetched_at": "2026-10-13T06:21:08+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=124472"
+    },
+    {
+      "chapter": 16,
+      "page": "탁류/제16장",
+      "toc_title": "탄력 있는 '아침'",
+      "revid": 124473,
+      "timestamp": "2014-09-15T07:27:27Z",
+      "sha256": "3b20bf817496c26f03fdf5043ceb8aa63ea118cfb6fc6d0cd7b7d9e78cce6ff8",
+      "chars": 21797,
+      "fetched_at": "2026-10-13T06:21:08+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=124473"
+    },
+    {
+      "chapter": 17,
+      "page": "탁류/제17장",
+      "toc_title": "노동(老童) '훈련일기(訓戀日記)'",
+      "revid": 228027,
+      "timestamp": "2021-12-21T13:03:28Z",
+      "sha256": "3708363040e9862c3b7324158605152cb6ad2681f6757851103564f04da64b98",
+      "chars": 28376,
+      "fetched_at": "2026-10-13T06:21:08+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=228027"
+    },
+    {
+      "chapter": 18,
+      "page": "탁류/제18장",
+      "toc_title": "내보살 외야차(內菩薩外夜叉)",
+      "revid": 124475,
+      "timestamp": "2014-09-15T07:27:44Z",
+      "sha256": "010d5368edd4365491554c004e8bbdb02cb6edac0b75cdf37469599557ad897e",
+      "chars": 17678,
+      "fetched_at": "2026-10-13T06:21:08+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=124475"
+    },
+    {
+      "chapter": 19,
+      "page": "탁류/제19장",
+      "toc_title": "서곡(序曲)",
+      "revid": 124476,
+      "timestamp": "2014-09-15T07:27:52Z",
+      "sha256": "36f654bd0593568047d3d7c4a2c14b7bae8d6d7db57ce13e9e98c40cd264f715",
+      "chars": 6173,
+      "fetched_at": "2026-10-13T06:21:08+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=124476"
+    }
+  ],
+  "note": "원문은 공유 저작물(작가 채만식 1950년 사망). 위키문헌 편집자가 붙인 틀은 정제 단계에서 지운다."
+}
