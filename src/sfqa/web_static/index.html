@@ -50,7 +50,11 @@
            grid-template-columns: minmax(220px, 1fr) 2fr; gap: var(--gutter); align-items: end; }
   .intro h1 { grid-column: 2; margin: 0; font-weight: 600; font-size: clamp(30px, 4.2vw, 60px); line-height: 1.12; letter-spacing: -.035em; }
   .intro h1 em { font-style: normal; color: var(--accent); }
-  .intro p { grid-column: 2; margin: 0; color: var(--mute); max-width: 34em; }
+  .intro p { grid-column: 2; margin: 0; color: var(--mute); max-width: 34em; word-break: keep-all; text-wrap: pretty; }
+  .intro .notice { grid-column: 2; display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 0; padding: 0; list-style: none; }
+  .notice li { border: 1px solid var(--hair); color: var(--ink); padding: 5px 10px; font-size: 12px; }
+  .notice li::before { content: ""; display: inline-block; width: 6px; height: 6px; margin-right: 7px;
+                       vertical-align: 1px; border-radius: 50%; background: var(--accent); }
 
   /* 본문 그리드 */
   .grid { display: grid; grid-template-columns: minmax(220px, 1fr) 2fr; gap: var(--gutter); padding: 0 var(--gutter); }
@@ -123,7 +127,7 @@
   footer { margin-top: 72px; background: var(--accent); color: var(--on-accent); padding: 64px var(--gutter) 18px;
            clip-path: polygon(0 28px, 31% 28px, 31% 0, 100% 0, 100% 100%, 0 100%); }
   .foot { display: flex; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
-  .foot p { margin: 0; max-width: 30em; font-size: 15px; line-height: 1.5; }
+  .foot p { margin: 0; max-width: 30em; font-size: 15px; line-height: 1.5; word-break: keep-all; text-wrap: pretty; }
   .foot ul { list-style: none; margin: 0; padding: 0; text-align: right; display: grid; gap: 4px; }
   .wordmark { margin: clamp(24px, 4vw, 48px) 0 0; font-weight: 700; font-size: clamp(110px, 27vw, 420px); line-height: .82;
               letter-spacing: -.06em; display: flex; overflow: hidden; padding-bottom: .04em; }
@@ -134,7 +138,7 @@
 
   @media (max-width: 760px) {
     .intro, .grid { grid-template-columns: 1fr; }
-    .intro h1, .intro p { grid-column: 1; }
+    .intro h1, .intro p, .intro .notice { grid-column: 1; }
     .filter { position: static; padding-bottom: 12px; }
     .chapters { display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; border-top: 0; }
     .chapters label { grid-template-columns: 1fr; border: 1px solid var(--hair); text-align: center; padding: 6px 0; }
@@ -167,7 +171,8 @@
 
 <section class="intro" aria-labelledby="title">
   <h1 id="title">읽은 데까지만 답하는<br>「탁류」 <em>도우미</em></h1>
-  <p>읽은 장까지만 찾아서 답하고, 근거 문장과 장 번호를 붙여요. 아직 안 읽은 장의 내용은 답에 넣지 않습니다.</p>
+  <p>스포일러 걱정 없이 물어보세요.<br>읽은 장까지만 찾아보고, 근거 문장도 함께 보여 드려요.</p>
+  <ul class="notice" id="notice" aria-label="이용 안내" hidden></ul>
 </section>
 
 <main class="grid">
@@ -191,7 +196,7 @@
 
 <footer>
   <div class="foot">
-    <p>읽은 장까지만 찾아서 답하는 소설 도우미입니다. 모든 처리는 이 컴퓨터 안에서만 돌아가요.</p>
+    <p id="foot-note">다음 장이 궁금해도 결말은 지켜 드려요.<br>읽은 데까지만 답하는 스포일러 없는 독서 도우미.</p>
     <ul class="small">
       <li>채만식 「탁류」</li>
       <li>조선일보 1937–38</li>
@@ -199,7 +204,7 @@
     </ul>
   </div>
   <div class="wordmark" id="wordmark" aria-hidden="true"><span>탁</span><span>류</span></div>
-  <div class="copy small"><span>SPOILER-FREE Q&amp;A · LOCAL LM STUDIO</span><span>PROTOTYPE · 2026</span></div>
+  <div class="copy small"><span id="copy-tech">SPOILER-FREE Q&amp;A · LOCAL LM STUDIO</span><span>PROTOTYPE · 2026</span></div>
 </footer>
 
 <script>
@@ -324,6 +329,14 @@ if (reduce || !("IntersectionObserver" in window)) {
 }
 
 fetch("/api/chapters").then((r) => r.json()).then((list) => { chapterList = list; renderChapters(); });
+/* 공개 데모(Claude API)일 때는 처리 위치와 첫 응답 지연을 알린다 */
+fetch("/api/config").then((r) => r.json()).then((c) => {
+  if (!c.public) return;
+  $("notice").innerHTML = ["회원가입 없이 무료", "첫 질문은 준비하느라 조금 걸려요", "하루 질문 횟수 제한"]
+    .map((t) => `<li>${esc(t)}</li>`).join("");
+  $("notice").hidden = false;
+  $("copy-tech").textContent = "SPOILER-FREE Q&A · CLAUDE API · AWS LAMBDA";
+}).catch(() => {});
 emptyState();
 </script>
 </body>

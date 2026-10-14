@@ -230,6 +230,8 @@ class LocalEmbeddings(Embeddings):
         if self._model is None:
             from llama_cpp import Llama  # 컴파일된 확장이라 쓸 때만 불러온다
 
+            # mmap(기본)을 쓴다. Lambda에서 use_mmap=False로 한 번에 읽으면 첫 준비가 44초에서 80초로 늘고
+            # 메모리도 1.9GB까지 올라갔다(2026-10-14).
             self._model = Llama(model_path=str(resolve_gguf(self.model_name)), embedding=True, n_ctx=self.n_ctx,
                                 n_batch=self.n_ctx, n_ubatch=self.n_ctx, verbose=False)
         if self.expect_pooling:

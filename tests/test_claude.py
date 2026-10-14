@@ -69,3 +69,18 @@ def test_load_key_reads_only_that_line(tmp_path, monkeypatch):
     assert load_key(env)
     import os
     assert os.environ["ANTHROPIC_API_KEY"] == "test-value" and "OTHER" not in os.environ
+
+
+def test_load_key_from_ssm_parameter(tmp_path, monkeypatch):
+    monkeypatch.delenv("ANTHROPIC_API_KEY", raising=False)
+    monkeypatch.setenv("ANTHROPIC_API_KEY_SSM_PARAM", "/sfqa/anthropic-api-key")
+    calls = []
+
+    class FakeSSM:
+        def get_parameter(self, Name, WithDecryption):
+            calls.append((Name, WithDecryption))
+            return {"Parameter": {"Value": "ssm-test-value"}}
+
+    assert load_key(tmp_path / "없는.env", ssm=FakeSSM())
+    import os
+    assert os.environ["ANTHROPIC_API_KEY"] == "ssm-test-value" and calls == [("/sfqa/anthropic-api-key", True)]

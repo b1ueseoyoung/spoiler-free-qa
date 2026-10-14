@@ -86,8 +86,14 @@
   - 계정의 남는 동시 실행이 100 이하면 걸 수 없다(신규 계정). 이때는 위의 DynamoDB 상한에만 기댄다.
 - **Anthropic 한도에 닿을 때:** 지출 한도(400, 429 `enforced_spend_limit_reached`)와 속도 제한(429)에 걸리면 친절한 문구로 바꾸고 재시도하지 않는다.
 - **입력과 로그:** 질문 길이는 이미 300자로 제한돼 있다. CloudWatch 로그에는 시각, 상태, 토큰 수만 남기고 질문 본문은 남기지 않는다.
-- **IP 확인:** 함수 URL 뒤에서 실제 사용자 IP를 어느 값(`X-Forwarded-For` 등)으로 받는지 문서로 확인하지 못했다. 배포 뒤 로그로 확인하고 맞춘다.
+- **IP 확인:** 어댑터가 넣는 요청 정보(`x-amzn-request-context`)를 쓰기로 했다. 함수 URL에서 이 값이 실제로 들어오는지는 배포 뒤 로그로 확인한다.
 - **확인:** 상한, 제한, 한도 오류의 응답을 모델 없이 테스트로 확인한다(DynamoDB는 대역으로).
+- **구현(2026-10-14):** `limits.py`, `web.py`
+  - 세 칸(IP별 1분, IP별 하루, 전체 하루)을 TransactWriteItems 하나로 올린다. 하나라도 넘으면 아무것도 세지 않는다.
+  - 상한을 확인하지 못하면(DynamoDB 오류) 모델을 부르지 않고 503을 낸다.
+  - 사용자 IP는 Lambda Web Adapter가 넣는 `x-amzn-request-context`의 `http.sourceIp`로 읽는다. 공개 모드에서만 믿는다. X-Forwarded-For는 쓰지 않는다.
+  - `PUBLIC_DEMO=1`인데 `LIMITS_TABLE`이 없으면 서버가 시작하지 않는다. `LIMITS_TABLE=memory`는 이 맥에서 화면을 확인할 때만 쓴다.
+  - 로컬 확인 결과: Claude + GGUF + k=20으로 답 3.5초. 같은 분 안의 두 번째 질문은 상한 문구로 막혔다. 로그에 질문 본문이 없었다.
 
 ### 5. 이미지와 배포
 
@@ -108,6 +114,16 @@
 - **확인:**
   - 공개 주소에서 B·C 문항을 각 2개씩 손으로 물어 본다.
   - 콜드 스타트 시간, 응답 시간 중앙값, 실제 메모리 사용량(CloudWatch)을 잰다.
+
+- **진행(2026-10-14):**
+  - `Dockerfile`, `.dockerignore`(허용 목록), `infra/template.yaml`, `scripts/deploy.sh`, `infra/deploy-policy.json`
+  - 이미지 2.1GB(arm64). 이 맥에서 읽기 전용 파일 시스템으로 실행해, 첫 질문 5.1초(모델·색인 올리기 포함), 메모리 약 518MB를 확인했다.
+  - 지금 로그인된 IAM 사용자(`boogie`)에는 배포 권한이 없다. 배포 전용 사용자(`sfqa-deployer`, 정책 `infra/deploy-policy.json`)를 사용자가 만든다.
+
+### 도메인 (보류, 2026-10-14)
+
+- 함수 URL(`*.lambda-url.ap-northeast-2.on.aws`)을 그대로 쓴다. 커스텀 도메인은 CloudFront와 ACM이 필요하고, 사용자 IP를 읽는 방식도 바꿔야 한다.
+- 조사 결과(3년 총비용, 평판): 첫해만 싼 TLD는 갱신가가 비싸거나(.site, .store) 평판이 나쁘다(.xyz, .top, .click, .cc). 고른다면 .dev(Cloudflare, 첫해 8.2달러, 갱신 12.2달러, 평판 좋음).
 
 ### 6. 마무리
 

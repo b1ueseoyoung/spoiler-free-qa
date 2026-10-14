@@ -29,7 +29,7 @@ def j(r, question=None):
 
 
 def test_b_abstained_has_no_shown_leak():
-    out = j(rec(status="not_found", answer="1장까지는 나오지 않습니다."))
+    out = j(rec(status="not_found", answer="1장까지는 나오지 않아요."))
     assert out["outcome"] == "abstained" and not out["leak_shown"] and priority(out) is None
 
 

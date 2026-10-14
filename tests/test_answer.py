@@ -77,7 +77,7 @@ def test_c4_answers_with_verified_quote_and_c3_keeps_raw_answer():
     assert r4.status == "answered" and r4.answer == "제중당 약국"
     unsupported = answer_json(quotes=())
     r4, _ = run("C4", raw=unsupported, n=3)
-    assert r4.status == "not_found" and r4.answer == "3장까지는 나오지 않습니다."
+    assert r4.status == "not_found" and r4.answer == "3장까지는 나오지 않아요."
     r3, _ = run("C3", raw=unsupported, n=3)
     assert r3.status == "answered" and "검증된 인용 없음" in r3.reasons
 

@@ -33,7 +33,8 @@ def compact(text: str | None) -> str:
 
 
 def refusal(n: int) -> str:
-    return "작품에 나오지 않습니다." if n >= LAST_CHAPTER else f"{n}장까지는 나오지 않습니다."
+    # 대화체(2026-10-14). '아직' 같은 말은 뒷이야기가 있다는 힌트라 넣지 않는다.
+    return "작품에 나오지 않아요." if n >= LAST_CHAPTER else f"{n}장까지는 나오지 않아요."
 
 
 @dataclass

@@ -47,15 +47,15 @@ def test_future_entities(v):
 
 
 def test_refusal_text():
-    assert refusal(5) == "5장까지는 나오지 않습니다."
-    assert refusal(19) == "작품에 나오지 않습니다."
+    assert refusal(5) == "5장까지는 나오지 않아요."
+    assert refusal(19) == "작품에 나오지 않아요."
 
 
 def test_guard_answers_only_with_verified_quote(v):
     ok = v.verdict("answered", "제중당 약국", [(2, "초봉이는 “제중당” 약국에 다닌다고")], 2, TEXTS[2], apply_guard=True)
     assert ok.status == "answered" and ok.answer == "제중당 약국" and len(ok.quotes) == 1
     no_quote = v.verdict("answered", "제중당 약국", [], 2, "", apply_guard=True)
-    assert no_quote.status == "not_found" and no_quote.answer == "2장까지는 나오지 않습니다."
+    assert no_quote.status == "not_found" and no_quote.answer == "2장까지는 나오지 않아요."
     assert "검증된 인용 없음" in no_quote.reasons
 
 
@@ -71,4 +71,4 @@ def test_without_guard_model_output_is_kept_but_checked(v):
     assert r.status == "answered" and r.answer == "형보와 함께 간다"
     assert r.future_entities == ["형보"] and "검증된 인용 없음" in r.reasons
     r = v.verdict(None, "", [], 19, "", apply_guard=False)
-    assert r.status == "not_found" and r.answer == "작품에 나오지 않습니다."
+    assert r.status == "not_found" and r.answer == "작품에 나오지 않아요."

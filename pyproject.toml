@@ -28,6 +28,9 @@ gguf-embed = [
     "huggingface-hub>=0.30",
     "llama-cpp-python>=0.3.16",
 ]
+aws = [
+    "boto3>=1.40",
+]
 
 [build-system]
 requires = ["uv_build>=0.12.21,<0.13.0"]

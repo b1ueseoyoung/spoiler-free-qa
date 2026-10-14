@@ -4,7 +4,9 @@
 - thinking을 끈다. Sonnet 5.5는 disabled를 받지 않아 between_tools(effort high 이하)를 쓴다.
 - 서버 쪽 폴백은 쓰지 않는다. 안전 거절(stop_reason refusal)은 finish_reason "refusal"로 남겨 보류로 센다.
 - seed와 temperature는 보내지 않는다(LLMRequest 카세트 키에는 그대로 들어간다).
-- 키는 ANTHROPIC_API_KEY 환경 변수로만 받는다. 없으면 프로젝트 .env에서 그 한 줄만 읽어 환경 변수에 넣는다. 값은 출력하지 않는다.
+- 키는 ANTHROPIC_API_KEY 환경 변수로만 받는다. 없으면 차례로 찾아 환경 변수에 넣는다. 값은 출력하지 않는다.
+  - 배포(Lambda): ANTHROPIC_API_KEY_SSM_PARAM에 적힌 SSM Parameter Store 값(SecureString)
+  - 이 맥: 프로젝트 .env의 ANTHROPIC_API_KEY 한 줄
 - 카세트·응답 형식은 llm.LiveClient와 같다(LLMResponse). 그래서 평가 실행기와 채점기를 그대로 쓴다.
 """
 
@@ -20,6 +22,7 @@ from sfqa.llm import LLMRequest, LLMResponse, _load_cassette
 from sfqa.paths import ROOT
 
 KEY_ENV = "ANTHROPIC_API_KEY"
+SSM_PARAM_ENV = "ANTHROPIC_API_KEY_SSM_PARAM"
 # 모델 → (thinking, effort). LLMRequest.reasoning_effort에는 "between_tools:high"처럼 적어 카세트 키에 남긴다.
 THINKING_OFF = {"claude-sonnet-5-5": ({"type": "between_tools"}, "high")}
 # $/백만 토큰(입력, 출력). claude-api 스킬 2026-10-06 캐시 기준.
@@ -32,10 +35,21 @@ def effort_label(model: str) -> str:
     return f"{thinking['type']}:{effort}"
 
 
-def load_key(env_file: Path = ROOT / ".env") -> bool:
+def load_key(env_file: Path = ROOT / ".env", ssm=None) -> bool:
     """키가 있으면 True. .env에서는 ANTHROPIC_API_KEY 한 줄만 읽는다(다른 값은 건드리지 않는다)."""
     if os.environ.get(KEY_ENV):
         return True
+    param = os.environ.get(SSM_PARAM_ENV)
+    if param:
+        if ssm is None:
+            import boto3  # 배포 이미지에만 있다(aws extra)
+
+            ssm = boto3.client("ssm")
+        value = ssm.get_parameter(Name=param, WithDecryption=True)["Parameter"]["Value"]
+        if value:
+            os.environ[KEY_ENV] = value
+            return True
+        return False
     if not env_file.exists():
         return False
     for line in env_file.read_text(encoding="utf-8").splitlines():
