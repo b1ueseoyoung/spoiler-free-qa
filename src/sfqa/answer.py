@@ -59,15 +59,15 @@ class AnswerResult:
         return asdict(self)
 
 
-def make_env(s: Settings, k: int = 18, client: LiveClient | ReplayClient | None = None) -> Env:
+def make_env(s: Settings, k: int | None = None, client: LiveClient | ReplayClient | None = None) -> Env:
     from sfqa.gold import entity_index, load_entities, load_texts
     from sfqa.index import load_index
     from sfqa.llm import make_client, make_embeddings
 
     texts = load_texts()
-    chunks, vectors, _ = load_index(s.embed_model, texts)
+    chunks, vectors, _ = load_index(s.embed_model, texts, s.embed_provider)
     verifier = Verifier(texts, entity_index(load_entities(), texts))
-    return Env(s, ChapterIndex(chunks, vectors), make_embeddings(s), client or make_client(s), verifier, k)
+    return Env(s, ChapterIndex(chunks, vectors), make_embeddings(s), client or make_client(s), verifier, k or s.retrieve_k)
 
 
 def format_context(docs: list[Document]) -> str:

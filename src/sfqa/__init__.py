@@ -19,12 +19,13 @@ def main(argv: list[str] | None = None) -> int:
     sub.add_parser("index", help="청크를 나누고 임베딩 색인을 data/index에 만든다(LM Studio 임베딩을 부른다)")
     p_ret = sub.add_parser("retrieval-eval", help="검색만 따로 잰다: A 문항 recall@k, L4 누출(생성 모델은 안 부른다)")
     p_ret.add_argument("--method", default="dense", help="쉼표로 여러 개: dense, bm25, hybrid")
+    p_ret.add_argument("--k", type=int, help="관문을 볼 k(기본: 설정의 RETRIEVE_K, 없으면 18)")
     p_run = sub.add_parser("eval-run", help="정답지 문항을 조건별로 돌린다(카세트 기록, 호출 상한)")
     p_run.add_argument("--split", default="dev", choices=["dev", "test", "all"])
     p_run.add_argument("--conditions", default="C0,C1,C2,C3,C4")
     p_run.add_argument("--max-calls", type=int, required=True, help="실제 모델 호출 상한(카세트에 있으면 세지 않는다)")
     p_run.add_argument("--limit", type=int, help="앞에서부터 이 개수만")
-    p_run.add_argument("--k", type=int, default=18)
+    p_run.add_argument("--k", type=int, help="가져올 청크 수(기본: 설정의 RETRIEVE_K, 없으면 18)")
     p_run.add_argument("--replay", action="store_true", help="카세트만 쓴다(네트워크 없음)")
     p_run.add_argument("--cassette", help="카세트 이름(기본: split 이름). eval/cassettes/<이름>.jsonl")
     p_score = sub.add_parser("eval-score", help="실행 기록을 모델 없이 채점한다")
@@ -35,7 +36,7 @@ def main(argv: list[str] | None = None) -> int:
     p_ask = sub.add_parser("ask", help="질문 하나에 답한다(LM Studio를 부른다)")
     p_ask.add_argument("--upto", type=int, required=True, help="독자가 읽은 마지막 장(1~19)")
     p_ask.add_argument("--condition", default="C4", help="C0~C4. 기본 C4(최종 시스템)")
-    p_ask.add_argument("--k", type=int, default=18, help="가져올 청크 수")
+    p_ask.add_argument("--k", type=int, help="가져올 청크 수(기본: 설정의 RETRIEVE_K, 없으면 18)")
     p_ask.add_argument("question")
     p_cmp = sub.add_parser("compare-run", help="모델 비교: 모델을 하나씩 올려 KLUE 240 + test 44를 돌린다(docs/model-eval-spec.md)")
     p_cmp.add_argument("--models", default="all", help="쉼표로 여러 개, 또는 all / local")
@@ -70,8 +71,9 @@ def main(argv: list[str] | None = None) -> int:
         from sfqa.config import load_settings
         from sfqa.evaluate import run_eval
 
-        out, info = run_eval(load_settings(), args.split, [c.strip() for c in args.conditions.split(",")],
-                             args.max_calls, k=args.k, limit=args.limit, replay=args.replay, cassette_name=args.cassette)
+        s = load_settings()
+        out, info = run_eval(s, args.split, [c.strip() for c in args.conditions.split(",")],
+                             args.max_calls, k=args.k or s.retrieve_k, limit=args.limit, replay=args.replay, cassette_name=args.cassette)
         print(f"eval-run: {out}")
         print(f"  기록 {info['records']}건, 모델 호출 {info['model_calls']}회, "
               + ("완료" if info["complete"] else f"중간에 멈춤({info['stopped']})"))
@@ -120,7 +122,7 @@ def main(argv: list[str] | None = None) -> int:
         from sfqa.llm import make_embeddings
 
         s = load_settings()
-        meta = build_index(s.embed_model, make_embeddings(s), load_texts())
+        meta = build_index(s.embed_model, make_embeddings(s), load_texts(), s.embed_provider)
         print(f"index: 청크 {meta['n_chunks']}개, {meta['dim']}차원, {meta['embed_model']}")
         return 0
     if args.cmd == "retrieval-eval":
@@ -133,13 +135,13 @@ def main(argv: list[str] | None = None) -> int:
 
         s = load_settings()
         texts = load_texts()
-        chunks, vectors, meta = load_index(s.embed_model, texts)
+        chunks, vectors, meta = load_index(s.embed_model, texts, s.embed_provider)
         index = ChapterIndex(chunks, vectors)
         emb = make_embeddings(s)
         failed_gate = False
         ranks: dict[str, dict[str, int | None]] = {}
         for method in args.method.split(","):
-            report, path = run(method.strip(), load_questions(), index, emb.embed_documents, texts, meta)
+            report, path = run(method.strip(), load_questions(), index, emb.embed_documents, texts, meta, args.k or s.retrieve_k)
             print(f"[{method}] 결과 파일: {path}")
             for split, row in report["summary"].items():
                 cells = "  ".join(f"{k} {h}/{n}" for k, (h, n) in row.items())
@@ -154,7 +156,7 @@ def main(argv: list[str] | None = None) -> int:
             failed_gate |= not gate["pass"] or report["l4_leak_questions"] > 0
             ranks[method.strip()] = {r["id"]: r["any_rank"] for r in report["rows"] if r["type"] == "A"}
         if "dense" in ranks:
-            from sfqa.retrieval_eval import GATE_K as k
+            k = args.k or s.retrieve_k
             for method, rk in ranks.items():
                 if method == "dense":
                     continue

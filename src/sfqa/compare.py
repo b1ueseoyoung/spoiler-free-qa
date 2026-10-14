@@ -124,7 +124,7 @@ def make_env(s: Settings, client, emb_name: str, k: int = 18) -> Env:
     from sfqa.verify import Verifier
 
     texts = load_texts()
-    chunks, vectors, _ = load_index(s.embed_model, texts)
+    chunks, vectors, _ = load_index(s.embed_model, texts, s.embed_provider)
     emb = CachedEmbeddings(None, s.embed_model, CASSETTES / f"{emb_name}-query-embeddings.jsonl", replay=True)
     return Env(s, ChapterIndex(chunks, vectors), emb, client, Verifier(texts, entity_index(load_entities(), texts)), k)
 

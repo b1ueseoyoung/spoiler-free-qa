@@ -23,6 +23,12 @@ dependencies = [
 [project.scripts]
 sfqa = "sfqa:main"
 
+[project.optional-dependencies]
+gguf-embed = [
+    "huggingface-hub>=0.30",
+    "llama-cpp-python>=0.3.16",
+]
+
 [build-system]
 requires = ["uv_build>=0.12.21,<0.13.0"]
 build-backend = "uv_build"

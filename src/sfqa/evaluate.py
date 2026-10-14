@@ -19,7 +19,7 @@ from sfqa.answer import CONDITIONS, Env, build_chain
 from sfqa.config import Settings
 from sfqa.gold import ENTITIES, QUESTIONS, Question, entity_index, load_entities, load_questions, load_texts
 from sfqa.index import load_index
-from sfqa.llm import CachedEmbeddings, LiveClient, ReplayClient, make_chat, make_embeddings
+from sfqa.llm import CachedEmbeddings, LiveClient, ReplayClient, live_client, make_embeddings
 from sfqa.paths import ROOT
 from sfqa.prompts import prompt_hash
 from sfqa.retrieve import ChapterIndex
@@ -72,12 +72,12 @@ def select(questions: list[Question], split: str, limit: int | None) -> list[Que
 
 def make_eval_env(s: Settings, cassette: Path, emb_cassette: Path, replay: bool, k: int) -> Env:
     texts = load_texts()
-    chunks, vectors, _ = load_index(s.embed_model, texts)
+    chunks, vectors, _ = load_index(s.embed_model, texts, s.embed_provider)
     if replay:
         client = ReplayClient(cassette)
         emb = CachedEmbeddings(None, s.embed_model, emb_cassette, replay=True)
     else:
-        client = LiveClient(make_chat(s), cassette)
+        client = live_client(s, cassette)
         emb = CachedEmbeddings(make_embeddings(s), s.embed_model, emb_cassette)
     verifier = Verifier(texts, entity_index(load_entities(), texts))
     return Env(s, ChapterIndex(chunks, vectors), emb, client, verifier, k)

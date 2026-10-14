@@ -104,3 +104,13 @@ def test_rrf_prefers_agreement_and_breaks_ties_stably():
     out = rrf([[1, 2, 3], [2, 1, 3]], k=3)
     assert [i for i, _ in out] == [1, 2, 3]  # 1과 2가 동점이면 앞 목록 순위가 높은 1
     assert rrf([[5], [5]], k=1)[0][0] == 5
+
+
+def test_gate_k_can_be_raised():
+    from sfqa.index import normalize_rows
+    from sfqa.retrieval_eval import evaluate
+
+    chunks = chunk_corpus(TEXTS)
+    idx = ChapterIndex(chunks, normalize_rows(np.asarray(EMB.embed_documents([c.text for c in chunks]))))
+    rep = evaluate([], None, None, idx, TEXTS, "dense", gate_k=20)
+    assert rep["gate"]["k"] == 20 and "recall@20" in rep["summary"]["all"] and "recall@18" in rep["summary"]["all"]
