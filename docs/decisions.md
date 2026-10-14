@@ -270,3 +270,29 @@
   1. 정답지 56문항 검토(`eval/gold-review.csv`)
   2. test 검토표 중 C4 21행 판정(`runs/20261013-175230-test/review.csv`)
   3. `uv run sfqa eval-score runs/20261013-175230-test --with-review`
+
+## 2026-10-14 생성 모델 비교와 선택
+
+기준: `docs/model-eval-spec.md`(실행 전 확정). 결과 전체: `runs/compare-20261014/compare.md`.
+확인 명령: `uv run pytest`(178개 통과), `uv run sfqa compare-run --models all --max-calls 420`.
+
+| 모델 | KLUE 답 있음 EM /160 | test C4 응답 중앙값 | 관문 |
+| --- | --- | --- | --- |
+| gemma-4-31b-qat | 121 | 51.5초 | 통과 |
+| claude-sonnet-5-5 (기준선) | 120 | 3.2초 | 통과 |
+| qwen3.8-27b | 113 | 22.7초 | 통과 |
+| qwen3.6-35b-a3b (지금) | 110 | 5.6초 | 통과 |
+| gemma-4-26b-a4b | 93 | 6.2초 | 미달(형식 실패 11/44, 보류 58/80) |
+| gpt-oss-20b | 34 | 3.4초 | 통과(스키마 강제 시 거의 모두 not_found) |
+
+- 최종 시스템(C4)의 B 누출은 6개 모델 모두 0이다.
+- **규칙의 결과는 qwen3.8-27b다.** gemma-4-31b와 차이가 8문항(동률 경계값)이라 동률로 묶였고, 응답이 빠른 쪽을 골랐다.
+- **결정: qwen3.6-35b-a3b를 그대로 쓴다(사용자, 2026-10-14).**
+  - 이유: qwen3.8은 EM이 3문항 많지만 응답이 4배 느리다(중앙값 22.7초, 95% 48.9초). 웹 데모에는 너무 느리다.
+  - 규칙과 다른 선택이다. 규칙(문턱값)은 바꾸지 않고, 이 선택만 여기에 남긴다.
+- 실행 중 알게 된 것
+  - KLUE 프롬프트가 answered 조건을 설명하지 않아 qwen이 모두 not_found로 답했다. 본 실행 전에 고쳤다.
+  - gemma-4-31b-qat(GGUF)는 thinking이 기본으로 켜져 있었다. `reasoning_effort: none`으로 끈다. LangChain이 `reasoning_content`를 넘기지 않아 출력 토큰 수로 점검한다.
+  - gpt-oss-20b는 LM Studio에서 json_schema를 강제하면 생각 없이 not_found를 고른다. 스키마 없이는 정답을 낸다. 다만 내부 형식 토큰이 섞여 나온다.
+  - 관문을 '답하지 않아도' 넘을 수 있었다(gpt-oss). 다음 비교에는 A 문항 답함 하한을 더하는 것을 고려한다.
+- Claude 기준선 비용은 $4.01(384회)이고, 서비스 질문당 약 2.2센트다.

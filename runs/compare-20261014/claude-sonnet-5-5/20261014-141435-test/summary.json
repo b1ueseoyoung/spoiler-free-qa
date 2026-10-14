@@ -1,0 +1,193 @@
+{
+  "run": "20261014-141435-test",
+  "auto": {
+    "C0": {
+      "A": {
+        "missed": 18,
+        "total": 22,
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "leak_shown": 0,
+        "latency_s": 40.553,
+        "input_tokens": 16177,
+        "output_tokens": 1092,
+        "wrong": 3,
+        "answered": 4,
+        "kept_quote": 0,
+        "chapter_match": 0,
+        "correct": 1
+      },
+      "B": {
+        "abstained": 14,
+        "total": 16,
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "leak_shown": 0,
+        "latency_s": 29.025999999999996,
+        "input_tokens": 11755,
+        "output_tokens": 595,
+        "answered": 2
+      },
+      "C": {
+        "ungrounded": 4,
+        "total": 6,
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "leak_shown": 0,
+        "latency_s": 12.018999999999998,
+        "input_tokens": 4454,
+        "output_tokens": 461,
+        "abstained": 2
+      }
+    },
+    "C2": {
+      "A": {
+        "correct": 15,
+        "total": 22,
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "leak_shown": 0,
+        "answered": 21,
+        "kept_quote": 21,
+        "chapter_match": 19,
+        "latency_s": 78.17699999999999,
+        "input_tokens": 316139,
+        "output_tokens": 7536,
+        "wrong": 6,
+        "missed": 1
+      },
+      "B": {
+        "abstained": 5,
+        "total": 16,
+        "L1": 0,
+        "L2": 1,
+        "L3": 0,
+        "L4": 0,
+        "leak_shown": 1,
+        "latency_s": 57.260000000000005,
+        "input_tokens": 228567,
+        "output_tokens": 4070,
+        "answered": 11
+      },
+      "C": {
+        "abstained": 6,
+        "total": 6,
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "leak_shown": 0,
+        "latency_s": 10.75,
+        "input_tokens": 86115,
+        "output_tokens": 132
+      }
+    },
+    "C3": {
+      "A": {
+        "correct": 16,
+        "total": 22,
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "leak_shown": 0,
+        "answered": 21,
+        "kept_quote": 21,
+        "chapter_match": 19,
+        "latency_s": 78.52899999999998,
+        "input_tokens": 319307,
+        "output_tokens": 6989,
+        "wrong": 5,
+        "missed": 1
+      },
+      "B": {
+        "abstained": 6,
+        "total": 16,
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "leak_shown": 0,
+        "latency_s": 46.915000000000006,
+        "input_tokens": 230871,
+        "output_tokens": 3814,
+        "answered": 10
+      },
+      "C": {
+        "abstained": 6,
+        "total": 6,
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "leak_shown": 0,
+        "latency_s": 10.555,
+        "input_tokens": 86979,
+        "output_tokens": 132
+      }
+    },
+    "C4": {
+      "A": {
+        "correct": 16,
+        "total": 22,
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "leak_shown": 0,
+        "answered": 21,
+        "kept_quote": 21,
+        "chapter_match": 19,
+        "latency_s": 78.52899999999998,
+        "input_tokens": 319307,
+        "output_tokens": 6989,
+        "wrong": 5,
+        "missed": 1
+      },
+      "B": {
+        "abstained": 6,
+        "total": 16,
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "leak_shown": 0,
+        "latency_s": 46.915000000000006,
+        "input_tokens": 230871,
+        "output_tokens": 3814,
+        "answered": 10
+      },
+      "C": {
+        "abstained": 6,
+        "total": 6,
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "leak_shown": 0,
+        "latency_s": 10.555,
+        "input_tokens": 86979,
+        "output_tokens": 132
+      }
+    }
+  },
+  "targets": [
+    "C2 L4 누출 문항 0개 (목표 0) → 달성",
+    "C3 L4 누출 문항 0개 (목표 0) → 달성",
+    "C4 L4 누출 문항 0개 (목표 0) → 달성",
+    "C4 B 누출(L1~L3) 0/16 (목표 0) → 달성",
+    "C4 C 보류 6/6 (목표 90% 이상) → 달성"
+  ],
+  "review_rows": 78,
+  "gold_review_status": {
+    "pre-human-review": 44
+  }
+}

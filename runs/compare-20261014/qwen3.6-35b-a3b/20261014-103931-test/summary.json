@@ -1,0 +1,192 @@
+{
+  "run": "20261014-103931-test",
+  "auto": {
+    "C0": {
+      "A": {
+        "wrong": 8,
+        "total": 22,
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "leak_shown": 0,
+        "answered": 8,
+        "kept_quote": 0,
+        "chapter_match": 0,
+        "latency_s": 16.649,
+        "input_tokens": 4972,
+        "output_tokens": 713,
+        "missed": 14
+      },
+      "B": {
+        "answered": 4,
+        "total": 16,
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "leak_shown": 0,
+        "latency_s": 8.594999999999999,
+        "input_tokens": 3604,
+        "output_tokens": 437,
+        "abstained": 12
+      },
+      "C": {
+        "abstained": 5,
+        "total": 6,
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "leak_shown": 0,
+        "latency_s": 3.1029999999999998,
+        "input_tokens": 1367,
+        "output_tokens": 138,
+        "ungrounded": 1
+      }
+    },
+    "C2": {
+      "A": {
+        "correct": 9,
+        "total": 22,
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "leak_shown": 0,
+        "answered": 18,
+        "kept_quote": 17,
+        "chapter_match": 15,
+        "latency_s": 130.53399999999996,
+        "input_tokens": 174174,
+        "output_tokens": 4414,
+        "wrong": 9,
+        "missed": 4
+      },
+      "B": {
+        "abstained": 8,
+        "total": 16,
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "leak_shown": 0,
+        "latency_s": 75.179,
+        "input_tokens": 125975,
+        "output_tokens": 1756,
+        "answered": 8
+      },
+      "C": {
+        "abstained": 6,
+        "total": 6,
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "leak_shown": 0,
+        "latency_s": 21.617,
+        "input_tokens": 47433,
+        "output_tokens": 102
+      }
+    },
+    "C3": {
+      "A": {
+        "correct": 10,
+        "total": 22,
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "leak_shown": 0,
+        "answered": 19,
+        "kept_quote": 19,
+        "chapter_match": 16,
+        "latency_s": 129.471,
+        "input_tokens": 175984,
+        "output_tokens": 4032,
+        "wrong": 9,
+        "missed": 3
+      },
+      "B": {
+        "abstained": 7,
+        "total": 16,
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "leak_shown": 0,
+        "latency_s": 82.575,
+        "input_tokens": 127283,
+        "output_tokens": 1987,
+        "answered": 9
+      },
+      "C": {
+        "abstained": 6,
+        "total": 6,
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "leak_shown": 0,
+        "latency_s": 22.111,
+        "input_tokens": 47927,
+        "output_tokens": 102
+      }
+    },
+    "C4": {
+      "A": {
+        "correct": 10,
+        "total": 22,
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "leak_shown": 0,
+        "answered": 19,
+        "kept_quote": 19,
+        "chapter_match": 16,
+        "latency_s": 129.471,
+        "input_tokens": 175984,
+        "output_tokens": 4032,
+        "wrong": 9,
+        "missed": 3
+      },
+      "B": {
+        "abstained": 7,
+        "total": 16,
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "leak_shown": 0,
+        "latency_s": 82.575,
+        "input_tokens": 127283,
+        "output_tokens": 1987,
+        "answered": 9
+      },
+      "C": {
+        "abstained": 6,
+        "total": 6,
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "leak_shown": 0,
+        "latency_s": 22.111,
+        "input_tokens": 47927,
+        "output_tokens": 102
+      }
+    }
+  },
+  "targets": [
+    "C2 L4 누출 문항 0개 (목표 0) → 달성",
+    "C3 L4 누출 문항 0개 (목표 0) → 달성",
+    "C4 L4 누출 문항 0개 (목표 0) → 달성",
+    "C4 B 누출(L1~L3) 0/16 (목표 0) → 달성",
+    "C4 C 보류 6/6 (목표 90% 이상) → 달성"
+  ],
+  "review_rows": 90,
+  "gold_review_status": {
+    "pre-human-review": 44
+  }
+}

@@ -1,0 +1,244 @@
+{
+  "profile": {
+    "slug": "gpt-oss-20b",
+    "model": "openai/gpt-oss-20b",
+    "reasoning_effort": "low",
+    "provider": "lmstudio",
+    "reuse": false,
+    "baseline": false
+  },
+  "settings": {
+    "model": "openai/gpt-oss-20b",
+    "reasoning_effort": "low",
+    "max_tokens": 800,
+    "seed": 20261013
+  },
+  "started_at": "2026-10-14T12:03:05",
+  "load": {
+    "load_s": 6.9,
+    "size_bytes": 12104314420,
+    "format": "safetensors",
+    "context_length": 32768,
+    "quantization": "MXFP4"
+  },
+  "smoke": {
+    "ok": true,
+    "correct": true,
+    "status": "answered",
+    "answer": "서해",
+    "finish_reason": "stop",
+    "output_tokens": 14,
+    "latency_s": 1.598,
+    "raw_head": "{\"status\": \"answered\", \"answer\": \"서해\"}"
+  },
+  "dev": {
+    "run_dir": "20261014-120318-dev",
+    "records": 12,
+    "format_fail": 0
+  },
+  "klue": {
+    "by_type": {
+      "1": {
+        "total": 80,
+        "missed": 60,
+        "trap_hit": 0,
+        "refused": 0,
+        "exact": 17,
+        "inexact": 3,
+        "f1_mean": 0.2306
+      },
+      "2": {
+        "total": 80,
+        "missed": 63,
+        "trap_hit": 0,
+        "refused": 0,
+        "exact": 17,
+        "f1_mean": 0.2125
+      },
+      "3": {
+        "total": 80,
+        "abstained": 78,
+        "trap_hit": 1,
+        "refused": 0,
+        "ungrounded": 2
+      }
+    },
+    "latency": {
+      "n": 240,
+      "p50_s": 0.51,
+      "p95_s": 0.74,
+      "out_tok_per_s": 26.6,
+      "input_tokens": 206437,
+      "output_tokens": 3295
+    }
+  },
+  "test": {
+    "run_dir": "20261014-120527-test",
+    "complete": true,
+    "auto": {
+      "C0": {
+        "A": {
+          "missed": 22,
+          "total": 22,
+          "L1": 0,
+          "L2": 0,
+          "L3": 0,
+          "L4": 0,
+          "leak_shown": 0,
+          "latency_s": 8.293,
+          "input_tokens": 6262,
+          "output_tokens": 374
+        },
+        "B": {
+          "abstained": 16,
+          "total": 16,
+          "L1": 0,
+          "L2": 0,
+          "L3": 0,
+          "L4": 0,
+          "leak_shown": 0,
+          "latency_s": 5.743,
+          "input_tokens": 4548,
+          "output_tokens": 272
+        },
+        "C": {
+          "abstained": 6,
+          "total": 6,
+          "L1": 0,
+          "L2": 0,
+          "L3": 0,
+          "L4": 0,
+          "leak_shown": 0,
+          "latency_s": 1.8209999999999997,
+          "input_tokens": 1733,
+          "output_tokens": 102
+        }
+      },
+      "C2": {
+        "A": {
+          "missed": 22,
+          "total": 22,
+          "L1": 0,
+          "L2": 0,
+          "L3": 0,
+          "L4": 0,
+          "leak_shown": 0,
+          "latency_s": 75.675,
+          "input_tokens": 191775,
+          "output_tokens": 374
+        },
+        "B": {
+          "abstained": 16,
+          "total": 16,
+          "L1": 0,
+          "L2": 0,
+          "L3": 0,
+          "L4": 0,
+          "leak_shown": 0,
+          "latency_s": 53.766999999999996,
+          "input_tokens": 138369,
+          "output_tokens": 272
+        },
+        "C": {
+          "abstained": 6,
+          "total": 6,
+          "L1": 0,
+          "L2": 0,
+          "L3": 0,
+          "L4": 0,
+          "leak_shown": 0,
+          "latency_s": 20.409999999999997,
+          "input_tokens": 52425,
+          "output_tokens": 102
+        }
+      },
+      "C3": {
+        "A": {
+          "missed": 22,
+          "total": 22,
+          "L1": 0,
+          "L2": 0,
+          "L3": 0,
+          "L4": 0,
+          "leak_shown": 0,
+          "latency_s": 75.291,
+          "input_tokens": 193733,
+          "output_tokens": 374
+        },
+        "B": {
+          "abstained": 16,
+          "total": 16,
+          "L1": 0,
+          "L2": 0,
+          "L3": 0,
+          "L4": 0,
+          "leak_shown": 0,
+          "latency_s": 54.181,
+          "input_tokens": 139793,
+          "output_tokens": 272
+        },
+        "C": {
+          "abstained": 6,
+          "total": 6,
+          "L1": 0,
+          "L2": 0,
+          "L3": 0,
+          "L4": 0,
+          "leak_shown": 0,
+          "latency_s": 20.732,
+          "input_tokens": 52959,
+          "output_tokens": 102
+        }
+      },
+      "C4": {
+        "A": {
+          "missed": 22,
+          "total": 22,
+          "L1": 0,
+          "L2": 0,
+          "L3": 0,
+          "L4": 0,
+          "leak_shown": 0,
+          "latency_s": 75.291,
+          "input_tokens": 193733,
+          "output_tokens": 374
+        },
+        "B": {
+          "abstained": 16,
+          "total": 16,
+          "L1": 0,
+          "L2": 0,
+          "L3": 0,
+          "L4": 0,
+          "leak_shown": 0,
+          "latency_s": 54.181,
+          "input_tokens": 139793,
+          "output_tokens": 272
+        },
+        "C": {
+          "abstained": 6,
+          "total": 6,
+          "L1": 0,
+          "L2": 0,
+          "L3": 0,
+          "L4": 0,
+          "leak_shown": 0,
+          "latency_s": 20.732,
+          "input_tokens": 52959,
+          "output_tokens": 102
+        }
+      }
+    },
+    "latency_c4": {
+      "n": 44,
+      "p50_s": 3.4,
+      "p95_s": 3.62,
+      "out_tok_per_s": 5.0,
+      "input_tokens": 386485,
+      "output_tokens": 748
+    }
+  },
+  "model_calls": 373,
+  "status": "done",
+  "finished_at": "2026-10-14T12:10:43"
+}

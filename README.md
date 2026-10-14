@@ -31,6 +31,7 @@ uv run pytest                                   # 모델 없이 도는 테스트
 uv run sfqa smoke                               # LM Studio(127.0.0.1:1234) 연결 점검
 uv run sfqa fetch && uv run sfqa clean          # 위키문헌 원문 받기(판 고정) → 정제
 uv run sfqa gold-check                          # 정답지를 모델 없이 검사
+uv run sfqa compare-run --models all --max-calls 420  # 생성 모델 비교(docs/model-eval-spec.md)
 uv run sfqa index                               # 청크 임베딩 색인(data/index, 저장소 밖)
 uv run sfqa retrieval-eval --method dense       # 검색만 따로 재기(recall@k, L4)
 uv run sfqa ask --upto 5 "초봉이가 일하는 곳은 어디인가?"

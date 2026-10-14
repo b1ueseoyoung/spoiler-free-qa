@@ -191,7 +191,8 @@ def make_chat(s: Settings, http_client: httpx.Client | None = None) -> ChatOpenA
         max_retries=1,
         use_responses_api=False,
         # LangChain의 모델명별 처리를 거치지 않고 그대로 보낸다(gpt-oss는 none을 받지 않아 low를 쓴다).
-        extra_body={"reasoning_effort": s.reasoning_effort},
+        # 빈 값이면 보내지 않는다(thinking이 없는 Gemma).
+        extra_body={"reasoning_effort": s.reasoning_effort} if s.reasoning_effort else None,
         http_client=http_client,
     )
 

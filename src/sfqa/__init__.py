@@ -37,7 +37,34 @@ def main(argv: list[str] | None = None) -> int:
     p_ask.add_argument("--condition", default="C4", help="C0~C4. 기본 C4(최종 시스템)")
     p_ask.add_argument("--k", type=int, default=18, help="가져올 청크 수")
     p_ask.add_argument("question")
+    p_cmp = sub.add_parser("compare-run", help="모델 비교: 모델을 하나씩 올려 KLUE 240 + test 44를 돌린다(docs/model-eval-spec.md)")
+    p_cmp.add_argument("--models", default="all", help="쉼표로 여러 개, 또는 all / local")
+    p_cmp.add_argument("--max-calls", type=int, required=True, help="모델마다 실제 호출 상한(카세트에 있으면 세지 않는다)")
+    p_cmp.add_argument("--check-only", action="store_true", help="올리기·점검·dev 12문항만 한다")
+    p_cmp.add_argument("--out", help="이어서 돌릴 runs/compare-* 폴더")
+    p_rep = sub.add_parser("compare-report", help="비교 결과 폴더에서 compare.md를 다시 만든다(모델 없음)")
+    p_rep.add_argument("out")
     args = parser.parse_args(argv)
+
+    if args.cmd == "compare-run":
+        from sfqa.compare import PROFILES, run_compare
+        from sfqa.config import load_settings
+
+        if args.models == "all":
+            slugs = list(PROFILES)
+        elif args.models == "local":
+            slugs = [k for k, p in PROFILES.items() if not p.baseline]
+        else:
+            slugs = [m.strip() for m in args.models.split(",")]
+        out = run_compare(load_settings(), slugs, args.max_calls, Path(args.out) if args.out else None, args.check_only)
+        print((out / "compare.md").read_text(encoding="utf-8"))
+        print(f"compare-run: {out}")
+        return 0
+    if args.cmd == "compare-report":
+        from sfqa.compare import write_report
+
+        print(write_report(Path(args.out)).read_text(encoding="utf-8"))
+        return 0
 
     if args.cmd == "eval-run":
         from sfqa.config import load_settings

@@ -106,7 +106,8 @@ def build_chain(env: Env, condition: str) -> Runnable:
         resp: LLMResponse = x["resp"]
         data, _ = resp.parsed()
         parsed = parse_answer(data)
-        model_status = parsed.status if parsed else None
+        refused = resp.finish_reason == "refusal"  # Claude 안전 거절: 형식 실패가 아니라 보류로 센다
+        model_status = parsed.status if parsed else ("not_found" if refused else None)
         model_answer = parsed.answer if parsed else ""
         quotes = [(q.chapter, q.text) for q in parsed.quotes] if parsed else []
         v = env.verifier.verdict(model_status, model_answer, quotes, x["n"], x["context"] or "",
@@ -117,7 +118,7 @@ def build_chain(env: Env, condition: str) -> Runnable:
             future_entities=v.future_entities, reasons=v.reasons,
             retrieved=[{"chunk_id": d.metadata["chunk_id"], "chapter": d.metadata["chapter"]} for d in x["docs"]],
             # 형식 실패: 잘린 것은 따로 세고, 그 밖에 답 형식으로 읽지 못한 것(빈 content 포함)은 모두 invalid다.
-            invalid=parsed is None and not resp.truncated,
+            invalid=parsed is None and not resp.truncated and not refused,
             truncated=resp.truncated, request_key=x["req"].key(), response=asdict(resp),
         )
 

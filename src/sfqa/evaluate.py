@@ -46,7 +46,8 @@ class BudgetClient:
 
     def complete(self, req):
         # 재생 모드는 모델을 부르지 않는다. 카세트에 없으면 ReplayClient가 KeyError로 바로 알린다.
-        if isinstance(self.inner, LiveClient) and not self.inner.has(req) and self.inner.calls >= self.max_calls:
+        # 실제로 부르는 클라이언트(LM Studio의 LiveClient, Claude의 AnthropicClient)에만 상한을 건다.
+        if not isinstance(self.inner, ReplayClient) and not self.inner.has(req) and self.inner.calls >= self.max_calls:
             raise BudgetExceeded(f"모델 호출 상한 {self.max_calls}회에 닿았다")
         return self.inner.complete(req)
 

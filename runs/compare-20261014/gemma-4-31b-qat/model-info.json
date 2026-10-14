@@ -1,0 +1,267 @@
+{
+  "profile": {
+    "slug": "gemma-4-31b-qat",
+    "model": "google/gemma-4-31b-qat",
+    "reasoning_effort": "none",
+    "provider": "lmstudio",
+    "reuse": false,
+    "baseline": false
+  },
+  "settings": {
+    "model": "google/gemma-4-31b-qat",
+    "reasoning_effort": "none",
+    "max_tokens": 800,
+    "seed": 20261013
+  },
+  "started_at": "2026-10-14T12:10:43",
+  "load": {
+    "load_s": 14.6,
+    "size_bytes": 18851800193,
+    "format": "gguf",
+    "context_length": 32768,
+    "quantization": "Q4_0"
+  },
+  "smoke": {
+    "ok": true,
+    "correct": true,
+    "status": "answered",
+    "answer": "서해",
+    "finish_reason": "stop",
+    "output_tokens": 26,
+    "latency_s": 2.95,
+    "raw_head": "{\n  \"status\": \"answered\",\n  \"answer\": \"서해\"\n}"
+  },
+  "dev": {
+    "run_dir": "20261014-121102-dev",
+    "records": 12,
+    "format_fail": 0
+  },
+  "klue": {
+    "by_type": {
+      "1": {
+        "total": 80,
+        "exact": 61,
+        "trap_hit": 0,
+        "refused": 0,
+        "inexact": 19,
+        "f1_mean": 0.9054
+      },
+      "2": {
+        "total": 80,
+        "exact": 60,
+        "trap_hit": 0,
+        "refused": 0,
+        "inexact": 15,
+        "missed": 5,
+        "f1_mean": 0.8556
+      },
+      "3": {
+        "total": 80,
+        "ungrounded": 8,
+        "trap_hit": 6,
+        "refused": 0,
+        "abstained": 72
+      }
+    },
+    "latency": {
+      "n": 240,
+      "p50_s": 7.96,
+      "p95_s": 14.83,
+      "out_tok_per_s": 3.5,
+      "input_tokens": 188241,
+      "output_tokens": 6719
+    }
+  },
+  "test": {
+    "run_dir": "20261014-125356-test",
+    "complete": true,
+    "auto": {
+      "C0": {
+        "A": {
+          "wrong": 16,
+          "total": 22,
+          "L1": 0,
+          "L2": 0,
+          "L3": 0,
+          "L4": 0,
+          "leak_shown": 0,
+          "answered": 19,
+          "kept_quote": 0,
+          "chapter_match": 0,
+          "latency_s": 188.92900000000003,
+          "input_tokens": 5196,
+          "output_tokens": 1823,
+          "correct": 3,
+          "missed": 3
+        },
+        "B": {
+          "answered": 13,
+          "total": 16,
+          "L1": 0,
+          "L2": 1,
+          "L3": 0,
+          "L4": 0,
+          "leak_shown": 1,
+          "latency_s": 143.68100000000004,
+          "input_tokens": 3766,
+          "output_tokens": 1311,
+          "abstained": 3
+        },
+        "C": {
+          "abstained": 4,
+          "total": 6,
+          "L1": 0,
+          "L2": 0,
+          "L3": 0,
+          "L4": 0,
+          "leak_shown": 0,
+          "latency_s": 38.398,
+          "input_tokens": 1443,
+          "output_tokens": 258,
+          "ungrounded": 2
+        }
+      },
+      "C2": {
+        "A": {
+          "correct": 15,
+          "total": 22,
+          "L1": 0,
+          "L2": 0,
+          "L3": 0,
+          "L4": 0,
+          "leak_shown": 0,
+          "answered": 22,
+          "kept_quote": 21,
+          "chapter_match": 18,
+          "latency_s": 1166.971,
+          "input_tokens": 180809,
+          "output_tokens": 4092,
+          "wrong": 7
+        },
+        "B": {
+          "abstained": 6,
+          "total": 16,
+          "L1": 0,
+          "L2": 0,
+          "L3": 0,
+          "L4": 0,
+          "leak_shown": 0,
+          "latency_s": 772.9890000000001,
+          "input_tokens": 130435,
+          "output_tokens": 1945,
+          "answered": 10
+        },
+        "C": {
+          "abstained": 6,
+          "total": 6,
+          "L1": 0,
+          "L2": 0,
+          "L3": 0,
+          "L4": 0,
+          "leak_shown": 0,
+          "latency_s": 253.33800000000002,
+          "input_tokens": 49235,
+          "output_tokens": 186
+        }
+      },
+      "C3": {
+        "A": {
+          "correct": 13,
+          "total": 22,
+          "L1": 0,
+          "L2": 0,
+          "L3": 0,
+          "L4": 0,
+          "leak_shown": 0,
+          "answered": 22,
+          "kept_quote": 21,
+          "chapter_match": 19,
+          "latency_s": 1202.87,
+          "input_tokens": 182597,
+          "output_tokens": 4050,
+          "wrong": 9
+        },
+        "B": {
+          "abstained": 6,
+          "total": 16,
+          "L1": 0,
+          "L2": 0,
+          "L3": 0,
+          "L4": 0,
+          "leak_shown": 0,
+          "latency_s": 798.2100000000002,
+          "input_tokens": 131727,
+          "output_tokens": 1944,
+          "answered": 10
+        },
+        "C": {
+          "abstained": 6,
+          "total": 6,
+          "L1": 0,
+          "L2": 0,
+          "L3": 0,
+          "L4": 0,
+          "leak_shown": 0,
+          "latency_s": 265.186,
+          "input_tokens": 49723,
+          "output_tokens": 186
+        }
+      },
+      "C4": {
+        "A": {
+          "correct": 12,
+          "total": 22,
+          "L1": 0,
+          "L2": 0,
+          "L3": 0,
+          "L4": 0,
+          "leak_shown": 0,
+          "answered": 21,
+          "kept_quote": 21,
+          "chapter_match": 19,
+          "latency_s": 1202.87,
+          "input_tokens": 182597,
+          "output_tokens": 4050,
+          "wrong": 9,
+          "missed": 1
+        },
+        "B": {
+          "abstained": 6,
+          "total": 16,
+          "L1": 0,
+          "L2": 0,
+          "L3": 0,
+          "L4": 0,
+          "leak_shown": 0,
+          "latency_s": 798.2100000000002,
+          "input_tokens": 131727,
+          "output_tokens": 1944,
+          "answered": 10
+        },
+        "C": {
+          "abstained": 6,
+          "total": 6,
+          "L1": 0,
+          "L2": 0,
+          "L3": 0,
+          "L4": 0,
+          "leak_shown": 0,
+          "latency_s": 265.186,
+          "input_tokens": 49723,
+          "output_tokens": 186
+        }
+      }
+    },
+    "latency_c4": {
+      "n": 44,
+      "p50_s": 51.49,
+      "p95_s": 63.86,
+      "out_tok_per_s": 2.9,
+      "input_tokens": 364047,
+      "output_tokens": 6180
+    }
+  },
+  "model_calls": 385,
+  "status": "done",
+  "finished_at": "2026-10-14T14:14:33"
+}
