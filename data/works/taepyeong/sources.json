@@ -1,0 +1,179 @@
+{
+  "work": {
+    "page": "태평천하",
+    "revid": 228169,
+    "timestamp": "2021-12-22T19:09:42Z",
+    "sha256": "8ddee162dfb21fdc0077a926ef21d07973e4774c9ca5149c69b336358be30937",
+    "license_templates": [
+      "PD-old-50"
+    ]
+  },
+  "chapters": [
+    {
+      "chapter": 1,
+      "toc_title": "윤직원 영감 귀택지도(歸宅之圖)",
+      "page": "태평천하/제1장",
+      "revid": 227969,
+      "timestamp": "2021-12-20T10:18:16Z",
+      "sha256": "954dc089f5a17466ef14df9020962b21a9be0c15ffc2470b04f308c5e3121fd3",
+      "chars": 6334,
+      "fetched_at": "2026-10-14T09:14:56+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=227969"
+    },
+    {
+      "chapter": 2,
+      "toc_title": "무임승차 기술",
+      "page": "태평천하/제2장",
+      "revid": 228162,
+      "timestamp": "2021-12-22T19:03:02Z",
+      "sha256": "05ec2127f304c7ab786c66cb20fdbb6767abc4736070c4d5180a55c345491bea",
+      "chars": 5517,
+      "fetched_at": "2026-10-14T09:14:56+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=228162"
+    },
+    {
+      "chapter": 3,
+      "toc_title": "서양국 명창대회",
+      "page": "태평천하/제3장",
+      "revid": 228030,
+      "timestamp": "2021-12-21T15:57:13Z",
+      "sha256": "a2e4e6cc9a0d40f85c9e3209a3b5d08e130772458992a6a6f6536f9bfc512d72",
+      "chars": 6047,
+      "fetched_at": "2026-10-14T09:14:56+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=228030"
+    },
+    {
+      "chapter": 4,
+      "toc_title": "우리만 빼놓고 어서 망해라",
+      "page": "태평천하/제4장",
+      "revid": 227981,
+      "timestamp": "2021-12-20T14:19:51Z",
+      "sha256": "0713bc91aa3b59367126a36a8ba751a032c649ca3c02a64ce96e3011ec209f1e",
+      "chars": 17326,
+      "fetched_at": "2026-10-14T09:14:56+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=227981"
+    },
+    {
+      "chapter": 5,
+      "toc_title": "마음의 빈민굴",
+      "page": "태평천하/제5장",
+      "revid": 228163,
+      "timestamp": "2021-12-22T19:04:17Z",
+      "sha256": "e9917a2ccaf1d3ea600bff2ffc3fd8b841bad7325b14148c5f5cf9c2a8361988",
+      "chars": 14611,
+      "fetched_at": "2026-10-14T09:14:56+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=228163"
+    },
+    {
+      "chapter": 6,
+      "toc_title": "관전기(觀戰記)",
+      "page": "태평천하/제6장",
+      "revid": 263510,
+      "timestamp": "2023-03-14T11:37:17Z",
+      "sha256": "304c149206008046d3cd1b6f4a54a3a742c29c4c99c234409794ff37a0351c8f",
+      "chars": 10389,
+      "fetched_at": "2026-10-14T09:14:56+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=263510"
+    },
+    {
+      "chapter": 7,
+      "toc_title": "쇠가 쇠를 낳고",
+      "page": "태평천하/제7장",
+      "revid": 263509,
+      "timestamp": "2023-03-14T11:36:07Z",
+      "sha256": "7ea3f2260a742c13095029207f06a691ba1fdd6b903bcea609d07b3d46c14f48",
+      "chars": 8093,
+      "fetched_at": "2026-10-14T09:14:56+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=263509"
+    },
+    {
+      "chapter": 8,
+      "toc_title": "상평통보 서 푼과……",
+      "page": "태평천하/제8장",
+      "revid": 263511,
+      "timestamp": "2023-03-14T11:37:50Z",
+      "sha256": "cf83ffc3fa37f4bf6c7a657e1ff661521c1cd4e8fd0d6079124a759a08d76f06",
+      "chars": 12361,
+      "fetched_at": "2026-10-14T09:14:56+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=263511"
+    },
+    {
+      "chapter": 9,
+      "toc_title": "절약의 도락정신",
+      "page": "태평천하/제9장",
+      "revid": 228031,
+      "timestamp": "2021-12-21T16:04:46Z",
+      "sha256": "7112263d43a0c9076bc889e6193e37c1466b1c4b4b777d1ca5a1cd71e711ab32",
+      "chars": 8384,
+      "fetched_at": "2026-10-14T09:14:56+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=228031"
+    },
+    {
+      "chapter": 10,
+      "toc_title": "실제록(失題錄)",
+      "page": "태평천하/제10장",
+      "revid": 263512,
+      "timestamp": "2023-03-14T11:38:19Z",
+      "sha256": "995617640aff494f22a43252e1f0f1f83c374a968e0b4eac92f58ba88caa378a",
+      "chars": 18722,
+      "fetched_at": "2026-10-14T09:14:56+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=263512"
+    },
+    {
+      "chapter": 11,
+      "toc_title": "인간 체화와 동시에 품부족 문제, 기타",
+      "page": "태평천하/제11장",
+      "revid": 228166,
+      "timestamp": "2021-12-22T19:07:32Z",
+      "sha256": "1c8a3f6906237a4abca324838d2e29e9e2f7f30323bbb533e23de686f085c130",
+      "chars": 18024,
+      "fetched_at": "2026-10-14T09:14:56+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=228166"
+    },
+    {
+      "chapter": 12,
+      "toc_title": "세계 사업 반절기(半折記)",
+      "page": "태평천하/제12장",
+      "revid": 228167,
+      "timestamp": "2021-12-22T19:08:25Z",
+      "sha256": "6964ae14057ba76ec1016c19b23d85387466b88e7c410f0ffb6ae75163ad38bf",
+      "chars": 15568,
+      "fetched_at": "2026-10-14T09:14:56+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=228167"
+    },
+    {
+      "chapter": 13,
+      "toc_title": "도끼자루는 썩어도……(즉 당세 신선놀음의 일착(一齣))",
+      "page": "태평천하/제13장",
+      "revid": 228168,
+      "timestamp": "2021-12-22T19:09:14Z",
+      "sha256": "4ea787427cc3056147d42d90a2009f30152b1d311dfe8cd995c6376ae6aef13e",
+      "chars": 4877,
+      "fetched_at": "2026-10-14T09:14:56+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=228168"
+    },
+    {
+      "chapter": 14,
+      "toc_title": "해 저무는 만리장성",
+      "page": "태평천하/제14장",
+      "revid": 228112,
+      "timestamp": "2021-12-22T12:51:33Z",
+      "sha256": "900ec87c5dae0ab3d25db6cea825d96221fc157187729528d9827b113f4eb5c9",
+      "chars": 18067,
+      "fetched_at": "2026-10-14T09:14:56+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=228112"
+    },
+    {
+      "chapter": 15,
+      "toc_title": "망진자(亡秦者)는 호야(胡也)니라",
+      "page": "태평천하/제15장",
+      "revid": 227979,
+      "timestamp": "2021-12-20T10:32:17Z",
+      "sha256": "bfdb74df58d822159d923e5d7b488884c2db9ebb7cb96c0be969a0987b3788ec",
+      "chars": 4424,
+      "fetched_at": "2026-10-14T09:14:56+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=227979"
+    }
+  ],
+  "note": "원문은 공유 저작물(작가 채만식 1950년 사망). 위키문헌 편집자가 붙인 틀은 정제 단계에서 지운다."
+}

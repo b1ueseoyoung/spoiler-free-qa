@@ -1,0 +1,604 @@
+{
+  "work": {
+    "page": "무정",
+    "revid": 324221,
+    "timestamp": "2024-05-06T02:20:57Z",
+    "sha256": "1cd0ff5fd492d96aa4f50bed1054d89d090fb882b47d50ed33d71ca3aae4879a",
+    "license_templates": [
+      "PD-old-50"
+    ]
+  },
+  "parts": [
+    {
+      "part": 1,
+      "first": 1,
+      "last": 20,
+      "page": "무정/1장~20장",
+      "revid": 191286,
+      "timestamp": "2018-07-17T00:05:50Z",
+      "sha256": "cade38dd2d2df59ba1c630b38dcde1089003f39f10d2cfe8cd9f46b506ca85cf",
+      "chars": 53562,
+      "fetched_at": "2026-10-14T09:16:28+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=191286"
+    },
+    {
+      "part": 2,
+      "first": 21,
+      "last": 40,
+      "page": "무정/21장~40장",
+      "revid": 115700,
+      "timestamp": "2014-08-21T17:43:36Z",
+      "sha256": "45234a58dae4581d03efcd55ea4ec822be9b34b929766425a4b9cb011ce37703",
+      "chars": 54223,
+      "fetched_at": "2026-10-14T09:16:28+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=115700"
+    },
+    {
+      "part": 3,
+      "first": 41,
+      "last": 60,
+      "page": "무정/41장~60장",
+      "revid": 115701,
+      "timestamp": "2014-08-21T17:43:46Z",
+      "sha256": "31940582cc21e547d11a2cb4f51a00d947fb658404defdeac35a4b027be0c27f",
+      "chars": 55595,
+      "fetched_at": "2026-10-14T09:16:28+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=115701"
+    },
+    {
+      "part": 4,
+      "first": 61,
+      "last": 80,
+      "page": "무정/61장~80장",
+      "revid": 115702,
+      "timestamp": "2014-08-21T17:43:56Z",
+      "sha256": "1a7f911532daf2c5e0a69b5ee6821c951b65f24599de459ebd2fb3ac21f8890e",
+      "chars": 52595,
+      "fetched_at": "2026-10-14T09:16:28+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=115702"
+    },
+    {
+      "part": 5,
+      "first": 81,
+      "last": 100,
+      "page": "무정/81장~100장",
+      "revid": 116722,
+      "timestamp": "2014-08-21T20:36:03Z",
+      "sha256": "82c9b62269dd7bf5faa47f7439ee13bb7eadbe628b5fdb48a84c922cf4c65396",
+      "chars": 47708,
+      "fetched_at": "2026-10-14T09:16:28+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=116722"
+    },
+    {
+      "part": 6,
+      "first": 101,
+      "last": 120,
+      "page": "무정/101장~120장",
+      "revid": 116723,
+      "timestamp": "2014-08-21T20:36:13Z",
+      "sha256": "7e4934d94e6bea87b9b51786006db2634bbb4b8a8f59c0cb93d1a4b302a40541",
+      "chars": 49902,
+      "fetched_at": "2026-10-14T09:16:28+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=116723"
+    },
+    {
+      "part": 7,
+      "first": 121,
+      "last": 126,
+      "page": "무정/121장~126장",
+      "revid": 116724,
+      "timestamp": "2014-08-21T20:36:20Z",
+      "sha256": "9eb2013a80b51a65dadfd0af0b8c2a0cae51354162ffca199c8be599f801c2b0",
+      "chars": 14706,
+      "fetched_at": "2026-10-14T09:16:28+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=116724"
+    }
+  ],
+  "chapters": [
+    {
+      "chapter": 1,
+      "toc_title": ""
+    },
+    {
+      "chapter": 2,
+      "toc_title": ""
+    },
+    {
+      "chapter": 3,
+      "toc_title": ""
+    },
+    {
+      "chapter": 4,
+      "toc_title": ""
+    },
+    {
+      "chapter": 5,
+      "toc_title": ""
+    },
+    {
+      "chapter": 6,
+      "toc_title": ""
+    },
+    {
+      "chapter": 7,
+      "toc_title": ""
+    },
+    {
+      "chapter": 8,
+      "toc_title": ""
+    },
+    {
+      "chapter": 9,
+      "toc_title": ""
+    },
+    {
+      "chapter": 10,
+      "toc_title": ""
+    },
+    {
+      "chapter": 11,
+      "toc_title": ""
+    },
+    {
+      "chapter": 12,
+      "toc_title": ""
+    },
+    {
+      "chapter": 13,
+      "toc_title": ""
+    },
+    {
+      "chapter": 14,
+      "toc_title": ""
+    },
+    {
+      "chapter": 15,
+      "toc_title": ""
+    },
+    {
+      "chapter": 16,
+      "toc_title": ""
+    },
+    {
+      "chapter": 17,
+      "toc_title": ""
+    },
+    {
+      "chapter": 18,
+      "toc_title": ""
+    },
+    {
+      "chapter": 19,
+      "toc_title": ""
+    },
+    {
+      "chapter": 20,
+      "toc_title": ""
+    },
+    {
+      "chapter": 21,
+      "toc_title": ""
+    },
+    {
+      "chapter": 22,
+      "toc_title": ""
+    },
+    {
+      "chapter": 23,
+      "toc_title": ""
+    },
+    {
+      "chapter": 24,
+      "toc_title": ""
+    },
+    {
+      "chapter": 25,
+      "toc_title": ""
+    },
+    {
+      "chapter": 26,
+      "toc_title": ""
+    },
+    {
+      "chapter": 27,
+      "toc_title": ""
+    },
+    {
+      "chapter": 28,
+      "toc_title": ""
+    },
+    {
+      "chapter": 29,
+      "toc_title": ""
+    },
+    {
+      "chapter": 30,
+      "toc_title": ""
+    },
+    {
+      "chapter": 31,
+      "toc_title": ""
+    },
+    {
+      "chapter": 32,
+      "toc_title": ""
+    },
+    {
+      "chapter": 33,
+      "toc_title": ""
+    },
+    {
+      "chapter": 34,
+      "toc_title": ""
+    },
+    {
+      "chapter": 35,
+      "toc_title": ""
+    },
+    {
+      "chapter": 36,
+      "toc_title": ""
+    },
+    {
+      "chapter": 37,
+      "toc_title": ""
+    },
+    {
+      "chapter": 38,
+      "toc_title": ""
+    },
+    {
+      "chapter": 39,
+      "toc_title": ""
+    },
+    {
+      "chapter": 40,
+      "toc_title": ""
+    },
+    {
+      "chapter": 41,
+      "toc_title": ""
+    },
+    {
+      "chapter": 42,
+      "toc_title": ""
+    },
+    {
+      "chapter": 43,
+      "toc_title": ""
+    },
+    {
+      "chapter": 44,
+      "toc_title": ""
+    },
+    {
+      "chapter": 45,
+      "toc_title": ""
+    },
+    {
+      "chapter": 46,
+      "toc_title": ""
+    },
+    {
+      "chapter": 47,
+      "toc_title": ""
+    },
+    {
+      "chapter": 48,
+      "toc_title": ""
+    },
+    {
+      "chapter": 49,
+      "toc_title": ""
+    },
+    {
+      "chapter": 50,
+      "toc_title": ""
+    },
+    {
+      "chapter": 51,
+      "toc_title": ""
+    },
+    {
+      "chapter": 52,
+      "toc_title": ""
+    },
+    {
+      "chapter": 53,
+      "toc_title": ""
+    },
+    {
+      "chapter": 54,
+      "toc_title": ""
+    },
+    {
+      "chapter": 55,
+      "toc_title": ""
+    },
+    {
+      "chapter": 56,
+      "toc_title": ""
+    },
+    {
+      "chapter": 57,
+      "toc_title": ""
+    },
+    {
+      "chapter": 58,
+      "toc_title": ""
+    },
+    {
+      "chapter": 59,
+      "toc_title": ""
+    },
+    {
+      "chapter": 60,
+      "toc_title": ""
+    },
+    {
+      "chapter": 61,
+      "toc_title": ""
+    },
+    {
+      "chapter": 62,
+      "toc_title": ""
+    },
+    {
+      "chapter": 63,
+      "toc_title": ""
+    },
+    {
+      "chapter": 64,
+      "toc_title": ""
+    },
+    {
+      "chapter": 65,
+      "toc_title": ""
+    },
+    {
+      "chapter": 66,
+      "toc_title": ""
+    },
+    {
+      "chapter": 67,
+      "toc_title": ""
+    },
+    {
+      "chapter": 68,
+      "toc_title": ""
+    },
+    {
+      "chapter": 69,
+      "toc_title": ""
+    },
+    {
+      "chapter": 70,
+      "toc_title": ""
+    },
+    {
+      "chapter": 71,
+      "toc_title": ""
+    },
+    {
+      "chapter": 72,
+      "toc_title": ""
+    },
+    {
+      "chapter": 73,
+      "toc_title": ""
+    },
+    {
+      "chapter": 74,
+      "toc_title": ""
+    },
+    {
+      "chapter": 75,
+      "toc_title": ""
+    },
+    {
+      "chapter": 76,
+      "toc_title": ""
+    },
+    {
+      "chapter": 77,
+      "toc_title": ""
+    },
+    {
+      "chapter": 78,
+      "toc_title": ""
+    },
+    {
+      "chapter": 79,
+      "toc_title": ""
+    },
+    {
+      "chapter": 80,
+      "toc_title": ""
+    },
+    {
+      "chapter": 81,
+      "toc_title": ""
+    },
+    {
+      "chapter": 82,
+      "toc_title": ""
+    },
+    {
+      "chapter": 83,
+      "toc_title": ""
+    },
+    {
+      "chapter": 84,
+      "toc_title": ""
+    },
+    {
+      "chapter": 85,
+      "toc_title": ""
+    },
+    {
+      "chapter": 86,
+      "toc_title": ""
+    },
+    {
+      "chapter": 87,
+      "toc_title": ""
+    },
+    {
+      "chapter": 88,
+      "toc_title": ""
+    },
+    {
+      "chapter": 89,
+      "toc_title": ""
+    },
+    {
+      "chapter": 90,
+      "toc_title": ""
+    },
+    {
+      "chapter": 91,
+      "toc_title": ""
+    },
+    {
+      "chapter": 92,
+      "toc_title": ""
+    },
+    {
+      "chapter": 93,
+      "toc_title": ""
+    },
+    {
+      "chapter": 94,
+      "toc_title": ""
+    },
+    {
+      "chapter": 95,
+      "toc_title": ""
+    },
+    {
+      "chapter": 96,
+      "toc_title": ""
+    },
+    {
+      "chapter": 97,
+      "toc_title": ""
+    },
+    {
+      "chapter": 98,
+      "toc_title": ""
+    },
+    {
+      "chapter": 99,
+      "toc_title": ""
+    },
+    {
+      "chapter": 100,
+      "toc_title": ""
+    },
+    {
+      "chapter": 101,
+      "toc_title": ""
+    },
+    {
+      "chapter": 102,
+      "toc_title": ""
+    },
+    {
+      "chapter": 103,
+      "toc_title": ""
+    },
+    {
+      "chapter": 104,
+      "toc_title": ""
+    },
+    {
+      "chapter": 105,
+      "toc_title": ""
+    },
+    {
+      "chapter": 106,
+      "toc_title": ""
+    },
+    {
+      "chapter": 107,
+      "toc_title": ""
+    },
+    {
+      "chapter": 108,
+      "toc_title": ""
+    },
+    {
+      "chapter": 109,
+      "toc_title": ""
+    },
+    {
+      "chapter": 110,
+      "toc_title": ""
+    },
+    {
+      "chapter": 111,
+      "toc_title": ""
+    },
+    {
+      "chapter": 112,
+      "toc_title": ""
+    },
+    {
+      "chapter": 113,
+      "toc_title": ""
+    },
+    {
+      "chapter": 114,
+      "toc_title": ""
+    },
+    {
+      "chapter": 115,
+      "toc_title": ""
+    },
+    {
+      "chapter": 116,
+      "toc_title": ""
+    },
+    {
+      "chapter": 117,
+      "toc_title": ""
+    },
+    {
+      "chapter": 118,
+      "toc_title": ""
+    },
+    {
+      "chapter": 119,
+      "toc_title": ""
+    },
+    {
+      "chapter": 120,
+      "toc_title": ""
+    },
+    {
+      "chapter": 121,
+      "toc_title": ""
+    },
+    {
+      "chapter": 122,
+      "toc_title": ""
+    },
+    {
+      "chapter": 123,
+      "toc_title": ""
+    },
+    {
+      "chapter": 124,
+      "toc_title": ""
+    },
+    {
+      "chapter": 125,
+      "toc_title": ""
+    },
+    {
+      "chapter": 126,
+      "toc_title": ""
+    }
+  ],
+  "note": "원문은 공유 저작물(작가 이광수 1950년 사망). 위키문헌 편집자가 붙인 틀은 정제 단계에서 지운다."
+}

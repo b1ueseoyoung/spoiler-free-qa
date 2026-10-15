@@ -1,0 +1,36 @@
+{
+  "id": "takryu",
+  "order": 1,
+  "title": "탁류",
+  "author": "채만식",
+  "author_death_year": 1950,
+  "label": "채만식의 장편소설 「탁류」",
+  "published": "조선일보 1937–38",
+  "chapters": 19,
+  "blurb": "군산 미두장 근처, 가난한 집 맏딸 초봉이 앞에 놓인 갈림길.",
+  "examples": [
+    {
+      "question": "초봉이가 일하는 곳은 어디야?",
+      "chapter": 2
+    },
+    {
+      "question": "승재는 어떤 사람이야?",
+      "chapter": 2
+    },
+    {
+      "question": "정주사는 어디에 다녀오는 길이야?",
+      "chapter": 1
+    }
+  ],
+  "default_upto": 3,
+  "evaluated": true,
+  "source": {
+    "site": "ko.wikisource",
+    "page": "탁류",
+    "mode": "subpages",
+    "subpage": "{page}/제{n}장",
+    "toc": "^#\\s*\\[\\[/제(\\d+)장/\\|(.+?)\\]\\]\\s*$",
+    "footer_template": "꼬리말",
+    "license": "PD-old-50(위키문헌). 작가 1950년 사망으로 대한민국에서 저작권 만료"
+  }
+}

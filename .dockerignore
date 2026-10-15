@@ -1,0 +1,12 @@
+# 허용 목록 방식: 이미지에 필요한 것만 넣는다(.env, 카세트, 실행 기록이 들어가지 않게).
+**
+!pyproject.toml
+!uv.lock
+!README.md
+!src/**
+!scripts/fetch_gguf.py
+!data/works/*/work.json
+!data/works/*/clean/**
+!data/works/*/entities.json
+!data/works/*/index/local__mykor__KURE-v1-gguf__KURE-v1-Q8_0.gguf/**
+**/__pycache__

@@ -17,14 +17,15 @@ from pathlib import Path
 
 from sfqa.answer import CONDITIONS, Env, build_chain
 from sfqa.config import Settings
-from sfqa.gold import ENTITIES, QUESTIONS, Question, entity_index, load_entities, load_questions, load_texts
+from sfqa.gold import QUESTIONS, Question, entity_index, load_entities, load_questions, load_texts
 from sfqa.index import load_index
-from sfqa.llm import CachedEmbeddings, LiveClient, ReplayClient, make_chat, make_embeddings
+from sfqa.llm import CachedEmbeddings, LiveClient, ReplayClient, live_client, make_embeddings
 from sfqa.paths import ROOT
 from sfqa.prompts import prompt_hash
 from sfqa.retrieve import ChapterIndex
 from sfqa.schema import ANSWER_SCHEMA
 from sfqa.verify import Verifier
+from sfqa.works import gold_work
 
 CASSETTES = ROOT / "eval" / "cassettes"
 RUNS = ROOT / "runs"
@@ -46,7 +47,8 @@ class BudgetClient:
 
     def complete(self, req):
         # 재생 모드는 모델을 부르지 않는다. 카세트에 없으면 ReplayClient가 KeyError로 바로 알린다.
-        if isinstance(self.inner, LiveClient) and not self.inner.has(req) and self.inner.calls >= self.max_calls:
+        # 실제로 부르는 클라이언트(LM Studio의 LiveClient, Claude의 AnthropicClient)에만 상한을 건다.
+        if not isinstance(self.inner, ReplayClient) and not self.inner.has(req) and self.inner.calls >= self.max_calls:
             raise BudgetExceeded(f"모델 호출 상한 {self.max_calls}회에 닿았다")
         return self.inner.complete(req)
 
@@ -70,16 +72,17 @@ def select(questions: list[Question], split: str, limit: int | None) -> list[Que
 
 
 def make_eval_env(s: Settings, cassette: Path, emb_cassette: Path, replay: bool, k: int) -> Env:
-    texts = load_texts()
-    chunks, vectors, _ = load_index(s.embed_model, texts)
+    work = gold_work()  # 정답지는 「탁류」 전용이다. 다른 작품 본문으로 채점하는 사고를 막는다
+    texts = load_texts(work)
+    chunks, vectors, _ = load_index(work, s.embed_model, texts, s.embed_provider)
     if replay:
         client = ReplayClient(cassette)
         emb = CachedEmbeddings(None, s.embed_model, emb_cassette, replay=True)
     else:
-        client = LiveClient(make_chat(s), cassette)
+        client = live_client(s, cassette)
         emb = CachedEmbeddings(make_embeddings(s), s.embed_model, emb_cassette)
-    verifier = Verifier(texts, entity_index(load_entities(), texts))
-    return Env(s, ChapterIndex(chunks, vectors), emb, client, verifier, k)
+    verifier = Verifier(texts, entity_index(load_entities(work), texts))
+    return Env(s, work, ChapterIndex(chunks, vectors), emb, client, verifier, k)
 
 
 def run_eval(s: Settings, split: str, conditions: list[str], max_calls: int, k: int = 18,
@@ -103,7 +106,7 @@ def run_eval(s: Settings, split: str, conditions: list[str], max_calls: int, k: 
         "questions": len(questions), "max_calls": max_calls,
         "git": git_state(), "prompt_hash": prompt_hash(),
         "schema_sha": hashlib.sha256(json.dumps(ANSWER_SCHEMA, sort_keys=True).encode()).hexdigest()[:16],
-        "gold_sha": sha_file(QUESTIONS), "entities_sha": sha_file(ENTITIES),
+        "gold_sha": sha_file(QUESTIONS), "entities_sha": sha_file(env.work.entities_path), "work": env.work.id,
         "model": {"llm": s.llm_model, "embed": s.embed_model, "seed": s.seed, "temperature": 0,
                   "max_tokens": s.max_tokens, "reasoning_effort": s.reasoning_effort, "base_url": s.base_url},
         "cassette": str(cassette.relative_to(ROOT)), "started_at": datetime.now().isoformat(timespec="seconds"),

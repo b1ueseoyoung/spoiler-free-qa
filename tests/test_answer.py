@@ -1,4 +1,5 @@
 import json
+from pathlib import Path
 
 import numpy as np
 import pytest
@@ -11,10 +12,14 @@ from sfqa.index import normalize_rows
 from sfqa.llm import LLMRequest, LLMResponse
 from sfqa.retrieve import ChapterIndex
 from sfqa.verify import Verifier
+from sfqa.works import Work
 
 TEXTS = {ch: f"제{ch}장 이야기. " + " ".join(f"{ch}장의 {i}번째 문장이 여기 있다." for i in range(60)) for ch in range(1, 20)}
 TEXTS[2] = "초봉이는 제중당 약국에 다닌다. " + TEXTS[2]
 EMB = DeterministicFakeEmbedding(size=16)
+# 테스트용 「탁류」(19장). 파일은 읽지 않는다. label은 실제 작품과 같다(프롬프트 확인용).
+WORK = Work(id="takryu", title="탁류", author="채만식", label="채만식의 장편소설 「탁류」", chapters=19,
+            dir=Path("/nonexistent/takryu"), examples=(("초봉이는?", 1),), default_upto=3)
 
 
 class FakeClient:
@@ -36,7 +41,7 @@ def answer_json(status="answered", answer="제중당 약국", quotes=((2, "초�
 def env(client, k=6) -> Env:
     chunks = chunk_corpus(TEXTS)
     idx = ChapterIndex(chunks, normalize_rows(np.asarray(EMB.embed_documents([c.text for c in chunks]))))
-    return Env(load_settings({}), idx, EMB, client, Verifier(TEXTS, {"형보": 5}), k)
+    return Env(load_settings({}), WORK, idx, EMB, client, Verifier(TEXTS, {"형보": 5}), k)
 
 
 def run(condition, raw=None, n=3, question="초봉이는 어디에 다니나?", finish="stop"):
@@ -77,7 +82,7 @@ def test_c4_answers_with_verified_quote_and_c3_keeps_raw_answer():
     assert r4.status == "answered" and r4.answer == "제중당 약국"
     unsupported = answer_json(quotes=())
     r4, _ = run("C4", raw=unsupported, n=3)
-    assert r4.status == "not_found" and r4.answer == "3장까지는 나오지 않습니다."
+    assert r4.status == "not_found" and r4.answer == "3장까지는 나오지 않아요."
     r3, _ = run("C3", raw=unsupported, n=3)
     assert r3.status == "answered" and "검증된 인용 없음" in r3.reasons
 

@@ -1,0 +1,65 @@
+{
+  "models": {
+    "qwen3.6-35b-a3b": {
+      "status": "done",
+      "gates": {
+        "gate1": true,
+        "gate2": true,
+        "gate3": true
+      }
+    },
+    "qwen3.8-27b": {
+      "status": "done",
+      "gates": {
+        "gate1": true,
+        "gate2": true,
+        "gate3": true
+      }
+    },
+    "gemma-4-26b-a4b": {
+      "status": "done",
+      "gates": {
+        "gate1": false,
+        "gate2": false,
+        "gate3": true
+      }
+    },
+    "gpt-oss-20b": {
+      "status": "done",
+      "gates": {
+        "gate1": true,
+        "gate2": true,
+        "gate3": true
+      }
+    },
+    "gemma-4-31b-qat": {
+      "status": "done",
+      "gates": {
+        "gate1": true,
+        "gate2": true,
+        "gate3": true
+      }
+    },
+    "claude-sonnet-5-5": {
+      "status": "done",
+      "gates": {
+        "gate1": true,
+        "gate2": true,
+        "gate3": true
+      }
+    }
+  },
+  "rank": {
+    "order": [
+      "gemma-4-31b-qat",
+      "qwen3.8-27b",
+      "qwen3.6-35b-a3b",
+      "gpt-oss-20b"
+    ],
+    "chosen": "qwen3.8-27b",
+    "tied": [
+      "gemma-4-31b-qat",
+      "qwen3.8-27b"
+    ]
+  }
+}

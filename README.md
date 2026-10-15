@@ -1,20 +1,31 @@
-# 회차 스포일러 없는 작품 Q&A
+# 책갈피: 읽은 데까지만 답하는 소설 도우미
 
-채만식 「탁류」(공유 저작물)를 읽는 독자가 "N장까지 읽었다"고 하면, 1~N장 원문에서만 찾아 답하고 근거 인용과 장 번호를 붙인다. 원문에 없으면 답하지 않는다.
+저작권이 끝난 한국 소설을 읽는 독자가 "N장까지 읽었다"고 하면, 1~N장 원문에서만 찾아 답하고 근거 인용과 장 번호를 붙인다. 원문에 없으면 답하지 않는다.
 
-- 사용 도구: LangChain(Python), LM Studio 로컬 모델(`qwen/qwen3.6-35b-a3b`, 임베딩 `text-embedding-kure-v1`)
-- 원문과 질문은 이 맥 밖으로 나가지 않는다.
-- 배경: 공저 논문 PA-RAG(진행도 인식 검색 증강 생성을 활용한 조건부 스포일러 탐지)를 작게 구현했다.
+| 작품 | 작가 | 장 | 평가 |
+| --- | --- | --- | --- |
+| 「탁류」 | 채만식 | 19 | 정답지 56문항, 모델 비교, 배포 설정 재검증까지 함 |
+| 「태평천하」 | 채만식 | 15 | 평가하지 않음 |
+| 「상록수」 | 심훈 | 17 | 평가하지 않음 |
+| 「운현궁의 봄」 | 김동인 | 25 | 평가하지 않음 |
+| 「무정」 | 이광수 | 126 | 평가하지 않음 |
+
+- **실행 방식은 두 가지다.**
+  - 로컬(기본): LM Studio(`qwen/qwen3.6-35b-a3b`, 임베딩 `text-embedding-kure-v1`). 원문과 질문이 이 맥 밖으로 나가지 않는다.
+  - 공개 데모: AWS Lambda. 검색은 서버 안에서 하고(같은 KURE-v1 GGUF를 llama.cpp로), 답은 Claude API로 만든다. 자세한 것은 [배포 계획](docs/deploy-plan.md)에 있다.
+- 작품은 `data/works/<id>/`에 있다(`work.json`, 원문, 정제 본문, 인물표, 색인). 원문은 위키문헌에서 판(revid)을 고정해 받는다.
+- **배경:** 공저 논문 PA-RAG(진행도 인식 검색 증강 생성을 활용한 조건부 스포일러 탐지)를 작게 구현했다.
 
 ```text
-질문 + N
-  → N장 이하 청크에서만 검색(k=18)
+작품 + 질문 + N
+  → 그 작품의 N장 이하 청크에서만 검색(로컬 k=18, 공개 데모 k=20)
   → 가드 프롬프트("독자는 N장까지 읽었다, 발췌 밖 지식 금지")
-  → LM Studio(json_schema)
+  → 생성 모델(json_schema)
   → 코드 검증
       · 인용이 1~N장 원문에 글자 그대로 있는가
+      · N장 뒤에만 있는 인용이 섞였는가
       · N장 뒤에 처음 나오는 인물이 답에 있는가
-  → 답 + 인용(장 번호), 또는 "N장까지는 나오지 않습니다."
+  → 답 + 인용(장 번호), 또는 "N장까지는 나오지 않아요."
 ```
 
 ## 문서
@@ -22,18 +33,21 @@
 - [평가 기준](docs/eval-spec.md): 만들기 전에 정했다. 바꾼 기록도 여기에 있다.
 - [결정과 확인한 사실](docs/decisions.md): 날짜별 기록
 - [한계](docs/limitations.md)
-- [평가 결과](#평가-결과): 아래
+- [평가 결과](#평가-결과탁류): 아래. 평가는 「탁류」로만 했다
 
 ## 실행
 
 ```bash
 uv run pytest                                   # 모델 없이 도는 테스트(카세트 e2e 포함)
 uv run sfqa smoke                               # LM Studio(127.0.0.1:1234) 연결 점검
-uv run sfqa fetch && uv run sfqa clean          # 위키문헌 원문 받기(판 고정) → 정제
+uv run sfqa fetch --work taepyeong             # 위키문헌 원문 받기(판 고정). 작품 id는 data/works/
+uv run sfqa clean --work taepyeong             # 정제(허용 목록 밖의 틀이나 남은 마크업이 있으면 실패)
+uv run sfqa entities --work taepyeong          # 새 작품의 인물표(형태소 분석기로 자동, 사람 검토 전)
 uv run sfqa gold-check                          # 정답지를 모델 없이 검사
-uv run sfqa index                               # 청크 임베딩 색인(data/index, 저장소 밖)
+uv run sfqa compare-run --models all --max-calls 420  # 생성 모델 비교(docs/model-eval-spec.md)
+uv run sfqa index --work all                    # 작품마다 청크 임베딩 색인(data/works/<id>/index, 저장소 밖)
 uv run sfqa retrieval-eval --method dense       # 검색만 따로 재기(recall@k, L4)
-uv run sfqa ask --upto 5 "초봉이가 일하는 곳은 어디인가?"
+uv run sfqa ask --work mujeong --upto 5 "형식을 찾아온 여자는 누구야?"
 uv run sfqa eval-run --split test --max-calls 200
 uv run sfqa eval-score runs/<실행 폴더>
 ```
@@ -47,9 +61,10 @@ uv run sfqa eval-score runs/<실행 폴더>
 
 `uv run sfqa web` → http://127.0.0.1:8765 (이 맥에서만 열린다)
 
-- **대화:** 왼쪽에서 읽은 장을 고르고 챗봇처럼 묻는다. 답에는 근거 인용(장 번호)과 "01–N장에서 찾음" 범위가 붙는다.
+- **첫 화면:** 작품 카드에서 소설을 고른다. 주소에 작품이 들어가 링크로 공유할 수 있다(`#/mujeong`).
+- **대화:** 왼쪽에서 읽은 장을 고르고 챗봇처럼 묻는다. 장이 30개를 넘는 작품(「무정」)은 번호 입력과 막대로 고른다. 답에는 근거 인용(장 번호)과 "01–N장에서 찾음" 범위가 붙는다.
 - **아직 안 읽은 장:** 장 목록에서 제목을 "아직 안 읽음"으로 가린다. 뒷장 제목도 힌트가 될 수 있어서다.
-- **필터 없이 비교(데모용):** 19장 전체에서 찾고 스포일러를 막지 않은 답을 같이 보여 준다. 아직 안 읽은 장의 인용은 색 블록으로 표시한다.
+- **필터 없이 비교(데모용):** 작품 전체에서 찾고 스포일러를 막지 않은 답을 같이 보여 준다. 아직 안 읽은 장의 인용은 색 블록으로 표시한다.
 - **디자인:** Botanical Footer(Bitnomial, Awwwards) 레퍼런스. 어두운 바탕에 산호색(#DD8B6E) 하나를 쓴다.
 - **글꼴:** Pretendard(OFL, `src/sfqa/web_static/fonts/OFL.txt`)를 앱이 직접 준다. 외부 글꼴 서버나 CDN을 쓰지 않는다.
 - **한계:** 질문은 하나씩 따로 처리한다. "그 사람은?" 같은 후속 질문은 앞 대화를 참고하지 못한다.
@@ -67,7 +82,7 @@ AI가 만든 정답지와 자동 판정은 아직 사람이 검토하지 않았�
    - test 실행 폴더의 `review.csv`에서 1순위 행(누출 플래그, B·C인데 답함, 인용 실패)의 `human_outcome`과 `human_leak`(예/아니오)를 채운다.
    - 그다음 `uv run sfqa eval-score runs/<test 실행 폴더> --with-review`
 
-## 평가 결과
+## 평가 결과(「탁류」)
 
 2026-10-13 기록이다. 정답지는 **사람 검토 전**이고, 아래는 **자동 판정**이다. 전체 표는 [runs/20261013-175230-test/summary.md](runs/20261013-175230-test/summary.md)에 있다.
 

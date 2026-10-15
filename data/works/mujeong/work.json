@@ -1,0 +1,39 @@
+{
+  "id": "mujeong",
+  "order": 5,
+  "title": "무정",
+  "author": "이광수",
+  "author_death_year": 1950,
+  "label": "이광수의 장편소설 「무정」",
+  "published": "매일신보 1917",
+  "chapters": 126,
+  "blurb": "경성학교 영어 교사 이형식, 김장로의 딸 선형의 가정교사가 되던 날.",
+  "examples": [
+    {
+      "question": "형식은 왜 김장로 집에 가?",
+      "chapter": 1
+    },
+    {
+      "question": "순애는 어떤 아이야?",
+      "chapter": 3
+    },
+    {
+      "question": "형식을 찾아온 여자는 누구야?",
+      "chapter": 5
+    }
+  ],
+  "default_upto": 5,
+  "evaluated": false,
+  "source": {
+    "site": "ko.wikisource",
+    "page": "무정",
+    "mode": "bundles",
+    "toc": "^\\*\\s*\\[\\[(무정/(\\d+)장~(\\d+)장)\\|",
+    "split": "\\{\\{문단 그림\\}\\}",
+    "license": "PD-old-50(위키문헌). 작가 1950년 사망으로 대한민국에서 저작권 만료",
+    "note": "묶음 페이지 머리말(notes)에 20장 분량 줄거리 요약이 있다. 틀째 지운다(스포일러)",
+    "extra_entities": [
+      "병욱"
+    ]
+  }
+}

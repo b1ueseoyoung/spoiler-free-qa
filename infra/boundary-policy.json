@@ -1,0 +1,30 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "WriteOwnLogs",
+      "Effect": "Allow",
+      "Action": ["logs:CreateLogStream", "logs:PutLogEvents"],
+      "Resource": "arn:aws:logs:ap-northeast-2:*:log-group:/aws/lambda/sfqa-demo:*"
+    },
+    {
+      "Sid": "CountCalls",
+      "Effect": "Allow",
+      "Action": "dynamodb:UpdateItem",
+      "Resource": "arn:aws:dynamodb:ap-northeast-2:*:table/sfqa-demo-*"
+    },
+    {
+      "Sid": "ReadApiKey",
+      "Effect": "Allow",
+      "Action": "ssm:GetParameter",
+      "Resource": "arn:aws:ssm:ap-northeast-2:*:parameter/sfqa/*"
+    },
+    {
+      "Sid": "DecryptApiKeyViaSsm",
+      "Effect": "Allow",
+      "Action": "kms:Decrypt",
+      "Resource": "*",
+      "Condition": {"StringEquals": {"kms:ViaService": "ssm.ap-northeast-2.amazonaws.com"}}
+    }
+  ]
+}

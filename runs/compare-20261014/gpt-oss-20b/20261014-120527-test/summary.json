@@ -1,0 +1,168 @@
+{
+  "run": "20261014-120527-test",
+  "auto": {
+    "C0": {
+      "A": {
+        "missed": 22,
+        "total": 22,
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "leak_shown": 0,
+        "latency_s": 8.293,
+        "input_tokens": 6262,
+        "output_tokens": 374
+      },
+      "B": {
+        "abstained": 16,
+        "total": 16,
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "leak_shown": 0,
+        "latency_s": 5.743,
+        "input_tokens": 4548,
+        "output_tokens": 272
+      },
+      "C": {
+        "abstained": 6,
+        "total": 6,
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "leak_shown": 0,
+        "latency_s": 1.8209999999999997,
+        "input_tokens": 1733,
+        "output_tokens": 102
+      }
+    },
+    "C2": {
+      "A": {
+        "missed": 22,
+        "total": 22,
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "leak_shown": 0,
+        "latency_s": 75.675,
+        "input_tokens": 191775,
+        "output_tokens": 374
+      },
+      "B": {
+        "abstained": 16,
+        "total": 16,
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "leak_shown": 0,
+        "latency_s": 53.766999999999996,
+        "input_tokens": 138369,
+        "output_tokens": 272
+      },
+      "C": {
+        "abstained": 6,
+        "total": 6,
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "leak_shown": 0,
+        "latency_s": 20.409999999999997,
+        "input_tokens": 52425,
+        "output_tokens": 102
+      }
+    },
+    "C3": {
+      "A": {
+        "missed": 22,
+        "total": 22,
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "leak_shown": 0,
+        "latency_s": 75.291,
+        "input_tokens": 193733,
+        "output_tokens": 374
+      },
+      "B": {
+        "abstained": 16,
+        "total": 16,
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "leak_shown": 0,
+        "latency_s": 54.181,
+        "input_tokens": 139793,
+        "output_tokens": 272
+      },
+      "C": {
+        "abstained": 6,
+        "total": 6,
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "leak_shown": 0,
+        "latency_s": 20.732,
+        "input_tokens": 52959,
+        "output_tokens": 102
+      }
+    },
+    "C4": {
+      "A": {
+        "missed": 22,
+        "total": 22,
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "leak_shown": 0,
+        "latency_s": 75.291,
+        "input_tokens": 193733,
+        "output_tokens": 374
+      },
+      "B": {
+        "abstained": 16,
+        "total": 16,
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "leak_shown": 0,
+        "latency_s": 54.181,
+        "input_tokens": 139793,
+        "output_tokens": 272
+      },
+      "C": {
+        "abstained": 6,
+        "total": 6,
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "leak_shown": 0,
+        "latency_s": 20.732,
+        "input_tokens": 52959,
+        "output_tokens": 102
+      }
+    }
+  },
+  "targets": [
+    "C2 L4 누출 문항 0개 (목표 0) → 달성",
+    "C3 L4 누출 문항 0개 (목표 0) → 달성",
+    "C4 L4 누출 문항 0개 (목표 0) → 달성",
+    "C4 B 누출(L1~L3) 0/16 (목표 0) → 달성",
+    "C4 C 보류 6/6 (목표 90% 이상) → 달성"
+  ],
+  "review_rows": 88,
+  "gold_review_status": {
+    "pre-human-review": 44
+  }
+}

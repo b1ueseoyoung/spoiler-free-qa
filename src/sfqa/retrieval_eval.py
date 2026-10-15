@@ -1,4 +1,4 @@
-"""검색만 따로 잰다(생성 모델은 부르지 않는다. 질문 임베딩만 LM Studio로 계산한다).
+"""검색만 따로 잰다(생성 모델은 부르지 않는다. 질문 임베딩만 설정한 임베딩 공급자로 계산한다).
 
 - A 문항: 정답 근거 인용이 검색된 청크 안에 통째로 들어가는지(recall@k). 근거가 여럿이면 '하나라도'와 '전부'를 따로 센다.
 - 모든 문항: L4 누출. 검색된 청크의 장을 메타데이터가 아니라 본문 내용으로 다시 찾아 N보다 크면 누출이다.
@@ -45,16 +45,17 @@ def content_chapter(chunk_text: str, texts: Mapping[int, str]) -> int | None:
 
 
 def evaluate(questions: list[Question], query_vecs: np.ndarray | None, query_terms: list[list[str]] | None,
-             index: ChapterIndex, texts: Mapping[int, str], method: str = "dense") -> dict:
-    kmax = max(KS)
+             index: ChapterIndex, texts: Mapping[int, str], method: str = "dense", gate_k: int = GATE_K) -> dict:
+    ks = tuple(sorted(set(KS) | {gate_k}))
+    kmax = max(ks)
     rows = []
     for i, q in enumerate(questions):
         qv = None if query_vecs is None else query_vecs[i]
         terms = None if query_terms is None else query_terms[i]
         hits = index.search(qv, q.n, kmax, method, terms)
-        leaks = [c.chunk_id for c, _ in hits[:GATE_K] if (content_chapter(c.text, texts) or 99) > q.n]
+        leaks = [c.chunk_id for c, _ in hits[:gate_k] if (content_chapter(c.text, texts) or 99) > q.n]
         row = {"id": q.id, "split": q.split, "type": q.type, "n": q.n, "l4_leaks": leaks,
-               "top": [c.chunk_id for c, _ in hits[:GATE_K]]}
+               "top": [c.chunk_id for c, _ in hits[:gate_k]]}
         if q.type == "A":
             any_rank = next((r for r, (c, _) in enumerate(hits, 1) if any(covers(c, ev, texts) for ev in q.evidence)), None)
             all_rank = None
@@ -71,24 +72,24 @@ def evaluate(questions: list[Question], query_vecs: np.ndarray | None, query_ter
 
     summary = {}
     for name, sel in [("all", lambda r: True), ("dev", lambda r: r["split"] == "dev"), ("test", lambda r: r["split"] == "test")]:
-        summary[name] = {f"recall@{k}": recall(sel, "any_rank", k) for k in KS}
-        summary[name][f"recall_all@{GATE_K}"] = recall(sel, "all_rank", GATE_K)
-    hit, total = summary["all"][f"recall@{GATE_K}"]
+        summary[name] = {f"recall@{k}": recall(sel, "any_rank", k) for k in ks}
+        summary[name][f"recall_all@{gate_k}"] = recall(sel, "all_rank", gate_k)
+    hit, total = summary["all"][f"recall@{gate_k}"]
     return {
         "summary": summary,
         "l4_leak_questions": sum(1 for r in rows if r["l4_leaks"]),
-        "gate": {"k": GATE_K, "threshold": GATE, "hit": hit, "total": total, "pass": total > 0 and hit / total >= GATE},
+        "gate": {"k": gate_k, "threshold": GATE, "hit": hit, "total": total, "pass": total > 0 and hit / total >= GATE},
         "rows": rows,
     }
 
 
 def run(method: str, questions: list[Question], index: ChapterIndex, embed_query_batch, texts: Mapping[int, str],
-        meta: dict) -> tuple[dict, str]:
+        meta: dict, gate_k: int = GATE_K) -> tuple[dict, str]:
     if method not in METHODS:
         raise ValueError(f"없는 검색 방식이다: {method} (가능: {', '.join(METHODS)})")
     vecs = None if method == "bm25" else np.asarray(embed_query_batch([search_text(q.question) for q in questions]))
     terms = None if method == "dense" else tokenize_many([q.question for q in questions])
-    report = evaluate(questions, vecs, terms, index, texts, method)
+    report = evaluate(questions, vecs, terms, index, texts, method, gate_k)
     report["method"] = method
     report["index_meta"] = meta
     out_dir = ROOT / "runs"

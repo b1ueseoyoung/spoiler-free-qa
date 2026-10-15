@@ -1,0 +1,269 @@
+{
+  "profile": {
+    "slug": "qwen3.6-35b-a3b",
+    "model": "qwen/qwen3.6-35b-a3b",
+    "reasoning_effort": "none",
+    "provider": "lmstudio",
+    "reuse": true,
+    "baseline": false
+  },
+  "settings": {
+    "model": "qwen/qwen3.6-35b-a3b",
+    "reasoning_effort": "none",
+    "max_tokens": 800,
+    "seed": 20261013
+  },
+  "started_at": "2026-10-14T10:37:01",
+  "load": {
+    "load_s": 12.2,
+    "size_bytes": 20429364306,
+    "format": "safetensors",
+    "context_length": 32768,
+    "quantization": "4bit"
+  },
+  "smoke": {
+    "ok": true,
+    "correct": true,
+    "status": "answered",
+    "answer": "서해",
+    "finish_reason": "stop",
+    "output_tokens": 14,
+    "latency_s": 2.162,
+    "raw_head": "{\"status\": \"answered\", \"answer\": \"서해\"}"
+  },
+  "dev": {
+    "run_dir": "20261014-103716-dev",
+    "records": 12,
+    "format_fail": 0
+  },
+  "klue": {
+    "by_type": {
+      "1": {
+        "total": 80,
+        "exact": 59,
+        "trap_hit": 0,
+        "refused": 0,
+        "inexact": 13,
+        "missed": 8,
+        "f1_mean": 0.818
+      },
+      "2": {
+        "total": 80,
+        "inexact": 19,
+        "trap_hit": 0,
+        "refused": 0,
+        "exact": 51,
+        "missed": 10,
+        "f1_mean": 0.7573
+      },
+      "3": {
+        "total": 80,
+        "ungrounded": 11,
+        "trap_hit": 9,
+        "refused": 0,
+        "abstained": 69
+      }
+    },
+    "latency": {
+      "n": 240,
+      "p50_s": 0.59,
+      "p95_s": 0.76,
+      "out_tok_per_s": 25.9,
+      "input_tokens": 170804,
+      "output_tokens": 3791
+    }
+  },
+  "test": {
+    "run_dir": "20261014-103931-test",
+    "complete": true,
+    "auto": {
+      "C0": {
+        "A": {
+          "wrong": 8,
+          "total": 22,
+          "L1": 0,
+          "L2": 0,
+          "L3": 0,
+          "L4": 0,
+          "leak_shown": 0,
+          "answered": 8,
+          "kept_quote": 0,
+          "chapter_match": 0,
+          "latency_s": 16.649,
+          "input_tokens": 4972,
+          "output_tokens": 713,
+          "missed": 14
+        },
+        "B": {
+          "answered": 4,
+          "total": 16,
+          "L1": 0,
+          "L2": 0,
+          "L3": 0,
+          "L4": 0,
+          "leak_shown": 0,
+          "latency_s": 8.594999999999999,
+          "input_tokens": 3604,
+          "output_tokens": 437,
+          "abstained": 12
+        },
+        "C": {
+          "abstained": 5,
+          "total": 6,
+          "L1": 0,
+          "L2": 0,
+          "L3": 0,
+          "L4": 0,
+          "leak_shown": 0,
+          "latency_s": 3.1029999999999998,
+          "input_tokens": 1367,
+          "output_tokens": 138,
+          "ungrounded": 1
+        }
+      },
+      "C2": {
+        "A": {
+          "correct": 9,
+          "total": 22,
+          "L1": 0,
+          "L2": 0,
+          "L3": 0,
+          "L4": 0,
+          "leak_shown": 0,
+          "answered": 18,
+          "kept_quote": 17,
+          "chapter_match": 15,
+          "latency_s": 130.53399999999996,
+          "input_tokens": 174174,
+          "output_tokens": 4414,
+          "wrong": 9,
+          "missed": 4
+        },
+        "B": {
+          "abstained": 8,
+          "total": 16,
+          "L1": 0,
+          "L2": 0,
+          "L3": 0,
+          "L4": 0,
+          "leak_shown": 0,
+          "latency_s": 75.179,
+          "input_tokens": 125975,
+          "output_tokens": 1756,
+          "answered": 8
+        },
+        "C": {
+          "abstained": 6,
+          "total": 6,
+          "L1": 0,
+          "L2": 0,
+          "L3": 0,
+          "L4": 0,
+          "leak_shown": 0,
+          "latency_s": 21.617,
+          "input_tokens": 47433,
+          "output_tokens": 102
+        }
+      },
+      "C3": {
+        "A": {
+          "correct": 10,
+          "total": 22,
+          "L1": 0,
+          "L2": 0,
+          "L3": 0,
+          "L4": 0,
+          "leak_shown": 0,
+          "answered": 19,
+          "kept_quote": 19,
+          "chapter_match": 16,
+          "latency_s": 129.471,
+          "input_tokens": 175984,
+          "output_tokens": 4032,
+          "wrong": 9,
+          "missed": 3
+        },
+        "B": {
+          "abstained": 7,
+          "total": 16,
+          "L1": 0,
+          "L2": 0,
+          "L3": 0,
+          "L4": 0,
+          "leak_shown": 0,
+          "latency_s": 82.575,
+          "input_tokens": 127283,
+          "output_tokens": 1987,
+          "answered": 9
+        },
+        "C": {
+          "abstained": 6,
+          "total": 6,
+          "L1": 0,
+          "L2": 0,
+          "L3": 0,
+          "L4": 0,
+          "leak_shown": 0,
+          "latency_s": 22.111,
+          "input_tokens": 47927,
+          "output_tokens": 102
+        }
+      },
+      "C4": {
+        "A": {
+          "correct": 10,
+          "total": 22,
+          "L1": 0,
+          "L2": 0,
+          "L3": 0,
+          "L4": 0,
+          "leak_shown": 0,
+          "answered": 19,
+          "kept_quote": 19,
+          "chapter_match": 16,
+          "latency_s": 129.471,
+          "input_tokens": 175984,
+          "output_tokens": 4032,
+          "wrong": 9,
+          "missed": 3
+        },
+        "B": {
+          "abstained": 7,
+          "total": 16,
+          "L1": 0,
+          "L2": 0,
+          "L3": 0,
+          "L4": 0,
+          "leak_shown": 0,
+          "latency_s": 82.575,
+          "input_tokens": 127283,
+          "output_tokens": 1987,
+          "answered": 9
+        },
+        "C": {
+          "abstained": 6,
+          "total": 6,
+          "L1": 0,
+          "L2": 0,
+          "L3": 0,
+          "L4": 0,
+          "leak_shown": 0,
+          "latency_s": 22.111,
+          "input_tokens": 47927,
+          "output_tokens": 102
+        }
+      }
+    },
+    "latency_c4": {
+      "n": 44,
+      "p50_s": 5.58,
+      "p95_s": 7.44,
+      "out_tok_per_s": 27.9,
+      "input_tokens": 351194,
+      "output_tokens": 6121
+    }
+  },
+  "model_calls": 221,
+  "status": "done",
+  "finished_at": "2026-10-14T10:39:32"
+}

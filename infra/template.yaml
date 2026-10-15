@@ -1,0 +1,106 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Transform: AWS::Serverless-2016-10-31
+Description: 책갈피(스포일러 없는 소설 도우미) 공개 데모 - Lambda(컨테이너, arm64) + 함수 URL + DynamoDB 호출 상한 (docs/deploy-plan.md)
+
+Parameters:
+  ImageUri:
+    Type: String
+    Description: ECR 이미지(다이제스트로 고정). scripts/deploy.sh가 넣는다
+  ApiKeyParam:
+    Type: String
+    Default: /sfqa/anthropic-api-key
+    Description: Anthropic 데모 워크스페이스 키를 담은 SSM SecureString 이름(값은 사용자가 직접 넣는다)
+  IpHashSalt:
+    Type: String
+    NoEcho: true
+    MinLength: 16
+    Description: IP 해시용 소금(무작위 값). 비밀번호가 아니라 IP 원문을 되찾기 어렵게 하는 값이다
+  DailyLimit:
+    Type: Number
+    Default: 300
+  IpDailyLimit:
+    Type: Number
+    Default: 30
+  IpMinuteLimit:
+    Type: Number
+    Default: 5
+  PermissionsBoundaryArn:
+    Type: String
+    Default: ""
+    Description: 함수 역할의 권한 경계(infra/boundary-policy.json으로 만든 sfqa-demo-boundary). 비우면 걸지 않는다
+  ReservedConcurrency:
+    Type: Number
+    Default: 2
+    Description: 동시 실행 상한. 0이면 걸지 않는다(신규 계정은 남는 동시 실행이 100 이하라 걸 수 없다)
+
+Conditions:
+  HasReservedConcurrency: !Not [!Equals [!Ref ReservedConcurrency, 0]]
+  HasPermissionsBoundary: !Not [!Equals [!Ref PermissionsBoundaryArn, ""]]
+
+Resources:
+  LimitsTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: sfqa-demo-limits
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - AttributeName: pk
+          AttributeType: S
+      KeySchema:
+        - AttributeName: pk
+          KeyType: HASH
+      TimeToLiveSpecification:
+        AttributeName: ttl
+        Enabled: true
+
+  FunctionLogs:
+    Type: AWS::Logs::LogGroup
+    Properties:
+      LogGroupName: /aws/lambda/sfqa-demo
+      RetentionInDays: 14
+
+  Function:
+    Type: AWS::Serverless::Function
+    DependsOn: FunctionLogs
+    Properties:
+      FunctionName: sfqa-demo
+      PackageType: Image
+      ImageUri: !Ref ImageUri
+      Architectures: [arm64]
+      MemorySize: 2048
+      Timeout: 120  # 새 실행 환경의 첫 질문은 모델·색인을 올리느라 오래 걸린다
+      ReservedConcurrentExecutions: !If [HasReservedConcurrency, !Ref ReservedConcurrency, !Ref AWS::NoValue]
+      PermissionsBoundary: !If [HasPermissionsBoundary, !Ref PermissionsBoundaryArn, !Ref AWS::NoValue]
+      Environment:
+        Variables:
+          LIMITS_TABLE: !Ref LimitsTable
+          ANTHROPIC_API_KEY_SSM_PARAM: !Ref ApiKeyParam
+          IP_HASH_SALT: !Ref IpHashSalt
+          DAILY_LIMIT: !Ref DailyLimit
+          IP_DAILY_LIMIT: !Ref IpDailyLimit
+          IP_MINUTE_LIMIT: !Ref IpMinuteLimit
+      FunctionUrlConfig:
+        AuthType: NONE
+        InvokeMode: BUFFERED
+      Policies:
+        - Statement:
+            # 호출 상한: TransactWriteItems의 Update 항목마다 UpdateItem 권한이 필요하다
+            - Effect: Allow
+              Action: dynamodb:UpdateItem
+              Resource: !GetAtt LimitsTable.Arn
+            - Effect: Allow
+              Action: ssm:GetParameter
+              Resource: !Sub arn:${AWS::Partition}:ssm:${AWS::Region}:${AWS::AccountId}:parameter${ApiKeyParam}
+            - Effect: Allow
+              Action: kms:Decrypt
+              Resource: "*"
+              Condition:
+                StringEquals:
+                  kms:ViaService: !Sub ssm.${AWS::Region}.amazonaws.com
+
+Outputs:
+  FunctionUrl:
+    Description: 공개 데모 주소
+    Value: !GetAtt FunctionUrl.FunctionUrl
+  LimitsTableName:
+    Value: !Ref LimitsTable

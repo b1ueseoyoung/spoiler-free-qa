@@ -6,8 +6,10 @@
    - 검색된 발췌에는 없지만 N장 이하 원문에 있으면 남기되 '기억에서 옮김'으로 표시한다.
    - 8자 미만은 근거로 보지 않는다("네." 같은 짧은 글은 어디에나 있다).
 2. 인물 가드: N장 뒤에 처음 나오는 인물·지명이 답에 있으면 답하지 않는다.
-3. 최종: 모델이 답했고, 검증된 인용이 하나 이상이고, 인물 가드에 걸리지 않을 때만 답한다.
-   아니면 모델 문장을 버리고 고정 문구를 낸다(뒷이야기가 있는지조차 흘리지 않게).
+3. 최종: 모델이 답했고, 검증된 인용이 하나 이상이고, 인물 가드에 걸리지 않고, N장 뒤에서 온 인용(L1)이
+   하나도 없을 때만 답한다. 아니면 모델 문장을 버리고 고정 문구를 낸다(뒷이야기가 있는지조차 흘리지 않게).
+   - L1 조건은 2026-10-14에 더했다(사용자 결정). 전에는 확인된 인용이 하나라도 있으면 L1 인용만 버리고 답을 보여 줬다.
+     모델이 뒷부분을 외워 인용했다면 답 본문에도 그 내용이 섞였을 수 있다. 유명한 작품일수록 그럴 가능성이 크다.
 """
 
 from __future__ import annotations
@@ -19,7 +21,6 @@ from dataclasses import dataclass, field
 
 from sfqa.textnorm import search_text
 
-LAST_CHAPTER = 19
 MIN_QUOTE_CHARS = 8
 _WS = re.compile(r"\s+")
 # 따옴표와 가운뎃점 계열을 하나로 접는다(munjigi/verify.py에서 옮김).
@@ -32,8 +33,9 @@ def compact(text: str | None) -> str:
     return _WS.sub("", folded.lower())
 
 
-def refusal(n: int) -> str:
-    return "작품에 나오지 않습니다." if n >= LAST_CHAPTER else f"{n}장까지는 나오지 않습니다."
+def refusal(n: int, last: int) -> str:
+    """last: 작품의 마지막 장. 대화체(2026-10-14). '아직' 같은 말은 뒷이야기가 있다는 힌트라 넣지 않는다."""
+    return "작품에 나오지 않아요." if n >= last else f"{n}장까지는 나오지 않아요."
 
 
 @dataclass
@@ -65,6 +67,7 @@ class Verdict:
 class Verifier:
     def __init__(self, texts: Mapping[int, str], entity_first: Mapping[str, int | None]):
         self._compact = {c: compact(t) for c, t in texts.items()}
+        self.last = max(texts)
         self._entity_first = {k: v for k, v in entity_first.items() if v is not None}
 
     def check_quote(self, chapter: int, text: str, n: int, context: str) -> QuoteCheck:
@@ -105,8 +108,9 @@ class Verifier:
         if not apply_guard:
             # 가드 없는 조건(C0~C3)은 모델 출력을 그대로 둔다. 검증 결과는 채점용으로만 남긴다.
             status = "answered" if model_status == "answered" else "not_found"
-            return Verdict(status, answer if status == "answered" else refusal(n), checks, future, reasons)
-        ok = model_status == "answered" and any(c.kept for c in checks) and not future
+            return Verdict(status, answer if status == "answered" else refusal(n, self.last), checks, future, reasons)
+        ok = (model_status == "answered" and any(c.kept for c in checks) and not future
+              and not any(c.status == "future_only" for c in checks))
         if ok:
             return Verdict("answered", answer, [c for c in checks if c.kept], future, reasons)
-        return Verdict("not_found", refusal(n), checks, future, reasons)
+        return Verdict("not_found", refusal(n, self.last), checks, future, reasons)

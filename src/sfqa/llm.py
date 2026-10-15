@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import os
 import re
 import time
 from dataclasses import asdict, dataclass, field
@@ -191,12 +192,64 @@ def make_chat(s: Settings, http_client: httpx.Client | None = None) -> ChatOpenA
         max_retries=1,
         use_responses_api=False,
         # LangChain의 모델명별 처리를 거치지 않고 그대로 보낸다(gpt-oss는 none을 받지 않아 low를 쓴다).
-        extra_body={"reasoning_effort": s.reasoning_effort},
+        # 빈 값이면 보내지 않는다(thinking이 없는 Gemma).
+        extra_body={"reasoning_effort": s.reasoning_effort} if s.reasoning_effort else None,
         http_client=http_client,
     )
 
 
-def make_embeddings(s: Settings, http_client: httpx.Client | None = None) -> OpenAIEmbeddings:
+# llama.cpp의 pooling 종류(enum llama_pooling_type). KURE-v1은 CLS다.
+LLAMA_POOLING = {0: "none", 1: "mean", 2: "cls", 3: "last", 4: "rank"}
+
+
+def resolve_gguf(model: str) -> Path:
+    """'<저장소>/<파일>.gguf' 이름을 실제 파일로. LM Studio 모델 폴더(GGUF_MODELS_DIR)에 있으면 그것을 쓰고,
+    없으면 Hugging Face에서 받는다(huggingface-hub 캐시). 배포 이미지에는 GGUF_MODELS_DIR에 미리 넣어 둔다."""
+    root = Path(os.environ.get("GGUF_MODELS_DIR", Path.home() / ".lmstudio" / "models"))
+    if (root / model).exists():
+        return root / model
+    repo, _, filename = model.rpartition("/")
+    from huggingface_hub import hf_hub_download
+
+    return Path(hf_hub_download(repo_id=repo, filename=filename))
+
+
+class LocalEmbeddings(Embeddings):
+    """GGUF 임베딩 모델을 llama.cpp(llama-cpp-python)로 이 프로세스 안에서 실행한다(EMBED_PROVIDER=local, 공개 데모용).
+
+    LM Studio가 쓰는 것과 같은 파일(mykor/KURE-v1-gguf의 Q8_0)이다. 모델은 처음 쓸 때 올린다.
+    pooling이 expect_pooling과 다르면 색인과 질의 벡터가 어긋나므로 바로 실패한다.
+    """
+
+    def __init__(self, model_name: str, expect_pooling: str | None = "cls", model=None, n_ctx: int = 2048):
+        self.model_name, self.expect_pooling, self.n_ctx = model_name, expect_pooling, n_ctx
+        self._model = model
+
+    @property
+    def model(self):
+        if self._model is None:
+            from llama_cpp import Llama  # 컴파일된 확장이라 쓸 때만 불러온다
+
+            # mmap(기본)을 쓴다. Lambda에서 use_mmap=False로 한 번에 읽으면 첫 준비가 44초에서 80초로 늘고
+            # 메모리도 1.9GB까지 올라갔다(2026-10-14).
+            self._model = Llama(model_path=str(resolve_gguf(self.model_name)), embedding=True, n_ctx=self.n_ctx,
+                                n_batch=self.n_ctx, n_ubatch=self.n_ctx, verbose=False)
+        if self.expect_pooling:
+            mode = LLAMA_POOLING.get(self._model.pooling_type())
+            if mode != self.expect_pooling:
+                raise ValueError(f"{self.model_name}의 pooling이 {mode}다({self.expect_pooling}여야 한다)")
+        return self._model
+
+    def embed_documents(self, texts: list[str]) -> list[list[float]]:
+        return [list(map(float, self.model.embed(t))) for t in texts]
+
+    def embed_query(self, text: str) -> list[float]:
+        return self.embed_documents([text])[0]
+
+
+def make_embeddings(s: Settings, http_client: httpx.Client | None = None) -> Embeddings:
+    if s.embed_provider == "local":
+        return LocalEmbeddings(s.embed_model)
     check_loopback(s.base_url)
     return OpenAIEmbeddings(
         model=s.embed_model,
@@ -209,12 +262,21 @@ def make_embeddings(s: Settings, http_client: httpx.Client | None = None) -> Ope
     )
 
 
-def make_client(s: Settings, chat: BaseChatModel | None = None) -> LiveClient | ReplayClient:
+def live_client(s: Settings, cassette: Path | None = None, chat: BaseChatModel | None = None):
+    """실제로 모델을 부르는 클라이언트. LLM_PROVIDER에 따라 LM Studio 또는 Claude API."""
+    if s.llm_provider == "anthropic":
+        from sfqa.claude import AnthropicClient
+
+        return AnthropicClient(cassette)
+    return LiveClient(chat or make_chat(s), cassette)
+
+
+def make_client(s: Settings, chat: BaseChatModel | None = None):
     if s.cassette_mode == "replay":
         assert s.cassette_path is not None
         return ReplayClient(s.cassette_path)
     cassette = s.cassette_path if s.cassette_mode == "record" else None
-    return LiveClient(chat or make_chat(s), cassette)
+    return live_client(s, cassette, chat)
 
 
 class CachedEmbeddings(Embeddings):

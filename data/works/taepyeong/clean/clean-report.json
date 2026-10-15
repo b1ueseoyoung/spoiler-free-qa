@@ -1,0 +1,251 @@
+{
+  "work": "taepyeong",
+  "chapters": [
+    {
+      "chapter": 1,
+      "toc_title": "윤직원 영감 귀택지도(歸宅之圖)",
+      "heading": "윤직원 영감 귀택지도(歸宅之圖)",
+      "heading_matches_toc": true,
+      "chars": 6155,
+      "paragraphs": 80,
+      "removed_templates": {
+        "머리말": 1,
+        "꼬리말": 1
+      },
+      "hanja_parens": 18,
+      "censor_marks": 0,
+      "first": "추석을 지나 이윽고, 짙어 가는 가을 해가 저물기 쉬운 어느 날 석양.\n",
+      "last": "띔을 안 해주었으면 윤직원 영감은 오늘 명창대회는 영영 못 가고 말았을 것이고, 그래서 다음날이라도 그걸\n알았으면 냅다 발을 굴렀을 것입니다.\n"
+    },
+    {
+      "chapter": 2,
+      "toc_title": "무임승차 기술",
+      "heading": "무임승차 기술",
+      "heading_matches_toc": true,
+      "chars": 5330,
+      "paragraphs": 87,
+      "removed_templates": {
+        "머리말": 1,
+        "꼬리말": 1
+      },
+      "hanja_parens": 6,
+      "censor_marks": 1,
+      "first": "윤직원 영감은 명창대회를 무척 좋아합니다. 아마 이 세상에 돈만 빼놓고는",
+      "last": "그는 이윽고 공차 타는 기술을 춘심이한테도 깨우쳐 주던 것인데, 그런 걸 보면 아마 청기와장수는 아닌 모양입니다.\n"
+    },
+    {
+      "chapter": 3,
+      "toc_title": "서양국 명창대회",
+      "heading": "서양국 명창대회",
+      "heading_matches_toc": true,
+      "chars": 5858,
+      "paragraphs": 71,
+      "removed_templates": {
+        "머리말": 1,
+        "꼬리말": 1
+      },
+      "hanja_parens": 7,
+      "censor_marks": 0,
+      "first": "중로에서 그렇듯 많이 충그리고 길이 터지고 했어도, 회장에 당도했을 때에",
+      "last": "윤직원 영감의 근지야 참 보잘 게 별양 없습니다.\n"
+    },
+    {
+      "chapter": 4,
+      "toc_title": "우리만 빼놓고 어서 망해라",
+      "heading": "우리만 빼놓고 어서 망해라",
+      "heading_matches_toc": true,
+      "chars": 17125,
+      "paragraphs": 211,
+      "removed_templates": {
+        "머리말": 1,
+        "꼬리말": 1
+      },
+      "hanja_parens": 33,
+      "censor_marks": 0,
+      "first": "얼굴이 말〔馬面〕처럼 길대서 말대가리라는 별명을 듣던 윤직원 영감의 선친",
+      "last": ", 경찰서장보다는 경찰부장이 좋기는 하겠지만, 그건 너무 첫술에 배불러지라는 욕심이라 해서, 알맞게\n우선 군수와 경찰서장을 양성하던 것입니다.\n"
+    },
+    {
+      "chapter": 5,
+      "toc_title": "마음의 빈민굴",
+      "heading": "마음의 빈민굴",
+      "heading_matches_toc": true,
+      "chars": 14424,
+      "paragraphs": 173,
+      "removed_templates": {
+        "머리말": 1,
+        "꼬리말": 1
+      },
+      "hanja_parens": 19,
+      "censor_marks": 0,
+      "first": "윤직원 영감은 그처럼 부민관의 명창대회로부터 돌아와서, 대문 안에 들어서",
+      "last": "저당(根抵當)해놓고 씁니다. 그리고 그런 숱한 여러 싸움 가운데 오늘은 시아버지\n윤직원 영감과 며느리 고씨와의 싸움이 방금 벌어질 켯속입니다.\n"
+    },
+    {
+      "chapter": 6,
+      "toc_title": "관전기(觀戰記)",
+      "heading": "관전기(觀戰記)",
+      "heading_matches_toc": true,
+      "chars": 10200,
+      "paragraphs": 135,
+      "removed_templates": {
+        "머리말": 1,
+        "꼬리말": 1
+      },
+      "hanja_parens": 9,
+      "censor_marks": 0,
+      "first": "고씨는 그리하여, 그처럼 오랫동안 생수절을 하고 살아오다가 마침내 단산(",
+      "last": "경손의 할아버지가 갈데없습니다. 일가 망한 건 항렬만\n높단 말로, 눙치고 넘기자니, 차라리 이 조손관계(祖孫關係)는 비극이라 함이 옳겠습니다.\n"
+    },
+    {
+      "chapter": 7,
+      "toc_title": "쇠가 쇠를 낳고",
+      "heading": "쇠가 쇠를 낳고",
+      "heading_matches_toc": true,
+      "chars": 7904,
+      "paragraphs": 101,
+      "removed_templates": {
+        "머리말": 1,
+        "꼬리말": 1
+      },
+      "hanja_parens": 5,
+      "censor_marks": 1,
+      "first": "사랑방에는 언제 왔는지 올챙이 석서방이, 과시 올챙이같이 토옹통한 배를 ",
+      "last": " 하고 풀 죽은 기색으로 탄식을 하는 게, 이놈의 영감이 그만큼\n살고 쉬이 죽으려고 청승을 떠는가 싶어 얼굴이 다시금 쳐다보일 따름이었습니다.\n"
+    },
+    {
+      "chapter": 8,
+      "toc_title": "상평통보 서 푼과……",
+      "heading": "상평통보 서 푼과……",
+      "heading_matches_toc": true,
+      "chars": 12166,
+      "paragraphs": 134,
+      "removed_templates": {
+        "머리말": 1,
+        "꼬리말": 1
+      },
+      "hanja_parens": 5,
+      "censor_marks": 0,
+      "first": "올챙이는, 윤직원 영감이 자기가 자청해서 자기 입으로 개라고 하니, 차라",
+      "last": "다고 총총히 물러갔습니다. 그는 물러가면서, 잘 유념을 하여\n쉬이 그 마나님감을 골라다가 현신시키겠다고, 자청 다짐을 두기를 잊지 않았습니다.\n"
+    },
+    {
+      "chapter": 9,
+      "toc_title": "절약의 도락정신",
+      "heading": "절약의 도락정신",
+      "heading_matches_toc": true,
+      "chars": 8191,
+      "paragraphs": 90,
+      "removed_templates": {
+        "머리말": 1,
+        "꼬리말": 1
+      },
+      "hanja_parens": 11,
+      "censor_marks": 0,
+      "first": "올챙이를 보내고 나서 윤직원 영감은 퇴침을 돋우 베고, 보료 위에 가 편",
+      "last": "즉 혹시 무슨 장난이라도 할 듯싶고, 그 끝엔 어떤 일이 생길 듯도\n하고 하기는 합니다마는 물론 꼭이 그러리라고 단언은 할 수 없는 일이고요.\n"
+    },
+    {
+      "chapter": 10,
+      "toc_title": "실제록(失題錄)",
+      "heading": "실제록(失題錄)",
+      "heading_matches_toc": true,
+      "chars": 18528,
+      "paragraphs": 317,
+      "removed_templates": {
+        "머리말": 1,
+        "꼬리말": 1
+      },
+      "hanja_parens": 11,
+      "censor_marks": 0,
+      "first": "대복이가 윤직원 영감의 머리맡 연상(硯床)에 놓인 세트의 스위치를 누르는",
+      "last": " 그런 체모는 잃은 지 오래고, 애인의 맹세를 믿고서 적이 안심을 했습니다. 자고로 노소 없이 사랑하는 이의 말은 무엇이고 곧이가\n들린다구요.\n"
+    },
+    {
+      "chapter": 11,
+      "toc_title": "인간 체화와 동시에 품부족 문제, 기타",
+      "heading": "인간 체화와 동시에 품부족 문제, 기타",
+      "heading_matches_toc": true,
+      "chars": 17800,
+      "paragraphs": 409,
+      "removed_templates": {
+        "머리말": 1,
+        "꼬리말": 1
+      },
+      "hanja_parens": 9,
+      "censor_marks": 0,
+      "first": "시방 사랑에서는 일흔두 살 먹은(가칭 예순다섯 살 먹은) 증조할아버지가,",
+      "last": "도 시체의 용어를 빌려 오면,\n통제가 서지를 않아 물자배급에 체화(滯貨)와 품부족(品不足)이라는 슬픈 정상을 나타낸 게 아니랄 수 없겠습니다.\n"
+    },
+    {
+      "chapter": 12,
+      "toc_title": "세계 사업 반절기(半折記)",
+      "heading": "세계 사업 반절기(半折記)",
+      "heading_matches_toc": true,
+      "chars": 15358,
+      "paragraphs": 245,
+      "removed_templates": {
+        "머리말": 1,
+        "꼬리말": 1
+      },
+      "hanja_parens": 12,
+      "censor_marks": 10,
+      "first": "역시 같은 날 밤이요, 아홉시가 한 오 분 가량 지나섭니다. 그러니까 방",
+      "last": "나서 못 온다는 기별이 왔기에, 또 마침 내키지도 않던 참이라 차라리 다행스러 얼핏\n일어섰노라고 역시 종수 그 사람답게 쓸어 덮고 말았습니다.\n"
+    },
+    {
+      "chapter": 13,
+      "toc_title": "도끼자루는 썩어도……(즉 당세 신선놀음의 일착(一齣))",
+      "heading": "도끼자루는 썩어도……(즉 당세 신선놀음의 일착(一齣))",
+      "heading_matches_toc": true,
+      "chars": 4635,
+      "paragraphs": 90,
+      "removed_templates": {
+        "머리말": 1,
+        "꼬리말": 1
+      },
+      "hanja_parens": 10,
+      "censor_marks": 4,
+      "first": "동대문 밖 창식이 윤주사의 큰첩네 집 사랑, 여기도 역시 같은 그날 밤 ",
+      "last": ", 더욱이 윤주사가 조끼 호주머니 속에 우그려 넣고 만\n동경서 온 전보가 매우 궁금합니다. 하나 밝는 날이면 그것도 자연 속을 알게 되겠지요.\n"
+    },
+    {
+      "chapter": 14,
+      "toc_title": "해 저무는 만리장성",
+      "heading": "해 저무는 만리장성",
+      "heading_matches_toc": true,
+      "chars": 17865,
+      "paragraphs": 268,
+      "removed_templates": {
+        "머리말": 1,
+        "꼬리말": 1
+      },
+      "hanja_parens": 26,
+      "censor_marks": 7,
+      "first": "만일 오늘이 우리한테 새것을 가져다주지 않고 어제와 꼬옥 같은 것만 되풀",
+      "last": "킵니다. 그러면서 속으로, 오늘\n구백사십오 원 번 것이 오십오 원 새끼까지 치어 가지고 도로 나가는구나 생각하니, 매우 섭섭하고 허망했습니다.\n"
+    },
+    {
+      "chapter": 15,
+      "toc_title": "망진자(亡秦者)는 호야(胡也)니라",
+      "heading": "망진자(亡秦者)는 호야(胡也)니라",
+      "heading_matches_toc": true,
+      "chars": 4238,
+      "paragraphs": 60,
+      "removed_templates": {
+        "머리말": 1,
+        "꼬리말": 1
+      },
+      "hanja_parens": 6,
+      "censor_marks": 0,
+      "first": "일찍이 윤직원 영감은 그의 소싯적 윤두꺼비 시절에, 자기 부친 말대가리 ",
+      "last": "한\n여운이 스며들어, 가뜩이나 어둔 얼굴들을 면면상고, 말할 바를 잊고, 몸둘 곳을 둘러보게 합니다. 마치 장수의 죽음을 만난 군졸들처럼…….\n"
+    }
+  ],
+  "completeness": {
+    "last_chapter_next_link": "",
+    "last_chapter_has_next": false,
+    "checked_template": "꼬리말",
+    "note": "제15장 꼬리말 틀의 '다음'이 비어 있으면 위키문헌상 마지막 장이다. 결말 문단은 사람이 한 번 읽어 확인한다."
+  }
+}

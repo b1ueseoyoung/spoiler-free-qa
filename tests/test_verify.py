@@ -47,15 +47,16 @@ def test_future_entities(v):
 
 
 def test_refusal_text():
-    assert refusal(5) == "5장까지는 나오지 않습니다."
-    assert refusal(19) == "작품에 나오지 않습니다."
+    assert refusal(5, 19) == "5장까지는 나오지 않아요."
+    assert refusal(19, 19) == "작품에 나오지 않아요."
+    assert refusal(3, 3) == "작품에 나오지 않아요."  # 마지막 장은 작품마다 다르다
 
 
 def test_guard_answers_only_with_verified_quote(v):
     ok = v.verdict("answered", "제중당 약국", [(2, "초봉이는 “제중당” 약국에 다닌다고")], 2, TEXTS[2], apply_guard=True)
     assert ok.status == "answered" and ok.answer == "제중당 약국" and len(ok.quotes) == 1
     no_quote = v.verdict("answered", "제중당 약국", [], 2, "", apply_guard=True)
-    assert no_quote.status == "not_found" and no_quote.answer == "2장까지는 나오지 않습니다."
+    assert no_quote.status == "not_found" and no_quote.answer == "2장까지는 나오지 않아요."
     assert "검증된 인용 없음" in no_quote.reasons
 
 
@@ -71,4 +72,14 @@ def test_without_guard_model_output_is_kept_but_checked(v):
     assert r.status == "answered" and r.answer == "형보와 함께 간다"
     assert r.future_entities == ["형보"] and "검증된 인용 없음" in r.reasons
     r = v.verdict(None, "", [], 19, "", apply_guard=False)
-    assert r.status == "not_found" and r.answer == "작품에 나오지 않습니다."
+    assert r.status == "not_found" and r.answer == "작품에 나오지 않아요."
+
+
+def test_c4_refuses_when_any_quote_comes_only_from_after_n():
+    """확인된 인용이 있어도, N장 뒤에만 있는 인용이 하나라도 섞이면 답하지 않는다(2026-10-14 강화)."""
+    v = Verifier({1: "초봉이는 약국에 다닌다. 그날 저녁 비가 왔다.", 2: "초봉이는 마침내 서울로 떠났다. 기차가 길게 울었다."}, {})
+    quotes = [(1, "초봉이는 약국에 다닌다."), (2, "초봉이는 마침내 서울로 떠났다.")]
+    guarded = v.verdict("answered", "약국에 다녀요.", quotes, n=1, context="초봉이는 약국에 다닌다.", apply_guard=True)
+    assert guarded.status == "not_found" and guarded.answer == "1장까지는 나오지 않아요."
+    raw = v.verdict("answered", "약국에 다녀요.", quotes, n=1, context="초봉이는 약국에 다닌다.", apply_guard=False)
+    assert raw.status == "answered" and raw.l1_future_quote

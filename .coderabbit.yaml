@@ -1,0 +1,19 @@
+# CodeRabbit 리뷰 설정. 코드·테스트·문서·배포 설정만 리뷰하고, 받아 온 원문과 실험 기록은 뺀다.
+language: ko-KR
+
+reviews:
+  path_filters:
+    # 위키문헌 원문과 정제본, 자동 생성 표
+    - "!data/works/*/raw/**"
+    - "!data/works/*/clean/**"
+    - "!data/works/*/entities.json"
+    - "!data/works/*/sources.json"
+    # 「탁류」를 data/works/takryu로 옮기기 전 경로(이 PR에서 지워짐)
+    - "!data/raw/**"
+    - "!data/clean/**"
+    - "!data/entities.json"
+    # 실험 기록, 녹화한 모델 응답, 평가 데이터
+    - "!runs/**"
+    - "!eval/cassettes/**"
+    - "!eval/klue/*.jsonl"
+    - "!uv.lock"
