@@ -2,7 +2,7 @@
 
 조건(docs/eval-spec.md):
 - C0 검색 없음 + 가드 프롬프트
-- C1 19장 전체 검색 + 기본 프롬프트
+- C1 작품 전체 검색 + 기본 프롬프트
 - C2 N장 이하 검색 + 기본 프롬프트
 - C3 N장 이하 검색 + 가드 프롬프트
 - C4 C3와 같은 요청(카세트를 다시 씀) + 코드 검증(verify.py)
@@ -22,14 +22,15 @@ from sfqa.prompts import system_prompt, user_prompt
 from sfqa.retrieve import ChapterIndex, UptoRetriever
 from sfqa.schema import ANSWER_SCHEMA, parse_answer
 from sfqa.verify import Verifier
+from sfqa.works import Work
 
-LAST_CHAPTER = 19
 CONDITIONS = ("C0", "C1", "C2", "C3", "C4")
 
 
 @dataclass
 class Env:
     settings: Settings
+    work: Work
     index: ChapterIndex
     embeddings: Embeddings
     client: LiveClient | ReplayClient
@@ -59,15 +60,18 @@ class AnswerResult:
         return asdict(self)
 
 
-def make_env(s: Settings, k: int | None = None, client: LiveClient | ReplayClient | None = None) -> Env:
+def make_env(s: Settings, work: Work, k: int | None = None, client: LiveClient | ReplayClient | None = None,
+             embeddings: Embeddings | None = None) -> Env:
+    """작품 하나의 실행 환경. 여러 작품을 띄울 때는 client와 embeddings를 넘겨 같이 쓴다."""
     from sfqa.gold import entity_index, load_entities, load_texts
     from sfqa.index import load_index
     from sfqa.llm import make_client, make_embeddings
 
-    texts = load_texts()
-    chunks, vectors, _ = load_index(s.embed_model, texts, s.embed_provider)
-    verifier = Verifier(texts, entity_index(load_entities(), texts))
-    return Env(s, ChapterIndex(chunks, vectors), make_embeddings(s), client or make_client(s), verifier, k or s.retrieve_k)
+    texts = load_texts(work)
+    chunks, vectors, _ = load_index(work, s.embed_model, texts, s.embed_provider)
+    verifier = Verifier(texts, entity_index(load_entities(work), texts))
+    return Env(s, work, ChapterIndex(chunks, vectors), embeddings or make_embeddings(s), client or make_client(s),
+               verifier, k or s.retrieve_k)
 
 
 def format_context(docs: list[Document]) -> str:
@@ -81,7 +85,7 @@ def format_context(docs: list[Document]) -> str:
 def build_request(env: Env, condition: str, question: str, n: int, context: str | None) -> LLMRequest:
     s = env.settings
     return LLMRequest(
-        model=s.llm_model, system=system_prompt(condition, n), user=user_prompt(question, context),
+        model=s.llm_model, system=system_prompt(condition, n, env.work.label), user=user_prompt(question, context),
         schema_name="answer", schema=ANSWER_SCHEMA, max_tokens=s.max_tokens, seed=s.seed,
         reasoning_effort=s.reasoning_effort,
     )
@@ -94,7 +98,7 @@ def build_chain(env: Env, condition: str) -> Runnable:
     def retrieve(x: dict) -> dict:
         if condition == "C0":
             return {**x, "docs": [], "context": None}
-        upto = LAST_CHAPTER if condition == "C1" else x["n"]
+        upto = env.work.last if condition == "C1" else x["n"]
         docs = UptoRetriever(index=env.index, embeddings=env.embeddings, n=upto, k=env.k).invoke(x["question"])
         return {**x, "docs": docs, "context": format_context(docs)}
 

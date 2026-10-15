@@ -1,4 +1,6 @@
-"""정답지(eval/questions.jsonl)와 인물표(data/entities.json)를 읽고, 모델 없이 검사한다.
+"""정답지(eval/questions.jsonl)와 인물표(data/works/<id>/entities.json)를 읽고, 모델 없이 검사한다.
+
+정답지는 「탁류」 전용이다(works.GOLD_WORK). 본문과 인물표는 작품마다 읽는다.
 
 기준은 docs/eval-spec.md의 "정답지 검사"다. 오류가 하나라도 있으면 gold-check는 종료 코드 1이다.
 인물·지명의 첫 등장 장은 저장하지 않고 본문에서 매번 계산한다(별칭만 사람이 관리한다).
@@ -15,12 +17,12 @@ from typing import Literal
 
 from pydantic import BaseModel, Field
 
-from sfqa.paths import CHAPTERS, DATA, ROOT, clean_path
+from sfqa.paths import ROOT
+from sfqa.works import Work, gold_work
 
 QUESTIONS = ROOT / "eval" / "questions.jsonl"
-ENTITIES = DATA / "entities.json"
 QUOTE_MAX = 150
-LAST = max(CHAPTERS)
+LAST = gold_work().last  # 정답지(「탁류」)의 마지막 장
 # eval-spec.md의 문항 구성: (split, 묶음) → 개수
 PLAN = {("dev", "pair"): 8, ("dev", "A"): 2, ("dev", "C"): 2, ("test", "pair"): 32, ("test", "A"): 6, ("test", "C"): 6}
 BOUNDARY_EACH = 5
@@ -69,8 +71,8 @@ class Entity(BaseModel):
         return [self.name, *self.aliases]
 
 
-def load_texts() -> dict[int, str]:
-    return {c: clean_path(c).read_text(encoding="utf-8") for c in CHAPTERS}
+def load_texts(work: Work) -> dict[int, str]:
+    return {c: work.clean_path(c).read_text(encoding="utf-8") for c in work.chapter_numbers}
 
 
 def load_questions(path: Path = QUESTIONS) -> list[Question]:
@@ -78,8 +80,9 @@ def load_questions(path: Path = QUESTIONS) -> list[Question]:
     return [Question.model_validate_json(line) for line in lines if line.strip()]
 
 
-def load_entities(path: Path = ENTITIES) -> list[Entity]:
-    return [Entity.model_validate(e) for e in json.loads(path.read_text(encoding="utf-8"))]
+def load_entities(work: Work) -> list[Entity]:
+    """인물표가 없으면 실패한다. 없는 채로 두면 C4의 인물 가드가 아무 말 없이 꺼진다."""
+    return [Entity.model_validate(e) for e in json.loads(work.entities_path.read_text(encoding="utf-8"))]
 
 
 def first_chapter(forms: list[str], texts: Mapping[int, str]) -> int | None:

@@ -1,4 +1,5 @@
 {
+  "work": "takryu",
   "chapters": [
     {
       "chapter": 1,
@@ -308,6 +309,7 @@
   "completeness": {
     "last_chapter_next_link": "",
     "last_chapter_has_next": false,
-    "note": "제19장 꼬리말의 '다음'이 비어 있으면 위키문헌상 마지막 장이다. 결말 문단은 사람이 한 번 읽어 확인한다."
+    "checked_template": "꼬리말",
+    "note": "제19장 꼬리말 틀의 '다음'이 비어 있으면 위키문헌상 마지막 장이다. 결말 문단은 사람이 한 번 읽어 확인한다."
   }
 }

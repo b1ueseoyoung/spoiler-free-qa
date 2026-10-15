@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>탁류 · 스포일러 없는 Q&amp;A</title>
+<title>책갈피 · 스포일러 없는 소설 도우미</title>
 <style>
   @font-face {
     font-family: "Pretendard"; font-weight: 45 920; font-style: normal; font-display: swap;
@@ -22,10 +22,13 @@
     /* 포인트 색: 레퍼런스의 #ff5a36(채도 100%)은 너무 진해서, 같은 주황 계열에서 채도를 낮춘 산호빛을 쓴다 */
     --accent: #dd8b6e; --on-accent: #121212;
     --gutter: clamp(16px, 2.4vw, 36px);
+    --page: 1120px;  /* 본문 최대 폭(여백 포함 전) */
     --sans: "Pretendard", "Apple SD Gothic Neo", system-ui, sans-serif;
     color-scheme: dark;
   }
   * { box-sizing: border-box; }
+  /* hidden 속성이 .grid·.notice의 display 지정에 덮이지 않게(첫 화면에 대화 화면이 같이 보이던 문제, 2026-10-15) */
+  [hidden] { display: none !important; }
   html, body { margin: 0; background: var(--bg); color: var(--ink); }
   body { font-family: var(--sans); font-size: 15px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
   button, input, textarea, a { font: inherit; color: inherit; }
@@ -45,19 +48,21 @@
   .menu button:hover, .menu [aria-pressed="true"] { color: var(--ink); }
   .menu [aria-pressed="true"]::before { content: "● "; color: var(--accent); }
 
-  /* 소개 */
-  .intro { padding: clamp(32px, 7vh, 72px) var(--gutter) clamp(24px, 5vh, 48px); display: grid;
-           grid-template-columns: minmax(220px, 1fr) 2fr; gap: var(--gutter); align-items: end; }
-  .intro h1 { grid-column: 2; margin: 0; font-weight: 600; font-size: clamp(30px, 4.2vw, 60px); line-height: 1.12; letter-spacing: -.035em; }
+  /* 소개. 제목·카드·대화를 같은 최대 폭(--page) 안에서 가운데로 맞춘다(B안, 2026-10-15).
+     전에는 제목만 오른쪽 2/3 칸에서 시작하고 카드는 화면 끝까지 차서 여백 기준이 서로 달랐다. */
+  .intro { max-width: var(--page); margin: 0 auto; padding: clamp(28px, 5vh, 56px) var(--gutter) clamp(20px, 3.5vh, 36px);
+           display: grid; grid-template-columns: 1fr; gap: var(--gutter); align-items: end; }
+  .intro h1 { grid-column: 1; margin: 0; font-weight: 600; font-size: clamp(30px, 4.2vw, 60px); line-height: 1.12; letter-spacing: -.035em; }
   .intro h1 em { font-style: normal; color: var(--accent); }
-  .intro p { grid-column: 2; margin: 0; color: var(--mute); max-width: 34em; word-break: keep-all; text-wrap: pretty; }
-  .intro .notice { grid-column: 2; display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 0; padding: 0; list-style: none; }
+  .intro p { grid-column: 1; margin: 0; color: var(--mute); max-width: 34em; word-break: keep-all; text-wrap: pretty; }
+  .intro .notice { grid-column: 1; display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 0; padding: 0; list-style: none; }
   .notice li { border: 1px solid var(--hair); color: var(--ink); padding: 5px 10px; font-size: 12px; }
   .notice li::before { content: ""; display: inline-block; width: 6px; height: 6px; margin-right: 7px;
                        vertical-align: 1px; border-radius: 50%; background: var(--accent); }
 
   /* 본문 그리드 */
-  .grid { display: grid; grid-template-columns: minmax(220px, 1fr) 2fr; gap: var(--gutter); padding: 0 var(--gutter); }
+  .grid { display: grid; grid-template-columns: minmax(220px, 1fr) 2fr; gap: var(--gutter); padding: 0 var(--gutter);
+          max-width: var(--page); margin: 0 auto; }
   .filter { position: sticky; top: 16px; align-self: start; padding-bottom: 40px; }
   .filter .small { color: var(--mute); margin: 0 0 10px; }
   .chapters { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--hair); }
@@ -129,12 +134,40 @@
   .foot { display: flex; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
   .foot p { margin: 0; max-width: 30em; font-size: 15px; line-height: 1.5; word-break: keep-all; text-wrap: pretty; }
   .foot ul { list-style: none; margin: 0; padding: 0; text-align: right; display: grid; gap: 4px; }
-  .wordmark { margin: clamp(24px, 4vw, 48px) 0 0; font-weight: 700; font-size: clamp(110px, 27vw, 420px); line-height: .82;
-              letter-spacing: -.06em; display: flex; overflow: hidden; padding-bottom: .04em; }
+  /* 워드마크는 글자 수(--n)에 맞춰 줄인다. 두 글자일 때 예전 크기(27vw)와 같다 */
+  .wordmark { --n: 2; margin: clamp(24px, 4vw, 48px) 0 0; font-weight: 700; font-size: clamp(56px, calc(54vw / var(--n)), 420px);
+              line-height: .82; letter-spacing: -.06em; display: flex; overflow: hidden; padding-bottom: .04em; white-space: pre; }
   .wordmark span { display: inline-block; transform: translateY(105%); transition: transform .9s cubic-bezier(.2, .7, 0, 1); }
   .wordmark.in span { transform: none; }
-  .wordmark span:nth-child(2) { transition-delay: .08s; }
   .copy { margin-top: 10px; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+
+  /* 첫 화면: 소설 고르기 */
+  .shelf { padding: 0 var(--gutter); max-width: var(--page); margin: 0 auto; }
+  .shelf-label { color: var(--mute); margin: 0 0 12px; }
+  /* 구분선은 카드 테두리로 그린다(배경으로 그리면 마지막 줄의 빈칸이 회색으로 칠해진다) */
+  .books { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(320px, 100%), 1fr));
+           border-top: 1px solid var(--hair); border-left: 1px solid var(--hair); }
+  .books > li { border-right: 1px solid var(--hair); border-bottom: 1px solid var(--hair); }
+  .book { display: grid; grid-template-rows: auto auto auto 1fr auto; gap: 8px; min-height: 230px; padding: 26px 24px 22px;
+          background: var(--bg); text-decoration: none; }
+  .book:hover, .book:focus-visible { background: var(--panel); outline: none; }
+  .book:hover .book-go, .book:focus-visible .book-go { color: var(--accent); }
+  .book-no { color: var(--mute); }
+  .book-title { font-size: clamp(26px, 2.4vw, 34px); font-weight: 650; letter-spacing: -.03em; line-height: 1.15; }
+  .book-meta { color: var(--mute); }
+  .book-blurb { color: var(--ink); opacity: .82; word-break: keep-all; text-wrap: pretty; }
+  .book-go { color: var(--mute); align-self: end; }
+
+  /* 장이 많은 작품: 번호로 고르기 */
+  .range { border-top: 1px solid var(--hair); padding-top: 14px; display: grid; gap: 12px; }
+  .stepper { display: flex; align-items: stretch; gap: 6px; }
+  .stepper button { width: 44px; border: 1px solid var(--hair); background: transparent; cursor: pointer; font-size: 18px; }
+  .stepper button:hover { border-color: var(--accent); color: var(--accent); }
+  .stepper input { width: 100%; border: 1px solid var(--hair); background: var(--panel); padding: 8px 12px; font-size: 20px;
+                   font-weight: 650; font-variant-numeric: tabular-nums; text-align: center; }
+  .stepper input:focus { outline: none; border-color: var(--accent); }
+  .range input[type="range"] { width: 100%; accent-color: var(--accent); }
+  .range .small { color: var(--mute); margin: 0; }
 
   @media (max-width: 760px) {
     .intro, .grid { grid-template-columns: 1fr; }
@@ -159,26 +192,32 @@
 <body>
 <header class="top">
   <div class="brand">
-    <b>탁류 Q&amp;A</b>
+    <a href="#/" style="text-decoration:none"><b>책갈피</b></a>
     <span class="chip" aria-hidden="true">↳ 읽은 데까지만</span>
   </div>
   <nav class="menu small" aria-label="보기">
-    <button type="button" id="compare" aria-pressed="false" aria-describedby="compare-desc">필터 없이 비교</button>
-    <button type="button" id="reset">새 대화</button>
+    <button type="button" id="back" hidden>← 다른 소설</button>
+    <button type="button" id="compare" aria-pressed="false" aria-describedby="compare-desc" hidden>필터 없이 비교</button>
+    <button type="button" id="reset" hidden>새 대화</button>
   </nav>
-  <span id="compare-desc" hidden>데모용: 19장 전체에서 찾고 스포일러를 막지 않은 답을 같이 보여 준다</span>
+  <span id="compare-desc" hidden></span>
 </header>
 
 <section class="intro" aria-labelledby="title">
-  <h1 id="title">읽은 데까지만 답하는<br>「탁류」 <em>도우미</em></h1>
+  <h1 id="title">읽은 데까지만 답하는<br>소설 <em>도우미</em></h1>
   <p>스포일러 걱정 없이 물어보세요.<br>읽은 장까지만 찾아보고, 근거 문장도 함께 보여 드려요.</p>
   <ul class="notice" id="notice" aria-label="이용 안내" hidden></ul>
 </section>
 
-<main class="grid">
+<main class="shelf" id="home" aria-label="소설 고르기">
+  <p class="small shelf-label">어떤 소설을 읽고 있나요?</p>
+  <ul class="books" id="books"></ul>
+</main>
+
+<main class="grid" id="reader" hidden>
   <aside class="filter">
     <p class="small" id="chapters-label">어디까지 읽었나요?</p>
-    <ul class="chapters" id="chapters" role="radiogroup" aria-labelledby="chapters-label"></ul>
+    <div id="picker"></div>
   </aside>
 
   <section class="chat" aria-label="대화">
@@ -197,52 +236,132 @@
 <footer>
   <div class="foot">
     <p id="foot-note">다음 장이 궁금해도 결말은 지켜 드려요.<br>읽은 데까지만 답하는 스포일러 없는 독서 도우미.</p>
-    <ul class="small">
-      <li>채만식 「탁류」</li>
-      <li>조선일보 1937–38</li>
-      <li>공유 저작물 · 위키문헌</li>
-    </ul>
+    <ul class="small" id="credits"></ul>
   </div>
-  <div class="wordmark" id="wordmark" aria-hidden="true"><span>탁</span><span>류</span></div>
-  <div class="copy small"><span id="copy-tech">SPOILER-FREE Q&amp;A · LOCAL LM STUDIO</span><span>PROTOTYPE · 2026</span></div>
+  <div class="wordmark" id="wordmark" aria-hidden="true"></div>
+  <div class="copy small"><span id="copy-tech">SPOILER-FREE READING · LOCAL LM STUDIO</span><span>PROTOTYPE · 2026</span></div>
 </footer>
 
 <script>
-const EXAMPLES = ["초봉이가 일하는 곳은 어디인가?", "태수는 어떻게 되나?", "명님이는 어떻게 되나?"];
 const $ = (id) => document.getElementById(id);
 const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"}[c]));
 const pad = (n) => String(n).padStart(2, "0");
 const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+const GRID_MAX = 30;  // 이보다 장이 많으면(「무정」 126장) 목록 대신 번호로 고른다
+let works = [];
+let work = null;      // 지금 고른 작품(/api/works의 카드)
 let chapterList = [];
-let upto = 3;
+let upto = 1;
 let lastAskedUpto = null;
 let busy = false;
+let openSeq = 0;      // 작품을 열 때마다 늘린다. 늦게 온 응답이 지금 작품 화면을 덮지 않게 한다
 
-/* 장 고르기: 고른 장까지만 제목을 보여 준다 */
-function renderChapters() {
-  $("chapters").innerHTML = chapterList.map((c) => {
-    const read = c.chapter <= upto;
-    return `<li class="${read ? "" : "unread"}"><label>
-      <input type="radio" name="upto" value="${c.chapter}" ${c.chapter === upto ? "checked" : ""}>
-      <span class="no">${pad(c.chapter)}</span>
-      <span class="title">${read && c.title ? esc(c.title) : "아직 안 읽음"}</span>
-      <span class="mark"></span>
-    </label></li>`;
-  }).join("");
+/* 워드마크: 글자마다 span, 글자 수만큼 크기를 줄인다 */
+function setWordmark(text) {
+  const chars = [...text];
+  $("wordmark").style.setProperty("--n", Math.max(2, chars.length));
+  $("wordmark").innerHTML = chars.map((c, i) => `<span style="transition-delay:${(i * 0.08).toFixed(2)}s">${esc(c)}</span>`).join("");
+}
+function setCredits(lines) { $("credits").innerHTML = lines.map((l) => `<li>${esc(l)}</li>`).join(""); }
+
+/* 첫 화면: 소설 카드 */
+function renderBooks() {
+  $("books").innerHTML = works.map((w, i) => `<li><a class="book" href="#/${encodeURIComponent(w.id)}">
+    <span class="book-no small">${pad(i + 1)}</span>
+    <strong class="book-title">${esc(w.title)}</strong>
+    <span class="book-meta small">${esc(w.author)} · ${esc(w.published)} · ${w.chapters}장</span>
+    <span class="book-blurb">${esc(w.blurb)}</span>
+    <span class="book-go small">읽은 데까지 물어보기 →</span>
+  </a></li>`).join("");
+}
+function showHome() {
+  work = null; openSeq++;
+  document.title = "책갈피 · 스포일러 없는 소설 도우미";
+  $("title").innerHTML = "읽은 데까지만 답하는<br>소설 <em>도우미</em>";
+  $("home").hidden = false; $("reader").hidden = true;
+  for (const id of ["back", "compare", "reset"]) $(id).hidden = true;
+  setWordmark("책갈피");
+  setCredits(["저작권이 끝난 한국 소설", "원문 · 위키문헌", "공유 저작물"]);
+}
+async function showWork(w) {
+  work = w;
+  document.title = `「${w.title}」 · 책갈피`;
+  $("title").innerHTML = `읽은 데까지만 답하는<br>「${esc(w.title)}」 <em>도우미</em>`;
+  $("home").hidden = true; $("reader").hidden = false;
+  for (const id of ["back", "compare", "reset"]) $(id).hidden = false;
+  $("compare-desc").textContent = `데모용: ${w.chapters}장 전체에서 찾고 스포일러를 막지 않은 답을 같이 보여 준다`;
+  setWordmark(w.title);
+  setCredits([`${w.author} 「${w.title}」`, w.published, "공유 저작물 · 위키문헌"]);
+  upto = w.default_upto;
+  const seq = ++openSeq;
+  const list = await fetch(`/api/chapters?work=${encodeURIComponent(w.id)}`).then((r) => r.json());
+  if (seq !== openSeq) return;  // 그사이 다른 작품을 열었다
+  chapterList = list;
+  renderPicker();
+  emptyState();
+  scrollTo({top: 0, behavior: reduce ? "auto" : "smooth"});
+}
+function route() {
+  const id = decodeURIComponent(location.hash.replace(/^#\/?/, ""));
+  const w = works.find((x) => x.id === id);
+  if (w) showWork(w); else showHome();
+}
+
+/* 장 고르기: 고른 장까지만 제목을 보여 준다. 장이 많으면 번호 입력과 막대로 고른다 */
+function setUpto(n) {
+  upto = Math.min(Math.max(1, Number(n) || 1), work.chapters);
+  renderPicker();
+  if ($("thread").querySelector(".empty")) emptyState();  // 예시는 고른 장까지 나온 인물·사건만
+}
+function renderPicker() {
+  if (work.chapters > GRID_MAX) {
+    if (!$("upto-num")) {
+      $("picker").innerHTML = `<div class="range">
+        <div class="stepper">
+          <button type="button" data-step="-1" aria-label="한 장 앞으로">−</button>
+          <input type="number" id="upto-num" min="1" max="${work.chapters}" inputmode="numeric" aria-labelledby="chapters-label">
+          <button type="button" data-step="1" aria-label="한 장 뒤로">+</button>
+        </div>
+        <input type="range" id="upto-range" min="1" max="${work.chapters}" aria-label="읽은 장">
+        <p class="small">전체 ${work.chapters}장</p>
+      </div>`;
+    }
+    $("upto-num").value = upto; $("upto-range").value = upto;
+  } else {
+    $("picker").innerHTML = `<ul class="chapters" id="chapters" role="radiogroup" aria-labelledby="chapters-label">${chapterList.map((c) => {
+      const read = c.chapter <= upto;
+      const title = read ? (c.title ? esc(c.title) : `제${c.chapter}장`) : "아직 안 읽음";
+      return `<li class="${read ? "" : "unread"}"><label>
+        <input type="radio" name="upto" value="${c.chapter}" ${c.chapter === upto ? "checked" : ""}>
+        <span class="no">${pad(c.chapter)}</span>
+        <span class="title">${title}</span>
+        <span class="mark"></span>
+      </label></li>`;
+    }).join("")}</ul>`;
+  }
   $("hint").textContent = `${pad(upto)}장까지 읽은 기준 · Enter 보내기 · Shift+Enter 줄바꿈`;
 }
-$("chapters").addEventListener("change", (e) => {
-  if (e.target.name !== "upto") return;
-  upto = Number(e.target.value);
-  renderChapters();
-  document.querySelector(`input[name="upto"][value="${upto}"]`).focus();
+$("picker").addEventListener("change", (e) => {
+  if (e.target.name === "upto") {
+    setUpto(e.target.value);
+    document.querySelector(`input[name="upto"][value="${upto}"]`)?.focus();
+  } else if (e.target.id === "upto-num" || e.target.id === "upto-range") {
+    setUpto(e.target.value);
+  }
+});
+$("picker").addEventListener("input", (e) => { if (e.target.id === "upto-range") setUpto(e.target.value); });
+$("picker").addEventListener("click", (e) => {
+  const b = e.target.closest("[data-step]");
+  if (b) setUpto(upto + Number(b.dataset.step));
 });
 
 /* 대화 */
 function emptyState() {
+  // 예시 질문은 고른 장 이하에서 답과 인물이 다 나오는 것만 보여 준다(뒤 장 인물 이름이 예시로 새지 않게)
+  const examples = work ? work.examples.filter((e) => e.from <= upto).map((e) => e.question) : [];
   $("thread").innerHTML = `<div class="empty">
     <p class="hello">안녕하세요. 읽은 장을 고르고 물어보세요.<br><span>아직 안 읽은 내용은 말하지 않을게요.</span></p>
-    <div class="suggest">${EXAMPLES.map((q) => `<button type="button">${esc(q)}</button>`).join("")}</div>
+    <div class="suggest">${examples.map((q) => `<button type="button">${esc(q)}</button>`).join("")}</div>
   </div>`;
   lastAskedUpto = null;
 }
@@ -275,16 +394,17 @@ function botHtml(label, scope, r) {
     ${quotes ? `<ul class="quotes">${quotes}</ul>` : ""}${future}
     <p class="meta small">찾아본 장 ${r.retrieved_chapters.length ? r.retrieved_chapters.map(pad).join(" · ") : "없음"} — ${r.latency_s ?? "-"}초${r.format_problem ? " — 응답 형식 문제" : ""}</p>`;
 }
-async function ask(condition, question, n) {
+async function ask(w, condition, question, n) {
   const res = await fetch("/api/ask", {method: "POST", headers: {"Content-Type": "application/json"},
-                                      body: JSON.stringify({question, upto: n, condition})});
+                                      body: JSON.stringify({work: w.id, question, upto: n, condition})});
   if (!res.ok) throw new Error((await res.json()).detail || res.statusText);
   return res.json();
 }
-async function reply(condition, label, scope, question, n, extraClass = "") {
+async function reply(w, condition, label, scope, question, n, extraClass = "") {
   const slot = typing(label);
   try {
-    const r = await ask(condition, question, n);
+    const r = await ask(w, condition, question, n);
+    if (work !== w) return;  // 기다리는 사이 다른 화면으로 갔다. 새 대화에 붙이지 않는다
     slot.className = `msg bot ${extraClass}`;
     slot.innerHTML = botHtml(label, scope, r);
   } catch (err) {
@@ -294,17 +414,22 @@ async function reply(condition, label, scope, question, n, extraClass = "") {
 }
 async function send(question) {
   question = question.trim();
-  if (!question || busy) return;
+  if (!question || busy || !work) return;
+  const w = work;  // 기다리는 사이 작품이 바뀌어도 이 질문은 이 작품에만 묻는다
   busy = true; $("send").disabled = true;
   $("question").value = ""; autosize();
   const n = upto;
-  userMsg(question);
-  // 범위 표시는 답했든 안 했든 똑같이 붙인다(답하지 않았다는 사실이 '뒤에 뭔가 있다'는 힌트가 되지 않게).
-  await reply("C4", "탁류 도우미", `↳ 01–${pad(n)}장에서 찾음`, question, n);
-  if ($("compare").getAttribute("aria-pressed") === "true") {
-    await reply("C1", "비교 · 필터 없이 19장 전체에서 찾으면", "↳ 01–19장", question, n, "compare");
+  try {
+    userMsg(question);
+    // 범위 표시는 답했든 안 했든 똑같이 붙인다(답하지 않았다는 사실이 '뒤에 뭔가 있다'는 힌트가 되지 않게).
+    await reply(w, "C4", "책갈피", `↳ 01–${pad(n)}장에서 찾음`, question, n);
+    if (work === w && $("compare").getAttribute("aria-pressed") === "true") {
+      await reply(w, "C1", `비교 · 필터 없이 ${w.chapters}장 전체에서 찾으면`, `↳ 01–${pad(w.chapters)}장`, question, n, "compare");
+    }
+  } finally {
+    busy = false; $("send").disabled = false;
+    if (work === w) $("question").focus();
   }
-  busy = false; $("send").disabled = false; $("question").focus();
 }
 
 function autosize() { const t = $("question"); t.style.height = "auto"; t.style.height = Math.min(t.scrollHeight, 160) + "px"; }
@@ -318,6 +443,8 @@ $("compare").addEventListener("click", (e) => {
   e.currentTarget.setAttribute("aria-pressed", String(e.currentTarget.getAttribute("aria-pressed") !== "true"));
 });
 $("reset").addEventListener("click", () => { if (!busy) { emptyState(); $("question").focus(); } });
+$("back").addEventListener("click", () => { if (!busy) location.hash = "#/"; });
+addEventListener("hashchange", route);
 
 /* 푸터 워드마크: 화면에 들어오면 글자가 아래에서 차오른다 */
 if (reduce || !("IntersectionObserver" in window)) {
@@ -328,16 +455,15 @@ if (reduce || !("IntersectionObserver" in window)) {
   }, {threshold: 0.3}).observe($("wordmark"));
 }
 
-fetch("/api/chapters").then((r) => r.json()).then((list) => { chapterList = list; renderChapters(); });
-/* 공개 데모(Claude API)일 때는 처리 위치와 첫 응답 지연을 알린다 */
+/* 공개 데모일 때 이용 안내 */
 fetch("/api/config").then((r) => r.json()).then((c) => {
   if (!c.public) return;
   $("notice").innerHTML = ["회원가입 없이 무료", "첫 질문은 준비하느라 조금 걸려요", "하루 질문 횟수 제한"]
     .map((t) => `<li>${esc(t)}</li>`).join("");
   $("notice").hidden = false;
-  $("copy-tech").textContent = "SPOILER-FREE Q&A · CLAUDE API · AWS LAMBDA";
+  $("copy-tech").textContent = "SPOILER-FREE READING · CLAUDE API · AWS LAMBDA";
 }).catch(() => {});
-emptyState();
+fetch("/api/works").then((r) => r.json()).then((list) => { works = list; renderBooks(); route(); });
 </script>
 </body>
 </html>

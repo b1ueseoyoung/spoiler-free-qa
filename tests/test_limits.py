@@ -106,3 +106,34 @@ def test_client_ip_trusts_adapter_context_only_in_public_mode():
     assert client_ip(ctx, "127.0.0.1", trust_lambda=False) == "127.0.0.1"  # 로컬에서는 헤더를 믿지 않는다
     assert client_ip({"x-forwarded-for": "6.6.6.6"}, "127.0.0.1", trust_lambda=True) == "127.0.0.1"  # XFF는 안 쓴다
     assert client_ip({"x-amzn-request-context": "{깨진"}, None, trust_lambda=True) == "unknown"
+
+
+def test_ipv6_is_counted_per_64_block():
+    c = MemoryCounter(Limits(daily=100, ip_daily=100, ip_minute=2))
+    c.hit("2001:db8:1:2::a", T0), c.hit("2001:db8:1:2::b", T0)
+    with pytest.raises(LimitExceeded):
+        c.hit("2001:db8:1:2:ffff::1", T0)  # 같은 /64 안에서 주소만 바꿔도 같은 칸
+    c.hit("2001:db8:1:3::a", T0)  # 다른 /64는 따로 센다
+    assert ip_hash("::ffff:203.0.113.7", "s") == ip_hash("203.0.113.7", "s")  # IPv4가 IPv6 꼴로 와도 같다
+
+
+class ConflictThenOk(FakeDynamo):
+    def __init__(self, conflicts):
+        super().__init__()
+        self.conflicts = conflicts
+
+    def transact_write_items(self, TransactItems):
+        self.calls.append(TransactItems)
+        if self.conflicts:
+            self.conflicts -= 1
+            raise CanceledError(["None", "None", "TransactionConflict"])
+
+
+def test_dynamo_counter_retries_transaction_conflicts():
+    db = ConflictThenOk(conflicts=2)
+    DynamoCounter("limits", client=db, sleep=lambda s: None).hit("1.1.1.1", T0)
+    assert len(db.calls) == 3
+    always = ConflictThenOk(conflicts=99)
+    with pytest.raises(CanceledError):  # 계속 겹치면 지금처럼 실패(웹은 503, 모델을 부르지 않는다)
+        DynamoCounter("limits", client=always, sleep=lambda s: None).hit("1.1.1.1", T0)
+    assert len(always.calls) == DynamoCounter.RETRIES + 1

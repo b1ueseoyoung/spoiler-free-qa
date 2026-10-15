@@ -1,0 +1,240 @@
+[
+  {
+    "name": "영신",
+    "aliases": [
+      "채영신"
+    ],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 759회"
+  },
+  {
+    "name": "동혁",
+    "aliases": [
+      "박동혁"
+    ],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 729회"
+  },
+  {
+    "name": "건배",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "work.json extra_entities, 148회"
+  },
+  {
+    "name": "원재",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 78회"
+  },
+  {
+    "name": "동화",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "work.json extra_entities, 73회"
+  },
+  {
+    "name": "곡리",
+    "aliases": [
+      "한곡리"
+    ],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 67회"
+  },
+  {
+    "name": "청석골",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 64회"
+  },
+  {
+    "name": "기천",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 53회"
+  },
+  {
+    "name": "정근",
+    "aliases": [
+      "김정근"
+    ],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 49회"
+  },
+  {
+    "name": "돌이",
+    "aliases": [
+      "석돌이"
+    ],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 25회"
+  },
+  {
+    "name": "서울",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 25회"
+  },
+  {
+    "name": "조선",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 22회"
+  },
+  {
+    "name": "농우회",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 19회"
+  },
+  {
+    "name": "현경",
+    "aliases": [
+      "백현경"
+    ],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 10회"
+  },
+  {
+    "name": "칠룡",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 8회"
+  },
+  {
+    "name": "금융조합",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 6회"
+  },
+  {
+    "name": "갑산",
+    "aliases": [
+      "갑산이"
+    ],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 5회"
+  },
+  {
+    "name": "노자",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 5회"
+  },
+  {
+    "name": "땡그렁",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 5회"
+  },
+  {
+    "name": "청석학원",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 5회"
+  },
+  {
+    "name": "경애",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 4회"
+  },
+  {
+    "name": "당자",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 4회"
+  },
+  {
+    "name": "면협",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 4회"
+  },
+  {
+    "name": "솜방망이",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 4회"
+  },
+  {
+    "name": "애향가",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 4회"
+  },
+  {
+    "name": "예수",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 4회"
+  },
+  {
+    "name": "일전",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 4회"
+  },
+  {
+    "name": "채영",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 4회"
+  },
+  {
+    "name": "만주",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 3회"
+  },
+  {
+    "name": "신작롯가",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 3회"
+  },
+  {
+    "name": "필링스",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 3회"
+  },
+  {
+    "name": "허청",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 3회"
+  }
+]

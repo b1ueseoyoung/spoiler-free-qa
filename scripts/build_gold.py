@@ -4,7 +4,7 @@
 이 스크립트를 다시 돌리면 검토 결과를 덮어쓴다.
 
 모든 문항은 pre-human-review다. 사람이 검토한 뒤 human-reviewed로 바꾼다.
-사용: python3 scripts/build_gold.py  (eval/questions.jsonl, data/entities.json을 덮어쓴다)
+사용: python3 scripts/build_gold.py  (eval/questions.jsonl, data/works/takryu/entities.json을 덮어쓴다)
 """
 import glob
 import json
@@ -118,5 +118,5 @@ for e in agent_entities:
     entities.append({"name": e["name"], "aliases": e.get("aliases", []), "kind": kind,
                      "review": "pre-human-review", "note": e.get("note")})
     seen |= set(forms)
-(PROJECT / "data" / "entities.json").write_text(json.dumps(entities, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+(PROJECT / "data" / "works" / "takryu" / "entities.json").write_text(json.dumps(entities, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 print(f"문항 {len(out)}개, 인물표 {len(entities)}개")

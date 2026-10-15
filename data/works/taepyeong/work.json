@@ -1,0 +1,39 @@
+{
+  "id": "taepyeong",
+  "order": 2,
+  "title": "태평천하",
+  "author": "채만식",
+  "author_death_year": 1950,
+  "label": "채만식의 장편소설 「태평천하」",
+  "published": "조광 1938",
+  "chapters": 15,
+  "blurb": "계동 부자 윤직원 영감, 인력거 삯 오 전에도 실랑이하는 명창대회 날",
+  "examples": [
+    {
+      "question": "춘심이는 어떤 아이야?",
+      "chapter": 2
+    },
+    {
+      "question": "명창대회는 어디서 열렸어?",
+      "chapter": 1
+    },
+    {
+      "question": "양복신사가 영감을 누구로 착각했어?",
+      "chapter": 3
+    }
+  ],
+  "default_upto": 3,
+  "evaluated": false,
+  "source": {
+    "site": "ko.wikisource",
+    "page": "태평천하",
+    "mode": "subpages",
+    "subpage": "{page}/제{n}장",
+    "toc": "^#\\s*\\[\\[/제(\\d+)장/\\|(.+?)\\]\\]\\s*$",
+    "footer_template": "꼬리말",
+    "license": "PD-old-50(위키문헌). 작가 1950년 사망으로 대한민국에서 저작권 만료",
+    "extra_entities": [
+      "고씨"
+    ]
+  }
+}

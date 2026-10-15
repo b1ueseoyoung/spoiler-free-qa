@@ -18,6 +18,7 @@ from sfqa.chunk import chunk_corpus
 from sfqa.gold import Question, entity_index, load_entities, load_questions, load_texts
 from sfqa.retrieval_eval import content_chapter
 from sfqa.textnorm import has_key
+from sfqa.works import gold_work
 
 KEPT = ("verified", "chapter_fixed")
 OUTCOMES = {
@@ -220,9 +221,10 @@ def write_review(path: Path, judged: list[dict], questions: dict[str, Question])
 def score_run(run_dir: Path, with_review: bool = False) -> dict:
     info = json.loads((run_dir / "run-info.json").read_text(encoding="utf-8"))
     records = [json.loads(x) for x in (run_dir / "records.jsonl").read_text(encoding="utf-8").splitlines() if x.strip()]
-    texts = load_texts()
+    work = gold_work()  # 정답지는 「탁류」 전용이다
+    texts = load_texts(work)
     questions = {q.id: q for q in load_questions()}
-    entity_first = entity_index(load_entities(), texts)
+    entity_first = entity_index(load_entities(work), texts)
     chunk_text = {c.chunk_id: c.text for c in chunk_corpus(texts)}
     judged = [judge(r, questions[r["qid"]], entity_first, chunk_text, texts) for r in records]
     gold_status = Counter(questions[qid].review for qid in {r["qid"] for r in records})

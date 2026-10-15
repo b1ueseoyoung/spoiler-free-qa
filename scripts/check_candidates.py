@@ -7,7 +7,8 @@ import json
 import sys
 from pathlib import Path
 
-CLEAN = Path(__file__).resolve().parents[1] / "data" / "clean"
+# 정답지는 「탁류」 전용이다(data/works/takryu, 19장)
+CLEAN = Path(__file__).resolve().parents[1] / "data" / "works" / "takryu" / "clean"
 texts = {c: (CLEAN / f"ch{c:02d}.txt").read_text(encoding="utf-8") for c in range(1, 20)}
 
 data = json.loads(Path(sys.argv[1]).read_text(encoding="utf-8"))

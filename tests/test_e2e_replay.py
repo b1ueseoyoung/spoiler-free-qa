@@ -11,10 +11,11 @@ import pytest
 from sfqa.config import load_settings
 from sfqa.evaluate import CASSETTES, run_eval
 from sfqa.index import index_dir
+from sfqa.works import gold_work
 from sfqa.score import score_run
 
 S = load_settings({})
-ready = (index_dir(S.embed_model) / "meta.json").exists() and (CASSETTES / "e2e-dev5.jsonl").exists()
+ready = (index_dir(gold_work(), S.embed_model) / "meta.json").exists() and (CASSETTES / "e2e-dev5.jsonl").exists()
 
 
 @pytest.mark.skipif(not ready, reason="청크 색인 또는 e2e 카세트가 없다")

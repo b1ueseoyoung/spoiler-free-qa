@@ -10,7 +10,7 @@ wheels/
 .venv
 
 # 임베딩 색인(다시 만들 수 있다)
-data/index/
+data/works/*/index/
 
 # 비밀 값(API 키 등). 커밋하지 않는다
 .env

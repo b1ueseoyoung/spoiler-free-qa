@@ -1,4 +1,4 @@
-"""「탁류」 회차 스포일러 없는 Q&A."""
+"""책갈피: 회차 스포일러 없는 소설 Q&A(작품은 data/works/<id>/). 평가와 정답지는 「탁류」 전용이다."""
 
 from __future__ import annotations
 
@@ -7,16 +7,25 @@ import sys
 from pathlib import Path
 
 
+GOLD = "takryu"  # works.GOLD_WORK. 기본 작품(가벼운 import를 위해 문자열로 둔다)
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(prog="sfqa", description="회차 스포일러 없는 작품 Q&A")
     sub = parser.add_subparsers(dest="cmd", required=True)
     sub.add_parser("smoke", help="LM Studio 연결과 요청 형식을 점검한다(모델을 실제로 부른다)")
     p_fetch = sub.add_parser("fetch", help="위키문헌에서 원문을 받는다(sources.json의 판을 고정해 쓴다)")
+    p_fetch.add_argument("--work", default=GOLD, help="작품 id(data/works/<id>)")
     p_fetch.add_argument("--update", action="store_true", help="고정된 판 대신 최신 판으로 받는다")
-    sub.add_parser("clean", help="받은 원문에서 틀·각주를 지워 data/clean에 쓴다")
+    p_clean = sub.add_parser("clean", help="받은 원문에서 틀·각주를 지워 data/works/<id>/clean에 쓴다")
+    p_clean.add_argument("--work", default=GOLD, help="작품 id")
     sub.add_parser("gold-check", help="정답지를 모델 없이 검사한다(인용 원문 일치, 유형과 N, 인물 첫 등장)")
     sub.add_parser("gold-sheet", help="사람 검토용 표(eval/gold-review.csv)를 만든다")
-    sub.add_parser("index", help="청크를 나누고 임베딩 색인을 data/index에 만든다(LM Studio 임베딩을 부른다)")
+    p_ent = sub.add_parser("entities", help="새 작품의 인물·지명표를 형태소 분석기로 만든다(「탁류」는 사람이 만든 표를 쓴다)")
+    p_ent.add_argument("--work", required=True, help="작품 id")
+    p_ent.add_argument("--min-count", type=int, default=3)
+    p_index = sub.add_parser("index", help="청크를 나누고 임베딩 색인을 data/works/<id>/index에 만든다")
+    p_index.add_argument("--work", default=GOLD, help="작품 id, 또는 all(본문이 있는 모든 작품)")
     p_ret = sub.add_parser("retrieval-eval", help="검색만 따로 잰다: A 문항 recall@k, L4 누출(생성 모델은 안 부른다)")
     p_ret.add_argument("--method", default="dense", help="쉼표로 여러 개: dense, bm25, hybrid")
     p_ret.add_argument("--k", type=int, help="관문을 볼 k(기본: 설정의 RETRIEVE_K, 없으면 18)")
@@ -34,7 +43,8 @@ def main(argv: list[str] | None = None) -> int:
     p_web = sub.add_parser("web", help="로컬 웹 데모를 연다(127.0.0.1만)")
     p_web.add_argument("--port", type=int, default=8765)
     p_ask = sub.add_parser("ask", help="질문 하나에 답한다(LM Studio를 부른다)")
-    p_ask.add_argument("--upto", type=int, required=True, help="독자가 읽은 마지막 장(1~19)")
+    p_ask.add_argument("--work", default=GOLD, help="작품 id")
+    p_ask.add_argument("--upto", type=int, required=True, help="독자가 읽은 마지막 장(1~작품의 마지막 장)")
     p_ask.add_argument("--condition", default="C4", help="C0~C4. 기본 C4(최종 시스템)")
     p_ask.add_argument("--k", type=int, help="가져올 청크 수(기본: 설정의 RETRIEVE_K, 없으면 18)")
     p_ask.add_argument("question")
@@ -94,10 +104,12 @@ def main(argv: list[str] | None = None) -> int:
     if args.cmd == "ask":
         from sfqa.answer import build_chain, make_env
         from sfqa.config import load_settings
+        from sfqa.works import load_work
 
-        if not 1 <= args.upto <= 19:
-            parser.error("--upto는 1~19다")
-        r = build_chain(make_env(load_settings(), k=args.k), args.condition).invoke(
+        work = load_work(args.work)
+        if not 1 <= args.upto <= work.last:
+            parser.error(f"--upto는 1~{work.last}다")
+        r = build_chain(make_env(load_settings(), work, k=args.k), args.condition).invoke(
             {"question": args.question, "n": args.upto})
         resp = r.response
         print(f"[{r.condition}, {r.n}장까지] {r.status}: {r.answer}")
@@ -115,15 +127,28 @@ def main(argv: list[str] | None = None) -> int:
               + (", 잘림" if r.truncated else "") + (", 형식 실패" if r.invalid else ""))
         return 0
 
+    if args.cmd == "entities":
+        from sfqa.entities import write
+        from sfqa.works import GOLD_WORK, load_work
+
+        if args.work == GOLD_WORK:
+            parser.error("「탁류」 인물표는 사람이 손본 것이라 다시 만들지 않는다")
+        work = load_work(args.work)
+        print(f"entities[{work.id}]: {write(work, args.min_count)}개 → {work.entities_path}")
+        return 0
     if args.cmd == "index":
         from sfqa.config import load_settings
         from sfqa.gold import load_texts
         from sfqa.index import build_index
         from sfqa.llm import make_embeddings
+        from sfqa.works import list_works, load_work
 
         s = load_settings()
-        meta = build_index(s.embed_model, make_embeddings(s), load_texts(), s.embed_provider)
-        print(f"index: 청크 {meta['n_chunks']}개, {meta['dim']}차원, {meta['embed_model']}")
+        emb = make_embeddings(s)
+        works = list_works(ready_only=True) if args.work == "all" else [load_work(args.work)]
+        for work in works:
+            meta = build_index(work, s.embed_model, emb, load_texts(work), s.embed_provider)
+            print(f"index[{work.id}]: 청크 {meta['n_chunks']}개, {meta['dim']}차원, {meta['embed_model']}")
         return 0
     if args.cmd == "retrieval-eval":
         from sfqa.config import load_settings
@@ -133,9 +158,12 @@ def main(argv: list[str] | None = None) -> int:
         from sfqa.retrieval_eval import run
         from sfqa.retrieve import ChapterIndex
 
+        from sfqa.works import gold_work
+
         s = load_settings()
-        texts = load_texts()
-        chunks, vectors, meta = load_index(s.embed_model, texts, s.embed_provider)
+        work = gold_work()  # 검색 평가는 「탁류」 정답지로만 한다
+        texts = load_texts(work)
+        chunks, vectors, meta = load_index(work, s.embed_model, texts, s.embed_provider)
         index = ChapterIndex(chunks, vectors)
         emb = make_embeddings(s)
         failed_gate = False
@@ -174,8 +202,11 @@ def main(argv: list[str] | None = None) -> int:
     if args.cmd == "gold-check":
         from sfqa.gold import check, load_entities, load_questions, load_texts, summary
 
+        from sfqa.works import gold_work
+
         questions = load_questions()
-        errors, warnings = check(questions, load_texts(), load_entities())
+        work = gold_work()
+        errors, warnings = check(questions, load_texts(work), load_entities(work))
         print(summary(questions))
         for w in warnings:
             print(f"[경고] {w}")
@@ -192,13 +223,17 @@ def main(argv: list[str] | None = None) -> int:
         from sfqa.config import load_settings
         from sfqa.fetch import fetch
 
-        sources = fetch(load_settings(), update=args.update)
+        from sfqa.works import load_work
+
+        sources = fetch(load_settings(), load_work(args.work), update=args.update)
         print(f"fetch: {len(sources['chapters'])}개 장, 라이선스 틀 {sources['work']['license_templates']}")
         return 0
     if args.cmd == "clean":
         from sfqa.clean import clean_all
 
-        report = clean_all()
+        from sfqa.works import load_work
+
+        report = clean_all(load_work(args.work))
         for ch in report["chapters"]:
             mark = "" if ch["heading_matches_toc"] else "  ← 목차 제목과 다름"
             print(f"제{ch['chapter']:>2}장 {ch['chars']:>6}자 문단 {ch['paragraphs']:>3} "

@@ -1,4 +1,5 @@
-"""Claude API 기준선(docs/model-eval-spec.md). 평가에서만 쓴다. 서비스 경로(web, ask)는 계속 로컬 모델이다.
+"""Claude API 클라이언트. 모델 비교의 기준선(docs/model-eval-spec.md)과 공개 데모(LLM_PROVIDER=anthropic, Dockerfile)의
+생성 모델로 쓴다. 로컬 실행의 기본은 LM Studio다.
 
 - 공식 anthropic SDK로 부르고, 응답 형식은 output_config.format(json_schema)으로 강제한다.
 - thinking을 끈다. Sonnet 5.5는 disabled를 받지 않아 between_tools(effort high 이하)를 쓴다.

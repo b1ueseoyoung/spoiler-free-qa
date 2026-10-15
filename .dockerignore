@@ -5,7 +5,8 @@
 !README.md
 !src/**
 !scripts/fetch_gguf.py
-!data/clean/**
-!data/entities.json
-!data/index/local__mykor__KURE-v1-gguf__KURE-v1-Q8_0.gguf/**
+!data/works/*/work.json
+!data/works/*/clean/**
+!data/works/*/entities.json
+!data/works/*/index/local__mykor__KURE-v1-gguf__KURE-v1-Q8_0.gguf/**
 **/__pycache__

@@ -23,9 +23,8 @@ COPY --from=public.ecr.aws/awsguru/aws-lambda-adapter:1.1.0 /lambda-adapter /opt
 COPY --from=build /app /app
 COPY --from=build /opt/models /opt/models
 WORKDIR /app
-COPY data/clean ./data/clean
-COPY data/entities.json ./data/entities.json
-COPY data/index/local__mykor__KURE-v1-gguf__KURE-v1-Q8_0.gguf ./data/index/local__mykor__KURE-v1-gguf__KURE-v1-Q8_0.gguf
+# 작품마다 설정, 정제 본문, 인물표, 서버용(GGUF) 색인만 넣는다(.dockerignore 허용 목록)
+COPY data/works ./data/works
 ENV PATH="/app/.venv/bin:$PATH" PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 HF_HUB_OFFLINE=1 \
     AWS_LWA_PORT=8080 AWS_LWA_READINESS_CHECK_PATH=/api/config \
     PUBLIC_DEMO=1 LLM_PROVIDER=anthropic EMBED_PROVIDER=local RETRIEVE_K=20 GGUF_MODELS_DIR=/opt/models

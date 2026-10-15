@@ -1,0 +1,39 @@
+{
+  "id": "unhyeongung",
+  "order": 4,
+  "title": "운현궁의 봄",
+  "author": "김동인",
+  "author_death_year": 1951,
+  "label": "김동인의 장편소설 「운현궁의 봄」",
+  "published": "조선일보 1933–34",
+  "chapters": 25,
+  "blurb": "김씨 세도 아래 멸시받는 가난한 종친 흥선군, 큰 야망을 숨기다",
+  "examples": [
+    {
+      "question": "흥선에게 세찬 보낸 사람은?",
+      "chapter": 1
+    },
+    {
+      "question": "흥선은 누구의 후손이야?",
+      "chapter": 2
+    },
+    {
+      "question": "흥선이 호준한테 뭘 부탁했어?",
+      "chapter": 3
+    }
+  ],
+  "default_upto": 3,
+  "evaluated": false,
+  "source": {
+    "site": "ko.wikisource",
+    "page": "운현궁의 봄",
+    "mode": "subpages",
+    "subpage": "{page}/제{n}장",
+    "toc": "^\\*\\s*\\[\\[/제(\\d+)장/\\|(.+?)\\]\\]",
+    "footer_template": "꼬리말",
+    "license": "PD-old-50(위키문헌). 작가 1951년 사망으로 대한민국에서 저작권 만료",
+    "extra_entities": [
+      "명복"
+    ]
+  }
+}

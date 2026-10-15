@@ -2,7 +2,7 @@ import pytest
 
 from sfqa.chunk import MIN_OVERLAP, SIZE, SNAP, chunk_chapter, chunk_corpus
 from sfqa.gold import QUESTIONS, load_questions, load_texts
-from sfqa.paths import CLEAN_REPORT
+from sfqa.works import gold_work
 from sfqa.textnorm import search_text
 
 
@@ -44,12 +44,13 @@ def test_corpus_is_sorted_and_never_spans_chapters():
     assert len({c.chunk_id for c in chunks}) == len(chunks)
 
 
-needs_data = pytest.mark.skipif(not (CLEAN_REPORT.exists() and QUESTIONS.exists()), reason="정제 본문과 정답지가 필요하다")
+GOLD = gold_work()
+needs_data = pytest.mark.skipif(not (GOLD.ready and QUESTIONS.exists()), reason="정제 본문과 정답지가 필요하다")
 
 
 @needs_data
 def test_real_chunks_are_exact_and_every_gold_quote_fits():
-    texts = load_texts()
+    texts = load_texts(GOLD)
     chunks = chunk_corpus(texts)
     for c in chunks:
         assert c.text == texts[c.chapter][c.start:c.end]

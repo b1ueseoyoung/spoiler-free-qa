@@ -122,11 +122,14 @@ def make_env(s: Settings, client, emb_name: str, k: int = 18) -> Env:
     from sfqa.llm import CachedEmbeddings
     from sfqa.retrieve import ChapterIndex
     from sfqa.verify import Verifier
+    from sfqa.works import gold_work
 
-    texts = load_texts()
-    chunks, vectors, _ = load_index(s.embed_model, texts, s.embed_provider)
+    work = gold_work()  # 모델 비교는 「탁류」 정답지로만 한다
+    texts = load_texts(work)
+    chunks, vectors, _ = load_index(work, s.embed_model, texts, s.embed_provider)
     emb = CachedEmbeddings(None, s.embed_model, CASSETTES / f"{emb_name}-query-embeddings.jsonl", replay=True)
-    return Env(s, ChapterIndex(chunks, vectors), emb, client, Verifier(texts, entity_index(load_entities(), texts)), k)
+    return Env(s, work, ChapterIndex(chunks, vectors), emb, client,
+               Verifier(texts, entity_index(load_entities(work), texts)), k)
 
 
 def latency_stats(responses: list[dict]) -> dict:

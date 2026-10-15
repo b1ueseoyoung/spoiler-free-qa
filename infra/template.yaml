@@ -1,6 +1,6 @@
 AWSTemplateFormatVersion: "2010-09-09"
 Transform: AWS::Serverless-2016-10-31
-Description: 스포일러 없는 「탁류」 Q&A 공개 데모 - Lambda(컨테이너, arm64) + 함수 URL + DynamoDB 호출 상한 (docs/deploy-plan.md)
+Description: 책갈피(스포일러 없는 소설 도우미) 공개 데모 - Lambda(컨테이너, arm64) + 함수 URL + DynamoDB 호출 상한 (docs/deploy-plan.md)
 
 Parameters:
   ImageUri:
@@ -24,6 +24,10 @@ Parameters:
   IpMinuteLimit:
     Type: Number
     Default: 5
+  PermissionsBoundaryArn:
+    Type: String
+    Default: ""
+    Description: 함수 역할의 권한 경계(infra/boundary-policy.json으로 만든 sfqa-demo-boundary). 비우면 걸지 않는다
   ReservedConcurrency:
     Type: Number
     Default: 2
@@ -31,6 +35,7 @@ Parameters:
 
 Conditions:
   HasReservedConcurrency: !Not [!Equals [!Ref ReservedConcurrency, 0]]
+  HasPermissionsBoundary: !Not [!Equals [!Ref PermissionsBoundaryArn, ""]]
 
 Resources:
   LimitsTable:
@@ -65,6 +70,7 @@ Resources:
       MemorySize: 2048
       Timeout: 120  # 새 실행 환경의 첫 질문은 모델·색인을 올리느라 오래 걸린다
       ReservedConcurrentExecutions: !If [HasReservedConcurrency, !Ref ReservedConcurrency, !Ref AWS::NoValue]
+      PermissionsBoundary: !If [HasPermissionsBoundary, !Ref PermissionsBoundaryArn, !Ref AWS::NoValue]
       Environment:
         Variables:
           LIMITS_TABLE: !Ref LimitsTable

@@ -1,0 +1,667 @@
+[
+  {
+    "name": "형식",
+    "aliases": [
+      "이형식"
+    ],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 1961회"
+  },
+  {
+    "name": "영채",
+    "aliases": [
+      "박영채"
+    ],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 1261회"
+  },
+  {
+    "name": "우선",
+    "aliases": [
+      "신우선"
+    ],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 320회"
+  },
+  {
+    "name": "병욱",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "work.json extra_entities, 191회"
+  },
+  {
+    "name": "평양",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 145회"
+  },
+  {
+    "name": "학감",
+    "aliases": [
+      "배학감"
+    ],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 101회"
+  },
+  {
+    "name": "희경",
+    "aliases": [
+      "이희경"
+    ],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 77회"
+  },
+  {
+    "name": "조선",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 72회"
+  },
+  {
+    "name": "미국",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 66회"
+  },
+  {
+    "name": "머니",
+    "aliases": [
+      "어머니"
+    ],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 61회"
+  },
+  {
+    "name": "형이",
+    "aliases": [
+      "선형이"
+    ],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 59회"
+  },
+  {
+    "name": "종렬",
+    "aliases": [
+      "김종렬"
+    ],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 50회"
+  },
+  {
+    "name": "대문",
+    "aliases": [
+      "남대문"
+    ],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 47회"
+  },
+  {
+    "name": "대동강",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 46회"
+  },
+  {
+    "name": "동경",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 42회"
+  },
+  {
+    "name": "병국",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 42회"
+  },
+  {
+    "name": "서울",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 41회"
+  },
+  {
+    "name": "순애",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 38회"
+  },
+  {
+    "name": "현수",
+    "aliases": [
+      "김현수"
+    ],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 35회"
+  },
+  {
+    "name": "예수",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 33회"
+  },
+  {
+    "name": "경성",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 30회"
+  },
+  {
+    "name": "영어",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 28회"
+  },
+  {
+    "name": "일본",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 28회"
+  },
+  {
+    "name": "해도",
+    "aliases": [
+      "황해도"
+    ],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 28회"
+  },
+  {
+    "name": "명식",
+    "aliases": [
+      "배명식"
+    ],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 23회"
+  },
+  {
+    "name": "청량리",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 22회"
+  },
+  {
+    "name": "나폴레옹",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 18회"
+  },
+  {
+    "name": "조고",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 18회"
+  },
+  {
+    "name": "계월향",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 17회"
+  },
+  {
+    "name": "월화",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 14회"
+  },
+  {
+    "name": "아씨",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 13회"
+  },
+  {
+    "name": "종로",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 11회"
+  },
+  {
+    "name": "계향",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 9회"
+  },
+  {
+    "name": "란봉",
+    "aliases": [
+      "모란봉"
+    ],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 9회"
+  },
+  {
+    "name": "부벽루",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 9회"
+  },
+  {
+    "name": "열녀전",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 9회"
+  },
+  {
+    "name": "장안",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 9회"
+  },
+  {
+    "name": "참사람",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 9회"
+  },
+  {
+    "name": "그네",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 8회"
+  },
+  {
+    "name": "다방골",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 8회"
+  },
+  {
+    "name": "동대문",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 8회"
+  },
+  {
+    "name": "병인",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 8회"
+  },
+  {
+    "name": "안동",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 8회"
+  },
+  {
+    "name": "지환",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 8회"
+  },
+  {
+    "name": "춘향",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 8회"
+  },
+  {
+    "name": "평안도",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 8회"
+  },
+  {
+    "name": "무론",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 7회"
+  },
+  {
+    "name": "백설",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 7회"
+  },
+  {
+    "name": "북극성",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 7회"
+  },
+  {
+    "name": "소학",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 7회"
+  },
+  {
+    "name": "영감쟁이",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 7회"
+  },
+  {
+    "name": "칠성문",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 7회"
+  },
+  {
+    "name": "황주",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 7회"
+  },
+  {
+    "name": "교동",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 6회"
+  },
+  {
+    "name": "당자",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 6회"
+  },
+  {
+    "name": "청량사",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 6회"
+  },
+  {
+    "name": "광명",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 5회"
+  },
+  {
+    "name": "대동문",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 5회"
+  },
+  {
+    "name": "어젯저녁",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 5회"
+  },
+  {
+    "name": "윤수",
+    "aliases": [
+      "김윤수"
+    ],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 5회"
+  },
+  {
+    "name": "을밀대",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 5회"
+  },
+  {
+    "name": "일전",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 5회"
+  },
+  {
+    "name": "파나마",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 5회"
+  },
+  {
+    "name": "능라도",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 4회"
+  },
+  {
+    "name": "로마",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 4회"
+  },
+  {
+    "name": "부산",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 4회"
+  },
+  {
+    "name": "엘렌 케이",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 4회"
+  },
+  {
+    "name": "종각",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 4회"
+  },
+  {
+    "name": "칠성",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 4회"
+  },
+  {
+    "name": "패성학교",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 4회"
+  },
+  {
+    "name": "페스탈로치",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 4회"
+  },
+  {
+    "name": "희경이",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 4회"
+  },
+  {
+    "name": "가이",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 3회"
+  },
+  {
+    "name": "고마",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 3회"
+  },
+  {
+    "name": "남산",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 3회"
+  },
+  {
+    "name": "대성학교",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 3회"
+  },
+  {
+    "name": "부처",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 3회"
+  },
+  {
+    "name": "부평",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 3회"
+  },
+  {
+    "name": "솔이",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 3회"
+  },
+  {
+    "name": "신구",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 3회"
+  },
+  {
+    "name": "영국",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 3회"
+  },
+  {
+    "name": "영창",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 3회"
+  },
+  {
+    "name": "월향",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 3회"
+  },
+  {
+    "name": "이희",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 3회"
+  },
+  {
+    "name": "철물교",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 3회"
+  },
+  {
+    "name": "카이저",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 3회"
+  },
+  {
+    "name": "평양성",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 3회"
+  },
+  {
+    "name": "한강",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 3회"
+  },
+  {
+    "name": "형식이",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 3회"
+  },
+  {
+    "name": "화륜선",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 3회"
+  },
+  {
+    "name": "황해",
+    "aliases": [],
+    "kind": "other",
+    "review": "pre-human-review",
+    "note": "kiwipiepy 고유명사, 3회"
+  }
+]

@@ -1,0 +1,38 @@
+{
+  "split": "test",
+  "conditions": [
+    "C0",
+    "C2",
+    "C3",
+    "C4"
+  ],
+  "limit": null,
+  "k": 20,
+  "replay": true,
+  "questions": 44,
+  "max_calls": 0,
+  "git": {
+    "head": "1be670d",
+    "dirty": true
+  },
+  "prompt_hash": "49c1c430b46425d8",
+  "schema_sha": "d857be894638ab0d",
+  "gold_sha": "53977d12011faa64",
+  "entities_sha": "112f5527e4a4ea53",
+  "work": "takryu",
+  "model": {
+    "llm": "claude-sonnet-5-5",
+    "embed": "mykor/KURE-v1-gguf/KURE-v1-Q8_0.gguf",
+    "seed": 20261013,
+    "temperature": 0,
+    "max_tokens": 800,
+    "reasoning_effort": "between_tools:high",
+    "base_url": "http://127.0.0.1:1234/v1"
+  },
+  "cassette": "eval/cassettes/test-claude-gguf-k20.jsonl",
+  "started_at": "2026-10-14T18:21:11",
+  "records": 176,
+  "complete": true,
+  "model_calls": 0,
+  "finished_at": "2026-10-14T18:21:12"
+}

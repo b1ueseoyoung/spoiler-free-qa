@@ -95,17 +95,22 @@ def test_first_chapter_uses_aliases():
 
 
 # 실제 정답지를 본다. 아직 만들지 않았으면 건너뛴다.
-from sfqa.gold import ENTITIES as REAL_ENTITIES  # noqa: E402
 from sfqa.gold import QUESTIONS, load_entities, load_questions, load_texts  # noqa: E402
+from sfqa.works import gold_work, list_works  # noqa: E402
 
 
 @pytest.mark.skipif(not QUESTIONS.exists(), reason="eval/questions.jsonl이 아직 없다")
 def test_real_gold_has_no_errors():
-    errors, _ = check(load_questions(), load_texts(), load_entities())
+    w = gold_work()
+    errors, _ = check(load_questions(), load_texts(w), load_entities(w))
     assert errors == []
 
 
-@pytest.mark.skipif(not REAL_ENTITIES.exists(), reason="data/entities.json이 아직 없다")
-def test_every_entity_appears_in_text():
-    texts = load_texts()
-    assert [e.name for e in load_entities() if first_chapter(e.forms, texts) is None] == []
+WITH_ENTITIES = [w for w in list_works(ready_only=True) if w.entities_path.exists()]
+
+
+@pytest.mark.skipif(not WITH_ENTITIES, reason="인물표가 있는 작품이 없다")
+@pytest.mark.parametrize("work", WITH_ENTITIES, ids=[w.id for w in WITH_ENTITIES])
+def test_every_entity_appears_in_text(work):
+    texts = load_texts(work)
+    assert [e.name for e in load_entities(work) if first_chapter(e.forms, texts) is None] == []

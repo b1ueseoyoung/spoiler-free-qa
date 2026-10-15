@@ -96,17 +96,19 @@ def test_make_embeddings_local_is_lazy():
     assert isinstance(emb, LocalEmbeddings) and emb._model is None  # 처음 쓸 때 올린다
 
 
-def test_index_dirs_are_separate_per_runtime(tmp_path, monkeypatch):
-    monkeypatch.setattr(index_mod, "INDEX_ROOT", tmp_path)
+def test_index_dirs_are_separate_per_runtime(tmp_path):
+    from sfqa.works import Work
+
+    work = Work(id="w", title="w", author="a", label="w", chapters=19, dir=tmp_path / "w")
     emb = DeterministicFakeEmbedding(size=8)
     name = "mykor/KURE-v1-gguf/KURE-v1-Q8_0.gguf"
-    meta = index_mod.build_index(name, emb, TEXTS, provider="local")
+    meta = index_mod.build_index(work, name, emb, TEXTS, provider="local")
     assert meta["embed_provider"] == "local"
-    assert index_mod.index_dir(name, "local").name == "local__mykor__KURE-v1-gguf__KURE-v1-Q8_0.gguf"
-    index_mod.load_index(name, TEXTS, provider="local")
+    assert index_mod.index_dir(work, name, "local").name == "local__mykor__KURE-v1-gguf__KURE-v1-Q8_0.gguf"
+    index_mod.load_index(work, name, TEXTS, provider="local")
     with pytest.raises(index_mod.IndexMismatch):  # LM Studio 쪽에서는 이 색인을 보지 않는다
-        index_mod.load_index(name, TEXTS)
-    assert index_mod.index_dir("text-embedding-kure-v1").name == "text-embedding-kure-v1"  # 기존 경로 그대로
+        index_mod.load_index(work, name, TEXTS)
+    assert index_mod.index_dir(work, "text-embedding-kure-v1").name == "text-embedding-kure-v1"
 
 
 def test_retrieve_k_setting_and_gate_k():

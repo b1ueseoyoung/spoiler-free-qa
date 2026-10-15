@@ -8,9 +8,12 @@ cd "$(dirname "$0")/.."
 REGION="${AWS_REGION:-ap-northeast-2}"
 STACK=sfqa-demo
 REPO=sfqa-demo
-INDEX=data/index/local__mykor__KURE-v1-gguf__KURE-v1-Q8_0.gguf
-
-[ -f "$INDEX/meta.json" ] || { echo "색인이 없다: EMBED_PROVIDER=local uv run --extra gguf-embed sfqa index"; exit 1; }
+# 작품마다 서버용(GGUF) 색인이 있어야 한다. 하나라도 없으면 멈춘다
+for work in data/works/*/; do
+  [ -f "$work/clean/clean-report.json" ] || continue
+  [ -f "$work/index/local__mykor__KURE-v1-gguf__KURE-v1-Q8_0.gguf/meta.json" ] || {
+    echo "색인이 없다($work): EMBED_PROVIDER=local uv run --extra gguf-embed sfqa index --work all"; exit 1; }
+done
 
 ACCOUNT=$(aws sts get-caller-identity --query Account --output text)
 REGISTRY="$ACCOUNT.dkr.ecr.$REGION.amazonaws.com"

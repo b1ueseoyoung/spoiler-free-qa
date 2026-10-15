@@ -120,6 +120,19 @@
   - 이미지 2.1GB(arm64). 이 맥에서 읽기 전용 파일 시스템으로 실행해, 첫 질문 5.1초(모델·색인 올리기 포함), 메모리 약 518MB를 확인했다.
   - 지금 로그인된 IAM 사용자(`boogie`)에는 배포 권한이 없다. 배포 전용 사용자(`sfqa-deployer`, 정책 `infra/deploy-policy.json`)를 사용자가 만든다.
 
+### 권한 경계 적용 (리뷰 지적, 사용자가 IAM 콘솔에서 할 일)
+
+- **문제(리뷰, 높음):** 배포 키(`sfqa-deployer`)는 `sfqa-demo-*` 역할을 만들고 정책을 붙일 수 있다. 키가 새면 그 이름으로 관리자 역할을 만들어 계정을 장악할 수 있다.
+- **해결:** 권한 경계를 쓴다. 배포 키로 만들거나 고치는 역할은 반드시 `sfqa-demo-boundary`를 경계로 달아야 한다. 경계 밖의 권한은 정책을 붙여도 생기지 않는다.
+- **순서:**
+  1. IAM → 정책 생성 → JSON에 `infra/boundary-policy.json`을 붙이고 이름 `sfqa-demo-boundary`로 저장한다.
+  2. IAM → 정책 `sfqa-deploy` → 편집 → JSON을 새 `infra/deploy-policy.json`으로 바꾼다.
+  3. 경계를 켜서 다시 배포한다.
+     ```bash
+     AWS_PROFILE=sfqa scripts/deploy.sh ReservedConcurrency=0 PermissionsBoundaryArn=arn:aws:iam::<계정 번호>:policy/sfqa-demo-boundary
+     ```
+  - 2번 뒤에는 3번처럼 경계를 넘겨야 배포가 된다(경계 없는 역할은 고칠 수 없다).
+
 ### 도메인 (보류, 2026-10-14)
 
 - 함수 URL(`*.lambda-url.ap-northeast-2.on.aws`)을 그대로 쓴다. 커스텀 도메인은 CloudFront와 ACM이 필요하고, 사용자 IP를 읽는 방식도 바꿔야 한다.

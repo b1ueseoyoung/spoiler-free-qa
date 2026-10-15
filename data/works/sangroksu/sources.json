@@ -1,0 +1,201 @@
+{
+  "work": {
+    "page": "상록수",
+    "revid": 288184,
+    "timestamp": "2023-08-19T04:27:48Z",
+    "sha256": "dbf463521cb1b95f52c5bc5c016b13c2ba7b4f807dd171d478d6fddf6d800c44",
+    "license_templates": [
+      "PD-old-70"
+    ]
+  },
+  "chapters": [
+    {
+      "chapter": 1,
+      "toc_title": "제1장",
+      "page": "상록수/제1장",
+      "revid": 124384,
+      "timestamp": "2014-09-14T06:21:46Z",
+      "sha256": "7b380c639268049379003ced0de374be8034b5fb6f849f6c85de1cf067e7ab82",
+      "chars": 15425,
+      "fetched_at": "2026-10-14T09:15:21+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=124384"
+    },
+    {
+      "chapter": 2,
+      "toc_title": "제2장",
+      "page": "상록수/제2장",
+      "revid": 124385,
+      "timestamp": "2014-09-14T06:22:03Z",
+      "sha256": "a99f99d179dcd1ec7e1e7f0a04d1fc3cabd8062932c70080fd323dc081f31a19",
+      "chars": 11907,
+      "fetched_at": "2026-10-14T09:15:21+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=124385"
+    },
+    {
+      "chapter": 3,
+      "toc_title": "제3장",
+      "page": "상록수/제3장",
+      "revid": 124386,
+      "timestamp": "2014-09-14T06:22:19Z",
+      "sha256": "07c8bed4e714482a867cd41afc3d48be67e9dfd994f1e210b8214a3e4a7f749b",
+      "chars": 13254,
+      "fetched_at": "2026-10-14T09:15:21+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=124386"
+    },
+    {
+      "chapter": 4,
+      "toc_title": "제4장",
+      "page": "상록수/제4장",
+      "revid": 124387,
+      "timestamp": "2014-09-14T06:22:33Z",
+      "sha256": "43ba3edf2eabbfbe3d16840d991391fac357a0a42a5ee18c6ac57be04019ead8",
+      "chars": 12572,
+      "fetched_at": "2026-10-14T09:15:21+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=124387"
+    },
+    {
+      "chapter": 5,
+      "toc_title": "제5장",
+      "page": "상록수/제5장",
+      "revid": 124388,
+      "timestamp": "2014-09-14T06:22:45Z",
+      "sha256": "791261ad72b289dfe4dfd5b99062a980b51807ac51d58ab03c6d45e174a3dd29",
+      "chars": 14956,
+      "fetched_at": "2026-10-14T09:15:21+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=124388"
+    },
+    {
+      "chapter": 6,
+      "toc_title": "제6장",
+      "page": "상록수/제6장",
+      "revid": 124389,
+      "timestamp": "2014-09-14T06:22:58Z",
+      "sha256": "8e7f8f90493709c416999f2b1f01b3dc2ed4f2ff72f50ca7d9a9b5803298c688",
+      "chars": 13104,
+      "fetched_at": "2026-10-14T09:15:21+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=124389"
+    },
+    {
+      "chapter": 7,
+      "toc_title": "제7장",
+      "page": "상록수/제7장",
+      "revid": 124390,
+      "timestamp": "2014-09-14T06:23:10Z",
+      "sha256": "abe5be277c6a8f971eb09a17c5135aecdd7e413b4bf4516daeba7624cc98d52a",
+      "chars": 16693,
+      "fetched_at": "2026-10-14T09:15:21+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=124390"
+    },
+    {
+      "chapter": 8,
+      "toc_title": "제8장",
+      "page": "상록수/제8장",
+      "revid": 124391,
+      "timestamp": "2014-09-14T06:23:22Z",
+      "sha256": "d7f05b038e0e25dd89f9f685e9b6fefad4703c43f7f2efd299f9216459114b0a",
+      "chars": 8430,
+      "fetched_at": "2026-10-14T09:15:21+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=124391"
+    },
+    {
+      "chapter": 9,
+      "toc_title": "제9장",
+      "page": "상록수/제9장",
+      "revid": 124392,
+      "timestamp": "2014-09-14T06:23:35Z",
+      "sha256": "13b0fc4ea63a5da2317bfd1d6c7652bc56c71fe5ef7fcf9edc19a7e86ea70223",
+      "chars": 4669,
+      "fetched_at": "2026-10-14T09:15:21+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=124392"
+    },
+    {
+      "chapter": 10,
+      "toc_title": "제10장",
+      "page": "상록수/제10장",
+      "revid": 124393,
+      "timestamp": "2014-09-14T06:23:47Z",
+      "sha256": "50e568af5488b737e19354778836323e0f9cfb6fec1ba233c6ef5fcdc96ebd42",
+      "chars": 15064,
+      "fetched_at": "2026-10-14T09:15:21+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=124393"
+    },
+    {
+      "chapter": 11,
+      "toc_title": "제11장",
+      "page": "상록수/제11장",
+      "revid": 124394,
+      "timestamp": "2014-09-14T06:24:01Z",
+      "sha256": "3089dc63a3f8d45d5c0ee5246b3013cdd8b5e25fc9cab08e373bb4026b6d1ea2",
+      "chars": 21505,
+      "fetched_at": "2026-10-14T09:15:21+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=124394"
+    },
+    {
+      "chapter": 12,
+      "toc_title": "제12장",
+      "page": "상록수/제12장",
+      "revid": 124395,
+      "timestamp": "2014-09-14T06:24:15Z",
+      "sha256": "29363dc60491f23544bb45a77b6ee6393b142dc6fb2364d38f5b690ed61fcf7c",
+      "chars": 25654,
+      "fetched_at": "2026-10-14T09:15:21+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=124395"
+    },
+    {
+      "chapter": 13,
+      "toc_title": "제13장",
+      "page": "상록수/제13장",
+      "revid": 124396,
+      "timestamp": "2014-09-14T06:24:26Z",
+      "sha256": "bc8bfb9ed37c3713a392624a95ce15253f1b76b4c8b8d15bbfcc924f9ffb9202",
+      "chars": 21533,
+      "fetched_at": "2026-10-14T09:15:21+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=124396"
+    },
+    {
+      "chapter": 14,
+      "toc_title": "제14장",
+      "page": "상록수/제14장",
+      "revid": 250710,
+      "timestamp": "2022-08-11T04:33:32Z",
+      "sha256": "fde3db569e21c49167109ca17f7734bd4a52cbd5989c31dbd48cf7d703b51cd0",
+      "chars": 23757,
+      "fetched_at": "2026-10-14T09:15:21+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=250710"
+    },
+    {
+      "chapter": 15,
+      "toc_title": "제15장",
+      "page": "상록수/제15장",
+      "revid": 250709,
+      "timestamp": "2022-08-11T04:33:09Z",
+      "sha256": "5c4d5160efc6136d2c9f249208c49e24d3920d2de46e85293f78174a116fe726",
+      "chars": 13819,
+      "fetched_at": "2026-10-14T09:15:21+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=250709"
+    },
+    {
+      "chapter": 16,
+      "toc_title": "제16장",
+      "page": "상록수/제16장",
+      "revid": 124399,
+      "timestamp": "2014-09-14T06:24:52Z",
+      "sha256": "1bd93b2ec3814cfef45a8a427dedc74fbf8c96cb6e26b526c42aa095caf86c6d",
+      "chars": 10728,
+      "fetched_at": "2026-10-14T09:15:21+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=124399"
+    },
+    {
+      "chapter": 17,
+      "toc_title": "제17장",
+      "page": "상록수/제17장",
+      "revid": 250708,
+      "timestamp": "2022-08-11T04:33:01Z",
+      "sha256": "a4100669ae3e498ef7b8df02e26c3306fbd6f6f6b10fd85ff4ae6105ccd906bd",
+      "chars": 10998,
+      "fetched_at": "2026-10-14T09:15:21+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=250708"
+    }
+  ],
+  "note": "원문은 공유 저작물(작가 심훈 1936년 사망). 위키문헌 편집자가 붙인 틀은 정제 단계에서 지운다."
+}

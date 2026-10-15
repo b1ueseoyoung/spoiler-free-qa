@@ -56,18 +56,22 @@ def test_covers_and_content_chapter(idx):
     assert content_chapter(c.text, TEXTS) == 7
 
 
-def test_index_refuses_other_model_or_text(tmp_path, monkeypatch):
-    monkeypatch.setattr(index_mod, "INDEX_ROOT", tmp_path)
+def test_index_refuses_other_model_or_text(tmp_path):
+    from sfqa.works import Work
+
+    work = Work(id="w", title="w", author="a", label="w", chapters=2, dir=tmp_path / "w")
+    other = Work(id="v", title="v", author="a", label="v", chapters=2, dir=tmp_path / "v")
     texts = {1: TEXTS[1], 2: TEXTS[2]}
-    meta = index_mod.build_index("org/model-a", EMB, texts)
-    assert json.loads((tmp_path / "org__model-a" / "meta.json").read_text())["n_chunks"] == meta["n_chunks"]
-    texts_ok = texts
-    chunks, vectors, _ = index_mod.load_index("org/model-a", texts_ok)
+    meta = index_mod.build_index(work, "org/model-a", EMB, texts)
+    assert json.loads((tmp_path / "w" / "index" / "org__model-a" / "meta.json").read_text())["n_chunks"] == meta["n_chunks"]
+    chunks, vectors, _ = index_mod.load_index(work, "org/model-a", texts)
     assert len(chunks) == vectors.shape[0]
     with pytest.raises(index_mod.IndexMismatch):
-        index_mod.load_index("org/model-b", texts)  # 다른 모델의 색인은 따로 있어야 한다
+        index_mod.load_index(work, "org/model-b", texts)  # 다른 모델의 색인은 따로 있어야 한다
     with pytest.raises(index_mod.IndexMismatch):
-        index_mod.load_index("org/model-a", {1: TEXTS[1], 2: TEXTS[2] + " 고친 문장."})
+        index_mod.load_index(work, "org/model-a", {1: TEXTS[1], 2: TEXTS[2] + " 고친 문장."})
+    with pytest.raises(index_mod.IndexMismatch):
+        index_mod.load_index(other, "org/model-a", texts)  # 작품마다 색인이 따로 있다
 
 
 from sfqa.bm25 import PrefixBM25, tokenize_many  # noqa: E402

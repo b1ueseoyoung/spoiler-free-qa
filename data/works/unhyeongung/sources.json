@@ -1,0 +1,289 @@
+{
+  "work": {
+    "page": "운현궁의 봄",
+    "revid": 124477,
+    "timestamp": "2014-09-15T07:57:11Z",
+    "sha256": "29adfed9f979113032552b41974d781515b118f02e6281d206840ae5abe1c43a",
+    "license_templates": [
+      "PD-old-50"
+    ]
+  },
+  "chapters": [
+    {
+      "chapter": 1,
+      "toc_title": "一",
+      "page": "운현궁의 봄/제1장",
+      "revid": 124939,
+      "timestamp": "2014-10-08T14:09:29Z",
+      "sha256": "5c7e40c58f9ab646423c5c08de4297305df03e4e814fcc0abfa1c8d7382af1ea",
+      "chars": 18907,
+      "fetched_at": "2026-10-14T09:15:49+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=124939"
+    },
+    {
+      "chapter": 2,
+      "toc_title": "二",
+      "page": "운현궁의 봄/제2장",
+      "revid": 124940,
+      "timestamp": "2014-10-08T14:14:01Z",
+      "sha256": "4096bd24a2359f5f979ecd3d1fd194a91a7a5fda46d03b96828ad5e4cf81d291",
+      "chars": 9780,
+      "fetched_at": "2026-10-14T09:15:49+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=124940"
+    },
+    {
+      "chapter": 3,
+      "toc_title": "三",
+      "page": "운현궁의 봄/제3장",
+      "revid": 124943,
+      "timestamp": "2014-10-08T14:18:04Z",
+      "sha256": "9036b57bb3fb1743e77108aead9137e8c7aacd9c80b2508a5e756fd3c6980249",
+      "chars": 10903,
+      "fetched_at": "2026-10-14T09:15:49+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=124943"
+    },
+    {
+      "chapter": 4,
+      "toc_title": "四",
+      "page": "운현궁의 봄/제4장",
+      "revid": 124944,
+      "timestamp": "2014-10-08T14:30:36Z",
+      "sha256": "b6cf95d859da756f6f3f7a087f545e3ccccd975b528daaf2404a8289e5840757",
+      "chars": 6258,
+      "fetched_at": "2026-10-14T09:15:49+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=124944"
+    },
+    {
+      "chapter": 5,
+      "toc_title": "五",
+      "page": "운현궁의 봄/제5장",
+      "revid": 124482,
+      "timestamp": "2014-09-15T07:58:40Z",
+      "sha256": "cea018472be45ac51d2995016f2ed7c5cb179aedd2fdf2985ab581583f38a9d7",
+      "chars": 11934,
+      "fetched_at": "2026-10-14T09:15:49+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=124482"
+    },
+    {
+      "chapter": 6,
+      "toc_title": "六",
+      "page": "운현궁의 봄/제6장",
+      "revid": 124483,
+      "timestamp": "2014-09-15T07:58:57Z",
+      "sha256": "c64b8228d707cbeb7620ef0639d95efa033d0d03c744d25ed28c940298d9933c",
+      "chars": 6296,
+      "fetched_at": "2026-10-14T09:15:49+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=124483"
+    },
+    {
+      "chapter": 7,
+      "toc_title": "七",
+      "page": "운현궁의 봄/제7장",
+      "revid": 124484,
+      "timestamp": "2014-09-15T07:59:13Z",
+      "sha256": "b770640dfba714764d16556edbfabf6fae0ee0540e96292cb5d595aef7e5bf6a",
+      "chars": 8110,
+      "fetched_at": "2026-10-14T09:15:49+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=124484"
+    },
+    {
+      "chapter": 8,
+      "toc_title": "八",
+      "page": "운현궁의 봄/제8장",
+      "revid": 124485,
+      "timestamp": "2014-09-15T07:59:26Z",
+      "sha256": "8d461f76c2ad820f0526fcd4eafdb121a5143cdfe3f05860470b80f3a8bb9d95",
+      "chars": 17823,
+      "fetched_at": "2026-10-14T09:15:49+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=124485"
+    },
+    {
+      "chapter": 9,
+      "toc_title": "九",
+      "page": "운현궁의 봄/제9장",
+      "revid": 124486,
+      "timestamp": "2014-09-15T07:59:41Z",
+      "sha256": "e435d7e61b26f6c54825555546aae761bb292f607d71dde458a2c1ad42129293",
+      "chars": 14152,
+      "fetched_at": "2026-10-14T09:15:49+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=124486"
+    },
+    {
+      "chapter": 10,
+      "toc_title": "十",
+      "page": "운현궁의 봄/제10장",
+      "revid": 124487,
+      "timestamp": "2014-09-15T07:59:54Z",
+      "sha256": "e2f0c704336e9045af070444338905d3ae9967e043f24812b7dfbea6fea20613",
+      "chars": 9659,
+      "fetched_at": "2026-10-14T09:15:49+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=124487"
+    },
+    {
+      "chapter": 11,
+      "toc_title": "十一",
+      "page": "운현궁의 봄/제11장",
+      "revid": 454999,
+      "timestamp": "2026-07-03T06:17:30Z",
+      "sha256": "2f4f6057d8e548a71ec31928246ab70dccda1ed62ad47adbd0362233adbf2115",
+      "chars": 18678,
+      "fetched_at": "2026-10-14T09:15:49+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=454999"
+    },
+    {
+      "chapter": 12,
+      "toc_title": "十二",
+      "page": "운현궁의 봄/제12장",
+      "revid": 124489,
+      "timestamp": "2014-09-15T08:00:29Z",
+      "sha256": "a1bc65d5028bb7f46435e05739c3c30a08ef8945be174aa9e65cc4fb5874cf8f",
+      "chars": 18954,
+      "fetched_at": "2026-10-14T09:15:49+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=124489"
+    },
+    {
+      "chapter": 13,
+      "toc_title": "十三",
+      "page": "운현궁의 봄/제13장",
+      "revid": 124490,
+      "timestamp": "2014-09-15T08:00:42Z",
+      "sha256": "5e554be39faed509637d0b6e6026e35b944836a30a7e2de4bc32100c0188092b",
+      "chars": 14424,
+      "fetched_at": "2026-10-14T09:15:49+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=124490"
+    },
+    {
+      "chapter": 14,
+      "toc_title": "十四",
+      "page": "운현궁의 봄/제14장",
+      "revid": 124491,
+      "timestamp": "2014-09-15T08:00:57Z",
+      "sha256": "db26cd2eacd60f80edd5ade2183f1528788a7b833361e64c2ed75ae8937fd42c",
+      "chars": 14017,
+      "fetched_at": "2026-10-14T09:15:49+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=124491"
+    },
+    {
+      "chapter": 15,
+      "toc_title": "十五",
+      "page": "운현궁의 봄/제15장",
+      "revid": 454992,
+      "timestamp": "2026-07-03T01:33:12Z",
+      "sha256": "db2a557ef5d89872828d3bc98b0c4bd5b8ab1302ee1ea6c4929c9bbe8fa4b0ae",
+      "chars": 9605,
+      "fetched_at": "2026-10-14T09:15:49+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=454992"
+    },
+    {
+      "chapter": 16,
+      "toc_title": "十六",
+      "page": "운현궁의 봄/제16장",
+      "revid": 124493,
+      "timestamp": "2014-09-15T08:01:30Z",
+      "sha256": "936c0fec3e97c1c7a1747a33ba7cffdb4686ed3692a3f2c86f619c44d2228591",
+      "chars": 6559,
+      "fetched_at": "2026-10-14T09:15:49+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=124493"
+    },
+    {
+      "chapter": 17,
+      "toc_title": "十七",
+      "page": "운현궁의 봄/제17장",
+      "revid": 124494,
+      "timestamp": "2014-09-15T08:01:44Z",
+      "sha256": "0c350e43059b3d9a61e0f5378a2f0fe3259d08872bbf55b417963a409325679d",
+      "chars": 8199,
+      "fetched_at": "2026-10-14T09:15:49+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=124494"
+    },
+    {
+      "chapter": 18,
+      "toc_title": "十八",
+      "page": "운현궁의 봄/제18장",
+      "revid": 124495,
+      "timestamp": "2014-09-15T08:02:02Z",
+      "sha256": "84fd03a46688d90b0a4927cb5b4101647b3fea93238d58a52ed50d9b2031a427",
+      "chars": 9904,
+      "fetched_at": "2026-10-14T09:15:49+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=124495"
+    },
+    {
+      "chapter": 19,
+      "toc_title": "十九",
+      "page": "운현궁의 봄/제19장",
+      "revid": 124496,
+      "timestamp": "2014-09-15T08:02:17Z",
+      "sha256": "341729689e78164b3198874e8a23f3a741bfb4ddcdc5a9241a9ef5943661e364",
+      "chars": 16391,
+      "fetched_at": "2026-10-14T09:15:49+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=124496"
+    },
+    {
+      "chapter": 20,
+      "toc_title": "二十",
+      "page": "운현궁의 봄/제20장",
+      "revid": 124497,
+      "timestamp": "2014-09-15T08:02:30Z",
+      "sha256": "9df7642fd2284dcb1b7de8a3024f92a9c375fa3ad371d0c9f46c2580f81924de",
+      "chars": 17885,
+      "fetched_at": "2026-10-14T09:15:49+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=124497"
+    },
+    {
+      "chapter": 21,
+      "toc_title": "二十一",
+      "page": "운현궁의 봄/제21장",
+      "revid": 124498,
+      "timestamp": "2014-09-15T08:02:44Z",
+      "sha256": "fc543b3a2b90d74b3d920db5ef5a0e952c8f88725594267010114c47d36eac91",
+      "chars": 18412,
+      "fetched_at": "2026-10-14T09:15:49+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=124498"
+    },
+    {
+      "chapter": 22,
+      "toc_title": "二十二",
+      "page": "운현궁의 봄/제22장",
+      "revid": 124499,
+      "timestamp": "2014-09-15T08:02:58Z",
+      "sha256": "a8492b5a15e857bc363adda6f8083345897a0ca2eb055a102946c4febe4c57aa",
+      "chars": 12840,
+      "fetched_at": "2026-10-14T09:15:49+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=124499"
+    },
+    {
+      "chapter": 23,
+      "toc_title": "二十三",
+      "page": "운현궁의 봄/제23장",
+      "revid": 124500,
+      "timestamp": "2014-09-15T08:03:11Z",
+      "sha256": "ba06d1fdf8c0a3d8efc598b8d288d3efa3a515c36174e387f07f9e8dbff72378",
+      "chars": 16018,
+      "fetched_at": "2026-10-14T09:15:49+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=124500"
+    },
+    {
+      "chapter": 24,
+      "toc_title": "二十四",
+      "page": "운현궁의 봄/제24장",
+      "revid": 124501,
+      "timestamp": "2014-09-15T08:03:25Z",
+      "sha256": "76502cc706000484a18351669a30257f370119bac51572a4c16d04a420b68b9c",
+      "chars": 3001,
+      "fetched_at": "2026-10-14T09:15:49+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=124501"
+    },
+    {
+      "chapter": 25,
+      "toc_title": "二十五",
+      "page": "운현궁의 봄/제25장",
+      "revid": 124502,
+      "timestamp": "2014-09-15T08:03:40Z",
+      "sha256": "5ca45292ae5c31f0ca379c8c29f15a0ebb379b12215ac16997617bb509767490",
+      "chars": 5418,
+      "fetched_at": "2026-10-14T09:15:49+00:00",
+      "url": "https://ko.wikisource.org/w/index.php?oldid=124502"
+    }
+  ],
+  "note": "원문은 공유 저작물(작가 김동인 1951년 사망). 위키문헌 편집자가 붙인 틀은 정제 단계에서 지운다."
+}

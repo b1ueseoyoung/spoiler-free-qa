@@ -11,6 +11,7 @@ def test_dockerignore_is_an_allowlist_without_secrets():
     assert lines[0] == "**"  # 모두 빼고 필요한 것만 넣는다
     allowed = [x[1:] for x in lines if x.startswith("!")]
     assert not any(".env" in x or "cassettes" in x or x.startswith("runs") or x.startswith("eval") for x in allowed)
+    assert not any("/raw" in x for x in allowed)  # 받은 원문(위키 마크업)은 이미지에 넣지 않는다
 
 
 def test_dockerfile_keeps_key_out_and_runs_public_mode():
@@ -33,5 +34,21 @@ def test_deploy_policy_is_scoped():
         res = s["Resource"] if isinstance(s["Resource"], list) else [s["Resource"]]
         actions = s["Action"] if isinstance(s["Action"], list) else [s["Action"]]
         assert not any(a.endswith(":*") for a in actions), s["Sid"]
-        if res == ["*"]:  # 자원을 좁힐 수 없는 읽기·로그인 동작만 * 허용
+        if res == ["*"] and s["Effect"] == "Allow":  # 자원을 좁힐 수 없는 읽기·로그인 동작만 * 허용(Deny는 넓어도 된다)
             assert all(a.split(":")[1].startswith(("Get", "Describe", "Validate")) for a in actions), s["Sid"]
+
+
+def test_deploy_user_can_only_touch_roles_under_the_boundary():
+    """배포 키가 새도 sfqa-demo-* 역할에 관리자 권한을 붙여 계정을 장악하지 못하게(리뷰, 2026-10-14)."""
+    p = json.loads((ROOT / "infra" / "deploy-policy.json").read_text())
+    writes = {"iam:CreateRole", "iam:DeleteRole", "iam:PutRolePolicy", "iam:DeleteRolePolicy", "iam:AttachRolePolicy",
+              "iam:DetachRolePolicy", "iam:PutRolePermissionsBoundary"}
+    for s in p["Statement"]:
+        actions = set(s["Action"] if isinstance(s["Action"], list) else [s["Action"]])
+        if s["Effect"] == "Allow" and actions & writes:
+            assert "sfqa-demo-boundary" in json.dumps(s.get("Condition", {})), s["Sid"]
+    assert any(s["Effect"] == "Deny" and "iam:DeleteRolePermissionsBoundary" in s["Action"] for s in p["Statement"])
+    b = json.loads((ROOT / "infra" / "boundary-policy.json").read_text())
+    assert all(s["Effect"] == "Allow" and not any(a.endswith(":*") for a in (s["Action"] if isinstance(s["Action"], list) else [s["Action"]]))
+               for s in b["Statement"])
+    assert "PermissionsBoundary: !If [HasPermissionsBoundary" in (ROOT / "infra" / "template.yaml").read_text()

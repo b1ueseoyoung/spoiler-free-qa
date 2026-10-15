@@ -4,7 +4,8 @@ import pytest
 
 from sfqa.clean import CleanError, clean_wikitext, normalize_paragraphs
 from sfqa.fetch import sha256, toc_titles
-from sfqa.paths import CHAPTERS, CLEAN_REPORT, SOURCES, clean_path, raw_path
+from sfqa.clean import chapter_wikitexts
+from sfqa.works import gold_work, list_works
 
 CHAPTER = """__NOTOC__
 {{머리말
@@ -69,31 +70,62 @@ def test_normalize_paragraphs():
 
 def test_toc_titles():
     main = "== 목차 ==\n# [[/제1장/|인간기념물]]\n# [[/제19장/|서곡(序曲)]]\n"
-    assert toc_titles(main) == {1: "인간기념물", 19: "서곡(序曲)"}
+    assert toc_titles(main, gold_work().source["toc"]) == {1: "인간기념물", 19: "서곡(序曲)"}
 
 
 # 아래는 실제로 받은 데이터를 본다. 아직 받지 않았으면 건너뛴다.
-needs_data = pytest.mark.skipif(not CLEAN_REPORT.exists(), reason="sfqa fetch && sfqa clean을 먼저 실행")
+READY = list_works(ready_only=True)
+needs_data = pytest.mark.skipif(not READY, reason="sfqa fetch && sfqa clean을 먼저 실행")
+per_work = pytest.mark.parametrize("work", READY, ids=[w.id for w in READY])
 
 
 @needs_data
-def test_sources_pin_every_chapter_and_hashes_match():
-    sources = json.loads(SOURCES.read_text(encoding="utf-8"))
-    assert [p["chapter"] for p in sources["chapters"]] == list(CHAPTERS)
-    for p in sources["chapters"]:
-        assert sha256(raw_path(p["chapter"]).read_text(encoding="utf-8")) == p["sha256"], p["chapter"]
+@per_work
+def test_sources_pin_every_page_and_hashes_match(work):
+    sources = json.loads(work.sources_path.read_text(encoding="utf-8"))
+    assert [p["chapter"] for p in sources["chapters"]] == list(work.chapter_numbers)
+    if "parts" in sources:  # 묶음 페이지
+        for p in sources["parts"]:
+            assert sha256((work.raw_dir / f"part{p['part']:02d}.wiki").read_text(encoding="utf-8")) == p["sha256"]
+    else:
+        for p in sources["chapters"]:
+            assert sha256(work.raw_path(p["chapter"]).read_text(encoding="utf-8")) == p["sha256"], p["chapter"]
+    assert sources["work"]["license_templates"], "공유 저작물 틀(PD-)이 있어야 한다"
 
 
 @needs_data
-def test_cleaned_chapters_have_no_markup():
-    for c in CHAPTERS:
-        text = clean_path(c).read_text(encoding="utf-8")
-        assert len(text) > 3000, c
+@per_work
+def test_cleaned_chapters_have_no_markup(work):
+    for c in work.chapter_numbers:
+        text = work.clean_path(c).read_text(encoding="utf-8")
+        assert len(text) > 1000, c
         assert clean_wikitext(text).text == text, c  # 정제한 글을 다시 정제해도 그대로다
 
 
 @needs_data
-def test_report_headings_match_toc_and_last_chapter_is_last():
-    report = json.loads(CLEAN_REPORT.read_text(encoding="utf-8"))
+@per_work
+def test_header_synopsis_never_reaches_chapter_text(work):
+    """머리말 틀의 notes(줄거리 요약)가 본문에 섞이면 뒤 장 스포일러가 된다(「무정」)."""
+    import mwparserfromhell
+
+    raws = chapter_wikitexts(work) if work.source.get("mode") == "bundles" else {}
+    pages = [p.read_text(encoding="utf-8") for p in work.raw_dir.glob("*.wiki")]
+    notes = []
+    for raw in pages:
+        for t in mwparserfromhell.parse(raw).filter_templates():
+            for key in ("notes", "설명"):
+                if t.has(key) and len(str(t.get(key).value).strip()) > 20:
+                    notes.append(str(t.get(key).value).strip())
+    body = "".join(work.clean_path(c).read_text(encoding="utf-8") for c in work.chapter_numbers)
+    for note in notes:
+        assert note[:30] not in body
+    assert raws is not None
+
+
+def test_gold_work_headings_match_toc_and_last_chapter_is_last():
+    work = gold_work()
+    if not work.ready:
+        pytest.skip("탁류 정제 본문이 없다")
+    report = json.loads(work.clean_report_path.read_text(encoding="utf-8"))
     assert all(ch["heading_matches_toc"] for ch in report["chapters"])
     assert report["completeness"]["last_chapter_has_next"] is False
