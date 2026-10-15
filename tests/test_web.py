@@ -180,6 +180,15 @@ def test_serve_public_with_memory_table_for_local_check(monkeypatch):
     assert TestClient(seen["app"]).get("/api/config").json() == {"public": True}
 
 
+def test_serve_turns_off_access_log_only_in_public_mode(monkeypatch):
+    seen = {}
+    monkeypatch.setattr("uvicorn.run", lambda app, **kw: seen.update(kw))
+    serve(env={"PUBLIC_DEMO": "1", "LIMITS_TABLE": "memory"})
+    assert seen["access_log"] is False  # 방문자 IP를 로그에 남기지 않는다
+    serve(env={})
+    assert seen["access_log"] is True
+
+
 def test_warm_loads_env_without_model_call_or_counting():
     c, fake, counter = public_client()
     r = c.post("/api/warm")

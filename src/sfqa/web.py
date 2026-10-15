@@ -262,4 +262,5 @@ def serve(host: str = "127.0.0.1", port: int = 8765, env: dict | None = None) ->
 
     logging.basicConfig(level=logging.INFO, format="%(message)s")
     app = create_app(factory, counter=counter, public=public)
-    uvicorn.run(app, host=host, port=port, log_level="info")
+    # 공개 모드는 접속 기록을 끈다. 켜 두면 방문자 IP가 그대로 CloudWatch에 남는다(상한은 IP 해시로만 센다)
+    uvicorn.run(app, host=host, port=port, log_level="info", access_log=not public)

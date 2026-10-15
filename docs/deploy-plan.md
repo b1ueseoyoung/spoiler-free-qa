@@ -120,7 +120,7 @@
   - 이미지 2.1GB(arm64). 이 맥에서 읽기 전용 파일 시스템으로 실행해, 첫 질문 5.1초(모델·색인 올리기 포함), 메모리 약 518MB를 확인했다.
   - 지금 로그인된 IAM 사용자(`boogie`)에는 배포 권한이 없다. 배포 전용 사용자(`sfqa-deployer`, 정책 `infra/deploy-policy.json`)를 사용자가 만든다.
 
-### 권한 경계 적용 (리뷰 지적, 사용자가 IAM 콘솔에서 할 일)
+### 권한 경계 적용 (리뷰 지적, 2026-10-15 적용 완료)
 
 - **문제(리뷰, 높음):** 배포 키(`sfqa-deployer`)는 `sfqa-demo-*` 역할을 만들고 정책을 붙일 수 있다. 키가 새면 그 이름으로 관리자 역할을 만들어 계정을 장악할 수 있다.
 - **해결:** 권한 경계를 쓴다. 배포 키로 만들거나 고치는 역할은 반드시 `sfqa-demo-boundary`를 경계로 달아야 한다. 경계 밖의 권한은 정책을 붙여도 생기지 않는다.
@@ -132,6 +132,8 @@
      AWS_PROFILE=sfqa scripts/deploy.sh ReservedConcurrency=0 PermissionsBoundaryArn=arn:aws:iam::<계정 번호>:policy/sfqa-demo-boundary
      ```
   - 2번 뒤에는 3번처럼 경계를 넘겨야 배포가 된다(경계 없는 역할은 고칠 수 없다).
+  - 3번이 실패해 스택이 `UPDATE_ROLLBACK_FAILED`에 멈추면: CloudFormation → `sfqa-demo` → 스택 작업 → 업데이트 롤백 계속 → 건너뛸 리소스에 `FunctionRole`을 체크한다. 배포 키에는 이 권한이 없어 콘솔에서 한다(2026-10-15에 겪음, `decisions.md`).
+  - 이후 배포는 `PermissionsBoundaryArn`을 다시 넘기지 않아도 스택이 이전 값을 쓴다.
 
 ### 도메인 (보류, 2026-10-14)
 

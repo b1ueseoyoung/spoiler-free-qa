@@ -293,6 +293,7 @@ async function showWork(w) {
   setWordmark(w.title);
   setCredits([`${w.author} 「${w.title}」`, w.published, "공유 저작물 · 위키문헌"]);
   upto = w.default_upto;
+  chapterList = []; $("picker").innerHTML = "";  // 장 목록을 받기 전에 이전 작품의 장이 눌리지 않게
   const seq = ++openSeq;
   const list = await fetch(`/api/chapters?work=${encodeURIComponent(w.id)}`).then((r) => r.json());
   if (seq !== openSeq) return;  // 그사이 다른 작품을 열었다
