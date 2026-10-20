@@ -1,0 +1,35 @@
+{
+  "id": "wn01-rofan",
+  "order": 101,
+  "title": "은종탑의 필경사는 계약 약혼 중",
+  "author": "AI 생성",
+  "label": "AI가 생성한 로맨스판타지 웹소설 「은종탑의 필경사는 계약 약혼 중」",
+  "published": "2026-10 생성(합성 데이터)",
+  "chapters": 50,
+  "unit": "화",
+  "blurb": "빚과 실종된 아버지를 안고 은종탑에서 서약서를 베끼는 하급 필경사 세실리아, 다음 날 작업 목록에서 북부 로스벤 공작가의 이름을 발견하다.",
+  "examples": [
+    {
+      "question": "세실리아는 서약청에서 무슨 일을 해?",
+      "chapter": 1
+    },
+    {
+      "question": "카시엘은 세실리아에게 무엇을 제안했어?",
+      "chapter": 3
+    },
+    {
+      "question": "노엘은 어디가 아파?",
+      "chapter": 5
+    }
+  ],
+  "default_upto": 3,
+  "evaluated": false,
+  "synthetic": true,
+  "genre": "로맨스판타지",
+  "generator": "claude-opus-5-5 (Claude Code 워크플로)",
+  "source": {
+    "kind": "synthetic",
+    "created": "2026-10-17",
+    "license": "AI 생성 합성 데이터. 실존 작품·인물과 무관"
+  }
+}
