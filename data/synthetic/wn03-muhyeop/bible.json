@@ -1,0 +1,3568 @@
+{
+ "title": "무성보",
+ "genre": "무협",
+ "logline": "사부 살해 누명을 쓴 취죽문 대제자 한서진이 맞수 위소량과 함께 사라진 비급 『무성보』를 쫓다가 20년 전 묻힌 참변의 진실과 마주한다.",
+ "rating": "15세",
+ "world": {
+  "summary": "정파 문파와 세가가 모인 무림 연맹 운하맹과 사파 문파들의 연합 야화련이 맞서는 가상의 중원 무림. 이야기는 운령산 대나무 숲 속의 작은 검문 취죽문에서 시작된다.",
+  "summary_first_reveal_ep": 2,
+  "era": "가상의 왕조 시대 중원(연호와 실제 지명은 쓰지 않는다)",
+  "places": [
+   {
+    "name": "운령산 취죽문",
+    "first_reveal_ep": 1,
+    "desc": "운령산 대나무 숲 속에 자리한 작은 검문. 문주 곽태허와 제자들이 산다.",
+    "later_fact_ids": [
+     "f233"
+    ]
+   },
+   {
+    "name": "반월객잔",
+    "first_reveal_ep": 3,
+    "desc": "운령산 기슭의 객잔. 주인 마삼이 정보를 사고판다.",
+    "later_fact_ids": []
+   },
+   {
+    "name": "단하성",
+    "first_reveal_ep": 5,
+    "desc": "단하세가가 자리한 성시.",
+    "later_fact_ids": [
+     "f167"
+    ]
+   },
+   {
+    "name": "청류대",
+    "first_reveal_ep": 4,
+    "desc": "운하맹의 본산. 운령산에서 말로 사흘 길이다.",
+    "later_fact_ids": [
+     "f126",
+     "f226"
+    ]
+   },
+   {
+    "name": "낙수협",
+    "first_reveal_ep": 10,
+    "desc": "운령산 남쪽의 좁은 협곡.",
+    "later_fact_ids": []
+   },
+   {
+    "name": "백염장",
+    "first_reveal_ep": 13,
+    "desc": "밤이면 소금 결정이 꽃처럼 빛나는 염전 한가운데의 장원. 야화련 련주의 본거지다.",
+    "later_fact_ids": [
+     "f148"
+    ]
+   },
+   {
+    "name": "적하곡",
+    "first_reveal_ep": 13,
+    "desc": "옥명화가 서진에게 아느냐고 물은 골짜기 이름.",
+    "later_fact_ids": [
+     "f067",
+     "f071",
+     "f068",
+     "f069",
+     "f094",
+     "f102",
+     "f156",
+     "f157",
+     "f178",
+     "f162"
+    ]
+   },
+   {
+    "name": "녹계촌",
+    "first_reveal_ep": 15,
+    "desc": "운령산 너머의 산골 마을. 서진 일행이 여관에 묵는다.",
+    "later_fact_ids": []
+   },
+   {
+    "name": "고목사",
+    "first_reveal_ep": 16,
+    "desc": "운령산 너머의 버려진 산중 절.",
+    "later_fact_ids": []
+   },
+   {
+    "name": "침묵옥",
+    "first_reveal_ep": 28,
+    "desc": "청류대 지하의 감옥. 소리가 새지 않는다.",
+    "later_fact_ids": [
+     "f228"
+    ]
+   }
+  ],
+  "institutions": [
+   {
+    "name": "취죽문",
+    "first_reveal_ep": 1,
+    "desc": "운령산의 작은 검문. 문주는 곽태허, 대제자는 한서진, 막내 제자는 노은찬이다.",
+    "later_fact_ids": [
+     "f233",
+     "f234"
+    ]
+   },
+   {
+    "name": "운하맹",
+    "first_reveal_ep": 1,
+    "desc": "정파 문파와 세가가 모인 무림 연맹. 5년마다 청류회를 연다.",
+    "later_fact_ids": [
+     "f021",
+     "f109",
+     "f226",
+     "f229"
+    ]
+   },
+   {
+    "name": "집법당",
+    "first_reveal_ep": 2,
+    "desc": "운하맹의 추포·형벌 기관. 당주는 장헌이다.",
+    "later_fact_ids": [
+     "f052",
+     "f093",
+     "f125",
+     "f228"
+    ]
+   },
+   {
+    "name": "야화련",
+    "first_reveal_ep": 2,
+    "desc": "사파 문파들의 연합.",
+    "later_fact_ids": [
+     "f059",
+     "f061",
+     "f229",
+     "f030"
+    ]
+   },
+   {
+    "name": "단하세가",
+    "first_reveal_ep": 3,
+    "desc": "위소량의 가문인 무가.",
+    "later_fact_ids": [
+     "f032",
+     "f035",
+     "f191",
+     "f237"
+    ]
+   }
+  ],
+  "magic": [
+   {
+    "name": "낙엽무성검",
+    "first_reveal_ep": 1,
+    "desc": "취죽문의 비전 검법. 서진은 마지막 초식을 아직 배우지 못했다.",
+    "later_fact_ids": [
+     "f056",
+     "f098",
+     "f175"
+    ]
+   },
+   {
+    "name": "적운장",
+    "first_reveal_ep": 4,
+    "desc": "단하세가의 가전 장법.",
+    "later_fact_ids": []
+   },
+   {
+    "name": "회맥침",
+    "first_reveal_ep": 7,
+    "desc": "설단영이 쓰는 침술. 열을 내린다.",
+    "later_fact_ids": []
+   },
+   {
+    "name": "무성보",
+    "first_reveal_ep": 10,
+    "desc": "낙엽무성검의 비급. 곽태허가 죽기 전 가장 믿는 사람에게 맡겼다는 소문이 돈다.",
+    "later_fact_ids": [
+     "f074",
+     "f072",
+     "f077",
+     "f097",
+     "f148",
+     "f100",
+     "f075"
+    ]
+   },
+   {
+    "name": "죽절문",
+    "first_reveal_ep": 16,
+    "desc": "취죽문의 비밀 문자. 대나무 마디 같은 기호로 쓴다. 끝까지 배운 제자는 목연호뿐이다.",
+    "later_fact_ids": [
+     "f150"
+    ]
+   },
+   {
+    "name": "쌍현검",
+    "first_reveal_ep": 18,
+    "desc": "장헌이 쓰는, 쌍날이 나란히 붙은 검. 외날 검의 것처럼 생긴 검집에 넣어 등에 멘다.",
+    "later_fact_ids": [
+     "f093",
+     "f132"
+    ]
+   }
+  ],
+  "festivals": [
+   {
+    "name": "청류회",
+    "first_reveal_ep": 1,
+    "desc": "운하맹이 5년마다 여는 무림대회. 올가을에 열린다.",
+    "later_fact_ids": [
+     "f029",
+     "f109",
+     "f214",
+     "f112"
+    ]
+   },
+   {
+    "name": "연등야",
+    "first_reveal_ep": 38,
+    "desc": "단하성에서 해마다 강에 등불을 띄우는 축제.",
+    "later_fact_ids": []
+   }
+  ]
+ },
+ "characters": [
+  {
+   "id": "seojin",
+   "name": "한서진",
+   "aliases": [
+    "서진"
+   ],
+   "aliases_timed": [
+    {
+     "alias": "취죽문 대제자",
+     "from_ep": 1,
+     "to_ep": 49
+    },
+    {
+     "alias": "사부 살해범",
+     "from_ep": 2,
+     "to_ep": 49
+    },
+    {
+     "alias": "취죽문 문주",
+     "from_ep": 50,
+     "to_ep": null
+    }
+   ],
+   "how_called": [
+    {
+     "by": "eunchan",
+     "call": "대사형",
+     "from_ep": 1,
+     "to_ep": null,
+     "context": "공석·사석 모두"
+    },
+    {
+     "by": "taeheo",
+     "call": "서진아",
+     "from_ep": 1,
+     "to_ep": 1,
+     "context": "공석·사석 모두"
+    },
+    {
+     "by": "yeonho",
+     "call": "막내",
+     "from_ep": 11,
+     "to_ep": 31,
+     "context": "공석·사석 모두"
+    },
+    {
+     "by": "yeonho",
+     "call": "서진아",
+     "from_ep": 32,
+     "to_ep": null,
+     "context": "공석·사석 모두"
+    },
+    {
+     "by": "soryang",
+     "call": "취죽문 촌놈",
+     "from_ep": 3,
+     "to_ep": 21,
+     "context": "공석·사석 모두"
+    },
+    {
+     "by": "soryang",
+     "call": "한 형",
+     "from_ep": 22,
+     "to_ep": null,
+     "context": "공석·사석 모두"
+    },
+    {
+     "by": "janghun",
+     "call": "한서진",
+     "from_ep": 2,
+     "to_ep": null,
+     "context": "공석·사석 모두"
+    },
+    {
+     "by": "gyucheon",
+     "call": "한 소협",
+     "from_ep": 28,
+     "to_ep": null,
+     "context": "공석·사석 모두"
+    },
+    {
+     "by": "masam",
+     "call": "손님",
+     "from_ep": 3,
+     "to_ep": null,
+     "context": "공석·사석 모두"
+    },
+    {
+     "by": "harin",
+     "call": "한 소협",
+     "from_ep": 5,
+     "to_ep": null,
+     "context": "공석·사석 모두"
+    },
+    {
+     "by": "danyeong",
+     "call": "한 소협",
+     "from_ep": 7,
+     "to_ep": null,
+     "context": "공석·사석 모두"
+    },
+    {
+     "by": "myeonghwa",
+     "call": "꼬마 검객",
+     "from_ep": 13,
+     "to_ep": null,
+     "context": "공석·사석 모두"
+    },
+    {
+     "by": "gangpil",
+     "call": "한 공자",
+     "from_ep": 3,
+     "to_ep": null,
+     "context": "공석·사석 모두"
+    }
+   ],
+   "age": 27,
+   "age_note": "1화 시점 만 27세",
+   "gender": "남",
+   "is_minor": false,
+   "role": "주인공. 취죽문 대제자, 사부 살해 누명을 쓴 수배자",
+   "appearance": "마르고 단단한 체격, 햇볕에 그을린 얼굴, 오른손 검지에 굳은살. 낡은 청회색 무복.",
+   "personality": "말수가 적고 고지식하다. 화가 나면 오히려 목소리가 낮아진다. 아이와 약자에게 약하다.",
+   "speech_style": "어른과 낯선 이에게 하오체('그렇소', '하시오')를 쓰고, 말이 짧아 대개 한두 마디 단답으로 끊는다. 은찬에게는 다정한 반말. 사형 연호에게는 '사형'이라 부르며 해요체를 섞는다. 입버릇 '검은 대답을 미루지 않소.'",
+   "sample_lines": [
+    "검은 대답을 미루지 않소. 내가 베지 않았소.",
+    "은찬아, 대사형 손 놓지 마라.",
+    "사형, 이번엔 말없이 가지 마세요.",
+    "그대가 날 잡겠다면 잡으시오. 다만 오늘은 아니오."
+   ],
+   "backstory": "아홉 살에 운령산 아랫마을의 역병으로 부모를 잃고 곽태허에게 거두어져 취죽문 대제자로 자랐다. 낙엽무성검의 마지막 초식은 아직 배우지 못했다.",
+   "goal": "사부를 죽인 자를 찾아 누명을 벗고 취죽문을 지킨다.",
+   "first_appearance_ep": 1,
+   "secrets": [],
+   "arc": "누명을 쓴 도망자에서, 사부의 과거까지 받아들이고 스스로 문주가 되는 사람으로.",
+   "end_state": "누명을 벗고 취죽문을 다시 열어 문주가 된다. 은찬을 첫 정식 제자로 받는다."
+  },
+  {
+   "id": "soryang",
+   "name": "위소량",
+   "aliases": [
+    "소량",
+    "단하세가 장남"
+   ],
+   "aliases_timed": [
+    {
+     "alias": "단하세가 가주 대행",
+     "from_ep": 44,
+     "to_ep": 49
+    },
+    {
+     "alias": "단하세가 가주",
+     "from_ep": 50,
+     "to_ep": null
+    }
+   ],
+   "how_called": [
+    {
+     "by": "gangpil",
+     "call": "도련님",
+     "from_ep": 3,
+     "to_ep": 43,
+     "context": "공석·사석 모두"
+    },
+    {
+     "by": "gangpil",
+     "call": "도련님",
+     "from_ep": 44,
+     "to_ep": null,
+     "context": "사석"
+    },
+    {
+     "by": "gangpil",
+     "call": "가주님",
+     "from_ep": 44,
+     "to_ep": null,
+     "context": "공석"
+    },
+    {
+     "by": "harin",
+     "call": "오라버니",
+     "from_ep": 5,
+     "to_ep": null,
+     "context": "공석·사석 모두"
+    },
+    {
+     "by": "seojin",
+     "call": "위 공자",
+     "from_ep": 3,
+     "to_ep": 21,
+     "context": "공석·사석 모두"
+    },
+    {
+     "by": "seojin",
+     "call": "소량",
+     "from_ep": 22,
+     "to_ep": null,
+     "context": "사석"
+    },
+    {
+     "by": "jeonghyeok",
+     "call": "소량아",
+     "from_ep": 5,
+     "to_ep": 43,
+     "context": "공석·사석 모두"
+    },
+    {
+     "by": "masam",
+     "call": "위 공자",
+     "from_ep": 3,
+     "to_ep": null,
+     "context": "공석·사석 모두"
+    },
+    {
+     "by": "yeonho",
+     "call": "위 공자",
+     "from_ep": 12,
+     "to_ep": 31,
+     "context": "공석·사석 모두"
+    },
+    {
+     "by": "yeonho",
+     "call": "소량",
+     "from_ep": 32,
+     "to_ep": null,
+     "context": "공석·사석 모두"
+    },
+    {
+     "by": "danyeong",
+     "call": "위 공자",
+     "from_ep": 7,
+     "to_ep": null,
+     "context": "공석·사석 모두"
+    },
+    {
+     "by": "eunchan",
+     "call": "소량 형님",
+     "from_ep": 9,
+     "to_ep": null,
+     "context": "공석·사석 모두"
+    }
+   ],
+   "age": 29,
+   "age_note": "1화 시점 만 29세",
+   "gender": "남",
+   "is_minor": false,
+   "role": "단하세가 장남. 서진의 맞수에서 동행이 된다",
+   "appearance": "키가 크고 어깨가 넓다. 붉은 기가 도는 갈색 눈, 늘 단정히 묶은 머리. 진홍빛 겉옷.",
+   "personality": "자존심이 세고 말이 날카롭지만 속은 의리가 있다. 지는 것을 싫어한다.",
+   "speech_style": "누구에게나 반말에 가까운 비꼬는 말투. 아버지 앞에서만 '아버님' 하고 합쇼체. 입버릇 '재미있군.'",
+   "sample_lines": [
+    "재미있군. 5년 만에 만난 맞수가 수배범이라니.",
+    "넌 내 손으로 잡는다. 남한테 넘길 생각 없어.",
+    "비켜, 이번엔 내가 앞에 선다.",
+    "아버님, 저는 제 손으로 시비를 가리겠습니다."
+   ],
+   "backstory": "단하세가의 장남. 5년 전 청류회 후기지수 비무 결승에서 서진과 맞붙었다.",
+   "goal": "처음에는 서진에게 설욕하는 것, 뒤에는 가문의 과거를 바로잡는 것.",
+   "first_appearance_ep": 3,
+   "secrets": [],
+   "arc": "자존심 강한 맞수에서 서진의 벗이 되고, 아버지의 죄를 끌어안은 가주가 된다.",
+   "end_state": "단하세가 가주를 정식으로 잇고, 다음 청류회에서 서진과 다시 겨루기로 약속한다."
+  },
+  {
+   "id": "yeonho",
+   "name": "목연호",
+   "aliases": [
+    "연호"
+   ],
+   "aliases_timed": [
+    {
+     "alias": "야화련 부련주",
+     "from_ep": 11,
+     "to_ep": null
+    }
+   ],
+   "how_called": [
+    {
+     "by": "seojin",
+     "call": "사형",
+     "from_ep": 11,
+     "to_ep": null,
+     "context": "공석·사석 모두"
+    },
+    {
+     "by": "eunchan",
+     "call": "연호 사형",
+     "from_ep": 2,
+     "to_ep": null,
+     "context": "공석·사석 모두"
+    },
+    {
+     "by": "myeonghwa",
+     "call": "우리 부련주",
+     "from_ep": 13,
+     "to_ep": null,
+     "context": "공석·사석 모두"
+    },
+    {
+     "by": "myeonghwa",
+     "call": "연호야",
+     "from_ep": 34,
+     "to_ep": null,
+     "context": "사석"
+    },
+    {
+     "by": "soryang",
+     "call": "사파 놈",
+     "from_ep": 11,
+     "to_ep": 31,
+     "context": "공석·사석 모두"
+    },
+    {
+     "by": "soryang",
+     "call": "목 형",
+     "from_ep": 32,
+     "to_ep": null,
+     "context": "공석·사석 모두"
+    },
+    {
+     "by": "janghun",
+     "call": "부련주",
+     "from_ep": 18,
+     "to_ep": null,
+     "context": "공석·사석 모두"
+    }
+   ],
+   "age": 32,
+   "age_note": "1화 시점 만 32세",
+   "gender": "남",
+   "is_minor": false,
+   "role": "서진의 사형. 3년 전 취죽문을 떠났다",
+   "appearance": "호리호리하고 눈매가 처졌다. 늘 긴 소매 옷을 입는다. 목소리가 낮고 느리다.",
+   "personality": "느긋해 보이지만 속을 드러내지 않는다. 한번 정한 일은 혼자 짊어진다.",
+   "speech_style": "낮고 느린 하게체('그러게', '자네'). 서진을 처음에는 '막내', 화해 뒤 '서진아'라 부른다. 입버릇 '바람이 바뀌었네.'",
+   "sample_lines": [
+    "막내, 오랜만이네.",
+    "바람이 바뀌었네. 이번엔 내가 값을 치르지.",
+    "사부를 죽인 건 내가 아니네. 자네도 아니고.",
+    "막내, 검 끝이 또 흔들리네."
+   ],
+   "backstory": "곽태허의 제자로 취죽문에서 자랐고 3년 전 문파를 떠났다.",
+   "goal": "무성보에 적힌 진실을 알아내는 것.",
+   "first_appearance_ep": 11,
+   "secrets": [
+    "f061",
+    "f094",
+    "f082",
+    "f103"
+   ],
+   "arc": "사파에 몸담은 배신자처럼 보이던 사형이 진실을 함께 쫓으며 막내와 화해한다.",
+   "end_state": "사부의 무덤에 서진과 술을 올린 뒤 약속대로 야화련으로 돌아간다."
+  },
+  {
+   "id": "gangpil",
+   "name": "강필",
+   "aliases": [
+    "강 무사"
+   ],
+   "aliases_timed": [
+    {
+     "alias": "단하세가 호위대장",
+     "from_ep": 44,
+     "to_ep": null
+    }
+   ],
+   "how_called": [
+    {
+     "by": "soryang",
+     "call": "강필",
+     "from_ep": 3,
+     "to_ep": null,
+     "context": "공석·사석 모두"
+    },
+    {
+     "by": "harin",
+     "call": "강 무사",
+     "from_ep": 5,
+     "to_ep": 37,
+     "context": "공석·사석 모두"
+    },
+    {
+     "by": "harin",
+     "call": "필 오라버니",
+     "from_ep": 38,
+     "to_ep": null,
+     "context": "사석"
+    },
+    {
+     "by": "jeonghyeok",
+     "call": "강필",
+     "from_ep": 5,
+     "to_ep": 43,
+     "context": "공석·사석 모두"
+    },
+    {
+     "by": "eunchan",
+     "call": "강필 아저씨",
+     "from_ep": 9,
+     "to_ep": null,
+     "context": "공석·사석 모두"
+    },
+    {
+     "by": "seojin",
+     "call": "강 무사",
+     "from_ep": 3,
+     "to_ep": null,
+     "context": "공석·사석 모두"
+    }
+   ],
+   "age": 34,
+   "age_note": "1화 시점 만 34세",
+   "gender": "남",
+   "is_minor": false,
+   "role": "위소량의 호위무사",
+   "appearance": "큰 키에 각진 얼굴, 왼쪽 눈썹에 칼자국. 늘 검은 무복.",
+   "personality": "과묵하고 충직하다. 감정을 드러내지 않지만 한번 마음먹으면 꺾이지 않는다.",
+   "speech_style": "소량에게 깍듯한 합쇼체로 '도련님'. 말수가 적고 대답은 대개 '예.' 하린에게는 '아가씨'.",
+   "sample_lines": [
+    "예.",
+    "도련님 등은 제가 맡겠습니다.",
+    "도련님이 가시는 길이면 저도 갑니다.",
+    "아가씨, 밤길은 위험합니다."
+   ],
+   "backstory": "7년 전부터 소량의 호위무사로 곁을 지켜 왔다.",
+   "goal": "소량을 지키는 것.",
+   "first_appearance_ep": 3,
+   "secrets": [
+    "f113",
+    "f143",
+    "f146",
+    "f116",
+    "f170"
+   ],
+   "arc": "명령에 묶인 호위에서 스스로 주인을 고르는 사람으로.",
+   "end_state": "단하세가 호위대장이 되고, 하린과의 혼인을 허락받는다."
+  },
+  {
+   "id": "harin",
+   "name": "위하린",
+   "aliases": [
+    "하린",
+    "단하세가 아가씨"
+   ],
+   "aliases_timed": [],
+   "how_called": [
+    {
+     "by": "gangpil",
+     "call": "아가씨",
+     "from_ep": 5,
+     "to_ep": null,
+     "context": "공석·사석 모두"
+    },
+    {
+     "by": "soryang",
+     "call": "하린아",
+     "from_ep": 5,
+     "to_ep": null,
+     "context": "공석·사석 모두"
+    },
+    {
+     "by": "seojin",
+     "call": "위 소저",
+     "from_ep": 5,
+     "to_ep": null,
+     "context": "공석·사석 모두"
+    },
+    {
+     "by": "eunchan",
+     "call": "하린 누나",
+     "from_ep": 6,
+     "to_ep": null,
+     "context": "공석·사석 모두"
+    },
+    {
+     "by": "jeonghyeok",
+     "call": "하린아",
+     "from_ep": 5,
+     "to_ep": 43,
+     "context": "공석·사석 모두"
+    }
+   ],
+   "age": 25,
+   "age_note": "1화 시점 만 25세",
+   "gender": "여",
+   "is_minor": false,
+   "role": "소량의 여동생. 단하세가의 장부와 서신을 맡는다",
+   "appearance": "동그란 얼굴에 웃는 눈. 붓을 쥐는 손가락에 먹물 자국이 남아 있다.",
+   "personality": "명랑하고 눈치가 빠르다. 내기를 좋아한다. 결정적인 순간에는 대담하다.",
+   "speech_style": "밝은 해요체에 반말이 자주 섞인다. 무엇이든 내기로 걸고('내기할래요?', '내가 이기면 ~해요') 말끝을 올린다. 오라버니에게는 반말. 입버릇 '그럼 내기해요.'",
+   "sample_lines": [
+    "그럼 내기해요. 우리 오라버니가 이기면 사탕은 제 거예요.",
+    "강 무사, 저 좀 봐요. 내기할래요?",
+    "오라버니, 내기 하나 할래? 지는 사람이 사탕 사기.",
+    "아버지 글씨는 제가 옮겨 적을게요."
+   ],
+   "backstory": "어려서부터 세가의 장부와 서신을 관리해 왔다.",
+   "goal": "오라버니와 아버지 사이를 잇고, 강필에게 마음을 전하는 것.",
+   "first_appearance_ep": 5,
+   "secrets": [
+    "f114"
+   ],
+   "arc": "집 안의 명랑한 아가씨에서 아버지의 증언서를 지켜 내는 사람으로.",
+   "end_state": "강필과 정혼한다."
+  },
+  {
+   "id": "eunchan",
+   "name": "노은찬",
+   "aliases": [
+    "은찬",
+    "막내 제자"
+   ],
+   "aliases_timed": [
+    {
+     "alias": "취죽문 첫 정식 제자",
+     "from_ep": 50,
+     "to_ep": null
+    }
+   ],
+   "how_called": [
+    {
+     "by": "seojin",
+     "call": "은찬아",
+     "from_ep": 1,
+     "to_ep": null,
+     "context": "공석·사석 모두"
+    },
+    {
+     "by": "taeheo",
+     "call": "은찬아",
+     "from_ep": 1,
+     "to_ep": 1,
+     "context": "공석·사석 모두"
+    },
+    {
+     "by": "masam",
+     "call": "꼬마 손님",
+     "from_ep": 3,
+     "to_ep": null,
+     "context": "공석·사석 모두"
+    },
+    {
+     "by": "yeonho",
+     "call": "꼬맹이",
+     "from_ep": 11,
+     "to_ep": null,
+     "context": "공석·사석 모두"
+    },
+    {
+     "by": "harin",
+     "call": "은찬이",
+     "from_ep": 5,
+     "to_ep": null,
+     "context": "공석·사석 모두"
+    },
+    {
+     "by": "danyeong",
+     "call": "은찬아",
+     "from_ep": 7,
+     "to_ep": null,
+     "context": "공석·사석 모두"
+    },
+    {
+     "by": "soryang",
+     "call": "꼬마",
+     "from_ep": 3,
+     "to_ep": null,
+     "context": "공석·사석 모두"
+    }
+   ],
+   "age": 10,
+   "age_note": "1화 시점 만 10세. 어떤 연애 관계나 커플링 후보에도 엮지 않는다",
+   "gender": "남",
+   "is_minor": true,
+   "role": "취죽문의 막내 제자(어린 조연)",
+   "appearance": "작은 체구, 앞니 하나가 빠졌다. 늘 목검을 안고 다닌다.",
+   "personality": "겁이 많지만 대사형을 믿는 마음은 누구보다 크다. 말이 많다.",
+   "speech_style": "아이다운 해요체. 서진을 '대사형'이라 부른다. 입버릇 '진짜예요?'",
+   "sample_lines": [
+    "대사형은 안 그랬어요! 진짜예요!",
+    "진짜예요? 연호 사형이요?",
+    "이건 제가 지킬게요.",
+    "마삼 아저씨, 주판 이렇게 튕기는 거 맞아요?"
+   ],
+   "backstory": "취죽문의 막내 제자. 사부가 새로 깎아 준 목검을 늘 들고 다닌다.",
+   "goal": "대사형 곁에 있는 것.",
+   "first_appearance_ep": 1,
+   "secrets": [],
+   "arc": "울보 막내에서 사부의 것을 지켜 낸 제자로.",
+   "end_state": "다시 연 취죽문의 첫 정식 제자가 된다."
+  },
+  {
+   "id": "taeheo",
+   "name": "곽태허",
+   "aliases": [
+    "곽 문주"
+   ],
+   "aliases_timed": [
+    {
+     "alias": "취죽문 문주",
+     "from_ep": 1,
+     "to_ep": 49
+    }
+   ],
+   "how_called": [
+    {
+     "by": "seojin",
+     "call": "사부님",
+     "from_ep": 1,
+     "to_ep": null,
+     "context": "공석·사석 모두"
+    },
+    {
+     "by": "eunchan",
+     "call": "사부님",
+     "from_ep": 1,
+     "to_ep": null,
+     "context": "공석·사석 모두"
+    },
+    {
+     "by": "yeonho",
+     "call": "사부",
+     "from_ep": 11,
+     "to_ep": null,
+     "context": "공석·사석 모두"
+    },
+    {
+     "by": "janghun",
+     "call": "곽 문주",
+     "from_ep": 2,
+     "to_ep": null,
+     "context": "공석·사석 모두"
+    },
+    {
+     "by": "myeonghwa",
+     "call": "곽 대협",
+     "from_ep": 34,
+     "to_ep": null,
+     "context": "공석·사석 모두"
+    },
+    {
+     "by": "masam",
+     "call": "곽 형",
+     "from_ep": 22,
+     "to_ep": null,
+     "context": "공석·사석 모두"
+    }
+   ],
+   "age": 63,
+   "age_note": "1화에서 숨질 때 만 63세",
+   "gender": "남",
+   "is_minor": false,
+   "role": "취죽문 문주. 서진과 연호의 사부. 1화에 숨진다",
+   "appearance": "흰 수염, 굽은 등, 대나무 지팡이. 왼쪽 어깨가 조금 처졌다.",
+   "personality": "엄하지만 정이 깊다. 말을 아낀다.",
+   "speech_style": "노인다운 해라체·하게체. 제자를 '이놈아'라고 부르며 꾸짖는다.",
+   "sample_lines": [
+    "이놈아, 검은 손이 아니라 숨으로 드는 것이다.",
+    "청류회가 끝나면 이야기하마.",
+    "은찬아, 검보다 밥이 먼저다. 어서 먹거라."
+   ],
+   "backstory": "운령산에서 작은 검문 취죽문을 이끌었다. 고아들을 제자로 거두어 길렀다.",
+   "goal": "(1화 시점) 마지막 초식을 제자에게 전하는 것.",
+   "first_appearance_ep": 1,
+   "secrets": [
+    "f072",
+    "f102",
+    "f104",
+    "f148",
+    "f151",
+    "f158",
+    "f161",
+    "f074",
+    "f075"
+   ],
+   "arc": "죽은 뒤 기록과 증언을 통해 과거가 드러난다.",
+   "end_state": "1화에 숨진다. 36화에 방화 명령을 거부한 사람이었음이 밝혀진다."
+  },
+  {
+   "id": "gyucheon",
+   "name": "양규천",
+   "aliases": [
+    "규천"
+   ],
+   "aliases_timed": [
+    {
+     "alias": "운하맹 맹주",
+     "from_ep": 2,
+     "to_ep": 48
+    },
+    {
+     "alias": "전 맹주",
+     "from_ep": 49,
+     "to_ep": null
+    }
+   ],
+   "how_called": [
+    {
+     "by": "janghun",
+     "call": "맹주님",
+     "from_ep": 2,
+     "to_ep": 48,
+     "context": "공석·사석 모두"
+    },
+    {
+     "by": "seojin",
+     "call": "맹주",
+     "from_ep": 28,
+     "to_ep": 48,
+     "context": "공석·사석 모두"
+    },
+    {
+     "by": "danyeong",
+     "call": "아버지",
+     "from_ep": 46,
+     "to_ep": null,
+     "context": "공석·사석 모두"
+    },
+    {
+     "by": "myeonghwa",
+     "call": "양 맹주",
+     "from_ep": 47,
+     "to_ep": 48,
+     "context": "공석·사석 모두"
+    }
+   ],
+   "age": 57,
+   "age_note": "1화 시점 만 57세",
+   "gender": "남",
+   "is_minor": false,
+   "role": "운하맹 맹주",
+   "appearance": "풍채가 좋고 얼굴이 온화하다. 흰 비단 도포, 손에 늘 염주.",
+   "personality": "겉으로는 너그럽고 점잖다. 자신의 이름과 자리를 무엇보다 앞세운다.",
+   "speech_style": "위엄 있는 하오체. 자신을 '본 맹주'라 칭하고, 한 문장을 길게 늘여 '~하지 않겠소, ~하시오' 하고 권유하듯 말한다. 입버릇 '대의를 생각하시오.'",
+   "sample_lines": [
+    "대의를 생각하시오, 한 소협.",
+    "본 맹주가 약속하리다. 청류회에서 그대의 이름을 씻어 주겠소.",
+    "사파의 모함이오. 이 자리를 더럽히지 마시오."
+   ],
+   "backstory": "20년 전 적하곡 토벌을 이끈 공으로 이름을 얻어 맹주가 되었다.",
+   "goal": "맹주의 자리와 이름을 지키는 것.",
+   "first_appearance_ep": 28,
+   "secrets": [
+    "f157",
+    "f223",
+    "f198",
+    "f205",
+    "f232"
+   ],
+   "arc": "존경받는 맹주에서 청류회에서 죄가 드러나 물러나는 사람으로.",
+   "end_state": "맹주직에서 끌려 내려와 청류대 별원에 연금된다."
+  },
+  {
+   "id": "myeonghwa",
+   "name": "옥명화",
+   "aliases": [
+    "명화"
+   ],
+   "aliases_timed": [
+    {
+     "alias": "야화련 련주",
+     "from_ep": 10,
+     "to_ep": null
+    }
+   ],
+   "how_called": [
+    {
+     "by": "yeonho",
+     "call": "련주",
+     "from_ep": 11,
+     "to_ep": null,
+     "context": "공석·사석 모두"
+    },
+    {
+     "by": "seojin",
+     "call": "련주",
+     "from_ep": 13,
+     "to_ep": null,
+     "context": "공석·사석 모두"
+    },
+    {
+     "by": "soryang",
+     "call": "옥 련주",
+     "from_ep": 13,
+     "to_ep": null,
+     "context": "공석·사석 모두"
+    },
+    {
+     "by": "masam",
+     "call": "옥 련주",
+     "from_ep": 47,
+     "to_ep": null,
+     "context": "공석·사석 모두"
+    }
+   ],
+   "age": 33,
+   "age_note": "1화 시점 만 33세",
+   "gender": "여",
+   "is_minor": false,
+   "role": "사파 연합 야화련의 련주",
+   "appearance": "검은 비단옷에 소금 결정 모양의 은비녀. 나른한 눈매, 오른손 손등에 옅은 흉터.",
+   "personality": "나른하고 여유로워 보이지만 셈이 빠르다. 빚과 값을 정확히 따진다.",
+   "speech_style": "나른한 반말. 상대를 '얘'라고 부르기도 한다. 입버릇 '값을 치러야지.'",
+   "sample_lines": [
+    "값을 치러야지, 얘.",
+    "적하곡을 아니?",
+    "우리 부련주를 데려가고 싶으면 그만한 걸 내놔.",
+    "빚은 빚이고 값은 값이야."
+   ],
+   "backstory": "사파 연합 야화련을 이끄는 련주다.",
+   "goal": "적하곡의 진실을 세상에 드러내는 것.",
+   "first_appearance_ep": 13,
+   "secrets": [
+    "f069",
+    "f148",
+    "f149",
+    "f152"
+   ],
+   "arc": "값만 따지는 사파의 우두머리에서 진실 앞에 우는 생존자로.",
+   "end_state": "청류회에서 증언하고 운하맹과의 휴전을 받아들인다."
+  },
+  {
+   "id": "masam",
+   "name": "마삼",
+   "aliases": [
+    "반월객잔 주인"
+   ],
+   "aliases_timed": [],
+   "how_called": [
+    {
+     "by": "seojin",
+     "call": "마 주인",
+     "from_ep": 3,
+     "to_ep": null,
+     "context": "공석·사석 모두"
+    },
+    {
+     "by": "eunchan",
+     "call": "마삼 아저씨",
+     "from_ep": 3,
+     "to_ep": null,
+     "context": "공석·사석 모두"
+    },
+    {
+     "by": "soryang",
+     "call": "마 영감",
+     "from_ep": 3,
+     "to_ep": null,
+     "context": "공석·사석 모두"
+    },
+    {
+     "by": "yeonho",
+     "call": "마 영감",
+     "from_ep": 22,
+     "to_ep": null,
+     "context": "공석·사석 모두"
+    }
+   ],
+   "age": 52,
+   "age_note": "1화 시점 만 52세",
+   "gender": "남",
+   "is_minor": false,
+   "role": "반월객잔 주인 겸 정보상",
+   "appearance": "배가 나오고 머리가 벗어졌다. 늘 주판을 허리에 찬다.",
+   "personality": "능청스럽고 셈이 밝다. 정에 약한 것을 감추려 값을 부른다.",
+   "speech_style": "장사꾼 말투. 문장 끝을 늘 '~올시다'(이올시다, 것이올시다)로 맺는다. 손님을 '손님'이라 부른다. 입버릇 '정보는 공짜가 아니올시다.'",
+   "sample_lines": [
+    "정보는 공짜가 아니올시다, 손님.",
+    "남쪽 낙수협으로는 가지 않으시는 게 좋을 것이올시다.",
+    "값은 나중에 받을 것이올시다. 장부에 달아 두지요.",
+    "꼬마 손님, 주판은 손목으로 튕기는 것이올시다."
+   ],
+   "backstory": "운령산 기슭에서 반월객잔을 하며 무림의 소문을 사고판다.",
+   "goal": "객잔과 제 목숨을 지키며 빚을 갚는 것.",
+   "first_appearance_ep": 3,
+   "secrets": [
+    "f101",
+    "f137",
+    "f106"
+   ],
+   "arc": "값만 부르던 정보상이 처음으로 값 없이 진실을 내놓는다.",
+   "end_state": "취죽문 재건을 지켜보고 객잔으로 돌아간다."
+  },
+  {
+   "id": "jeonghyeok",
+   "name": "위정혁",
+   "aliases": [
+    "정혁"
+   ],
+   "aliases_timed": [
+    {
+     "alias": "단하세가 가주",
+     "from_ep": 5,
+     "to_ep": 43
+    }
+   ],
+   "how_called": [
+    {
+     "by": "soryang",
+     "call": "아버님",
+     "from_ep": 5,
+     "to_ep": null,
+     "context": "공석·사석 모두"
+    },
+    {
+     "by": "harin",
+     "call": "아버지",
+     "from_ep": 5,
+     "to_ep": null,
+     "context": "공석·사석 모두"
+    },
+    {
+     "by": "gangpil",
+     "call": "가주님",
+     "from_ep": 5,
+     "to_ep": 43,
+     "context": "공석·사석 모두"
+    },
+    {
+     "by": "seojin",
+     "call": "위 가주",
+     "from_ep": 5,
+     "to_ep": null,
+     "context": "공석·사석 모두"
+    },
+    {
+     "by": "janghun",
+     "call": "위 가주",
+     "from_ep": 8,
+     "to_ep": null,
+     "context": "공석·사석 모두"
+    },
+    {
+     "by": "gangpil",
+     "call": "선대 가주님",
+     "from_ep": 44,
+     "to_ep": null,
+     "context": "공석·사석 모두"
+    }
+   ],
+   "age": 59,
+   "age_note": "1화 시점 만 59세",
+   "gender": "남",
+   "is_minor": false,
+   "role": "단하세가 가주. 소량과 하린의 아버지",
+   "appearance": "희끗한 머리, 꼿꼿한 허리, 깊게 팬 미간. 짙은 남색 도포.",
+   "personality": "엄격하고 체면을 중시한다. 오래 묵은 죄책감을 엄격함으로 덮어 왔다.",
+   "speech_style": "자식에게는 해라체, 남에게는 '~하게', '~일세' 하는 짧은 하게체. 한 문장을 몇 마디로 끊고 끝에 '알겠나'를 붙여 다짐받는다. 남을 '자네'라 부르지 않고 직함이나 이름으로 부른다.",
+   "sample_lines": [
+    "네 이놈, 수배범을 집에 들였느냐.",
+    "사흘일세. 그 뒤엔 운하맹의 일이네.",
+    "정파의 의리를 저버릴 수는 없네. 알겠나.",
+    "하린아, 장부는 네가 맡아라."
+   ],
+   "backstory": "단하세가를 이끌어 온 가주.",
+   "goal": "가문을 지키는 것.",
+   "first_appearance_ep": 5,
+   "secrets": [
+    "f178",
+    "f048",
+    "f113",
+    "f147"
+   ],
+   "arc": "체면을 지키던 가주가 자식 앞에 죄를 고백하고 증언을 결심한다.",
+   "end_state": "43화에 하린을 감싸다 숨진다. 증언서가 청류회에서 낭독된다."
+  },
+  {
+   "id": "janghun",
+   "name": "장헌",
+   "aliases": [],
+   "aliases_timed": [
+    {
+     "alias": "장 당주",
+     "from_ep": 2,
+     "to_ep": 48
+    },
+    {
+     "alias": "집법당주",
+     "from_ep": 2,
+     "to_ep": 48
+    }
+   ],
+   "how_called": [
+    {
+     "by": "gyucheon",
+     "call": "장 당주",
+     "from_ep": 28,
+     "to_ep": 48,
+     "context": "공석·사석 모두"
+    },
+    {
+     "by": "seojin",
+     "call": "장 당주",
+     "from_ep": 2,
+     "to_ep": 48,
+     "context": "공석·사석 모두"
+    },
+    {
+     "by": "soryang",
+     "call": "집법당 개",
+     "from_ep": 18,
+     "to_ep": 48,
+     "context": "비꼴 때"
+    }
+   ],
+   "age": 39,
+   "age_note": "1화 시점 만 39세",
+   "gender": "남",
+   "is_minor": false,
+   "role": "운하맹 집법당주",
+   "appearance": "마른 체격에 핏기 없는 얼굴. 검을 외날 검의 것처럼 생긴 검은 가죽 검집에 넣어 등에 메고 다녀, 뽑기 전에는 쌍날이 드러나지 않는다. 눈을 거의 깜박이지 않는다.",
+   "personality": "냉정하고 규율에 집착한다. 맹주에게 맹목적으로 충성한다.",
+   "speech_style": "집법당 율의 조문 번호부터 읊고('율 제십이조.') 판결문을 읽듯 말한다. 맹주에게만 합쇼체를 쓰고, 그 밖의 누구에게나 '~한다', '~하라' 하는 해라체 선고투로 짧게 끊으며 상대를 성과 이름을 다 붙여 부른다. 입버릇 '율 제일조, 법은 사람을 가리지 않는다.'",
+   "sample_lines": [
+    "율 제일조, 법은 사람을 가리지 않는다.",
+    "집법당 율 제십이조. 사부를 해한 자는 압송한다. 한서진, 따라오라.",
+    "율 제칠조. 수배범을 숨긴 자도 같은 죄로 다스린다.",
+    "맹주님, 명하신 대로 하겠습니다."
+   ],
+   "backstory": "운하맹 집법당을 맡아 추포와 형벌을 다뤄 왔다.",
+   "goal": "맹주의 명을 수행하는 것.",
+   "first_appearance_ep": 2,
+   "secrets": [
+    "f132",
+    "f133",
+    "f224",
+    "f135"
+   ],
+   "arc": "법을 내세운 칼에서 버림받은 양자로.",
+   "end_state": "청류회에서 패해 자백하고, 파면되어 침묵옥에 갇힌다."
+  },
+  {
+   "id": "danyeong",
+   "name": "설단영",
+   "aliases": [
+    "단영",
+    "떠돌이 의원"
+   ],
+   "aliases_timed": [
+    {
+     "alias": "맹주의 딸",
+     "from_ep": 46,
+     "to_ep": null
+    }
+   ],
+   "how_called": [
+    {
+     "by": "seojin",
+     "call": "설 의원",
+     "from_ep": 7,
+     "to_ep": null,
+     "context": "공석·사석 모두"
+    },
+    {
+     "by": "eunchan",
+     "call": "의원 누나",
+     "from_ep": 7,
+     "to_ep": null,
+     "context": "공석·사석 모두"
+    },
+    {
+     "by": "soryang",
+     "call": "의원",
+     "from_ep": 7,
+     "to_ep": null,
+     "context": "공석·사석 모두"
+    },
+    {
+     "by": "gyucheon",
+     "call": "단영아",
+     "from_ep": 49,
+     "to_ep": null,
+     "context": "사석"
+    },
+    {
+     "by": "harin",
+     "call": "단영 언니",
+     "from_ep": 7,
+     "to_ep": null,
+     "context": "공석·사석 모두"
+    }
+   ],
+   "age": 30,
+   "age_note": "1화 시점 만 30세",
+   "gender": "여",
+   "is_minor": false,
+   "role": "떠돌이 의원",
+   "appearance": "수수한 회색 옷, 등에 약상자. 단정하게 틀어 올린 머리, 차분한 눈.",
+   "personality": "침착하고 말을 아낀다. 환자 앞에서는 단호하다.",
+   "speech_style": "의원다운 단정형 진단투. 말마다 '사흘', '두 푼', '세 번' 같은 숫자를 넣어 판정하듯 짧게 끊고, 감정을 드러낼 때만 해요체가 섞인다. 입버릇 '맥을 짚어 보면 압니다.'",
+   "sample_lines": [
+    "저는 환자만 봅니다.",
+    "맥을 짚어 보면 압니다. 열은 내일 내립니다.",
+    "사흘이면 됩니다. 그동안 물은 끓여서 먹이십시오.",
+    "상처는 깨끗합니다. 덧나지 않을 겁니다."
+   ],
+   "backstory": "침술 회맥침을 쓰는 떠돌이 의원이다.",
+   "goal": "(겉으로는) 은찬을 돌보는 것.",
+   "first_appearance_ep": 7,
+   "secrets": [
+    "f198",
+    "f200",
+    "f203",
+    "f206",
+    "f207",
+    "f208",
+    "f201",
+    "f212",
+    "f213",
+    "f210",
+    "f211"
+   ],
+   "arc": "정체를 숨긴 동행에서 아버지를 고발하는 증인으로.",
+   "end_state": "청류회에서 명령서를 내놓고, 아버지와 작별한 뒤 다시 떠돌이 의원이 된다."
+  }
+ ],
+ "relationships": [
+  {
+   "id": "r01",
+   "a": "seojin",
+   "b": "soryang",
+   "canon_romance": false,
+   "shipping_candidate": true,
+   "timeline": [
+    {
+     "from_ep": 0,
+     "status": "5년 전 청류회 결승에서 맞붙은 맞수",
+     "public": true,
+     "known_by": [
+      {
+       "character": "seojin",
+       "from_ep": 0
+      },
+      {
+       "character": "soryang",
+       "from_ep": 0
+      },
+      {
+       "character": "gangpil",
+       "from_ep": 0
+      },
+      {
+       "character": "harin",
+       "from_ep": 0
+      },
+      {
+       "character": "jeonghyeok",
+       "from_ep": 0
+      },
+      {
+       "character": "masam",
+       "from_ep": 0
+      },
+      {
+       "character": "taeheo",
+       "from_ep": 0
+      },
+      {
+       "character": "yeonho",
+       "from_ep": 0
+      },
+      {
+       "character": "janghun",
+       "from_ep": 0
+      },
+      {
+       "character": "eunchan",
+       "from_ep": 3
+      }
+     ],
+     "note": "3화에 처음 함께 언급된다. 결승 승패는 4화에 공개되므로 여기 넣지 않는다"
+    },
+    {
+     "from_ep": 3,
+     "status": "수배자와 그를 잡겠다는 맞수",
+     "public": true,
+     "known_by": [
+      {
+       "character": "seojin",
+       "from_ep": 3
+      },
+      {
+       "character": "soryang",
+       "from_ep": 3
+      },
+      {
+       "character": "gangpil",
+       "from_ep": 3
+      },
+      {
+       "character": "masam",
+       "from_ep": 3
+      },
+      {
+       "character": "eunchan",
+       "from_ep": 3
+      }
+     ],
+     "note": "소량이 자기 손으로 서진을 잡겠다고 선언"
+    },
+    {
+     "from_ep": 8,
+     "status": "몰래 손을 잡은 맞수",
+     "public": false,
+     "known_by": [
+      {
+       "character": "seojin",
+       "from_ep": 8
+      },
+      {
+       "character": "soryang",
+       "from_ep": 8
+      },
+      {
+       "character": "gangpil",
+       "from_ep": 8
+      },
+      {
+       "character": "harin",
+       "from_ep": 8
+      },
+      {
+       "character": "eunchan",
+       "from_ep": 8
+      }
+     ],
+     "note": "소량이 서진의 탈출을 도움"
+    },
+    {
+     "from_ep": 9,
+     "status": "함께 떠도는 맞수",
+     "public": false,
+     "known_by": [
+      {
+       "character": "seojin",
+       "from_ep": 9
+      },
+      {
+       "character": "soryang",
+       "from_ep": 9
+      },
+      {
+       "character": "gangpil",
+       "from_ep": 9
+      },
+      {
+       "character": "danyeong",
+       "from_ep": 9
+      },
+      {
+       "character": "eunchan",
+       "from_ep": 9
+      },
+      {
+       "character": "janghun",
+       "from_ep": 18
+      }
+     ],
+     "note": "소량이 가문을 나와 동행"
+    },
+    {
+     "from_ep": 19,
+     "status": "사형 문제로 멱살을 잡은 동행",
+     "public": false,
+     "known_by": [
+      {
+       "character": "seojin",
+       "from_ep": 19
+      },
+      {
+       "character": "soryang",
+       "from_ep": 19
+      },
+      {
+       "character": "gangpil",
+       "from_ep": 19
+      },
+      {
+       "character": "danyeong",
+       "from_ep": 19
+      },
+      {
+       "character": "eunchan",
+       "from_ep": 19
+      }
+     ],
+     "note": "연호를 두고 크게 다툼"
+    },
+    {
+     "from_ep": 22,
+     "status": "'한 형'이라 부르는 벗",
+     "public": false,
+     "known_by": [
+      {
+       "character": "seojin",
+       "from_ep": 22
+      },
+      {
+       "character": "soryang",
+       "from_ep": 22
+      }
+     ],
+     "note": "소량이 처음으로 '한 형'이라 부름"
+    },
+    {
+     "from_ep": 41,
+     "status": "같은 짐을 진 벗",
+     "public": false,
+     "known_by": [
+      {
+       "character": "seojin",
+       "from_ep": 41
+      },
+      {
+       "character": "soryang",
+       "from_ep": 41
+      }
+     ],
+     "note": "서진의 사부와 소량의 아버지가 모두 적하곡 토벌대였음을 알고 서로를 붙잡음"
+    },
+    {
+     "from_ep": 49,
+     "status": "무림이 아는 벗",
+     "public": true,
+     "known_by": [
+      {
+       "character": "seojin",
+       "from_ep": 49
+      },
+      {
+       "character": "soryang",
+       "from_ep": 49
+      },
+      {
+       "character": "harin",
+       "from_ep": 49
+      },
+      {
+       "character": "gangpil",
+       "from_ep": 49
+      },
+      {
+       "character": "yeonho",
+       "from_ep": 49
+      },
+      {
+       "character": "danyeong",
+       "from_ep": 49
+      }
+     ],
+     "note": "청류회 이후 둘의 동행이 공공연해짐"
+    },
+    {
+     "from_ep": 50,
+     "status": "다음 청류회 재대결을 약속한 맞수이자 벗",
+     "public": true,
+     "known_by": [
+      {
+       "character": "seojin",
+       "from_ep": 50
+      },
+      {
+       "character": "soryang",
+       "from_ep": 50
+      },
+      {
+       "character": "gangpil",
+       "from_ep": 50
+      },
+      {
+       "character": "harin",
+       "from_ep": 50
+      }
+     ],
+     "note": "원작에서 끝까지 로맨스 없음"
+    }
+   ]
+  },
+  {
+   "id": "r02",
+   "a": "seojin",
+   "b": "yeonho",
+   "canon_romance": false,
+   "shipping_candidate": true,
+   "timeline": [
+    {
+     "from_ep": 0,
+     "status": "취죽문 사형제(연호가 3년 전 떠난 뒤 소식이 끊김)",
+     "public": true,
+     "known_by": [
+      {
+       "character": "seojin",
+       "from_ep": 0
+      },
+      {
+       "character": "yeonho",
+       "from_ep": 0
+      },
+      {
+       "character": "eunchan",
+       "from_ep": 0
+      },
+      {
+       "character": "taeheo",
+       "from_ep": 0
+      },
+      {
+       "character": "masam",
+       "from_ep": 0
+      },
+      {
+       "character": "myeonghwa",
+       "from_ep": 0
+      }
+     ],
+     "note": "1화에 처음 함께 언급된다"
+    },
+    {
+     "from_ep": 11,
+     "status": "적으로 마주한 사형제",
+     "public": false,
+     "known_by": [
+      {
+       "character": "seojin",
+       "from_ep": 11
+      },
+      {
+       "character": "yeonho",
+       "from_ep": 11
+      },
+      {
+       "character": "soryang",
+       "from_ep": 11
+      },
+      {
+       "character": "gangpil",
+       "from_ep": 11
+      },
+      {
+       "character": "eunchan",
+       "from_ep": 11
+      },
+      {
+       "character": "danyeong",
+       "from_ep": 11
+      }
+     ],
+     "note": "가면 쓴 부련주가 연호로 드러남"
+    },
+    {
+     "from_ep": 17,
+     "status": "불편한 공조",
+     "public": false,
+     "known_by": [
+      {
+       "character": "seojin",
+       "from_ep": 17
+      },
+      {
+       "character": "yeonho",
+       "from_ep": 17
+      },
+      {
+       "character": "danyeong",
+       "from_ep": 17
+      },
+      {
+       "character": "eunchan",
+       "from_ep": 17
+      }
+     ],
+     "note": "죽절문 해독을 함께함"
+    },
+    {
+     "from_ep": 20,
+     "status": "비밀을 나눈 사형제",
+     "public": false,
+     "known_by": [
+      {
+       "character": "seojin",
+       "from_ep": 20
+      },
+      {
+       "character": "yeonho",
+       "from_ep": 20
+      }
+     ],
+     "note": "연호가 적하곡 출신임을 서진에게만 털어놓음"
+    },
+    {
+     "from_ep": 32,
+     "status": "화해한 사형제",
+     "public": false,
+     "known_by": [
+      {
+       "character": "seojin",
+       "from_ep": 32
+      },
+      {
+       "character": "yeonho",
+       "from_ep": 32
+      },
+      {
+       "character": "soryang",
+       "from_ep": 32
+      }
+     ],
+     "note": "연호의 사과와 '서진아'"
+    },
+    {
+     "from_ep": 35,
+     "status": "갈림길에 선 사형제",
+     "public": false,
+     "known_by": [
+      {
+       "character": "seojin",
+       "from_ep": 35
+      },
+      {
+       "character": "yeonho",
+       "from_ep": 35
+      },
+      {
+       "character": "soryang",
+       "from_ep": 35
+      },
+      {
+       "character": "danyeong",
+       "from_ep": 35
+      },
+      {
+       "character": "myeonghwa",
+       "from_ep": 35
+      }
+     ],
+     "note": "연호가 상의 없이 야화련 귀환을 약속"
+    },
+    {
+     "from_ep": 50,
+     "status": "각자의 길을 가는 사형제",
+     "public": true,
+     "known_by": [
+      {
+       "character": "seojin",
+       "from_ep": 50
+      },
+      {
+       "character": "yeonho",
+       "from_ep": 50
+      },
+      {
+       "character": "eunchan",
+       "from_ep": 50
+      },
+      {
+       "character": "soryang",
+       "from_ep": 50
+      }
+     ],
+     "note": "사부의 무덤에 함께 술을 올리고 헤어짐. 원작에서 끝까지 로맨스 없음"
+    }
+   ]
+  },
+  {
+   "id": "r03",
+   "a": "soryang",
+   "b": "gangpil",
+   "canon_romance": false,
+   "shipping_candidate": false,
+   "timeline": [
+    {
+     "from_ep": 0,
+     "status": "7년째 이어진 주인과 호위무사",
+     "public": true,
+     "known_by": [
+      {
+       "character": "soryang",
+       "from_ep": 0
+      },
+      {
+       "character": "gangpil",
+       "from_ep": 0
+      },
+      {
+       "character": "jeonghyeok",
+       "from_ep": 0
+      },
+      {
+       "character": "harin",
+       "from_ep": 0
+      },
+      {
+       "character": "masam",
+       "from_ep": 0
+      }
+     ],
+     "note": "3화에 처음 함께 언급된다"
+    },
+    {
+     "from_ep": 25,
+     "status": "결별",
+     "public": false,
+     "known_by": [
+      {
+       "character": "soryang",
+       "from_ep": 25
+      },
+      {
+       "character": "gangpil",
+       "from_ep": 25
+      },
+      {
+       "character": "harin",
+       "from_ep": 25
+      },
+      {
+       "character": "seojin",
+       "from_ep": 25
+      },
+      {
+       "character": "danyeong",
+       "from_ep": 25
+      },
+      {
+       "character": "eunchan",
+       "from_ep": 26
+      },
+      {
+       "character": "yeonho",
+       "from_ep": 33
+      }
+     ],
+     "note": "강필의 보고가 드러나 소량이 검을 던짐"
+    },
+    {
+     "from_ep": 33,
+     "status": "스스로 고른 주종",
+     "public": false,
+     "known_by": [
+      {
+       "character": "soryang",
+       "from_ep": 33
+      },
+      {
+       "character": "gangpil",
+       "from_ep": 33
+      },
+      {
+       "character": "harin",
+       "from_ep": 33
+      },
+      {
+       "character": "seojin",
+       "from_ep": 33
+      },
+      {
+       "character": "yeonho",
+       "from_ep": 33
+      }
+     ],
+     "note": "강필이 가주의 답신을 내놓고 가주가 아닌 소량을 따르겠다고 맹세"
+    },
+    {
+     "from_ep": 44,
+     "status": "가주 대행과 호위대장",
+     "public": true,
+     "known_by": [
+      {
+       "character": "soryang",
+       "from_ep": 44
+      },
+      {
+       "character": "gangpil",
+       "from_ep": 44
+      },
+      {
+       "character": "harin",
+       "from_ep": 44
+      },
+      {
+       "character": "seojin",
+       "from_ep": 44
+      }
+     ],
+     "note": "원작에서 끝까지 로맨스 없음"
+    }
+   ]
+  },
+  {
+   "id": "r04",
+   "a": "harin",
+   "b": "gangpil",
+   "canon_romance": true,
+   "shipping_candidate": true,
+   "timeline": [
+    {
+     "from_ep": 0,
+     "status": "주인 댁 아가씨와 호위무사",
+     "public": true,
+     "known_by": [
+      {
+       "character": "harin",
+       "from_ep": 0
+      },
+      {
+       "character": "gangpil",
+       "from_ep": 0
+      },
+      {
+       "character": "soryang",
+       "from_ep": 0
+      },
+      {
+       "character": "jeonghyeok",
+       "from_ep": 0
+      }
+     ],
+     "note": "5화에 처음 함께 언급된다"
+    },
+    {
+     "from_ep": 6,
+     "status": "3년 묵은 내기 빚으로 얽힌 아가씨와 호위무사",
+     "public": true,
+     "known_by": [
+      {
+       "character": "harin",
+       "from_ep": 0
+      },
+      {
+       "character": "gangpil",
+       "from_ep": 0
+      },
+      {
+       "character": "soryang",
+       "from_ep": 0
+      },
+      {
+       "character": "seojin",
+       "from_ep": 6
+      },
+      {
+       "character": "eunchan",
+       "from_ep": 6
+      }
+     ],
+     "note": "하린이 3년 전 내기에서 져 강필에게 소원 하나를 빚짐. 강필은 아직 소원을 말하지 않음"
+    },
+    {
+     "from_ep": 26,
+     "status": "고백과 거절",
+     "public": false,
+     "known_by": [
+      {
+       "character": "harin",
+       "from_ep": 26
+      },
+      {
+       "character": "gangpil",
+       "from_ep": 26
+      }
+     ],
+     "note": "강필이 과분하다며 거절"
+    },
+    {
+     "from_ep": 38,
+     "status": "서로의 마음을 확인한 사이",
+     "public": false,
+     "known_by": [
+      {
+       "character": "harin",
+       "from_ep": 38
+      },
+      {
+       "character": "gangpil",
+       "from_ep": 38
+      },
+      {
+       "character": "seojin",
+       "from_ep": 45
+      }
+     ],
+     "note": "연등야 강가. 강필이 3년 묵은 내기 소원으로 하린의 등불을 지키겠다고 청함"
+    },
+    {
+     "from_ep": 45,
+     "status": "입맞춤을 나눈 연인",
+     "public": false,
+     "known_by": [
+      {
+       "character": "harin",
+       "from_ep": 45
+      },
+      {
+       "character": "gangpil",
+       "from_ep": 45
+      },
+      {
+       "character": "seojin",
+       "from_ep": 45
+      }
+     ],
+     "note": "청류대 아래 여관 우물가의 짧은 입맞춤(15세 범위). 서진이 멀리서 봄"
+    },
+    {
+     "from_ep": 50,
+     "status": "가주가 허락한 정혼",
+     "public": true,
+     "known_by": [
+      {
+       "character": "harin",
+       "from_ep": 50
+      },
+      {
+       "character": "gangpil",
+       "from_ep": 50
+      },
+      {
+       "character": "soryang",
+       "from_ep": 50
+      },
+      {
+       "character": "seojin",
+       "from_ep": 50
+      }
+     ],
+     "note": "소량이 혼인을 허락"
+    }
+   ]
+  },
+  {
+   "id": "r05",
+   "a": "seojin",
+   "b": "eunchan",
+   "canon_romance": false,
+   "shipping_candidate": false,
+   "timeline": [
+    {
+     "from_ep": 0,
+     "status": "대사형과 막내 제자",
+     "public": true,
+     "known_by": [
+      {
+       "character": "seojin",
+       "from_ep": 0
+      },
+      {
+       "character": "eunchan",
+       "from_ep": 0
+      },
+      {
+       "character": "taeheo",
+       "from_ep": 0
+      }
+     ],
+     "note": "1화"
+    },
+    {
+     "from_ep": 50,
+     "status": "문주와 첫 정식 제자",
+     "public": true,
+     "known_by": [
+      {
+       "character": "seojin",
+       "from_ep": 50
+      },
+      {
+       "character": "eunchan",
+       "from_ep": 50
+      },
+      {
+       "character": "soryang",
+       "from_ep": 50
+      },
+      {
+       "character": "yeonho",
+       "from_ep": 50
+      }
+     ],
+     "note": "취죽문 재건"
+    }
+   ]
+  },
+  {
+   "id": "r06",
+   "a": "seojin",
+   "b": "taeheo",
+   "canon_romance": false,
+   "shipping_candidate": false,
+   "timeline": [
+    {
+     "from_ep": 0,
+     "status": "사부와 대제자",
+     "public": true,
+     "known_by": [
+      {
+       "character": "seojin",
+       "from_ep": 0
+      },
+      {
+       "character": "taeheo",
+       "from_ep": 0
+      },
+      {
+       "character": "eunchan",
+       "from_ep": 0
+      }
+     ],
+     "note": "1화"
+    },
+    {
+     "from_ep": 1,
+     "status": "사별",
+     "public": true,
+     "known_by": [
+      {
+       "character": "seojin",
+       "from_ep": 1
+      },
+      {
+       "character": "eunchan",
+       "from_ep": 1
+      }
+     ],
+     "note": "곽태허 피살"
+    },
+    {
+     "from_ep": 22,
+     "status": "흔들린 존경",
+     "public": false,
+     "known_by": [
+      {
+       "character": "seojin",
+       "from_ep": 22
+      }
+     ],
+     "note": "사부가 적하곡 토벌대에 있었음을 앎"
+    },
+    {
+     "from_ep": 36,
+     "status": "되찾은 존경",
+     "public": false,
+     "known_by": [
+      {
+       "character": "seojin",
+       "from_ep": 36
+      }
+     ],
+     "note": "사부가 방화 명령을 거부하고 아이들을 구했음을 앎"
+    }
+   ]
+  },
+  {
+   "id": "r07",
+   "a": "soryang",
+   "b": "jeonghyeok",
+   "canon_romance": false,
+   "shipping_candidate": false,
+   "timeline": [
+    {
+     "from_ep": 0,
+     "status": "단하세가 가주와 장남",
+     "public": true,
+     "known_by": [
+      {
+       "character": "soryang",
+       "from_ep": 0
+      },
+      {
+       "character": "jeonghyeok",
+       "from_ep": 0
+      },
+      {
+       "character": "harin",
+       "from_ep": 0
+      },
+      {
+       "character": "gangpil",
+       "from_ep": 0
+      }
+     ],
+     "note": "5화에 처음 함께 언급된다"
+    },
+    {
+     "from_ep": 5,
+     "status": "부딪치는 부자",
+     "public": true,
+     "known_by": [
+      {
+       "character": "soryang",
+       "from_ep": 5
+      },
+      {
+       "character": "jeonghyeok",
+       "from_ep": 5
+      },
+      {
+       "character": "harin",
+       "from_ep": 5
+      },
+      {
+       "character": "gangpil",
+       "from_ep": 5
+      },
+      {
+       "character": "seojin",
+       "from_ep": 5
+      }
+     ],
+     "note": "수배범을 들인 일로 충돌"
+    },
+    {
+     "from_ep": 8,
+     "status": "아버지의 결정을 거역한 아들",
+     "public": false,
+     "known_by": [
+      {
+       "character": "soryang",
+       "from_ep": 8
+      },
+      {
+       "character": "gangpil",
+       "from_ep": 8
+      },
+      {
+       "character": "harin",
+       "from_ep": 8
+      },
+      {
+       "character": "jeonghyeok",
+       "from_ep": 9
+      }
+     ],
+     "note": "소량이 서진을 빼돌림"
+    },
+    {
+     "from_ep": 41,
+     "status": "단절",
+     "public": false,
+     "known_by": [
+      {
+       "character": "soryang",
+       "from_ep": 41
+      },
+      {
+       "character": "jeonghyeok",
+       "from_ep": 41
+      },
+      {
+       "character": "harin",
+       "from_ep": 41
+      },
+      {
+       "character": "seojin",
+       "from_ep": 41
+      },
+      {
+       "character": "gangpil",
+       "from_ep": 41
+      }
+     ],
+     "note": "아버지의 적하곡 과거"
+    },
+    {
+     "from_ep": 42,
+     "status": "늦은 화해",
+     "public": false,
+     "known_by": [
+      {
+       "character": "soryang",
+       "from_ep": 42
+      },
+      {
+       "character": "jeonghyeok",
+       "from_ep": 42
+      },
+      {
+       "character": "harin",
+       "from_ep": 42
+      },
+      {
+       "character": "gangpil",
+       "from_ep": 42
+      },
+      {
+       "character": "seojin",
+       "from_ep": 42
+      }
+     ],
+     "note": "'함께 가시지요'"
+    },
+    {
+     "from_ep": 43,
+     "status": "사별",
+     "public": true,
+     "known_by": [
+      {
+       "character": "soryang",
+       "from_ep": 43
+      },
+      {
+       "character": "harin",
+       "from_ep": 43
+      },
+      {
+       "character": "gangpil",
+       "from_ep": 43
+      },
+      {
+       "character": "seojin",
+       "from_ep": 43
+      }
+     ],
+     "note": "정혁이 하린을 감싸다 숨짐"
+    }
+   ]
+  },
+  {
+   "id": "r08",
+   "a": "yeonho",
+   "b": "myeonghwa",
+   "canon_romance": false,
+   "shipping_candidate": false,
+   "timeline": [
+    {
+     "from_ep": 11,
+     "status": "련주와 부련주",
+     "public": false,
+     "known_by": [
+      {
+       "character": "yeonho",
+       "from_ep": 0
+      },
+      {
+       "character": "myeonghwa",
+       "from_ep": 0
+      },
+      {
+       "character": "masam",
+       "from_ep": 0
+      },
+      {
+       "character": "seojin",
+       "from_ep": 11
+      },
+      {
+       "character": "soryang",
+       "from_ep": 11
+      },
+      {
+       "character": "gangpil",
+       "from_ep": 11
+      },
+      {
+       "character": "eunchan",
+       "from_ep": 11
+      },
+      {
+       "character": "danyeong",
+       "from_ep": 11
+      },
+      {
+       "character": "janghun",
+       "from_ep": 18
+      },
+      {
+       "character": "gyucheon",
+       "from_ep": 19
+      },
+      {
+       "character": "harin",
+       "from_ep": 23
+      }
+     ],
+     "note": "11화에 연호가 부련주로 드러나며 처음 함께 언급된다"
+    },
+    {
+     "from_ep": 34,
+     "status": "숨긴 것이 있던 련주와 부련주",
+     "public": false,
+     "known_by": [
+      {
+       "character": "yeonho",
+       "from_ep": 34
+      },
+      {
+       "character": "myeonghwa",
+       "from_ep": 0
+      },
+      {
+       "character": "seojin",
+       "from_ep": 34
+      },
+      {
+       "character": "soryang",
+       "from_ep": 34
+      },
+      {
+       "character": "danyeong",
+       "from_ep": 34
+      },
+      {
+       "character": "harin",
+       "from_ep": 37
+      },
+      {
+       "character": "gangpil",
+       "from_ep": 37
+      },
+      {
+       "character": "masam",
+       "from_ep": 37
+      }
+     ],
+     "note": "곽태허의 당부로 련주가 마지막 장을 연호에게 숨겨 왔음이 드러남"
+    },
+    {
+     "from_ep": 35,
+     "status": "거래로 묶인 련주와 부련주",
+     "public": false,
+     "known_by": [
+      {
+       "character": "yeonho",
+       "from_ep": 35
+      },
+      {
+       "character": "myeonghwa",
+       "from_ep": 35
+      },
+      {
+       "character": "seojin",
+       "from_ep": 35
+      },
+      {
+       "character": "soryang",
+       "from_ep": 35
+      },
+      {
+       "character": "danyeong",
+       "from_ep": 35
+      }
+     ],
+     "note": "연호의 완전한 귀환을 값으로 받음"
+    },
+    {
+     "from_ep": 36,
+     "status": "같은 은인을 둔 생존자",
+     "public": false,
+     "known_by": [
+      {
+       "character": "yeonho",
+       "from_ep": 36
+      },
+      {
+       "character": "myeonghwa",
+       "from_ep": 36
+      },
+      {
+       "character": "seojin",
+       "from_ep": 36
+      },
+      {
+       "character": "soryang",
+       "from_ep": 36
+      },
+      {
+       "character": "danyeong",
+       "from_ep": 36
+      },
+      {
+       "character": "harin",
+       "from_ep": 37
+      },
+      {
+       "character": "gangpil",
+       "from_ep": 37
+      },
+      {
+       "character": "masam",
+       "from_ep": 37
+      }
+     ],
+     "note": "둘 다 곽태허가 불길에서 구한 아이였음"
+    },
+    {
+     "from_ep": 50,
+     "status": "다시 함께하는 련주와 부련주",
+     "public": true,
+     "known_by": [
+      {
+       "character": "yeonho",
+       "from_ep": 50
+      },
+      {
+       "character": "myeonghwa",
+       "from_ep": 50
+      }
+     ],
+     "note": "연호의 귀환"
+    }
+   ]
+  },
+  {
+   "id": "r09",
+   "a": "danyeong",
+   "b": "gyucheon",
+   "canon_romance": false,
+   "shipping_candidate": false,
+   "timeline": [
+    {
+     "from_ep": 46,
+     "status": "숨겨진 부녀",
+     "public": false,
+     "known_by": [
+      {
+       "character": "danyeong",
+       "from_ep": 0
+      },
+      {
+       "character": "gyucheon",
+       "from_ep": 0
+      },
+      {
+       "character": "janghun",
+       "from_ep": 0
+      },
+      {
+       "character": "seojin",
+       "from_ep": 46
+      },
+      {
+       "character": "soryang",
+       "from_ep": 46
+      },
+      {
+       "character": "yeonho",
+       "from_ep": 46
+      },
+      {
+       "character": "harin",
+       "from_ep": 46
+      },
+      {
+       "character": "gangpil",
+       "from_ep": 46
+      },
+      {
+       "character": "eunchan",
+       "from_ep": 46
+      }
+     ],
+     "note": "46화에 처음 부녀로 함께 언급된다"
+    },
+    {
+     "from_ep": 47,
+     "status": "공개적으로 맞선 부녀",
+     "public": true,
+     "known_by": [
+      {
+       "character": "danyeong",
+       "from_ep": 47
+      },
+      {
+       "character": "gyucheon",
+       "from_ep": 47
+      },
+      {
+       "character": "seojin",
+       "from_ep": 47
+      },
+      {
+       "character": "myeonghwa",
+       "from_ep": 47
+      },
+      {
+       "character": "masam",
+       "from_ep": 47
+      },
+      {
+       "character": "soryang",
+       "from_ep": 47
+      },
+      {
+       "character": "gangpil",
+       "from_ep": 47
+      },
+      {
+       "character": "harin",
+       "from_ep": 47
+      },
+      {
+       "character": "yeonho",
+       "from_ep": 47
+      },
+      {
+       "character": "eunchan",
+       "from_ep": 47
+      },
+      {
+       "character": "janghun",
+       "from_ep": 47
+      }
+     ],
+     "note": "청류회에서 딸이 아버지를 막으려 고발함"
+    },
+    {
+     "from_ep": 49,
+     "status": "작별한 부녀",
+     "public": false,
+     "known_by": [
+      {
+       "character": "danyeong",
+       "from_ep": 49
+      },
+      {
+       "character": "gyucheon",
+       "from_ep": 49
+      }
+     ],
+     "note": "연금된 아버지를 찾아가 작별"
+    }
+   ]
+  },
+  {
+   "id": "r10",
+   "a": "janghun",
+   "b": "gyucheon",
+   "canon_romance": false,
+   "shipping_candidate": false,
+   "timeline": [
+    {
+     "from_ep": 2,
+     "status": "맹주와 집법당주",
+     "public": true,
+     "known_by": [
+      {
+       "character": "janghun",
+       "from_ep": 0
+      },
+      {
+       "character": "gyucheon",
+       "from_ep": 0
+      },
+      {
+       "character": "seojin",
+       "from_ep": 0
+      },
+      {
+       "character": "eunchan",
+       "from_ep": 2
+      },
+      {
+       "character": "masam",
+       "from_ep": 0
+      },
+      {
+       "character": "soryang",
+       "from_ep": 0
+      },
+      {
+       "character": "danyeong",
+       "from_ep": 0
+      },
+      {
+       "character": "yeonho",
+       "from_ep": 0
+      },
+      {
+       "character": "gangpil",
+       "from_ep": 0
+      },
+      {
+       "character": "harin",
+       "from_ep": 0
+      },
+      {
+       "character": "myeonghwa",
+       "from_ep": 0
+      },
+      {
+       "character": "jeonghyeok",
+       "from_ep": 0
+      },
+      {
+       "character": "taeheo",
+       "from_ep": 0
+      }
+     ],
+     "note": "2화"
+    },
+    {
+     "from_ep": 48,
+     "status": "명령한 자와 실행한 자",
+     "public": true,
+     "known_by": [
+      {
+       "character": "gyucheon",
+       "from_ep": 2
+      },
+      {
+       "character": "janghun",
+       "from_ep": 1
+      },
+      {
+       "character": "seojin",
+       "from_ep": 48
+      },
+      {
+       "character": "soryang",
+       "from_ep": 48
+      },
+      {
+       "character": "gangpil",
+       "from_ep": 48
+      },
+      {
+       "character": "harin",
+       "from_ep": 48
+      },
+      {
+       "character": "yeonho",
+       "from_ep": 48
+      },
+      {
+       "character": "danyeong",
+       "from_ep": 48
+      },
+      {
+       "character": "eunchan",
+       "from_ep": 48
+      },
+      {
+       "character": "masam",
+       "from_ep": 48
+      },
+      {
+       "character": "myeonghwa",
+       "from_ep": 48
+      }
+     ],
+     "note": "장헌의 자백. 양규천은 명령을 내린 뒤 2화에 장헌의 보고로 실행을 앎"
+    },
+    {
+     "from_ep": 48,
+     "status": "버림받은 양자",
+     "public": true,
+     "known_by": [
+      {
+       "character": "seojin",
+       "from_ep": 48
+      },
+      {
+       "character": "soryang",
+       "from_ep": 48
+      },
+      {
+       "character": "gangpil",
+       "from_ep": 48
+      },
+      {
+       "character": "harin",
+       "from_ep": 48
+      },
+      {
+       "character": "yeonho",
+       "from_ep": 48
+      },
+      {
+       "character": "danyeong",
+       "from_ep": 48
+      },
+      {
+       "character": "eunchan",
+       "from_ep": 48
+      },
+      {
+       "character": "masam",
+       "from_ep": 48
+      },
+      {
+       "character": "myeonghwa",
+       "from_ep": 48
+      },
+      {
+       "character": "gyucheon",
+       "from_ep": 48
+      },
+      {
+       "character": "janghun",
+       "from_ep": 48
+      }
+     ],
+     "note": "양규천이 장헌을 미친 자라 부르며 외면함"
+    }
+   ]
+  },
+  {
+   "id": "r11",
+   "a": "seojin",
+   "b": "janghun",
+   "canon_romance": false,
+   "shipping_candidate": false,
+   "timeline": [
+    {
+     "from_ep": 2,
+     "status": "추포자와 수배자",
+     "public": true,
+     "known_by": [
+      {
+       "character": "seojin",
+       "from_ep": 2
+      },
+      {
+       "character": "janghun",
+       "from_ep": 2
+      },
+      {
+       "character": "eunchan",
+       "from_ep": 2
+      }
+     ],
+     "note": "2화"
+    },
+    {
+     "from_ep": 30,
+     "status": "사부의 원수",
+     "public": false,
+     "known_by": [
+      {
+       "character": "seojin",
+       "from_ep": 30
+      },
+      {
+       "character": "janghun",
+       "from_ep": 1
+      },
+      {
+       "character": "soryang",
+       "from_ep": 30
+      },
+      {
+       "character": "harin",
+       "from_ep": 30
+      },
+      {
+       "character": "danyeong",
+       "from_ep": 31
+      },
+      {
+       "character": "yeonho",
+       "from_ep": 30
+      },
+      {
+       "character": "gyucheon",
+       "from_ep": 2
+      },
+      {
+       "character": "masam",
+       "from_ep": 31
+      },
+      {
+       "character": "gangpil",
+       "from_ep": 33
+      },
+      {
+       "character": "myeonghwa",
+       "from_ep": 34
+      },
+      {
+       "character": "jeonghyeok",
+       "from_ep": 39
+      },
+      {
+       "character": "eunchan",
+       "from_ep": 48
+      }
+     ],
+     "note": "장헌이 곽태허를 베었다고 말함"
+    },
+    {
+     "from_ep": 48,
+     "status": "결착",
+     "public": true,
+     "known_by": [
+      {
+       "character": "seojin",
+       "from_ep": 48
+      },
+      {
+       "character": "janghun",
+       "from_ep": 48
+      },
+      {
+       "character": "soryang",
+       "from_ep": 48
+      },
+      {
+       "character": "eunchan",
+       "from_ep": 48
+      }
+     ],
+     "note": "서진의 승리와 장헌의 자백"
+    }
+   ]
+  },
+  {
+   "id": "r12",
+   "a": "seojin",
+   "b": "danyeong",
+   "canon_romance": false,
+   "shipping_candidate": false,
+   "timeline": [
+    {
+     "from_ep": 7,
+     "status": "의원과 환자의 보호자",
+     "public": false,
+     "known_by": [
+      {
+       "character": "seojin",
+       "from_ep": 7
+      },
+      {
+       "character": "danyeong",
+       "from_ep": 7
+      },
+      {
+       "character": "harin",
+       "from_ep": 7
+      },
+      {
+       "character": "soryang",
+       "from_ep": 7
+      },
+      {
+       "character": "eunchan",
+       "from_ep": 7
+      }
+     ],
+     "note": "은찬의 열병"
+    },
+    {
+     "from_ep": 9,
+     "status": "동행",
+     "public": false,
+     "known_by": [
+      {
+       "character": "seojin",
+       "from_ep": 9
+      },
+      {
+       "character": "danyeong",
+       "from_ep": 9
+      },
+      {
+       "character": "soryang",
+       "from_ep": 9
+      },
+      {
+       "character": "gangpil",
+       "from_ep": 9
+      },
+      {
+       "character": "eunchan",
+       "from_ep": 9
+      },
+      {
+       "character": "harin",
+       "from_ep": 23
+      }
+     ],
+     "note": "단영이 동행을 청함"
+    },
+    {
+     "from_ep": 46,
+     "status": "흔들린 신뢰",
+     "public": false,
+     "known_by": [
+      {
+       "character": "seojin",
+       "from_ep": 46
+      },
+      {
+       "character": "danyeong",
+       "from_ep": 46
+      },
+      {
+       "character": "soryang",
+       "from_ep": 46
+      },
+      {
+       "character": "yeonho",
+       "from_ep": 46
+      }
+     ],
+     "note": "단영의 정체 고백"
+    },
+    {
+     "from_ep": 47,
+     "status": "함께 고발한 동지",
+     "public": true,
+     "known_by": [
+      {
+       "character": "seojin",
+       "from_ep": 47
+      },
+      {
+       "character": "danyeong",
+       "from_ep": 47
+      }
+     ],
+     "note": "청류회"
+    }
+   ]
+  },
+  {
+   "id": "r13",
+   "a": "seojin",
+   "b": "myeonghwa",
+   "canon_romance": false,
+   "shipping_candidate": false,
+   "timeline": [
+    {
+     "from_ep": 13,
+     "status": "경계하는 협상 상대",
+     "public": false,
+     "known_by": [
+      {
+       "character": "seojin",
+       "from_ep": 13
+      },
+      {
+       "character": "myeonghwa",
+       "from_ep": 13
+      },
+      {
+       "character": "soryang",
+       "from_ep": 13
+      },
+      {
+       "character": "gangpil",
+       "from_ep": 13
+      },
+      {
+       "character": "yeonho",
+       "from_ep": 13
+      }
+     ],
+     "note": "백염장"
+    },
+    {
+     "from_ep": 34,
+     "status": "같은 진실을 쫓는 거래 상대",
+     "public": false,
+     "known_by": [
+      {
+       "character": "seojin",
+       "from_ep": 34
+      },
+      {
+       "character": "myeonghwa",
+       "from_ep": 34
+      },
+      {
+       "character": "yeonho",
+       "from_ep": 34
+      },
+      {
+       "character": "soryang",
+       "from_ep": 34
+      },
+      {
+       "character": "danyeong",
+       "from_ep": 34
+      }
+     ],
+     "note": "마지막 장"
+    },
+    {
+     "from_ep": 47,
+     "status": "청류회의 고발자와 증인",
+     "public": true,
+     "known_by": [
+      {
+       "character": "seojin",
+       "from_ep": 47
+      },
+      {
+       "character": "myeonghwa",
+       "from_ep": 47
+      }
+     ],
+     "note": "명화의 증언"
+    }
+   ]
+  },
+  {
+   "id": "r14",
+   "a": "soryang",
+   "b": "harin",
+   "canon_romance": false,
+   "shipping_candidate": false,
+   "timeline": [
+    {
+     "from_ep": 0,
+     "status": "남매",
+     "public": true,
+     "known_by": [
+      {
+       "character": "soryang",
+       "from_ep": 0
+      },
+      {
+       "character": "harin",
+       "from_ep": 0
+      },
+      {
+       "character": "jeonghyeok",
+       "from_ep": 0
+      },
+      {
+       "character": "gangpil",
+       "from_ep": 0
+      }
+     ],
+     "note": "5화에 처음 함께 언급된다"
+    },
+    {
+     "from_ep": 23,
+     "status": "아버지 몰래 함께하는 남매",
+     "public": false,
+     "known_by": [
+      {
+       "character": "soryang",
+       "from_ep": 23
+      },
+      {
+       "character": "harin",
+       "from_ep": 23
+      }
+     ],
+     "note": "하린의 가출 합류"
+    }
+   ]
+  },
+  {
+   "id": "r15",
+   "a": "masam",
+   "b": "taeheo",
+   "canon_romance": false,
+   "shipping_candidate": false,
+   "timeline": [
+    {
+     "from_ep": 22,
+     "status": "20년 전 같은 토벌대에 있던 사이",
+     "public": false,
+     "known_by": [
+      {
+       "character": "masam",
+       "from_ep": 0
+      },
+      {
+       "character": "taeheo",
+       "from_ep": 0
+      },
+      {
+       "character": "seojin",
+       "from_ep": 22
+      },
+      {
+       "character": "yeonho",
+       "from_ep": 22
+      },
+      {
+       "character": "soryang",
+       "from_ep": 22
+      },
+      {
+       "character": "gangpil",
+       "from_ep": 22
+      },
+      {
+       "character": "danyeong",
+       "from_ep": 22
+      },
+      {
+       "character": "harin",
+       "from_ep": 37
+      }
+     ],
+     "note": "마삼이 토벌대 짐꾼 시절 곽태허와 함께 있었다고 털어놓음"
+    },
+    {
+     "from_ep": 31,
+     "status": "목숨 빚을 진 옛 친구",
+     "public": false,
+     "known_by": [
+      {
+       "character": "masam",
+       "from_ep": 0
+      },
+      {
+       "character": "taeheo",
+       "from_ep": 0
+      },
+      {
+       "character": "eunchan",
+       "from_ep": 31
+      },
+      {
+       "character": "seojin",
+       "from_ep": 31
+      }
+     ],
+     "note": "마삼의 고백"
+    }
+   ]
+  },
+  {
+   "id": "r16",
+   "a": "soryang",
+   "b": "yeonho",
+   "canon_romance": false,
+   "shipping_candidate": true,
+   "timeline": [
+    {
+     "from_ep": 11,
+     "status": "사파를 믿지 못하는 사이",
+     "public": false,
+     "known_by": [
+      {
+       "character": "soryang",
+       "from_ep": 11
+      },
+      {
+       "character": "yeonho",
+       "from_ep": 11
+      },
+      {
+       "character": "seojin",
+       "from_ep": 11
+      },
+      {
+       "character": "gangpil",
+       "from_ep": 11
+      },
+      {
+       "character": "eunchan",
+       "from_ep": 11
+      },
+      {
+       "character": "danyeong",
+       "from_ep": 11
+      }
+     ],
+     "note": "부련주 정체 공개"
+    },
+    {
+     "from_ep": 29,
+     "status": "등을 맞댄 전우",
+     "public": false,
+     "known_by": [
+      {
+       "character": "soryang",
+       "from_ep": 29
+      },
+      {
+       "character": "yeonho",
+       "from_ep": 29
+      },
+      {
+       "character": "seojin",
+       "from_ep": 29
+      },
+      {
+       "character": "harin",
+       "from_ep": 29
+      }
+     ],
+     "note": "침묵옥 구출"
+    },
+    {
+     "from_ep": 32,
+     "status": "농을 주고받는 사이",
+     "public": false,
+     "known_by": [
+      {
+       "character": "soryang",
+       "from_ep": 32
+      },
+      {
+       "character": "yeonho",
+       "from_ep": 32
+      },
+      {
+       "character": "seojin",
+       "from_ep": 32
+      }
+     ],
+     "note": "'목 형이라 불러도 되네'"
+    },
+    {
+     "from_ep": 50,
+     "status": "정파 가주와 사파 부련주로 각자 돌아간 벗",
+     "public": true,
+     "known_by": [
+      {
+       "character": "soryang",
+       "from_ep": 50
+      },
+      {
+       "character": "yeonho",
+       "from_ep": 50
+      },
+      {
+       "character": "seojin",
+       "from_ep": 50
+      }
+     ],
+     "note": "다음에 다시 보자며 헤어짐. 원작에서 끝까지 로맨스 없음"
+    }
+   ]
+  },
+  {
+   "id": "r17",
+   "a": "danyeong",
+   "b": "janghun",
+   "canon_romance": false,
+   "shipping_candidate": false,
+   "timeline": [
+    {
+     "from_ep": 46,
+     "status": "청류대에서 함께 자라 단영이 감싸 온 사이",
+     "public": false,
+     "known_by": [
+      {
+       "character": "danyeong",
+       "from_ep": 0
+      },
+      {
+       "character": "janghun",
+       "from_ep": 0
+      },
+      {
+       "character": "gyucheon",
+       "from_ep": 0
+      },
+      {
+       "character": "seojin",
+       "from_ep": 46
+      },
+      {
+       "character": "soryang",
+       "from_ep": 46
+      },
+      {
+       "character": "gangpil",
+       "from_ep": 46
+      },
+      {
+       "character": "harin",
+       "from_ep": 46
+      },
+      {
+       "character": "yeonho",
+       "from_ep": 46
+      },
+      {
+       "character": "eunchan",
+       "from_ep": 46
+      }
+     ],
+     "note": "46화 단영의 고백에서 처음 함께 언급된다. 19화에 장헌을 의심하고도 지목하지 못했다고 털어놓음"
+    },
+    {
+     "from_ep": 48,
+     "status": "청류회에서 맞선 의붓남매(맹주의 딸과 맹주가 거둔 양자)",
+     "public": true,
+     "known_by": [
+      {
+       "character": "danyeong",
+       "from_ep": 0
+      },
+      {
+       "character": "janghun",
+       "from_ep": 0
+      },
+      {
+       "character": "gyucheon",
+       "from_ep": 0
+      },
+      {
+       "character": "seojin",
+       "from_ep": 48
+      },
+      {
+       "character": "soryang",
+       "from_ep": 48
+      },
+      {
+       "character": "gangpil",
+       "from_ep": 48
+      },
+      {
+       "character": "harin",
+       "from_ep": 48
+      },
+      {
+       "character": "yeonho",
+       "from_ep": 48
+      },
+      {
+       "character": "eunchan",
+       "from_ep": 48
+      },
+      {
+       "character": "masam",
+       "from_ep": 48
+      },
+      {
+       "character": "myeonghwa",
+       "from_ep": 48
+      }
+     ],
+     "note": "장헌이 양규천이 거두어 키운 고아라고 밝혀 둘이 의붓남매임이 공개됨"
+    }
+   ]
+  }
+ ],
+ "twists": [
+  {
+   "id": "t01",
+   "fact_id": "f061",
+   "reveal_ep": 11,
+   "setup_eps": [
+    2,
+    3,
+    10
+   ],
+   "summary": "가면 쓴 야화련 부련주는 3년 전 떠난 사형 목연호였다."
+  },
+  {
+   "id": "t02",
+   "fact_id": "f072",
+   "reveal_ep": 15,
+   "setup_eps": [
+    1,
+    4,
+    10,
+    12
+   ],
+   "summary": "사라진 무성보는 은찬의 목검 속에 숨겨져 있었다."
+  },
+  {
+   "id": "t03",
+   "fact_id": "f094",
+   "reveal_ep": 20,
+   "setup_eps": [
+    14,
+    19
+   ],
+   "summary": "연호는 적하곡 참변의 생존자였다."
+  },
+  {
+   "id": "t04",
+   "fact_id": "f113",
+   "reveal_ep": 25,
+   "setup_eps": [
+    3,
+    16,
+    23
+   ],
+   "summary": "호위무사 강필은 가주의 명으로 소량의 행적을 보고해 왔다."
+  },
+  {
+   "id": "t05",
+   "fact_id": "f132",
+   "reveal_ep": 30,
+   "setup_eps": [
+    1,
+    2,
+    4,
+    18,
+    19,
+    27,
+    28
+   ],
+   "summary": "사부 곽태허를 벤 자는 서진을 쫓던 집법당주 장헌이었다."
+  },
+  {
+   "id": "t06",
+   "fact_id": "f158",
+   "reveal_ep": 36,
+   "setup_eps": [
+    1,
+    20,
+    22,
+    34
+   ],
+   "summary": "20년 전 적하곡 토벌대에 있던 사부 곽태허는 마을에 불을 놓으라는 명령을 거부하고 불길 속에서 아이들을 구해 낸 사람이었다."
+  },
+  {
+   "id": "t07",
+   "fact_id": "f178",
+   "reveal_ep": 41,
+   "setup_eps": [
+    5,
+    33,
+    36,
+    37,
+    39
+   ],
+   "summary": "소량의 아버지 위정혁은 적하곡의 퇴로를 막은 부대를 지휘했다."
+  },
+  {
+   "id": "t08",
+   "fact_id": "f198",
+   "reveal_ep": 46,
+   "setup_eps": [
+    18,
+    19,
+    24,
+    27,
+    29,
+    36,
+    37,
+    45
+   ],
+   "summary": "떠돌이 의원 설단영은 맹주 양규천의 딸이었다."
+  }
+ ],
+ "conventions": {
+  "known_by": "from_ep는 인물이 그 사실을 알게 되는 화다. 0은 이야기 시작 전부터 앎. 사건을 직접 한 인물과 그 장면에 있던 인물은 그 사건이 일어난 화부터 안다.",
+  "knowledge_events": "known_by(from_ep>0)와 하나씩 대응한다. 그 화에 등장하지 않거나 본문에 그리지 않는 곳에서 알게 되면 offstage: true를 붙이며, 본문은 그 장면을 서술하지 않는다.",
+  "relationship_timeline": "from_ep는 독자가 그 관계 상태를 처음 알 수 있게 되는 화다. 0은 이야기 시작 전부터의 배경 상태로, 두 인물이 처음 함께 언급되는 화까지 공개되는 내용만 담는다. known_by는 그 상태를 아는 인물과 아는 시점이다.",
+  "pov_must_hide": "시점 인물이 알고 있지만 아직 독자에게 공개되지 않은 사실 목록. 그 화 본문(시점 인물의 내면 포함)에서 서술하거나 암시하지 않는다.",
+  "aliases": "aliases는 첫 등장부터 끝까지 그 인물을 가리키는 별칭, aliases_timed는 from_ep~to_ep(없으면 끝까지) 동안만 그 인물을 가리키는 별칭이다.",
+  "how_called": "by 인물이 그 인물을 부르는 호칭. from_ep~to_ep(없으면 끝까지) 동안 쓰며, context는 공석·사석 같은 조건이다.",
+  "world_reveal": "world의 places·institutions·magic·festivals 항목은 first_reveal_ep(본문에 처음 나오는 화)와 desc(그 화까지 공개되는 내용만)를 가진다. 그 뒤 화에 공개되는 내용은 desc에 쓰지 않고 later_fact_ids의 사실(각 사실의 reveal_ep)로만 참조한다. summary는 summary_first_reveal_ep 화까지의 내용만 담는다. 해당 개념이 없는 장르(예: 마법 없음)는 빈 배열로 둔다.",
+  "interlude_pov": "막간이 있는 화는 interlude_pov(막간 시점 인물), interlude_scope(막간 범위), interlude_pov_must_hide(막간 시점 인물이 그 화에 알고 있지만 아직 독자에게 공개되지 않은 사실)를 둔다. interlude_pov_must_hide의 규칙은 pov_must_hide와 같다.",
+  "interlude_conclusion": "막간에서 서술자가 시점 인물의 결론을 단정형으로 서술하고 그 인물이 그 결론에 따라 움직이면, 그 화부터 그 인물이 안다고 본다. 뒤에 그 인물이 대사로 짐작이라고 낮춰 말해도 from_ep를 늦추지 않는다. 서술 없이 의심만 드러나는 경우는 앎으로 보지 않는다.",
+  "known_by_note": "known_by 항목의 note는 판단 근거를 밝혀 두거나, 그 인물이 사실의 일부만 알 때 아는 범위를 적는다.",
+  "atomic_facts": "사실 하나에는 내용 하나만 담는다. 인물마다 아는 범위가 달라질 수 있는 내용(예: 살아 있다는 것과 구조 경위)은 처음부터 다른 사실로 나눈다. 한 사실이 다른 사실의 핵심을 포함하면, 포함하는 사실을 아는 인물은 같은 화나 그보다 이르게 포함되는 사실도 안다.",
+  "inferable": "inferable_from_ep는 독자가 명시 공개(reveal_ep) 전에 그 사실을 확신하거나 강하게 의심할 수 있게 되는 가장 이른 화다. inferable_confidence는 strong(독자 대부분이 확신) 또는 moderate(눈치 빠른 독자가 의심), inferable_basis는 단서가 나온 화와 내용이다. 추론 가능하지 않은 사실에는 필드를 넣지 않는다."
+ }
+}

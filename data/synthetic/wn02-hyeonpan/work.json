@@ -1,0 +1,35 @@
+{
+ "id": "wn02-hyeonpan",
+ "order": 102,
+ "title": "구봉동 야간 열쇠공",
+ "author": "AI 생성",
+ "label": "AI가 생성한 현대판타지 웹소설 「구봉동 야간 열쇠공」",
+ "published": "2026-10 생성(합성 데이터)",
+ "chapters": 50,
+ "unit": "화",
+ "blurb": "밤마다 열리는 틈을 열쇠로 잠그는 무면허 열쇠공이 9년 전 정전의 밤과 사라진 누나의 진실을 좇는 현대판타지.",
+ "examples": [
+  {
+   "question": "도하가 열쇠틀로 깎은 열쇠로는 무엇을 할 수 있어?",
+   "chapter": 3
+  },
+  {
+   "question": "서이현은 정전의 밤 어디에 있었어?",
+   "chapter": 12
+  },
+  {
+   "question": "도하의 누나 윤도영은 지금 어떻게 됐어?",
+   "chapter": 25
+  }
+ ],
+ "default_upto": 3,
+ "evaluated": false,
+ "synthetic": true,
+ "genre": "현대판타지",
+ "generator": "claude-opus-5-5 (Claude Code 워크플로)",
+ "source": {
+  "kind": "synthetic",
+  "created": "2026-10-20",
+  "license": "AI 생성 합성 데이터. 실존 작품·인물과 무관"
+ }
+}

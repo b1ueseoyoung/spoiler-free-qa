@@ -1,0 +1,2909 @@
+{
+ "title": "구봉동 야간 열쇠공",
+ "genre": "현대판타지",
+ "logline": "9년 전 정전으로 누나를 잃은 열쇠공 윤도하가 밤마다 열리는 틈을 잠그다가, 그날 밤의 진실과 사라진 누나의 행방에 다가간다.",
+ "rating": "15세",
+ "world": {
+  "summary": "가상의 강변 도시 서하시. 9년 전 11월 9일 새벽 3시 17분 구봉동 일대가 정전되며 41명이 실종됐고, 공식 원인은 변전소 화재로 발표됐다. 그 뒤로 구봉동에는 밤마다 '틈'이 열리고, 닿은 사람의 최근 기억을 앗아 가는 '잔영'이 새어 나온다. 시청 야간관리과가 매듭꾼이라 불리는 능력자들을 두고 틈과 잔영을 관리한다.",
+  "summary_first_reveal_ep": 3,
+  "era": "2020년대 중반, 가상의 현대 한국 도시",
+  "places": [
+   {
+    "name": "구봉동",
+    "first_reveal_ep": 1,
+    "desc": "서하강 서쪽의 오래된 동네. 9년 전 정전 이후 밤마다 틈이 열린다.",
+    "later_fact_ids": [
+     "f009",
+     "f034"
+    ]
+   },
+   {
+    "name": "도하열쇠",
+    "first_reveal_ep": 1,
+    "desc": "구봉동 골목의 열쇠 가게. 도하가 누나 방에서 찾아낸 낡은 열쇠틀이 작업대에 놓여 있다.",
+    "later_fact_ids": [
+     "f037",
+     "f169"
+    ]
+   },
+   {
+    "name": "구봉국수",
+    "first_reveal_ep": 1,
+    "desc": "오말순이 1층에서 하는 국숫집. 2층이 도하의 셋방이다.",
+    "later_fact_ids": [
+     "f155",
+     "f156"
+    ]
+   },
+   {
+    "name": "구봉 변전소",
+    "first_reveal_ep": 2,
+    "desc": "정전 이후 폐쇄되어 철조망으로 막힌 변전소.",
+    "later_fact_ids": [
+     "f070",
+     "f071",
+     "f120",
+     "f096"
+    ]
+   },
+   {
+    "name": "구봉시장",
+    "first_reveal_ep": 3,
+    "desc": "구봉동의 재래시장. 한복판에 큰 틈이 열린 곳.",
+    "later_fact_ids": []
+   },
+   {
+    "name": "야간관리과 사무실",
+    "first_reveal_ep": 4,
+    "desc": "서하시청 별관 지하에 있는 야간관리과 사무실.",
+    "later_fact_ids": []
+   },
+   {
+    "name": "남궁전당포",
+    "first_reveal_ep": 6,
+    "desc": "구봉시장 뒤편 골목의 전당포. 잔영이 깃든 물건을 사고판다.",
+    "later_fact_ids": [
+     "f045",
+     "f043",
+     "f046",
+     "f112",
+     "f125",
+     "f227"
+    ]
+   },
+   {
+    "name": "백양타워",
+    "first_reveal_ep": 8,
+    "desc": "서하강 건너 신도심에 있는 백양개발 본사.",
+    "later_fact_ids": [
+     "f164",
+     "f193"
+    ]
+   },
+   {
+    "name": "시청 문서고",
+    "first_reveal_ep": 15,
+    "desc": "정전 사건 기록철이 보관된 서하시청 문서고.",
+    "later_fact_ids": []
+   },
+   {
+    "name": "문간",
+    "first_reveal_ep": 16,
+    "desc": "구봉 변전소 지하의 밀실. 열쇠 구멍 모양으로 파인 거대한 돌 문틀과, 구리 코일을 감은 쇠 열쇠 장치가 남아 있다. 바닥 한가운데에 둥근 그을음이 있다.",
+    "later_fact_ids": [
+     "f135",
+     "f143",
+     "f149",
+     "f168",
+     "f175",
+     "f187",
+     "f184",
+     "f201",
+     "f208",
+     "f214"
+    ]
+   },
+   {
+    "name": "서하대교",
+    "first_reveal_ep": 20,
+    "desc": "서하강을 건너는 큰 다리. 구봉동 밖에서 처음으로 그 아래에 틈이 열렸다.",
+    "later_fact_ids": [
+     "f142"
+    ]
+   },
+   {
+    "name": "서하요양병원",
+    "first_reveal_ep": 26,
+    "desc": "류건의 어머니가 입원해 있는 요양병원.",
+    "later_fact_ids": [
+     "f194"
+    ]
+   },
+   {
+    "name": "밑마을",
+    "first_reveal_ep": 9,
+    "desc": "틈 아래에 구봉 사람들이 잃어버린 것들이 가라앉아 쌓이는 마을이 있다는 소문 속 장소.",
+    "later_fact_ids": [
+     "f122",
+     "f126",
+     "f124",
+     "f129",
+     "f128",
+     "f134",
+     "f130",
+     "f165"
+    ]
+   }
+  ],
+  "institutions": [
+   {
+    "name": "백양개발",
+    "first_reveal_ep": 2,
+    "desc": "구봉동 재개발 사업자로 선정된 건설사.",
+    "later_fact_ids": [
+     "f030",
+     "f035",
+     "f039",
+     "f113"
+    ]
+   },
+   {
+    "name": "서하시 야간관리과",
+    "first_reveal_ep": 3,
+    "desc": "밤에 열리는 틈과 잔영을 관리하는 서하시청 부서. 현장2팀장은 서이현.",
+    "later_fact_ids": [
+     "f029",
+     "f026",
+     "f055",
+     "f095",
+     "f106"
+    ]
+   },
+   {
+    "name": "백양 특수수거팀",
+    "first_reveal_ep": 5,
+    "desc": "잔영과 잔영 깃든 물건을 거두는 백양개발의 팀. 팀장은 강무겸.",
+    "later_fact_ids": [
+     "f103",
+     "f105",
+     "f177"
+    ]
+   },
+   {
+    "name": "서하시 매듭꾼 연수원",
+    "first_reveal_ep": 13,
+    "desc": "시가 매듭꾼을 길러 면허를 내주는 연수 기관. 서이현과 강무겸이 10년 전 동기였다.",
+    "later_fact_ids": []
+   },
+   {
+    "name": "백양재단",
+    "first_reveal_ep": 13,
+    "desc": "백양개발이 세운 재단. 강무겸이 이 재단의 보육원에서 자랐다.",
+    "later_fact_ids": [
+     "f108",
+     "f194"
+    ]
+   },
+   {
+    "name": "서하시 재난안전과",
+    "first_reveal_ep": 15,
+    "desc": "9년 전 진세라가 주무관으로 일하던 부서.",
+    "later_fact_ids": [
+     "f095"
+    ]
+   },
+   {
+    "name": "백양전기",
+    "first_reveal_ep": 28,
+    "desc": "백양 계열 전기 공사 회사. 정전 날짜가 찍힌 변전소 지하 작업 지시서를 냈다.",
+    "later_fact_ids": [
+     "f166",
+     "f175"
+    ]
+   }
+  ],
+  "magic": [
+   {
+    "name": "틈",
+    "first_reveal_ep": 1,
+    "desc": "밤에 구봉동 곳곳에 열리는 균열. 잔영이 새어 나온다.",
+    "later_fact_ids": [
+     "f034",
+     "f019",
+     "f088",
+     "f132"
+    ]
+   },
+   {
+    "name": "잔영",
+    "first_reveal_ep": 1,
+    "desc": "틈에서 나오는 그림자 같은 존재. 닿은 사람은 최근 기억의 일부를 잃는다.",
+    "later_fact_ids": [
+     "f025",
+     "f034",
+     "f128",
+     "f165",
+     "f189"
+    ]
+   },
+   {
+    "name": "열쇠틀",
+    "first_reveal_ep": 1,
+    "desc": "도하가 누나 방에서 찾아낸 낡은 열쇠 깎는 기계. 밤에 깎은 열쇠로 틈 가장자리에 박아 심은 놋쇠 자물통을 돌리면 틈이 잠긴다. 서랍에 반쯤 깎다 만 놋쇠 원판이 들어 있다.",
+    "later_fact_ids": [
+     "f045",
+     "f046",
+     "f090",
+     "f121",
+     "f131",
+     "f135",
+     "f153",
+     "f188",
+     "f184",
+     "f202",
+     "f189"
+    ]
+   },
+   {
+    "name": "매듭꾼",
+    "first_reveal_ep": 3,
+    "desc": "잔영을 다루는 능력자. 시 면허를 받아 일한다.",
+    "later_fact_ids": [
+     "f042",
+     "f080",
+     "f075"
+    ]
+   },
+   {
+    "name": "실매듭",
+    "first_reveal_ep": 3,
+    "desc": "서이현의 능력. 은빛 실로 잔영을 묶는다.",
+    "later_fact_ids": []
+   },
+   {
+    "name": "되울림",
+    "first_reveal_ep": 4,
+    "desc": "한소윤의 능력. 잔영에 담긴 기억 조각의 마지막 말을 듣는다.",
+    "later_fact_ids": [
+     "f119",
+     "f156",
+     "f172"
+    ]
+   },
+   {
+    "name": "삼킴",
+    "first_reveal_ep": 5,
+    "desc": "강무겸의 능력. 잔영을 몸 안에 삼킨다.",
+    "later_fact_ids": [
+     "f062",
+     "f087",
+     "f146",
+     "f151"
+    ]
+   },
+   {
+    "name": "공명탑",
+    "first_reveal_ep": 29,
+    "desc": "기억공원 지하 기계실 도면에 들어 있는 탑 모양 구조물. 문간의 쇠 열쇠 장치와 구조가 같고, 문간의 문을 바깥에서 다시 여는 데 쓰인다.",
+    "later_fact_ids": [
+     "f139",
+     "f159",
+     "f171",
+     "f176",
+     "f206",
+     "f212",
+     "f208",
+     "f209",
+     "f211",
+     "f213"
+    ]
+   },
+   {
+    "name": "이름지기",
+    "first_reveal_ep": 32,
+    "desc": "밑마을에서 이름을 잃은 실종자 잔영들의 이름을 대신 불러 주며 지키는 일. 윤도영이 9년 동안 이 일을 해 왔다.",
+    "later_fact_ids": [
+     "f180",
+     "f203"
+    ]
+   }
+  ],
+  "festivals": [
+   {
+    "name": "구봉 등불제",
+    "first_reveal_ep": 4,
+    "desc": "매년 정전 기념일 전날 밤 서하강에 등을 띄워 실종자를 기리는 행사.",
+    "later_fact_ids": [
+     "f155",
+     "f203"
+    ]
+   },
+   {
+    "name": "구봉 재개발 착공식",
+    "first_reveal_ep": 11,
+    "desc": "정전 9주기 전날인 11월 8일 밤 변전소 부지에서 열리기로 잡힌 지상 공원 착공식. 지하 기계실은 지반 안정화를 위한 선행 공사로 착공식 전에 먼저 짓는다.",
+    "later_fact_ids": [
+     "f161",
+     "f159",
+     "f204",
+     "f211"
+    ]
+   }
+  ]
+ },
+ "characters": [
+  {
+   "id": "doha",
+   "name": "윤도하",
+   "aliases": [
+    "도하열쇠 사장",
+    "열쇠장이"
+   ],
+   "aliases_timed": [
+    {
+     "alias": "야간관리과 외부 협력자",
+     "from_ep": 12,
+     "to_ep": null
+    }
+   ],
+   "how_called": [
+    {
+     "by": "malsun",
+     "call": "도하야",
+     "from_ep": 1,
+     "to_ep": null,
+     "context": "평소"
+    },
+    {
+     "by": "malsun",
+     "call": "이 문디야",
+     "from_ep": 1,
+     "to_ep": null,
+     "context": "꾸짖을 때"
+    },
+    {
+     "by": "ihyeon",
+     "call": "윤도하 씨",
+     "from_ep": 3,
+     "to_ep": 43,
+     "context": "공석·업무"
+    },
+    {
+     "by": "ihyeon",
+     "call": "도하야",
+     "from_ep": 44,
+     "to_ep": null,
+     "context": "사석"
+    },
+    {
+     "by": "soyun",
+     "call": "윤도하 씨",
+     "from_ep": 3,
+     "to_ep": 20,
+     "context": "평소"
+    },
+    {
+     "by": "soyun",
+     "call": "도하 씨",
+     "from_ep": 21,
+     "to_ep": null,
+     "context": "평소"
+    },
+    {
+     "by": "geon",
+     "call": "사장님",
+     "from_ep": 3,
+     "to_ep": null,
+     "context": "평소"
+    },
+    {
+     "by": "mugyeom",
+     "call": "열쇠장이",
+     "from_ep": 5,
+     "to_ep": 48,
+     "context": "평소"
+    },
+    {
+     "by": "mugyeom",
+     "call": "윤도하",
+     "from_ep": 49,
+     "to_ep": null,
+     "context": "평소"
+    },
+    {
+     "by": "taesin",
+     "call": "윤 사장님",
+     "from_ep": 8,
+     "to_ep": null,
+     "context": "평소"
+    },
+    {
+     "by": "cheol",
+     "call": "도하 총각",
+     "from_ep": 6,
+     "to_ep": null,
+     "context": "평소"
+    },
+    {
+     "by": "sera",
+     "call": "윤도하 씨",
+     "from_ep": 12,
+     "to_ep": null,
+     "context": "평소"
+    },
+    {
+     "by": "jian",
+     "call": "윤 사장님",
+     "from_ep": 11,
+     "to_ep": null,
+     "context": "평소"
+    },
+    {
+     "by": "doyeong",
+     "call": "도하야",
+     "from_ep": 31,
+     "to_ep": null,
+     "context": "평소"
+    },
+    {
+     "by": "doyeong",
+     "call": "막내",
+     "from_ep": 31,
+     "to_ep": null,
+     "context": "놀릴 때"
+    }
+   ],
+   "age": 29,
+   "age_note": "정전 당시 만 20세",
+   "gender": "남",
+   "is_minor": false,
+   "role": "주인공. 구봉동 무면허 열쇠공",
+   "appearance": "어깨가 넓고 손가락 마디마다 쇳가루 자국이 있다. 늘 기름 묻은 회색 작업 점퍼 차림.",
+   "personality": "무뚝뚝하지만 동네 사람 부탁은 거절하지 못한다. 한번 연 것은 반드시 닫아야 직성이 풀린다.",
+   "speech_style": "동네 어른과 손님에게는 투박한 존댓말, 또래에게는 짧은 반말. 입버릇은 '열면 닫아야지.'",
+   "sample_lines": [
+    "열면 닫아야지. 그게 순서야.",
+    "할매, 오늘은 두 군데만 잠그고 올게.",
+    "서이현, 너 지금 나한테 면허 얘기 하는 거냐.",
+    "기록관님, 그 소리… 한 번만 더 들려줄 수 있어요?"
+   ],
+   "backstory": "9년 전 구봉동 정전 때 누나 윤도영이 실종됐다. 그 뒤 학교를 그만두고 구봉시장 열쇠 가게에서 일을 배웠고, 누나 방에 남아 있던 낡은 열쇠틀로 밤에 깎은 열쇠가 틈을 잠근다는 것을 알게 됐다. 몇 해 전 '도하열쇠'를 열었다.",
+   "goal": "구봉동의 틈을 잠그고 누나가 사라진 밤의 진실을 알아내는 것.",
+   "first_appearance_ep": 1,
+   "secrets": [
+    "f078",
+    "f181",
+    "f182"
+   ],
+   "arc": "혼자 동네를 지키던 무면허 열쇠공이 옛 친구와 화해하고, 자신이 잠근 문을 다시 마주한다.",
+   "end_state": "누나를 되찾고 두 열쇠로 문을 영구히 잠근다. 값으로 소윤과의 한 밤의 기억을 잃지만 새 기억을 쌓기로 한다."
+  },
+  {
+   "id": "ihyeon",
+   "name": "서이현",
+   "aliases": [
+    "2팀장",
+    "서 팀장"
+   ],
+   "aliases_timed": [],
+   "how_called": [
+    {
+     "by": "doha",
+     "call": "서이현",
+     "from_ep": 3,
+     "to_ep": 43,
+     "context": "사석·화날 때"
+    },
+    {
+     "by": "doha",
+     "call": "서 팀장",
+     "from_ep": 12,
+     "to_ep": 43,
+     "context": "공석"
+    },
+    {
+     "by": "doha",
+     "call": "이현아",
+     "from_ep": 44,
+     "to_ep": null,
+     "context": "사석"
+    },
+    {
+     "by": "soyun",
+     "call": "팀장님",
+     "from_ep": 3,
+     "to_ep": null,
+     "context": "평소"
+    },
+    {
+     "by": "geon",
+     "call": "팀장님",
+     "from_ep": 3,
+     "to_ep": null,
+     "context": "공석"
+    },
+    {
+     "by": "geon",
+     "call": "형",
+     "from_ep": 3,
+     "to_ep": 26,
+     "context": "사석"
+    },
+    {
+     "by": "geon",
+     "call": "형",
+     "from_ep": 50,
+     "to_ep": null,
+     "context": "사석"
+    },
+    {
+     "by": "sera",
+     "call": "서 팀장",
+     "from_ep": 4,
+     "to_ep": null,
+     "context": "평소"
+    },
+    {
+     "by": "mugyeom",
+     "call": "서 팀장",
+     "from_ep": 13,
+     "to_ep": null,
+     "context": "평소"
+    },
+    {
+     "by": "malsun",
+     "call": "이현이",
+     "from_ep": 32,
+     "to_ep": null,
+     "context": "평소"
+    },
+    {
+     "by": "doyeong",
+     "call": "이현이",
+     "from_ep": 31,
+     "to_ep": null,
+     "context": "평소"
+    }
+   ],
+   "age": 29,
+   "age_note": "정전 당시 만 20세",
+   "gender": "남",
+   "is_minor": false,
+   "role": "서하시 야간관리과 현장2팀장. 도하의 옛 친구",
+   "appearance": "마른 체격에 단정하게 넘긴 머리. 왼손 손가락에 은빛 실 자국이 감겨 있다.",
+   "personality": "원칙을 앞세우고 감정을 잘 드러내지 않는다. 지키고 싶은 사람 앞에서 말이 줄어든다.",
+   "speech_style": "공석에서는 짧게 끊는 존댓말을 쓰고, 보고하듯 문장을 명사로 끝내는 버릇이 있다('무면허 잠금 한 건.', '이상 없음.'). 사석에서도 말수가 적다. 입버릇은 '기록에 남깁니다.'",
+   "sample_lines": [
+    "기록에 남깁니다. 무면허 잠금 한 건.",
+    "윤도하 씨. 현장입니다. 물러나세요.",
+    "보고 사항, 없음.",
+    "…그 얘기는 하지 마.",
+    "류건. 네가 고른 길이면 끝까지 같이 간다."
+   ],
+   "backstory": "서하고에서 도하와 단짝이었다. 졸업 뒤 변전소 뒷길 하숙집에 살며 시 매듭꾼 연수원을 다녔고(강무겸과 동기, 연수원 견학 때 문간을 본 적이 있다), 정전 이후 도하와 연락을 끊고 야간관리과에 들어갔다.",
+   "goal": "구봉동의 틈을 규정대로 관리하고, 도하가 다치지 않게 하는 것.",
+   "first_appearance_ep": 3,
+   "secrets": [
+    "f048",
+    "f098",
+    "f183"
+   ],
+   "arc": "9년 동안 숨겨 온 진실을 끝내 털어놓고 도하와 다시 친구가 된다.",
+   "end_state": "2팀장 자리를 지키며 도하와 예전처럼 국숫집에서 술잔을 기울인다."
+  },
+  {
+   "id": "soyun",
+   "name": "한소윤",
+   "aliases": [
+    "한 기록관"
+   ],
+   "aliases_timed": [],
+   "how_called": [
+    {
+     "by": "doha",
+     "call": "기록관님",
+     "from_ep": 3,
+     "to_ep": 20,
+     "context": "평소"
+    },
+    {
+     "by": "doha",
+     "call": "소윤 씨",
+     "from_ep": 21,
+     "to_ep": null,
+     "context": "평소"
+    },
+    {
+     "by": "ihyeon",
+     "call": "한 기록관",
+     "from_ep": 4,
+     "to_ep": null,
+     "context": "평소"
+    },
+    {
+     "by": "geon",
+     "call": "소윤 씨",
+     "from_ep": 3,
+     "to_ep": null,
+     "context": "평소"
+    },
+    {
+     "by": "sera",
+     "call": "한 기록관",
+     "from_ep": 4,
+     "to_ep": null,
+     "context": "평소"
+    },
+    {
+     "by": "malsun",
+     "call": "아가씨",
+     "from_ep": 7,
+     "to_ep": 36,
+     "context": "평소"
+    },
+    {
+     "by": "malsun",
+     "call": "소윤이",
+     "from_ep": 37,
+     "to_ep": null,
+     "context": "평소"
+    }
+   ],
+   "age": 27,
+   "age_note": "정전 당시 만 18세",
+   "gender": "여",
+   "is_minor": false,
+   "role": "야간관리과 기록관. 도하의 연인이 된다",
+   "appearance": "귀에 늘 작은 녹음기 이어폰을 꽂고 다닌다. 단발에 둥근 안경.",
+   "personality": "차분하고 집요하다. 남의 마지막 말을 듣는 일을 가볍게 여기지 않는다.",
+   "speech_style": "부드러운 존댓말. 입버릇은 '들려요.'",
+   "sample_lines": [
+    "들려요. 아주 작게요.",
+    "기록은 지워져도 말은 남아요.",
+    "도하 씨, 오늘은 잠그지 말고 쉬어요.",
+    "과장님, 이 서명은 과장님 거죠?"
+   ],
+   "backstory": "정전 당일 변전소 당직 전기기사였던 아버지 한경수를 잃었다.",
+   "goal": "정전의 진짜 원인을 기록으로 밝혀내는 것.",
+   "first_appearance_ep": 3,
+   "secrets": [
+    "f066",
+    "f231"
+   ],
+   "arc": "혼자 품던 조사를 동료들과 나누고, 아버지의 마지막 말을 듣는다.",
+   "end_state": "아버지의 누명을 벗기고 기록관으로 남는다. 도하와 연인으로 지낸다."
+  },
+  {
+   "id": "geon",
+   "name": "류건",
+   "aliases": [
+    "류 대원"
+   ],
+   "aliases_timed": [],
+   "how_called": [
+    {
+     "by": "ihyeon",
+     "call": "류건",
+     "from_ep": 3,
+     "to_ep": null,
+     "context": "평소"
+    },
+    {
+     "by": "doha",
+     "call": "류 대원",
+     "from_ep": 3,
+     "to_ep": null,
+     "context": "평소"
+    },
+    {
+     "by": "soyun",
+     "call": "건 씨",
+     "from_ep": 4,
+     "to_ep": null,
+     "context": "평소"
+    },
+    {
+     "by": "taesin",
+     "call": "류건 씨",
+     "from_ep": 39,
+     "to_ep": null,
+     "context": "평소"
+    }
+   ],
+   "age": 28,
+   "age_note": "",
+   "gender": "남",
+   "is_minor": false,
+   "role": "야간관리과 2팀 대원. 소방관 출신",
+   "appearance": "키가 크고 웃는 상. 화상 흉터가 오른팔에 있다.",
+   "personality": "능청스럽고 분위기를 띄우지만 어머니 이야기만 나오면 말이 없어진다.",
+   "speech_style": "반말 섞인 능글맞은 존댓말. 입버릇은 '에이, 설마요.'",
+   "sample_lines": [
+    "에이, 설마요. 우리 팀장님이 그럴 리가.",
+    "사장님, 열쇠 하나 더 깎아 주면 커피 쏠게요.",
+    "형, 나… 할 말이 있어.",
+    "이번엔 제대로 거꾸로 흘려 볼게요."
+   ],
+   "backstory": "화재 현장에서 다친 뒤 소방관을 그만두고 야간관리과에 들어왔다. 어머니가 오래 입원해 있다.",
+   "goal": "어머니의 병원비를 감당하며 팀에 남는 것.",
+   "first_appearance_ep": 3,
+   "secrets": [
+    "f105",
+    "f107",
+    "f108"
+   ],
+   "arc": "과장의 '비공식 협조'라는 말을 믿고 팀의 출동지를 넘긴 죄책감을 이중첩자 노릇으로 갚는다.",
+   "end_state": "징계를 받지만 2팀에 남고 서이현과 다시 신뢰를 쌓는다."
+  },
+  {
+   "id": "mugyeom",
+   "name": "강무겸",
+   "aliases": [
+    "무겸"
+   ],
+   "aliases_timed": [
+    {
+     "alias": "백양 수거팀장",
+     "from_ep": 5,
+     "to_ep": 48
+    }
+   ],
+   "how_called": [
+    {
+     "by": "taesin",
+     "call": "무겸아",
+     "from_ep": 8,
+     "to_ep": null,
+     "context": "사석"
+    },
+    {
+     "by": "taesin",
+     "call": "강 팀장",
+     "from_ep": 8,
+     "to_ep": null,
+     "context": "공석"
+    },
+    {
+     "by": "jian",
+     "call": "무겸 오빠",
+     "from_ep": 34,
+     "to_ep": null,
+     "context": "평소"
+    },
+    {
+     "by": "doha",
+     "call": "백양 놈",
+     "from_ep": 5,
+     "to_ep": 40,
+     "context": "평소"
+    },
+    {
+     "by": "doha",
+     "call": "강무겸",
+     "from_ep": 41,
+     "to_ep": null,
+     "context": "평소"
+    },
+    {
+     "by": "ihyeon",
+     "call": "강무겸",
+     "from_ep": 13,
+     "to_ep": null,
+     "context": "평소"
+    },
+    {
+     "by": "doyeong",
+     "call": "그쪽",
+     "from_ep": 43,
+     "to_ep": 48,
+     "context": "평소"
+    },
+    {
+     "by": "doyeong",
+     "call": "무겸 씨",
+     "from_ep": 49,
+     "to_ep": null,
+     "context": "평소"
+    }
+   ],
+   "age": 34,
+   "age_note": "9년 전 실험 당시 만 25세",
+   "gender": "남",
+   "is_minor": false,
+   "role": "백양개발 특수수거팀장. 서이현의 라이벌",
+   "appearance": "검은 코트에 장갑. 잔영을 삼킨 뒤에는 팔에 검은 멍이 번진다.",
+   "personality": "말이 짧고 은혜를 잊지 않는다. 한번 믿은 사람에게는 끝까지 고개를 숙인다.",
+   "speech_style": "낮고 짧은 반말과 명령조. 백태신에게만 극존칭을 쓴다. 입버릇은 '삼킨다.'",
+   "sample_lines": [
+    "비켜, 열쇠장이. 삼킨다.",
+    "회장님 뜻입니다.",
+    "서 팀장, 연수원 때처럼 굴지 마.",
+    "…그 문을 붙든 건 나다."
+   ],
+   "backstory": "백양재단 보육원에서 자랐다. 시 매듭꾼 연수원에 들어가며 삼킴을 숨기고 능력을 '막음'으로 등록했고, 수료 한 달 전 자퇴하고 백양에 들어갔다. 9년 전 '구봉 지반 안정 시험'이라는 설명만 듣고 문간 실험에서 문을 붙들었다.",
+   "goal": "자신을 거둔 백태신에게 은혜를 갚는 것.",
+   "first_appearance_ep": 5,
+   "secrets": [
+    "f143",
+    "f144",
+    "f145",
+    "f062",
+    "f148"
+   ],
+   "arc": "은인의 거짓을 알고 등을 돌려, 9년 전 자신이 연 문을 이번에는 사람을 꺼내기 위해 붙든다.",
+   "end_state": "문을 붙들어 도영을 꺼낸 뒤 스스로 경찰에 출두한다."
+  },
+  {
+   "id": "taesin",
+   "name": "백태신",
+   "aliases": [
+    "백 회장",
+    "백양 회장"
+   ],
+   "aliases_timed": [],
+   "how_called": [
+    {
+     "by": "mugyeom",
+     "call": "회장님",
+     "from_ep": 8,
+     "to_ep": null,
+     "context": "평소"
+    },
+    {
+     "by": "jian",
+     "call": "회장님",
+     "from_ep": 11,
+     "to_ep": null,
+     "context": "공석"
+    },
+    {
+     "by": "jian",
+     "call": "아빠",
+     "from_ep": 24,
+     "to_ep": 40,
+     "context": "사석"
+    },
+    {
+     "by": "doha",
+     "call": "백 회장",
+     "from_ep": 8,
+     "to_ep": null,
+     "context": "평소"
+    },
+    {
+     "by": "geon",
+     "call": "회장님",
+     "from_ep": 39,
+     "to_ep": null,
+     "context": "평소"
+    }
+   ],
+   "age": 57,
+   "age_note": "",
+   "gender": "남",
+   "is_minor": false,
+   "role": "백양개발 회장. 최종 적대자",
+   "appearance": "은발을 단정히 빗어 넘긴 노신사. 물건 값을 매기는 감정용 루페를 늘 조끼 주머니에 넣고 다닌다.",
+   "personality": "상냥하고 집요하다. 사람도 기억도 값으로 셈한다.",
+   "speech_style": "누구에게나 상냥한 해요체 존댓말을 쓰고 상대를 직함으로 부르지만, 자기 사람(강무겸·백지안)에게는 짧은 반말을 쓴다. 무엇이든 값과 숫자로 말한다. 입버릇은 '땅은 기억을 해요.'",
+   "sample_lines": [
+    "땅은 기억을 해요, 윤 사장님. 그리고 기억은 값이 나가죠.",
+    "그 손재주라면 지금 받는 값의 세 배는 쳐 드릴게요.",
+    "무겸아, 조금만 더 붙들어.",
+    "지안아, 너는 도면만 그리면 돼.",
+    "구봉은 값이에요. 누군가는 치러야죠."
+   ],
+   "backstory": "백양전기에서 시작해 백양개발을 키운 사업가. 10년 전 아내 정연화를 병으로 잃은 뒤 구봉 재개발에 매달려 왔다.",
+   "goal": "구봉동 재개발을 완수하는 것.",
+   "first_appearance_ep": 8,
+   "secrets": [
+    "f113",
+    "f162",
+    "f166",
+    "f175",
+    "f177",
+    "f209",
+    "f211",
+    "f167",
+    "f213"
+   ],
+   "arc": "기억까지 값으로 셈하는 탐욕 끝에 딸과 충복을 모두 잃는다.",
+   "end_state": "정전 실험 혐의로 체포된다."
+  },
+  {
+   "id": "sera",
+   "name": "진세라",
+   "aliases": [],
+   "aliases_timed": [
+    {
+     "alias": "진 과장",
+     "from_ep": 4,
+     "to_ep": 49
+    }
+   ],
+   "how_called": [
+    {
+     "by": "ihyeon",
+     "call": "과장님",
+     "from_ep": 4,
+     "to_ep": null,
+     "context": "평소"
+    },
+    {
+     "by": "soyun",
+     "call": "과장님",
+     "from_ep": 4,
+     "to_ep": null,
+     "context": "평소"
+    },
+    {
+     "by": "geon",
+     "call": "과장님",
+     "from_ep": 4,
+     "to_ep": null,
+     "context": "평소"
+    },
+    {
+     "by": "doha",
+     "call": "진 과장님",
+     "from_ep": 12,
+     "to_ep": 49,
+     "context": "평소"
+    },
+    {
+     "by": "doha",
+     "call": "진세라 씨",
+     "from_ep": 50,
+     "to_ep": null,
+     "context": "평소"
+    }
+   ],
+   "age": 44,
+   "age_note": "",
+   "gender": "여",
+   "is_minor": false,
+   "role": "서하시 야간관리과 과장",
+   "appearance": "회색 정장에 서류철을 늘 끼고 다닌다. 웃을 때도 눈은 웃지 않는다.",
+   "personality": "절차와 체면을 중시한다. 오래 묻어 둔 죄책감을 일로 덮는다.",
+   "speech_style": "공문서 같은 존댓말. '~하도록 하세요'를 자주 쓴다.",
+   "sample_lines": [
+    "절차대로 처리하도록 하세요.",
+    "서 팀장, 감정은 보고서에 쓰지 않습니다.",
+    "그 부록은 침수 때 없어졌어요.",
+    "…착공식 전까지 답을 드리죠."
+   ],
+   "backstory": "9년 전 서하시 재난안전과 주무관이었다.",
+   "goal": "야간관리과를 탈 없이 운영하는 것.",
+   "first_appearance_ep": 4,
+   "secrets": [
+    "f095",
+    "f097",
+    "f106",
+    "f174",
+    "f229"
+   ],
+   "arc": "9년 전 서명과 류건을 시켜 넘긴 정보까지 털어놓고 증언대에 선다.",
+   "end_state": "과장직에서 물러나 검찰에 증언한다."
+  },
+  {
+   "id": "malsun",
+   "name": "오말순",
+   "aliases": [
+    "국숫집 할매",
+    "구봉국수 사장"
+   ],
+   "aliases_timed": [],
+   "how_called": [
+    {
+     "by": "doha",
+     "call": "할매",
+     "from_ep": 1,
+     "to_ep": null,
+     "context": "평소"
+    },
+    {
+     "by": "soyun",
+     "call": "사장님",
+     "from_ep": 7,
+     "to_ep": null,
+     "context": "평소"
+    },
+    {
+     "by": "ihyeon",
+     "call": "할머니",
+     "from_ep": 32,
+     "to_ep": null,
+     "context": "평소"
+    },
+    {
+     "by": "geon",
+     "call": "할머니",
+     "from_ep": 37,
+     "to_ep": null,
+     "context": "평소"
+    },
+    {
+     "by": "doyeong",
+     "call": "선생님",
+     "from_ep": 50,
+     "to_ep": null,
+     "context": "평소"
+    }
+   ],
+   "age": 68,
+   "age_note": "",
+   "gender": "여",
+   "is_minor": false,
+   "role": "도하의 집주인. 구봉국수 사장",
+   "appearance": "작은 체구에 앞치마. 손목에 색 바랜 붉은 실을 감고 있다.",
+   "personality": "입은 거칠어도 동네 사람을 다 먹여 살린다. 숨긴 것이 많다.",
+   "speech_style": "경상도 사투리 반말. 입버릇은 '밥은 묵고 다니나.'",
+   "sample_lines": [
+    "밥은 묵고 다니나, 이 문디야.",
+    "그 영감 말 반만 믿어라.",
+    "니가 알 때가 됐다.",
+    "등은 접는 기다. 이름 쓰고, 접고, 띄우고."
+   ],
+   "backstory": "구봉동에서 40년 넘게 국숫집을 했다. 도하 남매를 어릴 때부터 거둬 먹였다. 젊어서 매듭꾼으로 일했고, 제자 윤도영과 함께 변전소 지하의 문간을 예부터 봉해 둔 옛 문으로 알고 지켜 왔다.",
+   "goal": "도하가 다치지 않게 하는 것.",
+   "first_appearance_ep": 1,
+   "secrets": [
+    "f079",
+    "f080",
+    "f081",
+    "f082",
+    "f200",
+    "f198",
+    "f201"
+   ],
+   "arc": "9년 동안 감춘 그 밤의 일을 털어놓고 도하를 돕는다.",
+   "end_state": "돌아온 도영에게 국수를 말아 준다."
+  },
+  {
+   "id": "cheol",
+   "name": "남궁철",
+   "aliases": [
+    "남궁 영감",
+    "전당포 영감"
+   ],
+   "aliases_timed": [],
+   "how_called": [
+    {
+     "by": "doha",
+     "call": "영감님",
+     "from_ep": 6,
+     "to_ep": null,
+     "context": "평소"
+    },
+    {
+     "by": "malsun",
+     "call": "남궁 영감",
+     "from_ep": 9,
+     "to_ep": null,
+     "context": "평소"
+    }
+   ],
+   "age": 61,
+   "age_note": "",
+   "gender": "남",
+   "is_minor": false,
+   "role": "남궁전당포 주인. 잔영 깃든 물건 거래상",
+   "appearance": "돋보기를 이마에 걸친 깡마른 노인. 손톱에 늘 녹이 끼어 있다.",
+   "personality": "셈이 빠르고 의리는 값만큼만 지킨다. 그래도 단골은 잊지 않는다.",
+   "speech_style": "장사꾼 말투의 반존대. 입버릇은 '물건은 거짓말을 안 해.'",
+   "sample_lines": [
+    "물건은 거짓말을 안 해, 도하 총각.",
+    "요즘 백양이 웃돈을 얹어 줘.",
+    "네 누나도 여기 단골이었지.",
+    "이건 공짜로 주는 게 아니야. 외상이야."
+   ],
+   "backstory": "30년째 구봉시장 뒷골목에서 전당포를 한다.",
+   "goal": "장사를 이어 가는 것.",
+   "first_appearance_ep": 6,
+   "secrets": [],
+   "arc": "값을 셈하던 장사꾼이 마지막에는 셈 없이 증거를 내놓는다.",
+   "end_state": "구봉동에 남아 전당포를 계속한다."
+  },
+  {
+   "id": "jian",
+   "name": "백지안",
+   "aliases": [],
+   "aliases_timed": [
+    {
+     "alias": "백 실장",
+     "from_ep": 11,
+     "to_ep": 50
+    }
+   ],
+   "how_called": [
+    {
+     "by": "taesin",
+     "call": "지안아",
+     "from_ep": 11,
+     "to_ep": null,
+     "context": "평소"
+    },
+    {
+     "by": "doha",
+     "call": "백 실장님",
+     "from_ep": 11,
+     "to_ep": 50,
+     "context": "평소"
+    },
+    {
+     "by": "mugyeom",
+     "call": "지안아",
+     "from_ep": 34,
+     "to_ep": null,
+     "context": "평소"
+    },
+    {
+     "by": "geon",
+     "call": "실장님",
+     "from_ep": 45,
+     "to_ep": 50,
+     "context": "평소"
+    }
+   ],
+   "age": 29,
+   "age_note": "",
+   "gender": "여",
+   "is_minor": false,
+   "role": "백양개발 설계실장. 백태신의 딸",
+   "appearance": "연필을 귀에 꽂고 다니는 건축가. 작업화에 늘 흙이 묻어 있다.",
+   "personality": "성실하고 곧다. 자신이 그린 도면이 무엇에 쓰이는지 끝까지 확인하는 사람.",
+   "speech_style": "또박또박한 존댓말. 건축 용어를 섞는다.",
+   "sample_lines": [
+    "이 공원은 잊지 않으려고 짓는 거예요.",
+    "하중 계산은 제가 다시 해 보겠습니다.",
+    "회장님, 이건 진동 감쇠 장치가 아니잖아요.",
+    "무겸 오빠, 이번엔 내가 정할게."
+   ],
+   "backstory": "건축을 전공하고 아버지 회사의 설계실을 맡았다.",
+   "goal": "구봉동에 사람이 기억할 수 있는 공원을 짓는 것.",
+   "first_appearance_ep": 11,
+   "secrets": [
+    "f206"
+   ],
+   "arc": "아버지의 계획을 알고 자기 손으로 공명탑의 힘을 반으로 줄인다.",
+   "end_state": "백양개발을 떠나 기억공원 설계를 시에 넘긴다."
+  },
+  {
+   "id": "doyeong",
+   "name": "윤도영",
+   "aliases": [
+    "도하 누나"
+   ],
+   "aliases_timed": [
+    {
+     "alias": "이름지기",
+     "from_ep": 32,
+     "to_ep": 49
+    }
+   ],
+   "how_called": [
+    {
+     "by": "doha",
+     "call": "누나",
+     "from_ep": 30,
+     "to_ep": null,
+     "context": "평소"
+    },
+    {
+     "by": "ihyeon",
+     "call": "도영 누나",
+     "from_ep": 31,
+     "to_ep": null,
+     "context": "평소"
+    },
+    {
+     "by": "mugyeom",
+     "call": "윤도영 씨",
+     "from_ep": 43,
+     "to_ep": null,
+     "context": "평소"
+    }
+   ],
+   "age": 33,
+   "age_note": "실종 당시 만 24세. 밑마을에서 몸은 실종 당시 그대로 멈췄지만 9년의 시간은 하루하루 세며 겪었다",
+   "gender": "여",
+   "is_minor": false,
+   "role": "도하의 누나. 9년 전 정전 때 실종",
+   "appearance": "실종 당시의 노란 우비 차림(둘째 단추가 떨어져 나갔다). 짧게 자른 머리.",
+   "personality": "장난스럽고 겁이 없다. 동생 앞에서는 끝까지 괜찮은 척한다.",
+   "speech_style": "장난기 섞인 반말. 입버릇은 '괜찮아, 다 기억해.'",
+   "sample_lines": [
+    "괜찮아, 다 기억해.",
+    "막내, 키는 그대로네.",
+    "누가 잠갔는지는… 나중에.",
+    "이현이, 너 여전히 말 없구나.",
+    "위에서 이름을 불러 줘. 그럼 나갈게."
+   ],
+   "backstory": "동생 모르게 오말순에게 매듭을 배운 매듭꾼이었다. 스승과 함께 문간을 예부터 봉해 둔 옛 문으로 알고 지켰고, 정전 몇 달 전부터 땅 밑 울림이 커지자 열쇠틀로 문간 열쇠를 깎기 시작해 하나를 마치고 두 번째를 깎던 중이었다. 9년 전 정전의 밤 실종됐다.",
+   "goal": "밑마을을 벗어나 동생에게 돌아가되, 실종자들의 이름이 잊히지 않게 하는 것.",
+   "first_appearance_ep": 31,
+   "secrets": [
+    "f118",
+    "f127",
+    "f185",
+    "f186",
+    "f187",
+    "f188",
+    "f201",
+    "f202"
+   ],
+   "arc": "그 밤 산 사람들을 지키려고 스스로 문 안에 들어가 9년을 버틴 끝에, 실종자들의 이름을 동생에게 맡기고 문 밖에 나온다.",
+   "end_state": "구봉동으로 돌아와 오말순의 국수를 먹는다."
+  }
+ ],
+ "relationships": [
+  {
+   "id": "r_doha_ihyeon",
+   "a": "doha",
+   "b": "ihyeon",
+   "canon_romance": false,
+   "shipping_candidate": true,
+   "timeline": [
+    {
+     "from_ep": 0,
+     "status": "고교 단짝이었으나 정전 이후 9년 동안 연락이 끊긴 사이",
+     "public": true,
+     "known_by": [
+      {
+       "character": "doha",
+       "from_ep": 0
+      },
+      {
+       "character": "ihyeon",
+       "from_ep": 0
+      },
+      {
+       "character": "malsun",
+       "from_ep": 0
+      },
+      {
+       "character": "soyun",
+       "from_ep": 10
+      },
+      {
+       "character": "geon",
+       "from_ep": 12
+      },
+      {
+       "character": "sera",
+       "from_ep": 12
+      },
+      {
+       "character": "doyeong",
+       "from_ep": 44
+      },
+      {
+       "character": "mugyeom",
+       "from_ep": 44
+      }
+     ],
+     "note": "3화에 처음 함께 언급된다"
+    },
+    {
+     "from_ep": 12,
+     "status": "업무상 협력(냉랭함)",
+     "public": true,
+     "known_by": [
+      {
+       "character": "doha",
+       "from_ep": 12
+      },
+      {
+       "character": "ihyeon",
+       "from_ep": 12
+      },
+      {
+       "character": "soyun",
+       "from_ep": 12
+      },
+      {
+       "character": "geon",
+       "from_ep": 12
+      },
+      {
+       "character": "sera",
+       "from_ep": 12
+      }
+     ],
+     "note": "외부 협력 계약"
+    },
+    {
+     "from_ep": 19,
+     "status": "결렬",
+     "public": false,
+     "known_by": [
+      {
+       "character": "doha",
+       "from_ep": 19
+      },
+      {
+       "character": "ihyeon",
+       "from_ep": 19
+      },
+      {
+       "character": "soyun",
+       "from_ep": 19
+      }
+     ],
+     "note": "도하가 서이현을 때린다"
+    },
+    {
+     "from_ep": 25,
+     "status": "앙금 속 업무 공조",
+     "public": false,
+     "known_by": [
+      {
+       "character": "doha",
+       "from_ep": 25
+      },
+      {
+       "character": "ihyeon",
+       "from_ep": 25
+      }
+     ],
+     "note": "서이현이 유출자를 가리는 계획을 외부 협력자인 도하에게만 털어놓는다"
+    },
+    {
+     "from_ep": 31,
+     "status": "밑마을 동행 속 해빙",
+     "public": false,
+     "known_by": [
+      {
+       "character": "doha",
+       "from_ep": 31
+      },
+      {
+       "character": "ihyeon",
+       "from_ep": 31
+      },
+      {
+       "character": "doyeong",
+       "from_ep": 31
+      }
+     ],
+     "note": "실 하나로 서로를 묶고 내려간다"
+    },
+    {
+     "from_ep": 44,
+     "status": "9년 만의 진실과 화해",
+     "public": false,
+     "known_by": [
+      {
+       "character": "doha",
+       "from_ep": 44
+      },
+      {
+       "character": "ihyeon",
+       "from_ep": 44
+      },
+      {
+       "character": "doyeong",
+       "from_ep": 44
+      },
+      {
+       "character": "mugyeom",
+       "from_ep": 44
+      }
+     ],
+     "note": "서이현이 숨겨 온 이유를 털어놓는다"
+    },
+    {
+     "from_ep": 50,
+     "status": "다시 친구",
+     "public": true,
+     "known_by": [
+      {
+       "character": "doha",
+       "from_ep": 50
+      },
+      {
+       "character": "ihyeon",
+       "from_ep": 50
+      },
+      {
+       "character": "malsun",
+       "from_ep": 50
+      },
+      {
+       "character": "soyun",
+       "from_ep": 50
+      },
+      {
+       "character": "geon",
+       "from_ep": 50
+      }
+     ],
+     "note": "국숫집에서 술잔을 나눈다"
+    }
+   ]
+  },
+  {
+   "id": "r_ihyeon_mugyeom",
+   "a": "ihyeon",
+   "b": "mugyeom",
+   "canon_romance": false,
+   "shipping_candidate": true,
+   "timeline": [
+    {
+     "from_ep": 13,
+     "status": "연수원 동기에서 적대하는 라이벌",
+     "public": true,
+     "known_by": [
+      {
+       "character": "ihyeon",
+       "from_ep": 0
+      },
+      {
+       "character": "mugyeom",
+       "from_ep": 0
+      },
+      {
+       "character": "geon",
+       "from_ep": 0
+      },
+      {
+       "character": "doha",
+       "from_ep": 13
+      }
+     ],
+     "note": "13화 첫 충돌"
+    },
+    {
+     "from_ep": 20,
+     "status": "마지못한 공조",
+     "public": true,
+     "known_by": [
+      {
+       "character": "ihyeon",
+       "from_ep": 20
+      },
+      {
+       "character": "mugyeom",
+       "from_ep": 20
+      },
+      {
+       "character": "doha",
+       "from_ep": 20
+      },
+      {
+       "character": "geon",
+       "from_ep": 20
+      }
+     ],
+     "note": "서하대교 아래에서 등을 맞댄다"
+    },
+    {
+     "from_ep": 35,
+     "status": "9년 전 진실을 둘러싼 분노",
+     "public": false,
+     "known_by": [
+      {
+       "character": "ihyeon",
+       "from_ep": 35
+      },
+      {
+       "character": "mugyeom",
+       "from_ep": 35
+      },
+      {
+       "character": "doha",
+       "from_ep": 35
+      }
+     ],
+     "note": "문을 붙든 사람이 강무겸이었다"
+    },
+    {
+     "from_ep": 41,
+     "status": "불신 속 동맹",
+     "public": false,
+     "known_by": [
+      {
+       "character": "ihyeon",
+       "from_ep": 41
+      },
+      {
+       "character": "mugyeom",
+       "from_ep": 41
+      },
+      {
+       "character": "doha",
+       "from_ep": 41
+      },
+      {
+       "character": "jian",
+       "from_ep": 41
+      },
+      {
+       "character": "doyeong",
+       "from_ep": 43
+      },
+      {
+       "character": "soyun",
+       "from_ep": 46
+      },
+      {
+       "character": "geon",
+       "from_ep": 46
+      },
+      {
+       "character": "malsun",
+       "from_ep": 46
+      }
+     ],
+     "note": "강무겸이 백태신에게 등을 돌린다"
+    },
+    {
+     "from_ep": 49,
+     "status": "등을 맡기는 전우",
+     "public": true,
+     "known_by": [
+      {
+       "character": "doha",
+       "from_ep": 49
+      },
+      {
+       "character": "doyeong",
+       "from_ep": 49
+      },
+      {
+       "character": "ihyeon",
+       "from_ep": 49
+      },
+      {
+       "character": "mugyeom",
+       "from_ep": 49
+      },
+      {
+       "character": "taesin",
+       "from_ep": 49
+      },
+      {
+       "character": "soyun",
+       "from_ep": 49
+      },
+      {
+       "character": "geon",
+       "from_ep": 49
+      },
+      {
+       "character": "jian",
+       "from_ep": 49
+      }
+     ],
+     "note": "실과 삼킴으로 함께 문을 붙든다"
+    }
+   ]
+  },
+  {
+   "id": "r_ihyeon_geon",
+   "a": "ihyeon",
+   "b": "geon",
+   "canon_romance": false,
+   "shipping_candidate": true,
+   "timeline": [
+    {
+     "from_ep": 0,
+     "status": "서로 믿는 팀장과 대원",
+     "public": true,
+     "known_by": [
+      {
+       "character": "ihyeon",
+       "from_ep": 0
+      },
+      {
+       "character": "geon",
+       "from_ep": 0
+      },
+      {
+       "character": "soyun",
+       "from_ep": 0
+      },
+      {
+       "character": "sera",
+       "from_ep": 0
+      }
+     ],
+     "note": "3화에 처음 함께 나온다"
+    },
+    {
+     "from_ep": 26,
+     "status": "배신을 확인한 충격",
+     "public": false,
+     "known_by": [
+      {
+       "character": "ihyeon",
+       "from_ep": 26
+      },
+      {
+       "character": "geon",
+       "from_ep": 26
+      }
+     ],
+     "note": "류건의 유출이 드러난다"
+    },
+    {
+     "from_ep": 27,
+     "status": "비밀 공조",
+     "public": false,
+     "known_by": [
+      {
+       "character": "ihyeon",
+       "from_ep": 27
+      },
+      {
+       "character": "geon",
+       "from_ep": 27
+      },
+      {
+       "character": "doha",
+       "from_ep": 27
+      },
+      {
+       "character": "soyun",
+       "from_ep": 27
+      },
+      {
+       "character": "taesin",
+       "from_ep": 45
+      },
+      {
+       "character": "jian",
+       "from_ep": 45
+      },
+      {
+       "character": "mugyeom",
+       "from_ep": 46
+      },
+      {
+       "character": "malsun",
+       "from_ep": 46
+      }
+     ],
+     "note": "류건이 이중첩자가 된다"
+    },
+    {
+     "from_ep": 39,
+     "status": "다시 쌓이는 신뢰",
+     "public": false,
+     "known_by": [
+      {
+       "character": "geon",
+       "from_ep": 39
+      },
+      {
+       "character": "ihyeon",
+       "from_ep": 39
+      }
+     ],
+     "note": "류건이 미끼를 넘기지 않고 서이현에게 모든 것을 보고한다"
+    },
+    {
+     "from_ep": 50,
+     "status": "다시 신뢰",
+     "public": true,
+     "known_by": [
+      {
+       "character": "doha",
+       "from_ep": 50
+      },
+      {
+       "character": "doyeong",
+       "from_ep": 50
+      },
+      {
+       "character": "soyun",
+       "from_ep": 50
+      },
+      {
+       "character": "ihyeon",
+       "from_ep": 50
+      },
+      {
+       "character": "geon",
+       "from_ep": 50
+      },
+      {
+       "character": "mugyeom",
+       "from_ep": 50
+      },
+      {
+       "character": "malsun",
+       "from_ep": 50
+      },
+      {
+       "character": "sera",
+       "from_ep": 50
+      },
+      {
+       "character": "jian",
+       "from_ep": 50
+      },
+      {
+       "character": "cheol",
+       "from_ep": 50
+      }
+     ],
+     "note": "서이현이 류건을 2팀에 남긴다"
+    }
+   ]
+  },
+  {
+   "id": "r_doha_soyun",
+   "a": "doha",
+   "b": "soyun",
+   "canon_romance": true,
+   "shipping_candidate": false,
+   "timeline": [
+    {
+     "from_ep": 3,
+     "status": "현장에서 처음 만난 사이",
+     "public": true,
+     "known_by": [
+      {
+       "character": "doha",
+       "from_ep": 3
+      },
+      {
+       "character": "soyun",
+       "from_ep": 3
+      }
+     ],
+     "note": "시장 틈"
+    },
+    {
+     "from_ep": 21,
+     "status": "서로 호감",
+     "public": false,
+     "known_by": [
+      {
+       "character": "doha",
+       "from_ep": 21
+      },
+      {
+       "character": "soyun",
+       "from_ep": 21
+      }
+     ],
+     "note": "빈 노트를 함께 본다"
+    },
+    {
+     "from_ep": 38,
+     "status": "연인",
+     "public": false,
+     "known_by": [
+      {
+       "character": "doha",
+       "from_ep": 38
+      },
+      {
+       "character": "soyun",
+       "from_ep": 38
+      }
+     ],
+     "note": "강변에서 입을 맞춘다"
+    },
+    {
+     "from_ep": 47,
+     "status": "공개 연인",
+     "public": true,
+     "known_by": [
+      {
+       "character": "doha",
+       "from_ep": 47
+      },
+      {
+       "character": "soyun",
+       "from_ep": 47
+      },
+      {
+       "character": "malsun",
+       "from_ep": 47
+      },
+      {
+       "character": "ihyeon",
+       "from_ep": 47
+      }
+     ],
+     "note": "등불제에서 손을 잡는다"
+    },
+    {
+     "from_ep": 50,
+     "status": "기억을 새로 쌓는 연인",
+     "public": true,
+     "known_by": [
+      {
+       "character": "doha",
+       "from_ep": 50
+      },
+      {
+       "character": "soyun",
+       "from_ep": 50
+      }
+     ],
+     "note": "잃은 밤 대신 새 기억을 만들기로 한다"
+    }
+   ]
+  },
+  {
+   "id": "r_doha_doyeong",
+   "a": "doha",
+   "b": "doyeong",
+   "canon_romance": false,
+   "shipping_candidate": false,
+   "timeline": [
+    {
+     "from_ep": 0,
+     "status": "남매. 누나는 9년 전 정전 때 실종",
+     "public": true,
+     "known_by": [
+      {
+       "character": "doha",
+       "from_ep": 0
+      },
+      {
+       "character": "doyeong",
+       "from_ep": 0
+      },
+      {
+       "character": "malsun",
+       "from_ep": 0
+      }
+     ],
+     "note": "1화"
+    },
+    {
+     "from_ep": 30,
+     "status": "누나의 생존 확인",
+     "public": false,
+     "known_by": [
+      {
+       "character": "doha",
+       "from_ep": 30
+      },
+      {
+       "character": "soyun",
+       "from_ep": 30
+      },
+      {
+       "character": "ihyeon",
+       "from_ep": 30
+      }
+     ],
+     "note": "철조망 앞의 대답"
+    },
+    {
+     "from_ep": 31,
+     "status": "밑마을에서 재회",
+     "public": false,
+     "known_by": [
+      {
+       "character": "doha",
+       "from_ep": 31
+      },
+      {
+       "character": "doyeong",
+       "from_ep": 31
+      },
+      {
+       "character": "ihyeon",
+       "from_ep": 31
+      },
+      {
+       "character": "soyun",
+       "from_ep": 32
+      },
+      {
+       "character": "malsun",
+       "from_ep": 32
+      },
+      {
+       "character": "geon",
+       "from_ep": 37
+      },
+      {
+       "character": "mugyeom",
+       "from_ep": 43
+      },
+      {
+       "character": "jian",
+       "from_ep": 46
+      }
+     ],
+     "note": ""
+    },
+    {
+     "from_ep": 44,
+     "status": "그 밤의 진실을 나눈 남매",
+     "public": false,
+     "known_by": [
+      {
+       "character": "doha",
+       "from_ep": 44
+      },
+      {
+       "character": "doyeong",
+       "from_ep": 44
+      },
+      {
+       "character": "ihyeon",
+       "from_ep": 44
+      },
+      {
+       "character": "mugyeom",
+       "from_ep": 44
+      }
+     ],
+     "note": ""
+    },
+    {
+     "from_ep": 49,
+     "status": "귀환",
+     "public": true,
+     "known_by": [
+      {
+       "character": "doha",
+       "from_ep": 49
+      },
+      {
+       "character": "doyeong",
+       "from_ep": 49
+      },
+      {
+       "character": "ihyeon",
+       "from_ep": 49
+      },
+      {
+       "character": "mugyeom",
+       "from_ep": 49
+      },
+      {
+       "character": "taesin",
+       "from_ep": 49
+      },
+      {
+       "character": "soyun",
+       "from_ep": 49
+      },
+      {
+       "character": "geon",
+       "from_ep": 49
+      },
+      {
+       "character": "jian",
+       "from_ep": 49
+      }
+     ],
+     "note": "도영이 문 밖으로 나온다"
+    }
+   ]
+  },
+  {
+   "id": "r_mugyeom_taesin",
+   "a": "mugyeom",
+   "b": "taesin",
+   "canon_romance": false,
+   "shipping_candidate": false,
+   "timeline": [
+    {
+     "from_ep": 0,
+     "status": "회장과 깍듯한 충복(수거팀장)",
+     "public": true,
+     "known_by": [
+      {
+       "character": "mugyeom",
+       "from_ep": 0
+      },
+      {
+       "character": "taesin",
+       "from_ep": 0
+      },
+      {
+       "character": "jian",
+       "from_ep": 0
+      },
+      {
+       "character": "geon",
+       "from_ep": 0
+      },
+      {
+       "character": "ihyeon",
+       "from_ep": 0
+      },
+      {
+       "character": "doha",
+       "from_ep": 8
+      }
+     ],
+     "note": "5화에 언급되고 8화에 함께 나온다"
+    },
+    {
+     "from_ep": 13,
+     "status": "보육원 때부터 거둬 준 은인과 충복",
+     "public": true,
+     "known_by": [
+      {
+       "character": "mugyeom",
+       "from_ep": 0
+      },
+      {
+       "character": "taesin",
+       "from_ep": 0
+      },
+      {
+       "character": "jian",
+       "from_ep": 0
+      },
+      {
+       "character": "geon",
+       "from_ep": 0
+      },
+      {
+       "character": "doha",
+       "from_ep": 13
+      },
+      {
+       "character": "ihyeon",
+       "from_ep": 13
+      }
+     ],
+     "note": "류건이 재단 보육원 이야기를 귀띔한다"
+    },
+    {
+     "from_ep": 40,
+     "status": "은인의 거짓을 안 뒤의 균열",
+     "public": false,
+     "known_by": [
+      {
+       "character": "mugyeom",
+       "from_ep": 40
+      }
+     ],
+     "note": "잠긴 방"
+    },
+    {
+     "from_ep": 41,
+     "status": "몰래 등 돌림",
+     "public": false,
+     "known_by": [
+      {
+       "character": "mugyeom",
+       "from_ep": 41
+      },
+      {
+       "character": "doha",
+       "from_ep": 41
+      },
+      {
+       "character": "ihyeon",
+       "from_ep": 41
+      },
+      {
+       "character": "jian",
+       "from_ep": 41
+      },
+      {
+       "character": "doyeong",
+       "from_ep": 43
+      },
+      {
+       "character": "soyun",
+       "from_ep": 46
+      },
+      {
+       "character": "geon",
+       "from_ep": 46
+      },
+      {
+       "character": "malsun",
+       "from_ep": 46
+      }
+     ],
+     "note": ""
+    },
+    {
+     "from_ep": 48,
+     "status": "공개 결별",
+     "public": true,
+     "known_by": [
+      {
+       "character": "mugyeom",
+       "from_ep": 48
+      },
+      {
+       "character": "taesin",
+       "from_ep": 48
+      },
+      {
+       "character": "jian",
+       "from_ep": 48
+      },
+      {
+       "character": "doha",
+       "from_ep": 48
+      },
+      {
+       "character": "ihyeon",
+       "from_ep": 48
+      }
+     ],
+     "note": "공명탑 앞에서 거부한다"
+    }
+   ]
+  },
+  {
+   "id": "r_taesin_jian",
+   "a": "taesin",
+   "b": "jian",
+   "canon_romance": false,
+   "shipping_candidate": false,
+   "timeline": [
+    {
+     "from_ep": 0,
+     "status": "부녀",
+     "public": true,
+     "known_by": [
+      {
+       "character": "taesin",
+       "from_ep": 0
+      },
+      {
+       "character": "jian",
+       "from_ep": 0
+      },
+      {
+       "character": "mugyeom",
+       "from_ep": 0
+      }
+     ],
+     "note": "11화"
+    },
+    {
+     "from_ep": 41,
+     "status": "딸의 불신",
+     "public": false,
+     "known_by": [
+      {
+       "character": "jian",
+       "from_ep": 41
+      },
+      {
+       "character": "mugyeom",
+       "from_ep": 41
+      },
+      {
+       "character": "doha",
+       "from_ep": 41
+      },
+      {
+       "character": "ihyeon",
+       "from_ep": 41
+      },
+      {
+       "character": "doyeong",
+       "from_ep": 43
+      },
+      {
+       "character": "soyun",
+       "from_ep": 46
+      },
+      {
+       "character": "geon",
+       "from_ep": 46
+      },
+      {
+       "character": "malsun",
+       "from_ep": 46
+      }
+     ],
+     "note": "아버지의 계획을 듣는다"
+    },
+    {
+     "from_ep": 48,
+     "status": "정면 대립",
+     "public": true,
+     "known_by": [
+      {
+       "character": "jian",
+       "from_ep": 48
+      },
+      {
+       "character": "taesin",
+       "from_ep": 48
+      },
+      {
+       "character": "mugyeom",
+       "from_ep": 48
+      },
+      {
+       "character": "doha",
+       "from_ep": 48
+      },
+      {
+       "character": "ihyeon",
+       "from_ep": 48
+      }
+     ],
+     "note": "가짜 공명심"
+    }
+   ]
+  },
+  {
+   "id": "r_sera_taesin",
+   "a": "sera",
+   "b": "taesin",
+   "canon_romance": false,
+   "shipping_candidate": false,
+   "timeline": [
+    {
+     "from_ep": 42,
+     "status": "백태신의 압력에 굴복해 온 공모",
+     "public": false,
+     "known_by": [
+      {
+       "character": "sera",
+       "from_ep": 0
+      },
+      {
+       "character": "taesin",
+       "from_ep": 0
+      },
+      {
+       "character": "soyun",
+       "from_ep": 42
+      },
+      {
+       "character": "ihyeon",
+       "from_ep": 42
+      },
+      {
+       "character": "doha",
+       "from_ep": 46
+      },
+      {
+       "character": "geon",
+       "from_ep": 46
+      },
+      {
+       "character": "mugyeom",
+       "from_ep": 46
+      },
+      {
+       "character": "jian",
+       "from_ep": 46
+      },
+      {
+       "character": "malsun",
+       "from_ep": 46
+      }
+     ],
+     "note": "서명을 압박한 전화가 회장 비서실에서 왔다고 진세라가 털어놓는다"
+    },
+    {
+     "from_ep": 46,
+     "status": "증언을 결심한 결별",
+     "public": false,
+     "known_by": [
+      {
+       "character": "sera",
+       "from_ep": 46
+      },
+      {
+       "character": "ihyeon",
+       "from_ep": 46
+      },
+      {
+       "character": "doha",
+       "from_ep": 46
+      },
+      {
+       "character": "soyun",
+       "from_ep": 46
+      },
+      {
+       "character": "geon",
+       "from_ep": 46
+      },
+      {
+       "character": "mugyeom",
+       "from_ep": 46
+      },
+      {
+       "character": "jian",
+       "from_ep": 46
+      },
+      {
+       "character": "malsun",
+       "from_ep": 46
+      }
+     ],
+     "note": ""
+    },
+    {
+     "from_ep": 50,
+     "status": "법정에서 맞서는 관계",
+     "public": true,
+     "known_by": [
+      {
+       "character": "doha",
+       "from_ep": 50
+      },
+      {
+       "character": "doyeong",
+       "from_ep": 50
+      },
+      {
+       "character": "soyun",
+       "from_ep": 50
+      },
+      {
+       "character": "ihyeon",
+       "from_ep": 50
+      },
+      {
+       "character": "geon",
+       "from_ep": 50
+      },
+      {
+       "character": "mugyeom",
+       "from_ep": 50
+      },
+      {
+       "character": "malsun",
+       "from_ep": 50
+      },
+      {
+       "character": "sera",
+       "from_ep": 50
+      },
+      {
+       "character": "jian",
+       "from_ep": 50
+      },
+      {
+       "character": "cheol",
+       "from_ep": 50
+      },
+      {
+       "character": "taesin",
+       "from_ep": 50
+      }
+     ],
+     "note": ""
+    }
+   ]
+  },
+  {
+   "id": "r_sera_geon",
+   "a": "sera",
+   "b": "geon",
+   "canon_romance": false,
+   "shipping_candidate": false,
+   "timeline": [
+    {
+     "from_ep": 4,
+     "status": "과장과 2팀 대원",
+     "public": true,
+     "known_by": [
+      {
+       "character": "sera",
+       "from_ep": 0
+      },
+      {
+       "character": "geon",
+       "from_ep": 0
+      },
+      {
+       "character": "ihyeon",
+       "from_ep": 0
+      },
+      {
+       "character": "soyun",
+       "from_ep": 0
+      }
+     ],
+     "note": "4화 사무실"
+    },
+    {
+     "from_ep": 26,
+     "status": "류건을 정보 통로로 쓴 과장과 그 말을 믿은 대원",
+     "public": false,
+     "known_by": [
+      {
+       "character": "sera",
+       "from_ep": 0
+      },
+      {
+       "character": "geon",
+       "from_ep": 0
+      },
+      {
+       "character": "ihyeon",
+       "from_ep": 26
+      },
+      {
+       "character": "doha",
+       "from_ep": 27
+      },
+      {
+       "character": "soyun",
+       "from_ep": 27
+      },
+      {
+       "character": "mugyeom",
+       "from_ep": 46
+      },
+      {
+       "character": "jian",
+       "from_ep": 46
+      },
+      {
+       "character": "malsun",
+       "from_ep": 46
+      },
+      {
+       "character": "doyeong",
+       "from_ep": 50
+      },
+      {
+       "character": "cheol",
+       "from_ep": 50
+      }
+     ],
+     "note": "비공식 협조라는 지시"
+    }
+   ]
+  },
+  {
+   "id": "r_doha_malsun",
+   "a": "doha",
+   "b": "malsun",
+   "canon_romance": false,
+   "shipping_candidate": false,
+   "timeline": [
+    {
+     "from_ep": 0,
+     "status": "집주인과 세입자이자 사실상 보호자",
+     "public": true,
+     "known_by": [
+      {
+       "character": "doha",
+       "from_ep": 0
+      },
+      {
+       "character": "malsun",
+       "from_ep": 0
+      }
+     ],
+     "note": "1화"
+    },
+    {
+     "from_ep": 18,
+     "status": "숨겨 온 그 밤의 고백",
+     "public": false,
+     "known_by": [
+      {
+       "character": "doha",
+       "from_ep": 18
+      },
+      {
+       "character": "malsun",
+       "from_ep": 18
+      }
+     ],
+     "note": ""
+    }
+   ]
+  },
+  {
+   "id": "r_mugyeom_jian",
+   "a": "mugyeom",
+   "b": "jian",
+   "canon_romance": false,
+   "shipping_candidate": false,
+   "timeline": [
+    {
+     "from_ep": 34,
+     "status": "어릴 때부터 남매 같은 사이",
+     "public": true,
+     "known_by": [
+      {
+       "character": "mugyeom",
+       "from_ep": 0
+      },
+      {
+       "character": "jian",
+       "from_ep": 0
+      },
+      {
+       "character": "taesin",
+       "from_ep": 0
+      }
+     ],
+     "note": ""
+    },
+    {
+     "from_ep": 41,
+     "status": "아버지에게 맞서는 같은 편",
+     "public": false,
+     "known_by": [
+      {
+       "character": "mugyeom",
+       "from_ep": 41
+      },
+      {
+       "character": "jian",
+       "from_ep": 41
+      },
+      {
+       "character": "doha",
+       "from_ep": 41
+      },
+      {
+       "character": "ihyeon",
+       "from_ep": 41
+      },
+      {
+       "character": "doyeong",
+       "from_ep": 43
+      },
+      {
+       "character": "soyun",
+       "from_ep": 46
+      },
+      {
+       "character": "geon",
+       "from_ep": 46
+      },
+      {
+       "character": "malsun",
+       "from_ep": 46
+      }
+     ],
+     "note": ""
+    }
+   ]
+  },
+  {
+   "id": "r_doha_mugyeom",
+   "a": "doha",
+   "b": "mugyeom",
+   "canon_romance": false,
+   "shipping_candidate": true,
+   "timeline": [
+    {
+     "from_ep": 5,
+     "status": "틈에서 부딪치는 경쟁자",
+     "public": true,
+     "known_by": [
+      {
+       "character": "doha",
+       "from_ep": 5
+      },
+      {
+       "character": "mugyeom",
+       "from_ep": 5
+      }
+     ],
+     "note": ""
+    },
+    {
+     "from_ep": 41,
+     "status": "불편한 동맹",
+     "public": false,
+     "known_by": [
+      {
+       "character": "doha",
+       "from_ep": 41
+      },
+      {
+       "character": "mugyeom",
+       "from_ep": 41
+      },
+      {
+       "character": "ihyeon",
+       "from_ep": 41
+      },
+      {
+       "character": "jian",
+       "from_ep": 41
+      },
+      {
+       "character": "doyeong",
+       "from_ep": 43
+      },
+      {
+       "character": "soyun",
+       "from_ep": 46
+      },
+      {
+       "character": "geon",
+       "from_ep": 46
+      },
+      {
+       "character": "malsun",
+       "from_ep": 46
+      }
+     ],
+     "note": ""
+    },
+    {
+     "from_ep": 49,
+     "status": "서로 목숨을 맡긴 사이",
+     "public": true,
+     "known_by": [
+      {
+       "character": "doha",
+       "from_ep": 49
+      },
+      {
+       "character": "doyeong",
+       "from_ep": 49
+      },
+      {
+       "character": "ihyeon",
+       "from_ep": 49
+      },
+      {
+       "character": "mugyeom",
+       "from_ep": 49
+      },
+      {
+       "character": "taesin",
+       "from_ep": 49
+      },
+      {
+       "character": "soyun",
+       "from_ep": 49
+      },
+      {
+       "character": "geon",
+       "from_ep": 49
+      },
+      {
+       "character": "jian",
+       "from_ep": 49
+      }
+     ],
+     "note": ""
+    }
+   ]
+  },
+  {
+   "id": "r_soyun_sera",
+   "a": "soyun",
+   "b": "sera",
+   "canon_romance": false,
+   "shipping_candidate": false,
+   "timeline": [
+    {
+     "from_ep": 4,
+     "status": "상사와 부하",
+     "public": true,
+     "known_by": [
+      {
+       "character": "soyun",
+       "from_ep": 0
+      },
+      {
+       "character": "sera",
+       "from_ep": 0
+      }
+     ],
+     "note": ""
+    },
+    {
+     "from_ep": 23,
+     "status": "불신",
+     "public": false,
+     "known_by": [
+      {
+       "character": "soyun",
+       "from_ep": 23
+      },
+      {
+       "character": "sera",
+       "from_ep": 23
+      },
+      {
+       "character": "doha",
+       "from_ep": 23
+      },
+      {
+       "character": "ihyeon",
+       "from_ep": 23
+      }
+     ],
+     "note": "서명을 들이민다"
+    }
+   ]
+  },
+  {
+   "id": "r_geon_taesin",
+   "a": "geon",
+   "b": "taesin",
+   "canon_romance": false,
+   "shipping_candidate": false,
+   "timeline": [
+    {
+     "from_ep": 26,
+     "status": "후원자와 정보원",
+     "public": false,
+     "known_by": [
+      {
+       "character": "geon",
+       "from_ep": 0
+      },
+      {
+       "character": "taesin",
+       "from_ep": 0
+      },
+      {
+       "character": "sera",
+       "from_ep": 0
+      },
+      {
+       "character": "ihyeon",
+       "from_ep": 26
+      },
+      {
+       "character": "doha",
+       "from_ep": 27
+      },
+      {
+       "character": "soyun",
+       "from_ep": 27
+      }
+     ],
+     "note": ""
+    },
+    {
+     "from_ep": 45,
+     "status": "적대",
+     "public": true,
+     "known_by": [
+      {
+       "character": "geon",
+       "from_ep": 45
+      },
+      {
+       "character": "taesin",
+       "from_ep": 45
+      },
+      {
+       "character": "jian",
+       "from_ep": 45
+      }
+     ],
+     "note": ""
+    }
+   ]
+  }
+ ],
+ "twists": [
+  {
+   "id": "t1",
+   "fact_id": "f048",
+   "reveal_ep": 10,
+   "setup_eps": [
+    3,
+    7
+   ],
+   "summary": "9년 동안 아무 말 없던 서이현이 정전의 밤 변전소에 있었다."
+  },
+  {
+   "id": "t2",
+   "fact_id": "f071",
+   "reveal_ep": 16,
+   "setup_eps": [
+    9,
+    14,
+    15
+   ],
+   "summary": "정전은 화재가 아니라 변전소 지하 문간에서 문이 열려 일어났다."
+  },
+  {
+   "id": "t3",
+   "fact_id": "f095",
+   "reveal_ep": 22,
+   "setup_eps": [
+    15,
+    17
+   ],
+   "summary": "야간관리과 과장 진세라가 9년 전 화재 보고서에 서명한 당사자다."
+  },
+  {
+   "id": "t4",
+   "fact_id": "f106",
+   "reveal_ep": 26,
+   "setup_eps": [
+    13,
+    22,
+    23,
+    25
+   ],
+   "summary": "2팀 출동 정보가 새어 나간 뒤에는 류건에게 그 일을 '비공식 협조'라며 시킨 과장 진세라가 있었다."
+  },
+  {
+   "id": "t5",
+   "fact_id": "f118",
+   "reveal_ep": 30,
+   "setup_eps": [
+    7,
+    9
+   ],
+   "summary": "실종된 누나 윤도영이 살아 있다."
+  },
+  {
+   "id": "t6",
+   "fact_id": "f143",
+   "reveal_ep": 35,
+   "setup_eps": [
+    13,
+    17,
+    20,
+    34
+   ],
+   "summary": "강무겸이 9년 전 실험에서 문을 붙든 매듭꾼이다."
+  },
+  {
+   "id": "t7",
+   "fact_id": "f162",
+   "reveal_ep": 40,
+   "setup_eps": [
+    5,
+    6,
+    8,
+    22,
+    28,
+    34
+   ],
+   "summary": "백태신의 목적은 실종자 귀환도 아내 추모도 아니라, 밑마을에 쌓인 구봉의 기억을 끌어올려 물건에 깃들여 비싼 값에 파는 것이다."
+  },
+  {
+   "id": "t8",
+   "fact_id": "f181",
+   "reveal_ep": 44,
+   "setup_eps": [
+    2,
+    7,
+    18,
+    21,
+    32,
+    37
+   ],
+   "summary": "그 밤 누나를 안에 둔 채 문을 잠근 사람은 도하 자신이다. [그 밤의 시각표(9년 전 11월 9일 새벽)] 2시 30분: 백태신의 지시로 백양전기 기술자 둘이 문간의 쇠 열쇠 장치에 잔영 깃든 물건을 녹인 심을 끼우고, 방독면을 쓴 강무겸(만 25세)이 '구봉 지반 안정 시험'이라는 설명만 듣고 문 앞에 선다. 백태신은 현장에 없다. 2시 50분: 쇠 열쇠를 반 바퀴 돌리자 문틀이 울리고, 강무겸이 삼킴으로 쏟아지는 잔영을 받아 내며 문을 붙든다. 당직 전기기사 한경수가 지하의 울림을 듣고 내려간다. 3시: 집에 있던 도영이 문이 열리는 기척을 느끼고 오말순에게 전화한 뒤, 정전 전에 깎아 둔 문간 열쇠 하나를 챙겨 나간다(두 번째 열쇠는 열쇠틀 서랍에 반쯤 깎인 채 남는다). 3시 5분: 문소리에 깬 도하는 누나가 변전소 쪽으로 뛰어가는 것을 창으로 보고, 변전소 뒷길 하숙집에 사는 서이현에게 '누나 좀 찾아 줘'라고 전화한 뒤 뒤따르지만, 잠긴 정문 쪽 철조망을 따라 돌다 늦는다. 3시 10분: 연수원 견학 때 문간을 본 적 있는 서이현이 뒷길 계단으로 먼저 문간 입구에 닿아, 어둠 속에서 장치 곁에서 문을 붙든 방독면 남자의 등을 본다. 3시 14분: 철조망을 넘어 온 도영이 문 앞까지 다가가 문을 붙든 남자의 팔에 번진 검은 멍 무늬를 본다. 3시 15분: 지하 울림에 변전소 통제실 무전이 '지하에 불났나?'라고 묻고, 문 앞의 한경수가 '불이 아니야, 문이야'라고 답한다. 3시 17분: 문이 튕겨 열리며 강무겸이 의식을 잃고, 변전소가 멈춰 구봉동이 정전된다. 문 바로 앞에 있던 한경수가 휩쓸려 들어가고, 문은 깨어 있는 사람보다 잠든 사람을 먼저 끌어당겨 집에서 자던 구봉동 주민들을 삼키기 시작한다(이 밤 문에 삼켜진 사람은 한경수를 포함해 40명). 기술자들은 의식을 잃은 강무겸을 끌고 기계실 쪽 통로로 달아나 백양 승합차에 싣는다. 3시 19분: 도하가 도착한다. 문이 계속 잠든 사람들을 끌어당기자 도영은 안쪽에서 매듭으로 문을 당겨 닫겠다며 열쇠를 도하에게 건네고 '잠가, 얼른'이라 말한 뒤 제 발로 문 안에 들어가고, 서이현이 '도영 누나, 돌아와!'라고 외친다. 3시 21분: 도영이 안쪽에서 당겨 닫은 문을 도하가 돌 문틀의 옛 자물통 하나에 열쇠를 넣어 잠근다. 문은 반만 잠기고(뒤에 틈이 새어 나오는 자리), 도하는 잠금의 값으로 그날 밤의 기억을 잃고 쓰러진다. 쓰러지기 전 도하가 쥔 열쇠를 점퍼 주머니에 밀어 넣어, 서이현은 열쇠의 행방을 보지 못한다. 잃은 기억은 잔영이 되어 구봉 땅에 남는다. 3시 35분: 서이현이 도하를 업고 계단을 오르다, 도영의 전화를 받고 달려와 계단을 내려오던 오말순과 계단참에서 마주친다. 서이현은 문간에 잔영이 가득하다며 오말순을 막아서고, 도하가 잔영에 닿아 쓰러졌다고 둘러대며 그를 맡긴다. 도영을 찾는 오말순에게는 못 찾았다고만 한다. 오말순은 문간에 들어가지 않은 채 도하를 업고 나온다. 새벽: 집에서 도하의 젖은 점퍼를 벗기던 오말순이 주머니에서 도영의 문간 열쇠를 찾아내고, 짐작은 하지만 아무에게도 묻거나 말하지 않고 간직한다. 이튿날: 철조망 앞에서 도영 우비의 단추를 주운 사람이 뒤에 그것을 남궁전당포에 판다."
+  },
+  {
+   "id": "t9",
+   "fact_id": "f206",
+   "reveal_ep": 48,
+   "setup_eps": [
+    34,
+    41,
+    42,
+    45,
+    46
+   ],
+   "summary": "백지안이 공명탑의 공명심을 문이 반쯤만 열리는 가짜로 바꿔 끼워 두었다."
+  }
+ ],
+ "conventions": {
+  "known_by": "from_ep는 인물이 그 사실을 알게 되는 화다. 0은 이야기 시작 전부터 앎. 사건을 직접 한 인물과 그 장면에 있던 인물은 그 사건이 일어난 화부터 안다.",
+  "knowledge_events": "known_by(from_ep>0)와 하나씩 대응한다. 그 화에 등장하지 않거나 본문에 그리지 않는 곳에서 알게 되면 offstage: true를 붙이며, 본문은 그 장면을 서술하지 않는다.",
+  "relationship_timeline": "from_ep는 독자가 그 관계 상태를 처음 알 수 있게 되는 화다. 0은 이야기 시작 전부터의 배경 상태로, 두 인물이 처음 함께 언급되는 화까지 공개되는 내용만 담는다. known_by는 그 상태를 아는 인물과 아는 시점이다.",
+  "pov_must_hide": "시점 인물이 알고 있지만 아직 독자에게 공개되지 않은 사실 목록. 그 화 본문(시점 인물의 내면 포함)에서 서술하거나 암시하지 않는다.",
+  "aliases": "aliases는 첫 등장부터 끝까지 그 인물을 가리키는 별칭, aliases_timed는 from_ep~to_ep(없으면 끝까지) 동안만 그 인물을 가리키는 별칭이다.",
+  "how_called": "by 인물이 그 인물을 부르는 호칭. from_ep~to_ep(없으면 끝까지) 동안 쓰며, context는 공석·사석 같은 조건이다.",
+  "world_reveal": "world의 places·institutions·magic·festivals 항목은 first_reveal_ep(본문에 처음 나오는 화)와 desc(그 화까지 공개되는 내용만)를 가진다. 그 뒤 화에 공개되는 내용은 desc에 쓰지 않고 later_fact_ids의 사실(각 사실의 reveal_ep)로만 참조한다. summary는 summary_first_reveal_ep 화까지의 내용만 담는다. 해당 개념이 없는 장르(예: 마법 없음)는 빈 배열로 둔다.",
+  "interlude_pov": "막간이 있는 화는 interlude_pov(막간 시점 인물), interlude_scope(막간 범위), interlude_pov_must_hide(막간 시점 인물이 그 화에 알고 있지만 아직 독자에게 공개되지 않은 사실)를 둔다. interlude_pov_must_hide의 규칙은 pov_must_hide와 같다.",
+  "interlude_conclusion": "막간에서 서술자가 시점 인물의 결론을 단정형으로 서술하고 그 인물이 그 결론에 따라 움직이면, 그 화부터 그 인물이 안다고 본다. 뒤에 그 인물이 대사로 짐작이라고 낮춰 말해도 from_ep를 늦추지 않는다. 서술 없이 의심만 드러나는 경우는 앎으로 보지 않는다.",
+  "known_by_note": "known_by 항목의 note는 판단 근거를 밝혀 두거나, 그 인물이 사실의 일부만 알 때 아는 범위를 적는다.",
+  "atomic_facts": "사실 하나에는 내용 하나만 담는다. 인물마다 아는 범위가 달라질 수 있는 내용(예: 살아 있다는 것과 구조 경위)은 처음부터 다른 사실로 나눈다. 한 사실이 다른 사실의 핵심을 포함하면, 포함하는 사실을 아는 인물은 같은 화나 그보다 이르게 포함되는 사실도 안다.",
+  "inferable": "inferable_from_ep는 독자가 명시 공개(reveal_ep) 전에 그 사실을 확신하거나 강하게 의심할 수 있게 되는 가장 이른 화다. inferable_confidence는 strong(독자 대부분이 확신) 또는 moderate(눈치 빠른 독자가 의심), inferable_basis는 단서가 나온 화와 내용이다. 추론 가능하지 않은 사실에는 필드를 넣지 않는다."
+ }
+}

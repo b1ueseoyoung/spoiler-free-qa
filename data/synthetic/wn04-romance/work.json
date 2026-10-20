@@ -1,0 +1,35 @@
+{
+  "id": "wn04-romance",
+  "order": 104,
+  "title": "결이 남은 자리",
+  "author": "AI 생성",
+  "label": "AI가 생성한 현대 로맨스 웹소설 「결이 남은 자리」",
+  "published": "2026-10 생성(합성 데이터)",
+  "chapters": 50,
+  "unit": "화",
+  "blurb": "가구 복원가 고재인이 아버지가 숨진 폐업 호텔의 복원을 맡으며 의뢰인 차도현과 가까워지는 현대 로맨스.",
+  "examples": [
+    {
+      "question": "재인이 운영하는 공방 이름이 뭐야?",
+      "chapter": 1
+    },
+    {
+      "question": "도현이 결공방에 맡긴 일은 뭐야?",
+      "chapter": 2
+    },
+    {
+      "question": "하람은 엄마가 어디에서 일한다고 알고 있어?",
+      "chapter": 4
+    }
+  ],
+  "default_upto": 3,
+  "evaluated": false,
+  "synthetic": true,
+  "genre": "현대 로맨스",
+  "generator": "claude-opus-5-5 (Claude Code 워크플로)",
+  "source": {
+    "kind": "synthetic",
+    "created": "2026-10-20",
+    "license": "AI 생성 합성 데이터. 실존 작품·인물과 무관"
+  }
+}
