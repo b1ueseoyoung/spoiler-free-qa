@@ -1,0 +1,4597 @@
+{
+ "work": "wn01-rofan",
+ "model": "claude-opus-5-5",
+ "settings": [
+  {
+   "type": "adaptive"
+  },
+  "medium"
+ ],
+ "upto": 14,
+ "done": 14,
+ "stopped": null,
+ "chapters": [
+  {
+   "chapter": 1,
+   "tries": [
+    {
+     "attempt": 0,
+     "fresh": true,
+     "error": null,
+     "cost": 0.13385,
+     "input": 5638,
+     "cache_read": 0,
+     "cache_write": 4236,
+     "output": 4506,
+     "latency_s": 37.887,
+     "raw": null
+    }
+   ],
+   "facts": 17,
+   "rejected": 0,
+   "learned": 0,
+   "new_characters": 6,
+   "notes": [],
+   "output": {
+    "characters": [
+     {
+      "id": "cecilia_ondre",
+      "name": "세실리아 온드레",
+      "appeared": true,
+      "aliases": [
+       "세실",
+       "온드레 필경사",
+       "아가씨"
+      ]
+     },
+     {
+      "id": "mari_fennel",
+      "name": "마리 페넬",
+      "appeared": true,
+      "aliases": [
+       "마리"
+      ]
+     },
+     {
+      "id": "raphael_winters",
+      "name": "라파엘 윈터스",
+      "appeared": true,
+      "aliases": [
+       "윈터스 수석님",
+       "수석님"
+      ]
+     },
+     {
+      "id": "leon_ondre",
+      "name": "레온 온드레",
+      "appeared": false,
+      "aliases": [
+       "온드레 남작",
+       "아버지"
+      ]
+     },
+     {
+      "id": "landlady",
+      "name": "하숙집 안주인",
+      "appeared": true,
+      "aliases": [
+       "안주인"
+      ]
+     },
+     {
+      "id": "duke_rosven",
+      "name": "로스벤 공작",
+      "appeared": false,
+      "aliases": []
+     }
+    ],
+    "aliases": [],
+    "merges": [],
+    "facts": [
+     {
+      "statement": "서약사는 은가루에 자기 피 한 방울을 섞은 은잉크로 서약을 쓰고 서약 인장을 찍어 봉인하며, 그렇게 봉인된 약속은 사람의 몸과 영혼을 묶는다.",
+      "category": "world",
+      "quote": "서약사는 은가루에 자기 피 한 방울을 섞어 간 은잉크로 서약을 쓰고, 그 위에 서약 인장을 찍어 봉인한다. 그렇게 봉인된 약속은 사람의 몸과 영혼을 묶었다.",
+      "common": true,
+      "knowers": []
+     },
+     {
+      "statement": "서약을 어기면 살갗에 서약흔이 떠오르고 그 자리가 불에 덴 것처럼 타들어 간다.",
+      "category": "world",
+      "quote": "어기는 순간 살갗에 서약흔이 떠오르고, 그 자리가 불에 덴 것처럼 타들어 갔다.",
+      "common": true,
+      "knowers": []
+     },
+     {
+      "statement": "할레스 왕국에서는 영지 승계, 거래, 충성 등 중요한 약속이 전부 왕립 서약청을 거쳐야 한다.",
+      "category": "world",
+      "quote": "할레스 왕국은 그 서약으로 굴러가는 나라였다. 귀족의 영지 승계도, 상인의 거래도, 기사의 충성도. 중요한 약속은 전부 왕립 서약청을 거쳐야 했다.",
+      "common": true,
+      "knowers": []
+     },
+     {
+      "statement": "필경사는 피를 섞지 않은 은잉크로 서약의 효력 없는 사본만 만든다.",
+      "category": "world",
+      "quote": "필경사는 그 서약을 베끼는 사람이었다. 피를 섞지 않은 은잉크로, 효력 없는 사본만.",
+      "common": true,
+      "knowers": []
+     },
+     {
+      "statement": "수도 칼리스톤은 은빛 강을 사이에 두고 남북으로 갈라져 있고, 북쪽 언덕의 왕립 서약청은 '은종탑'이라 불린다.",
+      "category": "world",
+      "quote": "사람들은 왕립 서약청을 그냥 '은종탑'이라고 불렀다.",
+      "common": true,
+      "knowers": []
+     },
+     {
+      "statement": "세실리아 온드레는 왕립 서약청 3층 필사실의 하급 필경사로 스물다섯 살이며 올해로 3년째 일하고 있다.",
+      "category": "identity",
+      "quote": "하급 필경사 세실리아의 일은 그 효력 없는 사본을 하루에 열 장 넘게 만들어 내는 것이었다. 스물다섯 살, 올해로 3년째였다.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "cecilia_ondre",
+        "since": 0
+       },
+       {
+        "character": "mari_fennel",
+        "since": 0
+       },
+       {
+        "character": "raphael_winters",
+        "since": 0
+       }
+      ]
+     },
+     {
+      "statement": "마리 페넬은 남부 항구 도시 미렐 출신의 스물여섯 살 평민 필경사로, 세실리아와 3년째 같은 책상을 쓰는 친구다.",
+      "category": "identity",
+      "quote": "마리는 남부 항구 도시 미렐에서 올라온 평민 필경사였다. 세실리아보다 한 살 많은 스물여섯.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "mari_fennel",
+        "since": 0
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 0
+       }
+      ]
+     },
+     {
+      "statement": "라파엘 윈터스는 서약청 수석 서약사이자 필경사들의 직속 상관인 서른한 살 남자다.",
+      "category": "identity",
+      "quote": "라파엘 윈터스. 서약청 수석 서약사이자 필경사들의 직속 상관.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "raphael_winters",
+        "since": 0
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 0
+       },
+       {
+        "character": "mari_fennel",
+        "since": 0
+       }
+      ]
+     },
+     {
+      "statement": "세실리아는 남들이 지나치는 획 끝의 번짐이나 작은 얼룩을 유난히 잘 알아본다.",
+      "category": "ability",
+      "quote": "남들은 그냥 넘기는 획 끝의 번짐이나 글자 사이의 티끌 같은 얼룩이, 그녀 눈에는 유난히 잘 걸렸다.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "cecilia_ondre",
+        "since": 0
+       }
+      ]
+     },
+     {
+      "statement": "세실리아의 아버지 레온 온드레 남작은 2년 전 채무 서약에 이의를 제기하러 서약청에 간 뒤 행방불명되었다.",
+      "category": "event",
+      "quote": "그리고 2년 전 그날, 아버지는 그 채무 서약에 이의를 제기하겠다며 서류철을 품에 안고 서약청으로 갔다.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "cecilia_ondre",
+        "since": 0
+       },
+       {
+        "character": "mari_fennel",
+        "since": 0
+       }
+      ]
+     },
+     {
+      "statement": "온드레 남작가는 레온 온드레의 채무 서약을 갚지 못해 영지와 저택을 채권자에게 넘기고 무너졌다.",
+      "category": "event",
+      "quote": "아버지가 맺은 채무 서약을 기한 안에 갚지 못해 영지도 저택도 채권자에게 넘어갔다.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "cecilia_ondre",
+        "since": 0
+       }
+      ]
+     },
+     {
+      "statement": "세실리아는 남은 빚을 필경사 월급을 쪼개 갚고 있으며, 이대로면 십일 년이 걸린다.",
+      "category": "event",
+      "quote": "남은 빚은 세실리아가 필경사 월급을 쪼개 조금씩 갚아 나가는 중이었다.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "cecilia_ondre",
+        "since": 0
+       },
+       {
+        "character": "landlady",
+        "since": 0
+       }
+      ]
+     },
+     {
+      "statement": "세실리아의 어머니는 세실리아를 낳고 얼마 안 되어 병으로 죽었고, 세실리아는 아버지 혼자 키웠다.",
+      "category": "identity",
+      "quote": "어머니는 그녀를 낳고 얼마 안 되어 병으로 죽었다고 들었다.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "cecilia_ondre",
+        "since": 0
+       }
+      ]
+     },
+     {
+      "statement": "세실리아는 아버지를 찾을 때까지 은종탑을 떠나지 않겠다고 마음먹고 있다.",
+      "category": "motive",
+      "quote": "\"아버지 찾을 때까지는 여기 있을 거야.\"",
+      "common": false,
+      "knowers": [
+       {
+        "character": "cecilia_ondre",
+        "since": 0
+       },
+       {
+        "character": "mari_fennel",
+        "since": 0
+       }
+      ]
+     },
+     {
+      "statement": "세실리아는 은빛 강 남쪽 염색 공방 골목 끝 하숙집의 꼭대기 다락방에 산다.",
+      "category": "location",
+      "quote": "하숙집은 은빛 강 남쪽, 염색 공방들이 모인 골목 끝에 있었다. 세실리아의 방은 그 집 꼭대기 다락방이었다.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "cecilia_ondre",
+        "since": 0
+       },
+       {
+        "character": "landlady",
+        "since": 0
+       }
+      ]
+     },
+     {
+      "statement": "세실리아와 마리가 북부 로스벤 공작가 영지 갱신 서약의 원본 대조 및 사본 작성 담당으로 배정되었다.",
+      "category": "event",
+      "quote": "'북부 로스벤 공작가 영지 갱신 서약. 기존 원본 대조 및 사본 작성. 담당 온드레, 페넬.'",
+      "common": false,
+      "knowers": [
+       {
+        "character": "cecilia_ondre",
+        "since": 1
+       },
+       {
+        "character": "raphael_winters",
+        "since": 1
+       }
+      ]
+     },
+     {
+      "statement": "로스벤 공작이 다음 날 오전 서약청에 직접 서명하러 온다.",
+      "category": "event",
+      "quote": "'내일 오전, 로스벤 공작이 직접 서명하러 옴. 복장 단정히. 번짐 금지.'",
+      "common": false,
+      "knowers": [
+       {
+        "character": "cecilia_ondre",
+        "since": 1
+       },
+       {
+        "character": "raphael_winters",
+        "since": 1
+       }
+      ]
+     }
+    ],
+    "learned": [],
+    "scene": {
+     "pov": "cecilia_ondre",
+     "location": "왕립 서약청(은종탑) 3층 필사실과 하숙집 다락방",
+     "present": [
+      "cecilia_ondre",
+      "mari_fennel",
+      "raphael_winters",
+      "landlady"
+     ]
+    }
+   }
+  },
+  {
+   "chapter": 2,
+   "tries": [
+    {
+     "attempt": 0,
+     "fresh": true,
+     "error": null,
+     "cost": 0.11932,
+     "input": 5054,
+     "cache_read": 4236,
+     "cache_write": 1731,
+     "output": 4480,
+     "latency_s": 37.618,
+     "raw": null
+    }
+   ],
+   "facts": 13,
+   "rejected": 0,
+   "learned": 5,
+   "new_characters": 5,
+   "notes": [],
+   "output": {
+    "characters": [
+     {
+      "id": "rowan_crow",
+      "name": "로완 크로우",
+      "appeared": true,
+      "aliases": [
+       "로완",
+       "기사단장"
+      ]
+     },
+     {
+      "id": "rosetta_belmore",
+      "name": "로제타 벨모어",
+      "appeared": false,
+      "aliases": [
+       "로제타 벨모어 영애"
+      ]
+     },
+     {
+      "id": "oath_director",
+      "name": "서약청장",
+      "appeared": false,
+      "aliases": []
+     },
+     {
+      "id": "king_hales",
+      "name": "국왕",
+      "appeared": false,
+      "aliases": []
+     },
+     {
+      "id": "window_knocker",
+      "name": "창을 두드린 사람",
+      "appeared": true,
+      "aliases": []
+     }
+    ],
+    "aliases": [
+     {
+      "character": "duke_rosven",
+      "alias": "카시엘 로스벤"
+     },
+     {
+      "character": "duke_rosven",
+      "alias": "겨울 공작"
+     },
+     {
+      "character": "duke_rosven",
+      "alias": "공작 각하"
+     }
+    ],
+    "merges": [],
+    "facts": [
+     {
+      "statement": "로스벤 공작 카시엘 로스벤은 웃는 걸 본 사람이 없을 만큼 냉정해 '겨울 공작'이라는 별명으로 불린다.",
+      "category": "identity",
+      "quote": "사람이 하도 냉정해서 붙은 별명이 겨울 공작이라나.",
+      "common": true,
+      "knowers": []
+     },
+     {
+      "statement": "카시엘 로스벤은 북부 로스벤 공작가 당주로 스물여덟 살이다.",
+      "category": "identity",
+      "quote": "북부 로스벤 공작가 당주. 스물여덟 살인데 웃는 걸 본 사람이 하나도 없대.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "duke_rosven",
+        "since": 0
+       },
+       {
+        "character": "rowan_crow",
+        "since": 0
+       },
+       {
+        "character": "mari_fennel",
+        "since": 2
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 2
+       }
+      ]
+     },
+     {
+      "statement": "로완 크로우는 로스벤 공작가의 서른 살 기사단장으로, 카시엘 로스벤과 같은 유모 손에서 자란 젖형제다.",
+      "category": "relationship",
+      "quote": "로완 크로우. 서른 살. 공작이랑 젖형제래. 같은 유모 손에서 같이 컸다는 거야.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "rowan_crow",
+        "since": 0
+       },
+       {
+        "character": "duke_rosven",
+        "since": 0
+       },
+       {
+        "character": "mari_fennel",
+        "since": 2
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 2
+       }
+      ]
+     },
+     {
+      "statement": "국왕이 카시엘 로스벤에게 로제타 벨모어와 혼인하라는 왕명을 내렸다.",
+      "category": "event",
+      "quote": "국왕께서 그 공작한테 혼인하라는 왕명을 내리셨대. 상대가 누군지 알아? 서약청장의 피후견인. 로제타 벨모어 영애.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "duke_rosven",
+        "since": 0
+       },
+       {
+        "character": "mari_fennel",
+        "since": 2
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 2
+       }
+      ]
+     },
+     {
+      "statement": "로제타 벨모어는 서약청장의 피후견인이다.",
+      "category": "relationship",
+      "quote": "서약청장의 피후견인. 로제타 벨모어 영애.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "mari_fennel",
+        "since": 2
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 2
+       }
+      ]
+     },
+     {
+      "statement": "서약청에서는 귀한 손님이 직접 서명하러 오는 서약을 3층 필사실이 아니라 2층 접견실에서 다룬다.",
+      "category": "world",
+      "quote": "귀한 손님이 직접 서명하러 오는 날이면 늘 그랬다.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "cecilia_ondre",
+        "since": 0
+       },
+       {
+        "character": "mari_fennel",
+        "since": 0
+       },
+       {
+        "character": "raphael_winters",
+        "since": 0
+       }
+      ]
+     },
+     {
+      "statement": "카시엘 로스벤은 실내에서도 왼손에만 검은 가죽 장갑을 끼고 있다.",
+      "category": "identity",
+      "quote": "오른손은 맨손이었고, 왼손에만 검은 가죽 장갑을 끼고 있었다.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "duke_rosven",
+        "since": 0
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 2
+       },
+       {
+        "character": "mari_fennel",
+        "since": 2
+       },
+       {
+        "character": "raphael_winters",
+        "since": 2
+       }
+      ]
+     },
+     {
+      "statement": "세실리아는 로스벤 공작가 기존 영지 서약 원본 제3조 둘째 줄과 셋째 줄 사이에서 희미한 은빛 줄을 보았지만 마리는 아무것도 보지 못했다.",
+      "category": "event",
+      "quote": "줄이었다. 아주 희미한 줄. 머리카락보다 가는 은빛 선 하나가 글줄과 나란히, 그러나 어느 글줄에도 속하지 않은 채 행간을 가로지르고 있었다.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "cecilia_ondre",
+        "since": 2
+       },
+       {
+        "character": "mari_fennel",
+        "since": 2
+       },
+       {
+        "character": "raphael_winters",
+        "since": 2
+       },
+       {
+        "character": "duke_rosven",
+        "since": 2
+       }
+      ]
+     },
+     {
+      "statement": "라파엘 윈터스는 세실리아가 말한 줄을 잉크 얼룩이라고 단정하며 대조는 본문만 한다고 말을 막았다.",
+      "category": "event",
+      "quote": "\"오래된 원본에는 흔한 일입니다. 대조는 본문만 합니다. 규정상 그렇습니다. 계속하십시오.\"",
+      "common": false,
+      "knowers": [
+       {
+        "character": "raphael_winters",
+        "since": 2
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 2
+       },
+       {
+        "character": "mari_fennel",
+        "since": 2
+       },
+       {
+        "character": "duke_rosven",
+        "since": 2
+       }
+      ]
+     },
+     {
+      "statement": "로스벤 공작가의 갱신 서약이 라파엘 윈터스의 서약 인장으로 봉인되었다.",
+      "category": "event",
+      "quote": "\"봉인 완료되었습니다, 공작 각하.\"",
+      "common": false,
+      "knowers": [
+       {
+        "character": "raphael_winters",
+        "since": 2
+       },
+       {
+        "character": "duke_rosven",
+        "since": 2
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 2
+       },
+       {
+        "character": "mari_fennel",
+        "since": 2
+       }
+      ]
+     },
+     {
+      "statement": "은종탑 꼭대기의 은빛 종은 서약청에서 서약이 봉인될 때마다 한 번씩 울린다.",
+      "category": "world",
+      "quote": "은종탑 꼭대기의 은빛 종은 서약청에서 서약이 봉인될 때마다 한 번씩 울렸다.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "cecilia_ondre",
+        "since": 0
+       },
+       {
+        "character": "mari_fennel",
+        "since": 0
+       },
+       {
+        "character": "raphael_winters",
+        "since": 0
+       },
+       {
+        "character": "duke_rosven",
+        "since": 2
+       }
+      ]
+     },
+     {
+      "statement": "로완은 공작이 그 필경사를 마음에 두고 뒤돌아보았다고 놀렸고 공작은 부정하지 않았으며, 세실리아가 이를 엿들었다.",
+      "category": "event",
+      "quote": "\"그 필경사가 마음에 걸리시는 거 다 압니다. 문 열고 나오시면서 뒤를 돌아보셨잖습니까.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "rowan_crow",
+        "since": 2
+       },
+       {
+        "character": "duke_rosven",
+        "since": 2
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 2
+       }
+      ]
+     },
+     {
+      "statement": "그날 밤 누군가 세실리아의 다락방 창을 두드렸다.",
+      "category": "event",
+      "quote": "바깥 계단참으로 난 작은 창을, 누군가 두드리고 있었다.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "cecilia_ondre",
+        "since": 2
+       },
+       {
+        "character": "window_knocker",
+        "since": 2
+       }
+      ]
+     }
+    ],
+    "learned": [
+     {
+      "fact": "c1-16",
+      "character": "mari_fennel",
+      "since": 2,
+      "quote": "그 옆에서 세실리아는 기존 원본을, 마리는 사본을 맡아 한 조항씩 맞춰 나갔다."
+     },
+     {
+      "fact": "c1-17",
+      "character": "mari_fennel",
+      "since": 2,
+      "quote": "\"오늘 오는 사람. 그 '겨울 공작' 카시엘 로스벤이래.\""
+     },
+     {
+      "fact": "c1-6",
+      "character": "duke_rosven",
+      "since": 2,
+      "quote": "이름을 기억하고 있었다. 접견실에서 라파엘이 부른 것을."
+     },
+     {
+      "fact": "c1-8",
+      "character": "duke_rosven",
+      "since": 2,
+      "quote": "\"수고했소, 윈터스.\""
+     },
+     {
+      "fact": "c1-17",
+      "character": "duke_rosven",
+      "since": 0,
+      "quote": "\"로스벤 공작 각하께서 오셨습니다.\""
+     }
+    ],
+    "scene": {
+     "pov": "cecilia_ondre",
+     "location": "왕립 서약청(은종탑) 2층 접견실과 앞마당, 하숙집 다락방",
+     "present": [
+      "cecilia_ondre",
+      "mari_fennel",
+      "raphael_winters",
+      "duke_rosven",
+      "rowan_crow",
+      "window_knocker"
+     ]
+    }
+   }
+  },
+  {
+   "chapter": 3,
+   "tries": [
+    {
+     "attempt": 0,
+     "fresh": true,
+     "error": null,
+     "cost": 0.10801,
+     "input": 5024,
+     "cache_read": 5967,
+     "cache_write": 1685,
+     "output": 3915,
+     "latency_s": 31.476,
+     "raw": null
+    }
+   ],
+   "facts": 12,
+   "rejected": 0,
+   "learned": 5,
+   "new_characters": 1,
+   "notes": [],
+   "output": {
+    "characters": [
+     {
+      "id": "dawn_gentleman",
+      "name": "새벽에 온 신사",
+      "appeared": false,
+      "aliases": [
+       "웬 신사"
+      ]
+     }
+    ],
+    "aliases": [
+     {
+      "character": "cecilia_ondre",
+      "alias": "온드레 양"
+     },
+     {
+      "character": "cecilia_ondre",
+      "alias": "온드레 영애"
+     }
+    ],
+    "merges": [
+     {
+      "temp": "window_knocker",
+      "into": "duke_rosven"
+     }
+    ],
+    "facts": [
+     {
+      "statement": "세실리아의 빚은 원금 금화 삼천육백 닢이며 이번 달 이자까지 합치면 삼천팔백사십 닢이다.",
+      "category": "identity",
+      "quote": "\"원금 금화 삼천육백 닢. 이번 달 이자까지 합치면 삼천팔백사십 닢입니다.\"",
+      "common": false,
+      "knowers": [
+       {
+        "character": "cecilia_ondre",
+        "since": 0
+       },
+       {
+        "character": "duke_rosven",
+        "since": 3
+       }
+      ]
+     },
+     {
+      "statement": "세실리아의 채권자는 셋이며 가장 큰 곳은 남부 상단이다.",
+      "category": "identity",
+      "quote": "\"셋이요. 가장 큰 곳은 남부 상단이고, 나머지 둘은….\"",
+      "common": false,
+      "knowers": [
+       {
+        "character": "cecilia_ondre",
+        "since": 0
+       },
+       {
+        "character": "duke_rosven",
+        "since": 3
+       }
+      ]
+     },
+     {
+      "statement": "할레스 왕국 귀족들 사이에는 이미 약혼한 귀족에게는 왕명으로도 혼인을 강제할 수 없다는 '선약 우선' 관습이 있다.",
+      "category": "world",
+      "quote": "\"그런데 이 왕국 귀족들 사이에는 '선약 우선'이라는 관습이 있소. 이미 약혼한 귀족에게는 왕명으로도 혼인을 강제할 수 없소. 먼저 맺은 약속이 먼저라는 뜻이지.\"",
+      "common": false,
+      "knowers": [
+       {
+        "character": "duke_rosven",
+        "since": 0
+       },
+       {
+        "character": "leon_ondre",
+        "since": 0
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 3
+       }
+      ]
+     },
+     {
+      "statement": "카시엘 로스벤은 왕명을 피하기 위해 세실리아에게 1년 기한의 약혼을 제안했다.",
+      "category": "event",
+      "quote": "\"결론부터 말하겠소. 나와 약혼해 주시오.\"",
+      "common": false,
+      "knowers": [
+       {
+        "character": "duke_rosven",
+        "since": 3
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 3
+       },
+       {
+        "character": "rowan_crow",
+        "since": 3
+       }
+      ]
+     },
+     {
+      "statement": "카시엘 로스벤은 약혼의 대가로 온드레 가의 채무 전액 변제와 실종된 레온 온드레 남작의 행방 조사 지원을 약속했다.",
+      "category": "event",
+      "quote": "\"그리고 실종된 남작의 행방 조사를 돕겠소. 로스벤 가의 사람을 쓰겠소. 필경사 혼자 힘으로는 닿지 않는 데까지 찾아보겠소.\"",
+      "common": false,
+      "knowers": [
+       {
+        "character": "duke_rosven",
+        "since": 3
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 3
+       }
+      ]
+     },
+     {
+      "statement": "카시엘 로스벤은 세실리아를 고른 이유를 빚이 있고 입이 무거워 보여서라고만 말했다.",
+      "category": "motive",
+      "quote": "\"빚이 있고, 입이 무거워 보여서.\"",
+      "common": false,
+      "knowers": [
+       {
+        "character": "duke_rosven",
+        "since": 3
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 3
+       }
+      ]
+     },
+     {
+      "statement": "세실리아가 쓴 계약서는 제1조 기한과 대가, 제2조 사생활 불간섭, 제3조 계약 종료 뒤 서약청 복직 보장의 세 조항으로 되어 있다.",
+      "category": "event",
+      "quote": "3년 동안 남의 약속만 베껴 온 손이, 처음으로 자기 계약서를 썼다. 제1조, 기한과 대가. 제2조, 사생활 불간섭. 제3조, 계약 종료 뒤 서약청 복직 보장. 번짐 하나 없이, 또박또박.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "cecilia_ondre",
+        "since": 3
+       },
+       {
+        "character": "duke_rosven",
+        "since": 3
+       }
+      ]
+     },
+     {
+      "statement": "카시엘 로스벤은 1년 뒤 약혼을 깰 때 세실리아가 자신을 찼다고 하면 된다고 했다.",
+      "category": "event",
+      "quote": "\"당신이 나를 찼다고 하면 되오.\"",
+      "common": false,
+      "knowers": [
+       {
+        "character": "duke_rosven",
+        "since": 3
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 3
+       }
+      ]
+     },
+     {
+      "statement": "세실리아는 새벽에 카시엘 로스벤의 약혼 제안을 승낙했다.",
+      "category": "event",
+      "quote": "\"그럼 승낙하겠습니다, 공작 각하.\"",
+      "common": false,
+      "knowers": [
+       {
+        "character": "cecilia_ondre",
+        "since": 3
+       },
+       {
+        "character": "duke_rosven",
+        "since": 3
+       },
+       {
+        "character": "rowan_crow",
+        "since": 3
+       }
+      ]
+     },
+     {
+      "statement": "카시엘 로스벤은 세실리아의 답을 기다리며 밤새 골목의 마차 안에서 한숨도 자지 않았다.",
+      "category": "event",
+      "quote": "\"밤새 한숨도 안 주무셨습니다. 마차 안에서 팔짱 끼고 꼿꼿이 앉아서요.\"",
+      "common": false,
+      "knowers": [
+       {
+        "character": "duke_rosven",
+        "since": 3
+       },
+       {
+        "character": "rowan_crow",
+        "since": 3
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 3
+       }
+      ]
+     },
+     {
+      "statement": "로완 크로우는 카시엘 로스벤이 세실리아의 다락방을 찾아간 동안 골목에서 망을 보았다.",
+      "category": "event",
+      "quote": "망을 보고 있는 것이었다. 공작이 하숙집 다락방 창문을 두드리는 동안.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "rowan_crow",
+        "since": 3
+       },
+       {
+        "character": "duke_rosven",
+        "since": 3
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 3
+       }
+      ]
+     },
+     {
+      "statement": "새벽에 한 신사가 하숙집 대문의 빚 독촉장을 모두 떼어 가며 빚이 다 정리됐다고 말했다.",
+      "category": "event",
+      "quote": "\"새벽에 웬 신사가 와서 싹 떼어 가던데? 빚은 다 정리됐다면서. 아가씨, 대체 무슨 일이야?\"",
+      "common": false,
+      "knowers": [
+       {
+        "character": "landlady",
+        "since": 3
+       },
+       {
+        "character": "dawn_gentleman",
+        "since": 3
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 3
+       }
+      ]
+     }
+    ],
+    "learned": [
+     {
+      "fact": "c1-15",
+      "character": "duke_rosven",
+      "since": 3,
+      "quote": "\"알아보는 건 어렵지 않았소.\""
+     },
+     {
+      "fact": "c1-15",
+      "character": "rowan_crow",
+      "since": 3,
+      "quote": "망을 보고 있는 것이었다. 공작이 하숙집 다락방 창문을 두드리는 동안."
+     },
+     {
+      "fact": "c1-10",
+      "character": "duke_rosven",
+      "since": 3,
+      "quote": "\"그리고 실종된 남작의 행방 조사를 돕겠소. 로스벤 가의 사람을 쓰겠소. 필경사 혼자 힘으로는 닿지 않는 데까지 찾아보겠소.\""
+     },
+     {
+      "fact": "c1-11",
+      "character": "duke_rosven",
+      "since": 3,
+      "quote": "\"몰락했어도 온드레 남작가는 귀족 가문이오. 당신은 그 집 딸이고.\""
+     },
+     {
+      "fact": "c2-13",
+      "character": "rowan_crow",
+      "since": 3,
+      "quote": "망을 보고 있는 것이었다. 공작이 하숙집 다락방 창문을 두드리는 동안."
+     }
+    ],
+    "scene": {
+     "pov": "cecilia_ondre",
+     "location": "하숙집 다락방과 골목",
+     "present": [
+      "cecilia_ondre",
+      "duke_rosven",
+      "rowan_crow",
+      "landlady"
+     ]
+    }
+   }
+  },
+  {
+   "chapter": 4,
+   "tries": [
+    {
+     "attempt": 0,
+     "fresh": true,
+     "error": null,
+     "cost": 0.15356,
+     "input": 5267,
+     "cache_read": 7652,
+     "cache_write": 1413,
+     "output": 6195,
+     "latency_s": 171.146,
+     "raw": null
+    }
+   ],
+   "facts": 14,
+   "rejected": 1,
+   "learned": 5,
+   "new_characters": 4,
+   "notes": [],
+   "output": {
+    "characters": [
+     {
+      "id": "theodore_hales",
+      "name": "테오도르 할레스",
+      "appeared": true,
+      "aliases": [
+       "왕세자 전하",
+       "왕세자",
+       "테오도르"
+      ]
+     },
+     {
+      "id": "chamberlain",
+      "name": "시종장",
+      "appeared": true,
+      "aliases": []
+     },
+     {
+      "id": "old_count",
+      "name": "노백작",
+      "appeared": true,
+      "aliases": []
+     },
+     {
+      "id": "noble_ladies",
+      "name": "귀부인 둘",
+      "appeared": true,
+      "aliases": [
+       "귀부인들"
+      ]
+     }
+    ],
+    "aliases": [
+     {
+      "character": "rowan_crow",
+      "alias": "크로우 경"
+     },
+     {
+      "character": "rosetta_belmore",
+      "alias": "벨모어 영애"
+     },
+     {
+      "character": "cecilia_ondre",
+      "alias": "필경사 아가씨"
+     },
+     {
+      "character": "duke_rosven",
+      "alias": "로스벤 공"
+     }
+    ],
+    "merges": [],
+    "facts": [
+     {
+      "statement": "로스벤 저택은 은빛 강 북쪽, 오래된 귀족 저택들이 모인 언덕에 있다.",
+      "category": "location",
+      "quote": "로스벤 저택은 은빛 강 북쪽, 오래된 귀족 저택들이 모인 언덕에 있었다.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "duke_rosven",
+        "since": 0
+       },
+       {
+        "character": "rowan_crow",
+        "since": 0
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 4
+       }
+      ]
+     },
+     {
+      "statement": "카시엘 로스벤은 세실리아의 계약서에 계약 기간 동안 세실리아가 로스벤 저택에 거주한다는 제4조를 추가했고 세실리아가 이를 받아들였다.",
+      "category": "event",
+      "quote": "제4조. 계약 기간 동안 을은 로스벤 저택에 거주한다.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "duke_rosven",
+        "since": 4
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 4
+       },
+       {
+        "character": "rowan_crow",
+        "since": 4
+       }
+      ]
+     },
+     {
+      "statement": "카시엘 로스벤은 약혼 계약을 서약청에서 봉인하지 않고 검은 잉크로 쓴 종이 계약서 두 장에 서명해 한 장씩 나눠 갖는 것으로 끝냈다.",
+      "category": "event",
+      "quote": "봉인은 하지 않소. 이 두 장에 서명하고 한 장씩 나눠 가지면 끝이오.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "duke_rosven",
+        "since": 4
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 4
+       },
+       {
+        "character": "rowan_crow",
+        "since": 4
+       }
+      ]
+     },
+     {
+      "statement": "카시엘 로스벤은 계약을 봉인하지 않는 이유를 묻는 세실리아에게 자기 사정이라고만 답했다.",
+      "category": "secret",
+      "quote": "내 사정이오.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "duke_rosven",
+        "since": 4
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 4
+       },
+       {
+        "character": "rowan_crow",
+        "since": 4
+       }
+      ]
+     },
+     {
+      "statement": "로완 크로우가 세실리아와 카시엘의 종이 계약서 증인 칸에 서명했다.",
+      "category": "event",
+      "quote": "증인 칸에는 로완이 서명했다. 큼직하고 삐뚤빼뚤한 글씨였다.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "rowan_crow",
+        "since": 4
+       },
+       {
+        "character": "duke_rosven",
+        "since": 4
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 4
+       }
+      ]
+     },
+     {
+      "statement": "할레스 왕국의 왕궁은 금사자궁이다.",
+      "category": "world",
+      "quote": "사흘 뒤, 금사자궁.",
+      "common": true,
+      "knowers": []
+     },
+     {
+      "statement": "왕궁 무도회에서 카시엘 로스벤과 세실리아 온드레의 약혼이 공개적으로 발표되었다.",
+      "category": "event",
+      "quote": "로스벤 공작 카시엘 로스벤 각하. 그리고 약혼녀, 온드레 남작가의 세실리아 온드레 영애.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "cecilia_ondre",
+        "since": 4
+       },
+       {
+        "character": "duke_rosven",
+        "since": 4
+       },
+       {
+        "character": "rowan_crow",
+        "since": 4
+       },
+       {
+        "character": "chamberlain",
+        "since": 4
+       },
+       {
+        "character": "old_count",
+        "since": 4
+       },
+       {
+        "character": "rosetta_belmore",
+        "since": 4
+       },
+       {
+        "character": "theodore_hales",
+        "since": 4
+       },
+       {
+        "character": "noble_ladies",
+        "since": 4
+       }
+      ]
+     },
+     {
+      "statement": "로제타 벨모어는 벨모어 백작가의 외동딸이다.",
+      "category": "identity",
+      "quote": "로제타 벨모어. 벨모어 백작가의 외동딸이자 서약청장의 피후견인.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "rosetta_belmore",
+        "since": 0
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 4
+       },
+       {
+        "character": "duke_rosven",
+        "since": 4
+       }
+      ]
+     },
+     {
+      "statement": "로제타 벨모어는 스물네 살이다.",
+      "category": "identity",
+      "quote": "필사실 소문으로는 스물넷이라고 했다.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "rosetta_belmore",
+        "since": 0
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 4
+       }
+      ]
+     },
+     {
+      "statement": "로제타 벨모어는 무도회에서 세실리아의 잉크 묻은 손을 비꼬며 카시엘의 약혼을 축하했다.",
+      "category": "event",
+      "quote": "잉크 묻은 손으로 공작의 팔짱을 끼다니.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "rosetta_belmore",
+        "since": 4
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 4
+       },
+       {
+        "character": "duke_rosven",
+        "since": 4
+       }
+      ]
+     },
+     {
+      "statement": "테오도르 할레스는 할레스 왕국의 왕세자로 스물아홉 살이다.",
+      "category": "identity",
+      "quote": "할레스 왕국의 왕세자, 테오도르 할레스. 올해 스물아홉.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "theodore_hales",
+        "since": 0
+       },
+       {
+        "character": "duke_rosven",
+        "since": 0
+       },
+       {
+        "character": "rowan_crow",
+        "since": 0
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 4
+       }
+      ]
+     },
+     {
+      "statement": "테오도르 할레스는 급하게 지은 집은 바람에 약하다며 카시엘의 약혼을 꼬집었고, 카시엘은 반말로 맞받았다.",
+      "category": "event",
+      "quote": "그런데 말이지, 로스벤 공. 급하게 지은 집은 바람에 약하지.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "theodore_hales",
+        "since": 4
+       },
+       {
+        "character": "duke_rosven",
+        "since": 4
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 4
+       }
+      ]
+     },
+     {
+      "statement": "카시엘 로스벤과 테오도르 할레스는 왕립 학원 동기로 한때 서로 등을 맡기던 사이였다.",
+      "category": "relationship",
+      "quote": "두 분은 왕립 학원 동기십니다. 같은 해에 들어가서 같은 해에 나오셨죠. 한때는 서로 등을 맡기던 사이였고요.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "duke_rosven",
+        "since": 0
+       },
+       {
+        "character": "theodore_hales",
+        "since": 0
+       },
+       {
+        "character": "rowan_crow",
+        "since": 0
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 4
+       }
+      ]
+     },
+     {
+      "statement": "카시엘 로스벤과 테오도르 할레스는 7년 전 북부 반란 진압 때 있었던 일 이후로 절연했다.",
+      "category": "relationship",
+      "quote": "7년 전, 북부 반란 진압 때 일이 있었습니다. 그 뒤로 두 분은 절연하셨습니다.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "duke_rosven",
+        "since": 0
+       },
+       {
+        "character": "theodore_hales",
+        "since": 0
+       },
+       {
+        "character": "rowan_crow",
+        "since": 0
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 4
+       }
+      ]
+     },
+     {
+      "statement": "귀부인들이 로스벤 저택에 공작이 데리고 사는 아이가 있다는 소문을 나누었고 세실리아가 이를 엿들었다.",
+      "category": "event",
+      "quote": "모르셨어요? 로스벤 저택에 아이가 하나 산다던데요.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "noble_ladies",
+        "since": 4
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 4
+       }
+      ]
+     }
+    ],
+    "learned": [
+     {
+      "fact": "c3-7",
+      "character": "rowan_crow",
+      "since": 4,
+      "quote": "증인 칸에는 로완이 서명했다. 큼직하고 삐뚤빼뚤한 글씨였다."
+     },
+     {
+      "fact": "c3-5",
+      "character": "rowan_crow",
+      "since": 4,
+      "quote": "증인 칸에는 로완이 서명했다. 큼직하고 삐뚤빼뚤한 글씨였다."
+     },
+     {
+      "fact": "c2-5",
+      "character": "rosetta_belmore",
+      "since": 0,
+      "quote": "로제타 벨모어. 벨모어 백작가의 외동딸이자 서약청장의 피후견인."
+     },
+     {
+      "fact": "c2-4",
+      "character": "rosetta_belmore",
+      "since": 4,
+      "quote": "축하드려요, 로스벤 공작. 왕명보다 빠른 약혼이라니, 정말 대단하시죠."
+     },
+     {
+      "fact": "c2-2",
+      "character": "theodore_hales",
+      "since": 0,
+      "quote": "두 분은 왕립 학원 동기십니다. 같은 해에 들어가서 같은 해에 나오셨죠. 한때는 서로 등을 맡기던 사이였고요."
+     }
+    ],
+    "scene": {
+     "pov": "cecilia_ondre",
+     "location": "로스벤 저택 서재와 금사자궁 무도회장",
+     "present": [
+      "cecilia_ondre",
+      "duke_rosven",
+      "rowan_crow",
+      "chamberlain",
+      "old_count",
+      "rosetta_belmore",
+      "theodore_hales",
+      "noble_ladies"
+     ]
+    }
+   }
+  },
+  {
+   "chapter": 5,
+   "tries": [
+    {
+     "attempt": 0,
+     "fresh": true,
+     "error": null,
+     "cost": 0.13792,
+     "input": 5435,
+     "cache_read": 9065,
+     "cache_write": 1753,
+     "output": 5280,
+     "latency_s": 41.068,
+     "raw": null
+    }
+   ],
+   "facts": 14,
+   "rejected": 0,
+   "learned": 8,
+   "new_characters": 3,
+   "notes": [],
+   "output": {
+    "characters": [
+     {
+      "id": "hilda_brun",
+      "name": "힐다 브룬",
+      "appeared": true,
+      "aliases": [
+       "힐다 부인",
+       "힐다",
+       "시녀장"
+      ]
+     },
+     {
+      "id": "noel_rosven",
+      "name": "노엘 로스벤",
+      "appeared": true,
+      "aliases": [
+       "노엘",
+       "도련님"
+      ]
+     },
+     {
+      "id": "richard_rosven",
+      "name": "리처드 로스벤",
+      "appeared": false,
+      "aliases": [
+       "전대 로스벤 공작",
+       "형님"
+      ]
+     }
+    ],
+    "aliases": [
+     {
+      "character": "duke_rosven",
+      "alias": "작은아버지"
+     },
+     {
+      "character": "duke_rosven",
+      "alias": "공작님"
+     },
+     {
+      "character": "rowan_crow",
+      "alias": "로완 경"
+     },
+     {
+      "character": "cecilia_ondre",
+      "alias": "세실리아 누나"
+     },
+     {
+      "character": "cecilia_ondre",
+      "alias": "누나"
+     }
+    ],
+    "merges": [],
+    "facts": [
+     {
+      "statement": "세실리아 온드레는 서약청에 휴직계를 냈다.",
+      "category": "event",
+      "quote": "\"수석님은 뭐라셨어? 휴직계 냈다며.\"",
+      "common": false,
+      "knowers": [
+       {
+        "character": "cecilia_ondre",
+        "since": 5
+       },
+       {
+        "character": "raphael_winters",
+        "since": 5
+       },
+       {
+        "character": "mari_fennel",
+        "since": 5
+       }
+      ]
+     },
+     {
+      "statement": "왕립 서약청 규정상 휴직은 1년까지만 가능하다.",
+      "category": "world",
+      "quote": "\"'규정상 휴직은 1년까지입니다.' 그게 다였어.\"",
+      "common": false,
+      "knowers": [
+       {
+        "character": "cecilia_ondre",
+        "since": 0
+       },
+       {
+        "character": "mari_fennel",
+        "since": 0
+       },
+       {
+        "character": "raphael_winters",
+        "since": 0
+       }
+      ]
+     },
+     {
+      "statement": "세실리아 온드레는 마리 페넬에게 약혼이 1년짜리 계약이라는 비밀을 털어놓았고 마리는 비밀을 지키겠다고 약속했다.",
+      "category": "event",
+      "quote": "\"이 약혼, 1년짜리 계약이야.\"",
+      "common": false,
+      "knowers": [
+       {
+        "character": "cecilia_ondre",
+        "since": 5
+       },
+       {
+        "character": "mari_fennel",
+        "since": 5
+       }
+      ]
+     },
+     {
+      "statement": "힐다 브룬은 로스벤 가의 시녀장으로 올해 예순한 살이다.",
+      "category": "identity",
+      "quote": "\"어서 오십시오, 아가씨. 로스벤 가 시녀장, 힐다 브룬입니다.\"",
+      "common": false,
+      "knowers": [
+       {
+        "character": "hilda_brun",
+        "since": 0
+       },
+       {
+        "character": "duke_rosven",
+        "since": 0
+       },
+       {
+        "character": "rowan_crow",
+        "since": 0
+       },
+       {
+        "character": "noel_rosven",
+        "since": 0
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 5
+       }
+      ]
+     },
+     {
+      "statement": "힐다 브룬은 카시엘 로스벤과 로완 크로우를 젖먹이 때부터 기른 유모다.",
+      "category": "relationship",
+      "quote": "\"공작님과 로완은 제가 젖먹이 때부터 길렀지요. 두 분이 같은 젖을 먹고 같은 방에서 크셨지요. 올해로 제가 예순하나이니, 그 세월이 꽤 되지요.\"",
+      "common": false,
+      "knowers": [
+       {
+        "character": "hilda_brun",
+        "since": 0
+       },
+       {
+        "character": "duke_rosven",
+        "since": 0
+       },
+       {
+        "character": "rowan_crow",
+        "since": 0
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 5
+       }
+      ]
+     },
+     {
+      "statement": "힐다 브룬은 지금 노엘 로스벤의 유모 노릇을 하고 있다.",
+      "category": "relationship",
+      "quote": "\"네, 접니다. 지금은 도련님 유모 노릇을 하고 있지요.\"",
+      "common": false,
+      "knowers": [
+       {
+        "character": "hilda_brun",
+        "since": 0
+       },
+       {
+        "character": "noel_rosven",
+        "since": 0
+       },
+       {
+        "character": "duke_rosven",
+        "since": 0
+       },
+       {
+        "character": "rowan_crow",
+        "since": 0
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 5
+       }
+      ]
+     },
+     {
+      "statement": "노엘 로스벤은 아홉 살이며 로스벤 가의 후계자다.",
+      "category": "identity",
+      "quote": "\"노엘 로스벤이에요. 아홉 살이에요.\"",
+      "common": false,
+      "knowers": [
+       {
+        "character": "noel_rosven",
+        "since": 0
+       },
+       {
+        "character": "hilda_brun",
+        "since": 0
+       },
+       {
+        "character": "duke_rosven",
+        "since": 0
+       },
+       {
+        "character": "rowan_crow",
+        "since": 0
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 5
+       }
+      ]
+     },
+     {
+      "statement": "노엘 로스벤은 전대 로스벤 공작 리처드 로스벤의 아들이자 카시엘 로스벤의 조카다.",
+      "category": "relationship",
+      "quote": "\"노엘은 형님의 아들이오.\"",
+      "common": false,
+      "knowers": [
+       {
+        "character": "noel_rosven",
+        "since": 0
+       },
+       {
+        "character": "hilda_brun",
+        "since": 0
+       },
+       {
+        "character": "duke_rosven",
+        "since": 0
+       },
+       {
+        "character": "rowan_crow",
+        "since": 0
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 5
+       }
+      ]
+     },
+     {
+      "statement": "리처드 로스벤 내외는 3년 전 마차 사고로 죽었고 그 뒤로 카시엘 로스벤이 노엘을 맡았다.",
+      "category": "death",
+      "quote": "\"전대 로스벤 공작, 리처드 로스벤. 형님 내외는 3년 전 마차 사고로 죽었소. 그 뒤로 노엘은 내가 맡았소. 이 집의 후계자는 저 아이요.\"",
+      "common": false,
+      "knowers": [
+       {
+        "character": "duke_rosven",
+        "since": 0
+       },
+       {
+        "character": "hilda_brun",
+        "since": 0
+       },
+       {
+        "character": "rowan_crow",
+        "since": 0
+       },
+       {
+        "character": "noel_rosven",
+        "since": 0
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 5
+       }
+      ]
+     },
+     {
+      "statement": "노엘 로스벤의 손목에는 피부 아래에서 은빛이 비쳐 나오는 동전만 한 반점이 있다.",
+      "category": "secret",
+      "quote": "동전만 한 크기였다. 멍처럼 퍼진 것도, 덴 자국처럼 붉은 것도 아니었다. 피부 아래에서 은빛이 희미하게 비쳐 나오고 있었다.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "noel_rosven",
+        "since": 0
+       },
+       {
+        "character": "hilda_brun",
+        "since": 0
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 5
+       }
+      ]
+     },
+     {
+      "statement": "노엘 로스벤은 의원도 원인을 모르는 병으로 밤마다 열이 오르며, 로스벤 저택에서는 이를 밤열이라고 부른다.",
+      "category": "secret",
+      "quote": "\"도련님은 밤마다 열이 오르십니다. 원인을 아는 의원이 없었지요. 이 댁에서는 그냥 밤열이라고 부릅니다.\"",
+      "common": false,
+      "knowers": [
+       {
+        "character": "hilda_brun",
+        "since": 0
+       },
+       {
+        "character": "noel_rosven",
+        "since": 0
+       },
+       {
+        "character": "duke_rosven",
+        "since": 0
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 5
+       }
+      ]
+     },
+     {
+      "statement": "카시엘 로스벤은 당근을 싫어해 늘 접시 가장자리로 밀어 놓는다.",
+      "category": "identity",
+      "quote": "\"작은아버지가 사실 당근을 싫어해요. 그래서 맨날 접시 가장자리로 밀어 놔요. 힐다는 몰라요.\"",
+      "common": false,
+      "knowers": [
+       {
+        "character": "duke_rosven",
+        "since": 0
+       },
+       {
+        "character": "noel_rosven",
+        "since": 0
+       },
+       {
+        "character": "hilda_brun",
+        "since": 0
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 5
+       }
+      ]
+     },
+     {
+      "statement": "힐다 브룬은 마차 사고가 어디서 있었느냐는 세실리아의 물음에 대답하지 않고 말을 돌렸다.",
+      "category": "event",
+      "quote": "\"밤이 깊었지요. 아가씨도 오늘 고단하셨을 테니 일찍 주무시지요.\"",
+      "common": false,
+      "knowers": [
+       {
+        "character": "cecilia_ondre",
+        "since": 5
+       },
+       {
+        "character": "hilda_brun",
+        "since": 5
+       }
+      ]
+     },
+     {
+      "statement": "자정 무렵 열에 들뜬 노엘 로스벤이 세실리아의 방문을 두드리며 누나라고 불렀다.",
+      "category": "event",
+      "quote": "문 너머에서 작은 목소리가 들렸다. 열에 들떠 갈라진 목소리였다.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "cecilia_ondre",
+        "since": 5
+       },
+       {
+        "character": "noel_rosven",
+        "since": 5
+       }
+      ]
+     }
+    ],
+    "learned": [
+     {
+      "fact": "c3-4",
+      "character": "mari_fennel",
+      "since": 5,
+      "quote": "\"응. 공작 각하는 왕명 혼인을 피해야 하고, 나는 빚을 갚고 아버지를 찾아야 하고. 서로 필요한 게 있어서 계약한 거야. 1년 뒤엔 끝나. 그다음엔 은종탑으로 돌아갈 거고.\""
+     },
+     {
+      "fact": "c3-5",
+      "character": "mari_fennel",
+      "since": 5,
+      "quote": "\"응. 그게 대가야.\""
+     },
+     {
+      "fact": "c4-6",
+      "character": "mari_fennel",
+      "since": 5,
+      "quote": "무도회 다음 날부터 필사실은 온통 그 이야기뿐이라고 했다. 하급 필경사가 겨울 공작의 약혼녀가 됐다. 그것도 왕명을 뒤집고."
+     },
+     {
+      "fact": "c4-6",
+      "character": "noel_rosven",
+      "since": 5,
+      "quote": "\"작은아버지 약혼녀예요?\""
+     },
+     {
+      "fact": "c4-6",
+      "character": "hilda_brun",
+      "since": 5,
+      "quote": "\"신세라니요. 이제 이 댁 분이시지요.\""
+     },
+     {
+      "fact": "c2-3",
+      "character": "hilda_brun",
+      "since": 0,
+      "quote": "\"공작님과 로완은 제가 젖먹이 때부터 길렀지요. 두 분이 같은 젖을 먹고 같은 방에서 크셨지요. 올해로 제가 예순하나이니, 그 세월이 꽤 되지요.\""
+     },
+     {
+      "fact": "c2-2",
+      "character": "hilda_brun",
+      "since": 0,
+      "quote": "\"공작님과 로완은 제가 젖먹이 때부터 길렀지요. 두 분이 같은 젖을 먹고 같은 방에서 크셨지요. 올해로 제가 예순하나이니, 그 세월이 꽤 되지요.\""
+     },
+     {
+      "fact": "c3-7",
+      "character": "mari_fennel",
+      "since": 5,
+      "quote": "\"계약서 제2조. 사생활 불간섭이야.\""
+     }
+    ],
+    "scene": {
+     "pov": "cecilia_ondre",
+     "location": "하숙집 다락방과 로스벤 저택",
+     "present": [
+      "cecilia_ondre",
+      "mari_fennel",
+      "hilda_brun",
+      "noel_rosven",
+      "duke_rosven"
+     ]
+    }
+   }
+  },
+  {
+   "chapter": 6,
+   "tries": [
+    {
+     "attempt": 0,
+     "fresh": true,
+     "error": null,
+     "cost": 0.11311,
+     "input": 5152,
+     "cache_read": 10818,
+     "cache_write": 1847,
+     "output": 4055,
+     "latency_s": 34.285,
+     "raw": null
+    }
+   ],
+   "facts": 11,
+   "rejected": 1,
+   "learned": 4,
+   "new_characters": 2,
+   "notes": [],
+   "output": {
+    "characters": [
+     {
+      "id": "messenger_boy",
+      "name": "맨발의 사내아이",
+      "appeared": true,
+      "aliases": [
+       "처음 보는 아이"
+      ]
+     },
+     {
+      "id": "gray_feather",
+      "name": "회색 깃털",
+      "appeared": false,
+      "aliases": []
+     }
+    ],
+    "aliases": [],
+    "merges": [],
+    "facts": [
+     {
+      "statement": "카시엘 로스벤은 밤마다 노엘 로스벤의 방 앞에 와서 노엘이 자는 줄 알고 한참 서 있다 가며, 노엘은 그것을 알고 있다.",
+      "category": "secret",
+      "quote": "\"작은아버지는요, 밤마다 제 방 앞에 와서 한참 서 있다 가요. 제가 자는 줄 알고요. 문틈으로 그림자 다 보이는데.\"",
+      "common": false,
+      "knowers": [
+       {
+        "character": "noel_rosven",
+        "since": 0
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 6
+       }
+      ]
+     },
+     {
+      "statement": "노엘 로스벤의 밤열은 늘 새벽이면 내린다.",
+      "category": "event",
+      "quote": "\"늘 새벽이면 내리지요. 문제는 밤이고요.\"",
+      "common": false,
+      "knowers": [
+       {
+        "character": "hilda_brun",
+        "since": 0
+       },
+       {
+        "character": "noel_rosven",
+        "since": 0
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 6
+       }
+      ]
+     },
+     {
+      "statement": "레온 온드레는 세실리아에게 은종탑의 종이 한 번 우는 것은 하늘이 그 약속을 잊지 말라고 종이 대신 불러 주는 것이라고 말해 주었다.",
+      "category": "relationship",
+      "quote": "\"우리 아버지는 그러셨어요. 하늘이 그 약속을 잊지 말라고, 종이 대신 한 번 불러 주는 거라고.\"",
+      "common": false,
+      "knowers": [
+       {
+        "character": "cecilia_ondre",
+        "since": 0
+       },
+       {
+        "character": "noel_rosven",
+        "since": 6
+       }
+      ]
+     },
+     {
+      "statement": "로스벤 가에는 공작의 약혼녀가 가문 기록실인 '겨울 서고'의 열쇠를 받는 관습이 있다.",
+      "category": "world",
+      "quote": "\"로스벤 가에는 오래된 관습이 있지요. 공작님의 약혼녀께서는 가문 기록실인 '겨울 서고'의 열쇠를 받으십니다.\"",
+      "common": false,
+      "knowers": [
+       {
+        "character": "hilda_brun",
+        "since": 0
+       },
+       {
+        "character": "duke_rosven",
+        "since": 0
+       },
+       {
+        "character": "rowan_crow",
+        "since": 0
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 6
+       }
+      ]
+     },
+     {
+      "statement": "로스벤 가의 기록이 모두 모인 겨울 서고는 북부 본가에 있다.",
+      "category": "location",
+      "quote": "\"가문의 기록이 전부 모인 곳이지요. 북부 본가에 있어서, 이 저택에서는 당장 쓰실 일이 없겠지만요.\"",
+      "common": false,
+      "knowers": [
+       {
+        "character": "hilda_brun",
+        "since": 0
+       },
+       {
+        "character": "duke_rosven",
+        "since": 0
+       },
+       {
+        "character": "rowan_crow",
+        "since": 0
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 6
+       }
+      ]
+     },
+     {
+      "statement": "힐다 브룬이 세실리아에게 솔방울 무늬가 새겨진 검은 쇠 열쇠인 겨울 서고 열쇠를 건넸다.",
+      "category": "event",
+      "quote": "검은 쇠로 만든 열쇠였다. 손잡이에 솔방울 무늬가 새겨져 있었다.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "hilda_brun",
+        "since": 6
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 6
+       },
+       {
+        "character": "duke_rosven",
+        "since": 6
+       }
+      ]
+     },
+     {
+      "statement": "로스벤 저택 옆문 앞에서 맨발의 사내아이가 세실리아에게 이름을 확인하고 받는 이도 보내는 이도 적히지 않은 봉투를 건넨 뒤 달아났다.",
+      "category": "event",
+      "quote": "아이는 대답 대신 봉투 하나를 그녀 손에 쥐여 주고는 골목으로 내달렸다.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "cecilia_ondre",
+        "since": 6
+       },
+       {
+        "character": "messenger_boy",
+        "since": 6
+       },
+       {
+        "character": "gray_feather",
+        "since": 6
+       },
+       {
+        "character": "duke_rosven",
+        "since": 6
+       }
+      ]
+     },
+     {
+      "statement": "익명의 편지에는 회색 깃털과 함께 '은종탑의 잉크를 믿지 마시오'라는 한 줄이 검은 잉크로 쓰여 있었고 서명은 '회색 깃털'이었다.",
+      "category": "event",
+      "quote": "[은종탑의 잉크를 믿지 마시오.]",
+      "common": false,
+      "knowers": [
+       {
+        "character": "cecilia_ondre",
+        "since": 6
+       },
+       {
+        "character": "gray_feather",
+        "since": 6
+       },
+       {
+        "character": "duke_rosven",
+        "since": 6
+       }
+      ]
+     },
+     {
+      "statement": "카시엘 로스벤은 편지를 보고 은종탑에 대해 무언가 말하려다 그만두고 세실리아에게 조심하라고만 했다.",
+      "category": "event",
+      "quote": "\"온드레 양, 은종탑은…….\"",
+      "common": false,
+      "knowers": [
+       {
+        "character": "duke_rosven",
+        "since": 6
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 6
+       }
+      ]
+     },
+     {
+      "statement": "카시엘 로스벤은 세실리아에게 당분간 혼자 나가지 말고 마차와 마부를 쓰라고 부탁했다.",
+      "category": "event",
+      "quote": "\"당분간 혼자 나가지 마시오. 마차를 쓰고 마부를 데려가시오.\"",
+      "common": false,
+      "knowers": [
+       {
+        "character": "duke_rosven",
+        "since": 6
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 6
+       }
+      ]
+     },
+     {
+      "statement": "카시엘 로스벤은 노엘 곁을 지켜 준 세실리아에게 고맙다고 말했다.",
+      "category": "relationship",
+      "quote": "\"고맙소.\"",
+      "common": false,
+      "knowers": [
+       {
+        "character": "duke_rosven",
+        "since": 6
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 6
+       }
+      ]
+     },
+     {
+      "statement": "로제타 벨모어가 세실리아를 금사자궁 장미 정원 다과회에 초대했다.",
+      "category": "event",
+      "quote": "[금사자궁 장미 정원 다과회에 로스벤 공작의 약혼녀, 온드레 영애를 초대합니다. ― 로제타 벨모어]",
+      "common": false,
+      "knowers": [
+       {
+        "character": "rosetta_belmore",
+        "since": 6
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 6
+       }
+      ]
+     }
+    ],
+    "learned": [
+     {
+      "fact": "c5-14",
+      "character": "hilda_brun",
+      "since": 6,
+      "quote": "\"도련님이 아가씨 방문을 두드렸다지요.\""
+     },
+     {
+      "fact": "c5-14",
+      "character": "duke_rosven",
+      "since": 6,
+      "quote": "\"간밤 일도 들었소. 노엘 곁에 있었다고.\""
+     },
+     {
+      "fact": "c2-11",
+      "character": "noel_rosven",
+      "since": 6,
+      "quote": "\"네. 은종탑 꼭대기에는 은빛 종이 하나 걸려 있어요. 그 종은 아무 때나 울지 않아요. 서약 하나가 봉인될 때마다 딱 한 번 울어요.\""
+     },
+     {
+      "fact": "c1-6",
+      "character": "noel_rosven",
+      "since": 6,
+      "quote": "그리고 저는 필사실에서 3년을 버틴 사람이에요."
+     }
+    ],
+    "scene": {
+     "pov": "cecilia_ondre",
+     "location": "로스벤 저택(세실리아의 방, 응접실, 옆문, 서재)",
+     "present": [
+      "cecilia_ondre",
+      "noel_rosven",
+      "hilda_brun",
+      "messenger_boy",
+      "duke_rosven"
+     ]
+    }
+   }
+  },
+  {
+   "chapter": 7,
+   "tries": [
+    {
+     "attempt": 0,
+     "fresh": true,
+     "error": null,
+     "cost": 0.11087,
+     "input": 5278,
+     "cache_read": 12665,
+     "cache_write": 1365,
+     "output": 4020,
+     "latency_s": 35.838,
+     "raw": null
+    }
+   ],
+   "facts": 10,
+   "rejected": 0,
+   "learned": 6,
+   "new_characters": 2,
+   "notes": [],
+   "output": {
+    "characters": [
+     {
+      "id": "garden_ladies",
+      "name": "다과회 귀부인들",
+      "appeared": true,
+      "aliases": [
+       "귀부인들"
+      ]
+     },
+     {
+      "id": "coachman",
+      "name": "로스벤 가 마부",
+      "appeared": true,
+      "aliases": [
+       "진짜 마부",
+       "마부"
+      ]
+     }
+    ],
+    "aliases": [
+     {
+      "character": "oath_director",
+      "alias": "서약청장 모르데인"
+     },
+     {
+      "character": "oath_director",
+      "alias": "모르데인"
+     }
+    ],
+    "merges": [],
+    "facts": [
+     {
+      "statement": "로제타 벨모어는 카시엘 로스벤과의 혼인을 바란 적이 없다고 세실리아에게 털어놓았다.",
+      "category": "motive",
+      "quote": "\"저도 로스벤 공작과의 혼인 같은 건 바란 적 없으니까요.\"",
+      "common": false,
+      "knowers": [
+       {
+        "character": "rosetta_belmore",
+        "since": 0
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 7
+       }
+      ]
+     },
+     {
+      "statement": "로제타 벨모어의 부모는 로제타가 열 살 때 일주일 사이에 역병으로 모두 죽었고, 그 뒤로 서약청장이 로제타의 후견인이 되었다.",
+      "category": "identity",
+      "quote": "제 부모님은 제가 열 살 때 역병으로 돌아가셨어요. 일주일 사이에 두 분 다. 그 뒤로는 서약청장님이 제 후견인이시죠.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "rosetta_belmore",
+        "since": 0
+       },
+       {
+        "character": "oath_director",
+        "since": 0
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 7
+       }
+      ]
+     },
+     {
+      "statement": "왕립 서약청장의 이름은 모르데인이다.",
+      "category": "identity",
+      "quote": "서약청장 모르데인. 하급 필경사인 세실리아에게는 은종탑 꼭대기에 있다는 것만 아는, 먼발치에서나 본 사람이었다.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "oath_director",
+        "since": 0
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 0
+       },
+       {
+        "character": "mari_fennel",
+        "since": 0
+       },
+       {
+        "character": "raphael_winters",
+        "since": 0
+       },
+       {
+        "character": "rosetta_belmore",
+        "since": 0
+       }
+      ]
+     },
+     {
+      "statement": "로제타 벨모어와 카시엘 로스벤의 혼처는 로제타의 후견인인 서약청장이 받아들인 것이었다.",
+      "category": "relationship",
+      "quote": "\"후견인께서 받아들이신 혼처였어요. 정해지면, 가는 거죠.\"",
+      "common": false,
+      "knowers": [
+       {
+        "character": "rosetta_belmore",
+        "since": 0
+       },
+       {
+        "character": "oath_director",
+        "since": 0
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 7
+       }
+      ]
+     },
+     {
+      "statement": "로제타 벨모어는 사교계가 구경거리를 원하기 때문에 새 약혼녀를 물어뜯는 척했고, 부채를 접어 귀부인들의 날카로운 말을 끊어 주었다.",
+      "category": "secret",
+      "quote": "\"부채는 바람을 부치라고 있는 게 아니에요. 말을 끊으라고 있는 거죠.\"",
+      "common": false,
+      "knowers": [
+       {
+        "character": "rosetta_belmore",
+        "since": 7
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 7
+       }
+      ]
+     },
+     {
+      "statement": "세실리아 온드레는 필경사로서 보통 하루 열두 장, 바쁜 날은 열다섯 장을 썼다.",
+      "category": "identity",
+      "quote": "\"보통 열두 장입니다. 바쁜 날은 열다섯 장이고요.\"",
+      "common": false,
+      "knowers": [
+       {
+        "character": "cecilia_ondre",
+        "since": 0
+       },
+       {
+        "character": "mari_fennel",
+        "since": 0
+       },
+       {
+        "character": "raphael_winters",
+        "since": 0
+       },
+       {
+        "character": "garden_ladies",
+        "since": 7
+       },
+       {
+        "character": "rosetta_belmore",
+        "since": 7
+       }
+      ]
+     },
+     {
+      "statement": "은종탑의 잉크에는 은가루가 섞여 있어 3년쯤 매일 쓰면 피부에 배어 지워지지 않는다.",
+      "category": "world",
+      "quote": "은종탑의 잉크는 은가루가 섞여 있어서, 3년쯤 매일 쓰면 피부에 배어 지워지지 않습니다.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "cecilia_ondre",
+        "since": 0
+       },
+       {
+        "character": "mari_fennel",
+        "since": 0
+       },
+       {
+        "character": "raphael_winters",
+        "since": 0
+       },
+       {
+        "character": "garden_ladies",
+        "since": 7
+       },
+       {
+        "character": "rosetta_belmore",
+        "since": 7
+       }
+      ]
+     },
+     {
+      "statement": "카시엘 로스벤은 마부 대신 직접 마부석에서 고삐를 쥐고 세실리아를 데리러 금사자궁 장미 정원에 왔다.",
+      "category": "event",
+      "quote": "정원 바깥 마찻길에 로스벤 가의 문장이 박힌 검은 마차가 서 있었다. 그리고 마부석에서 고삐를 쥐고 있는 사람은, 아무리 다시 봐도 마부가 아니었다.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "duke_rosven",
+        "since": 7
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 7
+       },
+       {
+        "character": "rosetta_belmore",
+        "since": 7
+       },
+       {
+        "character": "garden_ladies",
+        "since": 7
+       },
+       {
+        "character": "coachman",
+        "since": 7
+       }
+      ]
+     },
+     {
+      "statement": "카시엘 로스벤은 조심하라고 한 뒤로 세실리아가 어디에 가는지 꼬박꼬박 묻고 있다.",
+      "category": "event",
+      "quote": "그 뒤로 이 사람은 그녀가 어디에 가는지 꼬박꼬박 묻고 있었다.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "duke_rosven",
+        "since": 7
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 7
+       }
+      ]
+     },
+     {
+      "statement": "카시엘 로스벤이 마차 안에서 세실리아에게 형 리처드 로스벤의 이야기를 해 두겠다고 말을 꺼냈다.",
+      "category": "event",
+      "quote": "\"리처드 로스벤. 노엘의 아버지, 내 형 말이오.\"",
+      "common": false,
+      "knowers": [
+       {
+        "character": "duke_rosven",
+        "since": 7
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 7
+       }
+      ]
+     }
+    ],
+    "learned": [
+     {
+      "fact": "c2-5",
+      "character": "oath_director",
+      "since": 0,
+      "quote": "그 뒤로는 서약청장님이 제 후견인이시죠."
+     },
+     {
+      "fact": "c5-4",
+      "character": "rosetta_belmore",
+      "since": 7,
+      "quote": "\"이번에는 압니다. 힐다 부인께서 골라 주셨습니다. 로스벤 가의 시녀장이십니다.\""
+     },
+     {
+      "fact": "c1-11",
+      "character": "garden_ladies",
+      "since": 7,
+      "quote": "\"영지를 잃었다던 집안 말이죠?\""
+     },
+     {
+      "fact": "c1-6",
+      "character": "garden_ladies",
+      "since": 7,
+      "quote": "\"서약청 필경사였다면서요. 공작님은 대체 어디서…….\""
+     },
+     {
+      "fact": "c4-6",
+      "character": "garden_ladies",
+      "since": 7,
+      "quote": "\"설마요. 공작님 약혼녀께서.\""
+     },
+     {
+      "fact": "c1-11",
+      "character": "rosetta_belmore",
+      "since": 7,
+      "quote": "\"영지를 잃었다던 집안 말이죠?\""
+     }
+    ],
+    "scene": {
+     "pov": "cecilia_ondre",
+     "location": "금사자궁 장미 정원과 정자, 로스벤 가 마차 안",
+     "present": [
+      "cecilia_ondre",
+      "garden_ladies",
+      "rosetta_belmore",
+      "duke_rosven",
+      "coachman"
+     ]
+    }
+   }
+  },
+  {
+   "chapter": 8,
+   "tries": [
+    {
+     "attempt": 0,
+     "fresh": true,
+     "error": null,
+     "cost": 0.09347,
+     "input": 5176,
+     "cache_read": 14030,
+     "cache_write": 1387,
+     "output": 3151,
+     "latency_s": 26.167,
+     "raw": null
+    }
+   ],
+   "facts": 10,
+   "rejected": 0,
+   "learned": 0,
+   "new_characters": 0,
+   "notes": [],
+   "output": {
+    "characters": [],
+    "aliases": [],
+    "merges": [],
+    "facts": [
+     {
+      "statement": "카시엘 로스벤은 로스벤 가의 차남으로 열일곱 살에 북부 국경 기사단을 맡으러 갔고, 공작위는 생각해 본 적도 없었다.",
+      "category": "identity",
+      "quote": "\"로스벤 가의 차남이 할 일은 그거였소. 국경을 지키고, 형이 부르면 수도로 내려오고. 공작위 같은 건 생각해 본 적도 없었지.\"",
+      "common": false,
+      "knowers": [
+       {
+        "character": "duke_rosven",
+        "since": 0
+       },
+       {
+        "character": "rowan_crow",
+        "since": 0
+       },
+       {
+        "character": "hilda_brun",
+        "since": 0
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 8
+       }
+      ]
+     },
+     {
+      "statement": "리처드 로스벤 부부가 죽던 날 카시엘 로스벤은 국경에 있어 장례가 끝난 뒤에야 내려왔고, 그다음 날 원한 적 없는 공작의 인장을 받았다.",
+      "category": "event",
+      "quote": "그날 나는 국경에 있었고, 부고를 받고 내려왔을 때는 장례가 다 끝나 있었소. 그다음 날 공작의 인장을 받았지. 원한 적 없는 자리였소.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "duke_rosven",
+        "since": 0
+       },
+       {
+        "character": "rowan_crow",
+        "since": 0
+       },
+       {
+        "character": "hilda_brun",
+        "since": 0
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 8
+       }
+      ]
+     },
+     {
+      "statement": "리처드 로스벤은 죽기 몇 달 전부터 몇 년 치 서약청 서약서 사본을 서재에 늘어놓고 밤늦게까지 들여다보았으며, 무엇을 찾는지 묻는 카시엘에게 다 끝나면 이야기해 주겠다고만 했다.",
+      "category": "secret",
+      "quote": "\"형은 죽기 몇 달 전부터 서약청 문서를 밤늦게까지 들여다봤소. 몇 년 치 서약서 사본을 서재 바닥까지 늘어놓고. 저 창에 새벽까지 불이 켜져 있곤 했지.\"",
+      "common": false,
+      "knowers": [
+       {
+        "character": "duke_rosven",
+        "since": 0
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 8
+       }
+      ]
+     },
+     {
+      "statement": "로스벤 저택 2층의 리처드 로스벤의 옛 서재는 지금 닫혀 있다.",
+      "category": "location",
+      "quote": "\"닫아 두었소.\"",
+      "common": false,
+      "knowers": [
+       {
+        "character": "duke_rosven",
+        "since": 0
+       },
+       {
+        "character": "hilda_brun",
+        "since": 0
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 8
+       }
+      ]
+     },
+     {
+      "statement": "카시엘 로스벤의 왼손 등에는 장갑으로 감춘 오래된 서약흔이 있다.",
+      "category": "secret",
+      "quote": "손등에 흉터가 있었다. 아니, 흉터라기엔 너무 반듯했다. 가느다란 선들이 얽혀 매듭 같은 문양을 이루고 있었고, 그 선을 따라 살갗이 희게 그을려 있었다.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "duke_rosven",
+        "since": 0
+       },
+       {
+        "character": "rowan_crow",
+        "since": 0
+       },
+       {
+        "character": "hilda_brun",
+        "since": 0
+       },
+       {
+        "character": "noel_rosven",
+        "since": 0
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 8
+       }
+      ]
+     },
+     {
+      "statement": "카시엘 로스벤은 무슨 서약이냐는 세실리아의 물음에 계약서 제2조 사생활 불간섭을 들며 대답하지 않았다.",
+      "category": "event",
+      "quote": "\"사생활 불간섭. 당신이 넣은 조항이오.\"",
+      "common": false,
+      "knowers": [
+       {
+        "character": "duke_rosven",
+        "since": 8
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 8
+       }
+      ]
+     },
+     {
+      "statement": "카시엘 로스벤이 장갑 벗는 것을 본 사람은 로완 크로우, 힐다 브룬, 노엘 로스벤 정도뿐이다.",
+      "category": "secret",
+      "quote": "\"저하고 힐다, 그리고 노엘 도련님. 그 정도요. 각하는 어릴 때부터 그랬습니다. 아픈 데가 있으면 숨기고, 다친 데가 있으면 더 숨기고.\"",
+      "common": false,
+      "knowers": [
+       {
+        "character": "rowan_crow",
+        "since": 0
+       },
+       {
+        "character": "hilda_brun",
+        "since": 0
+       },
+       {
+        "character": "duke_rosven",
+        "since": 0
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 8
+       }
+      ]
+     },
+     {
+      "statement": "로완 크로우는 노엘 로스벤에게 손목에 힘이 덜 가도록 가볍게 깎은 목검을 만들어 주고 검술을 가르치고 있다.",
+      "category": "relationship",
+      "quote": "\"도련님 말씀이 맞습니다. 저 목검, 영애 펜보다 가벼울 겁니다. 제가 일부러 그렇게 깎았거든요. 손목에 힘이 덜 가게.\"",
+      "common": false,
+      "knowers": [
+       {
+        "character": "rowan_crow",
+        "since": 0
+       },
+       {
+        "character": "noel_rosven",
+        "since": 0
+       },
+       {
+        "character": "hilda_brun",
+        "since": 0
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 8
+       }
+      ]
+     },
+     {
+      "statement": "세실리아 온드레는 지난 2년 동안 달마다 서약청 접수 창구에 아버지 이름을 물었지만 늘 확인 중이라는 대답만 들었다.",
+      "category": "event",
+      "quote": "지난 2년 동안 그녀는 달마다 접수 창구에 아버지 이름을 물었다. 돌아오는 대답은 늘 같았다. 확인 중입니다. 스물네 번을 물어도 확인은 끝나지 않았다.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "cecilia_ondre",
+        "since": 0
+       }
+      ]
+     },
+     {
+      "statement": "세실리아 온드레는 다음 주부터 다시 필사실에 나가 아버지의 실종 서류를 직접 찾아보기로 하고 마리 페넬에게 부탁하는 편지를 썼다.",
+      "category": "motive",
+      "quote": "아버지의 실종 서류는 그녀가 직접 찾아볼 생각이었다.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "cecilia_ondre",
+        "since": 8
+       }
+      ]
+     }
+    ],
+    "learned": [],
+    "scene": {
+     "pov": "cecilia_ondre",
+     "location": "로스벤 저택 정원 정자와 훈련장, 세실리아의 방",
+     "present": [
+      "cecilia_ondre",
+      "duke_rosven",
+      "hilda_brun",
+      "noel_rosven",
+      "rowan_crow"
+     ]
+    }
+   }
+  },
+  {
+   "chapter": 9,
+   "tries": [
+    {
+     "attempt": 0,
+     "fresh": true,
+     "error": null,
+     "cost": 0.13026,
+     "input": 4990,
+     "cache_read": 15417,
+     "cache_write": 1219,
+     "output": 5056,
+     "latency_s": 43.451,
+     "raw": null
+    }
+   ],
+   "facts": 15,
+   "rejected": 0,
+   "learned": 5,
+   "new_characters": 1,
+   "notes": [],
+   "output": {
+    "characters": [
+     {
+      "id": "archive_keeper",
+      "name": "기록실 담당 할아버지",
+      "appeared": true,
+      "aliases": [
+       "백발 노인"
+      ]
+     }
+    ],
+    "aliases": [
+     {
+      "character": "oath_director",
+      "alias": "오스윈 모르데인"
+     },
+     {
+      "character": "oath_director",
+      "alias": "스승님"
+     },
+     {
+      "character": "oath_director",
+      "alias": "청장님"
+     },
+     {
+      "character": "mari_fennel",
+      "alias": "페넬 필경사"
+     }
+    ],
+    "merges": [],
+    "facts": [
+     {
+      "statement": "카시엘 로스벤이 마부석에 앉아 세실리아를 데리러 간 일은 온 수도에 소문이 났다.",
+      "category": "event",
+      "quote": "온 수도가 다 아는디 뭘 낮춰. 우리 하숙집 주인 할매도 안당께.",
+      "common": true,
+      "knowers": []
+     },
+     {
+      "statement": "세실리아 온드레는 약혼녀가 된 뒤에도 주에 이틀은 필사실에 나가기로 했고 카시엘 로스벤은 마차를 타고 다니라는 조건으로 허락했다.",
+      "category": "event",
+      "quote": "약혼녀가 된 뒤에도 주에 이틀은 필사실에 나가겠다고 했을 때, 카시엘은 한참 그녀를 보다가 \"…알겠소. 마차는 타고 다니시오.\"라고만 했다.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "cecilia_ondre",
+        "since": 9
+       },
+       {
+        "character": "duke_rosven",
+        "since": 9
+       }
+      ]
+     },
+     {
+      "statement": "라파엘 윈터스는 세실리아가 복귀 후 처음 낸 사본을 번짐 반 푼의 규정 위반이라며 되돌려 보냈다.",
+      "category": "event",
+      "quote": "\"번짐 반 푼. 규정 위반입니다. 재작성.\"",
+      "common": false,
+      "knowers": [
+       {
+        "character": "raphael_winters",
+        "since": 9
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 9
+       },
+       {
+        "character": "mari_fennel",
+        "since": 9
+       }
+      ]
+     },
+     {
+      "statement": "서약청 기록실 담당 할아버지는 점심을 먹고 나면 반 시진은 꼭 존다.",
+      "category": "world",
+      "quote": "기록실 담당 할아버지가 점심 먹고 나면 반 시진은 꼭 졸아. 3년 동안 하루도 안 빼먹었당께. 그 틈이면 돼.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "mari_fennel",
+        "since": 0
+       },
+       {
+        "character": "archive_keeper",
+        "since": 0
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 9
+       }
+      ]
+     },
+     {
+      "statement": "레온 온드레의 채무 서약 이의 신청 서류는 왕국력 810년 서류로 서약청 기록실에 보관되어 있다.",
+      "category": "location",
+      "quote": "[온드레, 레온. 채무 서약 이의.]",
+      "common": false,
+      "knowers": [
+       {
+        "character": "cecilia_ondre",
+        "since": 9
+       },
+       {
+        "character": "mari_fennel",
+        "since": 9
+       }
+      ]
+     },
+     {
+      "statement": "레온 온드레의 이의 신청 서류철은 은종과 깃펜 문양의 서약청장 직인으로 봉인되어 있으며, 같은 해 이의 신청 서류 중 청장 직인이 찍힌 것은 그것 하나뿐이다.",
+      "category": "secret",
+      "quote": "같은 해, 같은 이의 신청 서류들은 대개 끈만 묶여 있거나, 담당 서약사의 작은 인장이 찍혀 있었다. 청장 직인이 찍힌 것은 아버지의 서류철 하나뿐이었다.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "cecilia_ondre",
+        "since": 9
+       },
+       {
+        "character": "mari_fennel",
+        "since": 9
+       },
+       {
+        "character": "oath_director",
+        "since": 0
+       },
+       {
+        "character": "raphael_winters",
+        "since": 9
+       }
+      ]
+     },
+     {
+      "statement": "서약청장 직인으로 봉한 서류는 청장 허가 없이 아무도 열 수 없고, 하급 직원은 봉인에 손대는 것만으로도 징계를 받는다.",
+      "category": "world",
+      "quote": "청장 직인으로 봉한 서류는 청장님 허가 없인 아무도 못 열어. 우리 같은 하급은 봉인에 손대는 것만으로도 징계고.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "cecilia_ondre",
+        "since": 0
+       },
+       {
+        "character": "mari_fennel",
+        "since": 0
+       },
+       {
+        "character": "raphael_winters",
+        "since": 0
+       },
+       {
+        "character": "oath_director",
+        "since": 0
+       },
+       {
+        "character": "archive_keeper",
+        "since": 0
+       }
+      ]
+     },
+     {
+      "statement": "라파엘 윈터스는 서약청장 오스윈 모르데인을 스승님이라 부르는 제자다.",
+      "category": "relationship",
+      "quote": "\"스승님. 온드레 필경사를 데려왔습니다. 기록실 앞에 있었습니다.\"",
+      "common": false,
+      "knowers": [
+       {
+        "character": "raphael_winters",
+        "since": 0
+       },
+       {
+        "character": "oath_director",
+        "since": 0
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 9
+       }
+      ]
+     },
+     {
+      "statement": "서약청장 오스윈 모르데인은 20년 넘게 왕립 서약청을 이끌어 왔으며 올해 쉰네 살이다.",
+      "category": "identity",
+      "quote": "20년 넘게 왕립 서약청을 이끌어 온 서약청장. 올해 쉰넷이라던가.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "oath_director",
+        "since": 0
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 0
+       },
+       {
+        "character": "raphael_winters",
+        "since": 0
+       },
+       {
+        "character": "mari_fennel",
+        "since": 0
+       }
+      ]
+     },
+     {
+      "statement": "오스윈 모르데인은 세실리아가 지난 2년 동안 접수 창구에 아버지 이름을 스물네 번 물은 것을 알고 있었다.",
+      "category": "secret",
+      "quote": "\"온드레 필경사. 지난 2년 동안 접수 창구에 아버지 이름을 스물네 번 물었지.\"",
+      "common": false,
+      "knowers": [
+       {
+        "character": "oath_director",
+        "since": 9
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 9
+       },
+       {
+        "character": "raphael_winters",
+        "since": 9
+       }
+      ]
+     },
+     {
+      "statement": "오스윈 모르데인은 세실리아가 로제타의 다과회에 다녀온 것을 알고 있었다.",
+      "category": "event",
+      "quote": "\"내 피후견인 아이가 연 다과회에도 다녀왔다고 들었네.\"",
+      "common": false,
+      "knowers": [
+       {
+        "character": "oath_director",
+        "since": 9
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 9
+       },
+       {
+        "character": "raphael_winters",
+        "since": 9
+       }
+      ]
+     },
+     {
+      "statement": "오스윈 모르데인은 서류 열람 허가 요청에 답하지 않고 세실리아에게 아버지 일은 잊고 새 삶을 살라고 했다.",
+      "category": "event",
+      "quote": "\"아버지 일은… 잊는 게 자네를 위한 일일세. 자네에게는 새 삶이 생기지 않았나. 지난 일은 잊고, 새 삶을 살게. 그게 자네 아버지도 바라는 일일 걸세.\"",
+      "common": false,
+      "knowers": [
+       {
+        "character": "oath_director",
+        "since": 9
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 9
+       },
+       {
+        "character": "raphael_winters",
+        "since": 9
+       }
+      ]
+     },
+     {
+      "statement": "라파엘 윈터스는 세실리아의 기록실 무단 출입에 대해 초범 규정대로 구두 경고만 했다.",
+      "category": "event",
+      "quote": "\"규정상 초범은 구두 경고입니다. 이것으로 경고를 마칩니다.\"",
+      "common": false,
+      "knowers": [
+       {
+        "character": "raphael_winters",
+        "since": 9
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 9
+       }
+      ]
+     },
+     {
+      "statement": "세실리아는 서약청장이 준 차를 한 모금도 마시지 않았고 마리에게는 차를 얻어 마셨다고 거짓말했다.",
+      "category": "event",
+      "quote": "거짓말이었다. 차는 한 모금도 마시지 않았다.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "cecilia_ondre",
+        "since": 9
+       }
+      ]
+     },
+     {
+      "statement": "세실리아가 로스벤 저택에 돌아와 현관문을 연 순간 2층에서 힐다 브룬의 비명이 터졌다.",
+      "category": "event",
+      "quote": "그 순간, 2층에서 비명이 터졌다.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "cecilia_ondre",
+        "since": 9
+       },
+       {
+        "character": "hilda_brun",
+        "since": 9
+       }
+      ]
+     }
+    ],
+    "learned": [
+     {
+      "fact": "c7-8",
+      "character": "mari_fennel",
+      "since": 9,
+      "quote": "공작님이 마부석에 앉아서 너 데리러 왔다는 게 참말이여?"
+     },
+     {
+      "fact": "c8-10",
+      "character": "mari_fennel",
+      "since": 9,
+      "quote": "\"편지에 쓴 부탁, 그거지?\""
+     },
+     {
+      "fact": "c4-6",
+      "character": "oath_director",
+      "since": 9,
+      "quote": "\"로스벤 공작가와 혼약을 맺었다지. 축하하네."
+     },
+     {
+      "fact": "c6-11",
+      "character": "oath_director",
+      "since": 9,
+      "quote": "\"내 피후견인 아이가 연 다과회에도 다녀왔다고 들었네.\""
+     },
+     {
+      "fact": "c8-9",
+      "character": "oath_director",
+      "since": 9,
+      "quote": "\"온드레 필경사. 지난 2년 동안 접수 창구에 아버지 이름을 스물네 번 물었지.\""
+     }
+    ],
+    "scene": {
+     "pov": "cecilia_ondre",
+     "location": "은종탑 3층 필사실, 기록실, 꼭대기 서약청장실, 로스벤 저택 현관",
+     "present": [
+      "cecilia_ondre",
+      "mari_fennel",
+      "raphael_winters",
+      "archive_keeper",
+      "oath_director",
+      "hilda_brun"
+     ]
+    }
+   }
+  },
+  {
+   "chapter": 10,
+   "tries": [
+    {
+     "attempt": 0,
+     "fresh": true,
+     "error": null,
+     "cost": 0.12773,
+     "input": 5141,
+     "cache_read": 16636,
+     "cache_write": 1804,
+     "output": 4741,
+     "latency_s": 39.116,
+     "raw": null
+    }
+   ],
+   "facts": 11,
+   "rejected": 0,
+   "learned": 3,
+   "new_characters": 2,
+   "notes": [],
+   "output": {
+    "characters": [
+     {
+      "id": "physician",
+      "name": "노의원",
+      "appeared": true,
+      "aliases": [
+       "의원"
+      ]
+     },
+     {
+      "id": "maids",
+      "name": "하녀 둘",
+      "appeared": true,
+      "aliases": [
+       "하녀들"
+      ]
+     }
+    ],
+    "aliases": [],
+    "merges": [],
+    "facts": [
+     {
+      "statement": "노엘 로스벤이 낮잠에서 깨어나지 않았고, 손목의 은빛 반점이 줄기처럼 갈라져 팔꿈치 바로 아래까지 번졌다.",
+      "category": "event",
+      "quote": "손목에서 시작된 은빛 무늬가 가느다란 줄기처럼 갈라지며 팔 안쪽을 타고 올라가 있었다. 팔꿈치 바로 아래까지.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "cecilia_ondre",
+        "since": 10
+       },
+       {
+        "character": "hilda_brun",
+        "since": 10
+       },
+       {
+        "character": "duke_rosven",
+        "since": 10
+       },
+       {
+        "character": "physician",
+        "since": 10
+       }
+      ]
+     },
+     {
+      "statement": "노의원은 노엘 로스벤의 반점이 의서 어디에도 없는 것이라며 오늘 밤이 고비이고 자신이 할 수 있는 일이 없다고 말했다.",
+      "category": "event",
+      "quote": "오늘 밤이 고비입니다. 제가 할 수 있는 일은 없습니다.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "physician",
+        "since": 10
+       },
+       {
+        "character": "duke_rosven",
+        "since": 10
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 10
+       },
+       {
+        "character": "hilda_brun",
+        "since": 10
+       }
+      ]
+     },
+     {
+      "statement": "세실리아 온드레는 노엘 로스벤의 은빛 무늬가 가늘고 반듯한 선들이 얽혀 숨 쉬듯 빛나는 것임을 보았다.",
+      "category": "event",
+      "quote": "무늬는 실처럼 가늘고 반듯한 선들이 겹치고 얽혀서 생긴 것이었다. 그 선들이 아주 희미하게, 숨을 쉬듯 빛났다가 가라앉았다.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "cecilia_ondre",
+        "since": 10
+       }
+      ]
+     },
+     {
+      "statement": "세실리아 온드레가 노엘 로스벤의 손목을 감싸 쥐고 보이지 않는 실을 끊자 은빛 무늬가 실처럼 풀려 사라졌다.",
+      "category": "event",
+      "quote": "그 순간 노엘의 팔 위에서 은빛 무늬가 한 올 풀려 나갔다. 정말로 실처럼.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "cecilia_ondre",
+        "since": 10
+       },
+       {
+        "character": "hilda_brun",
+        "since": 10
+       },
+       {
+        "character": "duke_rosven",
+        "since": 10
+       }
+      ]
+     },
+     {
+      "statement": "세실리아 온드레가 실을 모두 끊자 노엘 로스벤의 은빛 반점이 흔적 없이 사라지고 열이 내렸다.",
+      "category": "event",
+      "quote": "세실리아는 천천히 손을 풀었다. 노엘의 손목은 깨끗했다. 은빛 반점은 흔적도 없었다.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "cecilia_ondre",
+        "since": 10
+       },
+       {
+        "character": "hilda_brun",
+        "since": 10
+       },
+       {
+        "character": "duke_rosven",
+        "since": 10
+       }
+      ]
+     },
+     {
+      "statement": "실을 끊은 뒤 세실리아 온드레의 열 손가락 끝이 타는 듯이 아프고 빨갛게 부었다.",
+      "category": "event",
+      "quote": "열 손가락 끝이 빨갛게 부어 있었다.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "cecilia_ondre",
+        "since": 10
+       },
+       {
+        "character": "duke_rosven",
+        "since": 10
+       }
+      ]
+     },
+     {
+      "statement": "서약청 필사실에는 손만 대면 봉인된 서약을 푸는 '해약'의 힘을 가진 사람이 있었다는, 아무도 믿지 않는 옛이야기가 전해진다.",
+      "category": "world",
+      "quote": "손만 대면 봉인된 서약이 풀리는 사람이 있었다는, 아무도 믿지 않는 이야기.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "cecilia_ondre",
+        "since": 0
+       },
+       {
+        "character": "mari_fennel",
+        "since": 0
+       }
+      ]
+     },
+     {
+      "statement": "세실리아 온드레에게는 서약을 푸는 힘이 있다.",
+      "category": "ability",
+      "quote": "서약을 푸는 힘이, 그녀에게 있었다.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "cecilia_ondre",
+        "since": 10
+       },
+       {
+        "character": "hilda_brun",
+        "since": 10
+       },
+       {
+        "character": "duke_rosven",
+        "since": 10
+       }
+      ]
+     },
+     {
+      "statement": "카시엘 로스벤은 힐다 브룬의 말을 끊고 방에서 본 것을 누구에게도 말하지 말며 열이 저절로 내렸다고 하라고 명했다.",
+      "category": "event",
+      "quote": "오늘 이 방에서 본 것은 아무에게도 말하지 마. 의원에게도, 하녀들에게도. 누구에게도.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "duke_rosven",
+        "since": 10
+       },
+       {
+        "character": "hilda_brun",
+        "since": 10
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 10
+       }
+      ]
+     },
+     {
+      "statement": "카시엘 로스벤은 노의원에게 열이 내렸다며 들어오지 말라고 하고 방문을 잠갔다.",
+      "category": "event",
+      "quote": "의원, 들어오지 마시오. 열이 내렸소. 탕약은 문 앞에 두고 가시오.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "duke_rosven",
+        "since": 10
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 10
+       },
+       {
+        "character": "hilda_brun",
+        "since": 10
+       },
+       {
+        "character": "physician",
+        "since": 10
+       }
+      ]
+     },
+     {
+      "statement": "카시엘 로스벤은 세실리아 온드레에게 방금 그 힘이 무엇인지 아느냐고 물었다.",
+      "category": "event",
+      "quote": "방금 그것, 무엇인지 아시오?",
+      "common": false,
+      "knowers": [
+       {
+        "character": "duke_rosven",
+        "since": 10
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 10
+       },
+       {
+        "character": "hilda_brun",
+        "since": 10
+       }
+      ]
+     }
+    ],
+    "learned": [
+     {
+      "fact": "c5-10",
+      "character": "duke_rosven",
+      "since": 0,
+      "quote": "카시엘이 노엘의 소매를 걷어 올렸다. 팔꿈치까지 번진 은빛 무늬를 보는 순간, 그의 턱에 힘이 들어갔다."
+     },
+     {
+      "fact": "c5-10",
+      "character": "physician",
+      "since": 0,
+      "quote": "이 반점은…… 3년 동안 보아 왔지만, 의서 어디에도 없는 것입니다. 이렇게 번진 것도 처음이고요."
+     },
+     {
+      "fact": "c5-11",
+      "character": "physician",
+      "since": 0,
+      "quote": "이 반점은…… 3년 동안 보아 왔지만, 의서 어디에도 없는 것입니다. 이렇게 번진 것도 처음이고요."
+     }
+    ],
+    "scene": {
+     "pov": "cecilia_ondre",
+     "location": "로스벤 저택 2층 노엘의 방",
+     "present": [
+      "cecilia_ondre",
+      "hilda_brun",
+      "noel_rosven",
+      "duke_rosven",
+      "physician",
+      "maids"
+     ]
+    }
+   }
+  },
+  {
+   "chapter": 11,
+   "tries": [
+    {
+     "attempt": 0,
+     "fresh": true,
+     "error": null,
+     "cost": 0.10583,
+     "input": 5388,
+     "cache_read": 18440,
+     "cache_write": 1318,
+     "output": 3700,
+     "latency_s": 32.294,
+     "raw": null
+    }
+   ],
+   "facts": 10,
+   "rejected": 0,
+   "learned": 2,
+   "new_characters": 0,
+   "notes": [],
+   "output": {
+    "characters": [],
+    "aliases": [],
+    "merges": [],
+    "facts": [
+     {
+      "statement": "해약의 힘은 에어린 가의 핏줄에만 전해졌다고 알려져 있다.",
+      "category": "world",
+      "quote": "해약의 힘은 에어린 가의 핏줄에만 전해졌다고 알려져 있소. 그리고 그 에어린 가는 25년 전에 끊겼소.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "duke_rosven",
+        "since": 0
+       },
+       {
+        "character": "hilda_brun",
+        "since": 11
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 11
+       }
+      ]
+     },
+     {
+      "statement": "에어린 가는 25년 전 은월 숙청으로 끊겼고, 그 뒤로 아무도 그 집안 이름을 입에 올리지 않았다.",
+      "category": "world",
+      "quote": "그 일 뒤로는 아무도 그 집안 이름을 입에 올리지 않았지요.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "duke_rosven",
+        "since": 0
+       },
+       {
+        "character": "hilda_brun",
+        "since": 0
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 11
+       }
+      ]
+     },
+     {
+      "statement": "할레스 왕국 법은 해약의 능력을 지닌 자를 금지된 혈통으로 보며, 이를 발견한 자는 지체 없이 왕립 서약청에 신고해야 하고 신고하지 않은 자도 벌을 받는다.",
+      "category": "world",
+      "quote": "'해약의 능력을 지닌 자는 금지된 혈통으로 본다. 이를 발견한 자는 지체 없이 왕립 서약청에 신고하여야 한다.'",
+      "common": false,
+      "knowers": [
+       {
+        "character": "duke_rosven",
+        "since": 0
+       },
+       {
+        "character": "oath_director",
+        "since": 0
+       },
+       {
+        "character": "raphael_winters",
+        "since": 0
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 11
+       },
+       {
+        "character": "hilda_brun",
+        "since": 11
+       }
+      ]
+     },
+     {
+      "statement": "카시엘 로스벤은 세실리아의 힘을 서약청에 신고하지 않고 이 일을 서재 밖으로 내지 않기로 했다.",
+      "category": "secret",
+      "quote": "그리고 나는 신고하지 않겠소.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "duke_rosven",
+        "since": 11
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 11
+       },
+       {
+        "character": "hilda_brun",
+        "since": 11
+       }
+      ]
+     },
+     {
+      "statement": "세실리아 온드레는 카시엘 로스벤에게 앞으로 노엘이나 마리를 포함해 누구 앞에서도 해약의 힘을 보이지 않겠다고 약속했다.",
+      "category": "event",
+      "quote": "대신 하나만 약속하시오. 앞으로 아무 앞에서도 그 힘을 보이지 마시오. 노엘 앞에서도, 당신 친구 앞에서도.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "duke_rosven",
+        "since": 11
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 11
+       },
+       {
+        "character": "hilda_brun",
+        "since": 11
+       }
+      ]
+     },
+     {
+      "statement": "카시엘 로스벤은 세실리아를 지켜 주는 이유를 노엘을 살린 사람이기 때문이라고 말했다.",
+      "category": "motive",
+      "quote": "노엘을 살린 사람이오.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "duke_rosven",
+        "since": 11
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 11
+       }
+      ]
+     },
+     {
+      "statement": "힐다 브룬은 그날 밤 본 것을 무덤까지 가져가겠다며 노엘의 열은 약초 덕에 내린 것으로 하겠다고 세실리아에게 약속했다.",
+      "category": "event",
+      "quote": "이 늙은이는 오늘 밤 아무것도 보지 못했습니다. 도련님은 약초가 이제야 들어서 열이 내린 거지요. 그 말 그대로 무덤까지 가져가겠습니다.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "hilda_brun",
+        "since": 11
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 11
+       },
+       {
+        "character": "duke_rosven",
+        "since": 11
+       }
+      ]
+     },
+     {
+      "statement": "레온 온드레는 거짓말을 하면 귀부터 빨개진다.",
+      "category": "identity",
+      "quote": "아버지는 거짓말을 못 하는 분이에요. 거짓말을 하시면 귀부터 빨개지거든요.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "cecilia_ondre",
+        "since": 0
+       },
+       {
+        "character": "duke_rosven",
+        "since": 11
+       },
+       {
+        "character": "hilda_brun",
+        "since": 11
+       }
+      ]
+     },
+     {
+      "statement": "오스윈 모르데인은 수도 어딘가에서 서약 하나가 끊어진 것을 감지했지만 누가 풀었는지는 알지 못했다.",
+      "category": "ability",
+      "quote": "그는 수도 어딘가의 서약 하나가 끊어진 것을 감지했다. 누군가 풀었다. 그러나 그것이 누구인지는 알 수 없었다.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "oath_director",
+        "since": 11
+       },
+       {
+        "character": "raphael_winters",
+        "since": 11
+       }
+      ]
+     },
+     {
+      "statement": "오스윈 모르데인은 라파엘 윈터스에게 수도 안에서 서약이 풀린 곳을 조용히 찾고 수색 기록은 자기 책상 위로만 올리라고 명했다.",
+      "category": "event",
+      "quote": "남기게. 다만 내 책상 위로만 올리게.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "oath_director",
+        "since": 11
+       },
+       {
+        "character": "raphael_winters",
+        "since": 11
+       }
+      ]
+     }
+    ],
+    "learned": [
+     {
+      "fact": "c10-7",
+      "character": "duke_rosven",
+      "since": 0,
+      "quote": "사람들은 그것을 해약이라 부르오. 옛날이야기에나 나오는 힘이라고들 하지."
+     },
+     {
+      "fact": "c10-7",
+      "character": "hilda_brun",
+      "since": 11,
+      "quote": "사람들은 그것을 해약이라 부르오. 옛날이야기에나 나오는 힘이라고들 하지."
+     }
+    ],
+    "scene": {
+     "pov": "cecilia_ondre",
+     "location": "로스벤 저택 서재와 세실리아의 방, 은종탑 꼭대기 서약청장실",
+     "present": [
+      "cecilia_ondre",
+      "duke_rosven",
+      "hilda_brun",
+      "oath_director",
+      "raphael_winters"
+     ]
+    }
+   }
+  },
+  {
+   "chapter": 12,
+   "tries": [
+    {
+     "attempt": 0,
+     "fresh": true,
+     "error": null,
+     "cost": 0.11006,
+     "input": 5391,
+     "cache_read": 19758,
+     "cache_write": 1176,
+     "output": 3933,
+     "latency_s": 31.923,
+     "raw": null
+    }
+   ],
+   "facts": 10,
+   "rejected": 0,
+   "learned": 1,
+   "new_characters": 2,
+   "notes": [],
+   "output": {
+    "characters": [
+     {
+      "id": "gray_forest_bandits",
+      "name": "회색 숲 산적들",
+      "appeared": true,
+      "aliases": [
+       "누더기 차림의 사내들",
+       "산적"
+      ]
+     },
+     {
+      "id": "blackpine_people",
+      "name": "흑송성 사람들",
+      "appeared": true,
+      "aliases": []
+     }
+    ],
+    "aliases": [],
+    "merges": [],
+    "facts": [
+     {
+      "statement": "카시엘 로스벤은 사교계에는 약혼녀의 영지 순방이라 알리고 일행의 거처를 북부 본성 흑송성으로 옮기기로 했다.",
+      "category": "event",
+      "quote": "북부 본성 흑송성으로 거처를 옮기겠다는 것이었다. 사교계에는 공작이 약혼녀에게 영지를 보여 주러 간다고 알리고, 실제로는.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "duke_rosven",
+        "since": 12
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 12
+       },
+       {
+        "character": "hilda_brun",
+        "since": 12
+       },
+       {
+        "character": "rowan_crow",
+        "since": 12
+       },
+       {
+        "character": "noel_rosven",
+        "since": 12
+       }
+      ]
+     },
+     {
+      "statement": "카시엘 로스벤은 세실리아에게만 들리게 수도가 은종탑과 너무 가까워 당분간 떨어져 있는 편이 안전하다고 말했다.",
+      "category": "motive",
+      "quote": "수도는 은종탑과 너무 가깝소. 당신도 당분간은 떨어져 있는 편이 안전하오.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "duke_rosven",
+        "since": 12
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 12
+       }
+      ]
+     },
+     {
+      "statement": "세실리아 온드레는 마리 페넬 편에 필사실로 휴가 신청서를 보냈다.",
+      "category": "event",
+      "quote": "휴가 신청서는 어제 마리 편에 필사실로 보내 두었다.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "cecilia_ondre",
+        "since": 12
+       },
+       {
+        "character": "mari_fennel",
+        "since": 12
+       }
+      ]
+     },
+     {
+      "statement": "흑송성은 검은 소나무 숲에 둘러싸여 이름 붙은 로스벤 공작가의 본성이다.",
+      "category": "location",
+      "quote": "검은 소나무 숲이 성을 빙 둘러싸고 있어서 붙은 이름이지요. 로스벤 공작가의 본성입니다.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "duke_rosven",
+        "since": 0
+       },
+       {
+        "character": "rowan_crow",
+        "since": 0
+       },
+       {
+        "character": "hilda_brun",
+        "since": 0
+       },
+       {
+        "character": "noel_rosven",
+        "since": 0
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 12
+       }
+      ]
+     },
+     {
+      "statement": "로완 크로우는 출발 전날 밤 행선지를 밝히지 않고 혼자 나갔다가 새벽닭 울 무렵에야 돌아왔다.",
+      "category": "event",
+      "quote": "출발 전날 밤에 행선지를 밝히지 않고 혼자 나갔다가, 새벽닭 울 무렵에야 들어온 사람이 저기 있지요.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "rowan_crow",
+        "since": 12
+       },
+       {
+        "character": "hilda_brun",
+        "since": 12
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 12
+       }
+      ]
+     },
+     {
+      "statement": "노엘 로스벤은 북부로 가는 여정 내내 한 번도 열이 오르지 않았다.",
+      "category": "event",
+      "quote": "노엘은 그 여정 내내 한 번도 열이 오르지 않았다.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "noel_rosven",
+        "since": 12
+       },
+       {
+        "character": "hilda_brun",
+        "since": 12
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 12
+       }
+      ]
+     },
+     {
+      "statement": "회색 숲은 수도와 북부 영지 사이의 마지막 관문으로 산적이 자주 나온다.",
+      "category": "world",
+      "quote": "내일 지날 곳은 회색 숲입니다. 수도와 북부 영지 사이 마지막 관문이지요. 산적이 자주 나오는 곳이라, 해 지기 전에 빠져나가야 합니다.",
+      "common": true,
+      "knowers": []
+     },
+     {
+      "statement": "회색 숲에서 누더기 차림의 사내 열하나가 로스벤 일행의 마차를 습격했다가 카시엘과 로완에게 밀려 흩어졌다.",
+      "category": "event",
+      "quote": "누더기 차림의 사내들이 나무 사이에서 쏟아져 나오고 있었다. 하나, 둘, 셋… 열하나.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "cecilia_ondre",
+        "since": 12
+       },
+       {
+        "character": "duke_rosven",
+        "since": 12
+       },
+       {
+        "character": "rowan_crow",
+        "since": 12
+       },
+       {
+        "character": "hilda_brun",
+        "since": 12
+       },
+       {
+        "character": "noel_rosven",
+        "since": 12
+       },
+       {
+        "character": "gray_forest_bandits",
+        "since": 12
+       }
+      ]
+     },
+     {
+      "statement": "로완 크로우는 회색 숲 습격에서 산적 넷을 쓰러뜨렸다.",
+      "category": "event",
+      "quote": "넷입니다, 꼬마 도련님. 정확히 세 주셔야죠.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "rowan_crow",
+        "since": 12
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 12
+       },
+       {
+        "character": "noel_rosven",
+        "since": 12
+       },
+       {
+        "character": "duke_rosven",
+        "since": 12
+       }
+      ]
+     },
+     {
+      "statement": "흑송성 사람들 모두가 성문 안쪽 광장에 줄지어 서서 공작의 약혼녀 세실리아를 맞았다.",
+      "category": "event",
+      "quote": "성문 안쪽 광장에, 흑송성 사람들 모두가 줄지어 서 있었다. 기사들도, 하인들도, 부엌 앞치마를 두른 아낙들도.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "cecilia_ondre",
+        "since": 12
+       },
+       {
+        "character": "blackpine_people",
+        "since": 12
+       },
+       {
+        "character": "duke_rosven",
+        "since": 12
+       },
+       {
+        "character": "rowan_crow",
+        "since": 12
+       },
+       {
+        "character": "hilda_brun",
+        "since": 12
+       },
+       {
+        "character": "noel_rosven",
+        "since": 12
+       }
+      ]
+     }
+    ],
+    "learned": [
+     {
+      "fact": "c4-6",
+      "character": "blackpine_people",
+      "since": 12,
+      "quote": "그들의 시선이 일제히 마차 창으로, 공작의 약혼녀에게로 쏟아졌다."
+     }
+    ],
+    "scene": {
+     "pov": "cecilia_ondre",
+     "location": "로스벤 저택 앞마당, 북행길과 여관, 회색 숲, 흑송성 성문",
+     "present": [
+      "cecilia_ondre",
+      "duke_rosven",
+      "rowan_crow",
+      "hilda_brun",
+      "noel_rosven",
+      "gray_forest_bandits",
+      "blackpine_people"
+     ]
+    }
+   }
+  },
+  {
+   "chapter": 13,
+   "tries": [
+    {
+     "attempt": 0,
+     "fresh": true,
+     "error": null,
+     "cost": 0.11523,
+     "input": 5350,
+     "cache_read": 20934,
+     "cache_write": 1220,
+     "output": 4177,
+     "latency_s": 35.857,
+     "raw": null
+    }
+   ],
+   "facts": 11,
+   "rejected": 0,
+   "learned": 3,
+   "new_characters": 1,
+   "notes": [],
+   "output": {
+    "characters": [
+     {
+      "id": "blackpine_steward",
+      "name": "흑송성 늙은 집사",
+      "appeared": true,
+      "aliases": [
+       "늙은 집사",
+       "백발의 늙은 집사"
+      ]
+     }
+    ],
+    "aliases": [],
+    "merges": [],
+    "facts": [
+     {
+      "statement": "흑송성의 늙은 집사는 공작이 약혼했다는 소식에 성 전체가 사흘을 떠들었다고 세실리아에게 속삭였다.",
+      "category": "event",
+      "quote": "\"공작님이 약혼하셨다는 소식을 듣고 성 전체가 사흘을 떠들었습니다.\"",
+      "common": false,
+      "knowers": [
+       {
+        "character": "blackpine_steward",
+        "since": 13
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 13
+       },
+       {
+        "character": "blackpine_people",
+        "since": 13
+       }
+      ]
+     },
+     {
+      "statement": "흑송성에서 가장 높은 탑은 북탑으로, 올라가면 회색 숲까지 다 보이고 계단이 백 개가 넘는다.",
+      "category": "location",
+      "quote": "\"제일 높은 게 북탑이에요. 거기 올라가면 회색 숲까지 다 보여요. 근데 힐다가 혼자 올라가면 안 된대요.\"",
+      "common": false,
+      "knowers": [
+       {
+        "character": "noel_rosven",
+        "since": 0
+       },
+       {
+        "character": "hilda_brun",
+        "since": 0
+       },
+       {
+        "character": "duke_rosven",
+        "since": 0
+       },
+       {
+        "character": "rowan_crow",
+        "since": 0
+       },
+       {
+        "character": "blackpine_people",
+        "since": 0
+       },
+       {
+        "character": "blackpine_steward",
+        "since": 0
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 13
+       }
+      ]
+     },
+     {
+      "statement": "흑송성의 겨울 서고는 서쪽 건물 끝, 창 하나 없는 두꺼운 벽의 건물에 있으며 카시엘 로스벤 말고는 아무도 들어가지 않는다.",
+      "category": "location",
+      "quote": "\"계단이 백 개가 넘어서요. 그리고 저쪽, 서쪽 건물 끝에 겨울 서고가 있어요. 옛날 책이랑 서약서가 잔뜩 있는 데요. 작은아버지 말고는 아무도 안 들어가요.\"",
+      "common": false,
+      "knowers": [
+       {
+        "character": "noel_rosven",
+        "since": 0
+       },
+       {
+        "character": "duke_rosven",
+        "since": 0
+       },
+       {
+        "character": "hilda_brun",
+        "since": 0
+       },
+       {
+        "character": "rowan_crow",
+        "since": 0
+       },
+       {
+        "character": "blackpine_steward",
+        "since": 0
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 13
+       }
+      ]
+     },
+     {
+      "statement": "노엘 로스벤은 몰래 겨울 서고에 딱 한 번 들어가 본 적이 있다.",
+      "category": "secret",
+      "quote": "\"딱 한 번요. 이건 비밀이에요. 먼지 때문에 재채기를 열 번 했어요.\"",
+      "common": false,
+      "knowers": [
+       {
+        "character": "noel_rosven",
+        "since": 0
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 13
+       }
+      ]
+     },
+     {
+      "statement": "흑송성 대연회장에서 공작과 약혼녀 세실리아를 위한 환영 만찬이 열렸다.",
+      "category": "event",
+      "quote": "그날 저녁 대연회장에서는 환영 만찬이 열렸다. 사슴 고기 스튜와 검은 빵, 뜨겁게 데운 사과주가 끝도 없이 나왔다. 기사 하나가 잔을 높이 들었다.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "cecilia_ondre",
+        "since": 13
+       },
+       {
+        "character": "duke_rosven",
+        "since": 13
+       },
+       {
+        "character": "rowan_crow",
+        "since": 13
+       },
+       {
+        "character": "noel_rosven",
+        "since": 13
+       },
+       {
+        "character": "hilda_brun",
+        "since": 13
+       },
+       {
+        "character": "blackpine_people",
+        "since": 13
+       },
+       {
+        "character": "blackpine_steward",
+        "since": 13
+       }
+      ]
+     },
+     {
+      "statement": "마리 페넬은 북부에 가면 얼어 죽는다며 세실리아에게 털목도리를 두 개 주었다.",
+      "category": "relationship",
+      "quote": "\"마리가 줬어요. 북부 가면 얼어 죽는다고 두 개나요. 하나는 아직 짐 속에 있어요.\"",
+      "common": false,
+      "knowers": [
+       {
+        "character": "mari_fennel",
+        "since": 0
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 0
+       },
+       {
+        "character": "duke_rosven",
+        "since": 13
+       }
+      ]
+     },
+     {
+      "statement": "카시엘 로스벤은 은종탑 접견실에서 세실리아만 그 줄을 보았기 때문에 그 눈이 필요해서 계약 약혼 상대로 세실리아를 골랐다.",
+      "category": "motive",
+      "quote": "\"그래서 당신을 골랐소. 계약 약혼은 처음부터 그 눈이 필요해서였소.\"",
+      "common": false,
+      "knowers": [
+       {
+        "character": "duke_rosven",
+        "since": 0
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 13
+       }
+      ]
+     },
+     {
+      "statement": "카시엘 로스벤의 왼손 서약흔은 공작위를 이을 때 맺은 '서약청 문서의 내용을 누구에게도 발설하지 않는다'는 침묵 서약의 흔적이다.",
+      "category": "secret",
+      "quote": "\"침묵 서약이오. '서약청 문서의 내용을 누구에게도 발설하지 않는다.'\"",
+      "common": false,
+      "knowers": [
+       {
+        "character": "duke_rosven",
+        "since": 0
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 13
+       }
+      ]
+     },
+     {
+      "statement": "카시엘 로스벤이 침묵 서약의 내용을 말하자 손등의 서약흔이 희미하게 붉어지고 손가락 끝이 떨렸다.",
+      "category": "event",
+      "quote": "말을 맺는 순간, 손등의 흔적이 희미하게 붉어졌다. 카시엘의 손가락 끝이 아주 조금 떨렸다.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "duke_rosven",
+        "since": 13
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 13
+       }
+      ]
+     },
+     {
+      "statement": "세실리아 온드레는 카시엘이 말할 수 없다면 서약청 문서든 무엇이든 자신이 직접 읽겠다고 했고, 카시엘은 이를 받아들이며 자신이 옆에 있겠다고 했다.",
+      "category": "event",
+      "quote": "\"…알겠소. 당신 방식대로 하시오.\"",
+      "common": false,
+      "knowers": [
+       {
+        "character": "cecilia_ondre",
+        "since": 13
+       },
+       {
+        "character": "duke_rosven",
+        "since": 13
+       }
+      ]
+     },
+     {
+      "statement": "로완 크로우는 순찰 중 성벽 아래에 멈춰 서서 카시엘과 세실리아가 이야기하는 쪽을 올려다보고 있었고, 세실리아와 눈이 마주치자 웃지 않고 자리를 떴다.",
+      "category": "event",
+      "quote": "눈이 마주쳤다. 로완은 웃지 않았다. 잠깐 그렇게 서 있다가, 아무 일 없었다는 듯 다시 걸음을 옮겼다. 횃불이 성벽 모퉁이를 돌아 사라졌다.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "rowan_crow",
+        "since": 13
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 13
+       },
+       {
+        "character": "duke_rosven",
+        "since": 13
+       }
+      ]
+     }
+    ],
+    "learned": [
+     {
+      "fact": "c12-4",
+      "character": "blackpine_steward",
+      "since": 0,
+      "quote": "\"흑송성에 오신 것을 환영합니다, 아가씨.\""
+     },
+     {
+      "fact": "c4-6",
+      "character": "blackpine_steward",
+      "since": 13,
+      "quote": "\"공작님이 약혼하셨다는 소식을 듣고 성 전체가 사흘을 떠들었습니다.\""
+     },
+     {
+      "fact": "c6-5",
+      "character": "noel_rosven",
+      "since": 0,
+      "quote": "\"계단이 백 개가 넘어서요. 그리고 저쪽, 서쪽 건물 끝에 겨울 서고가 있어요. 옛날 책이랑 서약서가 잔뜩 있는 데요. 작은아버지 말고는 아무도 안 들어가요.\""
+     },
+     {
+      "fact": "c8-5",
+      "character": "cecilia_ondre",
+      "since": 8,
+      "quote": "달빛 아래 손등이 드러났다. 정원에서 한 번 본 적 있는 오래된 서약흔이었다."
+     }
+    ],
+    "scene": {
+     "pov": "cecilia_ondre",
+     "location": "흑송성 광장, 대연회장, 성벽 위, 세실리아의 방",
+     "present": [
+      "cecilia_ondre",
+      "duke_rosven",
+      "rowan_crow",
+      "noel_rosven",
+      "hilda_brun",
+      "blackpine_people",
+      "blackpine_steward"
+     ]
+    }
+   }
+  },
+  {
+   "chapter": 14,
+   "tries": [
+    {
+     "attempt": 0,
+     "fresh": true,
+     "error": null,
+     "cost": 0.10069,
+     "input": 5163,
+     "cache_read": 22154,
+     "cache_write": 1502,
+     "output": 3405,
+     "latency_s": 28.797,
+     "raw": null
+    }
+   ],
+   "facts": 10,
+   "rejected": 0,
+   "learned": 1,
+   "new_characters": 1,
+   "notes": [],
+   "output": {
+    "characters": [
+     {
+      "id": "blackpine_servant",
+      "name": "흑송성 하인",
+      "appeared": true,
+      "aliases": [
+       "숨이 찬 하인"
+      ]
+     }
+    ],
+    "aliases": [],
+    "merges": [],
+    "facts": [
+     {
+      "statement": "카시엘 로스벤은 세실리아 온드레가 그날 밤 겨울 서고에 올 것이라 보고 등불을 든 채 서고 문 앞에서 먼저 기다리고 있었다.",
+      "category": "event",
+      "quote": "카시엘이 등불을 든 채 벽에 기대 있었다. 성벽에서 헤어진 지 반 시진도 지나지 않았는데, 그는 이미 이곳에 와 있었다.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "duke_rosven",
+        "since": 14
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 14
+       }
+      ]
+     },
+     {
+      "statement": "흑송성 겨울 서고에는 리처드 로스벤 공작 대의 영지 서약들이 서약사가 은잉크로 베낀 정식 사본으로 보관되어 있고, 원본은 은종탑에 있다.",
+      "category": "location",
+      "quote": "서약청에서 봉인한 원본은 은종탑에 있고, 여기 있는 것은 가문이 보관하는 사본이었다. 그래도 서약사의 손으로 은잉크를 써서 베낀 정식 사본이었다.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "duke_rosven",
+        "since": 0
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 14
+       }
+      ]
+     },
+     {
+      "statement": "세실리아 온드레는 리처드 로스벤 대의 서약 사본 몇 장에 하나꼴로, 본문을 쓴 뒤 행간에 은잉크로 덧쓴 숨은 조항이 비스듬한 빛에 떠오르는 것을 발견했다.",
+      "category": "secret",
+      "quote": "글자였다. 아주 작은, 단정한 글씨. 본문을 다 쓴 뒤 누군가 행간에 은잉크로 덧쓴 조항이었다.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "cecilia_ondre",
+        "since": 14
+       },
+       {
+        "character": "duke_rosven",
+        "since": 14
+       }
+      ]
+     },
+     {
+      "statement": "리처드 로스벤 대의 서약 사본 행간에 '서약자가 다하지 못한 의무는 후계자에게 옮겨 간다'는 숨은 조항이 또렷하게 쓰여 있었다.",
+      "category": "secret",
+      "quote": "\"서약자가 다하지 못한 의무는 후계자에게 옮겨 간다.\"",
+      "common": false,
+      "knowers": [
+       {
+        "character": "cecilia_ondre",
+        "since": 14
+       },
+       {
+        "character": "duke_rosven",
+        "since": 14
+       },
+       {
+        "character": "hilda_brun",
+        "since": 14
+       }
+      ]
+     },
+     {
+      "statement": "필사실 선배들 사이에는 보통 사람 눈에 보이지 않는 은잉크로 행간에 덧쓴 조항에 서명자가 모르고 묶인다는 '그림자 조항' 괴담이 전해진다.",
+      "category": "world",
+      "quote": "보통 사람 눈에는 보이지 않는 은잉크로 서약서 행간에 덧쓴 조항. 서명하는 사람은 그런 게 있는 줄도 모르고 서명하지만, 봉인되는 순간 그 조항에도 똑같이 묶인다고 했다. 사람들은 그것을 그림자 조항이라 불렀다.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "cecilia_ondre",
+        "since": 0
+       },
+       {
+        "character": "mari_fennel",
+        "since": 0
+       },
+       {
+        "character": "duke_rosven",
+        "since": 14
+       }
+      ]
+     },
+     {
+      "statement": "노엘 로스벤의 밤열은 3년 전 가을, 리처드 로스벤 내외의 장례를 치르고 열흘 뒤 처음 시작되었고 그날 밤 처음 손목에 은빛이 비쳤다.",
+      "category": "event",
+      "quote": "\"3년 전 가을이지요. 전대 공작님 내외분 장례를 치르고 꼭 열흘 뒤였습니다. 그날 밤 처음 도련님 손목에 은빛이 비쳤지요.\"",
+      "common": false,
+      "knowers": [
+       {
+        "character": "hilda_brun",
+        "since": 0
+       },
+       {
+        "character": "duke_rosven",
+        "since": 0
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 14
+       }
+      ]
+     },
+     {
+      "statement": "노엘 로스벤의 은빛 반점은 병이 아니라 그림자 조항에 따라 리처드 로스벤의 의무가 후계자에게 옮겨 가면서 남은 서약흔이었다.",
+      "category": "secret",
+      "quote": "\"이 조항의 흔적이었어요. 의무가 옮겨 가면서 남은 서약흔이요. 제가 그날 푼 건… 이거였어요.\"",
+      "common": false,
+      "knowers": [
+       {
+        "character": "duke_rosven",
+        "since": 0
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 14
+       },
+       {
+        "character": "hilda_brun",
+        "since": 14
+       }
+      ]
+     },
+     {
+      "statement": "카시엘 로스벤은 노엘의 반점이 그 조항 때문임을 처음부터 알고 있었으며, 침묵 서약 때문에 말로 하지 못하고 고개를 끄덕여 인정했다.",
+      "category": "secret",
+      "quote": "그는 아무 말도 하지 않았다. 다만 고개를 한 번, 아주 천천히 끄덕였다.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "duke_rosven",
+        "since": 0
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 14
+       },
+       {
+        "character": "hilda_brun",
+        "since": 14
+       }
+      ]
+     },
+     {
+      "statement": "세실리아 온드레는 밤새 리처드 공작 대의 영지 서약을 다시 읽었지만 또렷한 줄은 그 한 줄뿐이었고, 흐린 획들은 자리만 표시해 두었다.",
+      "category": "event",
+      "quote": "또렷하게 읽히는 줄은 끝내 그 한 줄뿐이었다. 흐린 획들은 어느 두루마리 몇째 줄인지 자리만 표시해 두었다.",
+      "common": false,
+      "knowers": [
+       {
+        "character": "cecilia_ondre",
+        "since": 14
+       },
+       {
+        "character": "duke_rosven",
+        "since": 14
+       },
+       {
+        "character": "hilda_brun",
+        "since": 14
+       }
+      ]
+     },
+     {
+      "statement": "새벽에 금빛 사자 문장을 단 왕실 마차가 흑송성 성문에 들어섰다.",
+      "category": "event",
+      "quote": "\"왕실 문장을 단 마차입니다. 금빛 사자 문장이요.\"",
+      "common": false,
+      "knowers": [
+       {
+        "character": "blackpine_servant",
+        "since": 14
+       },
+       {
+        "character": "duke_rosven",
+        "since": 14
+       },
+       {
+        "character": "cecilia_ondre",
+        "since": 14
+       },
+       {
+        "character": "hilda_brun",
+        "since": 14
+       },
+       {
+        "character": "noel_rosven",
+        "since": 14
+       }
+      ]
+     }
+    ],
+    "learned": [
+     {
+      "fact": "c13-3",
+      "character": "blackpine_servant",
+      "since": 0,
+      "quote": "잠시 뒤, 숨이 찬 하인 하나가 서고 문 앞에 나타났다."
+     }
+    ],
+    "scene": {
+     "pov": "cecilia_ondre",
+     "location": "흑송성 겨울 서고",
+     "present": [
+      "cecilia_ondre",
+      "duke_rosven",
+      "hilda_brun",
+      "noel_rosven",
+      "blackpine_servant"
+     ]
+    }
+   }
+  }
+ ],
+ "problems": [],
+ "calls": 14,
+ "spent_usd": 1.6599,
+ "rejected": [
+  {
+   "chapter": 4,
+   "kind": "fact",
+   "statement": "카시엘 로스벤은 계약을 봉인하지 않는 이유를 묻는 세실리아에게 자기 사정이라고만 답했다.",
+   "quote": "내 사정이오."
+  },
+  {
+   "chapter": 6,
+   "kind": "fact",
+   "statement": "카시엘 로스벤은 노엘 곁을 지켜 준 세실리아에게 고맙다고 말했다.",
+   "quote": "\"고맙소.\""
+  }
+ ],
+ "notes": []
+}

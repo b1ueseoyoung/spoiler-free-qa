@@ -1,0 +1,134 @@
+{
+ "upto": 14,
+ "gold_facts": 52,
+ "full": 41,
+ "partial": 10,
+ "missed": 1,
+ "by_category": {
+  "ability": {
+   "full": 1
+  },
+  "death": {
+   "full": 1
+  },
+  "event": {
+   "full": 15,
+   "partial": 3
+  },
+  "identity": {
+   "full": 10,
+   "partial": 2
+  },
+  "location": {
+   "full": 1,
+   "partial": 1
+  },
+  "motive": {
+   "partial": 1
+  },
+  "relationship": {
+   "partial": 2,
+   "full": 3,
+   "missed": 1
+  },
+  "secret": {
+   "full": 3
+  },
+  "world": {
+   "partial": 1,
+   "full": 7
+  }
+ },
+ "twists": {
+  "full": 1
+ },
+ "reveal": {
+  "same": 50,
+  "early": 1
+ },
+ "reveal_early": [
+  {
+   "gold": "f030",
+   "gold_ch": 8,
+   "gold_statement": "카시엘의 왼손 손등에는 오래된 서약흔이 있고, 그는 그것을 가리려고 왼손에만 장갑을 낀다.",
+   "extracted": "c2-8",
+   "extracted_ch": 2,
+   "extracted_statement": "카시엘 로스벤은 실내에서도 왼손에만 검은 가죽 장갑을 끼고 있다."
+  }
+ ],
+ "tp": 213,
+ "fp": 34,
+ "fn": 88,
+ "since_early": [
+  {
+   "gold": "f006",
+   "character": "cassiel",
+   "extracted": 0,
+   "gold_since": 2,
+   "statement": "라파엘 윈터스(31세)는 서약청 수석 서약사로 필경사들의 직속 상관이다."
+  },
+  {
+   "gold": "f011",
+   "character": "cecilia",
+   "extracted": 0,
+   "gold_since": 3,
+   "statement": "할레스 왕국 귀족 관습인 '선약 우선'에 따라, 이미 약혼한 귀족에게는 왕명 혼인을 강제할 수 없다."
+  },
+  {
+   "gold": "f038",
+   "character": "cecilia",
+   "extracted": 0,
+   "gold_since": 11,
+   "statement": "왕국법은 해약 능력자를 '금지된 혈통'으로 규정하고, 발견하면 즉시 서약청에 신고하도록 한다."
+  },
+  {
+   "gold": "f042",
+   "character": "noel",
+   "extracted": 0,
+   "gold_since": 12,
+   "statement": "회색 숲은 수도와 북부 영지 사이의 마지막 관문으로, 산적이 자주 출몰한다."
+  },
+  {
+   "gold": "f042",
+   "character": "cecilia",
+   "extracted": 0,
+   "gold_since": 12,
+   "statement": "회색 숲은 수도와 북부 영지 사이의 마지막 관문으로, 산적이 자주 출몰한다."
+  },
+  {
+   "gold": "f046",
+   "character": "cecilia",
+   "extracted": 0,
+   "gold_since": 14,
+   "statement": "'그림자 조항'은 보통 사람 눈에는 보이지 않는 은잉크로 서약서 행간에 덧쓴 조항으로, 서명자는 모른 채 그 조항에도 묶인다."
+  },
+  {
+   "gold": "f183",
+   "character": "noel",
+   "extracted": 0,
+   "gold_since": 6,
+   "statement": "서약사는 은가루에 자신의 피 한 방울을 섞어 간 은잉크로 서약을 쓰고, 필경사는 피를 섞지 않은 은잉크로 효력 없는 사본만 베낀다."
+  }
+ ],
+ "since_early_partial": [],
+ "since_late": 12,
+ "after_reveal": 17,
+ "after_reveal_hit": 12,
+ "comparable": [
+  "cassiel",
+  "cecilia",
+  "hilda",
+  "king",
+  "marie",
+  "mordain",
+  "noel",
+  "ondre",
+  "raphael",
+  "rosetta",
+  "rowan",
+  "theodore"
+ ],
+ "precision": 0.862,
+ "recall": 0.708,
+ "support": {}
+}

@@ -1,0 +1,12 @@
+{
+ "work": "wn01-rofan",
+ "model": "claude-opus-5-5",
+ "upto": 14,
+ "done": 14,
+ "stopped": null,
+ "calls": 0,
+ "spent_usd": 0,
+ "replayed_from": "runs/onto-extract/wn01-opus-50",
+ "chapters": [],
+ "problems": []
+}
