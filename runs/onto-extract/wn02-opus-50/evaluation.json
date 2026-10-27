@@ -1,0 +1,220 @@
+{
+ "upto": 50,
+ "gold_facts": 233,
+ "full": 221,
+ "partial": 9,
+ "missed": 3,
+ "by_category": {
+  "ability": {
+   "full": 13
+  },
+  "death": {
+   "full": 2
+  },
+  "event": {
+   "partial": 5,
+   "full": 98,
+   "missed": 2
+  },
+  "identity": {
+   "full": 30,
+   "missed": 1
+  },
+  "location": {
+   "full": 10,
+   "partial": 2
+  },
+  "motive": {
+   "full": 16,
+   "partial": 1
+  },
+  "relationship": {
+   "full": 8
+  },
+  "secret": {
+   "full": 12,
+   "partial": 1
+  },
+  "world": {
+   "full": 32
+  }
+ },
+ "twists": {
+  "full": 8,
+  "partial": 1
+ },
+ "reveal": {
+  "same": 221,
+  "late": 4,
+  "early": 5
+ },
+ "reveal_early": [
+  {
+   "gold": "f045",
+   "gold_ch": 9,
+   "gold_statement": "도하가 쓰는 열쇠틀은 윤도영이 정전 전에 남궁전당포에서 사 간 묵은 물건이다.",
+   "extracted": "c1-8",
+   "extracted_ch": 1,
+   "extracted_statement": "윤도하가 쓰는 낡은 열쇠틀은 누나 윤도영의 방에서 찾아낸 물건이다."
+  },
+  {
+   "gold": "f146",
+   "gold_ch": 35,
+   "gold_statement": "삼킴을 쓰는 매듭꾼은 문에서 쏟아지는 잔영을 삼켜 받아 내며 문을 붙들 수 있다.",
+   "extracted": "c17-3",
+   "extracted_ch": 17,
+   "extracted_statement": "서이현은 원형 그을음이 문에서 쏟아지는 것을 몸으로 받아 내며 붙든 매듭꾼이 발밑 바닥에 남기는 자국이라고 말했다."
+  },
+  {
+   "gold": "f182",
+   "gold_ch": 44,
+   "gold_statement": "도하는 그 밤 문을 잠근 값으로 그날 밤의 기억을 잃었다.",
+   "extracted": "c18-4",
+   "extracted_ch": 18,
+   "extracted_statement": "서이현은 오말순에게 윤도하가 잔영에 닿아 쓰러져 정전 밤 기억을 잃었다고 말했다."
+  },
+  {
+   "gold": "f187",
+   "gold_ch": 44,
+   "gold_statement": "윤도영은 문이 구봉동의 산 사람들을 끌어당기자 안쪽에서 매듭으로 문을 당겨 닫으려고 제 발로 문 안에 들어갔다.",
+   "extracted": "c19-7",
+   "extracted_ch": 19,
+   "extracted_statement": "윤도영은 정전 밤 누가 끌고 간 것이 아니라 제 발로 변전소 지하의 문 안으로 걸어 들어갔다."
+  },
+  {
+   "gold": "f219",
+   "gold_ch": 50,
+   "gold_statement": "도하는 이번 잠금의 값으로 소윤과 강변에서 입 맞춘 밤의 기억을 잃었다.",
+   "extracted": "c38-8",
+   "extracted_ch": 38,
+   "extracted_statement": "윤도하와 한소윤은 서하강변 전망대 난간 앞에서 입을 맞췄다."
+  }
+ ],
+ "tp": 1448,
+ "fp": 35,
+ "fn": 341,
+ "since_early": [
+  {
+   "gold": "f009",
+   "character": "malsun",
+   "extracted": 0,
+   "gold_since": 2,
+   "statement": "백양개발이 구봉동 재개발 사업자로 선정됐다."
+  },
+  {
+   "gold": "f009",
+   "character": "doha",
+   "extracted": 0,
+   "gold_since": 2,
+   "statement": "백양개발이 구봉동 재개발 사업자로 선정됐다."
+  },
+  {
+   "gold": "f011",
+   "character": "doyeong",
+   "extracted": 0,
+   "gold_since": 50,
+   "statement": "공식 발표에 따르면 정전 원인은 변전소 화재다."
+  },
+  {
+   "gold": "f028",
+   "character": "doyeong",
+   "extracted": 0,
+   "gold_since": 49,
+   "statement": "구봉 등불제는 매년 정전 기념일 전날 밤 서하강에 등을 띄워 실종자를 기리는 행사다."
+  },
+  {
+   "gold": "f041",
+   "character": "doha",
+   "extracted": 0,
+   "gold_since": 8,
+   "statement": "백양개발 본사 백양타워는 서하강 건너 신도심에 있다."
+  },
+  {
+   "gold": "f141",
+   "character": "mugyeom",
+   "extracted": 0,
+   "gold_since": 34,
+   "statement": "백지안이 강무겸의 팔에 번진 검은 멍을 보았다."
+  },
+  {
+   "gold": "f145",
+   "character": "malsun",
+   "extracted": 36,
+   "gold_since": 37,
+   "statement": "백태신은 강무겸에게 문을 다시 열면 윤도영을 포함한 실종자 41명을 모두 데려올 수 있다고 말했다."
+  },
+  {
+   "gold": "f155",
+   "character": "malsun",
+   "extracted": 0,
+   "gold_since": 37,
+   "statement": "구봉국수에서 주민들이 등불제에 띄울 등을 접었다."
+  },
+  {
+   "gold": "f155",
+   "character": "doha",
+   "extracted": 0,
+   "gold_since": 37,
+   "statement": "구봉국수에서 주민들이 등불제에 띄울 등을 접었다."
+  },
+  {
+   "gold": "f160",
+   "character": "taesin",
+   "extracted": 0,
+   "gold_since": 39,
+   "statement": "백태신은 류건을 떠보려고 일부러 틀린 공사 일정을 흘렸다."
+  },
+  {
+   "gold": "f213",
+   "character": "doha",
+   "extracted": 48,
+   "gold_since": 49,
+   "statement": "백태신은 류건이 3시 17분을 알고 있으리라 보고 공명탑 가동 시각을 바꿨다."
+  },
+  {
+   "gold": "f213",
+   "character": "ihyeon",
+   "extracted": 48,
+   "gold_since": 49,
+   "statement": "백태신은 류건이 3시 17분을 알고 있으리라 보고 공명탑 가동 시각을 바꿨다."
+  }
+ ],
+ "since_early_partial": [
+  {
+   "gold": "f164",
+   "character": "jian",
+   "extracted": 0,
+   "gold_since": 41,
+   "statement": "백양타워 꼭대기 펜트하우스에는 백태신의 기억 거래 연구 노트를 모아 둔 잠긴 방이 있다."
+  },
+  {
+   "gold": "f164",
+   "character": "mugyeom",
+   "extracted": 0,
+   "gold_since": 40,
+   "statement": "백양타워 꼭대기 펜트하우스에는 백태신의 기억 거래 연구 노트를 모아 둔 잠긴 방이 있다."
+  }
+ ],
+ "since_late": 102,
+ "after_reveal": 630,
+ "after_reveal_hit": 450,
+ "comparable": [
+  "cheol",
+  "doha",
+  "doyeong",
+  "geon",
+  "ihyeon",
+  "jian",
+  "malsun",
+  "mugyeom",
+  "sera",
+  "soyun",
+  "taesin"
+ ],
+ "precision": 0.976,
+ "recall": 0.809,
+ "support": {
+  "partial": 45,
+  "yes": 55
+ }
+}

@@ -1,0 +1,408 @@
+{
+ "upto": 50,
+ "gold_facts": 243,
+ "full": 220,
+ "partial": 20,
+ "missed": 3,
+ "by_category": {
+  "ability": {
+   "full": 11
+  },
+  "death": {
+   "full": 2
+  },
+  "event": {
+   "full": 114,
+   "partial": 13,
+   "missed": 2
+  },
+  "identity": {
+   "full": 28
+  },
+  "location": {
+   "full": 7
+  },
+  "motive": {
+   "full": 15,
+   "partial": 2
+  },
+  "relationship": {
+   "full": 20,
+   "partial": 4,
+   "missed": 1
+  },
+  "secret": {
+   "full": 15,
+   "partial": 1
+  },
+  "world": {
+   "full": 8
+  }
+ },
+ "twists": {
+  "full": 8
+ },
+ "reveal": {
+  "same": 223,
+  "late": 7,
+  "early": 10
+ },
+ "reveal_early": [
+  {
+   "gold": "f116",
+   "gold_ch": 25,
+   "gold_statement": "강필은 일행 몰래 밤마다 전서구를 날려 왔다.",
+   "extracted": "c16-16",
+   "extracted_ch": 16,
+   "extracted_statement": "강필은 밤에 녹계촌 여관 마당에서 비둘기 발목에 대롱을 묶어 몰래 전서구를 날렸다."
+  },
+  {
+   "gold": "f124",
+   "gold_ch": 27,
+   "gold_statement": "은찬은 반월객잔에서 마삼에게 주판 셈을 배웠다.",
+   "extracted": "c26-14",
+   "extracted_ch": 26,
+   "extracted_statement": "마삼은 한서진을 기다리는 동안 셈을 배우라며 자기 주판을 노은찬에게 쥐여 주었다."
+  },
+  {
+   "gold": "f156",
+   "gold_ch": 36,
+   "gold_statement": "적하곡 마을을 불태운 것은 운하맹 토벌대였다.",
+   "extracted": "c14-5",
+   "extracted_ch": 14,
+   "extracted_statement": "옥명화는 한서진에게 적하곡 마을에 불을 놓은 것은 운하맹 토벌대였다고 말했다."
+  },
+  {
+   "gold": "f168",
+   "gold_ch": 38,
+   "gold_statement": "하린과 강필이 서로의 마음을 확인했다.",
+   "extracted": "c26-2",
+   "extracted_ch": 26,
+   "extracted_statement": "위하린은 3년 전 내기 빚 대신 자기 마음을 받아 가라며 강필에게 좋아한다고 고백했다."
+  },
+  {
+   "gold": "f189",
+   "gold_ch": 43,
+   "gold_statement": "증언서는 하린의 품에 무사히 남았다.",
+   "extracted": "c42-6",
+   "extracted_ch": 42,
+   "extracted_statement": "위정혁은 증언서를 위하린에게 맡겼고 위하린은 그것을 기름종이와 비단 보자기로 싸서 품에 넣었다."
+  },
+  {
+   "gold": "f193",
+   "gold_ch": 44,
+   "gold_statement": "장례를 치른 밤 강필은 회랑에서 하린의 손을 맞잡고 곁을 지켰다.",
+   "extracted": "c38-8",
+   "extracted_ch": 38,
+   "extracted_statement": "위하린과 강필은 손을 맞잡았고 위하린은 둘이 있을 때 강필을 필 오라버니라 부르기로 했다."
+  },
+  {
+   "gold": "f211",
+   "gold_ch": 46,
+   "gold_statement": "단영은 함께 자란 장헌을 차마 지목하지 못해 집법당 정예도 쌍날 검을 찬다는 말로 의심을 흩뜨렸다.",
+   "extracted": "c19-6",
+   "extracted_ch": 19,
+   "extracted_statement": "설단영은 집법당 정예들도 장헌의 검을 본뜬 쌍날 검을 찬다고 말했다."
+  },
+  {
+   "gold": "f214",
+   "gold_ch": 47,
+   "gold_statement": "청류회에서 서진의 공개 심판이 열렸다.",
+   "extracted": "c24-1",
+   "extracted_ch": 24,
+   "extracted_statement": "맹주 양규천은 운하맹 방을 통해 올가을 청류회에서 한서진을 사부 살해범으로 공개 심판하고 그를 숨기는 자도 같은 죄로 다스리겠다고 선포했다."
+  },
+  {
+   "gold": "f222",
+   "gold_ch": 48,
+   "gold_statement": "장헌이 청류회에서 곽태허를 죽였다고 자백했다.",
+   "extracted": "c30-5",
+   "extracted_ch": 30,
+   "extracted_statement": "장헌은 자신이 곽태허를 베었다고 한서진 앞에서 자백했다."
+  },
+  {
+   "gold": "f230",
+   "gold_ch": 49,
+   "gold_statement": "소량은 단하세가 가주 대행으로서 적하곡 유족에게 사죄했다.",
+   "extracted": "c44-3",
+   "extracted_ch": 44,
+   "extracted_statement": "단하세가 가문 어른들이 발인 날 위소량을 단하세가 가주 대행으로 세웠다."
+  }
+ ],
+ "tp": 1560,
+ "fp": 36,
+ "fn": 327,
+ "since_early": [
+  {
+   "gold": "f031",
+   "character": "danyeong",
+   "extracted": 11,
+   "gold_since": 24,
+   "statement": "5년 전 청류회 결승에서는 서진이 이기고 소량이 졌다."
+  },
+  {
+   "gold": "f033",
+   "character": "yeonho",
+   "extracted": 0,
+   "gold_since": 37,
+   "statement": "운하맹 본산 청류대에서 운령산까지는 말로 사흘 길이다."
+  },
+  {
+   "gold": "f033",
+   "character": "harin",
+   "extracted": 0,
+   "gold_since": 24,
+   "statement": "운하맹 본산 청류대에서 운령산까지는 말로 사흘 길이다."
+  },
+  {
+   "gold": "f033",
+   "character": "eunchan",
+   "extracted": 0,
+   "gold_since": 4,
+   "statement": "운하맹 본산 청류대에서 운령산까지는 말로 사흘 길이다."
+  },
+  {
+   "gold": "f033",
+   "character": "myeonghwa",
+   "extracted": 0,
+   "gold_since": 47,
+   "statement": "운하맹 본산 청류대에서 운령산까지는 말로 사흘 길이다."
+  },
+  {
+   "gold": "f035",
+   "character": "eunchan",
+   "extracted": 0,
+   "gold_since": 5,
+   "statement": "단하세가는 단하성에 있다."
+  },
+  {
+   "gold": "f064",
+   "character": "seojin",
+   "extracted": 0,
+   "gold_since": 13,
+   "statement": "백염장은 야화련 련주의 본거지 장원이다."
+  },
+  {
+   "gold": "f067",
+   "character": "seojin",
+   "extracted": 0,
+   "gold_since": 14,
+   "statement": "운하맹 공식 기록은 적하곡 토벌 때 사파 고수들이 마을에 불을 질렀다고 적고 있다."
+  },
+  {
+   "gold": "f068",
+   "character": "seojin",
+   "extracted": 0,
+   "gold_since": 14,
+   "statement": "양규천은 적하곡 토벌을 이끈 공으로 이름을 얻었다."
+  },
+  {
+   "gold": "f079",
+   "character": "soryang",
+   "extracted": 25,
+   "gold_since": 33,
+   "statement": "강필은 녹계촌 여관에 묵던 밤 여관 마당에서 몰래 전서구를 날렸다."
+  },
+  {
+   "gold": "f079",
+   "character": "harin",
+   "extracted": 25,
+   "gold_since": 33,
+   "statement": "강필은 녹계촌 여관에 묵던 밤 여관 마당에서 몰래 전서구를 날렸다."
+  },
+  {
+   "gold": "f110",
+   "character": "seojin",
+   "extracted": 0,
+   "gold_since": 24,
+   "statement": "올해 청류회는 석 달 뒤 청류대에서 열린다."
+  },
+  {
+   "gold": "f110",
+   "character": "yeonho",
+   "extracted": 0,
+   "gold_since": 24,
+   "statement": "올해 청류회는 석 달 뒤 청류대에서 열린다."
+  },
+  {
+   "gold": "f110",
+   "character": "danyeong",
+   "extracted": 0,
+   "gold_since": 24,
+   "statement": "올해 청류회는 석 달 뒤 청류대에서 열린다."
+  },
+  {
+   "gold": "f110",
+   "character": "soryang",
+   "extracted": 0,
+   "gold_since": 24,
+   "statement": "올해 청류회는 석 달 뒤 청류대에서 열린다."
+  },
+  {
+   "gold": "f110",
+   "character": "harin",
+   "extracted": 0,
+   "gold_since": 24,
+   "statement": "올해 청류회는 석 달 뒤 청류대에서 열린다."
+  },
+  {
+   "gold": "f110",
+   "character": "eunchan",
+   "extracted": 0,
+   "gold_since": 24,
+   "statement": "올해 청류회는 석 달 뒤 청류대에서 열린다."
+  },
+  {
+   "gold": "f110",
+   "character": "myeonghwa",
+   "extracted": 0,
+   "gold_since": 24,
+   "statement": "올해 청류회는 석 달 뒤 청류대에서 열린다."
+  },
+  {
+   "gold": "f110",
+   "character": "gangpil",
+   "extracted": 0,
+   "gold_since": 24,
+   "statement": "올해 청류회는 석 달 뒤 청류대에서 열린다."
+  },
+  {
+   "gold": "f143",
+   "character": "gangpil",
+   "extracted": 18,
+   "gold_since": 19,
+   "statement": "강필은 고목사 일 뒤로 가주에게 보내는 보고에 일행의 행선지를 거짓으로 적었다."
+  },
+  {
+   "gold": "f144",
+   "character": "gangpil",
+   "extracted": 25,
+   "gold_since": 26,
+   "statement": "강필은 소량과 결별한 뒤 가주에게 보내던 보고를 끊었다."
+  },
+  {
+   "gold": "f146",
+   "character": "jeonghyeok",
+   "extracted": 16,
+   "gold_since": 17,
+   "statement": "강필이 날린 전서구에는 서진이 고목사로 간다는 보고가 담겨 있었다."
+  },
+  {
+   "gold": "f167",
+   "character": "seojin",
+   "extracted": 0,
+   "gold_since": 38,
+   "statement": "연등야는 단하성에서 해마다 강에 등불을 띄우는 축제다."
+  },
+  {
+   "gold": "f187",
+   "character": "gangpil",
+   "extracted": 43,
+   "gold_since": 44,
+   "statement": "정혁은 하린을 향한 장헌의 암기를 대신 맞았다."
+  },
+  {
+   "gold": "f201",
+   "character": "danyeong",
+   "extracted": 0,
+   "gold_since": 7,
+   "statement": "단영은 아버지를 막으려고 서진 일행 곁에 남았다."
+  },
+  {
+   "gold": "f204",
+   "character": "harin",
+   "extracted": 7,
+   "gold_since": 46,
+   "statement": "단영이 단하성에서 수배된 서진과 마주친 것은 우연이었다."
+  },
+  {
+   "gold": "f208",
+   "character": "danyeong",
+   "extracted": 0,
+   "gold_since": 4,
+   "statement": "단영은 곽태허가 죽고 그 제자가 수배되자 무성보를 찾던 아버지를 의심했다."
+  }
+ ],
+ "since_early_partial": [
+  {
+   "gold": "f168",
+   "character": "gangpil",
+   "extracted": 26,
+   "gold_since": 38,
+   "statement": "하린과 강필이 서로의 마음을 확인했다."
+  },
+  {
+   "gold": "f168",
+   "character": "harin",
+   "extracted": 26,
+   "gold_since": 38,
+   "statement": "하린과 강필이 서로의 마음을 확인했다."
+  },
+  {
+   "gold": "f214",
+   "character": "danyeong",
+   "extracted": 27,
+   "gold_since": 47,
+   "statement": "청류회에서 서진의 공개 심판이 열렸다."
+  },
+  {
+   "gold": "f214",
+   "character": "seojin",
+   "extracted": 27,
+   "gold_since": 47,
+   "statement": "청류회에서 서진의 공개 심판이 열렸다."
+  },
+  {
+   "gold": "f214",
+   "character": "soryang",
+   "extracted": 27,
+   "gold_since": 47,
+   "statement": "청류회에서 서진의 공개 심판이 열렸다."
+  },
+  {
+   "gold": "f214",
+   "character": "harin",
+   "extracted": 27,
+   "gold_since": 47,
+   "statement": "청류회에서 서진의 공개 심판이 열렸다."
+  },
+  {
+   "gold": "f220",
+   "character": "danyeong",
+   "extracted": 0,
+   "gold_since": 47,
+   "statement": "단영은 청류회에서 아버지가 회맥침 처방을 받을 때마다 수결을 찍은 처방첩을 명령서 곁에 펼쳐 두 수결이 같음을 보였다."
+  },
+  {
+   "gold": "f220",
+   "character": "gyucheon",
+   "extracted": 0,
+   "gold_since": 47,
+   "statement": "단영은 청류회에서 아버지가 회맥침 처방을 받을 때마다 수결을 찍은 처방첩을 명령서 곁에 펼쳐 두 수결이 같음을 보였다."
+  }
+ ],
+ "since_late": 167,
+ "after_reveal": 358,
+ "after_reveal_hit": 216,
+ "comparable": [
+  "danyeong",
+  "eunchan",
+  "gangpil",
+  "gyucheon",
+  "harin",
+  "janghun",
+  "jeonghyeok",
+  "masam",
+  "myeonghwa",
+  "seojin",
+  "soryang",
+  "taeheo",
+  "yeonho"
+ ],
+ "precision": 0.977,
+ "recall": 0.827,
+ "support": {
+  "yes": 53,
+  "partial": 47
+ }
+}
