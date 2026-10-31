@@ -103,7 +103,7 @@
   - Lambda Web Adapter를 `/opt/extensions`에 복사하고 `PORT`를 맞춘다.
   - Lambda는 `/tmp` 말고는 읽기 전용이다. 캐시 경로를 `/tmp`로 둔다.
 - **Lambda 설정:**
-  - 메모리 2,048MB로 시작(1,769MB가 vCPU 1개분), 제한 시간 60초
+  - 메모리 2,048MB로 시작(1,769MB가 vCPU 1개분), 제한 시간 120초(처음 60초로 계획했으나, 새 실행 환경의 첫 질문이 모델과 색인을 올리느라 오래 걸려 배포 때 늘렸다. `infra/template.yaml`)
   - 초기화가 10초를 넘으면 첫 호출로 넘어간다. GGUF는 이 맥에서 3초에 올라갔다.
 - **키:** Anthropic 데모 워크스페이스에서 새 키를 발급해 SSM Parameter Store(SecureString)에 넣는다. 시작할 때 한 번 읽는다. 지금 `.env`의 키는 쓰지 않는다.
 - **IAM 권한:** 해당 파라미터 읽기, 해당 DynamoDB 표, 로그 쓰기만 준다.
