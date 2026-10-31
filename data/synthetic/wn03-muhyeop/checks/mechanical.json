@@ -1,0 +1,169 @@
+{
+ "missing_files": [],
+ "length": {
+  "min": 4653,
+  "max": 5209,
+  "total": 242232,
+  "out_of_range": {}
+ },
+ "format": {
+  "foreshadow_narrator": [
+   [
+    43,
+    "그것이 마지막이었다."
+   ]
+  ]
+ },
+ "keyword_before_reveal": [
+  {
+   "id": "f138",
+   "reveal_ep": 32,
+   "twist": false,
+   "statement": "연호가 3년 전 말없이 떠난 일을 서진에게 사과했다.",
+   "early_keywords": {
+    "말없이 떠난": 9
+   }
+  },
+  {
+   "id": "f176",
+   "reveal_ep": 40,
+   "twist": false,
+   "statement": "소량은 밤새 서진의 대련 상대가 되어 주었다.",
+   "early_keywords": {
+    "대련 상대": 15
+   }
+  },
+  {
+   "id": "f188",
+   "reveal_ep": 43,
+   "twist": false,
+   "statement": "위정혁이 숨을 거두었다.",
+   "early_keywords": {
+    "숨을 거두": 4
+   }
+  },
+  {
+   "id": "f235",
+   "reveal_ep": 50,
+   "twist": false,
+   "statement": "서진과 연호는 사부의 무덤에 함께 술을 올렸다.",
+   "early_keywords": {
+    "무덤에 술": 32
+   }
+  },
+  {
+   "id": "f240",
+   "reveal_ep": 50,
+   "twist": false,
+   "statement": "소량과 서진은 다음 청류회에서 다시 겨루기로 약속했다.",
+   "early_keywords": {
+    "다음 청류회": 4
+   }
+  }
+ ],
+ "keyword_absent_in_reveal_ep": [
+  {
+   "id": "f006",
+   "reveal_ep": 1,
+   "keywords": [
+    "막내 은찬"
+   ],
+   "statement": "노은찬은 취죽문의 막내 제자다."
+  },
+  {
+   "id": "f187",
+   "reveal_ep": 43,
+   "keywords": [
+    "암기를 대신 맞"
+   ],
+   "statement": "정혁은 하린을 향한 장헌의 암기를 대신 맞았다."
+  }
+ ],
+ "name_before_first_appearance": [
+  {
+   "character": "목연호",
+   "first_appearance_ep": 11,
+   "ep": 1,
+   "names": [
+    "연호",
+    "목연호"
+   ]
+  },
+  {
+   "character": "목연호",
+   "first_appearance_ep": 11,
+   "ep": 2,
+   "names": [
+    "연호"
+   ]
+  },
+  {
+   "character": "목연호",
+   "first_appearance_ep": 11,
+   "ep": 9,
+   "names": [
+    "연호",
+    "목연호"
+   ]
+  },
+  {
+   "character": "양규천",
+   "first_appearance_ep": 28,
+   "ep": 2,
+   "names": [
+    "양규천",
+    "규천"
+   ]
+  },
+  {
+   "character": "양규천",
+   "first_appearance_ep": 28,
+   "ep": 14,
+   "names": [
+    "양규천",
+    "규천"
+   ]
+  },
+  {
+   "character": "양규천",
+   "first_appearance_ep": 28,
+   "ep": 24,
+   "names": [
+    "양규천",
+    "규천"
+   ]
+  },
+  {
+   "character": "옥명화",
+   "first_appearance_ep": 13,
+   "ep": 10,
+   "names": [
+    "옥명화",
+    "명화"
+   ]
+  }
+ ],
+ "minor_near_romance": [
+  {
+   "ep": 2,
+   "character": "노은찬",
+   "para": "집법당 무사들은 낮 내내 취죽문을 뒤졌다. 서진은 은찬을 품에 안은 채 바위 틈에서 꼼짝하지 않았다. 대숲 안으로도 수색대가 몇 번 올라왔지만, 빽빽한 대나무가 둘을 가려 주었다."
+  },
+  {
+   "ep": 27,
+   "character": "노은찬",
+   "para": "은찬은 목검을 끌어다 품에 안았다."
+  },
+  {
+   "ep": 46,
+   "character": "노은찬",
+   "para": "연호의 무릎을 베고 자다 깬 은찬은 눈을 비비며 서진의 무릎 옆에 바짝 붙어 앉았다. 하린이 비단 보자기를 품에 안은 채 은찬의 어깨에 담요를 덮어 주었다. 강필은 문 옆에 섰고, 연호는 창틀에 걸터앉아 긴 소매 속"
+  }
+ ],
+ "repeated_paragraphs": [],
+ "dialogue_ratio": {
+  "min": 0.28,
+  "max": 0.61,
+  "mean": 0.45
+ }
+}

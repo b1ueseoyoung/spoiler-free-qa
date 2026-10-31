@@ -1,0 +1,88 @@
+[1장]
+새 인물: cecilia_ondre 세실리아 온드레 (별칭: 세실, 온드레 필경사)
+새 인물: mari_fennel 마리 페넬
+새 인물: raphael_winters 라파엘 윈터스 (별칭: 윈터스 수석, 수석님)
+새 인물: leon_ondre 레온 온드레 (별칭: 온드레 남작) [언급만]
+새 인물: landlady 하숙집 안주인
+새 인물: duke_rosven 로스벤 공작 [언급만]
+새 사실: c1-1 할레스 왕국의 서약사는 자기 피를 섞은 은잉크로 서약을 쓰고 서약 인장으로 봉인하며, 그 약속은 사람의 몸과 영혼을 묶는다. | 앎: cecilia_ondre(0) mari_fennel(0) raphael_winters(0) leon_ondre(0) landlady(0)
+새 사실: c1-2 봉인된 서약을 어기면 살갗에 서약흔이 떠올라 불에 덴 것처럼 타들어 간다. | 앎: cecilia_ondre(0) mari_fennel(0) raphael_winters(0) leon_ondre(0) landlady(0)
+새 사실: c1-3 할레스 왕국에서는 중요한 약속이 전부 왕립 서약청을 거쳐야 한다. | 앎: cecilia_ondre(0) mari_fennel(0) raphael_winters(0) leon_ondre(0) landlady(0)
+새 사실: c1-4 수도 칼리스톤의 왕립 서약청은 사람들에게 '은종탑'이라고 불린다. | 앎: cecilia_ondre(0) mari_fennel(0) raphael_winters(0) leon_ondre(0) landlady(0)
+새 사실: c1-5 세실리아 온드레는 왕립 서약청 하급 필경사로 스물다섯 살이며 올해로 3년째 일하고 있다. | 앎: cecilia_ondre(0) mari_fennel(0) raphael_winters(0)
+새 사실: c1-6 마리 페넬은 남부 항구 도시 미렐 출신의 스물여섯 살 평민 필경사다. | 앎: mari_fennel(0) cecilia_ondre(0)
+새 사실: c1-7 라파엘 윈터스는 서른한 살의 서약청 수석 서약사이자 필경사들의 직속 상관이다. | 앎: raphael_winters(0) cecilia_ondre(0) mari_fennel(0)
+새 사실: c1-8 세실리아 온드레는 남들이 넘기는 미세한 번짐이나 얼룩을 유난히 잘 알아본다. | 앎: cecilia_ondre(0)
+새 사실: c1-9 세실리아의 아버지 레온 온드레 남작은 2년 전 행방불명되었다. | 앎: cecilia_ondre(0) mari_fennel(0) landlady(0)
+새 사실: c1-10 레온 온드레가 채무 서약을 기한 내에 갚지 못해 온드레 남작가의 영지와 저택이 채권자에게 넘어갔고, 세실리아가 남은 빚을 갚고 있다. | 앎: cecilia_ondre(0) leon_ondre(0) landlady(0)
+새 사실: c1-11 레온 온드레는 사라진 날 채무 서약에 이의를 제기하겠다며 서류철을 들고 서약청으로 갔다. | 앎: cecilia_ondre(0) leon_ondre(0)
+새 사실: c1-12 세실리아의 어머니는 세실리아를 낳고 얼마 안 되어 병으로 죽었다고 전해진다. | 앎: cecilia_ondre(0) leon_ondre(0)
+새 사실: c1-13 세실리아는 아버지를 찾을 때까지 은종탑을 떠나지 않기로 했다. | 앎: cecilia_ondre(0) mari_fennel(1)
+새 사실: c1-14 세실리아의 하숙집 대문에 붉은 글씨로 '최종 통고'라 적힌 빚 독촉장이 붙었다. | 앎: cecilia_ondre(1) landlady(1)
+새 사실: c1-15 세실리아는 은빛 강 남쪽 염색 공방 골목 끝 하숙집의 꼭대기 다락방에 산다. | 앎: cecilia_ondre(0) landlady(0)
+새 사실: c1-16 세실리아와 마리가 로스벤 공작가 영지 갱신 서약의 원본 대조와 사본 작성 담당으로 배정되었다. | 앎: cecilia_ondre(1) raphael_winters(1)
+새 사실: c1-17 로스벤 공작이 다음 날 오전 직접 서명하러 서약청에 온다. | 앎: cecilia_ondre(1) raphael_winters(1)
+장면: 시점 cecilia_ondre, 왕립 서약청(은종탑) 3층 필사실과 하숙집 다락방, 등장 cecilia_ondre mari_fennel raphael_winters landlady
+
+[2장]
+새 인물: rowan_crow 로완 크로우 (별칭: 기사단장)
+새 인물: rosetta_belmore 로제타 벨모어 (별칭: 로제타 벨모어 영애) [언급만]
+새 인물: oath_chief 서약청장 [언급만]
+새 인물: king 국왕 [언급만]
+새 인물: window_knocker 창을 두드린 사람
+새 별칭: duke_rosven = 카시엘 로스벤
+새 별칭: duke_rosven = 겨울 공작
+새 별칭: duke_rosven = 공작 각하
+새 별칭: cecilia_ondre = 온드레 양
+새 사실: c2-1 로스벤 공작의 이름은 카시엘 로스벤이며, 그는 북부 로스벤 공작가의 스물여덟 살 당주다. | 앎: duke_rosven(0) rowan_crow(0) raphael_winters(0) mari_fennel(2) cecilia_ondre(2)
+새 사실: c2-2 카시엘 로스벤은 하도 냉정해서 '겨울 공작'이라는 별명으로 불린다. | 앎: mari_fennel(0) cecilia_ondre(2) rowan_crow(0)
+새 사실: c2-3 로완 크로우는 로스벤 공작가의 서른 살 기사단장이다. | 앎: rowan_crow(0) duke_rosven(0) mari_fennel(2) cecilia_ondre(2)
+새 사실: c2-4 로완 크로우와 카시엘 로스벤은 같은 유모 손에서 함께 자란 젖형제다. | 앎: rowan_crow(0) duke_rosven(0) mari_fennel(2) cecilia_ondre(2)
+새 사실: c2-5 국왕이 카시엘 로스벤에게 혼인하라는 왕명을 내렸고, 그 상대는 로제타 벨모어다. | 앎: duke_rosven(0) king(0) mari_fennel(2) cecilia_ondre(2)
+새 사실: c2-6 로제타 벨모어는 서약청장의 피후견인이다. | 앎: rosetta_belmore(0) oath_chief(0) mari_fennel(2) cecilia_ondre(2)
+새 사실: c2-7 카시엘 로스벤은 실내에서도 왼손에만 검은 가죽 장갑을 끼고 있다. | 앎: duke_rosven(0) cecilia_ondre(2)
+새 사실: c2-8 세실리아는 로스벤 공작가 기존 영지 서약 원본 제3조 둘째 줄과 셋째 줄 사이 행간에서 머리카락보다 가는 은빛 선을 보았다. | 앎: cecilia_ondre(2) mari_fennel(2) raphael_winters(2) duke_rosven(2)
+새 사실: c2-9 마리는 세실리아가 가리킨 제3조 행간에서 아무것도 보지 못했다. | 앎: mari_fennel(2) cecilia_ondre(2) raphael_winters(2) duke_rosven(2)
+새 사실: c2-10 라파엘은 세실리아가 말한 줄을 잉크 얼룩이라고 단정하고 대조는 본문만 한다며 넘어갔다. | 앎: raphael_winters(2) cecilia_ondre(2) mari_fennel(2) duke_rosven(2)
+새 사실: c2-11 로스벤 공작가의 영지 갱신 서약이 공작의 서명 후 라파엘의 서약 인장으로 봉인되었다. | 앎: raphael_winters(2) duke_rosven(2) cecilia_ondre(2) mari_fennel(2)
+새 사실: c2-12 은종탑 꼭대기의 은빛 종은 서약청에서 서약이 봉인될 때마다 한 번씩 울린다. | 앎: cecilia_ondre(0) mari_fennel(0) raphael_winters(0) leon_ondre(0) landlady(0) duke_rosven(0) rowan_crow(0)
+새 사실: c2-13 로완이 공작에게 그 필경사가 마음에 걸리는 것을 안다고 놀렸으나 카시엘 로스벤은 부정하지 않았고, 세실리아가 이를 들었다. | 앎: rowan_crow(2) duke_rosven(2) cecilia_ondre(2)
+새 사실: c2-14 그날 밤 누군가 세실리아의 다락방 바깥 계단참 쪽 작은 창을 두드렸다. | 앎: cecilia_ondre(2) window_knocker(2)
+장면: 시점 cecilia_ondre, 왕립 서약청(은종탑) 2층 접견실과 앞마당, 하숙집 다락방, 등장 cecilia_ondre mari_fennel raphael_winters duke_rosven rowan_crow window_knocker
+
+[3장]
+새 별칭: cecilia_ondre = 온드레 영애
+합침: window_knocker → duke_rosven
+새 사실: c3-1 자정 무렵 세실리아의 다락방 창을 두드린 사람은 카시엘 로스벤이었고, 로완 크로우는 골목에서 망을 보았다. | 앎: cecilia_ondre(3) duke_rosven(2) rowan_crow(2)
+새 사실: c3-2 세실리아의 빚은 원금 금화 삼천육백 닢, 이번 달 이자를 합쳐 삼천팔백사십 닢이다. | 앎: cecilia_ondre(0) duke_rosven(3)
+새 사실: c3-3 세실리아의 채권자는 셋이며 가장 큰 곳은 남부 상단이다. | 앎: cecilia_ondre(0) duke_rosven(3)
+새 사실: c3-4 카시엘 로스벤은 세실리아에게 기한 1년의 약혼을 제안했다. | 앎: duke_rosven(3) cecilia_ondre(3)
+새 사실: c3-5 할레스 왕국 귀족 사이에는 이미 약혼한 귀족에게는 왕명으로도 혼인을 강제할 수 없다는 '선약 우선' 관습이 있다. | 앎: duke_rosven(0) rowan_crow(0) king(0) oath_chief(0) rosetta_belmore(0) leon_ondre(0) cecilia_ondre(3)
+새 사실: c3-6 카시엘 로스벤은 왕명에 따른 로제타 벨모어와의 혼인을 피하려고 세실리아와 약혼하려 한다. | 앎: duke_rosven(3) cecilia_ondre(3)
+새 사실: c3-7 카시엘 로스벤이 약혼의 대가로 온드레 가의 채무 전액 변제와 실종된 레온 온드레 남작의 행방 조사를 약속했다. | 앎: duke_rosven(3) cecilia_ondre(3)
+새 사실: c3-8 카시엘 로스벤은 세실리아를 고른 이유를 빚이 있고 입이 무거워 보여서라고만 말했다. | 앎: duke_rosven(3) cecilia_ondre(3)
+새 사실: c3-9 세실리아가 쓴 계약서는 제1조 기한과 대가, 제2조 사생활 불간섭, 제3조 계약 종료 뒤 서약청 복직 보장의 세 조항이다. | 앎: cecilia_ondre(3) duke_rosven(3)
+새 사실: c3-10 1년 뒤 약혼을 깰 때는 세실리아가 카시엘을 찼다고 하기로 했다. | 앎: duke_rosven(3) cecilia_ondre(3)
+새 사실: c3-11 카시엘 로스벤은 세실리아의 답을 기다리며 밤새 마차 안에서 한숨도 자지 않았다. | 앎: duke_rosven(3) rowan_crow(3) cecilia_ondre(3)
+새 사실: c3-12 세실리아는 새벽에 카시엘 로스벤의 약혼 제안을 승낙했다. | 앎: cecilia_ondre(3) duke_rosven(3) rowan_crow(3)
+새 사실: c3-13 새벽에 한 신사가 하숙집 대문의 빚 독촉장을 모두 떼어 가며 빚이 다 정리됐다고 말했다. | 앎: landlady(3) cecilia_ondre(3)
+장면: 시점 cecilia_ondre, 하숙집 다락방과 골목, 등장 cecilia_ondre duke_rosven rowan_crow landlady
+
+[4장]
+새 인물: theodore_halles 테오도르 할레스 (별칭: 왕세자 전하, 왕세자)
+새 별칭: rosetta_belmore = 벨모어 영애
+새 별칭: rowan_crow = 크로우 경
+새 별칭: duke_rosven = 로스벤 공
+새 사실: c4-1 카시엘 로스벤은 계약서에 계약 기간 동안 세실리아가 로스벤 저택에 거주한다는 제4조를 추가했고 세실리아가 이를 인정했다. | 앎: cecilia_ondre(4) duke_rosven(4) rowan_crow(4)
+새 사실: c4-2 카시엘 로스벤은 약혼 계약을 서약청에서 봉인하지 않고 마법 효력이 없는 종이 계약서로만 맺기로 했다. | 앎: cecilia_ondre(4) duke_rosven(4) rowan_crow(4)
+새 사실: c4-3 세실리아와 카시엘 로스벤이 종이 계약서 두 장에 서명했고 로완 크로우가 증인으로 서명했다. | 앎: cecilia_ondre(4) duke_rosven(4) rowan_crow(4)
+새 사실: c4-4 로스벤 저택은 은빛 강 북쪽, 오래된 귀족 저택들이 모인 언덕에 있다. | 앎: duke_rosven(0) rowan_crow(0) cecilia_ondre(4)
+새 사실: c4-5 카시엘 로스벤과 세실리아의 약혼이 금사자궁 왕궁 무도회에서 공표되었다. | 앎: cecilia_ondre(4) duke_rosven(4) rowan_crow(4) rosetta_belmore(4) theodore_halles(4)
+새 사실: c4-6 로제타 벨모어는 벨모어 백작가의 외동딸이다. | 앎: rosetta_belmore(0) oath_chief(0) duke_rosven(0) cecilia_ondre(4)
+새 사실: c4-7 로제타 벨모어는 무도회에서 세실리아의 잉크 묻은 손을 비꼬았다. | 앎: rosetta_belmore(4) cecilia_ondre(4) duke_rosven(4)
+새 사실: c4-8 테오도르 할레스는 할레스 왕국의 스물아홉 살 왕세자다. | 앎: theodore_halles(0) king(0) duke_rosven(0) rowan_crow(0) rosetta_belmore(0) cecilia_ondre(4)
+새 사실: c4-9 테오도르 할레스는 카시엘 로스벤에게 급하게 지은 집은 바람에 약하다고 했고, 카시엘은 제 집 지붕이나 살피라고 맞받았다. | 앎: theodore_halles(4) duke_rosven(4) cecilia_ondre(4)
+새 사실: c4-10 카시엘 로스벤과 테오도르 할레스는 왕립 학원 동기다. | 앎: duke_rosven(0) theodore_halles(0) rowan_crow(0) cecilia_ondre(4)
+새 사실: c4-11 카시엘 로스벤과 테오도르 할레스는 7년 전 북부 반란 진압 때 일어난 일 이후 절연했다. | 앎: duke_rosven(0) theodore_halles(0) rowan_crow(0) cecilia_ondre(4)
+새 사실: c4-12 세실리아는 무도회 현관에서 로스벤 저택에 공작이 데리고 사는 아이가 있다는 귀부인들의 소문을 엿들었다. | 앎: cecilia_ondre(4)
+장면: 시점 cecilia_ondre, 로스벤 저택 서재와 금사자궁 왕궁 무도회장, 등장 cecilia_ondre duke_rosven rowan_crow rosetta_belmore theodore_halles

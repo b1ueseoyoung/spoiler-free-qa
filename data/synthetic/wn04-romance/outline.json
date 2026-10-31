@@ -1,0 +1,6488 @@
+[
+  {
+    "ep": 1,
+    "title": "결이 남은 의자",
+    "pov": "jaein",
+    "interlude_pov": null,
+    "interlude_scope": null,
+    "location": "망원동 결공방·미경반찬",
+    "characters_present": [
+      "jaein",
+      "narae",
+      "haram",
+      "mikyung",
+      "woojin"
+    ],
+    "summary": "고재인은 망원동 골목에서 작은 가구 복원 공방 '결공방'을 운영한다. 견습 2년 차 나래와 낡은 식탁 의자의 다리를 맞추던 중 석 달 치 월세 독촉 고지서가 날아든다. 방과 후 조카 하람이 공방에 들러 베트남 공장에서 일한다는 엄마가 보낸 엽서를 자랑한다. 옆집 반찬가게 '미경반찬' 사장 미경은 늘 그렇듯 반찬 통과 밥 세 공기를 들고 온다. 성미119안전센터 소방관이자 부암동 시절부터의 소꿉친구 우진이 들러 공방 소화기를 점검해 준다. 밤에 혼자 남은 재인은 공방 열쇠를 쥔 채 월세를 어떻게 마련할지 고민한다.",
+    "beats": [
+      "나래와 식탁 의자 다리를 맞추며 '나무는 거짓말 안 해'라는 재인의 입버릇이 나온다",
+      "석 달 치 월세 독촉 고지서를 받고 나래 앞에서 애써 웃는다",
+      "하람이 엄마 엽서를 자랑하고 재인이 하람의 숙제를 봐 준다",
+      "미경이 반찬 통을 들고 와 셋이 저녁을 먹는다",
+      "우진이 소화기를 점검하며 부암동 시절 이야기로 재인을 놀린다",
+      "문 닫은 공방에서 재인이 통장 잔고를 확인한다"
+    ],
+    "facts_revealed": [
+      "f001",
+      "f002",
+      "f003",
+      "f004",
+      "f005",
+      "f006",
+      "f007",
+      "f008",
+      "f009",
+      "f209",
+      "f210",
+      "f211",
+      "f212"
+    ],
+    "hints_allowed": [
+      "허용: 은재가 멀리 있다는 하람의 그리움",
+      "금지: 은재에 대해 하람과 재인이 아는 것 밖의 서술",
+      "금지: 우진의 내면 서술"
+    ],
+    "relationship_changes": [],
+    "knowledge_events": [
+      {
+        "character": "narae",
+        "fact_id": "f009"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f007",
+        "note": "1화 공방에서 우진이 부암동 골목 시절 재인의 별명 일화를 들려줄 때 들음(1:263-273)"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f007",
+        "note": "1화 같은 자리에서 우진의 부암동 골목 일화를 들음(1:263-283)"
+      }
+    ],
+    "pov_must_hide": [
+      "f011",
+      "f012",
+      "f014",
+      "f015",
+      "f019",
+      "f020",
+      "f023",
+      "f024",
+      "f025",
+      "f026",
+      "f028",
+      "f029",
+      "f031",
+      "f034",
+      "f107",
+      "f182",
+      "f216"
+    ],
+    "interlude_pov_must_hide": null,
+    "ending_hook": "공방 문틈에 고급 명함 한 장이 끼워져 있다.",
+    "end_state": "재인은 월세 문제로 궁지에 몰려 있다."
+  },
+  {
+    "ep": 2,
+    "title": "부암동 언덕의 호텔",
+    "pov": "jaein",
+    "interlude_pov": null,
+    "interlude_scope": null,
+    "location": "결공방 → 부암동 청운장",
+    "characters_present": [
+      "jaein",
+      "narae",
+      "dohyun"
+    ],
+    "summary": "한결그룹 전략기획실 상무 차도현이 공방을 찾아와 폐업한 호텔 청운장의 가구 복원을 맡아 달라고 한다. 재인은 청운장이라는 이름에 굳는다. 아버지 고명수가 전속 목수로 일하던 곳이고, 한결그룹이 17년 전 사들인 호텔이다. 도현은 가구 120점을 넉 달 안에 복원해 달라며 넉넉한 선금을 제시한다. 재인은 거절하려다 밀린 월세를 떠올리고 일단 현장을 보기로 한다. 청운장 로비에서 재인은 자개 장식장 안쪽의 '明' 자 각인을 찾아내고 아버지의 손을 알아본다. 재인은 의뢰를 수락한다.",
+    "beats": [
+      "도현이 공방에 들어와 의뢰서를 내민다",
+      "청운장이라는 이름에 재인이 손을 멈춘다",
+      "도현의 차로 부암동 언덕을 올라 폐업한 청운장에 도착한다",
+      "로비 자개 장식장 안쪽에서 '明' 자 각인을 발견한다",
+      "나래에게 아버지가 이 호텔의 전속 목수였다고 짧게 말한다",
+      "재인이 '하겠습니다, 그 일'이라며 의뢰를 수락한다"
+    ],
+    "facts_revealed": [
+      "f010",
+      "f011",
+      "f012",
+      "f013",
+      "f014",
+      "f015",
+      "f016",
+      "f213",
+      "f214",
+      "f215",
+      "f216"
+    ],
+    "hints_allowed": [
+      "허용: 도현이 꼼꼼하고 말수가 적은 인물이라는 인상",
+      "금지: 도현의 내면이나 사정을 서술하는 문장"
+    ],
+    "relationship_changes": [
+      {
+        "relationship": "r01",
+        "a": "jaein",
+        "b": "dohyun",
+        "status": "청운장 복원 의뢰인과 복원가",
+        "public": true
+      }
+    ],
+    "knowledge_events": [
+      {
+        "character": "gicheol",
+        "fact_id": "f001",
+        "offstage": true,
+        "note": "2화 업체 선정·계약 결재 서류에서 결공방과 그 대표를 봄(본문 미서술)"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f010"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f010"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f011"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f012"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f013"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f013"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f013"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f013",
+        "offstage": true,
+        "note": "의뢰 준비를 맡아 같은 날 사무실에서 결과를 보고받음"
+      },
+      {
+        "character": "gicheol",
+        "fact_id": "f013",
+        "offstage": true,
+        "note": "2화 업체 선정·계약 결재 서류로 의뢰 내용을 앎(본문 미서술)"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f014"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f015"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f016"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f016"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f016"
+      },
+      {
+        "character": "gicheol",
+        "fact_id": "f016",
+        "offstage": true,
+        "note": "2화 밤 재인의 수락 뒤 올라온 업체 선정·계약 결재 서류로 앎(본문 미서술)"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f016",
+        "offstage": true,
+        "note": "의뢰 준비를 맡아 같은 날 사무실에서 재인의 수락 결과를 보고받음(본문 미서술). 3화 계약 진행으로 확인됨(3:123)"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f002",
+        "note": "2화 재인의 \"저랑 견습 하나\"로 앎(2:87)"
+      },
+      {
+        "character": "gicheol",
+        "fact_id": "f209",
+        "offstage": true,
+        "note": "2화 업체 선정·계약 결재 서류에서 결공방 주소를 봄(본문 미서술)"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f213",
+        "note": "2화 나래가 읽은 명함과 도현의 \"한결그룹 전략기획실 차도현입니다\"로 앎(2:7·43)"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f213",
+        "note": "2화 명함의 \"한결그룹… 전략기획실 상무 차도현\"을 소리 내어 읽음(2:7)"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f214"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f214"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f214"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f214",
+        "offstage": true,
+        "note": "의뢰 준비를 맡아 같은 날 사무실에서 결과를 보고받음"
+      },
+      {
+        "character": "gicheol",
+        "fact_id": "f214",
+        "offstage": true,
+        "note": "2화 업체 선정·계약 결재 서류로 의뢰 내용을 앎(본문 미서술)"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f215"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f215"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f215"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f215",
+        "offstage": true,
+        "note": "의뢰 준비를 맡아 같은 날 사무실에서 결과를 보고받음"
+      },
+      {
+        "character": "gicheol",
+        "fact_id": "f215",
+        "offstage": true,
+        "note": "2화 업체 선정·계약 결재 서류로 의뢰 내용을 앎(본문 미서술)"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f216"
+      }
+    ],
+    "pov_must_hide": [
+      "f019",
+      "f020",
+      "f023",
+      "f024",
+      "f025",
+      "f026",
+      "f028",
+      "f029",
+      "f031",
+      "f034",
+      "f107",
+      "f182"
+    ],
+    "interlude_pov_must_hide": null,
+    "ending_hook": "계약서에 서명하러 을지로 본사로 오라는 연락이 온다.",
+    "end_state": "재인은 청운장 복원을 맡았다."
+  },
+  {
+    "ep": 3,
+    "title": "계약서의 빈칸",
+    "pov": "jaein",
+    "interlude_pov": null,
+    "interlude_scope": null,
+    "location": "을지로 한결그룹 본사",
+    "characters_present": [
+      "jaein",
+      "dohyun",
+      "jihoon",
+      "narae"
+    ],
+    "summary": "재인과 나래는 계약을 하러 을지로 한결그룹 본사에 간다. 서류철을 끼고 온 비서실장 서지훈이 계약서를 조항마다 꼼꼼히 설명한다. 재인은 지훈이 도현에게 툭 던지는 사석의 반말에 고개를 들고, 둘이 대학 동기라는 것을 알게 된다. 계약서에는 복원 중 발견한 물건을 모두 회사에 보고해야 한다는 조항이 있다. 재인은 계약 자리에서 아버지 이야기를 꺼내지 않는다. 돌아오는 버스에서 재인은 나래에게 아버지가 17년 전 겨울 청운장 별관 화재로 세상을 떠났다고 처음 털어놓는다.",
+    "beats": [
+      "본사 로비의 위압감에 나래가 주눅 든다",
+      "지훈이 계약 조항을 하나하나 설명한다",
+      "지훈과 도현이 대학 동기라는 사실이 대화에서 드러난다",
+      "발견물 보고 조항에 재인이 잠시 펜을 멈춘다",
+      "버스에서 재인이 나래에게 아버지의 죽음을 털어놓는다"
+    ],
+    "facts_revealed": [
+      "f017",
+      "f018",
+      "f019",
+      "f020",
+      "f021",
+      "f022"
+    ],
+    "hints_allowed": [
+      "허용: 지훈이 도현을 오래 지켜본 친구라는 인상",
+      "금지: 지훈의 사생활을 서술하는 문장"
+    ],
+    "relationship_changes": [
+      {
+        "relationship": "r03",
+        "a": "dohyun",
+        "b": "jihoon",
+        "status": "대학 동기이자 상무와 비서실장, 15년 지기",
+        "public": true
+      }
+    ],
+    "knowledge_events": [
+      {
+        "character": "jaein",
+        "fact_id": "f017"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f017"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f018"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f018"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f019"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f020"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f021"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f021"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f022"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f022"
+      }
+    ],
+    "pov_must_hide": [
+      "f023",
+      "f024",
+      "f025",
+      "f026",
+      "f028",
+      "f029",
+      "f031",
+      "f034",
+      "f107",
+      "f182"
+    ],
+    "interlude_pov_must_hide": null,
+    "ending_hook": "나래가 '그럼 대표님은 그 호텔에…'라고 말끝을 흐린다.",
+    "end_state": "재인은 계약을 마쳤고 나래가 재인의 가족사를 알게 되었다."
+  },
+  {
+    "ep": 4,
+    "title": "열한 살의 숙제",
+    "pov": "jaein",
+    "interlude_pov": null,
+    "interlude_scope": null,
+    "location": "결공방·재인의 집",
+    "characters_present": [
+      "jaein",
+      "haram",
+      "mikyung",
+      "narae"
+    ],
+    "summary": "하람은 '우리 가족 소개' 숙제에 엄마가 베트남에서 일한다고 적는다. 재인은 언니 은재가 4년 전 하람을 맡기고 떠난 날을 떠올린다. 그날 은재는 공장 통신이 나빠 영상통화는 어렵고, 엽서는 공장 직원이 한국에 들어올 때 모아서 부칠 거라고 말해 두었다. 은재는 그 뒤로 영상통화 한 번 없이 가끔 화면을 끈 음성통화와 문자, 엽서로만 연락해 왔다. 미경은 숙제를 보다가 자신이 재인 어머니의 고향 친구였다는 이야기를 하람에게 들려준다. 재인의 어머니는 재인이 스물두 살 때 병으로 세상을 떠났다. 재인은 하람이 '엄마는 왜 얼굴 보고 전화 안 해?'라고 묻자 '공장 사정'이라는 언니의 말을 그대로 옮긴다.",
+    "beats": [
+      "하람이 숙제 공책에 가족 그림을 그린다",
+      "재인이 은재가 떠나던 날 남긴 말을 떠올린다",
+      "미경이 재인 어머니와의 고향 이야기를 들려준다",
+      "재인의 어머니가 병으로 세상을 떠난 일이 나온다",
+      "하람의 질문에 재인이 '공장 사정'이라고 답한다"
+    ],
+    "facts_revealed": [
+      "f023",
+      "f024",
+      "f025",
+      "f026",
+      "f027"
+    ],
+    "hints_allowed": [
+      "허용: 하람이 엄마 소식을 기다리는 모습",
+      "허용: 은재가 떠나며 남긴 설명(재인의 회상)",
+      "금지: 은재의 연락 방식에 대해 재인의 회상 밖의 서술"
+    ],
+    "relationship_changes": [],
+    "knowledge_events": [
+      {
+        "character": "narae",
+        "fact_id": "f023"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f024"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f024"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f025"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f027"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f027"
+      },
+      {
+        "character": "mikyung",
+        "fact_id": "f027"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f027"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f023",
+        "note": "외할머니가 돌아가신 것만 알았고, 재인이 스물두 살 겨울에 병으로 떠났다는 것은 4화 미경의 말로 처음 들음(4:171-175)"
+      }
+    ],
+    "pov_must_hide": [
+      "f028",
+      "f029",
+      "f031",
+      "f034",
+      "f107",
+      "f182"
+    ],
+    "interlude_pov_must_hide": null,
+    "ending_hook": "하람이 엽서 묶음을 고무줄로 묶어 서랍에 넣는다.",
+    "end_state": "재인 가족의 사정이 드러났다."
+  },
+  {
+    "ep": 5,
+    "title": "자개장 할아버지",
+    "pov": "jaein",
+    "interlude_pov": null,
+    "interlude_scope": null,
+    "location": "결공방",
+    "characters_present": [
+      "jaein",
+      "taeseok",
+      "narae",
+      "haram"
+    ],
+    "summary": "3년째 공방을 드나드는 단골 노인 윤태석이 부서진 자개장 문짝을 들고 온다. 그는 공방에서 차를 마시고 하람에게 바둑을 가르치는 '자개장 할아버지'다. 재인이 청운장 일을 맡았다고 하자 태석은 잠시 말이 없어진다. 그러다 '그 집 로비 바닥은 박달나무'라고 중얼거린다. 재인이 어떻게 아느냐고 묻자 태석은 '옛날에 묵어 봤다'며 화제를 돌린다. 하람은 태석에게 이긴 바둑 한 판을 자랑한다.",
+    "beats": [
+      "태석이 자개장 문짝을 내려놓고 수리 견적을 묻는다",
+      "하람과 태석이 공방 구석에서 바둑을 둔다",
+      "청운장 이야기에 태석의 찻잔이 멈춘다",
+      "태석이 로비 바닥이 박달나무라고 말한다",
+      "재인의 물음에 태석이 '옛날에 묵어 봤다'고 넘긴다"
+    ],
+    "facts_revealed": [
+      "f028",
+      "f029",
+      "f030"
+    ],
+    "hints_allowed": [
+      "허용: 태석이 청운장을 잘 아는 듯한 말실수",
+      "금지: 태석의 말 밖의 태석의 신상을 서술하는 문장"
+    ],
+    "relationship_changes": [
+      {
+        "relationship": "r11",
+        "a": "jaein",
+        "b": "taeseok",
+        "status": "공방 대표와 3년째 단골 노인",
+        "public": true
+      }
+    ],
+    "knowledge_events": [
+      {
+        "character": "taeseok",
+        "fact_id": "f016",
+        "note": "5화 공방에서 재인이 청운장 일을 맡았다고 말할 때 들음"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f016",
+        "note": "5화 공방에서 재인이 태석에게 청운장 일을 맡았다고 말할 때 곁에 있었다"
+      },
+      {
+        "character": "taeseok",
+        "fact_id": "f030"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f030"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f030"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f030"
+      }
+    ],
+    "pov_must_hide": [
+      "f031",
+      "f034",
+      "f107",
+      "f182"
+    ],
+    "interlude_pov_must_hide": null,
+    "ending_hook": "태석이 돌아간 자리에 찻잔이 반쯤 남아 있다.",
+    "end_state": "재인은 태석의 말을 흘려듣는다."
+  },
+  {
+    "ep": 6,
+    "title": "그을린 기록",
+    "pov": "jaein",
+    "interlude_pov": null,
+    "interlude_scope": null,
+    "location": "부암동 청운장 별관 터·창고",
+    "characters_present": [
+      "jaein",
+      "narae",
+      "dohyun",
+      "woojin"
+    ],
+    "summary": "청운장 첫 작업일, 재인은 화재 뒤 철거되고 창고 한 동만 남은 별관 터를 처음 본다. 재인은 곁에 선 나래에게 아버지 사고의 공식 원인이 '고명수가 켜 둔 석유난로 부주의'로 기록되어 있다고 담담히 말한다. 17년 동안 재인은 '과실 목수의 딸'이라는 말을 견뎌 왔다. 재인은 해마다 기일이면 담장 밖 흰 국화를 두고 왔다는 것도 나래에게 털어놓는다. 도현은 별관 터에 선 재인을 멀리서 오래 지켜보다 말없이 돌아선다. 퇴근길에 굳이 들른 우진은 17년 전 화재조사 기록의 열람 청구 방법을 알려 준다.",
+    "beats": [
+      "나래와 함께 창고 문을 열고 먼지 쌓인 가구들을 확인한다",
+      "별관 터에서 재인이 나래에게 공식 기록상 원인이 아버지의 석유난로 부주의라는 것을 말한다",
+      "재인이 기일마다 담장 밖에 흰 국화를 두어 왔다고 나래에게 털어놓는다",
+      "도현이 멀리서 재인을 지켜보다 돌아선다",
+      "우진이 열람 청구 방법을 알려 준다"
+    ],
+    "facts_revealed": [
+      "f031",
+      "f032",
+      "f033",
+      "f034"
+    ],
+    "hints_allowed": [
+      "허용: 도현이 재인을 지켜보는 모습",
+      "금지: 도현의 내면 서술"
+    ],
+    "relationship_changes": [],
+    "knowledge_events": [
+      {
+        "character": "narae",
+        "fact_id": "f031",
+        "note": "6화 별관 터에서 재인이 곁에 선 나래에게 공식 기록상 원인을 직접 말함"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f032"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f032"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f032"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f033"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f033"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f033"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f034",
+        "note": "6화 별관 터에서 재인이 나래에게 기일마다 담장 밖에 흰 국화를 두어 왔다고 털어놓음"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f016",
+        "offstage": true,
+        "note": "6화 저녁 청운장 정문으로 찾아와 \"첫날부터 야근이냐\"고 함(6:189). 알게 된 경위는 본문 밖"
+      }
+    ],
+    "pov_must_hide": [
+      "f107",
+      "f182"
+    ],
+    "interlude_pov_must_hide": null,
+    "ending_hook": "재인은 열람 청구서 양식을 내려받는다.",
+    "end_state": "재인은 아버지의 기록을 다시 보기로 마음먹는다."
+  },
+  {
+    "ep": 7,
+    "title": "같은 상에 앉다",
+    "pov": "jaein",
+    "interlude_pov": null,
+    "interlude_scope": null,
+    "location": "청운장 로비·부암동 칼국수집",
+    "characters_present": [
+      "jaein",
+      "dohyun",
+      "narae"
+    ],
+    "summary": "작업 일주일째, 도현은 매일 현장에 들러 진행을 확인한다. 재인은 도현이 가구 120점의 이력을 모두 외우고 있다는 데 놀란다. 나래가 먼저 퇴근한 늦은 저녁, 도현이 칼국수를 사겠다고 한다. 도현은 어머니 윤선영이 자신이 열다섯 살 때 세상을 떠났다고 짧게 말한다. 청운장은 어머니가 좋아하던 곳이었다고도 한다. 재인은 자기 아버지 이야기는 끝내 꺼내지 않는다.",
+    "beats": [
+      "도현이 객실 의자의 제작 연도를 외워 말한다",
+      "나래가 '상무님 혹시 로봇이에요?'라고 속삭인다",
+      "칼국수집에서 둘이 처음 같은 상에 앉는다",
+      "도현이 어머니 이야기를 꺼낸다",
+      "재인이 아버지 이야기를 삼킨다"
+    ],
+    "facts_revealed": [
+      "f035",
+      "f036",
+      "f037"
+    ],
+    "hints_allowed": [
+      "허용: 도현이 청운장에 사적인 애착이 있다는 인상",
+      "금지: 도현이 대화에서 밝힌 것 이상의 가족 이야기"
+    ],
+    "relationship_changes": [],
+    "knowledge_events": [
+      {
+        "character": "jaein",
+        "fact_id": "f035"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f036"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f037"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f037"
+      }
+    ],
+    "pov_must_hide": [
+      "f107",
+      "f182"
+    ],
+    "interlude_pov_must_hide": null,
+    "ending_hook": "도현이 계산하며 '내일도 일곱 시에 올게요'라고 한다.",
+    "end_state": "재인은 도현을 조금 다르게 보기 시작한다."
+  },
+  {
+    "ep": 8,
+    "title": "일정표 싸움",
+    "pov": "jaein",
+    "interlude_pov": null,
+    "interlude_scope": null,
+    "location": "청운장 로비",
+    "characters_present": [
+      "jaein",
+      "dohyun",
+      "narae",
+      "jihoon"
+    ],
+    "summary": "청운장 재개관 일정이 앞당겨져 복원 기한이 넉 달에서 석 달로 줄었다는 통보가 온다. 통보에는 창고에 남은 가구를 이달 안에 외부 보관업체로 반출하고 이후 작업은 로비와 공방에서만 하라는 반출 지시도 붙어 있다. 재인은 접착제가 마를 시간도 없다며 도현과 크게 다투고, 도현은 '확인해 보죠'라는 말만 남기고 나간다. 다음 날 지훈이 일정 단축과 반출 지시가 모두 차기철 회장의 결재로 정해졌다고 알려 준다. 지훈은 청운장 재개관이 그룹이 이미 대외 발표한 ESG 사업이라 일정은 회장실이 정한다고 덧붙인다. 오후에 도현은 로비 가구부터 먼저 복원하고 창고 반출은 로비 작업이 끝난 뒤로 미루는 절충안을 들고 온다. 재인은 마지못해 받아들이지만 도현의 사과 없는 태도에 날을 세운다.",
+    "beats": [
+      "석 달로 단축된 일정표와 창고 가구 반출 지시가 함께 온다",
+      "재인과 도현이 로비에서 언성을 높인다",
+      "지훈이 회장 결재와 대외 발표 사업이라는 사정을 알려 준다",
+      "도현이 로비 먼저, 창고 반출은 나중이라는 절충안을 내민다",
+      "나래가 둘 사이를 오가며 눈치를 본다"
+    ],
+    "facts_revealed": [
+      "f038",
+      "f039",
+      "f040",
+      "f041",
+      "f042",
+      "f043"
+    ],
+    "hints_allowed": [
+      "허용: 도현이 윗선의 압박을 받는다는 인상",
+      "허용: 재개관이 그룹의 대외 발표 사업이라는 지훈의 설명",
+      "금지: 회장에 대해 이름과 직함 이상을 밝히는 서술",
+      "금지: 회장실 지시에 대해 지훈의 설명 밖의 서술",
+      "금지: 절충안에 대한 도현의 내면 서술"
+    ],
+    "relationship_changes": [
+      {
+        "relationship": "r01",
+        "a": "jaein",
+        "b": "dohyun",
+        "status": "일정을 두고 날을 세우는 업무 관계",
+        "public": true
+      }
+    ],
+    "knowledge_events": [
+      {
+        "character": "jaein",
+        "fact_id": "f038"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f038"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f038"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f038"
+      },
+      {
+        "character": "gicheol",
+        "fact_id": "f038",
+        "offstage": true
+      },
+      {
+        "character": "seungjae",
+        "fact_id": "f038",
+        "offstage": true
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f039"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f039"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f040"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f040"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f040"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f040"
+      },
+      {
+        "character": "gicheol",
+        "fact_id": "f040",
+        "offstage": true,
+        "note": "결재한 당사자"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f041"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f041"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f041"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f041"
+      },
+      {
+        "character": "gicheol",
+        "fact_id": "f041",
+        "offstage": true,
+        "note": "지시한 당사자"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f042"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f042"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f043"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f043"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f043"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f043"
+      },
+      {
+        "character": "gicheol",
+        "fact_id": "f147",
+        "offstage": true,
+        "note": "8화 기한 단축과 창고 반출을 결재한 당사자. 38화에 직접 밝힘(38:195-199)"
+      }
+    ],
+    "pov_must_hide": [
+      "f107",
+      "f182"
+    ],
+    "interlude_pov_must_hide": null,
+    "ending_hook": "재인이 작업 일지에 '석 달'이라고 크게 적는다.",
+    "end_state": "재인과 도현은 날 선 업무 관계가 되었다."
+  },
+  {
+    "ep": 9,
+    "title": "전봇대 아저씨",
+    "pov": "jaein",
+    "interlude_pov": null,
+    "interlude_scope": null,
+    "location": "결공방·망원 한강공원",
+    "characters_present": [
+      "jaein",
+      "haram",
+      "dohyun",
+      "mikyung"
+    ],
+    "summary": "토요일, 재인은 하람을 데리고 공방에 나간다. 견적 서류를 가지러 온 도현이 하람과 마주치고, 하람은 키 큰 도현을 '전봇대 아저씨'라 부른다. 하람은 도현을 망원 한강공원 연날리기에 끌고 간다. 하람은 가오리연에 '엄마 올해는 와'라고 소원을 적는다. 서툴게 연을 날리던 도현이 크게 웃고, 재인은 그 웃음을 처음 본다. 저녁에 공방에 돌아온 하람은 미경에게 전봇대 아저씨와 가오리연을 날린 이야기를 쉬지 않고 늘어놓지만, 연에 적은 소원만은 비밀이라며 말하지 않는다. 미경은 웃으며 하람의 저녁상을 차려 준다.",
+    "beats": [
+      "도현이 하람과 마주쳐 어색하게 인사한다",
+      "하람이 도현을 '전봇대 아저씨'라 부른다",
+      "한강공원에서 가오리연을 날린다",
+      "하람이 연에 소원을 적는다",
+      "재인이 도현의 처음 본 웃음에 멈칫한다",
+      "저녁에 하람이 미경에게 연 이야기를 늘어놓고 소원은 비밀로 한다"
+    ],
+    "facts_revealed": [
+      "f044",
+      "f045",
+      "f046",
+      "f217"
+    ],
+    "hints_allowed": [
+      "허용: 도현이 아이를 대하는 서툰 다정함",
+      "금지: 도현과 하람 사이를 연애 감정과 엮는 서술"
+    ],
+    "relationship_changes": [
+      {
+        "relationship": "r12",
+        "a": "dohyun",
+        "b": "haram",
+        "status": "처음 만난 아이와 어른('전봇대 아저씨')",
+        "public": true
+      }
+    ],
+    "knowledge_events": [
+      {
+        "character": "dohyun",
+        "fact_id": "f044"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f044"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f044"
+      },
+      {
+        "character": "mikyung",
+        "fact_id": "f044",
+        "note": "9화 저녁 미경반찬에서 하람이 전봇대 아저씨와 가오리연을 날린 이야기를 늘어놓을 때 들음(9:253). 소원 문구는 하람이 비밀이라며 말하지 않음"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f045"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f045"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f045"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f046"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f046"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f046"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f003",
+        "note": "9화 재인의 \"제 조카예요. 하람이.\"로 앎(9:55)"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f217"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f217"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f217"
+      },
+      {
+        "character": "mikyung",
+        "fact_id": "f217",
+        "note": "9화 저녁 하람의 \"망원 한강공원에서!\"를 들음(9:253)"
+      }
+    ],
+    "pov_must_hide": [
+      "f107",
+      "f182"
+    ],
+    "interlude_pov_must_hide": null,
+    "ending_hook": "연줄이 끊겨 가오리연이 강 건너로 날아간다.",
+    "end_state": "하람이 도현을 따르기 시작한다."
+  },
+  {
+    "ep": 10,
+    "title": "배선함의 그을음",
+    "pov": "jaein",
+    "interlude_pov": null,
+    "interlude_scope": null,
+    "location": "청운장 창고·결공방",
+    "characters_present": [
+      "jaein",
+      "narae",
+      "woojin",
+      "dohyun"
+    ],
+    "summary": "창고 가구의 반출 목록을 만들던 중 별관 목공실에서 옮겨 온 철제 배선함이 나온다. 재인은 그을음이 난로가 있던 쪽이 아니라 배선함 안쪽에 몰려 있는 것을 이상하게 여긴다. 마침 들른 우진은 그을음을 한참 들여다보다 '좀 이상하네'라고만 하고 말끝을 흐린다. 계약 조항 때문에 재인은 망설이다 도현에게 발견을 보고한다. 도현은 배선함을 회사 창고 말고 따로 보관하겠다고 한다. 그날 밤 재인은 공방에서 나래가 지켜보는 가운데 17년 전 화재조사 기록의 열람을 청구하고, 출력한 열람 청구 접수증을 사진으로 찍어 우진에게 보낸다.",
+    "beats": [
+      "나래가 창고 구석에서 녹슨 철제 함을 끌어낸다",
+      "재인이 배선함의 안쪽 그을음을 발견한다",
+      "우진이 그을음을 살펴보고 말끝을 흐린다",
+      "재인이 도현에게 발견을 보고한다",
+      "도현이 배선함을 따로 보관하겠다고 한다",
+      "밤의 공방에서 나래가 보는 앞에서 열람을 청구하고 우진에게 접수증 사진을 보낸다"
+    ],
+    "facts_revealed": [
+      "f047",
+      "f048",
+      "f049",
+      "f050"
+    ],
+    "hints_allowed": [
+      "허용: 사고 원인에 대한 재인의 의심",
+      "금지: 화재 원인을 단정하는 서술",
+      "금지: 우진이 발화 지점이나 원인을 짚는 소견"
+    ],
+    "relationship_changes": [],
+    "knowledge_events": [
+      {
+        "character": "jaein",
+        "fact_id": "f047"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f047"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f047"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f047"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f048"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f048"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f048"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f048"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f049"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f049"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f049"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f049"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f050"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f050",
+        "note": "10화 밤 재인이 보낸 접수증 사진 문자로 앎"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f050",
+        "note": "10화 밤 공방에서 재인이 청구를 접수하는 것을 곁에서 봄"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f022",
+        "note": "10화 창고에서 나래가 발견물 보고 조항을 말할 때 같은 자리에 있었음(10:115·175)"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f010",
+        "note": "10화 청운장 창고에서 \"오빠, 이쪽은 차도현 상무님\" 소개로 앎(10:135)"
+      }
+    ],
+    "pov_must_hide": [
+      "f107",
+      "f182"
+    ],
+    "interlude_pov_must_hide": null,
+    "ending_hook": "도현이 배선함을 싣고 간 차의 미등이 언덕 아래로 사라진다.",
+    "end_state": "재인은 아버지 사고를 다시 의심하기 시작한다."
+  },
+  {
+    "ep": 11,
+    "title": "소방관의 이유",
+    "pov": "jaein",
+    "interlude_pov": "woojin",
+    "interlude_scope": "포장마차 뒤 그날 밤, 성미119안전센터 옥상에서 우진 혼자 있는 장면",
+    "location": "망원동 포장마차·성미119안전센터 옥상",
+    "characters_present": [
+      "jaein",
+      "woojin"
+    ],
+    "summary": "재인은 우진과 동네 포장마차에서 배선함 이야기를 나눈다. 우진은 17년 전 화재 날 밤 청운장 언덕 아래에서 불길을 보았다고 털어놓는다. 그 불길을 본 뒤 소방관이 되기로 마음먹었다는 것이다. 재인은 우진이 그날 일을 한 번도 말하지 않았다는 데 놀란다. 막간에서 우진은 소방서 옥상에서 재인이 보낸 '고마워, 오빠' 메시지를 오래 들여다본다. 우진은 십 년 넘게 말하지 못한 마음을 다시 삼킨다.",
+    "beats": [
+      "포장마차에서 재인이 배선함 이야기를 꺼낸다",
+      "우진이 그날 밤 언덕 아래에서 본 불길을 이야기한다",
+      "우진이 소방관이 된 이유를 털어놓는다",
+      "막간: 소방서 옥상에서 우진이 재인의 메시지를 읽는다",
+      "막간: 우진이 오래된 마음을 삼킨다"
+    ],
+    "facts_revealed": [
+      "f051",
+      "f052",
+      "f053"
+    ],
+    "hints_allowed": [
+      "허용: 막간에서 우진의 재인을 향한 마음",
+      "금지: 짝사랑 밖의 우진의 내면 서술"
+    ],
+    "relationship_changes": [
+      {
+        "relationship": "r02",
+        "a": "jaein",
+        "b": "woojin",
+        "status": "우진 혼자 품은 오랜 짝사랑",
+        "public": false
+      }
+    ],
+    "knowledge_events": [
+      {
+        "character": "jaein",
+        "fact_id": "f051"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f052"
+      }
+    ],
+    "pov_must_hide": [
+      "f107",
+      "f182"
+    ],
+    "interlude_pov_must_hide": [
+      "f107",
+      "f161",
+      "f162",
+      "f163",
+      "f164",
+      "f165"
+    ],
+    "ending_hook": "우진은 '잘 자'라는 답장을 썼다 지우기를 몇 번이나 되풀이하다가 끝내 보내지 못한다.",
+    "end_state": "독자는 우진의 짝사랑을 알게 되었다."
+  },
+  {
+    "ep": 12,
+    "title": "회장의 방문",
+    "pov": "jaein",
+    "interlude_pov": null,
+    "interlude_scope": null,
+    "location": "청운장 로비",
+    "characters_present": [
+      "jaein",
+      "dohyun",
+      "gicheol",
+      "jihoon",
+      "narae"
+    ],
+    "summary": "차기철 회장이 예고 없이 청운장 현장을 찾는다. 회장은 인사하는 재인의 얼굴을 처음 보고 잠깐 말을 멈춘다. 회장은 직원들 앞에서 도현에게 깍듯한 존댓말로 '쓸데없는 것까지 들추지 마십시오'라고 면박을 준다. 떠나는 회장에게 수행 비서가 '회장님, 아드님께는…' 하고 말을 꺼냈다가 눈짓 한 번에 입을 다물고, 재인은 그제야 회장이 도현의 아버지라는 것을 알게 된다. 부자 사이에는 끝내 인사 한마디 오가지 않았다. 회장이 떠난 뒤 도현은 떨리는 손을 주머니에 넣고 아무 일 없다는 듯 작업 일정을 묻는다.",
+    "beats": [
+      "검은 차량 행렬이 청운장 언덕을 오른다",
+      "회장이 재인의 얼굴을 보고 멈칫한다",
+      "회장이 도현에게 공개적으로 면박을 준다",
+      "수행 비서의 '회장님, 아드님께는…'으로 재인이 두 사람이 부자라는 것을 알게 된다",
+      "도현이 떨리는 손을 감춘다"
+    ],
+    "facts_revealed": [
+      "f054",
+      "f055"
+    ],
+    "hints_allowed": [
+      "허용: 회장이 과거 이야기를 꺼리는 태도",
+      "금지: 회장의 과거를 서술하는 문장"
+    ],
+    "relationship_changes": [
+      {
+        "relationship": "r09",
+        "a": "dohyun",
+        "b": "gicheol",
+        "status": "냉랭한 부자",
+        "public": true
+      },
+      {
+        "relationship": "r14",
+        "a": "jaein",
+        "b": "gicheol",
+        "status": "회장과 하청 복원가",
+        "public": true
+      }
+    ],
+    "knowledge_events": [
+      {
+        "character": "jaein",
+        "fact_id": "f054"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f054"
+      },
+      {
+        "character": "gicheol",
+        "fact_id": "f055"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f055"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f055"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f055"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f055"
+      },
+      {
+        "character": "gicheol",
+        "fact_id": "f043",
+        "note": "12화 현장에서 도현의 \"로비 작업을 마친 뒤 반출할 예정입니다\"를 직접 들음(12:131-135)"
+      }
+    ],
+    "pov_must_hide": [
+      "f107",
+      "f182"
+    ],
+    "interlude_pov_must_hide": null,
+    "ending_hook": "회장이 떠난 로비 바닥에 지팡이 끝 자국이 점점이 남아 있다.",
+    "end_state": "재인은 도현 집안의 냉기를 보았다."
+  },
+  {
+    "ep": 13,
+    "title": "라이벌의 제안",
+    "pov": "jaein",
+    "interlude_pov": null,
+    "interlude_scope": null,
+    "location": "을지로 본사 이사회 회의실",
+    "characters_present": [
+      "jaein",
+      "seungjae",
+      "dohyun",
+      "jihoon"
+    ],
+    "summary": "호텔사업부 상무 민승재가 청운장 복원 사업을 중단하고 부지를 팔아 오피스텔을 짓자는 재검토 안건을 이사회에 올린다. 재인은 복원안 발표용 가구 샘플을 들고 회의에 불려 간다. 승재는 도현의 고등학교 1년 선배이자 그룹 안의 오랜 경쟁자로, 회의 내내 서로를 겨눈다. 승재가 회장 부인 민혜련의 조카라는 이야기가 회의실 밖에서 오간다. 회장석은 비어 있고, 차기철 회장은 이 안건의 표결에서 빠진다. 표결은 도현의 복원안이 근소한 차이로 이긴다. 회의가 끝난 뒤 승재는 재인에게 '이 집안 일엔 얽히지 않는 게 좋을 거다'라고 말한다.",
+    "beats": [
+      "재인이 샘플 의자를 들고 회의실에 들어간다",
+      "승재가 사업 중단과 오피스텔 안을 발표한다",
+      "도현과 승재가 날 선 말을 주고받는다",
+      "직원들이 승재가 회장 부인의 조카라고 수군댄다",
+      "회장석이 빈 채로 표결이 진행된다",
+      "복원안이 근소한 차이로 채택된다",
+      "승재가 재인에게 경고한다"
+    ],
+    "facts_revealed": [
+      "f056",
+      "f057",
+      "f058",
+      "f059",
+      "f060",
+      "f061",
+      "f062",
+      "f218"
+    ],
+    "hints_allowed": [
+      "허용: 승재가 무언가 아는 듯한 여유",
+      "허용: 비어 있는 회장석",
+      "금지: 승재의 여유를 해석하는 서술",
+      "금지: 빈 회장석을 해석하는 서술"
+    ],
+    "relationship_changes": [
+      {
+        "relationship": "r04",
+        "a": "dohyun",
+        "b": "seungjae",
+        "status": "고등학교 선후배이자 그룹 안의 경쟁자, 청운장을 두고 공개 대립",
+        "public": true
+      },
+      {
+        "relationship": "r16",
+        "a": "gicheol",
+        "b": "hyeryeon",
+        "status": "회장과 두 번째 아내",
+        "public": true
+      }
+    ],
+    "knowledge_events": [
+      {
+        "character": "jaein",
+        "fact_id": "f056"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f057"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f058"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f059"
+      },
+      {
+        "character": "seungjae",
+        "fact_id": "f060"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f060"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f060"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f060"
+      },
+      {
+        "character": "gicheol",
+        "fact_id": "f060",
+        "offstage": true
+      },
+      {
+        "character": "gicheol",
+        "fact_id": "f061",
+        "offstage": true,
+        "note": "표결에서 빠진 당사자"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f061"
+      },
+      {
+        "character": "seungjae",
+        "fact_id": "f061"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f061"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f061"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f062"
+      },
+      {
+        "character": "seungjae",
+        "fact_id": "f062"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f062"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f062"
+      },
+      {
+        "character": "gicheol",
+        "fact_id": "f062",
+        "offstage": true
+      },
+      {
+        "character": "seungjae",
+        "fact_id": "f016",
+        "note": "13화 이사회에서 재인을 \"결공방\"으로 알아보고 복원 샘플 의자 발표를 들음(13:55·139)"
+      },
+      {
+        "character": "seungjae",
+        "fact_id": "f013",
+        "note": "13화 이사회에서 결공방이 청운장 가구 복원을 맡은 것을 앎(13:55-59·139)"
+      },
+      {
+        "character": "seungjae",
+        "fact_id": "f001",
+        "note": "13화 \"아, 이분이구나. 결공방.\"으로 재인이 결공방 대표라는 것을 앎(13:55-59)"
+      },
+      {
+        "character": "seungjae",
+        "fact_id": "f214",
+        "note": "13화 이사회에서 \"120점이 다 이렇습니다\"와 \"그 안에 120점이 됩니까?\"로 앎(13:139·147)"
+      },
+      {
+        "character": "seungjae",
+        "fact_id": "f218"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f218"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f218"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f218"
+      },
+      {
+        "character": "gicheol",
+        "fact_id": "f218",
+        "offstage": true
+      }
+    ],
+    "pov_must_hide": [
+      "f107",
+      "f182"
+    ],
+    "interlude_pov_must_hide": null,
+    "ending_hook": "승재가 지훈의 어깨를 두드리며 지나간다.",
+    "end_state": "청운장 복원이 계속되게 되었다."
+  },
+  {
+    "ep": 14,
+    "title": "선택된 공방",
+    "pov": "jaein",
+    "interlude_pov": "jihoon",
+    "interlude_scope": "같은 날 밤 을지로 본사 도현의 사무실, 지훈의 눈으로 본 두 사람의 대화",
+    "location": "결공방·을지로 도현의 사무실",
+    "characters_present": [
+      "jaein",
+      "narae",
+      "dohyun",
+      "jihoon"
+    ],
+    "summary": "재인은 열람을 청구한 17년 전 화재조사 기록 사본이 보존 기한이 지나 폐기되었다는 회신을 받는다. 낙심한 재인은 나래를 먼저 보내고 늦게까지 대패질을 한다. 막간에서 지훈은 도현의 사무실에서 '결공방을 고른 이유를 언제 말할 거냐'고 묻는다. 도현은 업체를 고를 때 고명수의 딸이 운영하는 공방이라는 것을 알고 일부러 골랐다고 인정한다. 지훈은 그 사람이 알게 되면 끝이라고 경고한다. 도현은 그 전에 확인할 것을 다 확인하겠다고만 답한다.",
+    "beats": [
+      "재인이 폐기 회신 문서를 받는다",
+      "나래가 재인을 위로하고 먼저 퇴근한다",
+      "재인이 홀로 대패질을 한다",
+      "막간: 지훈이 도현에게 공방 선택 이유를 묻는다",
+      "막간: 도현이 일부러 골랐다고 인정한다",
+      "막간: 지훈의 경고에 도현이 짧게 답한다"
+    ],
+    "facts_revealed": [
+      "f063",
+      "f064",
+      "f219"
+    ],
+    "hints_allowed": [
+      "허용: 막간에서 도현이 공방을 일부러 골랐다고 인정하는 대사",
+      "금지: 막간에서 도현이 인정한 것 밖의 도현의 사정을 서술하는 문장",
+      "금지: 막간에서 지훈의 내면 서술"
+    ],
+    "relationship_changes": [],
+    "knowledge_events": [
+      {
+        "character": "jaein",
+        "fact_id": "f063"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f063"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f063",
+        "offstage": true
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f219"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f219"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f219",
+        "offstage": true
+      }
+    ],
+    "pov_must_hide": [
+      "f107",
+      "f182"
+    ],
+    "interlude_pov_must_hide": [
+      "f068",
+      "f069",
+      "f072",
+      "f075",
+      "f078",
+      "f084",
+      "f086",
+      "f090",
+      "f098",
+      "f101",
+      "f115",
+      "f118",
+      "f177"
+    ],
+    "ending_hook": "지훈이 사무실 문을 닫고 나간 뒤에도 도현은 부암동 쪽 불빛을 오래 바라본다.",
+    "end_state": "독자는 도현이 결공방을 일부러 골랐다는 것을 알게 되었다."
+  },
+  {
+    "ep": 15,
+    "title": "장식장 안의 글자",
+    "pov": "jaein",
+    "interlude_pov": null,
+    "interlude_scope": null,
+    "location": "청운장 로비",
+    "characters_present": [
+      "jaein",
+      "narae",
+      "haram",
+      "dohyun"
+    ],
+    "summary": "회사는 청운장 재개관 기념식을 4월 둘째 주 토요일로 발표한다. 토요일이라 공방에 따라온 하람이 로비를 뛰어다닌다. 재인은 자개 장식장 안쪽을 손보다가 아버지의 '明' 자 각인 옆에 서툰 글씨로 새긴 'ㄷㅎ' 두 글자를 발견한다. 재인은 아버지가 남의 글자를 가구에 허락했을 리 없다며 고개를 갸웃한다. 도현은 글자를 보고 잠시 말을 잃었다가 '오래된 낙서겠죠'라고 넘긴다. 하람은 그 글자가 사람 이름 같다고 말한다.",
+    "beats": [
+      "재개관 기념식 날짜가 공지된다",
+      "하람이 로비를 뛰어다니다 나래에게 붙잡힌다",
+      "재인이 장식장 안의 'ㄷㅎ' 글자를 발견한다",
+      "도현이 글자를 보고 말을 잃는다",
+      "하람이 사람 이름 같다고 말한다"
+    ],
+    "facts_revealed": [
+      "f065",
+      "f066"
+    ],
+    "hints_allowed": [
+      "허용: 글자를 본 도현의 굳은 표정",
+      "허용: 하람이 사람 이름 같다고 말하고 도현이 굳는 장면(재인은 잠깐 의아해하다 넘긴다)",
+      "금지: 도현이 그 글자를 새겼다고 내면이나 서술로 밝히는 문장"
+    ],
+    "relationship_changes": [],
+    "knowledge_events": [
+      {
+        "character": "haram",
+        "fact_id": "f011",
+        "note": "15화 토요일에 공방 일을 따라 청운장 로비에 와서 앎"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f065"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f065"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f065"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f065"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f065",
+        "offstage": true
+      },
+      {
+        "character": "gicheol",
+        "fact_id": "f065",
+        "offstage": true
+      },
+      {
+        "character": "seungjae",
+        "fact_id": "f065",
+        "offstage": true
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f066"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f066"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f066"
+      }
+    ],
+    "pov_must_hide": [
+      "f107",
+      "f182"
+    ],
+    "interlude_pov_must_hide": null,
+    "ending_hook": "재인이 'ㄷㅎ' 글자를 사진으로 찍어 둔다.",
+    "end_state": "장식장의 낯선 글자가 의문으로 남았다."
+  },
+  {
+    "ep": 16,
+    "title": "눈 녹는 밤의 창고",
+    "pov": "jaein",
+    "interlude_pov": null,
+    "interlude_scope": null,
+    "location": "청운장 창고",
+    "characters_present": [
+      "jaein",
+      "dohyun"
+    ],
+    "summary": "폭설 뒤 눈 녹은 물이 청운장 창고 지붕으로 새기 시작해, 재인과 도현은 반출을 미뤄 둔 가구를 밤새 옮긴다. 젖은 채 둘은 창고 바닥에 앉아 컵라면을 나눠 먹는다. 물에 불은 서랍을 손보던 도현이 대패를 능숙하게 다루자 재인이 놀란다. 도현은 '어릴 때 잠깐 배웠다'고만 답한다. 새벽녘 재인은 도현의 옆얼굴을 보다가 자기 마음이 흔들리고 있다는 것을 자각한다. 도현도 재인이 덮어 준 담요를 오래 쥐고 있다.",
+    "beats": [
+      "눈 녹은 물이 창고 지붕으로 샌다",
+      "둘이 반출을 미뤄 둔 가구를 밤새 옮긴다",
+      "새벽 창고의 컵라면을 나눠 먹으며 처음 농담을 주고받는다",
+      "도현의 능숙한 대패질 솜씨에 재인이 놀란다",
+      "재인이 자기 마음을 자각한다"
+    ],
+    "facts_revealed": [
+      "f067",
+      "f068"
+    ],
+    "hints_allowed": [
+      "허용: 둘 사이의 설렘",
+      "허용: '어릴 때 잠깐 배웠다'는 도현의 말",
+      "금지: 도현의 말 밖의 대패질 내력을 서술하는 문장"
+    ],
+    "relationship_changes": [
+      {
+        "relationship": "r01",
+        "a": "jaein",
+        "b": "dohyun",
+        "status": "서로에게 끌림을 자각한 사이(고백 전)",
+        "public": false
+      }
+    ],
+    "knowledge_events": [
+      {
+        "character": "jaein",
+        "fact_id": "f067"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f067"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f068"
+      }
+    ],
+    "pov_must_hide": [
+      "f107",
+      "f182"
+    ],
+    "interlude_pov_must_hide": null,
+    "ending_hook": "물이 멎은 새벽, 도현의 휴대전화에 '회장실' 부재중 전화가 다섯 통 찍혀 있다.",
+    "end_state": "재인과 도현은 서로에게 끌리기 시작했다."
+  },
+  {
+    "ep": 17,
+    "title": "진짜 목적",
+    "pov": "jaein",
+    "interlude_pov": null,
+    "interlude_scope": null,
+    "location": "청운장 창고·결공방",
+    "characters_present": [
+      "jaein",
+      "dohyun",
+      "narae",
+      "woojin"
+    ],
+    "summary": "재인은 도현에게 배선함을 왜 따로 보관했느냐고 따진다. 도현은 청운장 화재의 공식 결론을 다시 확인하려고 이 복원 사업을 맡았다고 털어놓는다. 재인은 아버지의 명예가 걸린 일이라며 '같이 찾아요'라고 한다. 저녁에 공방에 모인 자리에서 도현은 우진과 나래 앞에서 복원 사업을 맡은 이유를 다시 밝히고, 우진은 소방 쪽 인맥으로 당시 화재조사관을 수소문하겠다고 한다. 나래는 재인과 도현 사이의 기류가 달라졌다는 것을 눈치챈다. 도현은 공방을 나서며 재인에게 업무 인사가 아닌 사적인 고마움을 처음으로 전한다.",
+    "beats": [
+      "재인이 배선함 보관 이유를 따진다",
+      "도현이 복원 사업을 맡은 목적을 밝힌다",
+      "재인이 함께 진실을 찾자고 한다",
+      "공방 모임에서 도현이 우진과 나래 앞에서 복원 사업을 맡은 이유를 다시 밝힌다",
+      "우진이 조사관 수소문을 약속한다",
+      "나래가 두 사람의 기류를 눈치챈다"
+    ],
+    "facts_revealed": [
+      "f069",
+      "f070",
+      "f071"
+    ],
+    "hints_allowed": [
+      "허용: 도현이 회사의 과거를 바로잡고 싶어 한다는 설명",
+      "금지: 도현이 밝힌 것 밖의 도현의 사정을 서술하는 문장"
+    ],
+    "relationship_changes": [],
+    "knowledge_events": [
+      {
+        "character": "jaein",
+        "fact_id": "f069"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f069",
+        "note": "17화 공방 모임에서 도현이 우진과 나래 앞에서 복원 사업을 맡은 이유를 다시 밝힘"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f069",
+        "note": "17화 공방 모임에서 도현이 우진과 나래 앞에서 복원 사업을 맡은 이유를 다시 밝힘"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f070"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f070"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f070"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f070"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f071"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f071"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f071"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f071"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f071",
+        "offstage": true,
+        "note": "그날 밤 도현에게서 들음(본문 미서술)"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f070",
+        "offstage": true,
+        "note": "그날 밤 도현에게서 들음(본문 미서술). 19화 재인에게 조사관 수소문을 묻는 데서 드러남(19:159)"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f006",
+        "note": "17화 공방 모임에서 소방서 바람막이와 우진의 \"소방 쪽에 아직 연락 닿는 선배들 있어\"로 앎(17:93·175)"
+      }
+    ],
+    "pov_must_hide": [
+      "f107",
+      "f182"
+    ],
+    "interlude_pov_must_hide": null,
+    "ending_hook": "우진이 오래된 소방서 동기 단체방을 연다.",
+    "end_state": "재인과 도현은 함께 화재 원인을 조사하기로 했다."
+  },
+  {
+    "ep": 18,
+    "title": "서촌 한옥",
+    "pov": "jaein",
+    "interlude_pov": null,
+    "interlude_scope": null,
+    "location": "서촌 태석의 한옥",
+    "characters_present": [
+      "jaein",
+      "taeseok",
+      "haram",
+      "dohyun"
+    ],
+    "summary": "하람의 바둑 대회 연습 때문에 재인은 처음으로 태석의 서촌 한옥에 간다. 마루 벽에 걸린 청운장 개관 사진 속 젊은 태석을 보고 재인은 태석이 청운장의 전 주인이었다는 것을 알게 된다. 태석은 빚 때문에 호텔을 한결그룹에 넘겼다고 짧게 말한다. 그는 넓은 한옥에서 혼자 산다. 현장 회의에 같이 가려고 재인이 미리 위치를 보내 둔 한옥으로 도현이 찾아와 대문간에서 태석과 마주친다. 둘은 초면처럼 고개만 숙이고, 재인은 마당의 공기가 굳는 것을 느낀다.",
+    "beats": [
+      "재인과 하람이 서촌 골목의 한옥을 찾아간다",
+      "마루의 청운장 개관 사진을 발견한다",
+      "태석이 빚 때문에 호텔을 넘겼다고 말한다",
+      "재인이 보낸 위치를 따라 온 도현이 대문간에 들어선다",
+      "태석과 도현이 초면처럼 인사한다"
+    ],
+    "facts_revealed": [
+      "f072",
+      "f073",
+      "f074"
+    ],
+    "hints_allowed": [
+      "허용: 태석과 도현 사이의 어색한 침묵",
+      "금지: 두 사람의 침묵을 해석하는 서술"
+    ],
+    "relationship_changes": [
+      {
+        "relationship": "r10",
+        "a": "dohyun",
+        "b": "taeseok",
+        "status": "초면처럼 인사한 공방 손님 노인과 상무",
+        "public": true
+      }
+    ],
+    "knowledge_events": [
+      {
+        "character": "haram",
+        "fact_id": "f012",
+        "note": "18화 서촌 한옥에서 태석이 빚 때문에 호텔을 한결그룹에 넘겼다고 말할 때 들음"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f072"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f072"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f073"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f073"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f074"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f074"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f029",
+        "note": "18화 대문간에서 태석의 \"꼬마 기사는 내가 데리고 있을 테니\", \"대마 하나 살릴 때까지는 안 놔줄 거니까\"를 들음(18:215-219). 33화 하람의 \"할아버지한테 같이 배우자\"로 분명해짐"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f010",
+        "note": "9화에는 재인이 부르는 \"상무님\" 호칭만 들음(9:55·73). 18화 \"한결그룹 차도현 상무님\" 소개로 앎(18:197)"
+      }
+    ],
+    "pov_must_hide": [
+      "f107",
+      "f182"
+    ],
+    "interlude_pov_must_hide": null,
+    "ending_hook": "돌아가는 차 안에서 도현이 백미러로 한옥 대문을 오래 본다.",
+    "end_state": "재인은 태석이 청운장 전 주인이라는 것을 알았다."
+  },
+  {
+    "ep": 19,
+    "title": "선배와 후배",
+    "pov": "jaein",
+    "interlude_pov": null,
+    "interlude_scope": null,
+    "location": "을지로 본사 엘리베이터 앞",
+    "characters_present": [
+      "jaein",
+      "seungjae",
+      "jihoon"
+    ],
+    "summary": "재인은 복원 진행 사진을 보고하러 본사에 갔다가 엘리베이터 앞에서 승재와 지훈의 말다툼을 목격한다. 승재는 지훈을 '서 후배'라 부르며 '줄 잘 서라'고 비꼰다. 지훈은 '선배 일이나 하시죠'라고 받아친다. 재인이 둘의 관계를 묻자 지훈은 승재가 대학 선배라고 마지못해 답한다. 엘리베이터에 함께 탄 지훈은 재인에게 화재조사관 수소문은 좀 되느냐고 지나가듯 묻는다. 지훈은 평소보다 피곤해 보이고, 재인은 회사 안의 줄과 편이 생각보다 복잡하다는 것을 느낀다.",
+    "beats": [
+      "재인이 사진 파일을 들고 본사에 들어선다",
+      "엘리베이터 앞에서 승재와 지훈이 언성을 높인다",
+      "승재가 지훈을 '서 후배'라고 부른다",
+      "지훈이 대학 선후배 사이라고 설명한다",
+      "지훈이 조사관 수소문을 지나가듯 묻는다",
+      "재인이 지훈의 피곤한 얼굴을 본다"
+    ],
+    "facts_revealed": [
+      "f075",
+      "f076",
+      "f077"
+    ],
+    "hints_allowed": [
+      "허용: 승재의 비꼬는 말투",
+      "허용: 조사 진행을 궁금해하는 지훈의 질문",
+      "금지: 승재의 말투와 지훈의 질문을 해석하는 서술"
+    ],
+    "relationship_changes": [
+      {
+        "relationship": "r05",
+        "a": "jihoon",
+        "b": "seungjae",
+        "status": "서로 날을 세우는 대학 선후배",
+        "public": true
+      }
+    ],
+    "knowledge_events": [
+      {
+        "character": "jaein",
+        "fact_id": "f075"
+      },
+      {
+        "character": "seungjae",
+        "fact_id": "f076"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f076"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f076"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f077"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f077"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f006",
+        "note": "19화 재인의 \"소방서 다니는 친구가 알아보고 있어요\"로 수소문하는 우진(f071)이 소방관이라는 것을 앎(19:163)"
+      }
+    ],
+    "pov_must_hide": [
+      "f107",
+      "f182"
+    ],
+    "interlude_pov_must_hide": null,
+    "ending_hook": "승재가 닫히는 엘리베이터 문 사이로 웃는다.",
+    "end_state": "재인은 승재와 지훈의 관계를 알게 되었다."
+  },
+  {
+    "ep": 20,
+    "title": "평창동 저녁",
+    "pov": "jaein",
+    "interlude_pov": null,
+    "interlude_scope": null,
+    "location": "평창동 회장 자택",
+    "characters_present": [
+      "jaein",
+      "hyeryeon",
+      "dohyun",
+      "seungjae"
+    ],
+    "summary": "회장 부인 민혜련이 집안의 오래된 반닫이를 복원해 달라며 재인을 평창동 자택으로 부른다. 혜련은 친절하지만 어딘가 불안해 보인다. 회장은 출장 중이고, 저녁 자리에는 도현과 승재가 함께 앉아 날 선 농담을 주고받는다. 혜련은 배웅하며 재인에게 '아버님 일은 정말 유감이었다'고 조용히 말한다. 재인은 회장 집안 사람이 아버지 일을 기억한다는 데 놀란다. 도현은 돌아가는 길에 '그 집에서는 아무것도 드시지 마세요'라고 농담처럼 말한다.",
+    "beats": [
+      "혜련이 반닫이를 보여 주며 복원을 맡긴다",
+      "저녁 식탁에서 도현과 승재가 신경전을 벌인다",
+      "혜련이 재인의 잔에 물을 따르며 손을 떤다",
+      "배웅 길에 혜련이 아버지 일을 언급한다",
+      "도현이 돌아가는 차에서 농담을 건넨다"
+    ],
+    "facts_revealed": [
+      "f078",
+      "f079",
+      "f080"
+    ],
+    "hints_allowed": [
+      "허용: 혜련의 불안한 태도",
+      "금지: 혜련의 불안을 해석하는 서술"
+    ],
+    "relationship_changes": [],
+    "knowledge_events": [
+      {
+        "character": "jaein",
+        "fact_id": "f078"
+      },
+      {
+        "character": "hyeryeon",
+        "fact_id": "f079"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f079"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f079"
+      },
+      {
+        "character": "seungjae",
+        "fact_id": "f079"
+      },
+      {
+        "character": "hyeryeon",
+        "fact_id": "f080"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f080"
+      },
+      {
+        "character": "hyeryeon",
+        "fact_id": "f143",
+        "offstage": true,
+        "note": "20화 재인에게 의뢰한 당사자. 본문은 동기를 서술하지 않음"
+      },
+      {
+        "character": "hyeryeon",
+        "fact_id": "f016",
+        "note": "20화 식탁에서 승재의 \"청운장에 이 집 반닫이까지\"를 들음(20:157)"
+      },
+      {
+        "character": "hyeryeon",
+        "fact_id": "f001",
+        "note": "20화 공방 전화의 \"결공방입니다\"로 앎(20:3)"
+      },
+      {
+        "character": "hyeryeon",
+        "fact_id": "f013",
+        "note": "20화 식탁에서 승재의 \"청운장에 이 집 반닫이까지\"와 \"계약서에 도장 찍었으니까\"로 앎(20:157·169)"
+      },
+      {
+        "character": "hyeryeon",
+        "fact_id": "f062",
+        "note": "20화 식탁에서 승재의 \"이사회 이기더니\", \"표 차이 몇 표였더라\"로 도현 안이 근소하게 이겼다는 것을 들음(20:129-135)"
+      },
+      {
+        "character": "hyeryeon",
+        "fact_id": "f060",
+        "note": "20화 식탁에서 승재의 \"차 상무 복원? 내 오피스텔?\"과 \"이사회 이기더니\"로 앎(20:129·179)"
+      },
+      {
+        "character": "seungjae",
+        "fact_id": "f209",
+        "note": "20화 식탁에서 재인의 \"망원동이요\"를 들음(20:101-103)"
+      },
+      {
+        "character": "hyeryeon",
+        "fact_id": "f209",
+        "note": "20화 식탁에서 공방 위치를 묻고 \"망원동이요\"를 들음(20:101-103)"
+      }
+    ],
+    "pov_must_hide": [
+      "f107",
+      "f182"
+    ],
+    "interlude_pov_must_hide": null,
+    "ending_hook": "혜련이 현관에 선 채 차가 언덕 아래로 사라질 때까지 배웅한다.",
+    "end_state": "재인은 혜련의 말이 마음에 걸린다."
+  },
+  {
+    "ep": 21,
+    "title": "엿들은 통화",
+    "pov": "narae",
+    "interlude_pov": null,
+    "interlude_scope": null,
+    "location": "청운장 주차장·로비",
+    "characters_present": [
+      "narae",
+      "jihoon",
+      "jaein",
+      "dohyun"
+    ],
+    "summary": "나래는 사포를 가지러 주차장에 나갔다가 세워 둔 차 안에서 통화하는 지훈의 목소리를 듣는다. 지훈은 '소방 쪽에서 그때 조사관을 찾고 있습니다. 누가 찾아와도 기억 안 난다고만 하세요'라고 누군가에게 낮게 당부한다. 나래는 이상하다고 느끼지만 자기가 잘못 들었을 수도 있다며 입을 다문다. 오후에 지훈은 평소처럼 공방 사람들 몫의 커피를 사 온다. 커피를 든 지훈이 들어서는데, 나래는 작업대 앞에서 나란히 웃는 재인과 도현을 보고 '두 분 사귀세요?'라고 농담을 던진다. 재인은 사포를 집어 던지는 시늉을 한다.",
+    "beats": [
+      "나래가 사포 상자를 찾으러 주차장에 간다",
+      "차 안의 지훈이 누군가에게 입단속을 당부한다",
+      "나래가 들은 것을 혼자 곱씹는다",
+      "지훈이 커피를 사 와 평소처럼 웃는다",
+      "나래가 재인과 도현에게 사귀냐고 농담한다"
+    ],
+    "facts_revealed": [
+      "f081",
+      "f082",
+      "f083"
+    ],
+    "hints_allowed": [
+      "허용: 통화 상대가 누구인지 모르는 나래의 의심",
+      "금지: 통화 상대를 특정하는 호칭·단서"
+    ],
+    "relationship_changes": [],
+    "knowledge_events": [
+      {
+        "character": "jihoon",
+        "fact_id": "f081"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f081"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f082"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f083"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f083"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f083"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f083",
+        "note": "커피를 들고 들어서다 들음"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f116",
+        "offstage": true,
+        "note": "21화 차 안 통화가 그 당부였다(본문은 상대를 밝히지 않음)"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f119",
+        "offstage": true,
+        "note": "21화 처음 당부할 때부터의 동기. 본문은 동기를 서술하지 않음"
+      }
+    ],
+    "pov_must_hide": [],
+    "interlude_pov_must_hide": null,
+    "ending_hook": "나래가 지훈이 건넨 커피를 마시지 못하고 내려놓는다.",
+    "end_state": "나래는 엿들은 통화를 혼자 품고 있다."
+  },
+  {
+    "ep": 22,
+    "title": "그날 밤의 목격자",
+    "pov": "jaein",
+    "interlude_pov": null,
+    "interlude_scope": null,
+    "location": "청운장 창고·별관 터",
+    "characters_present": [
+      "jaein",
+      "woojin",
+      "dohyun"
+    ],
+    "summary": "우진이 은퇴한 선배 소방관의 출동 일지 사본을 구해 온다. 일지에는 '본관 당직 목수, 전기를 내려야 한다며 별관 진입 후 미귀환'이라는 줄과 '목격자: 본관 객실 미성년 남 1명'이라는 줄이 적혀 있다. 재인은 아버지가 불이 난 뒤 전기를 내리러 별관으로 뛰어들었다는 것과, 공식 발표 어디에도 없던 소년 목격자가 있었다는 것을 처음 안다. 그 자리에 있던 도현의 얼굴이 하얗게 질린다. 밤에 도현은 재인을 별관 터로 불러낸다. 도현은 자기 두 손을 내려다보며 '그 소년이 저였습니다. 그날 밤 이 손으로 한 일은 아직 다 말씀드리지 못했습니다'라고 고백하고, 재인은 아무 대답도 하지 못한 채 돌아선다.",
+    "beats": [
+      "우진이 출동 일지 사본을 펼친다",
+      "일지에서 목수의 진입 기록과 소년 목격자 기록을 읽는다",
+      "재인이 아버지의 마지막 행동을 알게 된다",
+      "도현의 안색이 변한다",
+      "별관 터에서 도현이 고백한다",
+      "재인이 말없이 돌아선다"
+    ],
+    "facts_revealed": [
+      "f084",
+      "f085",
+      "f086",
+      "f087"
+    ],
+    "hints_allowed": [
+      "허용: 도현의 고백과 재인의 충격",
+      "허용: 그날 밤 자기 손으로 한 일이 더 있다는 도현의 암시(무엇인지는 밝히지 않는다)",
+      "금지: 고백 밖의 도현의 과거를 서술하는 문장"
+    ],
+    "relationship_changes": [],
+    "knowledge_events": [
+      {
+        "character": "jaein",
+        "fact_id": "f084"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f084"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f085"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f085"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f086"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f087"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f087"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f087"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f063",
+        "note": "22화 창고에서 우진의 \"공식 기록이 폐기됐어도\"로 앎(22:39)"
+      }
+    ],
+    "pov_must_hide": [
+      "f107",
+      "f182"
+    ],
+    "interlude_pov_must_hide": null,
+    "ending_hook": "재인의 휴대전화에 도현의 부재중 전화가 열두 통 쌓인다.",
+    "end_state": "재인은 도현이 그날 밤의 소년 목격자라는 것을 알았다."
+  },
+  {
+    "ep": 23,
+    "title": "깨진 신뢰",
+    "pov": "jaein",
+    "interlude_pov": null,
+    "interlude_scope": null,
+    "location": "결공방·미경반찬",
+    "characters_present": [
+      "jaein",
+      "dohyun",
+      "narae",
+      "haram",
+      "mikyung"
+    ],
+    "summary": "다음 날 도현은 공방에 와서 결공방을 일부러 골랐다는 것까지 털어놓는다. 재인은 '동정이었어요, 속죄였어요?'라고 묻는다. 재인은 '계약은 지킵니다'라며 계약 밖의 사적인 대화는 끊겠다고 선언한다. 하람은 전봇대 아저씨가 왜 요즘 웃지 않느냐고 묻는다. 미경은 재인을 반찬가게 안쪽 방으로 데려가 '도망 안 가고 찾아온 사람이믄 한 번은 봐줘야 된다'고 말한다. 재인은 미경이 차려 준 밥을 반도 먹지 못한다.",
+    "beats": [
+      "도현이 결공방을 일부러 골랐다고 털어놓는다",
+      "재인이 동정이냐 속죄냐고 묻는다",
+      "재인이 사적인 대화를 끊겠다고 선언한다",
+      "하람이 도현을 걱정한다",
+      "미경이 사투리 섞인 말로 재인에게 조언한다"
+    ],
+    "facts_revealed": [
+      "f088",
+      "f089"
+    ],
+    "hints_allowed": [
+      "허용: 재인의 분노와 혼란",
+      "금지: 도현이 털어놓은 것 밖의 도현의 과거를 서술하는 문장"
+    ],
+    "relationship_changes": [
+      {
+        "relationship": "r01",
+        "a": "jaein",
+        "b": "dohyun",
+        "status": "재인이 사적인 대화를 끊은 냉각 상태",
+        "public": false
+      }
+    ],
+    "knowledge_events": [
+      {
+        "character": "narae",
+        "fact_id": "f064",
+        "note": "23화 공방에서 도현이 재인에게 털어놓을 때 같은 자리에 있었다"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f064"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f088"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f088"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f088"
+      },
+      {
+        "character": "mikyung",
+        "fact_id": "f089"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f089"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f094",
+        "offstage": true,
+        "note": "23화 밤 편지를 써 공방 우편함에 넣음(본문 미서술)"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f095",
+        "offstage": true,
+        "note": "23화 밤 편지를 쓴 당사자(본문 미서술)"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f044",
+        "note": "23화 재인의 \"연날리기도요\"와 하람의 \"연 날릴 땐 막 웃었잖아\"로 앎(23:89·143)"
+      }
+    ],
+    "pov_must_hide": [
+      "f107",
+      "f182"
+    ],
+    "interlude_pov_must_hide": null,
+    "ending_hook": "다음 날 아침 공방 우편함에 두툼한 봉투가 꽂혀 있다.",
+    "end_state": "재인은 도현과 거리를 두었다."
+  },
+  {
+    "ep": 24,
+    "title": "목공실의 겨울",
+    "pov": "jaein",
+    "interlude_pov": null,
+    "interlude_scope": null,
+    "location": "결공방",
+    "characters_present": [
+      "jaein",
+      "narae",
+      "haram"
+    ],
+    "summary": "공방 우편함에 도현의 손편지가 들어 있다. 재인은 나래를 작업대에 두고 작업실 안쪽에서 혼자 편지를 읽는다. 편지에는 열일곱 살 겨울 집을 나와 청운장 별관 목공실에 숨어 지냈다는 이야기가 적혀 있다. 고명수는 그를 쫓아내지 않고 대패질을 가르치며 '꼬마 목수'라고 불렀다. 자개 장식장 안의 'ㄷㅎ'은 그때 도현이 몰래 새긴 글자였다. 편지는 화재 날 밤 이야기 앞에서 '변명이 아니라 기록입니다'라는 말로 끝난다. 재인은 아버지가 마지막 겨울에 누군가에게 웃어 주었다는 것을 알고 작업대에 엎드려 운다.",
+    "beats": [
+      "재인이 우편함에서 손편지를 꺼낸다",
+      "편지 속 가출한 열일곱 살의 겨울",
+      "고명수가 도현에게 대패질을 가르친 이야기",
+      "'꼬마 목수'라는 호칭",
+      "'ㄷㅎ'의 정체가 밝혀진다",
+      "편지가 화재 날 밤 앞에서 멈춘다",
+      "재인이 작업대에 엎드려 운다"
+    ],
+    "facts_revealed": [
+      "f090",
+      "f091",
+      "f092",
+      "f093",
+      "f094",
+      "f095"
+    ],
+    "hints_allowed": [
+      "허용: 편지 속 고명수의 다정한 모습",
+      "금지: 편지에 적힌 것 밖의 도현의 과거를 서술하는 문장"
+    ],
+    "relationship_changes": [],
+    "knowledge_events": [
+      {
+        "character": "jaein",
+        "fact_id": "f090"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f091"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f092"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f093"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f094"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f094",
+        "note": "24화 재인 손에 들린 봉투의 글씨로 도현의 편지임을 알아봄. 내용은 모른다"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f095"
+      }
+    ],
+    "pov_must_hide": [
+      "f107",
+      "f182"
+    ],
+    "interlude_pov_must_hide": null,
+    "ending_hook": "하교한 하람이 편지 봉투에 그려진 작은 대패 그림을 손가락으로 따라 그린다.",
+    "end_state": "재인은 아버지의 마지막 겨울을 알게 되었다."
+  },
+  {
+    "ep": 25,
+    "title": "거절의 말",
+    "pov": "jaein",
+    "interlude_pov": null,
+    "interlude_scope": null,
+    "location": "망원 한강공원·떡볶이 포장마차",
+    "characters_present": [
+      "jaein",
+      "woojin"
+    ],
+    "summary": "재인은 우진에게 도현이 그날 밤 청운장 본관에 있던 소년 목격자였다고 털어놓는다. 우진은 오래 침묵하다가 '나 너 오래 좋아했다'고 고백한다. 재인은 우진을 가족 같은 사람으로만 생각해 왔다며 미안하다고 거절한다. 우진은 알고 있었지만 한 번은 말하고 싶었다며 웃는다. 둘은 예전처럼 떡볶이를 나눠 먹지만 어색함이 남는다. 헤어지며 우진은 '그 사람 미워하지 마, 네가 힘들어'라고 말한다.",
+    "beats": [
+      "재인이 도현의 고백을 우진에게 전한다",
+      "우진이 침묵 끝에 고백한다",
+      "재인이 거절한다",
+      "우진이 웃으며 받아들인다",
+      "떡볶이를 나눠 먹으며 어색함이 남는다"
+    ],
+    "facts_revealed": [
+      "f096",
+      "f097"
+    ],
+    "hints_allowed": [
+      "허용: 우진의 고백과 씁쓸함",
+      "금지: 고백 밖의 우진의 내면 서술"
+    ],
+    "relationship_changes": [
+      {
+        "relationship": "r02",
+        "a": "jaein",
+        "b": "woojin",
+        "status": "고백과 거절 뒤 어색한 친구",
+        "public": false
+      }
+    ],
+    "knowledge_events": [
+      {
+        "character": "jaein",
+        "fact_id": "f053"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f086"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f096"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f096"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f097"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f097"
+      }
+    ],
+    "pov_must_hide": [
+      "f107",
+      "f182"
+    ],
+    "interlude_pov_must_hide": null,
+    "ending_hook": "혼자 남은 우진이 떡볶이 국물이 식을 때까지 포장마차 의자에 앉아 있다.",
+    "end_state": "우진과 재인은 어색한 친구가 되었다."
+  },
+  {
+    "ep": 26,
+    "title": "퇴직 조사관",
+    "pov": "jaein",
+    "interlude_pov": null,
+    "interlude_scope": null,
+    "location": "양평 퇴직 조사관의 집·돌아오는 차 안",
+    "characters_present": [
+      "jaein",
+      "dohyun",
+      "woojin"
+    ],
+    "summary": "우진의 선배 소방관이 퇴직자 경조사 명부를 뒤져, 17년 전 청운장 화재를 맡았던 조사관이 퇴직해 양평에 산다며 주소만 적어 준다. 선배는 남의 이름을 함부로 옮길 수 없다며 이름은 끝내 알려 주지 않고, 조사반 기록도 폐기되어 조사관의 이름은 확인하지 못한다. 재인은 사적인 대화는 끊었지만 조사는 계속해야 해 도현, 우진과 함께 양평에 간다. 문틈으로 내다본 노인은 도현의 얼굴에 눈이 멎더니 겁에 질린 얼굴로 '기억 안 납니다'라는 말만 되풀이하다 문을 닫는다. 대문 앞에서 우진은 휴대전화의 배선함 사진을 다시 보며 그을음이 난로 화재의 모양이 아니라고 판단하고, 근무 교대 때문에 먼저 버스로 돌아간다. 돌아오는 차 안에서 둘만 남은 재인과 도현은 처음으로 편지에 적힌 그 겨울에 대해 차분히 이야기한다. 재인은 창밖을 보며 '아빠 잘못이 아닐 수도 있다'고 처음 소리 내어 말한다.",
+    "beats": [
+      "우진의 선배가 퇴직자 경조사 명부에서 양평 퇴직 조사관의 주소만 찾아 주고 이름은 알려 주지 않는다",
+      "문패 없는 양평의 낡은 단독주택을 찾아간다",
+      "노인이 도현을 알아보고 겁에 질린다",
+      "퇴직 조사관이 '기억 안 납니다'만 되풀이하고 문을 닫는다",
+      "우진이 난로 화재 모양이 아니다라고 판단하고 먼저 떠난다",
+      "차 안에서 재인과 도현이 그 겨울을 이야기한다"
+    ],
+    "facts_revealed": [
+      "f098",
+      "f099",
+      "f100"
+    ],
+    "hints_allowed": [
+      "허용: 조사관이 도현을 알아보고 겁에 질리는 모습",
+      "금지: 조사관의 거절과 두려움을 해석하는 서술",
+      "금지: 조사관에 대해 주소 밖의 신상을 서술하는 문장"
+    ],
+    "relationship_changes": [],
+    "knowledge_events": [
+      {
+        "character": "woojin",
+        "fact_id": "f098"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f098"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f098"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f099"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f099"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f099"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f100"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f100"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f100"
+      }
+    ],
+    "pov_must_hide": [
+      "f107",
+      "f182"
+    ],
+    "interlude_pov_must_hide": null,
+    "ending_hook": "백미러 속 조사관의 집 창문에서 커튼이 다시 젖혀진다.",
+    "end_state": "조사는 막혔지만 재인과 도현은 다시 말을 나누기 시작했다."
+  },
+  {
+    "ep": 27,
+    "title": "외할아버지",
+    "pov": "jaein",
+    "interlude_pov": null,
+    "interlude_scope": null,
+    "location": "서촌 태석의 한옥",
+    "characters_present": [
+      "jaein",
+      "taeseok",
+      "haram",
+      "dohyun"
+    ],
+    "summary": "하람을 데리러 서촌에 간 재인은 태석의 방에서 어린 도현과 젊은 여인이 함께 찍힌 액자를 본다. 태석은 더 숨기지 않고 도현이 자신의 외손자이며 사진 속 여인이 딸 윤선영이라고 말한다. 화재 뒤 태석과 차기철은 서로 연을 끊었고, 그 뒤로 손자도 볼 수 없었다고 한다. 그때 도현이 대문을 열고 들어와 17년 만에 '할아버지'라고 부른다. 하람은 '그럼 전봇대 아저씨가 할아버지 손자야?'라고 묻는다. 재인은 자기 곁의 두 사람이 모두 청운장과 이어져 있었다는 데 숨이 막힌다.",
+    "beats": [
+      "재인이 태석의 방에서 액자를 본다",
+      "태석이 도현이 외손자라고 밝힌다",
+      "화재 뒤 태석과 차기철이 연을 끊은 사연",
+      "도현이 들어와 '할아버지'라고 부른다",
+      "하람이 천진하게 묻는다",
+      "재인이 한옥을 나서며 숨을 고른다"
+    ],
+    "facts_revealed": [
+      "f101",
+      "f102",
+      "f103"
+    ],
+    "hints_allowed": [
+      "허용: 재인의 배신감",
+      "금지: 태석이 이번 화에 밝힌 것 밖의 태석의 사정을 서술하는 문장"
+    ],
+    "relationship_changes": [
+      {
+        "relationship": "r10",
+        "a": "dohyun",
+        "b": "taeseok",
+        "status": "17년간 연락이 끊긴 외조부와 외손자",
+        "public": false
+      },
+      {
+        "relationship": "r11",
+        "a": "jaein",
+        "b": "taeseok",
+        "status": "재인이 배신감을 느끼는 서먹한 사이",
+        "public": false
+      }
+    ],
+    "knowledge_events": [
+      {
+        "character": "jaein",
+        "fact_id": "f101"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f101"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f102"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f102"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f103"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f103"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f054",
+        "note": "27화 태석의 \"차기철이하고 나는 연을 끊었다… 그 아비가 있는 집 아이니까\"를 같은 방에서 들음(27:103-107). 지시어로만 전해졌고 49화 도현의 \"제 아버지, 차기철 회장\"으로 분명해짐(49:137)"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f103",
+        "note": "27화 태석의 방 앞에서 재인의 손에 들린 액자를 처음 봄(27:129). 17년 동안 왕래가 없었음(27:111)"
+      }
+    ],
+    "pov_must_hide": [
+      "f107",
+      "f182"
+    ],
+    "interlude_pov_must_hide": null,
+    "ending_hook": "태석이 재인의 등에 대고 '내일 공방에 가도 되겠니'라고 묻는다.",
+    "end_state": "재인은 태석과 도현이 외조부와 외손자라는 것을 알았다."
+  },
+  {
+    "ep": 28,
+    "title": "지켜본 3년",
+    "pov": "jaein",
+    "interlude_pov": null,
+    "interlude_scope": null,
+    "location": "결공방·미경반찬",
+    "characters_present": [
+      "jaein",
+      "taeseok",
+      "mikyung",
+      "haram",
+      "woojin"
+    ],
+    "summary": "점심때 태석이 공방 문 앞에서 한참 서 있다가 들어오고, 반찬 통을 들고 온 미경이 밥상을 내려놓고 나가려 하자 재인이 미경의 손목을 붙잡아 곁에 앉힌다. 미경이 앉은 뒤에야 태석은 입을 열어, 3년 전 청운장 담장 밖에서 국화를 두던 아가씨를 우연히 보았고 그게 재인이었다고 고백한다. 그날 밤 전기를 내리겠다며 별관으로 뛰어드는 고명수를 본관 앞에서 보고도 붙잡지 못했다고도 한다. 그 뒤로 고명수의 딸을 지켜보려고 공방을 찾아왔고, 속죄할 방법을 몰라 그저 곁에 있었다는 것이다. 재인은 아직 답하지 못하고, 처음부터 함께 들은 미경은 말없이 식어 가는 국그릇을 태석 쪽으로 밀어 준다. 태석이 돌아간 저녁, 하람은 미경반찬에서 엄마 엽서를 정리하다 '엄마 엽서엔 왜 다 우리나라 우표야?'라고 묻는다. 재인은 언니가 말해 둔 대로 공장 직원이 한국에 들어올 때 모아서 부쳐 주는 거라고 답한다. 옆에서 엽서를 보던 우진이 서둘러 화제를 돌리고, 재인은 우진이 아직 고백 일로 어색해서 그런다고 여긴다.",
+    "beats": [
+      "태석이 공방 문 앞에서 한참 서 있다가 들어온다",
+      "미경이 밥상을 내려놓고, 재인이 나가려는 미경을 곁에 앉힌 뒤 태석이 고백을 시작한다",
+      "태석이 국화를 두던 재인을 보았다고 고백한다",
+      "태석이 그날 밤 고명수를 붙잡지 못했다고 말한다",
+      "하람이 엽서 우표를 묻고 재인이 언니의 설명을 옮긴다",
+      "우진이 화제를 돌리고 재인은 고백 탓이라 여긴다"
+    ],
+    "facts_revealed": [
+      "f104",
+      "f105",
+      "f106",
+      "f107"
+    ],
+    "hints_allowed": [
+      "허용: 재인이 본 우진의 어색한 반응",
+      "금지: 엽서와 은재에 대해 하람의 질문과 재인의 답 이상을 짐작하게 하는 서술"
+    ],
+    "relationship_changes": [],
+    "knowledge_events": [
+      {
+        "character": "mikyung",
+        "fact_id": "f026",
+        "note": "28화 미경반찬에서 재인이 하람에게 은재의 설명을 옮길 때 같은 자리에 있었다"
+      },
+      {
+        "character": "mikyung",
+        "fact_id": "f085",
+        "note": "28화 태석의 고백으로 들음"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f104"
+      },
+      {
+        "character": "mikyung",
+        "fact_id": "f104",
+        "note": "28화 미경이 점심 반찬을 내려놓은 뒤 태석이 고백을 시작해 처음부터 같은 자리에서 들음"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f105"
+      },
+      {
+        "character": "mikyung",
+        "fact_id": "f105",
+        "note": "28화 태석의 고백을 처음부터 같은 자리에서 들음"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f106"
+      },
+      {
+        "character": "mikyung",
+        "fact_id": "f106",
+        "note": "28화 태석의 고백을 처음부터 같은 자리에서 들음"
+      },
+      {
+        "character": "mikyung",
+        "fact_id": "f107"
+      },
+      {
+        "character": "mikyung",
+        "fact_id": "f072",
+        "note": "28화 공방에서 태석의 \"옛집 담장을 돌았지. 그 언덕 위 호텔 말이다\"를 곁에서 들음(28:73). \"주인\"이라는 말은 없어 호텔이 태석의 옛집이었다는 데까지 앎"
+      }
+    ],
+    "pov_must_hide": [
+      "f182"
+    ],
+    "interlude_pov_must_hide": null,
+    "ending_hook": "하람이 엽서 묶음을 다시 고무줄로 묶으며 '다음 엽서는 언제 와?'라고 묻는다.",
+    "end_state": "재인은 태석의 3년을 알게 되었다."
+  },
+  {
+    "ep": 29,
+    "title": "첫 키스",
+    "pov": "jaein",
+    "interlude_pov": null,
+    "interlude_scope": null,
+    "location": "청운장 로비(밤)",
+    "characters_present": [
+      "jaein",
+      "dohyun"
+    ],
+    "summary": "로비 자개 장식장의 마지막 칠이 마른 밤, 재인은 장식장 안의 아버지 각인과 'ㄷㅎ'을 지우지 않고 그대로 남기기로 한다. 도현은 장식장에 고명수의 이름 석 자를 새긴 명판을 달자고 제안한다. 재인은 그를 용서한 게 아니라 아버지가 웃어 준 사람을 미워하지 않기로 했을 뿐이라고 말한다. 둘은 장식장 앞에서 처음으로 키스한다. 재인은 일이 끝날 때까지는 사귀는 것을 비밀로 하자고 한다. 도현은 '확인해 보죠'라는 입버릇 대신 '그렇게 하죠'라고 답한다.",
+    "beats": [
+      "마지막 칠을 끝낸 장식장 앞에 둘이 선다",
+      "재인이 'ㄷㅎ'을 남기기로 한다",
+      "도현이 명판을 제안한다",
+      "재인이 미워하지 않기로 했다고 말한다",
+      "첫 키스",
+      "비밀 연애를 약속한다"
+    ],
+    "facts_revealed": [
+      "f108",
+      "f109",
+      "f110",
+      "f111"
+    ],
+    "hints_allowed": [
+      "허용: 키스까지의 설렘",
+      "허용: 로비 천장의 CCTV",
+      "금지: 노골적인 신체 묘사"
+    ],
+    "relationship_changes": [
+      {
+        "relationship": "r01",
+        "a": "jaein",
+        "b": "dohyun",
+        "status": "비밀 연인",
+        "public": false
+      }
+    ],
+    "knowledge_events": [
+      {
+        "character": "jaein",
+        "fact_id": "f108"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f108"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f109"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f109"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f110"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f110"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f111"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f111"
+      }
+    ],
+    "pov_must_hide": [
+      "f182"
+    ],
+    "interlude_pov_must_hide": null,
+    "ending_hook": "로비 천장 구석에서 CCTV의 붉은 불빛이 깜빡인다.",
+    "end_state": "재인과 도현은 비밀 연인이 되었다."
+  },
+  {
+    "ep": 30,
+    "title": "나래의 고백",
+    "pov": "narae",
+    "interlude_pov": null,
+    "interlude_scope": null,
+    "location": "청운장 주차장·로비·결공방",
+    "characters_present": [
+      "narae",
+      "jaein",
+      "jihoon",
+      "dohyun",
+      "gicheol",
+      "taeseok"
+    ],
+    "summary": "아침에 지훈은 '로비 CCTV가 회장실까지 올라갔다'는 말을 먼저 전해 듣고, 청운장 주차장에서 도현에게 재인과 사귀느냐고 조용히 확인한다. 도현은 부인하지 않고, 일이 끝날 때까지는 비밀로 하기로 했다고만 답한다. 공방 승합차에서 니스 통을 꺼내던 나래는 차 뒤에서 그 대화를 듣고 두 사람이 사귄다는 것을 알게 되고, 같은 주차장에서 엿들었던 지훈의 통화를 다시 떠올린다. 오후에는 차기철 회장이 예고 없이 로비에 들러, 직원들이 듣는 앞에서 도현에게 '사생활을 정리하십시오'라고 말하고 떠난다. 나래는 더 참지 못하고 재인에게 지훈의 통화 이야기를 털어놓는다. 재인은 도현에게 알릴지 고민한다. 저녁에 공방에서는 현장에 오지 않았던 태석과 재인이 오랜만에 마주 앉아 차를 마시며 조금씩 예전처럼 이야기를 나눈다.",
+    "beats": [
+      "지훈이 주차장에서 도현에게 재인과의 일을 조용히 확인한다",
+      "도현이 부인하지 않고 일이 끝날 때까지 비밀로 하기로 했다고 답한다",
+      "니스 통을 꺼내던 나래가 차 뒤에서 그 대화를 엿듣는다",
+      "차기철이 로비에 들러 도현에게 경고하고 떠난다",
+      "나래가 재인에게 털어놓은 통화",
+      "태석과 재인이 공방에서 차를 마신다"
+    ],
+    "facts_revealed": [
+      "f112",
+      "f113",
+      "f114"
+    ],
+    "hints_allowed": [
+      "허용: 나래의 죄책감과 망설임",
+      "허용: 회장의 짧은 경고",
+      "금지: 통화 상대를 특정하는 서술"
+    ],
+    "relationship_changes": [
+      {
+        "relationship": "r11",
+        "a": "jaein",
+        "b": "taeseok",
+        "status": "조금씩 회복되는 사이",
+        "public": true
+      }
+    ],
+    "knowledge_events": [
+      {
+        "character": "jaein",
+        "fact_id": "f081",
+        "note": "30화 나래에게서 전해 들음"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f082"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f101",
+        "offstage": true,
+        "note": "30화 밤 태석이 돌아간 뒤 공방 문을 닫으며 재인에게서 그간의 일을 들음(본문 미서술)"
+      },
+      {
+        "character": "mikyung",
+        "fact_id": "f101",
+        "offstage": true,
+        "note": "30화 밤 공방 문을 닫은 뒤 미경반찬에서 재인에게서 들음(본문 미서술)"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f109",
+        "note": "30화 아침 로비 CCTV가 회장실에 보고되었다는 말을 듣고 청운장 주차장에서 도현에게 확인함"
+      },
+      {
+        "character": "gicheol",
+        "fact_id": "f109",
+        "offstage": true,
+        "note": "30화 아침 청운장 로비 CCTV를 확인한 회장 비서실의 보고로 앎(본문 미서술)"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f109",
+        "note": "30화 아침 주차장에서 지훈과 도현의 대화를 엿듣고 앎"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f110",
+        "note": "30화 아침 청운장 주차장에서 확인을 청하자 도현이 그렇게 답함"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f110",
+        "note": "30화 아침 주차장에서 도현이 지훈에게 하는 말을 엿들음"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f112"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f112"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f112",
+        "note": "공방 트럭 뒤에서 두 사람의 대화를 엿들음"
+      },
+      {
+        "character": "gicheol",
+        "fact_id": "f113"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f113"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f113"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f113"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f113"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f114"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f114"
+      },
+      {
+        "character": "gicheol",
+        "fact_id": "f108",
+        "note": "30화 아침 청운장 로비 CCTV를 확인한 회장 비서실의 보고로 앎(본문 미서술, 30:21)"
+      }
+    ],
+    "pov_must_hide": [],
+    "interlude_pov_must_hide": null,
+    "ending_hook": "재인이 휴대전화에 '상무님'을 띄워 놓고 통화 버튼을 누르지 못한다.",
+    "end_state": "재인은 지훈의 통화를 알게 되었다."
+  },
+  {
+    "ep": 31,
+    "title": "옥상의 친구",
+    "pov": "dohyun",
+    "interlude_pov": null,
+    "interlude_scope": null,
+    "location": "을지로 본사 옥상",
+    "characters_present": [
+      "dohyun",
+      "jaein",
+      "jihoon"
+    ],
+    "summary": "재인에게서 나래가 엿들은 통화 이야기를 전해 들은 도현은 지훈을 본사 옥상으로 부른다. 도현은 나래가 들은 말을 그대로 옮기며 누구에게 입단속을 시켰느냐고 묻는다. 지훈은 부정하지 않고, 단둘인 자리에서 처음으로 존댓말을 써 선을 그으며 '양평의 퇴직 조사관은 제 아버지입니다'라고 인정한 뒤 아버지에게 '아무 말씀 마세요'라며 아무 증언도 하지 말라고 당부해 왔다고 털어놓는다. 도현은 '십오 년 동안 그 말을 한 번도 안 했냐'고 묻지만 지훈은 더 말하지 않는다. 지훈은 사직서 봉투를 내민 채 그만두겠다고 하고, 도현은 봉투를 받지 않은 채 돌아선다. 옥상 문 앞에서 기다리던 재인은 도현의 얼굴만 보고 아무것도 묻지 않는다.",
+    "beats": [
+      "재인이 도현에게 나래의 이야기를 전한다",
+      "도현이 지훈을 옥상으로 부른다",
+      "지훈이 처음으로 사석에서 존댓말로 선을 그으며 '제 아버지입니다'라고 인정한다",
+      "도현이 15년 우정을 묻는다",
+      "지훈이 사직서 봉투를 내민다",
+      "재인이 옥상 문 앞에서 도현을 맞는다"
+    ],
+    "facts_revealed": [
+      "f115",
+      "f116",
+      "f117"
+    ],
+    "hints_allowed": [
+      "허용: 도현의 배신감과 지훈의 침묵",
+      "금지: 지훈이 이번 화에 인정한 것 밖의 지훈의 사정을 서술하는 문장",
+      "금지: pov_must_hide 사실을 떠올리는 내면 서술"
+    ],
+    "relationship_changes": [
+      {
+        "relationship": "r03",
+        "a": "dohyun",
+        "b": "jihoon",
+        "status": "아버지 일을 숨기고 조사를 늦춘 것이 드러난 뒤 단절",
+        "public": false
+      }
+    ],
+    "knowledge_events": [
+      {
+        "character": "dohyun",
+        "fact_id": "f081",
+        "note": "31화 재인에게서 전해 듣고 지훈에게 확인"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f082"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f082",
+        "note": "31화 도현이 추궁하며 알려 줌"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f115"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f115",
+        "offstage": true,
+        "note": "31화 그날 밤 도현에게서 들음(본문 미서술)"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f116"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f116",
+        "offstage": true,
+        "note": "31화 그날 밤 도현에게서 들음(본문 미서술)"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f117"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f117"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f114",
+        "note": "31화 비상계단에서 재인의 \"나래가 어제 말해 줬어요\"를 들음(31:37-41)"
+      }
+    ],
+    "pov_must_hide": [
+      "f129",
+      "f134",
+      "f135",
+      "f136",
+      "f144",
+      "f145",
+      "f177"
+    ],
+    "interlude_pov_must_hide": null,
+    "ending_hook": "옥상에 혼자 남은 지훈의 휴대전화 화면에 '아버지'라는 이름이 떠 있는 것이 닫히는 문틈으로 보인다.",
+    "end_state": "도현과 지훈의 관계가 끊어졌다."
+  },
+  {
+    "ep": 32,
+    "title": "아버지의 아들",
+    "pov": "jaein",
+    "interlude_pov": null,
+    "interlude_scope": null,
+    "location": "을지로 본사 앞 카페·결공방",
+    "characters_present": [
+      "jaein",
+      "jihoon",
+      "seungjae",
+      "dohyun"
+    ],
+    "summary": "다음 날 재인은 지훈을 본사 앞 카페로 불러 이유를 묻는다. 지훈은 아버지가 청운장 화재 이듬해 조사관 일을 그만두고 무너졌고, 자신이 혼자 아버지를 돌보며 살아왔다고 털어놓는다. 그래서 그 사건이 다시 들춰져 아버지가 또 무너지는 것이 두려웠다고 한다. 카페에 들어선 승재는 '이제야 들켰냐'며 그 조사관이 지훈의 아버지라는 것을 처음부터 알았다고 비웃는다. 지훈은 승재까지 알고 있었다는 데 얼굴이 굳는다. 재인은 공방으로 돌아와 지훈에게 들은 것을 도현에게 모두 전한다. 도현은 '알았으면 됐다'고만 말하지만 밤늦도록 공방 의자에 앉아 일어나지 못한다.",
+    "beats": [
+      "재인이 카페에서 지훈을 만난다",
+      "지훈이 아버지가 무너진 뒤의 세월을 털어놓는다",
+      "승재가 나타나 비웃는다",
+      "지훈이 승재가 알고 있었다는 데 굳는다",
+      "재인이 지훈에게 들은 것을 도현에게 전한다"
+    ],
+    "facts_revealed": [
+      "f118",
+      "f119",
+      "f120"
+    ],
+    "hints_allowed": [
+      "허용: 승재의 냉소",
+      "금지: 승재의 말 밖의 승재의 사정을 서술하는 문장"
+    ],
+    "relationship_changes": [],
+    "knowledge_events": [
+      {
+        "character": "narae",
+        "fact_id": "f115",
+        "offstage": true,
+        "note": "32화 재인에게서 들음"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f116",
+        "offstage": true,
+        "note": "32화 재인에게서 들음"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f118"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f118"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f119"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f119"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f120"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f120"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f120"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f098",
+        "offstage": true,
+        "note": "32화 재인에게서 f115와 함께 들음(본문 미서술). 40:143 나래 시점 \"양평의 퇴직 조사관이 이 사람 아버지였다는 것도\"로 확인"
+      }
+    ],
+    "pov_must_hide": [
+      "f182"
+    ],
+    "interlude_pov_must_hide": null,
+    "ending_hook": "도현이 지훈이 책상에 두고 간 사직서를 서랍 깊숙이 넣는다.",
+    "end_state": "도현은 지훈이 아버지를 감싼 이유를 알았다."
+  },
+  {
+    "ep": 33,
+    "title": "들킨 비밀",
+    "pov": "jaein",
+    "interlude_pov": null,
+    "interlude_scope": null,
+    "location": "결공방·미경반찬",
+    "characters_present": [
+      "jaein",
+      "haram",
+      "mikyung",
+      "narae",
+      "dohyun",
+      "seungjae"
+    ],
+    "summary": "저녁 식탁에서 하람이 '이모랑 도현 삼촌 사귀지?'라고 묻는다. 하람은 공방 뒤에서 둘이 손잡는 것을 이미 봤다고 말한다. 나래는 진작 알았다며 웃음을 터뜨리고, 미경은 '그럴 줄 알았다'며 맞장구를 친다. 하람은 그날부터 도현을 '도현 삼촌'이라고 부른다. 밤늦게 식구들이 돌아가고 하람이 담요를 덮고 잠든 뒤, 아직 작업대 앞에 있던 재인에게 승재가 찾아온다. 재인이 깨어 있는 작업대 앞에서, 승재의 시선은 하람이 차고 잠든 바둑돌 주머니와 벽에 걸린 고명수의 낡은 대패에 오래 머문다. 승재는 재인에게 명함을 건네고 '언젠가 내가 가진 패가 필요할 거다'라는 말만 남긴 채 돌아간다.",
+    "beats": [
+      "하람이 저녁 식탁에서 폭탄 질문을 던진다",
+      "하람이 손잡는 걸 봤다고 말한다",
+      "나래는 진작 알았다며 웃고 미경이 맞장구친다",
+      "하람이 '도현 삼촌'이라고 부른다",
+      "재인이 깨어 있는 작업대 앞에서, 승재의 시선은 하람이 차고 잠든 바둑돌 주머니와 벽의 고명수 대패에 머문다",
+      "승재가 재인에게 명함을 건네고 돌아간다"
+    ],
+    "facts_revealed": [
+      "f121",
+      "f122",
+      "f123"
+    ],
+    "hints_allowed": [
+      "허용: 승재의 의미심장한 말",
+      "허용: 바둑돌 주머니와 고명수의 대패에 머무는 승재의 시선",
+      "금지: 승재의 '패'를 설명하는 서술",
+      "금지: 잠든 아이의 외모·신체를 묘사하는 서술",
+      "금지: 승재와 하람이 단둘이 있는 장면"
+    ],
+    "relationship_changes": [
+      {
+        "relationship": "r12",
+        "a": "dohyun",
+        "b": "haram",
+        "status": "하람이 '도현 삼촌'이라 부르며 따르는 사이",
+        "public": true
+      }
+    ],
+    "knowledge_events": [
+      {
+        "character": "mikyung",
+        "fact_id": "f109",
+        "note": "33화 하람의 말을 듣고 '그럴 줄 알았다'며 확인함"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f121"
+      },
+      {
+        "character": "mikyung",
+        "fact_id": "f121"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f121"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f121"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f122"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f122"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f122"
+      },
+      {
+        "character": "mikyung",
+        "fact_id": "f122"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f122"
+      },
+      {
+        "character": "seungjae",
+        "fact_id": "f123"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f123"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f124",
+        "offstage": true,
+        "note": "33화 밤 양평에 찾아가 부탁함(본문 미서술)"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f125",
+        "offstage": true,
+        "note": "33화 밤 양평에 찾아가 증언을 부탁하던 자리에서 아버지에게서 들음(본문 미서술)"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f126",
+        "offstage": true,
+        "note": "33화 밤 양평에 찾아가 증언을 부탁하던 자리에서 아버지에게서 들음(본문 미서술)"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f127",
+        "offstage": true,
+        "note": "33화 밤 양평에 찾아가 증언을 부탁하던 자리에서 아버지에게서 들음(본문 미서술)"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f128",
+        "offstage": true,
+        "note": "33화 밤 양평에 찾아가 증언을 부탁하던 자리에서 아버지에게서 들음(본문 미서술)"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f129",
+        "offstage": true,
+        "note": "33화 밤 양평에 찾아가 증언을 부탁하던 자리에서 아버지에게서 들음(본문 미서술)"
+      },
+      {
+        "character": "mikyung",
+        "fact_id": "f010",
+        "offstage": true,
+        "note": "33화 도현을 \"차 상무\"라 부름(33:13·101). 알게 된 경위는 본문 밖"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f110",
+        "note": "33화 미경반찬 밥상에서 도현의 \"이건 이 방 밖에서는 비밀이야. 일이 다 끝날 때까지만.\"을 듣고 약속함(33:143-145)"
+      },
+      {
+        "character": "mikyung",
+        "fact_id": "f110",
+        "note": "33화 같은 밥상에서 도현의 \"일이 다 끝날 때까지만\" 비밀이라는 말을 들음(33:19·143)"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f109",
+        "offstage": true,
+        "note": "33화 \"저번에 공방 뒤에서 이모랑 손잡는 거 봤어\"로 드러남(33:59). 본 때는 30화 이후 본문 밖"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f121",
+        "offstage": true,
+        "note": "33화 \"저번에 공방 뒤에서 이모랑 손잡는 거 봤어\"로 드러남(33:59). 본 때는 30화 이후 본문 밖"
+      }
+    ],
+    "pov_must_hide": [
+      "f182"
+    ],
+    "interlude_pov_must_hide": null,
+    "ending_hook": "재인이 승재의 명함 뒷면에 적힌 개인 번호를 본다.",
+    "end_state": "공방 식구들이 재인과 도현의 연애를 알게 되었다."
+  },
+  {
+    "ep": 34,
+    "title": "누전",
+    "pov": "jaein",
+    "interlude_pov": null,
+    "interlude_scope": null,
+    "location": "양평 퇴직 조사관의 집",
+    "characters_present": [
+      "jaein",
+      "dohyun",
+      "woojin"
+    ],
+    "summary": "퇴직 조사관 서정만이 먼저 우진에게 연락해 온다. 그는 아들 지훈이 찾아와 이제 사실대로 말해 달라고 했다며, 처음엔 아들이 입을 닫으라 했던 일까지 털어놓는다. 조사관은 실제 원인이 배선 노후로 인한 누전이었고 보고서 초안 결론도 그렇게 적혔으며, 화재 2주 전 새 주인인 한결그룹이 배선 교체 공사를 미뤘다고 증언한다. 그날 밤 별관 목공실 난로가 꺼져 있었다는 현장 진술도 있었다고 하지만, 누가 한 진술인지는 말하지 않는다. 최종 결론은 위에서 '난로 부주의'로 바뀌어 내려왔고, 자신은 반장에게서 고친 결론을 받아 서명했을 뿐 그 위가 누구인지는 모른다고 한다. 재인은 아버지의 잘못이 아니었다는 말에 마당에 주저앉는다. 도현은 재인 곁에 무릎을 꿇고 앉아 아무 말 없이 등을 쓸어 준다.",
+    "beats": [
+      "퇴직 조사관의 전화가 온다",
+      "조사관이 아들의 부탁으로 입을 연다고 말한다",
+      "조사관이 초안 결론이 누전이었다고 증언한다",
+      "배선 교체 공사가 미뤄졌다는 증언",
+      "난로가 꺼져 있었다는 현장 진술과 위에서 바뀐 결론",
+      "재인이 주저앉는다"
+    ],
+    "facts_revealed": [
+      "f124",
+      "f125",
+      "f126",
+      "f127",
+      "f128",
+      "f129"
+    ],
+    "hints_allowed": [
+      "허용: 회사 윗선에 대한 의심",
+      "금지: 결론을 바꾼 주체를 특정하는 서술",
+      "금지: 조사관이 말한 것 밖의 진술 내용을 서술하는 문장"
+    ],
+    "relationship_changes": [],
+    "knowledge_events": [
+      {
+        "character": "woojin",
+        "fact_id": "f115",
+        "note": "34화 조사관이 아들 이야기를 꺼내 앎"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f116",
+        "note": "34화 조사관이 아들이 처음엔 입을 닫으라 했다고 말함"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f124"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f124"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f124"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f125"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f125"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f125"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f126"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f126"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f126"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f127"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f127"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f127"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f128"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f128"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f128"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f129"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f129"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f017",
+        "note": "34화 양평에서 조사관의 \"차 상무님 비서실에요. 지훈이라고.\"를 들음(34:63). \"실장\" 직함은 듣지 않음"
+      }
+    ],
+    "pov_must_hide": [
+      "f182"
+    ],
+    "interlude_pov_must_hide": null,
+    "ending_hook": "도현이 휴대전화의 '아버지' 연락처를 열었다가 닫는다.",
+    "end_state": "재인은 화재의 실제 원인을 알았다."
+  },
+  {
+    "ep": 35,
+    "title": "쓰러진 할아버지",
+    "pov": "jaein",
+    "interlude_pov": null,
+    "interlude_scope": null,
+    "location": "서촌 태석의 한옥·종로 대학병원",
+    "characters_present": [
+      "jaein",
+      "dohyun",
+      "taeseok",
+      "haram"
+    ],
+    "summary": "재인과 도현은 조사관의 증언을 전하러 하람과 함께 서촌에 간다. 마루의 바둑판 옆에는 태석이 미리 꺼내 둔 누런 봉투가 놓여 있지만, 말을 꺼내기도 전에 태석이 마당에서 쓰러져 의식을 잃는다. 구급차로 종로의 대학병원에 옮겨진 태석은 뇌혈관이 막혀 응급 시술을 받는다. 의사는 고비는 넘겼지만 며칠은 의식이 돌아오지 않을 수 있다고 말한다. 수술실 앞에서 재인의 손을 놓지 않던 하람이 지쳐 잠든 뒤, 재인과 도현은 챙겨 온 봉투를 연다. 봉투에는 17년 전 매각 직후 태석이 한결그룹에 보낸, 별관 배선 교체를 당부한 편지의 사본이 들어 있다. 도현은 편지를 쥔 채 수술실 문 앞에서 처음으로 무너진다.",
+    "beats": [
+      "셋이 서촌 한옥에 도착하고 마루의 봉투가 눈에 띈다",
+      "태석이 마당에서 쓰러진다",
+      "구급차로 병원에 옮기고 응급 시술이 진행된다",
+      "의사의 설명을 듣는다",
+      "하람이 잠든 뒤 봉투에서 배선 교체 당부 편지 사본이 나온다",
+      "도현이 무너진다"
+    ],
+    "facts_revealed": [
+      "f130",
+      "f131",
+      "f132",
+      "f133"
+    ],
+    "hints_allowed": [
+      "허용: 가족의 긴장과 두려움",
+      "허용: 태석이 꺼내 둔 봉투와 편지 사본",
+      "금지: 편지 사본 밖의 태석의 사정을 서술하는 문장",
+      "금지: 도현의 과거에 대해 이미 밝혀진 것 이상을 서술하는 문장"
+    ],
+    "relationship_changes": [],
+    "knowledge_events": [
+      {
+        "character": "jaein",
+        "fact_id": "f130"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f130"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f130"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f131"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f131"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f131"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f132"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f132"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f132"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f133",
+        "note": "35화 밤 하람이 잠든 뒤 병원 복도에서 도현과 봉투를 열어 봄"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f133",
+        "note": "35화 밤 하람이 잠든 뒤 병원 복도에서 재인과 봉투를 열어 봄"
+      }
+    ],
+    "pov_must_hide": [
+      "f182"
+    ],
+    "interlude_pov_must_hide": null,
+    "ending_hook": "중환자실 유리창 너머 태석의 손가락이 미동도 없다.",
+    "end_state": "태석은 의식을 잃은 채 입원했고, 재인과 도현은 태석의 편지 사본을 손에 넣었다."
+  },
+  {
+    "ep": 36,
+    "title": "병실 복도의 고백",
+    "pov": "jaein",
+    "interlude_pov": null,
+    "interlude_scope": null,
+    "location": "종로 대학병원 병실 앞 복도",
+    "characters_present": [
+      "jaein",
+      "dohyun",
+      "taeseok"
+    ],
+    "summary": "태석이 깨어나지 않은 밤, 병실 앞 복도에서 도현은 한 번도 하지 않은 말을 꺼낸다. 그날 밤 목공실 난로를 끈 사람이 자신이었다는 것이다. 한파가 든 밤이라 고명수가 난로를 끄고 본관 객실에 가서 자라고 했고, 도현은 자기 손으로 불을 끄고 나왔다. 도현은 조사관이 말한 현장 진술도 자기 것이었다며 '화재 이튿날 제가 그렇게 진술했습니다. 그런데 그 진술은 어디에도 남지 않았습니다'라고 말하고, 그 뒤 17년 동안 입을 다물었다고만 덧붙인다. 재인은 아무 말도 못 하고 복도 끝까지 걸어갔다가, 돌아와 '열일곱 살이 짊어질 일이 아니었어요, 이제 같이 말해요'라고 말한다. 병실 안의 태석은 여전히 의식이 없어 복도의 대화를 듣지 못한다.",
+    "beats": [
+      "복도 의자에 나란히 앉은 두 사람",
+      "도현이 '제 손으로 끈 난로'였다고 고백한다",
+      "도현이 '제가 그렇게 진술했습니다'라며 그 진술이 어디에도 남지 않았다고 말하고 17년의 침묵을 털어놓는다",
+      "재인이 복도 끝까지 걸어간다",
+      "재인이 돌아와 도현에게 말한다",
+      "의식 없는 태석의 병실 모니터 소리"
+    ],
+    "facts_revealed": [
+      "f134",
+      "f135",
+      "f136",
+      "f137"
+    ],
+    "hints_allowed": [
+      "허용: 도현의 죄책감과 재인의 위로",
+      "금지: 태석이 복도의 대화를 듣거나 반응하는 묘사",
+      "금지: 진술과 현장 기록을 지운 주체를 특정하거나 암시하는 서술",
+      "금지: 결론을 바꾼 주체를 특정하는 서술"
+    ],
+    "relationship_changes": [],
+    "knowledge_events": [
+      {
+        "character": "jaein",
+        "fact_id": "f134"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f135"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f136"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f137",
+        "note": "병실 앞 복도. 병실 안의 태석은 의식이 없었다. 재인은 이때 진술을 지운 사람이 누구인지는 듣지 못했다"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f137"
+      }
+    ],
+    "pov_must_hide": [
+      "f182"
+    ],
+    "interlude_pov_must_hide": null,
+    "ending_hook": "새벽 다섯 시, 태석의 손가락이 아주 조금 움직인다.",
+    "end_state": "재인은 도현의 가장 깊은 죄책감을 알았다."
+  },
+  {
+    "ep": 37,
+    "title": "깨어난 아침",
+    "pov": "jaein",
+    "interlude_pov": null,
+    "interlude_scope": null,
+    "location": "종로 대학병원 병실·복도·로비",
+    "characters_present": [
+      "jaein",
+      "taeseok",
+      "dohyun",
+      "haram",
+      "woojin",
+      "jihoon"
+    ],
+    "summary": "사흘 만에 뜬 눈으로 태석이 병실 천장을 본다. 마침 병문안을 와 있던 우진까지 함께한 병실에서, 태석은 마당에서 쓰러진 뒤의 일을 기억하지 못해 재인과 도현에게서 쓰러진 경위와 막힌 혈관을 뚫은 시술 이야기를 듣는다. 태석은 도현이 손을 잡고 있는 것을 보고 말없이 눈물을 흘린다. 우진은 고백 이후 처음으로 재인과 예전처럼 장난을 친다. 병실을 나서는 복도에서 하람이 '엄마한테도 할아버지 아프다고 엽서 쓸까?'라고 말하고 엘리베이터 쪽으로 앞서 뛰어가자, 뒤따르던 우진의 얼굴이 잠깐 굳는다. 옆에서 걷던 재인만 엽서 이야기에 굳은 우진의 얼굴을 보고 밤샘 근무 탓이려니 넘긴다. 오후에는 지훈이 병원 로비로 찾아와 회장 비서실이 재개관 기념식 축사를 도현에게 맡겼다는 공문을 건네고, 고개만 숙인 채 돌아간다.",
+    "beats": [
+      "태석이 눈을 뜬다",
+      "우진이 함께한 병실에서 태석이 쓰러진 경위와 시술 이야기를 듣는다",
+      "태석이 도현의 손을 보고 운다",
+      "우진이 재인과 예전처럼 장난친다",
+      "복도에서 하람이 엽서 이야기를 하고 앞서 뛰어간 뒤, 엽서 이야기에 굳은 우진을 재인만 보고 피곤 탓으로 여긴다",
+      "지훈이 로비에서 축사 공문을 건넨다"
+    ],
+    "facts_revealed": [
+      "f138",
+      "f139",
+      "f140",
+      "f220"
+    ],
+    "hints_allowed": [
+      "허용: 재인이 본 우진의 굳은 얼굴과 복도에서 통화하는 뒷모습",
+      "금지: 엽서와 은재에 대해 하람의 말 밖의 서술",
+      "금지: 우진의 통화 내용을 서술하는 문장"
+    ],
+    "relationship_changes": [
+      {
+        "relationship": "r02",
+        "a": "jaein",
+        "b": "woojin",
+        "status": "다시 편해진 친구",
+        "public": true
+      }
+    ],
+    "knowledge_events": [
+      {
+        "character": "taeseok",
+        "fact_id": "f130",
+        "note": "의식을 잃어 37화 깨어난 뒤 들어서 안다"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f130",
+        "note": "37화 병실에서 쓰러진 경위와 시술 이야기를 함께 들음"
+      },
+      {
+        "character": "taeseok",
+        "fact_id": "f131",
+        "note": "의식이 없는 동안의 일이라 37화에 들어서 안다"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f131",
+        "note": "37화 병실에서 쓰러진 경위와 시술 이야기를 함께 들음"
+      },
+      {
+        "character": "taeseok",
+        "fact_id": "f132"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f132"
+      },
+      {
+        "character": "taeseok",
+        "fact_id": "f138"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f138"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f138"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f138"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f138"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f139"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f139",
+        "note": "곁에서 걷다가 혼자 굳은 얼굴을 보았으나 밤샘 근무 탓으로 여김. 하람은 앞서 뛰어가 보지 못했다"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f140"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f140"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f140"
+      },
+      {
+        "character": "gicheol",
+        "fact_id": "f140",
+        "offstage": true,
+        "note": "지시한 당사자"
+      },
+      {
+        "character": "eunjae",
+        "fact_id": "f166",
+        "offstage": true,
+        "note": "37화 강릉 병원에서 판정을 받음(본문 미서술)"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f166",
+        "offstage": true,
+        "note": "37화 병원 복도에서 은재의 전화로 들음(본문은 통화하는 뒷모습만 그림)"
+      },
+      {
+        "character": "eunjae",
+        "fact_id": "f167",
+        "offstage": true,
+        "note": "37화 강릉 병원에서 판정을 받음(본문 미서술)"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f167",
+        "offstage": true,
+        "note": "37화 병원 복도에서 은재의 전화로 들음(본문은 통화하는 뒷모습만 그림)"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f220"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f220",
+        "note": "37화 병원 로비에서 도현이 연 공문의 제목을 옆에서 봄(37:255-257)"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f220"
+      },
+      {
+        "character": "gicheol",
+        "fact_id": "f220",
+        "offstage": true,
+        "note": "지시한 당사자"
+      }
+    ],
+    "pov_must_hide": [
+      "f182"
+    ],
+    "interlude_pov_must_hide": null,
+    "ending_hook": "복도 끝 매점 앞에서 우진이 누군가와 오래 통화하는 뒷모습이 보인다.",
+    "end_state": "태석이 깨어났고 재인과 우진은 다시 편해졌다."
+  },
+  {
+    "ep": 38,
+    "title": "평창동의 증언",
+    "pov": "dohyun",
+    "interlude_pov": null,
+    "interlude_scope": null,
+    "location": "평창동 회장 자택",
+    "characters_present": [
+      "dohyun",
+      "hyeryeon",
+      "gicheol"
+    ],
+    "summary": "도현은 평창동 집으로 혜련을 찾아간다. 혜련은 오래 망설이다가, 17년 전 서재 앞에서 차기철이 '누전 말고 난로로 정리하라'고 지시하고 '아이 진술은 빼라'고 덧붙이는 통화를 들었다고 털어놓는다. 혜련은 그 기억이 내내 마음에 걸려 반닫이를 핑계로 재인을 불렀던 거라고 고백한다. 그때 출장에서 돌아온 차기철이 거실에 들어선다. 도현이 복원 사업을 맡은 이유를 그대로 밝히며 묻자, 차기철은 결론을 바꾸게 한 것도, 보고서와 보도에서 아들의 이름을 뺀 것도, 아들의 진술을 없던 일로 한 것도 부인하지 않은 채 '회사를 지킨 겁니다'라고 말한다. 차기철은 기한을 석 달로 줄이고 창고 가구까지 밖으로 빼내면 창고를 뒤질 틈은 없을 줄 알았다고 덧붙인다. 도현은 아버지에게 등을 돌리고 집을 나선다.",
+    "beats": [
+      "도현이 혜련을 찾아간다",
+      "혜련이 17년 전 서재 앞에서 들은 통화('난로로 정리하라', '아이 진술은 빼라')를 털어놓는다",
+      "혜련이 반닫이를 맡긴 이유를 고백한다",
+      "차기철이 들어선다",
+      "도현이 자기 목적을 밝히며 아버지에게 묻는다",
+      "차기철이 결론을 바꾸도록 손을 썼다는 것과 아들의 이름·진술을 지운 일을 부인하지 않고 '회사를 지킨 겁니다'라고 답한다",
+      "차기철이 기한 단축의 속내를 말하고 도현이 집을 나선다"
+    ],
+    "facts_revealed": [
+      "f141",
+      "f142",
+      "f143",
+      "f144",
+      "f145",
+      "f146",
+      "f147"
+    ],
+    "hints_allowed": [
+      "허용: 부자의 정면 대립",
+      "금지: 이번 화 대화 밖의 은폐 경위를 서술하는 문장"
+    ],
+    "relationship_changes": [
+      {
+        "relationship": "r09",
+        "a": "dohyun",
+        "b": "gicheol",
+        "status": "정면 대립",
+        "public": false
+      },
+      {
+        "relationship": "r14",
+        "a": "jaein",
+        "b": "gicheol",
+        "status": "아버지 사건의 은폐 책임자와 유족",
+        "public": false
+      },
+      {
+        "relationship": "r16",
+        "a": "gicheol",
+        "b": "hyeryeon",
+        "status": "아내가 남편의 일을 아들에게 털어놓은 균열",
+        "public": false
+      }
+    ],
+    "knowledge_events": [
+      {
+        "character": "hyeryeon",
+        "fact_id": "f038",
+        "note": "38화 거실에서 남편이 기한을 줄인 속내를 말할 때 들음"
+      },
+      {
+        "character": "hyeryeon",
+        "fact_id": "f040",
+        "note": "38화 거실에서 남편이 직접 말할 때 들음"
+      },
+      {
+        "character": "hyeryeon",
+        "fact_id": "f041",
+        "note": "38화 거실에서 남편이 기한을 줄인 속내를 말할 때 함께 들음"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f141",
+        "note": "진술이 지워진 것은 열일곱 살 때부터 알았으나, 보고서 결론을 난로 부주의로 바꾸게 한 것까지는 의심만 하다가 38화 혜련의 증언과 회장의 인정으로 확인함"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f142"
+      },
+      {
+        "character": "gicheol",
+        "fact_id": "f142"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f143"
+      },
+      {
+        "character": "hyeryeon",
+        "fact_id": "f144",
+        "note": "38화 거실에서 남편이 부인하지 않고 인정할 때 들음. 17년 전 통화에서는 아이 진술을 빼라는 말만 들었다"
+      },
+      {
+        "character": "gicheol",
+        "fact_id": "f146"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f146"
+      },
+      {
+        "character": "hyeryeon",
+        "fact_id": "f146"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f147"
+      },
+      {
+        "character": "hyeryeon",
+        "fact_id": "f147"
+      },
+      {
+        "character": "hyeryeon",
+        "fact_id": "f069",
+        "note": "38화 평창동 거실에서 도현이 아버지에게 목적을 밝힐 때 함께 있었음(38:129)"
+      },
+      {
+        "character": "gicheol",
+        "fact_id": "f069",
+        "note": "38화 평창동 거실에서 도현이 \"저는 청운장 화재의 공식 결론을 다시 확인하려고 이 복원 사업을 맡았습니다\"라고 직접 말함(38:129). 그 전에는 짐작만 했다"
+      }
+    ],
+    "pov_must_hide": [
+      "f177"
+    ],
+    "interlude_pov_must_hide": null,
+    "ending_hook": "대문을 나선 도현이 재인에게 '지금 갈게요'라고 문자를 보낸다.",
+    "end_state": "도현은 아버지가 결론을 바꾸고 자신의 이름과 진술을 지우게 했다는 것을 아버지의 입으로 확인했다."
+  },
+  {
+    "ep": 39,
+    "title": "이별 통보",
+    "pov": "jaein",
+    "interlude_pov": null,
+    "interlude_scope": null,
+    "location": "결공방",
+    "characters_present": [
+      "jaein",
+      "dohyun",
+      "narae",
+      "mikyung"
+    ],
+    "summary": "도현은 공방에 와서 아버지가 보고서 결론을 바꾸게 했고, 자신의 이름과 진술까지 보고서에서 지우게 했다는 것을 그대로 전한다. 재인은 그것이 도현의 탓이 아니라는 걸 알지만, 아버지를 '과실 목수'로 만든 사람의 아들 곁에서 웃을 수 없다고 말한다. 도현은 붙잡는 말 대신 화재의 진실을 공개적으로 바로잡겠다고 약속한다. 재인은 계약은 끝까지 지키겠다고 한 뒤 '헤어져요, 우리'라고 말한다. 저녁 반찬을 들고 온 나래와 미경은 바로 그때 문 앞에 닿아, 앞의 대화는 듣지 못하고 '헤어져요, 우리'라는 말과 재인이 우는 소리만 듣는다. 도현이 떠난 뒤 미경은 말없이 들어와 재인의 등을 감싼다.",
+    "beats": [
+      "도현이 공방에 들어선다",
+      "도현이 아버지가 결론을 바꾸고 자신의 이름과 진술을 지우게 한 일을 전한다",
+      "재인이 아버지를 '과실 목수'로 만든 사람의 아들 곁에서 웃을 수 없다고 말한다",
+      "도현이 공개적으로 바로잡겠다고 약속한다",
+      "재인이 헤어지자고 말한다",
+      "막 문 앞에 닿은 나래와 미경이 '헤어져요, 우리'와 우는 소리만 듣는다",
+      "미경이 재인을 감싼다"
+    ],
+    "facts_revealed": [
+      "f148",
+      "f149"
+    ],
+    "hints_allowed": [
+      "허용: 이별의 슬픔",
+      "금지: 진실을 공개할 방법을 서술하는 문장",
+      "금지: 나래와 미경이 이별의 이유를 듣는 서술"
+    ],
+    "relationship_changes": [
+      {
+        "relationship": "r01",
+        "a": "jaein",
+        "b": "dohyun",
+        "status": "이별",
+        "public": false
+      }
+    ],
+    "knowledge_events": [
+      {
+        "character": "jaein",
+        "fact_id": "f141",
+        "note": "39화 공방에서 도현에게서 들음"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f142"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f143"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f144",
+        "note": "39화 공방에서 도현에게서 들음"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f145",
+        "note": "39화 공방에서 도현에게서 들음"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f148"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f148"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f148",
+        "note": "도현의 설명과 약속이 끝난 뒤 문 앞에 닿아 '헤어져요, 우리'와 우는 소리만 들음. 이유는 모른다"
+      },
+      {
+        "character": "mikyung",
+        "fact_id": "f148",
+        "note": "도현의 설명과 약속이 끝난 뒤 문 앞에 닿아 '헤어져요, 우리'와 우는 소리만 들음. 이유는 모른다"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f149"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f149"
+      }
+    ],
+    "pov_must_hide": [
+      "f182"
+    ],
+    "interlude_pov_must_hide": null,
+    "ending_hook": "공방 앞에 세워 둔 도현의 차가 한 시간 넘게 떠나지 않는다.",
+    "end_state": "재인과 도현은 헤어졌다."
+  },
+  {
+    "ep": 40,
+    "title": "소방관과 견습생",
+    "pov": "narae",
+    "interlude_pov": null,
+    "interlude_scope": null,
+    "location": "결공방(밤)",
+    "characters_present": [
+      "narae",
+      "woojin",
+      "jaein",
+      "jihoon"
+    ],
+    "summary": "재인이 일에만 매달리자 나래는 우진에게 도움을 청한다. 재인이 작업실 안쪽에서 견적서를 붙들고 있는 사이, 둘은 공방 앞쪽에서 밤새 청운장 객실 의자 마감을 나눠 한다. 나래는 우진이 서툴게 사포질 요령을 배우는 모습에 자꾸 눈이 간다. 그때 지훈이 공방을 찾아와 재인에게 아버지를 감싸느라 조사를 늦춘 일을 고개 숙여 사과한다. 지훈은 그룹 문서 보관실에서 17년 전 청운장 문서를 찾았다며 재인과 도현에게 넘기겠다고 한다. 나래는 지훈을 원망했던 마음이 조금 누그러진다.",
+    "beats": [
+      "나래가 우진에게 도움을 청한다",
+      "둘이 밤새 의자 마감을 한다",
+      "나래가 우진에게 마음이 간다",
+      "지훈이 찾아와 고개 숙여 사과한다",
+      "지훈이 찾아낸 문서를 넘기겠다고 한다"
+    ],
+    "facts_revealed": [
+      "f150",
+      "f151",
+      "f152"
+    ],
+    "hints_allowed": [
+      "허용: 나래의 새로운 설렘",
+      "금지: 지훈이 찾은 문서의 내용을 서술하는 문장"
+    ],
+    "relationship_changes": [
+      {
+        "relationship": "r13",
+        "a": "woojin",
+        "b": "narae",
+        "status": "나래의 일방적 호감",
+        "public": false
+      }
+    ],
+    "knowledge_events": [
+      {
+        "character": "narae",
+        "fact_id": "f150"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f151"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f151"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f151"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f151"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f152"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f152"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f152"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f152"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f153",
+        "offstage": true,
+        "note": "40화 문서 보관실에서 찾음(본문 미서술)"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f154",
+        "offstage": true,
+        "note": "40화 문서 보관실에서 찾을 때 확인함(본문 미서술)"
+      }
+    ],
+    "pov_must_hide": [],
+    "interlude_pov_must_hide": null,
+    "ending_hook": "우진의 손등에 묻은 톱밥을 나래가 털어 준다.",
+    "end_state": "지훈이 회장 반대편에 서기 시작했다."
+  },
+  {
+    "ep": 41,
+    "title": "대학 앞 포장마차",
+    "pov": "dohyun",
+    "interlude_pov": null,
+    "interlude_scope": null,
+    "location": "을지로 본사·신촌 대학가 포장마차",
+    "characters_present": [
+      "dohyun",
+      "jihoon",
+      "seungjae"
+    ],
+    "summary": "지훈이 찾아낸 문서에는 17년 전 회장실 법무팀이 화재조사 초안을 미리 받아 검토했다는 메모 일부가 들어 있지만, 초안 원본은 없다. 도현은 지훈에게 '이번엔 네 판단으로 내 옆에 있어라'라고 말한다. 둘은 대학 때 자주 가던 신촌의 포장마차에서 처음으로 진짜 이야기를 나눈다. 지훈은 술에 취한 아버지를 업고 수유리 언덕길을 오르던 밤들을 털어놓고, 도현은 아버지가 보고서 결론을 바꾸게 한 일을 지훈에게 들려준다. 다음 날 승재가 도현을 불러 '원본 찾느라 고생이 많다'며 행방을 아는 듯이 웃는다. 도현은 승재의 조건을 묻지만 승재는 답하지 않는다.",
+    "beats": [
+      "도현이 지훈이 찾아낸 문서를 검토한다",
+      "법무팀 메모는 있지만 원본은 없다",
+      "도현이 지훈에게 곁에 남아 달라고 한다",
+      "신촌 포장마차에서 둘이 술잔을 나누며 각자의 아버지 이야기를 한다",
+      "승재가 원본의 행방을 아는 듯 웃는다"
+    ],
+    "facts_revealed": [
+      "f153",
+      "f154",
+      "f155",
+      "f156"
+    ],
+    "hints_allowed": [
+      "허용: 도현과 지훈의 깊은 우정",
+      "허용: 승재의 의미심장한 웃음",
+      "금지: 승재의 웃음을 해석하는 서술"
+    ],
+    "relationship_changes": [
+      {
+        "relationship": "r03",
+        "a": "dohyun",
+        "b": "jihoon",
+        "status": "속죄와 다시 쌓는 신뢰",
+        "public": false
+      }
+    ],
+    "knowledge_events": [
+      {
+        "character": "taeseok",
+        "fact_id": "f125",
+        "offstage": true,
+        "note": "41화 병실에서 도현에게서 들음(본문 미서술) 42:153 \"불은 거기서 났다\"로 확인"
+      },
+      {
+        "character": "taeseok",
+        "fact_id": "f126",
+        "offstage": true,
+        "note": "41화 병실에서 도현에게서 실제 원인과 바뀐 결론을 들을 때 초안 결론이 누전이었다는 것도 들음(본문 미서술) 42:87·153로 간접 확인"
+      },
+      {
+        "character": "taeseok",
+        "fact_id": "f128",
+        "offstage": true,
+        "note": "41화 병실에서 도현에게서 들음(본문 미서술) 42:87·153로 간접 확인"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f141",
+        "note": "41화 신촌 포장마차에서 도현에게서 들음"
+      },
+      {
+        "character": "taeseok",
+        "fact_id": "f141",
+        "offstage": true,
+        "note": "41화 병실에서 도현에게서 들음(본문 미서술) 42:87·153로 간접 확인"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f152"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f153"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f153",
+        "offstage": true,
+        "note": "41화 밤 도현의 전화로 전해 들음(본문은 그 통화를 그리지 않음)"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f154"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f154",
+        "offstage": true,
+        "note": "41화 밤 도현의 전화로 전해 들음(본문은 그 통화를 그리지 않음)"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f155"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f155"
+      },
+      {
+        "character": "seungjae",
+        "fact_id": "f156"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f156"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f156"
+      }
+    ],
+    "pov_must_hide": [
+      "f177"
+    ],
+    "interlude_pov_must_hide": null,
+    "ending_hook": "방을 나서는 도현의 등 뒤로 승재가 벽장 속 금고의 다이얼을 돌리는 소리가 들린다.",
+    "end_state": "도현과 지훈이 다시 손을 잡았다."
+  },
+  {
+    "ep": 42,
+    "title": "할아버지의 대답",
+    "pov": "jaein",
+    "interlude_pov": null,
+    "interlude_scope": null,
+    "location": "종로 대학병원·서촌 태석의 한옥",
+    "characters_present": [
+      "jaein",
+      "taeseok",
+      "dohyun",
+      "haram"
+    ],
+    "summary": "퇴원한 태석은 서촌 대문 앞에서 휠체어를 접고 제 발로 문턱을 넘고, 재인과 도현, 하람이 뒤를 따른다. 하람이 마당에서 바둑판을 펴는 사이, 마루에 앉은 도현은 태석에게 그날 밤 난로를 끈 사람이 자신이었고 난로가 꺼져 있었다는 그 진술이 지워진 뒤 17년 동안 침묵했다고 처음으로 털어놓는다. 태석은 17년 동안 손자가 그 침묵을 짊어지고 살았다는 데 운다. 태석은 편지 사본이 든 봉투를 17년 동안 꺼내지 못한 것은 손자를 지키려고, 그날 밤 도현이 현장에 있었다는 것이 드러날까 봐서였다고 털어놓는다. 그리고 '그 목수를 죽게 한 건 미뤄진 공사다, 열일곱 살 아이의 침묵이 아니야'라고 말한다. 재인은 마루 끝에서 두 사람을 지켜본다. 하람은 바둑판을 들고 마루로 올라와 할아버지에게 '이제 안 아파?'라고 묻는다.",
+    "beats": [
+      "태석이 대문 앞에서 휠체어를 접고 걸어 들어간다",
+      "하람이 마당에서 바둑판을 편다",
+      "도현이 태석에게 그날 밤의 일과 지워진 진술, 침묵을 고백한다",
+      "태석이 손자를 지키려고 편지를 꺼내지 못했다고 털어놓는다",
+      "태석이 미뤄진 공사 탓이라고 말한다",
+      "하람이 바둑판을 들고 마루로 올라온다"
+    ],
+    "facts_revealed": [
+      "f157",
+      "f158",
+      "f159"
+    ],
+    "hints_allowed": [
+      "허용: 외조부와 외손자의 화해",
+      "허용: 다음 화로 이어지는 낯선 번호의 전화(지역은 밝히지 않음)",
+      "금지: 전화를 건 쪽을 특정하는 서술"
+    ],
+    "relationship_changes": [
+      {
+        "relationship": "r10",
+        "a": "dohyun",
+        "b": "taeseok",
+        "status": "화해한 외조부와 외손자",
+        "public": true
+      }
+    ],
+    "knowledge_events": [
+      {
+        "character": "taeseok",
+        "fact_id": "f129",
+        "note": "42화 마루에서 도현에게 진술 내용을 직접 들음"
+      },
+      {
+        "character": "taeseok",
+        "fact_id": "f134",
+        "note": "42화 마루에서 도현에게 직접 들음"
+      },
+      {
+        "character": "taeseok",
+        "fact_id": "f135",
+        "note": "42화 마루에서 도현에게 진술 내용을 직접 들음. 그 전에는 도현이 진술했다는 것만 알았다"
+      },
+      {
+        "character": "taeseok",
+        "fact_id": "f157"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f157"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f157"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f158"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f158"
+      },
+      {
+        "character": "taeseok",
+        "fact_id": "f159"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f159"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f159"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f159"
+      }
+    ],
+    "pov_must_hide": [
+      "f182"
+    ],
+    "interlude_pov_must_hide": null,
+    "ending_hook": "한밤중 재인의 휴대전화에 낯선 번호가 뜨지만, 잠든 하람 곁에서 재인은 받지 못한다.",
+    "end_state": "태석과 도현이 화해했다."
+  },
+  {
+    "ep": 43,
+    "title": "강릉에서 온 전화",
+    "pov": "jaein",
+    "interlude_pov": null,
+    "interlude_scope": null,
+    "location": "결공방·강릉 바닷가 병원",
+    "characters_present": [
+      "jaein",
+      "woojin",
+      "eunjae"
+    ],
+    "summary": "다음 날 아침, 야간 근무를 마치고 하람을 학교 앞까지 데려다준 우진이 해장국을 들고 공방에 들른다. 그때 간밤의 낯선 번호로 다시 전화가 오고, 강릉의 한 병원은 '고은재 씨 퇴원 수속에 보호자 서명이 필요합니다'라고 말한다. 당황한 재인 앞에서 우진이 결국 털어놓는다. 은재는 지난 4년 동안 베트남이 아니라 강릉에서 큰 병을 치료받아 왔고 그 병은 혈액암이었으며, 하람이 걱정할까 봐 우진에게만 알렸다는 것이다. 하람이 모아 온 엄마의 엽서도 모두 우진이 대신 부친 엽서였다. 재인은 우진에게 화를 내고 혼자 강릉행 버스에 오른다. 강릉 바닷가 병원 병실에서 재인은 4년 만에 머리가 짧아진 은재를 만난다.",
+    "beats": [
+      "우진이 하람을 학교에 데려다주고 공방에 들른다",
+      "병원의 전화가 다시 걸려 온다",
+      "우진이 은재의 사정을 털어놓는다",
+      "엽서를 우진이 대신 부쳤다는 사실",
+      "재인이 우진에게 화를 내고 강릉행 버스에 오른다",
+      "병실에서 은재와 마주한다"
+    ],
+    "facts_revealed": [
+      "f160",
+      "f161",
+      "f162",
+      "f163",
+      "f164",
+      "f165"
+    ],
+    "hints_allowed": [
+      "허용: 자매의 재회와 원망",
+      "허용: 퇴원 수속 때문에 보호자를 찾는 전화",
+      "금지: 은재의 현재 병세와 치료 결과를 밝히는 서술"
+    ],
+    "relationship_changes": [
+      {
+        "relationship": "r02",
+        "a": "jaein",
+        "b": "woojin",
+        "status": "우진이 숨긴 일로 재인이 화가 난 냉각 상태",
+        "public": false
+      },
+      {
+        "relationship": "r07",
+        "a": "jaein",
+        "b": "eunjae",
+        "status": "4년 만의 재회, 원망과 안도",
+        "public": false
+      }
+    ],
+    "knowledge_events": [
+      {
+        "character": "jaein",
+        "fact_id": "f160"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f160"
+      },
+      {
+        "character": "eunjae",
+        "fact_id": "f160",
+        "note": "병원이 재인에게 연락한 것을 병실에서 재인을 만나 앎"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f161"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f162"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f163"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f164"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f165"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f027",
+        "note": "43화 재인의 \"하람이 숙제에 엄마가 베트남에서 일한다고 썼어\"를 직접 듣고 \"봤어\"라고 답함(43:125-127)"
+      }
+    ],
+    "pov_must_hide": [
+      "f182"
+    ],
+    "interlude_pov_must_hide": null,
+    "ending_hook": "은재가 '하람이는… 키 컸어?'라고 묻는다.",
+    "end_state": "재인은 은재의 4년을 알게 되었다."
+  },
+  {
+    "ep": 44,
+    "title": "엄마가 왔다",
+    "pov": "jaein",
+    "interlude_pov": null,
+    "interlude_scope": null,
+    "location": "강릉 바닷가 병원·결공방",
+    "characters_present": [
+      "jaein",
+      "eunjae",
+      "haram",
+      "mikyung",
+      "woojin",
+      "narae"
+    ],
+    "summary": "은재는 치료를 마치고 몇 주 전 관해 판정을 받았다고 말한다. 은재는 하람에게 직접 말하겠다며 재인과 함께 서울로 올라온다. 공방 문 앞에서 하람은 엄마를 보고 한참 서 있다가 달려가 4년 만에 안긴다. 은재는 하람에게 '엄마 많이 아팠는데, 이제 다 나았어'라고 아이가 알아들을 수 있는 말로만 설명한다. 재인은 공방 앞에서 기다리던 우진에게 '미안하다, 고맙다'고 말하며 화해한다. 해 질 녘 공방 정리를 하러 나온 나래가 우진에게 '사포 쥐는 법, 다시 가르쳐 줄게요'라며 오라고 하자, 우진은 나래의 형광 장갑을 내려다보며 쑥스럽게 그러겠다고 한다. 하람이 잠든 밤, 은재는 미경에게 병명과 관해 판정 이야기를 털어놓고, 미경은 은재를 끌어안고 운다. 같은 밤 재인의 휴대전화에 회장실이 청운장 창고 실측을 다시 시켰다는 도현의 짧은 업무 메시지가 온다.",
+    "beats": [
+      "은재가 관해 판정을 전하고 자매가 함께 서울로 올라온다",
+      "하람이 엄마에게 달려가 안긴다",
+      "은재가 하람에게 '이제 다 나았어'라고 아이의 말로만 설명한다",
+      "재인과 우진이 화해한다",
+      "나래와 우진이 사포질 약속을 한다",
+      "하람이 잠든 밤 은재가 미경에게 병명을 털어놓고 미경이 운다",
+      "도현의 업무 메시지가 온다"
+    ],
+    "facts_revealed": [
+      "f166",
+      "f167",
+      "f168",
+      "f169",
+      "f170",
+      "f171"
+    ],
+    "hints_allowed": [
+      "허용: 모녀의 재회",
+      "허용: 회장실의 창고 실측 지시를 알리는 짧은 업무 메시지",
+      "금지: 실측 지시를 해석하는 서술",
+      "금지: 하람 앞에서 병명이나 관해 판정을 말하는 서술"
+    ],
+    "relationship_changes": [
+      {
+        "relationship": "r02",
+        "a": "jaein",
+        "b": "woojin",
+        "status": "화해한 오랜 친구",
+        "public": true
+      },
+      {
+        "relationship": "r06",
+        "a": "jaein",
+        "b": "haram",
+        "status": "돌아온 은재와 함께 사는 가족",
+        "public": true
+      },
+      {
+        "relationship": "r08",
+        "a": "eunjae",
+        "b": "haram",
+        "status": "다시 만난 모녀",
+        "public": true
+      }
+    ],
+    "knowledge_events": [
+      {
+        "character": "haram",
+        "fact_id": "f161"
+      },
+      {
+        "character": "mikyung",
+        "fact_id": "f161"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f162",
+        "note": "44화 은재가 '엄마 많이 아팠다'고 아이가 알아들을 말로 설명해 앎"
+      },
+      {
+        "character": "mikyung",
+        "fact_id": "f162"
+      },
+      {
+        "character": "mikyung",
+        "fact_id": "f163",
+        "note": "44화 밤 하람이 잠든 뒤 은재가 병명을 털어놓음"
+      },
+      {
+        "character": "mikyung",
+        "fact_id": "f164"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f165"
+      },
+      {
+        "character": "mikyung",
+        "fact_id": "f165"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f166"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f166",
+        "note": "44화 은재의 '이제 다 나았어'라는 말로 들음"
+      },
+      {
+        "character": "mikyung",
+        "fact_id": "f166"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f167"
+      },
+      {
+        "character": "mikyung",
+        "fact_id": "f167",
+        "note": "44화 밤 하람이 잠든 뒤 은재가 병명과 함께 털어놓음"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f168"
+      },
+      {
+        "character": "eunjae",
+        "fact_id": "f168"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f168"
+      },
+      {
+        "character": "mikyung",
+        "fact_id": "f168"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f168"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f168",
+        "note": "해 질 녘 공방에 나와 은재와 하람을 봄"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f169"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f169"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f170"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f170"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f170"
+      },
+      {
+        "character": "gicheol",
+        "fact_id": "f171",
+        "offstage": true,
+        "note": "지시한 당사자"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f171",
+        "offstage": true,
+        "note": "본사에서 통보받고 재인에게 업무 메시지를 보냄(본문은 메시지만 그림)"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f171"
+      },
+      {
+        "character": "gicheol",
+        "fact_id": "f175",
+        "offstage": true,
+        "note": "44화 밤 실측 결과 보고로 처음 앎(본문 미서술). 그 전에는 별관 배선이 화재 뒤 모두 걷힌 줄 알았다"
+      },
+      {
+        "character": "gicheol",
+        "fact_id": "f176",
+        "offstage": true,
+        "note": "44화 밤 실측 결과 보고로 처음 앎(본문 미서술)"
+      },
+      {
+        "character": "eunjae",
+        "fact_id": "f002",
+        "note": "44화 나래의 \"여기서 견습하고 있어요\"로 앎(44:173)"
+      }
+    ],
+    "pov_must_hide": [
+      "f182"
+    ],
+    "interlude_pov_must_hide": null,
+    "ending_hook": "하람은 엄마와 이모 사이에 끼어 잠들어 있다.",
+    "end_state": "은재가 돌아왔다."
+  },
+  {
+    "ep": 45,
+    "title": "두 사람의 공조",
+    "pov": "dohyun",
+    "interlude_pov": null,
+    "interlude_scope": null,
+    "location": "을지로 본사 회장실·이사회 회의실·비서실",
+    "characters_present": [
+      "dohyun",
+      "jihoon",
+      "seungjae",
+      "gicheol"
+    ],
+    "summary": "차기철은 지훈이 배석한 회장실로 도현을 불러, 재개관 전에 청운장 별관 창고를 철거하라는 지시를 직접 통보한다. 창고는 근대건축물 보존 심의 대상이라 17년 동안 헐 수 없었는데, 실측에서 벽 안의 옛 배선이 드러나자 회장실이 안전 진단을 내세워 심의 예외를 밀어붙인 것이다. 창고는 불이 난 별관 목공실과 한 배전반에 묶여 있던 건물이라, 벽 안에 남은 17년 전 별관 배선은 현장의 마지막 물증이다. 회장은 축사를 거두지 않고 '축사는 그대로 하십시오. 원본은 이미 없습니다'라고 시험하듯 말하고, 도현은 대답 없이 회장실을 나온다. 지훈은 철거 서류의 결재를 붙잡아 일정을 늦추고, 뜻밖에도 승재가 이사회에서 철거안 상정을 막는다. 회의가 끝난 뒤 지훈과 승재는 처음으로 같은 편에서 움직였다는 것을 서로 인정하고, 승재는 '선배 노릇 한 번 한 거다'라고 말한다.",
+    "beats": [
+      "회장이 회장실에서 창고 철거 지시를 직접 통보한다",
+      "도현이 보존 심의 예외와 한 배전반에 묶였던 벽 안의 옛 배선을 걱정한다",
+      "회장이 '축사는 그대로 하십시오. 원본은 이미 없습니다'라고 시험하듯 말한다",
+      "지훈이 결재를 붙잡는다",
+      "승재가 이사회에서 철거안을 상정 보류로 돌린다",
+      "지훈과 승재가 서로를 인정한다",
+      "승재가 공방의 고명수 대패와 바둑돌 주머니 찬 꼬마를 지나가듯 꺼낸다"
+    ],
+    "facts_revealed": [
+      "f172",
+      "f173",
+      "f174",
+      "f175",
+      "f176",
+      "f177",
+      "f178",
+      "f179"
+    ],
+    "hints_allowed": [
+      "허용: 회장의 시험하는 듯한 태도",
+      "허용: 승재의 속내를 알 수 없는 태도",
+      "허용: 공방의 고명수 대패와 바둑돌 주머니를 떠올리는 승재의 한마디",
+      "금지: 승재의 속내를 해석하는 서술",
+      "금지: 승재가 하람의 외모나 잠든 모습을 말하는 대사"
+    ],
+    "relationship_changes": [
+      {
+        "relationship": "r05",
+        "a": "jihoon",
+        "b": "seungjae",
+        "status": "회장에 맞선 공조",
+        "public": false
+      }
+    ],
+    "knowledge_events": [
+      {
+        "character": "gicheol",
+        "fact_id": "f172",
+        "note": "지시한 당사자"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f172"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f172"
+      },
+      {
+        "character": "seungjae",
+        "fact_id": "f172"
+      },
+      {
+        "character": "gicheol",
+        "fact_id": "f173"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f173"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f173"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f174",
+        "note": "45화 회장실에서 아버지가 '원본은 이미 없습니다'라고 말해 앎"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f174",
+        "note": "45화 회장실에 배석해 들음"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f175"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f175"
+      },
+      {
+        "character": "seungjae",
+        "fact_id": "f175"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f176"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f176"
+      },
+      {
+        "character": "seungjae",
+        "fact_id": "f176"
+      },
+      {
+        "character": "seungjae",
+        "fact_id": "f178"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f178"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f178"
+      },
+      {
+        "character": "gicheol",
+        "fact_id": "f178",
+        "offstage": true,
+        "note": "45화 이사회 상정 보류 결과를 같은 날 보고받음(본문 미서술)"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f179"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f179"
+      },
+      {
+        "character": "seungjae",
+        "fact_id": "f179"
+      }
+    ],
+    "pov_must_hide": [],
+    "interlude_pov_must_hide": null,
+    "ending_hook": "승재가 도현에게 '내일 아침 내 방으로 와'라는 메시지를 보낸다.",
+    "end_state": "창고 철거가 보류되었고 회장은 축사를 그대로 맡겨 두었다."
+  },
+  {
+    "ep": 46,
+    "title": "자매의 밤",
+    "pov": "jaein",
+    "interlude_pov": null,
+    "interlude_scope": null,
+    "location": "청운장 창고 앞·망원동 재인의 집",
+    "characters_present": [
+      "jaein",
+      "eunjae",
+      "haram",
+      "mikyung"
+    ],
+    "summary": "낮에 혼자 청운장에 들른 재인은 창고 문에 붙은 철거 예정 안내문을 보고, 도현에게서 철거가 일단 미뤄졌다는 짧은 업무 전화를 받는다. 하람이 잠든 밤, 미경이 끓여 온 된장국을 사이에 두고 은재와 재인은 4년 동안 하지 못한 이야기를 나눈다. 은재가 아버지 사고 뒤 '과실 목수의 딸'이라는 말을 피해 도망치듯 살아왔다고 털어놓자, 재인은 언니가 숨고 싶어 한다는 걸 알아 4년 동안 일부러 캐묻지 않았다고 말한다. 재인이 화재의 실제 원인과, 초안의 누전 결론이 회장의 손으로 난로 부주의로 바뀐 일을 들려주자 은재는 오래 운다. 은재는 아버지 유품이라 4년 내내 짐에 넣어 다니면서도 펼쳐 보지 못한 작업 수첩을 꺼내고, 자매는 마지막 겨울 장에서 '별관 배선 교체 요청, 세 번째'라는 메모를 찾아낸다. 미경은 은재가 떠나기 전 맡겨 둔 편지를 4년 동안 열지 않고 간직하다 꺼내 오고, 편지에는 '내가 못 돌아오면 하람이를 부탁해'라는 말이 적혀 있다. 자매는 다음 기일에는 함께 청운장에 가기로 약속한다.",
+    "beats": [
+      "재인이 창고 문의 철거 예정 안내문을 보고 도현의 업무 전화를 받는다",
+      "자매가 마주 앉아 은재가 도망치듯 살아온 이야기를 한다",
+      "재인이 일부러 캐묻지 않았다고 말한다",
+      "재인이 화재의 진실을 들려준다",
+      "은재가 꺼낸 아버지의 작업 수첩에서 배선 교체 요청 메모를 찾는다",
+      "미경이 맡아 둔 편지를 꺼내 오고 편지의 내용이 드러난다",
+      "자매가 기일을 약속한다"
+    ],
+    "facts_revealed": [
+      "f180",
+      "f181",
+      "f182",
+      "f183",
+      "f184"
+    ],
+    "hints_allowed": [
+      "허용: 자매의 화해",
+      "허용: 창고 철거 예정 안내문과 도현의 짧은 업무 전화",
+      "허용: 고명수의 작업 수첩 메모",
+      "금지: 회사 쪽 일에 대해 안내문과 전화 밖의 서술"
+    ],
+    "relationship_changes": [
+      {
+        "relationship": "r07",
+        "a": "jaein",
+        "b": "eunjae",
+        "status": "화해한 자매",
+        "public": true
+      }
+    ],
+    "knowledge_events": [
+      {
+        "character": "eunjae",
+        "fact_id": "f125"
+      },
+      {
+        "character": "mikyung",
+        "fact_id": "f125",
+        "note": "46화 재인이 은재에게 들려줄 때 같은 자리에 있었다"
+      },
+      {
+        "character": "eunjae",
+        "fact_id": "f126",
+        "note": "46화 재인이 초안의 누전 결론이 난로 부주의로 바뀐 일을 들려줌"
+      },
+      {
+        "character": "mikyung",
+        "fact_id": "f126",
+        "note": "46화 재인이 은재에게 들려줄 때 같은 자리에 있었다"
+      },
+      {
+        "character": "eunjae",
+        "fact_id": "f128"
+      },
+      {
+        "character": "mikyung",
+        "fact_id": "f128",
+        "note": "46화 재인이 은재에게 들려줄 때 같은 자리에 있었다"
+      },
+      {
+        "character": "eunjae",
+        "fact_id": "f141",
+        "note": "46화 재인에게서 들음. 이름 없이 \"한결그룹 회장\"으로 들음(46:143), 차기철이라는 이름은 49화"
+      },
+      {
+        "character": "mikyung",
+        "fact_id": "f141",
+        "note": "46화 재인이 은재에게 들려줄 때 같은 자리에 있었다. 이름 없이 \"한결그룹 회장\"으로 들음(46:143), 차기철이라는 이름은 49화"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f180"
+      },
+      {
+        "character": "mikyung",
+        "fact_id": "f180"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f181"
+      },
+      {
+        "character": "eunjae",
+        "fact_id": "f182"
+      },
+      {
+        "character": "mikyung",
+        "fact_id": "f182"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f183"
+      },
+      {
+        "character": "eunjae",
+        "fact_id": "f183",
+        "note": "아버지 유품이라 장례 뒤 17년 동안 짐에 넣어 다녔지만 46화 밤 처음 펼쳐 봄"
+      },
+      {
+        "character": "mikyung",
+        "fact_id": "f183"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f184"
+      },
+      {
+        "character": "eunjae",
+        "fact_id": "f181",
+        "note": "편지를 맡긴 것은 처음부터 알았고, 미경이 4년 동안 열지 않고 보관해 온 것은 46화에 처음 앎(46:225-227)"
+      }
+    ],
+    "pov_must_hide": [],
+    "interlude_pov_must_hide": null,
+    "ending_hook": "새벽, 재인은 잠든 하람의 이마를 쓸며 부암동 쪽 하늘을 오래 바라본다.",
+    "end_state": "자매가 화해했고 아버지의 수첩 메모를 찾았다."
+  },
+  {
+    "ep": 47,
+    "title": "승재의 패",
+    "pov": "dohyun",
+    "interlude_pov": null,
+    "interlude_scope": null,
+    "location": "을지로 본사 승재의 사무실",
+    "characters_present": [
+      "dohyun",
+      "seungjae",
+      "jihoon"
+    ],
+    "summary": "승재는 도현을 사무실로 불러 벽장 속 개인 금고에서 꺼낸 서류봉투를 내민다. 2년 전 청운장 부지 매각 실사 때 법무팀 금고에서 찾아낸 화재조사 보고서 초안 원본으로, 봉투에는 17년 전 법무팀장이 폐기하지 않고 남긴 '소송 대비 보관'이라는 친필이 적혀 있다. 결론란에는 '누전'이 적혀 있고, 결론을 난로 부주의로 정리하라는 회장실 메모가 붙어 있다. 승재는 원래 후계 다툼 카드로 숨겨 두고 회장을 압박하려 했으며, 초안의 조사관 서명을 보고 지훈의 아버지를 알았다고 인정한다. 그러나 승재는 그날 밤 공방 벽의 고명수 대패와 고명수의 손녀가 차고 잠든 바둑돌 주머니를 본 뒤로 그 일을 카드로 쓸 수 없게 되었다며, '불타 죽은 목수를 카드로 쓰는 건 질렸다'고 아무 조건 없이 봉투를 넘긴다. 도현은 처음으로 승재에게 고맙다고 말하고, 문가에 서 있던 지훈은 두 사람을 보며 웃는다.",
+    "beats": [
+      "승재가 개인 금고에서 서류봉투를 꺼내 내민다",
+      "초안 원본의 결론란과 회장실 메모, 법무팀장의 '소송 대비 보관' 친필",
+      "승재가 2년 동안 숨겨 둔 이유를 인정한다",
+      "승재가 공방의 고명수 대패와 바둑돌 주머니를 본 뒤로 마음이 바뀌었다고 말한다",
+      "승재가 조건 없이 넘긴다",
+      "도현이 승재에게 고맙다고 말한다",
+      "지훈이 웃는다"
+    ],
+    "facts_revealed": [
+      "f185",
+      "f186",
+      "f187",
+      "f188",
+      "f189",
+      "f190",
+      "f191"
+    ],
+    "hints_allowed": [
+      "허용: 라이벌 사이의 인정",
+      "금지: 두 남성 인물 사이를 연애로 서술하는 문장",
+      "금지: 하람의 외모나 잠든 모습을 묘사하는 대사·서술"
+    ],
+    "relationship_changes": [
+      {
+        "relationship": "r04",
+        "a": "dohyun",
+        "b": "seungjae",
+        "status": "원본 보고서를 건넨 뒤의 동맹",
+        "public": false
+      }
+    ],
+    "knowledge_events": [
+      {
+        "character": "dohyun",
+        "fact_id": "f185"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f185"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f186"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f186"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f187"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f187"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f188"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f188"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f189"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f189"
+      },
+      {
+        "character": "seungjae",
+        "fact_id": "f190"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f190"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f190"
+      },
+      {
+        "character": "seungjae",
+        "fact_id": "f191"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f191"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f191"
+      }
+    ],
+    "pov_must_hide": [],
+    "interlude_pov_must_hide": null,
+    "ending_hook": "도현이 서류봉투를 품에 안고 부암동 청운장으로 차를 돌린다.",
+    "end_state": "도현이 원본 보고서를 손에 넣었다."
+  },
+  {
+    "ep": 48,
+    "title": "다시, 손",
+    "pov": "jaein",
+    "interlude_pov": null,
+    "interlude_scope": null,
+    "location": "청운장 로비",
+    "characters_present": [
+      "jaein",
+      "dohyun",
+      "haram",
+      "narae",
+      "woojin",
+      "eunjae"
+    ],
+    "summary": "도현은 원본 보고서를 누구보다 먼저, 식구들이 오기 전 빈 로비에서 재인에게 보여 준다. 재인은 아버지 이름 옆의 누전 두 글자를 손끝으로 쓸어 본다. 도현은 승재가 2년 전 부지 매각을 검토하던 때 법무팀 금고에서 원본을 찾아 자기 금고에 숨겨 두고 후계 싸움에 쓰려 했다가, 아무 조건도 달지 않고 넘겼다는 것을 재인에게 전한다. 재인은 은재와 찾아낸 아버지의 작업 수첩 메모를 도현에게 건네고, 도현은 재개관 기념식에서 모든 것을 밝히겠다고 말한다. 재인은 '이번엔 내가 옆에 서겠다'며 도현의 손을 다시 잡고, 둘은 공방 식구들과 하람, 은재 앞에서 '우리 사귑니다'라고 연인임을 밝힌다. 나래가 '이번엔 진짜 다시 사귀시는 거죠? 헤어지셨을 때 제가 얼마나 조마조마했는데요'라고 외치자, 은재와 우진은 그제야 두 사람이 전에 사귀다 헤어졌었다는 것을 알고 서로 마주 본다. 박수를 치던 나래와 우진은 눈이 마주치자 동시에 웃는다.",
+    "beats": [
+      "빈 로비에서 도현이 원본을 재인에게 가장 먼저 보여 주고, 재인이 누전 두 글자를 쓸어 본다",
+      "도현이 승재가 2년 전 매각 검토 때 법무팀 금고에서 찾아 자기 금고에 숨겨 두고 후계 싸움에 쓰려다 아무 조건도 달지 않고 넘겼다고 재인에게 전한다",
+      "재인이 아버지의 작업 수첩 메모를 도현에게 건네고 도현이 기념식 공개를 약속한다",
+      "재인이 다시 손을 잡는다",
+      "식구들 앞에서 연인임을 밝힌다",
+      "나래의 외침으로 은재와 우진, 하람이 두 사람이 한때 헤어졌었다는 것을 안다",
+      "나래와 우진이 눈이 마주친다"
+    ],
+    "facts_revealed": [
+      "f192",
+      "f193",
+      "f194"
+    ],
+    "hints_allowed": [
+      "허용: 재회의 기쁨과 키스까지의 애정 표현",
+      "금지: 기념식의 결과를 미리 단정하는 서술",
+      "금지: 식구들이 원본과 수첩의 내용을 듣는 서술"
+    ],
+    "relationship_changes": [
+      {
+        "relationship": "r01",
+        "a": "jaein",
+        "b": "dohyun",
+        "status": "공개 연인",
+        "public": true
+      },
+      {
+        "relationship": "r13",
+        "a": "woojin",
+        "b": "narae",
+        "status": "서로의 호감을 알아챈 사이",
+        "public": false
+      }
+    ],
+    "knowledge_events": [
+      {
+        "character": "woojin",
+        "fact_id": "f109",
+        "note": "48화 나래가 '이번엔 진짜 다시 사귀시는 거죠?'라고 외쳐 전에도 사귀었다는 것을 앎"
+      },
+      {
+        "character": "eunjae",
+        "fact_id": "f109",
+        "note": "48화 나래가 '이번엔 진짜 다시 사귀시는 거죠?'라고 외쳐 전에도 사귀었다는 것을 앎"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f148",
+        "note": "48화 나래의 '헤어지셨을 때'라는 말로 둘이 한때 헤어졌었다는 것을 앎"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f148",
+        "note": "48화 나래의 '헤어지셨을 때'라는 말로 둘이 한때 헤어졌었다는 것을 앎"
+      },
+      {
+        "character": "eunjae",
+        "fact_id": "f148",
+        "note": "48화 나래의 '헤어지셨을 때'라는 말로 둘이 한때 헤어졌었다는 것을 앎"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f183",
+        "note": "48화 로비에서 재인이 수첩 메모를 건넴"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f185",
+        "note": "48화 식구들이 오기 전 빈 로비에서 도현에게서 들음"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f186",
+        "note": "48화 식구들이 오기 전 빈 로비에서 도현에게서 들음"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f188"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f189",
+        "note": "48화 식구들이 오기 전 빈 로비에서 도현에게서 들음"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f190",
+        "note": "48화 식구들이 오기 전 빈 로비에서 도현에게서 들음"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f192"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f192"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f193"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f193"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f193"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f193"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f193"
+      },
+      {
+        "character": "eunjae",
+        "fact_id": "f193"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f194"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f194"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f194"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f194"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f194"
+      },
+      {
+        "character": "eunjae",
+        "fact_id": "f194"
+      },
+      {
+        "character": "eunjae",
+        "fact_id": "f016",
+        "note": "48화 청운장 로비에서 도현의 \"청운장 복원을 맡긴 사람입니다\"를 들음(48:169)"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f123",
+        "note": "48화 재인에게서 승재가 명함을 주며 한 \"패\" 이야기를 처음 들음(48:73-77)"
+      },
+      {
+        "character": "eunjae",
+        "fact_id": "f044",
+        "offstage": true,
+        "note": "48화 \"하람이가 연 날린 얘기를 하도 해서요\"(48:171). 44~47화 사이 하람에게서 전해 들음(본문 미서술)"
+      }
+    ],
+    "pov_must_hide": [],
+    "interlude_pov_must_hide": null,
+    "ending_hook": "기념식 초대장 인쇄본이 로비 탁자에 쌓인다.",
+    "end_state": "재인과 도현이 다시 연인이 되었다."
+  },
+  {
+    "ep": 49,
+    "title": "재개관 기념식",
+    "pov": "jaein",
+    "interlude_pov": null,
+    "interlude_scope": null,
+    "location": "청운장 로비(재개관 기념식)",
+    "characters_present": [
+      "jaein",
+      "dohyun",
+      "gicheol",
+      "hyeryeon",
+      "seungjae",
+      "jihoon",
+      "taeseok",
+      "haram",
+      "eunjae",
+      "mikyung",
+      "narae",
+      "woojin"
+    ],
+    "summary": "4월 둘째 주 토요일, 청운장 재개관 기념식이 열린다. 도현은 축사 대신 17년 전 화재조사 보고서 초안 원본을 화면에 띄워, 결론란의 '누전'과 결론을 난로 부주의로 돌리라는 회장실 메모를 공개한다. 이어 도현은 창고 벽 안에 남은 옛 배선 사진과 고명수의 수첩 메모를 원본 옆에 띄우고, 그 창고가 불이 난 별관 목공실과 같은 배전반에 묶여 있었다고 설명한다. 도현은 '본관 객실의 미성년 목격자가 저였습니다. 난로를 끈 사람은 저였습니다'라고 증언하고, 난로를 껐다는 자신의 진술과 현장에 있었다는 기록이 아버지의 지시로 보고서에서 빠졌다고 밝힌다. 혜련이 자리에서 일어나 '증언하겠습니다'라고 말하고, 17년 전 서재 앞에서 '누전 말고 난로로 정리하고 아이 진술은 빼라'는 남편의 통화를 들었다고 증언한다. 기자들의 질문이 회장석으로 쏟아지고 사외이사들이 그 자리에서 긴급 이사회 소집을 요구하는 가운데, 혜련과 눈이 마주친 차기철은 한참 침묵하다가 고명수의 유족에게 고개를 숙여 공개적으로 사과하고 회장직에서 물러나겠다고 발표한다. 로비 자개 장식장에는 '목수 고명수 작'이라는 명판이 걸리고, 태석은 재인과 은재의 손을 한꺼번에 잡는다.",
+    "beats": [
+      "도현이 축사 대신 초안 원본의 결론란과 회장실 메모를 공개한다",
+      "도현이 창고 벽 속에 남은 옛 배선 사진과 고명수의 수첩 메모를 원본 옆에 띄운다",
+      "도현이 자신이 소년 목격자이며 난로를 끈 사람이었고, 그 진술과 현장 기록이 아버지의 지시로 빠졌다고 증언한다",
+      "혜련이 일어나 '누전 말고 난로로 정리하고 아이 진술은 빼라'는 통화를 들었다고 증언한다",
+      "기자들의 질문과 사외이사들의 긴급 이사회 소집 요구 속에 회장이 혜련과 눈을 마주친다",
+      "고개를 숙인 회장이 유족에게 사과하고 퇴진을 발표하고, 명판이 걸린다",
+      "태석이 자매의 손을 잡는다"
+    ],
+    "facts_revealed": [
+      "f195",
+      "f196",
+      "f197",
+      "f198",
+      "f199",
+      "f200",
+      "f201"
+    ],
+    "hints_allowed": [
+      "허용: 공개 사과와 퇴진",
+      "허용: 창고 벽 속 옛 배선 사진과 고명수의 수첩 메모",
+      "금지: 배선 교체 공사 지연이나 원본을 찾은 경위 등 도현의 설명과 두 사람의 증언 밖의 은폐 경위를 서술하는 문장",
+      "금지: 사과 장면을 폭력이나 소동으로 그리는 서술"
+    ],
+    "relationship_changes": [
+      {
+        "relationship": "r09",
+        "a": "dohyun",
+        "b": "gicheol",
+        "status": "아버지의 퇴진 뒤 거리를 둔 부자",
+        "public": true
+      },
+      {
+        "relationship": "r14",
+        "a": "jaein",
+        "b": "gicheol",
+        "status": "공개 사과를 받은 유족과 물러난 회장",
+        "public": true
+      }
+    ],
+    "knowledge_events": [
+      {
+        "character": "haram",
+        "fact_id": "f020",
+        "note": "할아버지가 화재로 돌아가셨다는 것만 알았고(f019), 17년 전 겨울 청운장 별관 화재라는 것은 49화 기념식에서 처음 들음(49:55·63)"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f031",
+        "note": "49화 기념식에서 할아버지의 사고가 난로 부주의로 기록되어 있었다는 것을 처음 들음"
+      },
+      {
+        "character": "eunjae",
+        "fact_id": "f084",
+        "note": "49화 기념식에서 도현의 증언으로 앎"
+      },
+      {
+        "character": "mikyung",
+        "fact_id": "f084",
+        "note": "49화 기념식에서 도현의 증언으로 앎"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f084",
+        "note": "49화 기념식에서 도현의 증언으로 앎"
+      },
+      {
+        "character": "eunjae",
+        "fact_id": "f086",
+        "note": "49화 기념식에서 도현의 증언으로 앎"
+      },
+      {
+        "character": "mikyung",
+        "fact_id": "f086",
+        "note": "49화 기념식에서 도현의 증언으로 앎"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f086",
+        "note": "49화 기념식에서 도현의 증언으로 앎"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f125"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f125"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f126"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f126"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f128"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f128"
+      },
+      {
+        "character": "hyeryeon",
+        "fact_id": "f129",
+        "note": "49화 기념식에서 도현의 증언으로 진술 내용을 앎. 17년 전 통화에서는 아이 진술을 빼라는 말만 들었다"
+      },
+      {
+        "character": "eunjae",
+        "fact_id": "f129",
+        "note": "49화 기념식에서 도현의 증언으로 앎"
+      },
+      {
+        "character": "mikyung",
+        "fact_id": "f129",
+        "note": "49화 기념식에서 도현의 증언으로 앎"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f129",
+        "note": "49화 기념식에서 도현의 증언으로 앎"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f129",
+        "note": "49화 기념식에서 도현의 증언으로 앎"
+      },
+      {
+        "character": "hyeryeon",
+        "fact_id": "f134"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f134"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f134"
+      },
+      {
+        "character": "eunjae",
+        "fact_id": "f134"
+      },
+      {
+        "character": "mikyung",
+        "fact_id": "f134"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f134"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f134"
+      },
+      {
+        "character": "hyeryeon",
+        "fact_id": "f135",
+        "note": "49화 기념식에서 도현의 증언으로 앎. 17년 전 통화에서는 아이 진술을 빼라는 말만 들었다"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f135",
+        "note": "49화 기념식에서 도현의 증언으로 앎. 33화 밤 아버지에게서는 그런 진술이 있었다는 것만 들었다"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f135"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f135"
+      },
+      {
+        "character": "eunjae",
+        "fact_id": "f135"
+      },
+      {
+        "character": "mikyung",
+        "fact_id": "f135"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f135"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f136",
+        "note": "49화 기념식에서 도현의 증언으로 앎"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f136",
+        "note": "49화 기념식에서 도현의 증언으로 앎"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f136",
+        "note": "49화 기념식에서 도현의 증언으로 앎"
+      },
+      {
+        "character": "eunjae",
+        "fact_id": "f136",
+        "note": "49화 기념식에서 도현의 증언으로 앎"
+      },
+      {
+        "character": "mikyung",
+        "fact_id": "f136",
+        "note": "49화 기념식에서 도현의 증언으로 앎"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f136",
+        "note": "49화 기념식에서 도현의 증언으로 앎"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f141"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f141"
+      },
+      {
+        "character": "seungjae",
+        "fact_id": "f142"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f142"
+      },
+      {
+        "character": "taeseok",
+        "fact_id": "f142"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f142"
+      },
+      {
+        "character": "eunjae",
+        "fact_id": "f142"
+      },
+      {
+        "character": "mikyung",
+        "fact_id": "f142"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f142"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f142"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f144",
+        "note": "49화 기념식에서 도현의 증언으로 앎. 41화 포장마차에서는 결론을 바꾸게 한 일만 들었다"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f144",
+        "note": "49화 기념식에서 도현의 증언으로 앎"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f144",
+        "note": "49화 기념식에서 도현의 증언으로 앎"
+      },
+      {
+        "character": "eunjae",
+        "fact_id": "f144",
+        "note": "49화 기념식에서 도현의 증언으로 앎"
+      },
+      {
+        "character": "mikyung",
+        "fact_id": "f144",
+        "note": "49화 기념식에서 도현의 증언으로 앎"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f144",
+        "note": "49화 기념식에서 도현의 증언으로 앎"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f145",
+        "note": "49화 기념식에서 도현과 혜련의 증언으로 앎"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f145",
+        "note": "49화 기념식에서 도현과 혜련의 증언으로 앎"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f145",
+        "note": "49화 기념식에서 도현과 혜련의 증언으로 앎"
+      },
+      {
+        "character": "eunjae",
+        "fact_id": "f145",
+        "note": "49화 기념식에서 도현과 혜련의 증언으로 앎"
+      },
+      {
+        "character": "mikyung",
+        "fact_id": "f145",
+        "note": "49화 기념식에서 도현과 혜련의 증언으로 앎"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f145",
+        "note": "49화 기념식에서 도현과 혜련의 증언으로 앎"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f175",
+        "note": "49화 기념식에서 도현이 띄운 배선 사진으로 앎"
+      },
+      {
+        "character": "hyeryeon",
+        "fact_id": "f175"
+      },
+      {
+        "character": "taeseok",
+        "fact_id": "f175"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f175"
+      },
+      {
+        "character": "eunjae",
+        "fact_id": "f175"
+      },
+      {
+        "character": "mikyung",
+        "fact_id": "f175"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f175"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f175"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f176",
+        "note": "49화 기념식에서 도현의 설명으로 앎"
+      },
+      {
+        "character": "hyeryeon",
+        "fact_id": "f176"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f176"
+      },
+      {
+        "character": "eunjae",
+        "fact_id": "f176"
+      },
+      {
+        "character": "mikyung",
+        "fact_id": "f176"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f176"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f176"
+      },
+      {
+        "character": "gicheol",
+        "fact_id": "f183"
+      },
+      {
+        "character": "hyeryeon",
+        "fact_id": "f183"
+      },
+      {
+        "character": "seungjae",
+        "fact_id": "f183"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f183"
+      },
+      {
+        "character": "taeseok",
+        "fact_id": "f183"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f183"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f183"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f183"
+      },
+      {
+        "character": "hyeryeon",
+        "fact_id": "f188"
+      },
+      {
+        "character": "taeseok",
+        "fact_id": "f188"
+      },
+      {
+        "character": "eunjae",
+        "fact_id": "f188"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f188"
+      },
+      {
+        "character": "mikyung",
+        "fact_id": "f188"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f188"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f188"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f195"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f195"
+      },
+      {
+        "character": "gicheol",
+        "fact_id": "f195"
+      },
+      {
+        "character": "hyeryeon",
+        "fact_id": "f195"
+      },
+      {
+        "character": "seungjae",
+        "fact_id": "f195"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f195"
+      },
+      {
+        "character": "taeseok",
+        "fact_id": "f195"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f195"
+      },
+      {
+        "character": "eunjae",
+        "fact_id": "f195"
+      },
+      {
+        "character": "mikyung",
+        "fact_id": "f195"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f195"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f195"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f196"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f196"
+      },
+      {
+        "character": "gicheol",
+        "fact_id": "f196"
+      },
+      {
+        "character": "hyeryeon",
+        "fact_id": "f196"
+      },
+      {
+        "character": "seungjae",
+        "fact_id": "f196"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f196"
+      },
+      {
+        "character": "taeseok",
+        "fact_id": "f196"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f196"
+      },
+      {
+        "character": "eunjae",
+        "fact_id": "f196"
+      },
+      {
+        "character": "mikyung",
+        "fact_id": "f196"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f196"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f196"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f197"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f197"
+      },
+      {
+        "character": "gicheol",
+        "fact_id": "f197"
+      },
+      {
+        "character": "hyeryeon",
+        "fact_id": "f197"
+      },
+      {
+        "character": "seungjae",
+        "fact_id": "f197"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f197"
+      },
+      {
+        "character": "taeseok",
+        "fact_id": "f197"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f197"
+      },
+      {
+        "character": "eunjae",
+        "fact_id": "f197"
+      },
+      {
+        "character": "mikyung",
+        "fact_id": "f197"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f197"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f197"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f198"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f198"
+      },
+      {
+        "character": "gicheol",
+        "fact_id": "f198"
+      },
+      {
+        "character": "hyeryeon",
+        "fact_id": "f198"
+      },
+      {
+        "character": "seungjae",
+        "fact_id": "f198"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f198"
+      },
+      {
+        "character": "taeseok",
+        "fact_id": "f198"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f198"
+      },
+      {
+        "character": "eunjae",
+        "fact_id": "f198"
+      },
+      {
+        "character": "mikyung",
+        "fact_id": "f198"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f198"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f198"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f199"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f199"
+      },
+      {
+        "character": "gicheol",
+        "fact_id": "f199"
+      },
+      {
+        "character": "hyeryeon",
+        "fact_id": "f199"
+      },
+      {
+        "character": "seungjae",
+        "fact_id": "f199"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f199"
+      },
+      {
+        "character": "taeseok",
+        "fact_id": "f199"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f199"
+      },
+      {
+        "character": "eunjae",
+        "fact_id": "f199"
+      },
+      {
+        "character": "mikyung",
+        "fact_id": "f199"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f199"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f199"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f200"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f200"
+      },
+      {
+        "character": "gicheol",
+        "fact_id": "f200"
+      },
+      {
+        "character": "hyeryeon",
+        "fact_id": "f200"
+      },
+      {
+        "character": "seungjae",
+        "fact_id": "f200"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f200"
+      },
+      {
+        "character": "taeseok",
+        "fact_id": "f200"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f200"
+      },
+      {
+        "character": "eunjae",
+        "fact_id": "f200"
+      },
+      {
+        "character": "mikyung",
+        "fact_id": "f200"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f200"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f200"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f201"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f201"
+      },
+      {
+        "character": "gicheol",
+        "fact_id": "f201"
+      },
+      {
+        "character": "hyeryeon",
+        "fact_id": "f201"
+      },
+      {
+        "character": "seungjae",
+        "fact_id": "f201"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f201"
+      },
+      {
+        "character": "taeseok",
+        "fact_id": "f201"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f201"
+      },
+      {
+        "character": "eunjae",
+        "fact_id": "f201"
+      },
+      {
+        "character": "mikyung",
+        "fact_id": "f201"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f201"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f201"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f039",
+        "note": "49화 기념식에서 도현의 \"제 아버지, 차기철 회장의 지시였습니다\"와 회장의 사퇴 발표를 들음(49:137·211)"
+      },
+      {
+        "character": "eunjae",
+        "fact_id": "f039",
+        "note": "49화 기념식에서 도현의 \"제 아버지, 차기철 회장의 지시였습니다\"와 회장의 사퇴 발표를 들음(49:137·211). 46화에는 이름 없이 \"한결그룹 회장\"으로만 들음"
+      },
+      {
+        "character": "mikyung",
+        "fact_id": "f039",
+        "note": "49화 기념식에서 도현의 \"제 아버지, 차기철 회장의 지시였습니다\"와 회장의 사퇴 발표를 들음(49:137·211). 46화에는 이름 없이 \"한결그룹 회장\"으로만 들음"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f039",
+        "note": "49화 기념식에서 도현의 \"제 아버지, 차기철 회장의 지시였습니다\"와 회장의 사퇴 발표를 들음(49:137·211)"
+      },
+      {
+        "character": "eunjae",
+        "fact_id": "f054",
+        "note": "49화 기념식에서 도현의 \"제 아버지, 차기철 회장의 지시였습니다\"를 들음(49:137)"
+      },
+      {
+        "character": "mikyung",
+        "fact_id": "f054",
+        "note": "49화 기념식에서 도현의 \"제 아버지, 차기철 회장의 지시였습니다\"를 들음(49:137)"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f054",
+        "note": "49화 기념식에서 도현의 \"제 아버지, 차기철 회장의 지시였습니다\"를 들음(49:137)"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f078",
+        "note": "49화 기념식에서 혜련의 \"평창동 집 서재 앞을 지나다가 남편의 통화를 들었습니다\"를 들음(49:167)"
+      },
+      {
+        "character": "eunjae",
+        "fact_id": "f078",
+        "note": "49화 기념식에서 혜련의 \"평창동 집 서재 앞을 지나다가 남편의 통화를 들었습니다\"를 들음(49:167)"
+      },
+      {
+        "character": "mikyung",
+        "fact_id": "f078",
+        "note": "49화 기념식에서 혜련의 \"평창동 집 서재 앞을 지나다가 남편의 통화를 들었습니다\"를 들음(49:167)"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f078",
+        "note": "49화 기념식에서 혜련의 \"평창동 집 서재 앞을 지나다가 남편의 통화를 들었습니다\"를 들음(49:167)"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f078",
+        "note": "49화 기념식에서 혜련의 \"평창동 집 서재 앞을 지나다가 남편의 통화를 들었습니다\"를 들음(49:167)"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f065",
+        "note": "4월 둘째 주 토요일 기념식에 참석함(49:1)"
+      },
+      {
+        "character": "eunjae",
+        "fact_id": "f065",
+        "note": "4월 둘째 주 토요일 기념식에 참석함(49:1)"
+      },
+      {
+        "character": "mikyung",
+        "fact_id": "f065",
+        "note": "4월 둘째 주 토요일 기념식에 참석함(49:1)"
+      },
+      {
+        "character": "taeseok",
+        "fact_id": "f065",
+        "note": "4월 둘째 주 토요일 기념식에 참석함(49:1)"
+      },
+      {
+        "character": "hyeryeon",
+        "fact_id": "f065",
+        "note": "4월 둘째 주 토요일 기념식에 참석함(49:1)"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f014",
+        "note": "49화 기념식에서 \"이 청운장 별관에서… 목수 고명수 씨가 돌아가셨습니다\"와 장식장 명판 \"목수 고명수 작\"으로 앎(49:55·235). 그 전에는 청운장과의 관계를 몰랐음(49:63)"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f141",
+        "note": "49화 기념식에서 도현의 \"제 아버지, 차기철 회장의 지시였습니다\"와 혜련의 증언을 들음(49:137·167). 이별은 48화에야 처음 알았음(48:193)"
+      },
+      {
+        "character": "seungjae",
+        "fact_id": "f144",
+        "note": "49화 기념식에서 도현의 \"제 아버지, 차기철 회장의 지시였습니다\"(49:133-137)와 혜련의 증언(49:169)으로 앎. 49:175 \"처음 듣는 얼굴\""
+      },
+      {
+        "character": "seungjae",
+        "fact_id": "f145",
+        "note": "49화 기념식에서 도현의 \"제 아버지, 차기철 회장의 지시였습니다\"(49:133-137)와 혜련의 증언(49:169)으로 앎. 49:175 \"처음 듣는 얼굴\""
+      },
+      {
+        "character": "hyeryeon",
+        "fact_id": "f220",
+        "note": "49화 사회자의 \"차도현 상무의 축사가 있겠습니다\"로 앎(49:43)"
+      },
+      {
+        "character": "seungjae",
+        "fact_id": "f220",
+        "note": "49화 사회자의 \"차도현 상무의 축사가 있겠습니다\"로 앎(49:43)"
+      },
+      {
+        "character": "taeseok",
+        "fact_id": "f220",
+        "note": "49화 사회자의 \"차도현 상무의 축사가 있겠습니다\"로 앎(49:43)"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f220",
+        "note": "49화 사회자의 \"차도현 상무의 축사가 있겠습니다\"로 앎(49:43)"
+      },
+      {
+        "character": "eunjae",
+        "fact_id": "f220",
+        "note": "49화 사회자의 \"차도현 상무의 축사가 있겠습니다\"로 앎(49:43)"
+      },
+      {
+        "character": "mikyung",
+        "fact_id": "f220",
+        "note": "49화 사회자의 \"차도현 상무의 축사가 있겠습니다\"로 앎(49:43)"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f220",
+        "note": "49화 사회자의 \"차도현 상무의 축사가 있겠습니다\"로 앎(49:43)"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f220",
+        "note": "49화 사회자의 \"차도현 상무의 축사가 있겠습니다\"로 앎(49:43)"
+      },
+      {
+        "character": "eunjae",
+        "fact_id": "f010",
+        "note": "48화에는 \"청운장 복원을 맡긴 사람\"이라는 인사와 우진의 \"차 상무님\"만 들음(48:169·231). 49화 사회자 소개로 한결그룹 상무임을 들음(49:43)"
+      },
+      {
+        "character": "taeseok",
+        "fact_id": "f213",
+        "note": "49화 사회자의 \"한결그룹 전략기획실 차도현 상무의 축사가 있겠습니다\"로 들음(49:43)"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f213",
+        "note": "49화 사회자의 \"한결그룹 전략기획실 차도현 상무의 축사가 있겠습니다\"로 들음(49:43)"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f213",
+        "note": "49화 사회자의 \"한결그룹 전략기획실 차도현 상무의 축사가 있겠습니다\"로 들음(49:43)"
+      },
+      {
+        "character": "mikyung",
+        "fact_id": "f213",
+        "note": "49화 사회자의 \"한결그룹 전략기획실 차도현 상무의 축사가 있겠습니다\"로 들음(49:43)"
+      },
+      {
+        "character": "eunjae",
+        "fact_id": "f213",
+        "note": "49화 사회자의 \"한결그룹 전략기획실 차도현 상무의 축사가 있겠습니다\"로 들음(49:43)"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f084",
+        "note": "49화 기념식에서 도현의 \"본관 객실의 미성년 목격자가 저였습니다\"로 앎(49:123)"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f086",
+        "note": "49화 기념식에서 도현의 \"본관 객실의 미성년 목격자가 저였습니다\"로 앎(49:123)"
+      }
+    ],
+    "pov_must_hide": [],
+    "interlude_pov_must_hide": null,
+    "ending_hook": "기념식이 끝난 로비에 하람이 혼자 장식장 앞에 서서 'ㄷㅎ' 글자를 찾는다.",
+    "end_state": "고명수의 명예가 회복되었다."
+  },
+  {
+    "ep": 50,
+    "title": "결",
+    "pov": "jaein",
+    "interlude_pov": null,
+    "interlude_scope": null,
+    "location": "청운장 고명수 목공실·결공방",
+    "characters_present": [
+      "jaein",
+      "dohyun",
+      "haram",
+      "eunjae",
+      "taeseok",
+      "woojin",
+      "narae",
+      "jihoon",
+      "seungjae",
+      "mikyung"
+    ],
+    "summary": "반년 뒤, 청운장 별관 터에 남은 창고를 고쳐 연 '고명수 목공실'이 견습 목수 교육장이 된다. 나래는 정식 복원가가 되고, 재인은 결공방과 목공실을 오가며 일한다. 도현은 한결그룹을 나와 청운장 운영 재단을 맡고, 지훈은 재단으로 자리를 옮긴다. 한결호텔 대표가 된 승재는 축하 화환에 '다음엔 내가 이긴다'고 적어 보낸다. 우진과 나래는 사귀기 시작하고, 하람은 어린이 바둑 대회 우승 트로피를 들고 태석에게 달려간다. 마지막 장면에서 재인과 도현은 목공실 기둥에 나란히 이름을 새긴다.",
+    "beats": [
+      "반년 뒤 목공실 개관식",
+      "나래가 정식 복원가가 된다",
+      "도현이 청운장 재단을 맡고 지훈이 재단 사무국장으로 합류한다",
+      "승재의 화환",
+      "나래가 우진을 '소방관 남자친구'라고 소개한다",
+      "하람의 바둑 우승",
+      "재인과 도현이 기둥에 이름을 새긴다"
+    ],
+    "facts_revealed": [
+      "f202",
+      "f203",
+      "f204",
+      "f205",
+      "f206",
+      "f207",
+      "f208"
+    ],
+    "hints_allowed": [
+      "허용: 따뜻한 마무리",
+      "금지: 새로운 비밀이나 갈등을 여는 서술"
+    ],
+    "relationship_changes": [
+      {
+        "relationship": "r03",
+        "a": "dohyun",
+        "b": "jihoon",
+        "status": "재단에서 다시 곁을 지키는 친구",
+        "public": true
+      },
+      {
+        "relationship": "r04",
+        "a": "dohyun",
+        "b": "seungjae",
+        "status": "서로를 인정하는 라이벌",
+        "public": true
+      },
+      {
+        "relationship": "r05",
+        "a": "jihoon",
+        "b": "seungjae",
+        "status": "서로를 인정하는 선후배",
+        "public": true
+      },
+      {
+        "relationship": "r13",
+        "a": "woojin",
+        "b": "narae",
+        "status": "연인",
+        "public": true
+      },
+      {
+        "relationship": "r15",
+        "a": "jaein",
+        "b": "narae",
+        "status": "함께 일하는 동료 복원가",
+        "public": true
+      }
+    ],
+    "knowledge_events": [
+      {
+        "character": "jaein",
+        "fact_id": "f202"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f202"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f202"
+      },
+      {
+        "character": "eunjae",
+        "fact_id": "f202"
+      },
+      {
+        "character": "taeseok",
+        "fact_id": "f202"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f202"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f202"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f202"
+      },
+      {
+        "character": "seungjae",
+        "fact_id": "f202"
+      },
+      {
+        "character": "mikyung",
+        "fact_id": "f202"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f203"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f203"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f204"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f204"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f204"
+      },
+      {
+        "character": "eunjae",
+        "fact_id": "f204"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f204"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f204"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f204"
+      },
+      {
+        "character": "seungjae",
+        "fact_id": "f204"
+      },
+      {
+        "character": "mikyung",
+        "fact_id": "f204"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f205"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f205"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f205"
+      },
+      {
+        "character": "eunjae",
+        "fact_id": "f205"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f205"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f205"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f205"
+      },
+      {
+        "character": "seungjae",
+        "fact_id": "f205"
+      },
+      {
+        "character": "mikyung",
+        "fact_id": "f205"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f206"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f206"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f206"
+      },
+      {
+        "character": "eunjae",
+        "fact_id": "f206"
+      },
+      {
+        "character": "taeseok",
+        "fact_id": "f206"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f206"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f206"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f206"
+      },
+      {
+        "character": "seungjae",
+        "fact_id": "f206"
+      },
+      {
+        "character": "mikyung",
+        "fact_id": "f206"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f207"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f207"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f207"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f208"
+      },
+      {
+        "character": "dohyun",
+        "fact_id": "f208"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f208"
+      },
+      {
+        "character": "eunjae",
+        "fact_id": "f208"
+      },
+      {
+        "character": "taeseok",
+        "fact_id": "f208"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f208"
+      },
+      {
+        "character": "narae",
+        "fact_id": "f208"
+      },
+      {
+        "character": "jihoon",
+        "fact_id": "f208"
+      },
+      {
+        "character": "seungjae",
+        "fact_id": "f208"
+      },
+      {
+        "character": "mikyung",
+        "fact_id": "f208"
+      },
+      {
+        "character": "eunjae",
+        "fact_id": "f029",
+        "note": "50화 하람이 태석에게 \"마지막에 할아버지가 가르쳐 준 수 썼어\"라고 할 때 곁에 있었음(50:189-193)"
+      },
+      {
+        "character": "eunjae",
+        "fact_id": "f101",
+        "note": "50화 태석의 \"도현아, 너도 봤느냐\"와 도현의 \"네, 할아버지\"를 곁에서 들음(50:193-205)"
+      },
+      {
+        "character": "haram",
+        "fact_id": "f032",
+        "note": "50화 별관 터에 남은 창고를 고친 고명수 목공실 개관식에 참석함(50:31-51). f202를 알면서 함께 앎"
+      },
+      {
+        "character": "eunjae",
+        "fact_id": "f032",
+        "note": "50화 별관 터에 남은 창고를 고친 고명수 목공실 개관식에 참석함(50:31-51). f202를 알면서 함께 앎"
+      },
+      {
+        "character": "mikyung",
+        "fact_id": "f032",
+        "note": "50화 별관 터에 남은 창고를 고친 고명수 목공실 개관식에 참석함(50:31-51). f202를 알면서 함께 앎"
+      },
+      {
+        "character": "jaein",
+        "fact_id": "f150",
+        "note": "50화 나래가 \"제 소방관 남자친구예요!\"라고 밝힐 때 함께 있었음(50:143). 사귀는 사이(f207)를 알면서 나래의 호감도 앎"
+      },
+      {
+        "character": "woojin",
+        "fact_id": "f150",
+        "note": "50화 나래가 \"제 소방관 남자친구예요!\"라고 밝힘(50:143). 사귀는 사이(f207)가 되면서 나래의 호감을 앎"
+      }
+    ],
+    "pov_must_hide": [],
+    "interlude_pov_must_hide": null,
+    "ending_hook": "기둥에는 '明' 자 각인 옆에 두 사람의 이름이 나란히 새겨진다.",
+    "end_state": "모두가 각자의 결을 찾았다."
+  }
+]

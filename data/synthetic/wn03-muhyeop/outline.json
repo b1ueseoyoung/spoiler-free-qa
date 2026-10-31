@@ -1,0 +1,8800 @@
+[
+ {
+  "ep": 1,
+  "title": "대숲의 봄비",
+  "pov": "seojin",
+  "location": "운령산 취죽문",
+  "characters_present": [
+   "seojin",
+   "taeheo",
+   "eunchan"
+  ],
+  "summary": "봄비가 내리는 운령산 대나무 숲 속 취죽문에서 대제자 한서진이 문주 곽태허, 막내 노은찬과 하루를 보낸다. 곽태허는 서진에게 낙엽무성검의 마지막 초식을 가르칠 때가 되었다면서도 올가을 운하맹의 청류회가 끝나면 이야기하겠다며 미룬다. 서진은 아홉 살에 고아로 사부에게 거두어진 뒤 열여덟 해를 이 숲에서 살았고, 3년 전 사형 목연호가 문파를 떠난 뒤로는 사부를 홀로 모셔 왔다. 은찬은 사부가 새로 깎아 준 목검을 자랑하며 연무장을 뛰어다닌다. 서진은 밤 수련을 마치고 자신의 검 청석을 연무장 검가에 걸어 둔 채 잠든다. 새벽녘 사부 처소에서 둔한 소리를 들은 서진은 달려가 숨진 사부를 발견한다. 시신 곁에는 청석이 놓여 있고, 사부의 목에는 나란한 가는 검흔 두 줄이 남아 있다. 뒤따라온 은찬이 문간에서 사부 곁에 무릎 꿇은 서진을 본다.",
+  "beats": [
+   "곽태허가 마지막 초식 전수를 운하맹 청류회 뒤로 미룬다",
+   "고아로 거두어진 서진과 떠난 사형의 빈자리",
+   "은찬이 사부가 깎아 준 새 목검을 자랑한다",
+   "서진이 청석을 연무장 검가에 걸어 두고 잠든다",
+   "새벽에 숨진 사부와 시신 곁의 청석을 발견한다",
+   "목에 남은 나란한 검흔 두 줄",
+   "문간에 선 은찬"
+  ],
+  "facts_revealed": [
+   "f001",
+   "f002",
+   "f003",
+   "f004",
+   "f005",
+   "f006",
+   "f007",
+   "f008",
+   "f009",
+   "f010",
+   "f011",
+   "f012",
+   "f013",
+   "f014",
+   "f015",
+   "f016",
+   "f017",
+   "f018"
+  ],
+  "hints_allowed": [
+   "곽태허가 마지막 초식 이야기를 청류회 뒤로 미루며 무언가 더 말하려다 그만두는 모습을 그려도 된다(약함).",
+   "은찬의 새 목검을 사부가 깎아 준 장난감으로 그려도 된다(약함).",
+   "범인 단서는 사부 목의 나란한 검흔 두 줄까지만 그려도 된다(중간). 그 밖의 단서는 넣지 않는다.",
+   "3년 전 떠난 사형 연호를 서진이 그리워하는 빈자리로 그려도 된다(약함).",
+   "운하맹과 청류회는 이름과 성격까지만 그려도 된다(약함). 다른 단체 이름은 쓰지 않는다.",
+   "곽태허와 은찬이 나누는 말은 끼니와 수련 같은 일상의 말로만 쓴다.",
+   "곽태허의 왼쪽 어깨가 조금 처진 모습을 그려도 된다(약함). 까닭은 쓰지 않는다."
+  ],
+  "relationship_changes": [
+   {
+    "relationship": "r06",
+    "a": "seojin",
+    "b": "taeheo",
+    "status": "사별",
+    "public": true
+   }
+  ],
+  "knowledge_events": [
+   {
+    "character": "seojin",
+    "fact_id": "f007"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f011"
+   },
+   {
+    "character": "janghun",
+    "fact_id": "f011",
+    "offstage": true,
+    "note": "검가에서 청석을 가져다 시신 곁에 둠"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f012"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f012"
+   },
+   {
+    "character": "janghun",
+    "fact_id": "f012",
+    "offstage": true,
+    "note": "직접 저지른 일이라 그 밤부터 앎"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f013"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f013"
+   },
+   {
+    "character": "janghun",
+    "fact_id": "f013",
+    "offstage": true,
+    "note": "직접 놓아둠"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f014"
+   },
+   {
+    "character": "janghun",
+    "fact_id": "f014",
+    "offstage": true,
+    "note": "직접 벤 상처"
+   },
+   {
+    "character": "janghun",
+    "fact_id": "f132",
+    "offstage": true,
+    "note": "직접 저지름"
+   },
+   {
+    "character": "janghun",
+    "fact_id": "f133",
+    "offstage": true,
+    "note": "직접 놓아둠"
+   },
+   {
+    "character": "janghun",
+    "fact_id": "f135",
+    "offstage": true,
+    "note": "직접 저지를 때의 판단"
+   }
+  ],
+  "pov_must_hide": [
+   "f019",
+   "f020",
+   "f021",
+   "f025",
+   "f027",
+   "f029",
+   "f031",
+   "f032",
+   "f033",
+   "f035",
+   "f036",
+   "f037",
+   "f041",
+   "f046",
+   "f055",
+   "f056",
+   "f075",
+   "f076",
+   "f078",
+   "f083",
+   "f089"
+  ],
+  "ending_hook": "은찬이 떨리는 목소리로 '대사형……?' 하고 부른다.",
+  "end_state": "곽태허 사망. 서진과 은찬만 시신 곁에 있고 청석은 시신 곁에 놓여 있다."
+ },
+ {
+  "ep": 2,
+  "title": "새벽의 집법당",
+  "pov": "seojin",
+  "location": "운령산 취죽문과 뒷산 대숲",
+  "characters_present": [
+   "seojin",
+   "eunchan",
+   "janghun"
+  ],
+  "summary": "해가 뜨기도 전에 운하맹 집법당주 장헌이 무사들을 이끌고 취죽문에 들이닥친다. 장헌은 맹주 양규천의 이름으로 서진을 사부 살해 혐의로 잡아가겠다고 선언하고, 시신 곁의 청석을 증거로 거두어 든다. 서진은 결백을 주장하지만 장헌은 사파 연합 야화련과 내통한 것 아니냐며 몰아붙인다. 은찬이 대사형은 그러지 않았다고 울부짖자 서진은 은찬을 안고 뒷산 대숲으로 몸을 피한다. 숨어서 내려다보니 집법당 무사들이 사부의 시신보다 서고를 먼저 뒤지고 있다. 은찬은 3년 전 떠난 연호 사형이 있었으면 좋겠다고 훌쩍이고, 서진은 대답하지 못한다. 해 질 녘 운하맹이 서진에게 현상금 수배령을 내렸다는 외침이 산 아래에서 들려온다.",
+  "beats": [
+   "장헌이 이튿날 새벽 취죽문에 도착한다",
+   "맹주의 이름으로 체포를 선언하고 청석을 증거로 든다",
+   "은찬을 안고 대숲으로 도주한다",
+   "집법당 무사들이 서고부터 뒤진다",
+   "은찬이 연호 사형을 그리워한다",
+   "현상금 수배령"
+  ],
+  "facts_revealed": [
+   "f019",
+   "f020",
+   "f021",
+   "f022",
+   "f023",
+   "f024"
+  ],
+  "hints_allowed": [
+   "장헌이 사흘 길을 너무 이르게 왔다는 어색함을 서진이 느끼는 모습을 그려도 된다(약함). 이유는 추론하지 않는다.",
+   "장헌은 집법당주의 직함과 율 조문 번호부터 읊는 말투로 그려도 된다(약함). 차림은 무사들을 이끄는 우두머리라는 것과 등에 멘 검은 가죽 검집까지만 쓰고, 검을 뽑거나 날의 생김새를 묘사하지 않는다.",
+   "집법당 무사들이 사부의 시신보다 서고부터 뒤지는 모습을 그려도 된다(중간). 무엇을 찾는지는 말하지 않는다.",
+   "은찬이 떠난 연호 사형을 그리워하며 훌쩍이는 모습을 그려도 된다(약함)."
+  ],
+  "relationship_changes": [
+   {
+    "relationship": "r10",
+    "a": "janghun",
+    "b": "gyucheon",
+    "status": "맹주와 집법당주",
+    "public": true
+   },
+   {
+    "relationship": "r11",
+    "a": "seojin",
+    "b": "janghun",
+    "status": "추포자와 수배자",
+    "public": true
+   }
+  ],
+  "knowledge_events": [
+   {
+    "character": "gyucheon",
+    "fact_id": "f012",
+    "offstage": true,
+    "note": "장헌의 보고"
+   },
+   {
+    "character": "gyucheon",
+    "fact_id": "f013",
+    "offstage": true,
+    "note": "장헌의 보고"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f020"
+   },
+   {
+    "character": "janghun",
+    "fact_id": "f022"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f022"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f022"
+   },
+   {
+    "character": "gyucheon",
+    "fact_id": "f022",
+    "offstage": true,
+    "note": "장헌의 보고"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f023"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f023"
+   },
+   {
+    "character": "janghun",
+    "fact_id": "f023"
+   },
+   {
+    "character": "gyucheon",
+    "fact_id": "f023",
+    "offstage": true,
+    "note": "맹주 이름으로 내려진 수배령"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f024"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f024"
+   },
+   {
+    "character": "janghun",
+    "fact_id": "f024"
+   },
+   {
+    "character": "janghun",
+    "fact_id": "f052",
+    "offstage": true,
+    "note": "수배령 뒤 스스로 머문 곳"
+   },
+   {
+    "character": "gyucheon",
+    "fact_id": "f052",
+    "offstage": true,
+    "note": "장헌의 보고"
+   },
+   {
+    "character": "gyucheon",
+    "fact_id": "f132",
+    "offstage": true,
+    "note": "장헌의 보고"
+   },
+   {
+    "character": "gyucheon",
+    "fact_id": "f133",
+    "offstage": true,
+    "note": "장헌의 보고"
+   }
+  ],
+  "pov_must_hide": [
+   "f025",
+   "f027",
+   "f029",
+   "f031",
+   "f032",
+   "f033",
+   "f035",
+   "f036",
+   "f037",
+   "f041",
+   "f046",
+   "f055",
+   "f056",
+   "f075",
+   "f076",
+   "f078",
+   "f083",
+   "f089"
+  ],
+  "ending_hook": "산 아래 마을 벽마다 서진의 얼굴이 그려진 방이 붙는다.",
+  "end_state": "서진과 은찬은 수배된 채 대숲에 숨어 있다."
+ },
+ {
+  "ep": 3,
+  "title": "반월객잔",
+  "pov": "seojin",
+  "location": "운령산 기슭 반월객잔",
+  "characters_present": [
+   "seojin",
+   "eunchan",
+   "masam",
+   "soryang",
+   "gangpil"
+  ],
+  "summary": "사흘을 산에 숨어 지낸 서진과 은찬은 굶주림을 못 이겨 심부름길에 드나들던 산기슭 반월객잔에 들어선다. 객잔 주인 마삼은 벽에 붙은 서진의 수배 방을 떼어 접으며 야화련과 내통했다니 늘 얼굴을 가리고 다닌다는 그 가면 쓴 부련주라도 만나 보았느냐고 능청을 떨고, 모른 척해 주는 대신 정보상다운 값을 요구한다. 그때 단하세가 장남 위소량이 호위무사 강필을 데리고 들어와 서진을 단번에 알아본다. 소량은 5년 전 청류회 후기지수 비무 결승에서 맞붙은 맞수를 이런 꼴로 만날 줄 몰랐다며 비웃는다. 7년째 소량을 호위해 온 강필은 말없이 객잔 출입구를 막아선다. 소량은 현상금이 아니라 자기 손으로 서진을 잡겠다고 선언한다. 서진은 은찬을 마삼에게 잠시 맡기고 뒤뜰로 나간다.",
+  "beats": [
+   "굶주린 서진과 은찬이 반월객잔에 들어선다",
+   "마삼이 수배 방을 떼며 값을 요구한다",
+   "위소량과 강필이 나타난다",
+   "5년 전 결승 맞수의 재회",
+   "소량의 도전",
+   "은찬을 마삼에게 맡기고 뒤뜰로 나간다"
+  ],
+  "facts_revealed": [
+   "f025",
+   "f026",
+   "f027",
+   "f028",
+   "f029",
+   "f030"
+  ],
+  "hints_allowed": [
+   "마삼이 서진을 알아보면서도 모른 척해 주는 값을 부르는 능청을 그려도 된다(약함). 마삼은 객잔 주인이자 정보상이라는 것까지만 쓴다.",
+   "강필을 말없이 출입구를 막는 호위로 그려도 된다(약함).",
+   "소량이 5년 전 결승을 곱씹는 모습을 그려도 된다(약함). 결승의 승패는 쓰지 않는다.",
+   "마삼이 늘 가면을 쓴다는 야화련 부련주를 농담처럼 입에 올리는 것을 그려도 된다(약함). 부련주가 누구인지는 쓰지 않는다."
+  ],
+  "relationship_changes": [
+   {
+    "relationship": "r01",
+    "a": "seojin",
+    "b": "soryang",
+    "status": "수배자와 그를 잡겠다는 맞수",
+    "public": true
+   }
+  ],
+  "knowledge_events": [
+   {
+    "character": "gangpil",
+    "fact_id": "f005"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f006"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f006"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f006"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f012",
+    "offstage": true,
+    "note": "수배 방과 소문"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f012",
+    "offstage": true,
+    "note": "수배 방"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f012",
+    "offstage": true,
+    "note": "수배 방"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f012",
+    "offstage": true,
+    "note": "야화련 정보망"
+   },
+   {
+    "character": "myeonghwa",
+    "fact_id": "f012",
+    "offstage": true,
+    "note": "야화련 정보망"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f013",
+    "offstage": true,
+    "note": "수배 방에 흉기로 적힘"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f013",
+    "offstage": true,
+    "note": "수배 방"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f013",
+    "offstage": true,
+    "note": "수배 방"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f013",
+    "offstage": true,
+    "note": "야화련 정보망"
+   },
+   {
+    "character": "myeonghwa",
+    "fact_id": "f013",
+    "offstage": true,
+    "note": "야화련 정보망"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f023",
+    "offstage": true
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f023",
+    "offstage": true
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f023",
+    "offstage": true
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f023",
+    "offstage": true
+   },
+   {
+    "character": "myeonghwa",
+    "fact_id": "f023",
+    "offstage": true
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f025"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f026"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f026"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f028"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f028"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f029"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f030"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f030"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f063",
+    "offstage": true
+   }
+  ],
+  "pov_must_hide": [
+   "f031",
+   "f032",
+   "f033",
+   "f035",
+   "f036",
+   "f037",
+   "f041",
+   "f046",
+   "f055",
+   "f056",
+   "f075",
+   "f076",
+   "f078",
+   "f083",
+   "f089"
+  ],
+  "ending_hook": "소량이 맨손을 들어 보이며 '검은 필요 없지?' 하고 묻는다.",
+  "end_state": "서진과 소량이 뒤뜰에서 마주 선다."
+ },
+ {
+  "ep": 4,
+  "title": "뒤뜰의 비무",
+  "pov": "soryang",
+  "location": "반월객잔 뒤뜰",
+  "characters_present": [
+   "seojin",
+   "soryang",
+   "gangpil",
+   "masam",
+   "eunchan"
+  ],
+  "summary": "소량은 가전 장법 적운장을 펼쳐 서진을 몰아붙이고, 검을 잃은 서진은 나뭇가지 하나로 맞선다. 승부는 마삼이 뒤뜰에 물동이를 쏟아부으며 끝나고, 둘은 흠뻑 젖은 채 무승부로 물러선다. 소량은 5년 전 결승에서 서진에게 진 뒤 그 패배를 하루도 잊은 적이 없다고 내뱉는다. 서진은 사부가 숨진 밤 청석을 연무장 검가에 걸어 두었고, 집법당이 이튿날 새벽에 들이닥쳤다고 말한다. 소량은 운하맹 본산 청류대에서 운령산까지 말로 사흘 길인데 그렇게 빨리 왔다는 데 고개를 갸웃한다. 소량은 서진을 단하세가로 데려가 가주 앞에서 시비를 가리겠다고 결정한다. 강필은 아무 말 없이 말 두 필을 더 구해 온다.",
+  "beats": [
+   "적운장과 나뭇가지의 대결",
+   "마삼의 물동이로 무승부",
+   "5년 전 패배에 대한 소량의 고백",
+   "검가와 이튿날 새벽 이야기",
+   "사흘 길의 의문",
+   "단하세가로 데려가기로 결정"
+  ],
+  "facts_revealed": [
+   "f031",
+   "f032",
+   "f033",
+   "f034"
+  ],
+  "hints_allowed": [
+   "소량이 사흘 길인데 장헌이 너무 빨리 왔다고 의아해하는 모습을 그려도 된다(중간). 의문은 '너무 빨리 왔다'에서 멈춘다.",
+   "마삼이 은찬의 목검을 집어 들고 '좋은 나무로군' 하고 중얼거리는 모습을 그려도 된다(약함). 그 밖의 단서는 넣지 않는다.",
+   "강필이 말없이 말을 구해 오는 충직함을 소량 시점으로 그려도 된다(약함)."
+  ],
+  "relationship_changes": [],
+  "knowledge_events": [
+   {
+    "character": "gangpil",
+    "fact_id": "f004"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f004",
+    "offstage": true,
+    "note": "곽태허의 죽음 소문과 무성보를 엮음"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f005",
+    "offstage": true,
+    "note": "운하맹 통문"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f005",
+    "offstage": true,
+    "note": "수배 방과 소문"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f008"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f008"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f008"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f011"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f011",
+    "note": "뒤뜰에서 서진의 말을 들음"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f011",
+    "note": "뒤뜰에서 서진의 말을 들음"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f011",
+    "note": "뒤뜰에서 서진의 말을 들음"
+   },
+   {
+    "character": "jeonghyeok",
+    "fact_id": "f012",
+    "offstage": true,
+    "note": "운하맹 통문"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f012",
+    "offstage": true,
+    "note": "운하맹 통문"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f012",
+    "offstage": true,
+    "note": "소문"
+   },
+   {
+    "character": "jeonghyeok",
+    "fact_id": "f013",
+    "offstage": true,
+    "note": "운하맹 통문"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f013",
+    "offstage": true,
+    "note": "운하맹 통문"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f013",
+    "offstage": true,
+    "note": "수배 방"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f022"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f022"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f022"
+   },
+   {
+    "character": "jeonghyeok",
+    "fact_id": "f023",
+    "offstage": true
+   },
+   {
+    "character": "harin",
+    "fact_id": "f023",
+    "offstage": true
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f023",
+    "offstage": true
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f031"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f032"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f033"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f034"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f034"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f034"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f034"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f034"
+   },
+   {
+    "character": "jeonghyeok",
+    "fact_id": "f052",
+    "offstage": true,
+    "note": "운하맹 통문에 분소가 적혀 있어 그리로 서신을 보냄"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f208",
+    "offstage": true,
+    "note": "곽태허의 죽음과 수배 소문을 듣고 품은 의심"
+   }
+  ],
+  "pov_must_hide": [
+   "f035",
+   "f036",
+   "f037",
+   "f038",
+   "f039",
+   "f041",
+   "f042",
+   "f059",
+   "f064",
+   "f067",
+   "f068",
+   "f166",
+   "f167"
+  ],
+  "ending_hook": "마삼이 은찬의 목검을 집어 들고 '좋은 나무로군' 하고 중얼거린다.",
+  "end_state": "서진 일행은 단하세가로 향한다."
+ },
+ {
+  "ep": 5,
+  "title": "단하성의 가주",
+  "pov": "seojin",
+  "location": "단하성 단하세가",
+  "characters_present": [
+   "seojin",
+   "soryang",
+   "gangpil",
+   "eunchan",
+   "jeonghyeok",
+   "harin"
+  ],
+  "summary": "소량은 서진과 은찬을 단하성의 단하세가로 데려간다. 가주 위정혁은 장남이 수배범을 집에 들였다며 크게 노하고, 소량은 아버님 앞에서도 고개를 숙이지 않는다. 소량의 여동생 위하린은 은찬에게 사탕을 쥐여 주며 분위기를 풀고, 서진에게 오라버니를 이길 수 있느냐며 내기를 걸자고 웃는다. 하린은 세가의 장부와 서신을 도맡아 관리하는 똑 부러진 아가씨다. 정혁은 서진 일행에게 사흘 말미를 주며 그 안에 결백을 밝히지 못하면 운하맹에 넘기겠다고 못 박는다. 서진은 정혁이 곽태허의 이름을 듣는 순간 잠시 눈을 감는 것을 본다. 그날 밤 가주의 서재에는 늦도록 불이 켜져 있다.",
+  "beats": [
+   "단하세가 도착과 가주의 노여움",
+   "하린의 등장과 내기",
+   "장부와 서신을 맡은 하린",
+   "사흘 말미",
+   "곽태허의 이름에 눈을 감는 정혁",
+   "늦도록 불 켜진 서재"
+  ],
+  "facts_revealed": [
+   "f035",
+   "f036",
+   "f037",
+   "f038",
+   "f039",
+   "f040"
+  ],
+  "hints_allowed": [
+   "정혁이 곽태허의 이름을 듣고 잠시 눈을 감는 모습을 그려도 된다(약함). 반응한 이유는 짐작하게 하지 않는다.",
+   "그날 밤 가주의 서재에 늦도록 불이 켜진 모습을 그려도 된다(약함). 서재 안의 일은 쓰지 않는다.",
+   "하린이 은찬에게 오라버니 이야기를 속삭이는 장면을 그려도 된다(약함)."
+  ],
+  "relationship_changes": [
+   {
+    "relationship": "r07",
+    "a": "soryang",
+    "b": "jeonghyeok",
+    "status": "부딪치는 부자",
+    "public": true
+   }
+  ],
+  "knowledge_events": [
+   {
+    "character": "harin",
+    "fact_id": "f004"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f027"
+   },
+   {
+    "character": "jeonghyeok",
+    "fact_id": "f034"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f035"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f036"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f037"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f038"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f038"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f039"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f039"
+   },
+   {
+    "character": "jeonghyeok",
+    "fact_id": "f040"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f040"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f040"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f040"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f040"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f040"
+   },
+   {
+    "character": "jeonghyeok",
+    "fact_id": "f048",
+    "offstage": true,
+    "note": "5화 밤에 서신을 씀. 본문은 기척만 그림"
+   },
+   {
+    "character": "jeonghyeok",
+    "fact_id": "f049",
+    "offstage": true,
+    "note": "5화 밤 분소로 서신을 쓸 때 이미 넘기기로 정함. 본문은 늦도록 불 켜진 서재만 그림"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f057",
+    "offstage": true,
+    "note": "정보망으로 들음"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f058",
+    "offstage": true,
+    "note": "정보망으로 들음"
+   }
+  ],
+  "pov_must_hide": [
+   "f041",
+   "f046",
+   "f055",
+   "f056",
+   "f075",
+   "f076",
+   "f078",
+   "f083",
+   "f089"
+  ],
+  "ending_hook": "하린이 은찬에게 속삭인다. '우리 오라버니가 남을 데려온 건 처음이야.'",
+  "end_state": "서진 일행은 단하세가 객채에 머문다. 사흘 말미가 시작된다."
+ },
+ {
+  "ep": 6,
+  "title": "검흔 두 줄",
+  "pov": "harin",
+  "location": "단하세가 정원과 객채",
+  "characters_present": [
+   "harin",
+   "eunchan",
+   "seojin",
+   "soryang",
+   "gangpil"
+  ],
+  "summary": "하린은 정원 연못가에서 은찬과 물수제비를 뜨며 놀다가 객채에서 새어 나오는 오라버니와 서진의 언성을 듣는다. 서진은 사부의 목에 난 검흔이 나란한 두 줄이었다고 설명하고, 소량은 취죽문 검법은 한 번에 한 줄로 베는 검인데 두 줄이면 이상하다고 짚는다. 강필은 말없이 그 검흔 모양을 종이에 옮겨 그린다. 은찬은 하린에게 대사형이 얼마나 착한 사람인지 쉬지 않고 이야기한다. 저녁상 앞에서 하린은 은찬에게 생선 가시를 발라 주다가, 3년 전 내기에서 져 강필에게 소원 하나를 들어줄 빚이 있으니 이제 그만 받아 가라고 조른다. 강필은 아직 정하지 못했다고만 답한다. 소량은 강필이 3년째 소원을 아끼는 데는 까닭이 있을 거라며 둘을 놀린다.",
+  "beats": [
+   "연못가의 하린과 은찬",
+   "검흔 두 줄과 한 줄로 베는 취죽문 검법",
+   "강필이 검흔 모양을 그린다",
+   "은찬의 대사형 자랑",
+   "3년 묵은 내기 빚",
+   "소원을 아끼는 강필과 소량의 놀림"
+  ],
+  "facts_revealed": [
+   "f041",
+   "f042"
+  ],
+  "hints_allowed": [
+   "하린이 강필에게 3년 묵은 내기 빚을 받아 가라고 조르고 강필이 아직 정하지 못했다고 답하는 장면을 그려도 된다(중간). 강필이 소원을 아끼는 까닭은 쓰지 않는다.",
+   "두 줄 검흔이 한 줄로 베는 취죽문 검법과 맞지 않는다는 의문을 그려도 된다(중간). 의문은 의문으로 남긴다.",
+   "강필이 검흔 모양을 종이에 옮겨 그리는 모습을 그려도 된다(약함). 그 밖의 단서는 넣지 않는다."
+  ],
+  "relationship_changes": [
+   {
+    "relationship": "r04",
+    "a": "harin",
+    "b": "gangpil",
+    "status": "3년 묵은 내기 빚으로 얽힌 아가씨와 호위무사",
+    "public": true
+   }
+  ],
+  "knowledge_events": [
+   {
+    "character": "harin",
+    "fact_id": "f002"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f006"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f014"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f014"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f014"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f041"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f041"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f042"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f042"
+   },
+   {
+    "character": "janghun",
+    "fact_id": "f048",
+    "offstage": true,
+    "note": "서신을 받음"
+   },
+   {
+    "character": "gyucheon",
+    "fact_id": "f048",
+    "offstage": true,
+    "note": "서신 보고"
+   }
+  ],
+  "pov_must_hide": [
+   "f059",
+   "f067",
+   "f068",
+   "f167"
+  ],
+  "ending_hook": "멀리 단하성 성문 쪽에서 말발굽 소리가 울린다.",
+  "end_state": "검흔의 의문이 일행 사이에 공유된다. 하린과 강필 사이의 3년 묵은 내기 빚이 드러난다."
+ },
+ {
+  "ep": 7,
+  "title": "떠돌이 의원",
+  "pov": "seojin",
+  "location": "단하성 시장과 단하세가 객채",
+  "characters_present": [
+   "seojin",
+   "eunchan",
+   "harin",
+   "danyeong",
+   "soryang"
+  ],
+  "summary": "산에서 비를 맞으며 숨어 지낸 탓인지 은찬이 갑자기 고열에 시달린다. 하린이 시장에서 떠돌이 의원 설단영을 데려오고, 단영은 회맥침이라는 침술로 은찬의 열을 내린다. 단영은 서진의 얼굴을 보고 수배범임을 알아보지만 '저는 환자만 봅니다'라며 모른 척한다. 열이 내린 은찬은 단영에게 여섯 살 때 취죽문에 들어왔다고 재잘거린다. 서진이 값을 치르려 하지만 단영은 받지 않는다. 단영은 떠나기 전 서진에게 사부가 어떻게 돌아가셨는지 몇 가지를 조용히 묻는다. 소량은 의원이 지나치게 침착하다며 의심스러운 눈길을 보낸다.",
+  "beats": [
+   "은찬의 고열",
+   "하린이 데려온 떠돌이 의원 설단영",
+   "회맥침으로 열을 내린다",
+   "수배범을 알아보고도 모른 척한다",
+   "은찬의 입문 이야기",
+   "사부의 죽음을 묻는 단영"
+  ],
+  "facts_revealed": [
+   "f043",
+   "f044",
+   "f045",
+   "f046",
+   "f047"
+  ],
+  "hints_allowed": [
+   "단영의 침착하고 세상 물정에 밝은 인상을 그려도 된다(약함). 단영은 떠돌이 의원이라는 것까지만 쓴다.",
+   "단영이 떠나기 전 사부의 죽음을 조용히 묻는 모습을 그려도 된다(약함).",
+   "소량이 의원이 지나치게 침착하다며 의심스러운 눈길을 보내는 모습을 그려도 된다(약함)."
+  ],
+  "relationship_changes": [
+   {
+    "relationship": "r12",
+    "a": "seojin",
+    "b": "danyeong",
+    "status": "의원과 환자의 보호자",
+    "public": false
+   }
+  ],
+  "knowledge_events": [
+   {
+    "character": "danyeong",
+    "fact_id": "f002"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f006"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f038"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f043"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f043"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f043"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f043"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f044"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f044"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f044"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f045"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f045"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f045"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f045"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f045"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f046"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f046"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f047"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f047"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f201",
+    "note": "은찬을 다시 보러 오겠다며 곁에 남기로 한 때"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f204"
+   }
+  ],
+  "pov_must_hide": [
+   "f055",
+   "f056",
+   "f075",
+   "f076",
+   "f078",
+   "f083",
+   "f089"
+  ],
+  "ending_hook": "단영이 문을 나서며 말한다. '사흘째 되는 날 다시 오겠습니다.'",
+  "end_state": "은찬이 회복한다. 단영은 단하성 시장에 머문다."
+ },
+ {
+  "ep": 8,
+  "title": "닫힌 문",
+  "pov": "seojin",
+  "location": "단하세가",
+  "characters_present": [
+   "seojin",
+   "soryang",
+   "gangpil",
+   "eunchan",
+   "jeonghyeok",
+   "harin",
+   "janghun"
+  ],
+  "summary": "사흘째 되는 날 장헌이 집법당 무사들을 이끌고 단하세가 정문에 나타난다. 장헌은 수배령 뒤 운령산 인근 집법당 분소에 머물며 서진을 쫓다가 가주가 보낸 서신을 받고 왔다며 서진의 인도를 요구한다. 정혁은 정파의 의리를 내세워 서진을 운하맹에 넘기겠다고 밝힌다. 소량은 아버지에게 맞서다 꺾이고, 그날 밤 강필에게 뒷문 열쇠를 가져오게 한다. 소량은 '넌 내 손으로 잡는다고 했지'라며 서진을 단하세가 뒷문으로 내보낸다. 하린은 잠든 은찬을 업고 따라 나와 서진에게 건넨다. 새벽에 빈 객채를 확인한 장헌은 정혁에게 차갑게 인사하고 떠난다.",
+  "beats": [
+   "분소에서 가주의 서신을 받고 온 장헌",
+   "정혁이 서진을 넘기기로 한다",
+   "소량과 아버지의 충돌",
+   "강필이 뒷문 열쇠를 가져온다",
+   "소량이 서진을 뒷문으로 내보낸다",
+   "하린이 은찬을 건넨다",
+   "빈 객채와 장헌의 퇴장"
+  ],
+  "facts_revealed": [
+   "f048",
+   "f049",
+   "f050",
+   "f051",
+   "f052"
+  ],
+  "hints_allowed": [
+   "강필이 뒷문 열쇠를 건네며 잠시 망설이는 손을 그려도 된다(약함). 망설인 이유는 쓰지 않는다.",
+   "정혁의 결정을 정파의 의리라는 명분으로 그려도 된다(약함).",
+   "장헌은 집법당주의 직함과 율 조문 번호부터 읊는 말투로 그려도 된다(약함). 장헌의 검은 등에 멘 검집에 든 모습으로만 쓰고 뽑지 않는다."
+  ],
+  "relationship_changes": [
+   {
+    "relationship": "r01",
+    "a": "seojin",
+    "b": "soryang",
+    "status": "몰래 손을 잡은 맞수",
+    "public": false
+   },
+   {
+    "relationship": "r07",
+    "a": "soryang",
+    "b": "jeonghyeok",
+    "status": "아버지의 결정을 거역한 아들",
+    "public": false
+   }
+  ],
+  "knowledge_events": [
+   {
+    "character": "harin",
+    "fact_id": "f034"
+   },
+   {
+    "character": "janghun",
+    "fact_id": "f040"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f048"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f048"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f048"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f048"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f048"
+   },
+   {
+    "character": "janghun",
+    "fact_id": "f049"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f049"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f049"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f049"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f049"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f049"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f050"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f050"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f050"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f050"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f050"
+   },
+   {
+    "character": "janghun",
+    "fact_id": "f050"
+   },
+   {
+    "character": "jeonghyeok",
+    "fact_id": "f050"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f051"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f051"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f051"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f051"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f051"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f052"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f052"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f052"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f052"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f052"
+   }
+  ],
+  "pov_must_hide": [
+   "f055",
+   "f056",
+   "f075",
+   "f076",
+   "f078",
+   "f083",
+   "f089"
+  ],
+  "ending_hook": "성문 밖 어둠 속에서 서진은 뒤따르는 발소리를 듣는다.",
+  "end_state": "서진과 은찬은 단하세가를 빠져나왔다. 장헌은 빈손으로 돌아간다."
+ },
+ {
+  "ep": 9,
+  "title": "가문을 나온 장남",
+  "pov": "soryang",
+  "location": "단하성 외곽 숲",
+  "characters_present": [
+   "seojin",
+   "soryang",
+   "gangpil",
+   "eunchan",
+   "danyeong"
+  ],
+  "summary": "성문 밖 숲에서 서진은 뒤따라온 소량과 강필을 보고 놀란다. 소량은 아버지 집에서 더는 할 일이 없어졌다며 가문을 나와 서진과 동행하겠다고 말한다. 강필은 아무 말 없이 소량의 짐을 지고, 소량은 검을 잃은 서진에게 단하세가 무고의 검 한 자루를 던져 준다. 숲 어귀에서 약초를 캐던 단영이 일행과 마주치고, 은찬의 회복을 지켜봐야 한다며 동행을 청한다. 모닥불 가에서 서진은 아홉 살 때 운령산 아랫마을에 역병이 돌아 부모를 잃고 사부에게 거두어졌다고 말한다. 서진은 3년 전 취죽문을 떠난 사형 목연호 이야기를 꺼내며 사형이 있었다면 달랐을 거라고 중얼거린다. 소량은 서진을 이름으로 불러 볼까 하다가 그만두고 불을 뒤적인다.",
+  "beats": [
+   "숲에서 다시 만난 소량과 강필",
+   "가문을 나온 소량",
+   "소량이 건넨 검",
+   "단영의 동행",
+   "역병으로 고아가 된 서진",
+   "사형 연호 이야기",
+   "부르지 못한 이름"
+  ],
+  "facts_revealed": [
+   "f053",
+   "f241",
+   "f054",
+   "f055"
+  ],
+  "hints_allowed": [
+   "강필이 불침번을 서겠다며 어둠 속으로 사라지는 모습을 그려도 된다(약함).",
+   "단영이 숲 어귀에서 일행과 마주쳐 은찬을 돌보겠다며 동행을 청하는 모습을 그려도 된다(약함).",
+   "서진이 떠난 사형을 그리워하는 말을 그려도 된다(약함).",
+   "서진이 사부 밑에서 산중에만 지내 강호 소문에 어둡다는 것을 소량이 어이없어하는 모습을 그려도 된다(약함). 새 단체나 인물 이름은 꺼내지 않는다."
+  ],
+  "relationship_changes": [
+   {
+    "relationship": "r01",
+    "a": "seojin",
+    "b": "soryang",
+    "status": "함께 떠도는 맞수",
+    "public": false
+   },
+   {
+    "relationship": "r12",
+    "a": "seojin",
+    "b": "danyeong",
+    "status": "동행",
+    "public": false
+   }
+  ],
+  "knowledge_events": [
+   {
+    "character": "gangpil",
+    "fact_id": "f003"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f003"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f016"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f016"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f016"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f017"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f017"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f017"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f018"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f018"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f018"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f028"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f043"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f045"
+   },
+   {
+    "character": "jeonghyeok",
+    "fact_id": "f051",
+    "offstage": true,
+    "note": "뒷문 열쇠가 쓰인 것을 알아냄"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f053"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f053"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f053"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f053"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f241"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f241"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f241"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f241"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f241",
+    "note": "9:85-109 동행하는 소량을 직접 봄"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f054"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f054"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f054"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f054"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f054"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f055"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f055"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f055"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f055"
+   }
+  ],
+  "pov_must_hide": [
+   "f059",
+   "f064",
+   "f067",
+   "f068",
+   "f166",
+   "f167"
+  ],
+  "ending_hook": "강필이 불침번을 서겠다며 어둠 속으로 사라진다.",
+  "end_state": "서진, 은찬, 소량, 강필, 단영 다섯이 함께 길을 나선다."
+ },
+ {
+  "ep": 10,
+  "title": "정보의 값",
+  "pov": "seojin",
+  "location": "반월객잔",
+  "characters_present": [
+   "seojin",
+   "soryang",
+   "gangpil",
+   "eunchan",
+   "danyeong",
+   "masam"
+  ],
+  "summary": "일행은 산길을 돌아 반월객잔으로 숨어든다. 마삼은 『무성보』가 취죽문 비전 낙엽무성검의 비급이며, 곽태허가 죽기 전 가장 믿는 사람에게 맡겼다는 소문이 돈다고 전한다. 사파 연합 야화련이 그 비급을 찾고 있고, 야화련의 련주는 옥명화라는 여인이라고 한다. 서진은 집법당 무사들이 서고부터 뒤지던 모습을 떠올리고 일행에게 이야기한다. 가면 쓴 부련주가 누구냐는 서진의 물음에 마삼은 그 이상은 값을 더 받아야 한다며 입을 닫는다. 소량은 정보상의 장사 수완에 혀를 찬다. 은찬은 목검을 끌어안고 마루에서 잠든다.",
+  "beats": [
+   "반월객잔 재방문",
+   "무성보와 낙엽무성검",
+   "가장 믿는 사람에게 맡겼다는 소문",
+   "야화련과 련주 옥명화",
+   "서고를 뒤지던 집법당",
+   "가면 쓴 부련주",
+   "목검을 안고 잠든 은찬"
+  ],
+  "facts_revealed": [
+   "f056",
+   "f057",
+   "f058",
+   "f059"
+  ],
+  "hints_allowed": [
+   "마삼이 부련주 이야기에서 말을 아끼는 모습을 그려도 된다(약함).",
+   "은찬이 목검을 끌어안고 잠든 모습을 그려도 된다(약함).",
+   "마삼이 남쪽 낙수협을 피하라고 경고하는 모습을 그려도 된다(약함)."
+  ],
+  "relationship_changes": [],
+  "knowledge_events": [
+   {
+    "character": "soryang",
+    "fact_id": "f009"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f009"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f024"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f024"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f024"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f025"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f026"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f030"
+   },
+   {
+    "character": "jeonghyeok",
+    "fact_id": "f053",
+    "offstage": true
+   },
+   {
+    "character": "harin",
+    "fact_id": "f053",
+    "offstage": true
+   },
+   {
+    "character": "jeonghyeok",
+    "fact_id": "f241",
+    "offstage": true,
+    "note": "강필의 보고로 앎"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f241",
+    "note": "10:11 일행 속 소량을 봄"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f056"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f056"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f056"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f057"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f057"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f057"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f057"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f057"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f058"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f058"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f058"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f058"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f058"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f059",
+    "note": "사부가 강호 소문을 멀리하게 하며 산중에서만 길러 련주 이름을 몰랐음"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f059"
+   },
+   {
+    "character": "myeonghwa",
+    "fact_id": "f152",
+    "offstage": true,
+    "note": "낙수협 일을 지시함"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f152",
+    "offstage": true,
+    "note": "련주의 지시를 받음"
+   }
+  ],
+  "pov_must_hide": [
+   "f075",
+   "f076",
+   "f078",
+   "f083",
+   "f089"
+  ],
+  "ending_hook": "마삼이 장부를 덮으며 말한다. '남쪽 낙수협으로는 가지 않으시는 게 좋을 것이올시다.'",
+  "end_state": "일행은 무성보의 행방을 쫓기로 하고 남쪽 길을 택한다."
+ },
+ {
+  "ep": 11,
+  "title": "가면 아래",
+  "pov": "seojin",
+  "location": "운령산 남쪽 낙수협",
+  "characters_present": [
+   "seojin",
+   "soryang",
+   "gangpil",
+   "eunchan",
+   "danyeong",
+   "yeonho"
+  ],
+  "summary": "반월객잔을 떠난 일행은 운령산 남쪽의 좁은 협곡 낙수협에서 야화련 무리에게 포위된다. 가면을 쓴 부련주가 앞으로 나와 무성보를 내놓으라고 요구한다. 서진은 무성보가 어디 있는지 모른다고 답하고, 둘은 검을 맞댄다. 부련주의 검로가 낯익다는 것을 느낀 서진은 가면 끈을 베어 낸다. 가면 아래 드러난 얼굴은 3년 전 떠난 사형 목연호다. 연호는 '막내, 오랜만이네'라고 담담히 말하고, 은찬은 '연호 사형!' 하고 외친다. 연호는 무리를 물리고 다음에 보자는 말을 남긴 채 협곡 위로 사라진다.",
+  "beats": [
+   "낙수협 포위",
+   "가면 쓴 부련주의 요구",
+   "낯익은 검로",
+   "가면 끈을 베다",
+   "사형 목연호",
+   "은찬의 외침과 연호의 퇴각"
+  ],
+  "facts_revealed": [
+   "f060",
+   "f061"
+  ],
+  "hints_allowed": [
+   "가면 끈을 베기 전, 부련주의 검로가 서진에게 낯익게 느껴지는 모습을 그려도 된다(중간).",
+   "부련주가 무성보를 내놓으라 하고도 서진이 모른다고 하자 더 몰아붙이지 않는 모습을 그려도 된다(약함).",
+   "연호가 은찬을 보고 잠시 흔들리는 모습을 그려도 된다(약함)."
+  ],
+  "relationship_changes": [
+   {
+    "relationship": "r02",
+    "a": "seojin",
+    "b": "yeonho",
+    "status": "적으로 마주한 사형제",
+    "public": false
+   },
+   {
+    "relationship": "r08",
+    "a": "yeonho",
+    "b": "myeonghwa",
+    "status": "련주와 부련주",
+    "public": false
+   },
+   {
+    "relationship": "r16",
+    "a": "soryang",
+    "b": "yeonho",
+    "status": "사파를 믿지 못하는 사이",
+    "public": false
+   }
+  ],
+  "knowledge_events": [
+   {
+    "character": "soryang",
+    "fact_id": "f010"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f010"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f010"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f060"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f060"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f060"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f060"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f060"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f060"
+   },
+   {
+    "character": "myeonghwa",
+    "fact_id": "f060",
+    "offstage": true,
+    "note": "보고로 앎"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f061"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f061"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f061"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f061"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f061"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f241",
+    "note": "11:143-245 낙수협에서 맞섬"
+   }
+  ],
+  "pov_must_hide": [
+   "f075",
+   "f076",
+   "f078",
+   "f083",
+   "f089"
+  ],
+  "ending_hook": "소량이 검을 거두며 묻는다. '네 사형이 사파의 부련주라고?'",
+  "end_state": "부련주의 정체가 드러났다. 연호는 물러갔다."
+ },
+ {
+  "ep": 12,
+  "title": "사형의 말",
+  "pov": "seojin",
+  "location": "낙수협 근처 동굴 야영지",
+  "characters_present": [
+   "seojin",
+   "soryang",
+   "gangpil",
+   "eunchan",
+   "danyeong",
+   "yeonho"
+  ],
+  "summary": "그날 밤 연호가 홀로 일행의 야영지에 나타난다. 연호는 사부의 부고를 야화련 정보망으로 전해 들었다고 말한다. 연호는 서진에게 자신은 사부를 죽이지 않았다고 말하고, 서진도 자신이 죽이지 않았다고 답한다. 소량은 사파의 말을 믿을 수 없다며 검을 겨누지만 서진이 막아선다. 연호는 야화련이 무성보를 가져가야 하는 이유는 말할 수 없다며 입을 다문다. 연호는 은찬의 머리를 쓰다듬다가 은찬이 안고 있는 목검을 잠시 바라본다. 연호는 '바람이 바뀌면 다시 보세'라고 말하고 어둠 속으로 사라진다.",
+  "beats": [
+   "연호의 야밤 방문",
+   "부고를 전해 들은 경위",
+   "서로의 결백 주장",
+   "소량의 검과 서진의 만류",
+   "말하지 않는 이유",
+   "목검을 바라보는 연호"
+  ],
+  "facts_revealed": [
+   "f062",
+   "f063"
+  ],
+  "hints_allowed": [
+   "연호가 은찬이 안은 목검을 잠시 바라보는 시선을 그려도 된다(약함). 그 이유는 서술하지 않는다.",
+   "연호가 야화련이 무성보를 원하는 까닭은 말할 수 없다며 입을 닫는 모습을 그려도 된다(약함).",
+   "문파를 떠난 일을 묻는 말에 연호가 답을 피하는 모습까지만 그려도 된다(약함)."
+  ],
+  "relationship_changes": [],
+  "knowledge_events": [
+   {
+    "character": "yeonho",
+    "fact_id": "f062"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f062"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f062"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f062"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f062"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f063"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f063"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f063"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f063"
+   }
+  ],
+  "pov_must_hide": [
+   "f075",
+   "f076",
+   "f078",
+   "f083",
+   "f089"
+  ],
+  "ending_hook": "새벽, 서진의 머리맡에 대나무 잎으로 접은 쪽지 하나가 놓여 있다.",
+  "end_state": "연호는 떠났고 쪽지가 남았다."
+ },
+ {
+  "ep": 13,
+  "title": "백염장",
+  "pov": "seojin",
+  "location": "야화련 본거지 백염장",
+  "characters_present": [
+   "seojin",
+   "soryang",
+   "gangpil",
+   "yeonho",
+   "myeonghwa"
+  ],
+  "summary": "쪽지에 적힌 대로 서진은 은찬과 단영을 산골 여관에 남겨 두고 소량, 강필과 함께 백염장으로 간다. 밤이면 소금 결정이 꽃처럼 빛나는 염전 한가운데의 장원에서 야화련 련주 옥명화가 나른한 얼굴로 일행을 맞는다. 명화는 연호를 '우리 부련주'라 부르며, 연호가 취죽문을 떠난 뒤 줄곧 야화련에 있었다고 밝힌다. 명화는 '값을 치러야지'라며 무성보를 넘기면 서진의 누명을 벗길 증인을 찾아 주겠다고 제안한다. 서진은 무성보가 어디 있는지 모른다고 답한다. 명화는 서진의 눈을 오래 들여다보더니 거짓말은 아니라며 웃는다. 서진은 제안을 거절하고 백염장 문을 나서려 한다.",
+  "beats": [
+   "은찬과 단영을 여관에 남긴다",
+   "염전 한가운데의 백염장",
+   "옥명화와 '우리 부련주'",
+   "연호가 줄곧 야화련에 있었다",
+   "무성보와 증인의 거래 제안",
+   "거절"
+  ],
+  "facts_revealed": [
+   "f064",
+   "f065",
+   "f066"
+  ],
+  "hints_allowed": [
+   "명화가 연호를 대하는 태도에 오래된 사정이 있어 보이는 것을 그려도 된다(약함).",
+   "명화가 무성보를 찾고 있다는 것까지 그려도 된다(약함). 그 밖의 명화의 사정은 쓰지 않는다."
+  ],
+  "relationship_changes": [
+   {
+    "relationship": "r13",
+    "a": "seojin",
+    "b": "myeonghwa",
+    "status": "경계하는 협상 상대",
+    "public": false
+   }
+  ],
+  "knowledge_events": [
+   {
+    "character": "seojin",
+    "fact_id": "f064"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f065"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f065"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f065"
+   },
+   {
+    "character": "myeonghwa",
+    "fact_id": "f066"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f066"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f066"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f066"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f066"
+   }
+  ],
+  "pov_must_hide": [
+   "f075",
+   "f076",
+   "f078",
+   "f083",
+   "f089"
+  ],
+  "ending_hook": "명화가 등 뒤에서 말한다. '적하곡을 아니?'",
+  "end_state": "협상은 결렬되었다. 명화가 서진을 붙잡는다."
+ },
+ {
+  "ep": 14,
+  "title": "적하곡 이야기",
+  "pov": "seojin",
+  "location": "백염장 염전 누각",
+  "characters_present": [
+   "seojin",
+   "soryang",
+   "gangpil",
+   "myeonghwa",
+   "yeonho"
+  ],
+  "summary": "명화는 서진을 염전이 내려다보이는 누각에 앉히고 20년 전 적하곡 이야기를 들려준다. 운하맹 공식 기록은 적하곡 토벌 때 사파 고수들이 마을에 불을 질렀다고 적고 있지만, 명화는 운하맹 토벌대가 불을 놓았다고 말한다. 그 토벌을 이끈 공으로 이름을 얻은 사람이 지금의 맹주 양규천이라는 것도 덧붙인다. 명화는 자신이 그 불길에서 살아남은 아이였다고 밝힌다. 명화는 무성보에 적하곡의 진실이 적혀 있다고 주장한다. 연호는 이야기 내내 창밖만 바라본다. 서진은 반신반의하며 백염장을 떠난다.",
+  "beats": [
+   "염전 누각의 이야기",
+   "운하맹 공식 기록",
+   "토벌대가 불을 놓았다는 명화의 말",
+   "토벌로 이름을 얻은 양규천",
+   "불길에서 살아남았다는 명화",
+   "무성보에 진실이 있다는 주장",
+   "창밖만 보는 연호"
+  ],
+  "facts_revealed": [
+   "f067",
+   "f068",
+   "f069",
+   "f070",
+   "f071"
+  ],
+  "hints_allowed": [
+   "명화가 운하맹 토벌대가 불을 놓았다고 주장하는 장면을 그려도 된다(중간). 서진은 반신반의하고, 서술은 그 말을 사실로 단정하지 않는다.",
+   "명화가 자신이 불길에서 살아남았다고 말하는 것까지 그려도 된다(중간).",
+   "연호가 이야기 내내 창밖만 보는 모습을 그려도 된다(약함). 연호의 속마음은 서술하지 않는다.",
+   "강필이 돌아가는 길에 명화의 말을 믿느냐고 묻는 모습을 그려도 된다(약함).",
+   "불길과 희생은 결과와 감정 위주로 쓰고 신체 손상은 묘사하지 않는다(15세)."
+  ],
+  "relationship_changes": [],
+  "knowledge_events": [
+   {
+    "character": "seojin",
+    "fact_id": "f067",
+    "note": "사부가 적하곡 이야기를 입에 올린 적이 없고 산중에서만 자라 몰랐음"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f068",
+    "note": "산중에서만 자라 맹주의 출세 내력을 몰랐음"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f069"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f069"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f069"
+   },
+   {
+    "character": "myeonghwa",
+    "fact_id": "f070"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f070"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f070"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f070"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f070"
+   },
+   {
+    "character": "myeonghwa",
+    "fact_id": "f071"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f071"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f071"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f071"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f071"
+   }
+  ],
+  "pov_must_hide": [
+   "f075",
+   "f076",
+   "f078",
+   "f083",
+   "f089"
+  ],
+  "ending_hook": "돌아가는 길, 강필이 처음으로 먼저 입을 연다. '도련님, 저 여인 말을 믿으십니까.'",
+  "end_state": "서진은 무성보에 적하곡의 진실이 있다는 말을 품고 여관으로 돌아간다."
+ },
+ {
+  "ep": 15,
+  "title": "부러진 목검",
+  "pov": "seojin",
+  "location": "산골 마을 녹계촌 여관 뒷마당",
+  "characters_present": [
+   "seojin",
+   "eunchan",
+   "soryang",
+   "gangpil",
+   "danyeong"
+  ],
+  "summary": "백염장에서 돌아온 날 밤, 서진은 은찬이 잠든 사이 단영에게 백염장 이야기를 들려준다. 이튿날 서진이 여관 뒷마당에서 처음으로 은찬에게 검술 기초를 가르치려 하자, 은찬은 사부가 '대사형이 처음 검을 가르쳐 주는 날 이 목검을 대사형에게 드려라'라고 했던 말을 떠올리고 목검을 내민다. 목검을 받아 든 서진이 손잡이에 새겨진 대나무 마디 무늬를 사부가 손버릇처럼 가르쳐 준 순서대로 눌러 맞추자, 손잡이 끝이 빠지며 속이 빈 자루에서 기름종이로 싼 얇은 책이 나온다. 표지에는 사부의 필체로 '무성보'라는 세 글자가 적혀 있다. 은찬은 사부가 목검을 깎아 주며 늘 몸에 지니라고 당부했다고 울먹인다. 단영은 빠진 손잡이 끝을 다시 끼우는 은찬의 손을 거든다. 서진은 은찬에게 '네가 사부님의 것을 지켜 왔다'고 말한다.",
+  "beats": [
+   "은찬이 잠든 사이 단영에게 전한 백염장 이야기",
+   "첫 검술 수업과 사부의 당부",
+   "마디 무늬를 눌러 연 손잡이",
+   "기름종이에 싼 무성보",
+   "늘 몸에 지니라던 당부",
+   "다시 끼운 손잡이"
+  ],
+  "facts_revealed": [
+   "f072",
+   "f073",
+   "f074",
+   "f075"
+  ],
+  "hints_allowed": [
+   "서진이 은찬이 잠든 사이 단영에게만 백염장 이야기를 들려주는 장면을 그려도 된다(약함). 은찬은 그 자리에 없다.",
+   "은찬이 사부의 당부를 떠올리며 목검을 내밀고, 사부가 목검을 늘 몸에 지니라고 했다며 울먹이는 모습을 그려도 된다(중간).",
+   "무성보는 표지의 세 글자까지만 그려도 된다(중간). 책을 펼치는 장면은 넣지 않는다.",
+   "강필을 곁에서 지켜보는 호위로 그려도 된다(약함).",
+   "손잡이의 대나무 마디 무늬를 누르는 순서는 사부가 손버릇처럼 가르쳐 준 것으로만 쓰고, 그 무늬가 문자(죽절문)라는 것은 아직 쓰지 않는다(중간)."
+  ],
+  "relationship_changes": [],
+  "knowledge_events": [
+   {
+    "character": "soryang",
+    "fact_id": "f007"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f007"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f007"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f065",
+    "note": "서진에게 들음"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f066",
+    "note": "서진에게 들음"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f069",
+    "note": "서진에게 들음"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f070",
+    "note": "서진에게 들음"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f071",
+    "note": "서진에게 들음"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f072"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f072"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f072"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f072"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f072"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f073"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f073"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f073"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f073"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f074"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f074"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f074"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f074"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f075"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f075"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f075"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f075"
+   }
+  ],
+  "pov_must_hide": [
+   "f076",
+   "f078",
+   "f083",
+   "f089"
+  ],
+  "ending_hook": "소량이 낮게 말한다. '이제 온 무림이 이 꼬마를 노리겠군.'",
+  "end_state": "무성보가 일행 손에 들어왔다."
+ },
+ {
+  "ep": 16,
+  "title": "죽절문",
+  "pov": "seojin",
+  "location": "녹계촌 여관",
+  "characters_present": [
+   "seojin",
+   "eunchan",
+   "soryang",
+   "gangpil",
+   "danyeong"
+  ],
+  "summary": "서진은 무성보를 펼치지만 본문 여백마다 대나무 마디 같은 기호가 빼곡하다. 서진은 그것이 취죽문의 비밀 문자 죽절문임을 알아보지만 기초밖에 읽지 못하고, 죽절문을 끝까지 배운 제자는 사형 연호뿐이다. 그날 오후 여관 창틀에서 대나무 잎으로 접은 두 번째 쪽지가 나오고, 거기에는 운령산 너머의 버려진 산중 절 고목사에서 기다리겠다는 연호의 글이 적혀 있다. 소량은 사파와 손잡는 것은 미친 짓이라고 반대하고, 서진은 혼자서라도 고목사로 가겠다고 한다. 단영과 은찬이 서진을 따라나서기로 한다. 밤에 서진은 강필이 여관 마당에서 몰래 전서구를 날리는 것을 본다. 강필은 고향 어머니에게 보내는 안부라고 말하고, 서진은 더 묻지 않는다.",
+  "beats": [
+   "여백의 대나무 마디 기호",
+   "죽절문과 끝까지 배운 연호",
+   "두 번째 쪽지와 고목사",
+   "소량의 반대와 갈라진 길",
+   "강필의 전서구",
+   "어머니에게 보내는 안부"
+  ],
+  "facts_revealed": [
+   "f076",
+   "f077",
+   "f078",
+   "f079",
+   "f080",
+   "f081"
+  ],
+  "hints_allowed": [
+   "강필이 밤에 몰래 전서구를 날리고 어머니에게 보내는 안부라고 말하는 모습을 그려도 된다(중간). 받는 사람이나 내용은 짐작하게 하지 않는다.",
+   "여백의 죽절문은 대나무 마디 같은 기호의 생김새까지만 그려도 된다(약함). 한 글자도 해독하지 않는다.",
+   "두 번째 쪽지는 고목사에서 기다린다는 짧은 글로만 그려도 된다(약함)."
+  ],
+  "relationship_changes": [],
+  "knowledge_events": [
+   {
+    "character": "soryang",
+    "fact_id": "f076"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f076"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f076"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f077"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f077"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f077"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f077"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f077"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f078"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f078"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f078"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f078"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f079"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f079"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f080"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f080"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f081"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f081"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f081"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f081"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f081"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f146",
+    "offstage": true,
+    "note": "직접 적어 보냄. 본문은 전서구를 날리는 모습만 그림"
+   }
+  ],
+  "pov_must_hide": [
+   "f083",
+   "f089"
+  ],
+  "ending_hook": "떠나는 서진의 등 뒤로 소량이 소리친다. '사흘이다. 사흘 안에 안 오면 데리러 간다!'",
+  "end_state": "서진, 은찬, 단영은 연호를 찾아 떠난다. 소량과 강필은 여관에 남는다."
+ },
+ {
+  "ep": 17,
+  "title": "고목사",
+  "pov": "seojin",
+  "location": "운령산 너머 폐사찰 고목사",
+  "characters_present": [
+   "seojin",
+   "eunchan",
+   "danyeong",
+   "yeonho"
+  ],
+  "summary": "서진은 두 번째 쪽지에 적힌 고목사로 향한다. 가는 길에 은찬은 3년 전 연호 사형이 떠나던 날 밤 사부와 크게 다투는 소리를 들었다고 털어놓는다. 서진은 그날 심부름으로 산 아래에 있었기에 아무것도 몰랐다. 고목사에서 이틀을 기다린 끝에 나타난 연호는 무성보 여백을 보고 죽절문이 맞다고 확인한다. 연호는 해독한 내용을 야화련에도 알린다는 조건으로 해독을 돕겠다고 한다. 서진은 무성보가 은찬의 목검 속에 숨겨져 있었다고 말해 준다. 연호는 사부와 왜 다퉜느냐는 서진의 물음에 '나중에'라고만 답한다.",
+  "beats": [
+   "고목사로 가는 길",
+   "은찬이 들은 다툼 소리",
+   "심부름으로 자리를 비웠던 서진",
+   "연호가 죽절문을 확인한다",
+   "해독의 조건",
+   "목검 이야기",
+   "'나중에'라는 대답"
+  ],
+  "facts_revealed": [
+   "f082",
+   "f083",
+   "f084"
+  ],
+  "hints_allowed": [
+   "은찬이 연호와 사부가 크게 다투는 소리를 들었다고 털어놓는 장면을 그려도 된다(중간). 다툼의 까닭은 쓰지 않는다.",
+   "연호가 사부와 왜 다퉜느냐는 물음에 '나중에'라고만 답하는 모습을 그려도 된다(약함)."
+  ],
+  "relationship_changes": [
+   {
+    "relationship": "r02",
+    "a": "seojin",
+    "b": "yeonho",
+    "status": "불편한 공조",
+    "public": false
+   }
+  ],
+  "knowledge_events": [
+   {
+    "character": "yeonho",
+    "fact_id": "f072",
+    "note": "서진에게 들음"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f077"
+   },
+   {
+    "character": "jeonghyeok",
+    "fact_id": "f079",
+    "offstage": true,
+    "note": "그 전서구를 이튿날 받음"
+   },
+   {
+    "character": "jeonghyeok",
+    "fact_id": "f081",
+    "offstage": true,
+    "note": "강필의 전서구 보고로 앎"
+   },
+   {
+    "character": "janghun",
+    "fact_id": "f081",
+    "offstage": true,
+    "note": "분소에서 정혁이 전서구로 보낸 서신을 받고 앎"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f082"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f082"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f083"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f084"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f084"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f084"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f084"
+   },
+   {
+    "character": "jeonghyeok",
+    "fact_id": "f146",
+    "offstage": true,
+    "note": "녹계촌에서 날린 전서구를 이튿날 받음"
+   },
+   {
+    "character": "jeonghyeok",
+    "fact_id": "f147",
+    "offstage": true,
+    "note": "강필의 보고를 받고 곧장 전서구로 분소에 알림"
+   },
+   {
+    "character": "janghun",
+    "fact_id": "f147",
+    "offstage": true,
+    "note": "분소에서 정혁의 전서구 서신을 받음"
+   }
+  ],
+  "pov_must_hide": [
+   "f089"
+  ],
+  "ending_hook": "고목사 담장 너머로 횃불 여러 개가 다가온다.",
+  "end_state": "해독이 시작되려는 순간 누군가 절을 에워싼다."
+ },
+ {
+  "ep": 18,
+  "title": "쌍현검",
+  "pov": "seojin",
+  "location": "고목사",
+  "characters_present": [
+   "seojin",
+   "eunchan",
+   "danyeong",
+   "yeonho",
+   "janghun",
+   "soryang",
+   "gangpil"
+  ],
+  "summary": "장헌이 집법당 무사들과 함께 고목사를 포위한다. 횃불이 담장에 닿기도 전에 단영은 은찬을 품에 안고 뒷담을 넘어 뒷산으로 몸을 피한다. 장헌이 외날 검의 것처럼 생긴 검집에서 쌍날이 나란히 붙은 기묘한 검 쌍현검을 뽑아 든다. 서진이 장헌에게 밀리는 순간 연호가 서진 앞을 막아서다 옆구리를 베인다. 약속한 사흘이 차자 뒤따라온 소량과 강필이 달려와 집법당 무사들을 흩뜨리고, 서진은 연호가 해독을 돕기로 한 사정을 짧게 전한다. 장헌은 연호의 얼굴을 보고 '야화련 부련주가 취죽문 출신이었나' 하고 차갑게 묻는다. 일행은 정신을 잃은 연호를 업고 뒷산으로 빠져나가 단영과 은찬을 만난다.",
+  "beats": [
+   "고목사 포위",
+   "은찬을 안고 먼저 뒷담을 넘는 단영",
+   "쌍현검",
+   "연호가 서진을 막아서다 베인다",
+   "소량과 강필의 합류",
+   "부련주를 알아본 장헌",
+   "연호를 업고 탈출"
+  ],
+  "facts_revealed": [
+   "f085",
+   "f086",
+   "f087"
+  ],
+  "hints_allowed": [
+   "장헌이 등의 검집에서 처음 뽑아 든 쌍현검을 쌍날이 나란히 붙은 기묘한 검으로 자세히 그려도 된다(강함). 서진은 싸움에 몰려 다른 생각을 할 틈이 없다.",
+   "횃불이 보이자 단영이 누구보다 먼저 은찬을 안고 뒷담을 넘는 모습을 그려도 된다(약함).",
+   "서진이 장헌이 고목사를 어떻게 알고 왔는지 의아해하는 모습을 그려도 된다(약함). 답은 쓰지 않는다.",
+   "연호가 베이는 순간은 짧게 그리고 상처를 자세히 묘사하지 않는다(15세).",
+   "장헌을 서진을 잡으러 온 집법당주로 그려도 된다(약함)."
+  ],
+  "relationship_changes": [],
+  "knowledge_events": [
+   {
+    "character": "janghun",
+    "fact_id": "f016"
+   },
+   {
+    "character": "janghun",
+    "fact_id": "f061",
+    "note": "고목사에서 얼굴을 봄"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f084"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f084"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f085"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f085"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f085"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f085"
+   },
+   {
+    "character": "janghun",
+    "fact_id": "f086"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f086"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f086"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f086"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f086"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f086"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f086"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f087"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f087"
+   },
+   {
+    "character": "janghun",
+    "fact_id": "f087"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f087"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f087"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f087"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f087"
+   }
+  ],
+  "pov_must_hide": [
+   "f089"
+  ],
+  "ending_hook": "업힌 연호의 피가 서진의 등을 적신다.",
+  "end_state": "연호가 다쳐 정신을 잃었다. 일행은 산속으로 숨는다."
+ },
+ {
+  "ep": 19,
+  "title": "나란한 두 줄",
+  "pov": "soryang",
+  "location": "산중 사냥꾼 오두막",
+  "characters_present": [
+   "seojin",
+   "eunchan",
+   "yeonho",
+   "danyeong",
+   "soryang",
+   "gangpil"
+  ],
+  "summary": "오두막에서 단영은 은찬을 개울로 물 길으러 보낸 뒤 정신을 잃은 연호의 상처를 꿰맨다. 단영이 옆구리의 두 줄 상처를 가리키며 칼날 두 개가 나란히 지나간 자국이라고 말하자, 소량은 그것이 장헌의 쌍현검 자국이며 서진이 말해 준 사부의 검흔과 같다고 말한다. 단영은 청류대 아래에서 의원 일을 할 때 보니 집법당 정예들도 당주의 검을 본뜬 쌍날 검을 차더라고 덧붙이고, 서진은 장헌을 의심하면서도 쌍날 검을 쓰는 자가 장헌만은 아닐 수 있다며 단정을 미룬다. 밤늦게 잠깐 깨어난 연호의 왼팔에 오래된 화상 흉터가 있는 것을 보고 단영이 묻지만, 연호는 대답하지 않고 다시 눈을 감는다. 소량은 해독한 내용을 야화련에 넘기기로 한 연호를 믿을 수 없다며, 사형이 숨기는 것이 그것뿐이겠느냐고 쏘아붙인다. 서진은 소량의 멱살을 잡았다가 놓는다. 물동이를 들고 돌아온 은찬은 둘 사이에 끼어 울음을 터뜨린다.",
+  "beats": [
+   "은찬을 물 길으러 보내고 상처를 꿰맨다",
+   "옆구리의 두 줄 상처",
+   "장헌의 쌍현검 자국이라는 소량",
+   "집법당 정예의 쌍날 검과 단정을 미루는 서진",
+   "깨어난 연호와 왼팔의 흉터",
+   "연호가 숨기는 것을 두고 벌어진 다툼과 멱살",
+   "은찬의 울음"
+  ],
+  "facts_revealed": [
+   "f088",
+   "f089",
+   "f090",
+   "f091",
+   "f092",
+   "f093"
+  ],
+  "hints_allowed": [
+   "소량이 연호의 두 줄 상처를 장헌의 쌍현검 자국이라 하고 사부의 검흔과 같다고 말하는 장면을 그려도 된다(강함). 서술은 범인을 확정하지 않는다.",
+   "단영이 집법당 정예의 쌍날 검을 의원 일로 보았다고 말하는 모습을 그려도 된다(약함). 단영의 말은 그 한마디까지만 쓴다.",
+   "단영이 왼팔의 화상 흉터를 묻고 연호가 답하지 않는 모습을 그려도 된다(중간).",
+   "소량이 연호가 숨기는 것(해독한 내용을 야화련에 넘기기로 한 조건)을 두고 서진과 다투는 장면을 그려도 된다(약함).",
+   "단영이 집법당 정예 이야기를 할 때 잠깐 시선을 떨구는 모습까지 그려도 된다(약함). 단영의 속마음은 쓰지 않는다."
+  ],
+  "relationship_changes": [
+   {
+    "relationship": "r01",
+    "a": "seojin",
+    "b": "soryang",
+    "status": "사형 문제로 멱살을 잡은 동행",
+    "public": false
+   }
+  ],
+  "knowledge_events": [
+   {
+    "character": "danyeong",
+    "fact_id": "f014",
+    "note": "소량의 말로 들음"
+   },
+   {
+    "character": "gyucheon",
+    "fact_id": "f016",
+    "offstage": true,
+    "note": "장헌의 보고"
+   },
+   {
+    "character": "gyucheon",
+    "fact_id": "f061",
+    "offstage": true,
+    "note": "장헌의 보고"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f088"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f088"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f088"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f088"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f089"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f089"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f090"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f090"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f090"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f090"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f090"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f091"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f091"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f091"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f091"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f092"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f092"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f092"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f092"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f093"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f093"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f093"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f143",
+    "offstage": true,
+    "note": "고목사 일 뒤 스스로 한 일"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f147",
+    "offstage": true,
+    "note": "가주의 답신으로 앎"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f210",
+    "offstage": true,
+    "note": "오두막에서 상처를 꿰매며 봄. 소량 시점이라 단영의 속마음은 그리지 않음"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f211",
+    "offstage": true,
+    "note": "직접 한 말. 소량 시점이라 그 속뜻은 그리지 않음"
+   }
+  ],
+  "pov_must_hide": [
+   "f166",
+   "f167"
+  ],
+  "ending_hook": "오두막 밖에서 강필이 혼잣말처럼 말한다. '두 분 다 틀리진 않았습니다.'",
+  "end_state": "일행 사이에 금이 갔다. 연호가 깨어났다."
+ },
+ {
+  "ep": 20,
+  "title": "불길에서 온 아이",
+  "pov": "seojin",
+  "location": "오두막 뒤 계곡",
+  "characters_present": [
+   "seojin",
+   "yeonho",
+   "soryang",
+   "eunchan",
+   "danyeong",
+   "gangpil"
+  ],
+  "summary": "열이 내린 연호는 단영에게서 옆구리 상처가 나란한 두 줄이었다는 말을 듣고, 밤에 서진만 오두막 뒤 계곡으로 불러낸다. 연호는 왼팔의 흉터가 불길에서 생긴 것이라고 말한다. 연호는 자신이 20년 전 적하곡 참변의 생존자이며, 열두 살 때 불타는 마을에서 사부가 자신을 업고 나왔다고 밝힌다. 서진이 사부가 왜 그 불길 속에 있었느냐고 묻자, 연호는 '나중에 말하겠네'라고만 답한다. 서진은 사형이 자신과 같은 고아라는 것만 알았지 출신은 몰랐다. 연호는 그래서 무성보에 적힌 진실을 알아야 한다고 말하고, 서진은 해독을 끝까지 함께하자고 약속한다. 오두막으로 돌아오니 소량이 문 앞에 앉아 기다리고 있다.",
+  "beats": [
+   "계곡의 두 사람",
+   "흉터의 내력",
+   "적하곡 생존자 연호",
+   "사부가 업고 나온 열두 살 아이",
+   "왜 그곳에 있었느냐는 물음과 '나중에'",
+   "끝까지 함께하자는 약속",
+   "문 앞의 소량"
+  ],
+  "facts_revealed": [
+   "f094",
+   "f095",
+   "f096"
+  ],
+  "hints_allowed": [
+   "서진이 사부가 왜 그 불길 속에 있었느냐고 묻는 장면을 그려도 된다(중간). 연호는 '나중에 말하겠네'라며 답하지 않는다.",
+   "서진과 연호가 계곡에서 둘만 이야기하는 장면을 그려도 된다(약함). 다른 인물은 엿듣지 않는다.",
+   "불길과 희생은 결과와 감정 위주로 쓰고 신체 손상은 묘사하지 않는다(15세)."
+  ],
+  "relationship_changes": [
+   {
+    "relationship": "r02",
+    "a": "seojin",
+    "b": "yeonho",
+    "status": "비밀을 나눈 사형제",
+    "public": false
+   }
+  ],
+  "knowledge_events": [
+   {
+    "character": "yeonho",
+    "fact_id": "f088",
+    "note": "깨어나 단영에게 들음"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f094"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f095"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f096"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f096"
+   }
+  ],
+  "pov_must_hide": [],
+  "ending_hook": "소량이 일어서며 말한다. '……사과는 안 한다. 대신 같이 간다.'",
+  "end_state": "서진과 연호 사이의 신뢰가 돌아오기 시작한다."
+ },
+ {
+  "ep": 21,
+  "title": "도려낸 장",
+  "pov": "seojin",
+  "location": "산중 사냥꾼 오두막",
+  "characters_present": [
+   "seojin",
+   "yeonho",
+   "danyeong",
+   "soryang",
+   "gangpil",
+   "eunchan"
+  ],
+  "summary": "연호가 무성보 여백의 죽절문을 한 줄씩 풀기 시작한다. 여백에는 낙엽무성검 마지막 초식의 요결과 함께 사부가 남긴 일기 같은 글이 섞여 있다. 서진은 마지막 초식의 요결을 처음으로 읽으며 손을 떤다. 여백의 글은 20년 전 어느 골짜기에서 있었던 일을 적다가 뚝 끊기고, 끝에는 '마지막 장은 소금꽃 피는 곳에 맡겼다'는 한 줄만 남아 있다. 살펴보니 무성보의 마지막 장이 칼로 깔끔하게 도려내져 있다. 연호는 사부가 직접 도려냈을 것이라 짐작한다. 소량과 강필은 해독을 지켜본 뒤 근처 마을로 식량을 구하러 떠난다.",
+  "beats": [
+   "해독 시작",
+   "마지막 초식의 요결",
+   "어느 골짜기의 기록과 소금꽃 한 줄",
+   "도려낸 마지막 장",
+   "사부가 도려냈으리라는 짐작",
+   "식량을 구하러 간 소량과 강필"
+  ],
+  "facts_revealed": [
+   "f097",
+   "f098",
+   "f099",
+   "f100"
+  ],
+  "hints_allowed": [
+   "연호가 마지막 장을 사부가 직접 도려냈으리라 짐작하는 모습을 그려도 된다(약함). 마지막 장의 행방 단서는 소금꽃 한 줄 말고는 넣지 않는다.",
+   "끊긴 기록을 '20년 전 어느 골짜기'까지만 그려도 된다(중간). 사람 이름은 나오지 않는다.",
+   "여백 끝의 '마지막 장은 소금꽃 피는 곳에 맡겼다'는 한 줄을 그대로 옮겨도 된다(중간). 서진이 백염장의 소금 결정을 떠올리는 것까지만 쓰고, 마지막 장이 누구 손에 있는지는 단정하지 않는다."
+  ],
+  "relationship_changes": [],
+  "knowledge_events": [
+   {
+    "character": "seojin",
+    "fact_id": "f097"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f097"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f097"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f097"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f097"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f097"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f098"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f098"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f098"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f098"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f098"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f098"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f099"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f099"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f099"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f099"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f099"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f099"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f100"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f100"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f100"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f100"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f100"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f100"
+   }
+  ],
+  "pov_must_hide": [],
+  "ending_hook": "연호가 말한다. '반월객잔 주인에게 물어보게. 그 사람은 오래 산 사람이야.'",
+  "end_state": "마지막 장이 사라졌다는 것이 밝혀졌다."
+ },
+ {
+  "ep": 22,
+  "title": "짐꾼의 기억",
+  "pov": "seojin",
+  "location": "반월객잔",
+  "characters_present": [
+   "seojin",
+   "yeonho",
+   "soryang",
+   "gangpil",
+   "danyeong",
+   "eunchan",
+   "masam"
+  ],
+  "summary": "일행은 반월객잔으로 돌아가고, 서진은 은찬을 2층에 재운 뒤 마삼에게 적하곡에 대해 묻는다. 마삼은 곽 형과 청류회 전까지는 적하곡 일에 입을 닫기로 약속했지만 이제 그 약속을 지킬 사람이 없다며, 처음으로 값을 받지 않는다. 마삼은 자신이 20년 전 운하맹 토벌대의 짐꾼이었고 그 토벌대에 곽태허도 있었다고 털어놓는다. 서진은 사부가 적하곡 토벌대의 일원이었다는 사실에 무너진다. 연호는 3년 전 그 사실을 알고 사부와 다툰 것이라고 고백한다. 마삼은 곽태허가 올가을 청류회에서 적하곡의 진실을 밝히려 했다고 덧붙인다. 그 밤 강필이 마구간 불침번을 서는 사이 서진은 객잔 뒤뜰에서 소량에게만 연호의 출신과 사부가 연호를 불길에서 업고 나온 일을 들려주고, 소량은 처음으로 서진을 '한 형'이라 부른다.",
+  "beats": [
+   "입을 닫기로 한 약속과 값을 받지 않는 마삼",
+   "토벌대 짐꾼이었던 마삼",
+   "토벌대에 있던 곽태허",
+   "무너지는 서진",
+   "다툼의 까닭",
+   "청류회에서 밝히려 했던 진실",
+   "'한 형'"
+  ],
+  "facts_revealed": [
+   "f101",
+   "f102",
+   "f103",
+   "f104",
+   "f105",
+   "f106"
+  ],
+  "hints_allowed": [
+   "마삼이 곽태허를 '곽 형'이라 부르며 오래된 사이를 내비치는 것을 그려도 된다(약함).",
+   "토벌대 이야기는 곽태허와 마삼이 그 안에 있었다는 것까지만 그려도 된다(중간). 그 밖의 토벌대 일은 쓰지 않는다.",
+   "'한 형' 장면은 객잔 뒤뜰의 서진과 소량 둘만 그린다(약함). 강필은 마구간 불침번을 서고 있어 그 이야기를 듣지 못한다."
+  ],
+  "relationship_changes": [
+   {
+    "relationship": "r01",
+    "a": "seojin",
+    "b": "soryang",
+    "status": "'한 형'이라 부르는 벗",
+    "public": false
+   },
+   {
+    "relationship": "r06",
+    "a": "seojin",
+    "b": "taeheo",
+    "status": "흔들린 존경",
+    "public": false
+   },
+   {
+    "relationship": "r15",
+    "a": "masam",
+    "b": "taeheo",
+    "status": "20년 전 같은 토벌대에 있던 사이",
+    "public": false
+   }
+  ],
+  "knowledge_events": [
+   {
+    "character": "soryang",
+    "fact_id": "f082",
+    "note": "연호의 고백을 들음"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f082",
+    "note": "연호의 고백을 들음"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f082",
+    "note": "연호의 고백을 들음"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f094",
+    "note": "서진에게 들음"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f095",
+    "note": "서진에게 들음"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f101"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f101"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f101"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f101"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f101"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f102"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f102"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f102"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f102"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f103"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f103"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f103"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f103"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f103"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f104"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f104"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f104"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f104"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f104"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f105"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f105"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f106"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f106"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f106"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f106"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f106"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f114",
+    "offstage": true,
+    "note": "집을 나오기 전날 밤"
+   }
+  ],
+  "pov_must_hide": [],
+  "ending_hook": "새벽, 객잔 문을 두드리는 가녀린 손이 있다.",
+  "end_state": "서진은 사부의 과거를 알았다. 소량과 서진이 가까워졌다."
+ },
+ {
+  "ep": 23,
+  "title": "남장한 손님",
+  "pov": "soryang",
+  "location": "반월객잔",
+  "characters_present": [
+   "soryang",
+   "seojin",
+   "gangpil",
+   "harin",
+   "eunchan",
+   "danyeong",
+   "masam",
+   "yeonho"
+  ],
+  "summary": "남장을 한 하린이 반월객잔에 나타나 소량을 놀라게 한다. 하린은 아버지 몰래 집을 나왔다며 오라버니를 데려가지 않으면 돌아가지 않겠다고 버틴다. 하린은 강필을 보자 눈을 피하며 어색하게 군다. 소량은 하린에게 연호가 야화련 부련주이자 서진의 사형이며 3년 전 취죽문을 떠났고, 해독한 내용을 야화련에도 알린다는 조건으로 무성보 해독을 돕고 있다고 말해 준다. 연호는 해독한 내용을 련주에게 전하러 백염장으로 떠난다. 하린은 오라버니에게 무언가 말하려다 강필이 다가오자 입을 다문다. 소량은 동생이 낯설게 느껴진다.",
+  "beats": [
+   "남장한 하린",
+   "가출과 고집",
+   "강필을 피하는 하린",
+   "소량이 하린에게 사정을 들려준다",
+   "백염장으로 떠나는 연호",
+   "말을 삼킨 하린"
+  ],
+  "facts_revealed": [
+   "f107",
+   "f108"
+  ],
+  "hints_allowed": [
+   "하린이 강필을 보자 눈을 피하고 오라버니에게 무언가 말하려다 삼키는 모습을 그려도 된다(중간). 숨기는 것의 내용은 짐작하게 하지 않고, 소량 시점은 하린의 속마음을 서술하지 않는다."
+  ],
+  "relationship_changes": [
+   {
+    "relationship": "r14",
+    "a": "soryang",
+    "b": "harin",
+    "status": "아버지 몰래 함께하는 남매",
+    "public": false
+   }
+  ],
+  "knowledge_events": [
+   {
+    "character": "harin",
+    "fact_id": "f016"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f017"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f054"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f061",
+    "note": "소량에게 들음"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f084",
+    "note": "소량에게 들음"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f107"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f107"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f107"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f107"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f107"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f107"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f107"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f107"
+   },
+   {
+    "character": "jeonghyeok",
+    "fact_id": "f107",
+    "offstage": true,
+    "note": "딸이 사라진 것을 앎"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f108"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f108"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f108"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f108"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f108"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f241",
+    "note": "23:21-75 객잔에서 소량을 찾아냄"
+   }
+  ],
+  "pov_must_hide": [
+   "f166",
+   "f167"
+  ],
+  "ending_hook": "장터 쪽에서 북소리와 함께 운하맹의 방을 붙인다는 외침이 들린다.",
+  "end_state": "하린이 일행에 합류했다. 연호는 잠시 떠났다."
+ },
+ {
+  "ep": 24,
+  "title": "청류회의 방",
+  "pov": "seojin",
+  "location": "반월객잔 근처 장터",
+  "characters_present": [
+   "seojin",
+   "soryang",
+   "gangpil",
+   "harin",
+   "eunchan",
+   "danyeong",
+   "masam"
+  ],
+  "summary": "장터에 운하맹의 방이 나붙는다. 맹주 양규천이 올해 청류회에서 사부 살해범 한서진을 공개 심판하겠다고 선포한 것이다. 마삼은 올해 청류회가 석 달 뒤 청류대에서 열린다고 알려 준다. 마삼은 청류회에는 단상에 스스로 오른 자가 검으로 제 말을 증명할 수 있는 오래된 등단 검증 규칙이 있다고 덧붙인다. 서진은 석 달 안에 진실을 밝혀야 한다. 단영은 방 앞에 오래 서 있다가 아무 말 없이 돌아온다. 하린은 강필에게 무언가 말하려다 오라버니가 다가오자 다시 입을 다문다. 서진은 은찬만은 이 싸움에 끌어들이지 않겠다고 마음먹는다.",
+  "beats": [
+   "운하맹의 방",
+   "공개 심판 선포",
+   "석 달 뒤 청류대",
+   "등단 검증 규칙",
+   "방 앞의 단영",
+   "또 말을 삼킨 하린",
+   "은찬을 지키려는 서진"
+  ],
+  "facts_revealed": [
+   "f109",
+   "f110",
+   "f111",
+   "f112"
+  ],
+  "hints_allowed": [
+   "단영이 운하맹의 방 앞에 오래 서 있는 모습을 바깥에서 본 그대로 그려도 된다(약함). 단영의 속마음은 쓰지 않는다.",
+   "하린이 강필에게 또 말을 삼키는 모습을 그려도 된다(약함). 숨기는 것의 내용은 쓰지 않는다.",
+   "그날 밤 서진이 마구간 쪽으로 귀를 기울이는 소량을 보는 장면을 그려도 된다(약함)."
+  ],
+  "relationship_changes": [],
+  "knowledge_events": [
+   {
+    "character": "danyeong",
+    "fact_id": "f029"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f031"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f033"
+   },
+   {
+    "character": "gyucheon",
+    "fact_id": "f109",
+    "offstage": true,
+    "note": "직접 선포"
+   },
+   {
+    "character": "janghun",
+    "fact_id": "f109",
+    "offstage": true
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f109"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f109"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f109"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f109"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f109"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f109"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f109"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f109",
+    "offstage": true
+   },
+   {
+    "character": "myeonghwa",
+    "fact_id": "f109",
+    "offstage": true
+   },
+   {
+    "character": "jeonghyeok",
+    "fact_id": "f109",
+    "offstage": true
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f110"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f110"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f110"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f110"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f110"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f110"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f110",
+    "offstage": true
+   },
+   {
+    "character": "myeonghwa",
+    "fact_id": "f110",
+    "offstage": true
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f111"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f111"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f112"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f112"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f112"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f112"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f112"
+   }
+  ],
+  "pov_must_hide": [],
+  "ending_hook": "그날 밤 서진은 소량이 마구간 쪽을 향해 가만히 귀를 기울이는 것을 본다.",
+  "end_state": "청류회까지 석 달이 남았다."
+ },
+ {
+  "ep": 25,
+  "title": "봉인된 서신",
+  "pov": "soryang",
+  "location": "반월객잔 마구간",
+  "characters_present": [
+   "soryang",
+   "gangpil",
+   "harin",
+   "seojin",
+   "danyeong",
+   "eunchan"
+  ],
+  "summary": "하린은 마침내 오라버니에게 아버지 서재에서 강필의 필체로 된 보고서를 보았다고 털어놓는다. 그날 밤 소량은 마구간에서 전서구를 날리려는 강필을 붙잡는다. 강필은 가주 위정혁의 명으로 밤마다 전서구를 날려 소량의 행적을 보고해 왔다고 변명 없이 인정한다. 소량은 '넌 내 사람이 아니었구나'라며 강필의 검을 땅에 내던진다. 강필은 무릎을 꿇었다가 일어나 객잔을 떠난다. 하린은 강필을 따라가려다 소량에게 붙잡힌다. 서진과 단영은 멀리서 이 모든 것을 지켜보고, 은찬은 아무것도 모른 채 잠들어 있다.",
+  "beats": [
+   "하린의 고백",
+   "마구간의 전서구",
+   "강필이 보고를 인정한다",
+   "검을 던진 소량",
+   "떠나는 강필",
+   "붙잡힌 하린"
+  ],
+  "facts_revealed": [
+   "f113",
+   "f114",
+   "f115",
+   "f243",
+   "f116"
+  ],
+  "hints_allowed": [
+   "강필이 가주의 명으로 보고해 왔다고 변명 없이 인정하는 장면을 그려도 된다(강함). 보고의 내용은 쓰지 않는다."
+  ],
+  "relationship_changes": [
+   {
+    "relationship": "r03",
+    "a": "soryang",
+    "b": "gangpil",
+    "status": "결별",
+    "public": false
+   }
+  ],
+  "knowledge_events": [
+   {
+    "character": "soryang",
+    "fact_id": "f113"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f113"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f113"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f113",
+    "note": "25:171 강필의 자백을 문간에서 들음(25:211)"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f114"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f114"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f114"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f114"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f115"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f115"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f115"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f115"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f115"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f243"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f243"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f243"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f243"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f243"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f116"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f116"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f116"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f116"
+   }
+  ],
+  "pov_must_hide": [
+   "f166",
+   "f167"
+  ],
+  "ending_hook": "새벽, 하린의 방이 비어 있다.",
+  "end_state": "강필이 떠났다. 소량과 강필은 결별했다."
+ },
+ {
+  "ep": 26,
+  "title": "남은 사람들",
+  "pov": "harin",
+  "location": "반월객잔과 산길",
+  "characters_present": [
+   "harin",
+   "gangpil",
+   "soryang",
+   "seojin",
+   "eunchan",
+   "masam",
+   "danyeong"
+  ],
+  "summary": "하린은 새벽에 몰래 강필을 쫓아가 산길에서 붙잡는다. 하린은 내기 빚 대신 제 마음을 받아 가라며 강필을 좋아한다고 고백한다. 강필은 '아가씨는 제게 과분하십니다'라며 거절하고, 가주에게도 돌아가지 않겠다고 말한 뒤 떠난다. 하린이 객잔으로 돌아오자 은찬이 강필 아저씨는 어디 갔느냐고 묻는다. 서진은 사부가 숨지기 전에 청류대를 떠난 집법당 무사가 장헌인지 출동 기록으로 확인하려고, 청류대 기록고에 숨어들 계획을 세우고 은찬을 마삼에게 맡기기로 한다. 은찬은 따라가겠다고 조르지만, 서진은 무성보를 다시 은찬의 목검 속에 넣어 두며 '이걸 지키는 게 네 일이다'라고 말한다. 하린은 그 모습을 보며 무성보가 처음 목검 속에서 나왔다는 이야기를 듣는다.",
+  "beats": [
+   "산길의 고백",
+   "과분하다는 거절",
+   "떠나는 강필",
+   "장헌인지 확인할 출동 기록을 노린 잠입 계획",
+   "은찬을 마삼에게 맡긴다",
+   "무성보를 다시 목검에"
+  ],
+  "facts_revealed": [
+   "f117",
+   "f118",
+   "f119",
+   "f120",
+   "f121"
+  ],
+  "hints_allowed": [
+   "강필이 어디로 가는지 모르는 하린의 막막함을 그려도 된다(약함).",
+   "하린이 무성보가 처음 목검에서 나왔다는 이야기를 듣는 장면을 그려도 된다(약함)."
+  ],
+  "relationship_changes": [
+   {
+    "relationship": "r04",
+    "a": "harin",
+    "b": "gangpil",
+    "status": "고백과 거절",
+    "public": false
+   }
+  ],
+  "knowledge_events": [
+   {
+    "character": "harin",
+    "fact_id": "f072",
+    "note": "서진이 무성보를 다시 목검에 넣는 것을 보며 내력을 들음"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f115"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f115"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f243",
+    "note": "26:161 '나랑 틀어졌다'"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f117"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f117"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f118"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f118"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f119"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f119"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f119"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f119"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f119"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f119"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f120"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f120"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f120"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f120"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f120"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f121"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f121"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f121"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f121"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f144",
+    "offstage": true,
+    "note": "결별 뒤 스스로 한 일"
+   },
+   {
+    "character": "jeonghyeok",
+    "fact_id": "f144",
+    "offstage": true,
+    "note": "보고가 끊긴 것을 앎"
+   }
+  ],
+  "pov_must_hide": [
+   "f167"
+  ],
+  "ending_hook": "마삼이 은찬의 손에 주판을 쥐여 준다.",
+  "end_state": "서진, 소량, 하린, 단영이 청류대로 떠날 채비를 한다."
+ },
+ {
+  "ep": 27,
+  "title": "청류대 잠입",
+  "pov": "seojin",
+  "interlude_pov": "eunchan",
+  "interlude_scope": "반월객잔에서 은찬이 마삼에게 주판 셈을 배우며 대사형을 기다리는 장면",
+  "location": "청류대 아래 마을과 집법당 기록고",
+  "characters_present": [
+   "seojin",
+   "soryang",
+   "harin",
+   "danyeong",
+   "janghun",
+   "eunchan",
+   "masam"
+  ],
+  "summary": "서진, 소량, 하린, 단영은 운하맹 본산 청류대 아래 마을에 숨어든다. 너울로 얼굴을 가린 단영은 청류대의 뒷길과 경비 교대 시간을 놀랄 만큼 잘 알고, 의원 일로 드나든 적이 있다고만 말한 뒤 뒷길 어귀에 남아 망을 본다. 서진은 집법당 기록고에 숨어들어 출동부에서 장헌이 사부가 숨지기 사흘 전 청류대를 나섰다는 기록을 찾아낸다. 장헌에게 발각된 서진은 찢어 낸 출동부 한 장을 창밖의 소량에게 던지고 동료들을 먼저 피하게 한 뒤 붙잡힌다. 막간에서 은찬은 반월객잔에서 마삼에게 주판 셈을 배우며 대사형을 기다린다. 마삼은 은찬에게 자신이 옛날 짐꾼이었다는 이야기를 우스개로 들려준다. 은찬은 목검을 베개 삼아 잠든다.",
+  "beats": [
+   "청류대 아래 마을",
+   "너울 쓴 단영의 길 안내와 망보기",
+   "출동부의 기록",
+   "찢어 던진 한 장과 붙잡힌 서진",
+   "막간: 주판 셈",
+   "막간: 짐꾼 우스개"
+  ],
+  "facts_revealed": [
+   "f122",
+   "f123",
+   "f242",
+   "f124",
+   "f125"
+  ],
+  "hints_allowed": [
+   "단영이 청류대의 뒷길과 경비 교대를 놀랄 만큼 잘 아는 모습을 그려도 된다(중간). 이유는 '의원 일로 드나들었다'는 말까지만 쓴다.",
+   "단영이 너울로 얼굴을 가리고 뒷길 어귀에 남아 망을 보는 모습을 그려도 된다(약함).",
+   "서진이 출동부에서 장헌의 출행 기록을 찾아내는 장면을 그려도 된다(중간). 서술은 기록만으로 범인을 단정하지 않는다.",
+   "막간에서 은찬이 대사형을 기다리며 주판을 배우는 모습을 그려도 된다(약함). 은찬은 대사형이 붙잡힌 것을 모른다.",
+   "막간에서 마삼이 은찬에게 옛날 짐꾼이었다는 우스개를 들려주는 모습을 그려도 된다(약함). 짐꾼 시절 이야기는 우스개 한 토막까지만 쓴다."
+  ],
+  "relationship_changes": [],
+  "knowledge_events": [
+   {
+    "character": "myeonghwa",
+    "fact_id": "f084",
+    "offstage": true,
+    "note": "연호의 보고"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f122"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f122"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f122"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f123"
+   },
+   {
+    "character": "janghun",
+    "fact_id": "f123"
+   },
+   {
+    "character": "gyucheon",
+    "fact_id": "f123",
+    "offstage": true,
+    "note": "장헌의 보고"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f123",
+    "offstage": true,
+    "note": "서진이 돌아오지 않음. 본문은 그리지 않음"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f123",
+    "offstage": true,
+    "note": "서진이 돌아오지 않음. 본문은 그리지 않음"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f123",
+    "offstage": true,
+    "note": "서진이 돌아오지 않음. 본문은 그리지 않음"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f242"
+   },
+   {
+    "character": "janghun",
+    "fact_id": "f242"
+   },
+   {
+    "character": "gyucheon",
+    "fact_id": "f242",
+    "offstage": true,
+    "note": "장헌의 보고"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f242",
+    "offstage": true,
+    "note": "서진이 돌아오지 않음. 본문은 그리지 않음"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f242",
+    "offstage": true,
+    "note": "서진이 돌아오지 않음. 본문은 그리지 않음"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f242",
+    "offstage": true,
+    "note": "서진이 돌아오지 않음. 본문은 그리지 않음"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f124"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f124"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f125"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f125"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f125"
+   }
+  ],
+  "pov_must_hide": [],
+  "interlude_pov_must_hide": [],
+  "ending_hook": "쇠사슬 소리와 함께 서진이 깊은 계단 아래로 끌려 내려간다.",
+  "end_state": "서진이 붙잡혔다. 나머지는 청류대 아래 마을에 숨어 있다."
+ },
+ {
+  "ep": 28,
+  "title": "침묵옥",
+  "pov": "seojin",
+  "location": "청류대 지하 감옥 침묵옥",
+  "characters_present": [
+   "seojin",
+   "gyucheon",
+   "janghun"
+  ],
+  "summary": "서진은 소리가 새지 않는 청류대 지하 감옥 침묵옥에 갇힌다. 그곳에 맹주 양규천이 직접 찾아와 온화한 얼굴로 서진을 '한 소협'이라 부른다. 규천은 무성보를 넘기면 청류회에서 누명을 벗겨 주겠다고 제안한다. 규천은 '대의를 생각하시오'라며 곽태허가 정파를 어지럽히려 했다고 말한다. 서진은 맹주도 무성보를 찾고 있다는 것을 알아차리지만 무성보가 어디 있는지는 말하지 않는다. 규천이 떠난 뒤 장헌은 압수한 청석을 창살 밖 시렁에 올려 두며 '율 제일조, 법은 사람을 가리지 않는다'고 읊는다. 서진은 어둠 속에서 은찬의 목검을 떠올린다.",
+  "beats": [
+   "침묵옥",
+   "양규천의 방문",
+   "거래 제안",
+   "'대의를 생각하시오'",
+   "맹주도 무성보를 찾는다",
+   "창살 밖 시렁의 청석"
+  ],
+  "facts_revealed": [
+   "f126",
+   "f127",
+   "f128"
+  ],
+  "hints_allowed": [
+   "양규천이 '곽태허가 정파를 어지럽히려 했다'고 말하는 장면을 그려도 된다(중간). 양규천의 말은 온화한 설득으로만 쓴다.",
+   "장헌이 맹주를 깍듯이 모시며 압수한 청석을 창살 밖 시렁, 서진의 손이 닿지 않는 자리에 올려 두는 모습을 그려도 된다(중간)."
+  ],
+  "relationship_changes": [],
+  "knowledge_events": [
+   {
+    "character": "yeonho",
+    "fact_id": "f123",
+    "offstage": true,
+    "note": "야화련 정보망"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f242",
+    "offstage": true,
+    "note": "야화련 정보망"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f126"
+   },
+   {
+    "character": "gyucheon",
+    "fact_id": "f127"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f127"
+   },
+   {
+    "character": "janghun",
+    "fact_id": "f127"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f128"
+   }
+  ],
+  "pov_must_hide": [],
+  "ending_hook": "감옥 벽 너머 물소리 사이로 희미한 휘파람이 들린다.",
+  "end_state": "서진은 침묵옥에 갇혀 있다."
+ },
+ {
+  "ep": 29,
+  "title": "물길",
+  "pov": "soryang",
+  "location": "청류대 지하 수로와 침묵옥",
+  "characters_present": [
+   "soryang",
+   "harin",
+   "danyeong",
+   "yeonho",
+   "seojin",
+   "janghun"
+  ],
+  "summary": "소량은 하린, 단영과 함께 서진을 구할 방도를 찾는다. 공개 심판 소식과 서진이 붙잡혔다는 전갈을 들은 연호가 야화련 무사 몇을 이끌고 나타나 손을 보탠다. 단영은 청류대 지하 수로 지도를 종이에 그려 내고, 소량은 그 정확함에 말을 잃는다. 단영이 수로 하류에 배를 대고 기다리기로 하고, 소량과 하린과 연호는 수로를 따라 지하 감옥 침묵옥에 닿는다. 연호와 소량은 처음으로 등을 맞대고 집법당 무사들을 막는다. 소량이 창살 밖 시렁의 청석을 집어 건네자 서진은 그 검으로 옥문을 베고 침묵옥에서 빠져나온다. 장헌이 무사들을 이끌고 수로를 따라 뒤쫓는다.",
+  "beats": [
+   "구출 궁리",
+   "연호의 합류",
+   "단영의 수로 지도",
+   "하류의 배와 수로 잠입",
+   "등을 맞댄 연호와 소량",
+   "옥문을 벤 서진",
+   "장헌의 추격"
+  ],
+  "facts_revealed": [
+   "f129",
+   "f130",
+   "f131"
+  ],
+  "hints_allowed": [
+   "단영의 수로 지도가 지나치게 정확해 소량이 '이상하다'고 느끼는 모습을 그려도 된다(중간). 그 이상의 추론은 쓰지 않는다.",
+   "단영이 스스로 하류의 배를 지키겠다며 남는 모습을 그려도 된다(약함).",
+   "장헌을 수로를 따라오는 추격자로 그려도 된다(약함)."
+  ],
+  "relationship_changes": [
+   {
+    "relationship": "r16",
+    "a": "soryang",
+    "b": "yeonho",
+    "status": "등을 맞댄 전우",
+    "public": false
+   }
+  ],
+  "knowledge_events": [
+   {
+    "character": "soryang",
+    "fact_id": "f126"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f126"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f126"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f129"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f129"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f129"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f129"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f129"
+   },
+   {
+    "character": "janghun",
+    "fact_id": "f129"
+   },
+   {
+    "character": "myeonghwa",
+    "fact_id": "f129",
+    "offstage": true,
+    "note": "연호가 알리고 감"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f130"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f130"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f130"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f130"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f130"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f131"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f131"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f131"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f131"
+   },
+   {
+    "character": "janghun",
+    "fact_id": "f131"
+   },
+   {
+    "character": "gyucheon",
+    "fact_id": "f131",
+    "offstage": true
+   }
+  ],
+  "pov_must_hide": [
+   "f166",
+   "f167"
+  ],
+  "ending_hook": "수로 끝, 강물 소리가 가까워진다.",
+  "end_state": "서진이 탈출했다. 장헌이 바짝 뒤쫓는다."
+ },
+ {
+  "ep": 30,
+  "title": "두 줄의 대답",
+  "pov": "seojin",
+  "location": "청류대 밖 수로 출구 강가",
+  "characters_present": [
+   "seojin",
+   "soryang",
+   "harin",
+   "yeonho",
+   "janghun"
+  ],
+  "summary": "수로 출구 강가에서 장헌이 일행을 따라잡는다. 서진과 장헌이 맞붙고, 장헌의 쌍현검이 서진의 소매를 나란한 두 줄로 가른다. 서진은 '사부님 목의 검흔도 두 줄이었소'라고 말한다. 장헌은 잠시 침묵하다 '곽태허는 내가 베었다, 율이 그리 명했다'고 답한다. 장헌은 서진의 검을 시신 곁에 둔 것도 자신이며, 검안은 집법당이 맡으니 두 줄 검흔을 따질 자는 없다고 여겼다고 말한다. 연호가 장헌을 막아서는 사이 일행은 단영이 배를 대 놓은 하류를 향해 강물에 뛰어든다. 장헌은 누구의 명이었는지는 끝내 말하지 않는다.",
+  "beats": [
+   "강가의 추격전",
+   "소매를 가른 두 줄",
+   "검흔에 대한 물음",
+   "'곽태허는 내가 베었다'",
+   "청석을 둔 자",
+   "검안을 믿은 장헌",
+   "강물로 몸을 던지다"
+  ],
+  "facts_revealed": [
+   "f132",
+   "f133",
+   "f134",
+   "f135"
+  ],
+  "hints_allowed": [
+   "장헌이 '율이 그리 명했다'고 말하는 것까지 그려도 된다(중간). 그 밖의 대사는 덧붙이지 않는다."
+  ],
+  "relationship_changes": [
+   {
+    "relationship": "r11",
+    "a": "seojin",
+    "b": "janghun",
+    "status": "사부의 원수",
+    "public": false
+   }
+  ],
+  "knowledge_events": [
+   {
+    "character": "harin",
+    "fact_id": "f008"
+   },
+   {
+    "character": "janghun",
+    "fact_id": "f008"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f014"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f085"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f131",
+    "offstage": true,
+    "note": "하류의 배에서 빠져나온 일행을 맞으며 앎. 본문은 그리지 않음"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f132"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f132"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f132"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f132"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f133"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f133"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f133"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f133"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f134"
+   },
+   {
+    "character": "janghun",
+    "fact_id": "f134"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f134"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f134"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f134"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f135"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f135"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f135"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f135"
+   }
+  ],
+  "pov_must_hide": [],
+  "ending_hook": "물살에 휩쓸리며 서진은 연호의 손을 놓치지 않는다.",
+  "end_state": "사부를 죽인 자가 밝혀졌다. 일행은 강물을 타고 달아났다."
+ },
+ {
+  "ep": 31,
+  "title": "기다리는 아이",
+  "pov": "eunchan",
+  "location": "반월객잔",
+  "characters_present": [
+   "eunchan",
+   "masam",
+   "seojin",
+   "soryang",
+   "harin",
+   "danyeong",
+   "yeonho"
+  ],
+  "summary": "은찬은 객잔 마루에서 목검을 안고 대사형을 기다린다. 비에 젖은 일행이 돌아오고, 은찬은 서진에게 매달려 운다. 서진은 은찬에게 청류대에서 붙잡혔다 빠져나온 일과, 사부님을 해친 사람을 찾았다는 것만 말한다. 은찬은 마삼에게 배운 주판 셈을 자랑하고, 서진은 웃어 준다. 서진과 따로 방에서 오래 이야기를 나누고 나온 마삼은 혀를 차더니, 은찬과 서진 앞에서 자신이 오래전 곽태허에게 목숨 빚을 졌다고 털어놓는다. 하린과 소량은 처마 밑에서 오래 이야기를 나누고, 단영은 서진과 짧게 말을 주고받은 뒤 말없이 약을 갠다. 은찬은 연호 사형이 돌아온 것이 기뻐 연호의 무릎을 베고 잠든다.",
+  "beats": [
+   "기다리는 은찬",
+   "돌아온 일행",
+   "사부님을 해친 사람을 찾았다는 말",
+   "주판 자랑",
+   "마삼의 목숨 빚",
+   "처마 밑 남매와 약을 개는 단영",
+   "연호의 무릎"
+  ],
+  "facts_revealed": [
+   "f136",
+   "f137"
+  ],
+  "hints_allowed": [
+   "서진이 은찬에게 사부님을 해친 사람을 찾았다고만 말하는 장면을 그려도 된다(약함). 범인의 이름은 은찬이 모르므로 쓰지 않는다.",
+   "마삼이 목숨 빚을 '옛날 산에서'처럼 흐리게 말하는 모습을 그려도 된다(약함).",
+   "처마 밑 남매와, 서진이 마삼·단영과 나누는 이야기는 은찬이 멀리서 본 모습까지만 그려도 된다(약함). 대화 내용은 쓰지 않는다."
+  ],
+  "relationship_changes": [
+   {
+    "relationship": "r15",
+    "a": "masam",
+    "b": "taeheo",
+    "status": "목숨 빚을 진 옛 친구",
+    "public": false
+   }
+  ],
+  "knowledge_events": [
+   {
+    "character": "harin",
+    "fact_id": "f071",
+    "offstage": true,
+    "note": "소량에게 들음. 은찬 시점이라 그리지 않음"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f094",
+    "offstage": true,
+    "note": "서진에게 들음. 은찬 시점이라 대화 내용은 그리지 않음"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f094",
+    "offstage": true,
+    "note": "소량에게 들음. 은찬 시점이라 대화 내용은 그리지 않음"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f095",
+    "offstage": true,
+    "note": "소량에게 들음. 은찬 시점이라 그리지 않음"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f095",
+    "offstage": true,
+    "note": "서진에게 들음. 은찬 시점이라 그리지 않음"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f102",
+    "offstage": true,
+    "note": "소량에게 들음. 은찬 시점이라 그리지 않음"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f119"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f123",
+    "note": "서진에게 들음"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f123"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f242",
+    "note": "서진에게 들음"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f242"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f124",
+    "note": "은찬에게 들음"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f124"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f124"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f124"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f131"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f131"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f132",
+    "offstage": true,
+    "note": "서진에게 들음. 은찬 시점이라 그리지 않음"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f132",
+    "offstage": true,
+    "note": "서진과 따로 나눈 이야기. 은찬 시점이라 그리지 않음"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f133",
+    "offstage": true,
+    "note": "서진에게 들음. 은찬 시점이라 그리지 않음"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f133",
+    "offstage": true,
+    "note": "서진과 따로 나눈 이야기. 은찬 시점이라 그리지 않음"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f134",
+    "offstage": true,
+    "note": "서진에게 들음. 은찬 시점이라 그리지 않음"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f135",
+    "offstage": true,
+    "note": "서진에게 들음. 은찬 시점이라 그리지 않음"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f136"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f136"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f136"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f136"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f136"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f136"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f137"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f137"
+   }
+  ],
+  "pov_must_hide": [],
+  "ending_hook": "은찬이 잠결에 묻는다. '연호 사형도 이제 안 가요?'",
+  "end_state": "일행이 반월객잔에 다시 모였다. 강필은 아직 없다."
+ },
+ {
+  "ep": 32,
+  "title": "대숲의 대련",
+  "pov": "seojin",
+  "location": "반월객잔 뒤 대숲",
+  "characters_present": [
+   "seojin",
+   "yeonho",
+   "soryang"
+  ],
+  "summary": "상처가 아문 연호와 서진이 객잔 뒤 대숲에서 오랜만에 대련을 한다. 연호는 3년 전 아무 말 없이 떠난 일을 서진에게 사과한다. 서진은 사형이 사파에 있든 정파에 있든 자신의 사형이라고 답한다. 연호는 처음으로 서진을 막내가 아닌 서진아, 하고 이름으로 부른다. 둘은 일이 끝나면 사부의 무덤에 함께 가자고 약속한다. 멀리서 지켜보던 소량은 괜히 대나무를 걷어차며 심술을 부린다. 연호는 소량에게 '목 형이라 불러도 되네'라며 웃는다. 해 질 녘 대숲까지 올라온 집법당 수색대에 들킨 셋은 대숲을 가로지르는 추격 끝에 앞선 수색대원 둘을 쓰러뜨리고 수색대를 따돌린다.",
+  "beats": [
+   "대숲의 대련",
+   "말없이 떠난 일에 대한 사과",
+   "사형은 사형",
+   "'서진아'",
+   "사부의 무덤에 가자는 약속",
+   "심술 난 소량",
+   "대숲의 추격전"
+  ],
+  "facts_revealed": [
+   "f138",
+   "f139",
+   "f140",
+   "f141"
+  ],
+  "hints_allowed": [
+   "연호가 앞으로의 거취를 묻는 말에 웃어넘기는 모습을 그려도 된다(약함).",
+   "서진과 연호의 화해는 형제의 정으로 그린다.",
+   "대숲 추격전은 동작과 소리 위주로 짧게 그린다(15세)."
+  ],
+  "relationship_changes": [
+   {
+    "relationship": "r02",
+    "a": "seojin",
+    "b": "yeonho",
+    "status": "화해한 사형제",
+    "public": false
+   },
+   {
+    "relationship": "r16",
+    "a": "soryang",
+    "b": "yeonho",
+    "status": "농을 주고받는 사이",
+    "public": false
+   }
+  ],
+  "knowledge_events": [
+   {
+    "character": "yeonho",
+    "fact_id": "f138"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f138"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f139"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f139"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f139"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f140"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f140"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f141"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f141"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f141"
+   },
+   {
+    "character": "janghun",
+    "fact_id": "f141",
+    "offstage": true,
+    "note": "직접 보낸 수색대"
+   }
+  ],
+  "pov_must_hide": [],
+  "ending_hook": "다음 날 아침, 식량을 구하러 나선 소량과 서진의 뒤를 낯선 발자국이 따른다.",
+  "end_state": "서진과 연호가 화해했다."
+ },
+ {
+  "ep": 33,
+  "title": "돌아온 칼",
+  "pov": "soryang",
+  "location": "반월객잔 인근 숲과 뒤뜰",
+  "characters_present": [
+   "soryang",
+   "gangpil",
+   "seojin",
+   "harin",
+   "yeonho"
+  ],
+  "summary": "식량을 구하러 나선 소량과 서진은 뒤를 밟던 발자국의 주인을 붙잡고 보니 강필이다. 강필은 소량 앞에 무릎을 꿇고 가주의 답신 묶음을 내놓으며, 모두 앞에서 말하게 해 달라고 청한다. 객잔 뒤뜰에서 강필은 하린과 연호도 지켜보는 가운데, 녹계촌에서 날린 전서구에 서진이 고목사로 간다는 보고를 적어 보냈다고 털어놓는다. 답신 가운데 하나에는 '고목사 일은 운하맹에 알렸다'는 가주의 글이 있다. 강필은 그 뒤로는 거짓 행선지를 적어 보냈고, 결별한 뒤에는 아예 보고를 끊었다고 말한다. 강필은 '이제는 가주님이 아니라 도련님을 따르겠습니다'라고 맹세하고, 소량은 강필의 검을 돌려주며 장헌이 사부를 죽이고 청석을 시신 곁에 두었다는 것을 알려 준다. 하린은 강필을 보고 울다가 웃는다.",
+  "beats": [
+   "뒤를 밟던 강필",
+   "무릎 꿇고 내놓은 답신 묶음",
+   "고목사로 간다는 보고",
+   "운하맹에 알렸다는 가주의 글",
+   "거짓 행선지와 끊은 보고",
+   "도련님을 따르겠다는 맹세와 돌려준 검",
+   "울다 웃는 하린"
+  ],
+  "facts_revealed": [
+   "f142",
+   "f143",
+   "f144",
+   "f145",
+   "f146",
+   "f147"
+  ],
+  "hints_allowed": [
+   "강필이 하린에게 품은 마음을 눈빛 정도로 그려도 된다(약함).",
+   "가주의 답신은 고목사 행선지를 운하맹에 알렸다는 대목까지만 그려도 된다(중간). 답신의 다른 대목은 쓰지 않는다."
+  ],
+  "relationship_changes": [
+   {
+    "relationship": "r03",
+    "a": "soryang",
+    "b": "gangpil",
+    "status": "스스로 고른 주종",
+    "public": false
+   }
+  ],
+  "knowledge_events": [
+   {
+    "character": "yeonho",
+    "fact_id": "f042"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f079",
+    "note": "강필의 해명을 들음"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f079",
+    "note": "강필의 해명을 들음"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f079",
+    "note": "강필의 해명을 들음"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f081",
+    "note": "강필의 답신 이야기를 들음"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f113",
+    "note": "강필의 해명을 들음"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f115"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f243",
+    "note": "33:151-159 강필과 소량의 말"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f116",
+    "note": "강필의 해명을 들음"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f132",
+    "note": "소량에게 들음"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f133",
+    "note": "소량에게 들음"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f142"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f142"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f142"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f142"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f142"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f143"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f143"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f143"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f143"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f144"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f144"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f144"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f144"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f145"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f145"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f145"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f145"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f145"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f146"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f146"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f146"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f146"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f147"
+   }
+  ],
+  "pov_must_hide": [
+   "f166",
+   "f167"
+  ],
+  "ending_hook": "연호가 품에서 백염장의 소금꽃 인장이 찍힌 서신을 꺼낸다. '련주가 부르시네.'",
+  "end_state": "강필이 돌아왔다. 소량과 강필이 다시 주종이 되었다."
+ },
+ {
+  "ep": 34,
+  "title": "마지막 장의 행방",
+  "pov": "seojin",
+  "location": "백염장",
+  "characters_present": [
+   "seojin",
+   "yeonho",
+   "myeonghwa",
+   "soryang",
+   "danyeong"
+  ],
+  "summary": "연호의 주선으로 서진은 소량, 단영과 함께 다시 백염장을 찾고, 명화에게 장헌이 사부를 죽이고 청석을 시신 곁에 두었다고 알려 준다. 명화는 웃음을 거두고, 곽태허가 죽기 한 달 전 서신과 함께 무성보의 마지막 장을 자신에게 보냈다고 밝힌다. 명화와 곽태허는 몇 해 동안 몰래 서신을 주고받은 사이였고, 명화는 그 장이 죽절문으로 쓰여 있어 읽지 못했다고 말한다. 곽태허는 그 서신에서 서진이 무성보 본책을 들고 찾아올 때까지 마지막 장을 연호에게 보이지 말라고 당부했다. 명화는 곽태허가 두 제자가 본책과 마지막 장을 나란히 펼쳐 함께 앉아 읽기를 바랐을 거라며, 그래서 서진이 본책을 들고 찾아올 날을 기다렸다고 덧붙인다. 명화는 그 당부 때문에 낙수협에서도 연호에게 서진이 무성보를 가졌는지 떠보기만 하라고 일렀다고 말한다. 연호는 련주와 사부가 자신에게 그것을 숨겼다는 데 충격을 받는다. 명화는 마지막 장을 넘기는 값은 따로 말하겠다고 한다.",
+  "beats": [
+   "다시 백염장",
+   "장헌 이야기에 웃음을 거둔 명화",
+   "한 달 전 받은 마지막 장",
+   "몰래 주고받은 서신과 읽지 못한 죽절문",
+   "연호에게 보이지 말라는 당부",
+   "낙수협에서 떠보기만 하라던 지시",
+   "연호의 충격"
+  ],
+  "facts_revealed": [
+   "f148",
+   "f149",
+   "f150",
+   "f151",
+   "f152"
+  ],
+  "hints_allowed": [
+   "명화가 곽태허를 '곽 대협'이라 부르며 그리움을 내비치는 모습을 그려도 된다(약함).",
+   "마지막 장은 접힌 종이의 겉모습까지만 그려도 된다(약함). 내용은 한 글자도 쓰지 않는다.",
+   "명화의 짐작은 곽태허가 두 제자가 함께 앉아 읽기를 바랐으리라는 데까지만 쓴다(약함)."
+  ],
+  "relationship_changes": [
+   {
+    "relationship": "r08",
+    "a": "yeonho",
+    "b": "myeonghwa",
+    "status": "숨긴 것이 있던 련주와 부련주",
+    "public": false
+   },
+   {
+    "relationship": "r13",
+    "a": "seojin",
+    "b": "myeonghwa",
+    "status": "같은 진실을 쫓는 거래 상대",
+    "public": false
+   }
+  ],
+  "knowledge_events": [
+   {
+    "character": "myeonghwa",
+    "fact_id": "f008"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f008"
+   },
+   {
+    "character": "myeonghwa",
+    "fact_id": "f043"
+   },
+   {
+    "character": "myeonghwa",
+    "fact_id": "f132",
+    "note": "서진에게 들음"
+   },
+   {
+    "character": "myeonghwa",
+    "fact_id": "f133",
+    "note": "서진에게 들음"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f148"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f148"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f148"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f148"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f149"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f149"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f149"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f149"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f150"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f150"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f150"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f150"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f151"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f151"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f151"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f151"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f152"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f152"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f152"
+   }
+  ],
+  "pov_must_hide": [],
+  "ending_hook": "그날 밤 명화가 연호만 따로 부른다.",
+  "end_state": "마지막 장은 명화에게 있다. 값은 아직 정해지지 않았다."
+ },
+ {
+  "ep": 35,
+  "title": "부련주의 값",
+  "pov": "yeonho",
+  "location": "백염장 련주 처소",
+  "characters_present": [
+   "yeonho",
+   "myeonghwa",
+   "seojin",
+   "soryang",
+   "danyeong"
+  ],
+  "summary": "명화는 연호만 따로 불러 마지막 장의 값을 말한다. 값은 청류회가 끝나면 연호가 야화련으로 완전히 돌아와 다시는 취죽문의 이름을 쓰지 않는 것이다. 연호는 사부의 무덤에 함께 가자던 서진과의 약속을 떠올린다. 연호는 서진과 상의하지 않고 그 값을 받아들인다. 마지막 장을 받아 나온 연호는 그것을 서진에게 건넨다. 뒤늦게 사정을 안 서진은 연호에게 화를 내지만, 연호는 '바람이 바뀌었네'라며 웃는다. 명화는 연호의 뒷모습을 보며 짧게 한숨을 쉰다.",
+  "beats": [
+   "련주의 부름",
+   "완전히 돌아오라는 값",
+   "무덤의 약속을 떠올린다",
+   "상의 없이 받아들인다",
+   "마지막 장을 건넨다",
+   "서진의 분노와 연호의 웃음"
+  ],
+  "facts_revealed": [
+   "f153",
+   "f154",
+   "f155"
+  ],
+  "hints_allowed": [
+   "연호가 사부의 무덤 약속을 떠올리며 망설이는 모습을 그려도 된다(중간).",
+   "연호가 적하곡을 떠올리는 장면은 불길과 자신을 업은 사부의 등까지만 그려도 된다(약함). 불길은 결과와 감정 위주로 쓴다(15세).",
+   "명화의 과거는 연호가 이미 아는 것(적하곡 생존자)까지만 그려도 된다(약함). 마지막 장의 내용은 연호도 아직 모른다."
+  ],
+  "relationship_changes": [
+   {
+    "relationship": "r02",
+    "a": "seojin",
+    "b": "yeonho",
+    "status": "갈림길에 선 사형제",
+    "public": false
+   },
+   {
+    "relationship": "r08",
+    "a": "yeonho",
+    "b": "myeonghwa",
+    "status": "거래로 묶인 련주와 부련주",
+    "public": false
+   }
+  ],
+  "knowledge_events": [
+   {
+    "character": "soryang",
+    "fact_id": "f140"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f140"
+   },
+   {
+    "character": "myeonghwa",
+    "fact_id": "f153"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f153"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f153"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f153"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f153"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f154"
+   },
+   {
+    "character": "myeonghwa",
+    "fact_id": "f154"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f154"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f154"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f154"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f155"
+   },
+   {
+    "character": "myeonghwa",
+    "fact_id": "f155"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f155"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f155"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f155"
+   }
+  ],
+  "pov_must_hide": [
+   "f156",
+   "f162"
+  ],
+  "ending_hook": "연호가 등잔 심지를 돋우며 말한다. '오늘 밤 안에 풀겠네.'",
+  "end_state": "마지막 장이 서진 일행 손에 들어왔다. 연호는 야화련으로 돌아가기로 했다."
+ },
+ {
+  "ep": 36,
+  "title": "불을 놓으라 한 자",
+  "pov": "seojin",
+  "location": "백염장 객방",
+  "characters_present": [
+   "seojin",
+   "yeonho",
+   "soryang",
+   "danyeong",
+   "myeonghwa"
+  ],
+  "summary": "연호가 밤새 마지막 장의 죽절문을 푼다. 마지막 장에는 20년 전 적하곡에서 토벌대를 이끈 지휘관 양규천이 마을에 불을 놓으라 명령했고, 토벌대가 그 명령대로 마을을 불태웠다는 사부의 기록이 있다. 사부는 '이 명은 따를 수 없다'며 명령을 거부했다가 그 대가로 왼쪽 어깨를 베였고, 불길 속에서 아이 몇을 빼냈다고 적었다. 그 아이들 가운데 어린 옥명화도 있었다는 대목에서 명화는 처음으로 소리 내어 운다. 서진은 사부를 다시 우러러볼 수 있게 된다. 기록에는 협곡 어귀를 막아 마을의 퇴로를 끊은 부대도 나오지만 그 부대를 이끈 자의 이름만 물에 번져 읽을 수 없고, 소량은 그 번진 자리에서 손가락을 멈춘다. 단영은 얼굴이 하얗게 질린 채 조용히 방을 나간다.",
+  "beats": [
+   "밤샘 해독",
+   "불을 놓으라 한 지휘관",
+   "명령대로 불탄 마을",
+   "명령을 거부하고 어깨를 베인 사부",
+   "불길에서 구한 아이들과 명화",
+   "이름만 번진 협곡 어귀의 부대",
+   "방을 나가는 단영"
+  ],
+  "facts_revealed": [
+   "f156",
+   "f157",
+   "f158",
+   "f159",
+   "f160",
+   "f161",
+   "f162"
+  ],
+  "hints_allowed": [
+   "'협곡 어귀를 막아 마을의 퇴로를 끊은 부대'라는 구절은 그대로 읽히게 쓰고, 그 부대를 이끈 자의 이름만 물에 번져 읽을 수 없게 그린다(중간). 이름의 글자 조각은 넣지 않는다. 소량이 번진 자리에서 손가락을 멈추는 모습까지 그려도 되며, 소량의 속마음은 쓰지 않는다.",
+   "단영이 얼굴이 하얗게 질려 방을 나가는 모습을 그려도 된다(중간). 질린 이유는 서술하지 않는다.",
+   "불길과 희생은 결과와 감정 위주로 쓰고 신체 손상은 묘사하지 않는다(15세)."
+  ],
+  "relationship_changes": [
+   {
+    "relationship": "r06",
+    "a": "seojin",
+    "b": "taeheo",
+    "status": "되찾은 존경",
+    "public": false
+   },
+   {
+    "relationship": "r08",
+    "a": "yeonho",
+    "b": "myeonghwa",
+    "status": "같은 은인을 둔 생존자",
+    "public": false
+   }
+  ],
+  "knowledge_events": [
+   {
+    "character": "seojin",
+    "fact_id": "f156"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f156"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f157"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f157"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f157"
+   },
+   {
+    "character": "myeonghwa",
+    "fact_id": "f157"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f158"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f158"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f158"
+   },
+   {
+    "character": "myeonghwa",
+    "fact_id": "f158"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f158"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f159"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f159"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f159"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f159"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f160"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f160"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f160"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f160"
+   },
+   {
+    "character": "myeonghwa",
+    "fact_id": "f160"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f161"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f161"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f161"
+   },
+   {
+    "character": "myeonghwa",
+    "fact_id": "f161"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f161"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f162"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f162"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f162"
+   },
+   {
+    "character": "myeonghwa",
+    "fact_id": "f094",
+    "note": "36:175 연호 '련주도…… 사부 손에 나왔소?'"
+   },
+   {
+    "character": "myeonghwa",
+    "fact_id": "f095",
+    "note": "36:175 연호 '련주도…… 사부 손에 나왔소?'"
+   }
+  ],
+  "pov_must_hide": [],
+  "ending_hook": "소량이 중얼거린다. '번진 자리가…… 하필 왜 여기지.'",
+  "end_state": "적하곡 방화를 명령한 자가 밝혀졌다."
+ },
+ {
+  "ep": 37,
+  "title": "증인을 찾아서",
+  "pov": "seojin",
+  "location": "반월객잔",
+  "characters_present": [
+   "seojin",
+   "soryang",
+   "yeonho",
+   "danyeong",
+   "harin",
+   "gangpil",
+   "eunchan",
+   "masam"
+  ],
+  "summary": "일행은 반월객잔으로 돌아와 하린, 강필, 은찬과 다시 만난다. 서진은 은찬을 재운 뒤 모두에게 마지막 장의 내용과 그 장이 명화에게 있었던 경위, 기록고에서 찾은 장헌의 출동 기록, 침묵옥에서 맹주가 무성보를 넘기라며 내건 거래를 들려주고, 강필은 이때 연호의 출신도 처음 듣는다. 서진은 청류회에서 양규천을 고발하려면 사부의 기록 외에 살아 있는 증인이 필요하다고 판단한다. 마삼은 자신은 짐꾼이라 방화 명령이 떨어진 자리에는 없었고 불은 사파가 질렀다는 말만 믿어 왔다며 증인이 될 수 없다고 말한다. 사파의 련주인 명화의 말은 정파가 믿지 않을 것이다. 단영은 '살아 있는 증인'이라는 말에 무언가 말하려다 끝내 입을 다문다. 그때 단하세가에서 가주가 소량에게 집으로 돌아오라는 서신을 보내오고, 소량은 어릴 적 집에서 어른들이 협곡 어귀를 막은 부대 이야기를 낮게 주고받던 기억을 꺼낸다.",
+  "beats": [
+   "반월객잔 재회",
+   "마지막 장과 출동 기록과 맹주의 거래를 나눈다",
+   "살아 있는 증인이 필요하다",
+   "증인이 될 수 없는 마삼",
+   "말하려다 삼키는 단영",
+   "가주의 서신과 소량의 어릴 적 기억"
+  ],
+  "facts_revealed": [
+   "f163",
+   "f164",
+   "f165",
+   "f166"
+  ],
+  "hints_allowed": [
+   "소량이 어릴 적 집에서 어른들이 협곡 어귀를 막은 부대 이야기를 낮게 주고받던 기억을 꺼내고, 번진 글자의 답이 집에 있을지 모른다고 중얼거리는 모습을 그려도 된다(중간). 누가 그 부대를 이끌었는지는 짐작하지 않는다.",
+   "단영이 '살아 있는 증인'이라는 말에 입을 열려다 삼키는 모습을 그려도 된다(약함). 단영이 하려던 말은 쓰지 않는다.",
+   "가주의 서신은 '집으로 돌아오라'는 말까지만 그려도 된다(약함)."
+  ],
+  "relationship_changes": [],
+  "knowledge_events": [
+   {
+    "character": "yeonho",
+    "fact_id": "f033"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f053",
+    "note": "정혁의 서신을 들음"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f053"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f053"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f069",
+    "note": "회의에서 들음"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f094",
+    "note": "회의에서 들음"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f095",
+    "note": "회의에서 들음"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f097",
+    "note": "회의에서 들음"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f097",
+    "note": "회의에서 들음"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f100",
+    "note": "회의에서 들음"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f100",
+    "note": "회의에서 들음"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f101",
+    "note": "회의에서 들음"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f124"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f124"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f125",
+    "note": "회의에서 들음"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f125",
+    "note": "회의에서 들음"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f125",
+    "note": "회의에서 들음"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f125",
+    "note": "회의에서 들음"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f127",
+    "note": "회의에서 들음"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f127",
+    "note": "회의에서 들음"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f127",
+    "note": "회의에서 들음"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f127",
+    "note": "회의에서 들음"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f127",
+    "note": "회의에서 들음"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f127",
+    "note": "회의에서 들음(37:171)"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f128",
+    "note": "회의에서 들음"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f128",
+    "note": "회의에서 들음"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f128",
+    "note": "회의에서 들음"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f128",
+    "note": "회의에서 들음"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f128",
+    "note": "회의에서 들음(37:171)"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f148"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f148"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f148",
+    "note": "회의에서 들음. 마지막 장이 든 서신은 자신이 나르지 않음"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f149",
+    "note": "회의에서 들음"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f149",
+    "note": "회의에서 들음"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f151",
+    "note": "회의에서 들음"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f151",
+    "note": "회의에서 들음"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f151",
+    "note": "회의에서 들음"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f156",
+    "note": "회의에서 들음"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f156",
+    "note": "회의에서 들음"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f156",
+    "note": "회의에서 들음. 짐꾼으로 뒤에 있어 불길만 보았고, 사파가 질렀다는 공식 기록을 믿어 왔음"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f157",
+    "note": "회의에서 들음"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f157",
+    "note": "회의에서 들음"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f157",
+    "note": "회의에서 들음. 명령이 떨어진 자리에 없었음"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f158"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f158"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f158",
+    "note": "회의에서 들음. 명령이 떨어진 자리에 없었음"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f159"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f159"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f159",
+    "note": "회의에서 들음. 명화가 생존자인 줄은 알았지만 누가 불길에서 빼냈는지는 몰랐음"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f160"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f160"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f160"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f161",
+    "note": "회의에서 들음"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f161",
+    "note": "회의에서 들음"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f161",
+    "note": "회의에서 들음"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f162",
+    "note": "회의에서 들음"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f162",
+    "note": "회의에서 들음"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f162",
+    "note": "회의에서 들음. 짐꾼으로 뒤에 있어 부대 배치는 몰랐음"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f163"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f163"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f163"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f163"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f163"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f163"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f163"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f164"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f164"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f164"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f164"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f164"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f164"
+   },
+   {
+    "character": "jeonghyeok",
+    "fact_id": "f165",
+    "offstage": true,
+    "note": "서신을 보냄"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f165"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f165"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f165"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f165"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f165"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f165"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f165"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f166"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f166"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f166"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f166"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f166"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f166"
+   }
+  ],
+  "pov_must_hide": [],
+  "ending_hook": "소량이 서신을 접으며 말한다. '번진 글자의 답이 집에 있을지도 모르겠군.'",
+  "end_state": "소량은 하린, 강필과 함께 단하세가로 돌아가기로 한다."
+ },
+ {
+  "ep": 38,
+  "title": "연등야",
+  "pov": "harin",
+  "location": "단하성 강변",
+  "characters_present": [
+   "harin",
+   "soryang",
+   "gangpil",
+   "seojin"
+  ],
+  "summary": "소량, 하린, 강필은 단하성으로 돌아가고, 서진은 멀찍이 떨어져 몰래 뒤따른다. 성은 해마다 강에 등불을 띄우는 연등야 축제로 불빛이 가득하다. 하린은 강필과 함께 강가에 등을 띄우며 고백을 거절당한 날 이후 처음으로 다시 마음을 묻는다. 강필은 3년 묵은 소원을 이제야 쓰겠다며 '아가씨의 등불은 제가 지키겠습니다'라고 답하고, 그 소원을 3년 동안 아껴 둔 까닭이 하린이었다고 털어놓는다. 둘은 서로의 마음을 확인하지만 아직 누구에게도 드러내지 않기로 한다. 그때 강필은 인파에 섞여 단하세가 쪽을 살피는 집법당 무사들을 알아보고, 하린을 등 뒤에 둔 채 골목에서 그들과 짧게 칼을 섞어 쫓아낸다. 하린은 인파 속에서 서진의 얼굴을 언뜻 보고 모른 척한다. 소량은 내일 아침 아버지를 만나기로 하고 먼저 들어간다.",
+  "beats": [
+   "단하성 귀향",
+   "연등야 축제",
+   "강가의 등불",
+   "3년 묵은 소원과 등불을 지키겠다는 강필",
+   "서로의 마음을 확인",
+   "골목에서 맞붙은 집법당 무사",
+   "인파 속의 서진"
+  ],
+  "facts_revealed": [
+   "f167",
+   "f168",
+   "f169",
+   "f170",
+   "f171",
+   "f172"
+  ],
+  "hints_allowed": [
+   "강필이 인파에 섞인 집법당 무사들을 알아보고 골목에서 짧게 맞붙는 장면을 그려도 된다(약함). 누가 보냈는지는 쓰지 않고, 칼부림은 짧게 그린다.",
+   "하린 시점에서 아버지는 귀가를 앞둔 걱정으로만 그려도 된다(약함).",
+   "하린과 강필의 장면은 손을 잡는 정도로 담백하게 그린다.",
+   "강필이 내기 소원을 3년 동안 아껴 둔 까닭을 털어놓는 장면을 그려도 된다(중간)."
+  ],
+  "relationship_changes": [
+   {
+    "relationship": "r04",
+    "a": "harin",
+    "b": "gangpil",
+    "status": "서로의 마음을 확인한 사이",
+    "public": false
+   }
+  ],
+  "knowledge_events": [
+   {
+    "character": "seojin",
+    "fact_id": "f167"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f168"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f168"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f169"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f169"
+   },
+   {
+    "character": "janghun",
+    "fact_id": "f169",
+    "offstage": true,
+    "note": "직접 보낸 감시"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f170"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f171"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f171"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f172"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f172"
+   },
+   {
+    "character": "janghun",
+    "fact_id": "f172",
+    "offstage": true,
+    "note": "물러난 무사들의 보고"
+   }
+  ],
+  "pov_must_hide": [],
+  "ending_hook": "집으로 들어서는 소량을 정혁이 서재 문간에 서서 기다리고 있다.",
+  "end_state": "하린과 강필이 마음을 확인했다. 소량은 아버지를 만날 준비를 한다."
+ },
+ {
+  "ep": 39,
+  "title": "가주의 서재",
+  "pov": "soryang",
+  "location": "단하세가 서재와 서고",
+  "characters_present": [
+   "soryang",
+   "jeonghyeok",
+   "harin",
+   "gangpil",
+   "seojin"
+  ],
+  "summary": "정혁은 소량에게 집으로 돌아와 가업을 이으라고 명한다. 소량은 장헌이 곽태허를 죽이고 서진의 검을 시신 곁에 두었으며, 20년 전 맹주가 적하곡에 불을 놓으라 명했다고 아버지에게 말한다. 정혁은 맹주의 명이라는 말에도 눈썹 하나 움직이지 않는다. 그날 밤 하린의 안내로 몰래 들어온 서진과 소량은 서고에서 20년 전 기록을 찾는다. 20년 전 기록 상자는 텅 비어 있다. 소량은 빈 상자를 오래 내려다본다. 강필은 서고 문 앞에서 망을 본다.",
+  "beats": [
+   "가업을 이으라는 명",
+   "소량이 전한 진실",
+   "놀라지 않는 정혁",
+   "하린의 안내로 서고에",
+   "텅 빈 20년 전 기록 상자",
+   "망을 보는 강필"
+  ],
+  "facts_revealed": [
+   "f173",
+   "f174"
+  ],
+  "hints_allowed": [
+   "정혁이 맹주의 방화 명령 이야기를 듣고도 놀라지 않는 모습을 그려도 된다(강함). 놀라지 않은 이유를 짐작하게 하는 말이나 물건은 넣지 않는다.",
+   "텅 빈 20년 전 기록 상자를 그려도 된다(강함).",
+   "소량 시점의 의심은 '아버지가 무언가 알고 있다'까지만 그려도 된다(중간)."
+  ],
+  "relationship_changes": [],
+  "knowledge_events": [
+   {
+    "character": "jeonghyeok",
+    "fact_id": "f132",
+    "note": "소량에게 들음"
+   },
+   {
+    "character": "jeonghyeok",
+    "fact_id": "f133",
+    "note": "소량에게 들음"
+   },
+   {
+    "character": "jeonghyeok",
+    "fact_id": "f142"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f147"
+   },
+   {
+    "character": "jeonghyeok",
+    "fact_id": "f173"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f173"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f173"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f173"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f174"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f174"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f174"
+   }
+  ],
+  "pov_must_hide": [],
+  "ending_hook": "서고 문이 열리고 등불을 든 정혁이 들어선다. '모레 사당으로 오너라.'",
+  "end_state": "기록은 사라졌다. 정혁이 아들을 사당으로 부른다."
+ },
+ {
+  "ep": 40,
+  "title": "소리 없는 낙엽",
+  "pov": "seojin",
+  "location": "단하성 외곽 강변",
+  "characters_present": [
+   "seojin",
+   "soryang",
+   "gangpil"
+  ],
+  "summary": "사당에 가기 전날 서진은 강변에서 홀로 무성보의 요결을 붙들고 마지막 초식을 수련한다. 사부의 글대로 소리 없이 떨어지는 낙엽을 베려 하지만 실패를 거듭한다. 잠을 이루지 못한 소량이 찾아와 밤새 대련 상대가 되어 준다. 소량은 아버지가 무언가 숨기고 있다며 내일이 두렵다고 처음으로 털어놓는다. 새벽에 서진은 마침내 낙엽무성검의 마지막 초식 '무성'을 펼쳐 낸다. 소량은 5년 전 결승 때보다 더 크게 졌다며 웃는다. 동틀 무렵 강 건너 갈대숲에 숨어 있던 집법당 무사들이 덮쳐 오자 서진은 막 깨친 '무성'으로 그들의 검을 소리 없이 떨어뜨리고, 뒤늦게 달려온 강필이 가주가 사당에서 기다린다고 전한다.",
+  "beats": [
+   "강변의 홀로 수련",
+   "실패를 거듭한다",
+   "밤새 대련해 준 소량",
+   "소량의 두려움",
+   "마지막 초식 '무성'",
+   "더 크게 졌다는 소량",
+   "갈대숲의 습격과 가주의 부름"
+  ],
+  "facts_revealed": [
+   "f175",
+   "f176",
+   "f177"
+  ],
+  "hints_allowed": [
+   "소량이 아버지가 무언가 숨긴다며 내일이 두렵다고 털어놓는 모습을 그려도 된다(중간). 숨긴 내용은 짐작하지 않는다.",
+   "갈대숲 습격은 동작과 소리 위주로 짧게 그린다(15세). 누가 보냈는지는 쓰지 않는다."
+  ],
+  "relationship_changes": [],
+  "knowledge_events": [
+   {
+    "character": "seojin",
+    "fact_id": "f175"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f175"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f175"
+   },
+   {
+    "character": "janghun",
+    "fact_id": "f175",
+    "offstage": true,
+    "note": "물러난 무사들의 보고로 새 초식을 앎"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f176"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f176"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f177"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f177"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f177"
+   },
+   {
+    "character": "janghun",
+    "fact_id": "f177",
+    "offstage": true,
+    "note": "물러난 무사들의 보고"
+   }
+  ],
+  "pov_must_hide": [],
+  "ending_hook": "사당 처마 끝에서 풍경이 소리 없이 흔들린다.",
+  "end_state": "서진이 마지막 초식을 깨쳤다."
+ },
+ {
+  "ep": 41,
+  "title": "협곡 어귀",
+  "pov": "soryang",
+  "location": "단하세가 사당",
+  "characters_present": [
+   "soryang",
+   "jeonghyeok",
+   "harin",
+   "seojin",
+   "gangpil"
+  ],
+  "summary": "정혁은 사당에서 소량과 하린을 마주하고 무릎을 꿇는다. 정혁은 20년 전 적하곡 토벌 때 협곡 어귀를 막아 마을 사람들의 퇴로를 끊은 부대를 두고 '그 부대를 이끈 것은 나였다'고 털어놓는다. 서고의 20년 전 기록은 그 뒤 스스로 태웠다고 한다. 맹주의 명령이었지만 자신은 따랐고 곽태허는 거부했다고 정혁은 말한다. 소량은 아버지에게 등을 돌리고 사당을 나간다. 하린은 무릎 꿇은 아버지 곁에 남는다. 사당 밖에서 강필과 함께 이 고백을 들은 서진은 나오는 소량의 어깨를 말없이 붙잡는다.",
+  "beats": [
+   "무릎 꿇은 정혁",
+   "협곡 어귀를 막은 부대",
+   "스스로 태운 기록",
+   "따른 자와 거부한 자",
+   "등을 돌린 소량",
+   "아버지 곁에 남은 하린",
+   "어깨를 붙잡는 서진"
+  ],
+  "facts_revealed": [
+   "f178",
+   "f179",
+   "f180"
+  ],
+  "hints_allowed": [
+   "정혁의 고백은 감정을 절제해 그리고, 참변의 참혹한 장면은 묘사하지 않는다(15세)."
+  ],
+  "relationship_changes": [
+   {
+    "relationship": "r01",
+    "a": "seojin",
+    "b": "soryang",
+    "status": "같은 짐을 진 벗",
+    "public": false
+   },
+   {
+    "relationship": "r07",
+    "a": "soryang",
+    "b": "jeonghyeok",
+    "status": "단절",
+    "public": false
+   }
+  ],
+  "knowledge_events": [
+   {
+    "character": "seojin",
+    "fact_id": "f173"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f174"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f178"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f178"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f178",
+    "note": "사당 밖에서 들음"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f178"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f179"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f179"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f179"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f179"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f180"
+   },
+   {
+    "character": "jeonghyeok",
+    "fact_id": "f180"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f180"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f180"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f180"
+   }
+  ],
+  "pov_must_hide": [],
+  "ending_hook": "그날 밤 정혁의 서재에 다시 불이 켜진다.",
+  "end_state": "소량의 아버지가 적하곡 가해자였다는 것이 밝혀졌다."
+ },
+ {
+  "ep": 42,
+  "title": "증언서",
+  "pov": "harin",
+  "location": "단하세가 서재",
+  "characters_present": [
+   "harin",
+   "jeonghyeok",
+   "soryang",
+   "gangpil",
+   "seojin"
+  ],
+  "summary": "하린은 밤새 아버지 곁을 지킨다. 정혁은 청류회에서 증언하겠다고 결심하고 증언서를 쓴다. 손이 떨리는 아버지를 대신해 하린이 증언서를 정서한다. 새벽, 소량이 서재 문을 열고 '청류회에 함께 가시지요'라고 말하고, 정혁은 아들의 손을 잡는다. 정혁은 강필을 불러 지난 보고는 잊고 소량을 지켜 달라고 부탁한다. 서진은 서재 밖에서 고개를 숙인다. 하린은 오랜만에 아버지와 오라버니가 한 상에 앉는 것을 본다.",
+  "beats": [
+   "밤샘",
+   "증언하기로 한 정혁",
+   "하린이 정서한 증언서",
+   "'함께 가시지요'",
+   "강필에게 한 부탁",
+   "한 상에 앉은 부자"
+  ],
+  "facts_revealed": [
+   "f181",
+   "f182",
+   "f183",
+   "f184",
+   "f185"
+  ],
+  "hints_allowed": [
+   "정혁이 증언서를 쓰는 밤을 집 안의 일로 그려도 된다(약함)."
+  ],
+  "relationship_changes": [
+   {
+    "relationship": "r07",
+    "a": "soryang",
+    "b": "jeonghyeok",
+    "status": "늦은 화해",
+    "public": false
+   }
+  ],
+  "knowledge_events": [
+   {
+    "character": "jeonghyeok",
+    "fact_id": "f181"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f181"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f181"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f181"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f181"
+   },
+   {
+    "character": "janghun",
+    "fact_id": "f181",
+    "offstage": true,
+    "note": "단하세가에 심은 끈"
+   },
+   {
+    "character": "gyucheon",
+    "fact_id": "f181",
+    "offstage": true,
+    "note": "장헌의 보고"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f182"
+   },
+   {
+    "character": "jeonghyeok",
+    "fact_id": "f182"
+   },
+   {
+    "character": "jeonghyeok",
+    "fact_id": "f183"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f183"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f183"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f183"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f183"
+   },
+   {
+    "character": "jeonghyeok",
+    "fact_id": "f184"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f184"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f184"
+   },
+   {
+    "character": "jeonghyeok",
+    "fact_id": "f185"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f185"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f185"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f185"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f185"
+   }
+  ],
+  "pov_must_hide": [],
+  "ending_hook": "새벽안개 속, 단하세가 담장 위로 검은 그림자들이 오른다.",
+  "end_state": "정혁과 소량이 화해했다. 증언서가 완성되었다."
+ },
+ {
+  "ep": 43,
+  "title": "꺼진 등불",
+  "pov": "seojin",
+  "location": "단하세가 안채",
+  "characters_present": [
+   "seojin",
+   "soryang",
+   "harin",
+   "gangpil",
+   "jeonghyeok",
+   "janghun"
+  ],
+  "summary": "새벽, 장헌이 복면 무사들을 이끌고 단하세가를 습격한다. 장헌은 정혁의 증언을 막으려 안채로 곧장 향한다. 서진은 깨친 지 얼마 되지 않은 마지막 초식으로 장헌을 밀어내지만, 장헌이 던진 암기가 하린을 향한다. 정혁이 하린을 감싸 그 암기를 대신 맞는다. 정혁은 소량에게 '단하는…… 네가 지켜라'라는 말을 남기고 숨을 거둔다. 증언서는 하린의 품에 무사히 남는다. 장헌은 날이 밝기 전 무사들과 함께 물러간다.",
+  "beats": [
+   "새벽 습격",
+   "증언을 막으려는 장헌",
+   "마지막 초식으로 밀어낸다",
+   "하린을 향한 암기",
+   "대신 맞은 정혁",
+   "'네가 지켜라'",
+   "품에 남은 증언서"
+  ],
+  "facts_revealed": [
+   "f186",
+   "f187",
+   "f188",
+   "f189",
+   "f190"
+  ],
+  "hints_allowed": [
+   "장헌이 단하세가를 습격한 목적은 '증언을 막는 것'까지만 그려도 된다(중간).",
+   "장헌은 정혁이 쓰러지는 것만 보고 물러간다. 숨을 거두는 장면에는 없다.",
+   "폭력과 죽음은 절제해 그리고 상처를 자세히 묘사하지 않는다(15세)."
+  ],
+  "relationship_changes": [
+   {
+    "relationship": "r07",
+    "a": "soryang",
+    "b": "jeonghyeok",
+    "status": "사별",
+    "public": true
+   }
+  ],
+  "knowledge_events": [
+   {
+    "character": "harin",
+    "fact_id": "f175",
+    "note": "습격 때 서진이 그 초식을 펼치는 것을 봄"
+   },
+   {
+    "character": "jeonghyeok",
+    "fact_id": "f175"
+   },
+   {
+    "character": "janghun",
+    "fact_id": "f186"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f186"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f186"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f186"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f186"
+   },
+   {
+    "character": "jeonghyeok",
+    "fact_id": "f186"
+   },
+   {
+    "character": "gyucheon",
+    "fact_id": "f186",
+    "offstage": true
+   },
+   {
+    "character": "jeonghyeok",
+    "fact_id": "f187"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f187"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f187"
+   },
+   {
+    "character": "janghun",
+    "fact_id": "f187"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f188"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f188"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f188"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f188"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f189"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f189"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f189"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f189"
+   },
+   {
+    "character": "jeonghyeok",
+    "fact_id": "f189"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f190"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f190"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f190"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f190"
+   },
+   {
+    "character": "jeonghyeok",
+    "fact_id": "f190"
+   }
+  ],
+  "pov_must_hide": [],
+  "ending_hook": "하린이 아버지의 손에서 식어 가는 온기를 놓지 못한다.",
+  "end_state": "위정혁이 숨졌다. 증언서는 남았다."
+ },
+ {
+  "ep": 44,
+  "title": "가주 대행",
+  "pov": "gangpil",
+  "location": "단하세가",
+  "characters_present": [
+   "gangpil",
+   "harin",
+   "soryang",
+   "seojin",
+   "danyeong",
+   "yeonho",
+   "eunchan"
+  ],
+  "summary": "정혁의 장례가 치러지고, 소량은 단하세가 가주 대행으로서 상주 자리에 선다. 강필은 단하세가 호위대장이 되어 소량의 뒤를 지킨다. 장례 뒤 단영, 연호, 은찬이 도착하고, 서진은 은찬을 하린에게 맡긴 뒤 단영과 연호에게 습격과 정혁의 고백과 증언서 이야기를 전한다. 단영은 정혁의 과거를 듣고 오래 침묵한다. 은찬은 하린의 손을 꼭 잡아 준다. 그날 밤 강필은 회랑에서 우는 하린의 손을 맞잡고 곁을 지킨다. 강필은 소량에게 둘의 일을 언젠가 고하겠다고 다짐한다.",
+  "beats": [
+   "장례",
+   "가주 대행 소량",
+   "호위대장 강필",
+   "도착한 단영·연호·은찬",
+   "침묵하는 단영",
+   "회랑에서 맞잡은 손"
+  ],
+  "facts_revealed": [
+   "f191",
+   "f192",
+   "f193"
+  ],
+  "hints_allowed": [
+   "단영이 정혁의 과거를 듣고 오래 침묵하는 모습을 강필이 본 그대로 그려도 된다(중간). 침묵의 이유는 강필이 모르므로 쓰지 않는다.",
+   "은찬에게는 정혁이 습격으로 돌아가셨다는 것까지만 들려준다. 습격을 누가 이끌었는지는 은찬 앞에서 말하지 않는다.",
+   "회랑 장면은 손을 맞잡고 곁을 지키는 데서 그친다(15세)."
+  ],
+  "relationship_changes": [
+   {
+    "relationship": "r03",
+    "a": "soryang",
+    "b": "gangpil",
+    "status": "가주 대행과 호위대장",
+    "public": true
+   }
+  ],
+  "knowledge_events": [
+   {
+    "character": "danyeong",
+    "fact_id": "f178",
+    "note": "서진에게 들음"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f178",
+    "note": "서진에게 들음"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f181"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f181"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f185",
+    "note": "서진에게 들음"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f185",
+    "note": "서진에게 들음"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f186"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f186"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f187"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f187"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f187"
+   },
+   {
+    "character": "janghun",
+    "fact_id": "f188",
+    "offstage": true,
+    "note": "물러난 뒤 소식을 들음"
+   },
+   {
+    "character": "gyucheon",
+    "fact_id": "f188",
+    "offstage": true
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f188"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f188"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f188"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f191"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f191"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f191"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f191"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f191"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f191"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f191"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f192"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f192"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f192"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f192"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f193"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f193"
+   }
+  ],
+  "pov_must_hide": [],
+  "ending_hook": "단영이 서진에게 말한다. '청류대에 가기 전날, 할 말이 있어요.'",
+  "end_state": "소량이 가주 대행이 되었다. 하린과 강필은 장례의 밤을 함께 견뎠다."
+ },
+ {
+  "ep": 45,
+  "title": "청류대로 가는 길",
+  "pov": "seojin",
+  "location": "청류대로 가는 관도와 청류대 아래 여관",
+  "characters_present": [
+   "seojin",
+   "soryang",
+   "gangpil",
+   "harin",
+   "yeonho",
+   "danyeong",
+   "eunchan"
+  ],
+  "summary": "일행은 청류회에 맞춰 청류대로 향한다. 서진은 은찬을 두고 가려 하지만 은찬은 이번에는 대사형과 함께 가겠다고 고집한다. 관도의 객점 마당에서 서진이 마지막 초식을 펼쳐 보이자 연호는 사부보다 낫다며 웃는다. 단영은 밤마다 홀로 편지를 썼다가 태우기를 되풀이한다. 소량은 단영에게 숨기는 게 있느냐고 묻는다. 단영은 내일 말하겠다고만 답한다. 청류대 아래 여관에 닿은 밤, 서진은 우물가에서 하린과 강필이 짧게 입을 맞추는 것을 보고 조용히 발길을 돌린다. 하린은 아버지의 증언서를 품에 안고 잠든다.",
+  "beats": [
+   "청류대로",
+   "은찬의 고집",
+   "연호가 본 마지막 초식",
+   "편지를 태우는 단영",
+   "소량의 물음",
+   "내일 말하겠다는 단영",
+   "우물가의 입맞춤"
+  ],
+  "facts_revealed": [
+   "f194",
+   "f195",
+   "f196",
+   "f197"
+  ],
+  "hints_allowed": [
+   "단영이 밤마다 편지를 썼다가 태우는 모습을 그려도 된다(중간). 받는 사람이나 내용은 쓰지 않는다.",
+   "단영이 소량의 물음에 '내일 말하겠다'고만 답하는 모습을 그려도 된다(중간). 그 밖의 새 단서는 넣지 않는다.",
+   "우물가의 입맞춤은 서진이 멀리서 본 그대로 짧고 담백하게 그린다(15세). 서진은 곧 등을 돌린다."
+  ],
+  "relationship_changes": [
+   {
+    "relationship": "r04",
+    "a": "harin",
+    "b": "gangpil",
+    "status": "입맞춤을 나눈 연인",
+    "public": false
+   }
+  ],
+  "knowledge_events": [
+   {
+    "character": "seojin",
+    "fact_id": "f168",
+    "note": "우물가의 입맞춤을 보고 앎"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f175"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f175"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f175"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f188",
+    "offstage": true
+   },
+   {
+    "character": "myeonghwa",
+    "fact_id": "f188",
+    "offstage": true
+   },
+   {
+    "character": "masam",
+    "fact_id": "f191",
+    "offstage": true
+   },
+   {
+    "character": "harin",
+    "fact_id": "f194"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f194"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f194",
+    "note": "멀리서 봄"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f195"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f195"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f195"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f195"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f195"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f196"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f196"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f197"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f197"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f197"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f197"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f197"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f197"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f197"
+   }
+  ],
+  "pov_must_hide": [],
+  "ending_hook": "청류회 전날 밤, 단영이 일행 모두를 객방으로 부른다.",
+  "end_state": "일행이 청류대 아래 여관에 도착했다."
+ },
+ {
+  "ep": 46,
+  "title": "맹주의 딸",
+  "pov": "seojin",
+  "location": "청류대 아래 여관 객방",
+  "characters_present": [
+   "seojin",
+   "soryang",
+   "gangpil",
+   "harin",
+   "yeonho",
+   "danyeong",
+   "eunchan"
+  ],
+  "summary": "청류회 전날 밤 단영은 일행을 모아 놓고 자신이 맹주 양규천의 딸이며, 성 '설'은 어머니의 성이라고 밝힌다. 단영은 2년 전까지 아버지의 지병을 회맥침으로 돌보았고, 침을 놓던 어느 밤 열에 들뜬 아버지가 적하곡의 불을 헛소리로 되뇌는 것을 들은 뒤 아버지 서고에서 빼낸 적하곡 방화 명령서 원본을 꺼내 놓는다. 명령서에는 지휘관의 이름 없이 수결만 찍혀 있었고, 단영은 그 수결만으로는 아버지의 죄를 증명할 수 없어 명령서를 숨겨 왔으며, 밤마다 썼다가 태운 편지는 아버지에게 스스로 죄를 밝히라고 청하는 편지였다고 털어놓는다. 단하성 시장에서 서진과 마주친 것은 우연이었지만, 곽태허가 죽고 그 제자가 수배되자 무성보를 찾던 아버지를 의심하던 단영은 아버지를 막으려고 일행 곁에 남았다고 고백한다. 단영은 장헌과 청류대에서 함께 자란 사이라, 오두막에서 두 줄 상처 이야기를 듣고 그때 이미 장헌을 의심하고도 차마 지목하지 못해 집법당 정예 이야기로 의심을 흩뜨렸다고 털어놓는다. 소량은 속았다며 분노하고, 연호는 칼자루에 손을 얹는다. 서진은 사부의 마지막 장이 지휘관 양규천의 이름을 밝혔으니 이제 그 수결이 증거가 된다며, 단영이 은찬을 살린 날을 떠올리고 그녀를 믿기로 한다. 단영은 명령서를 서진에게 맡긴다.",
+  "beats": [
+   "맹주의 딸과 어머니의 성",
+   "회맥침을 놓던 밤의 헛소리와 서고에서 빼낸 명령서",
+   "수결만 있는 명령서와 태운 편지",
+   "우연한 만남과 곁에 남은 이유",
+   "함께 자란 장헌을 감싼 오두막의 말",
+   "소량의 분노와 믿기로 한 서진",
+   "맡겨진 명령서"
+  ],
+  "facts_revealed": [
+   "f198",
+   "f199",
+   "f200",
+   "f201",
+   "f202",
+   "f203",
+   "f204",
+   "f205",
+   "f206",
+   "f207",
+   "f208",
+   "f209",
+   "f210",
+   "f211",
+   "f212",
+   "f213"
+  ],
+  "hints_allowed": [
+   "은찬이 어른들 곁에서 단영의 고백을 듣고 짧게 반응하는 모습을 그려도 된다(약함).",
+   "단영의 고백은 이 화에서 밝히는 내용까지만 담는다."
+  ],
+  "relationship_changes": [
+   {
+    "relationship": "r09",
+    "a": "danyeong",
+    "b": "gyucheon",
+    "status": "숨겨진 부녀",
+    "public": false
+   },
+   {
+    "relationship": "r12",
+    "a": "seojin",
+    "b": "danyeong",
+    "status": "흔들린 신뢰",
+    "public": false
+   },
+   {
+    "relationship": "r17",
+    "a": "danyeong",
+    "b": "janghun",
+    "status": "청류대에서 함께 자라 단영이 감싸 온 사이",
+    "public": false
+   }
+  ],
+  "knowledge_events": [
+   {
+    "character": "yeonho",
+    "fact_id": "f043"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f044",
+    "note": "단영의 고백에서 들음"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f044",
+    "note": "단영의 고백에서 들음"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f044"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f047"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f047"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f047"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f047"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f047"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f085",
+    "note": "단영의 고백에서 장헌의 검이 쌍날이라는 말을 들음"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f087",
+    "note": "단영의 고백에서 들음"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f088",
+    "note": "단영의 고백에서 들음"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f088",
+    "note": "단영의 고백에서 들음"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f093",
+    "note": "단영의 고백에서 들음"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f093",
+    "note": "단영의 고백에서 들음"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f093",
+    "note": "단영의 고백에서 들음"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f128",
+    "note": "단영의 고백"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f156",
+    "note": "단영의 고백 자리에서 들음"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f157",
+    "note": "단영의 고백 자리에서 들음"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f196"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f196"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f196"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f196"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f198"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f198"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f198"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f198"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f198"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f198"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f199"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f199"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f199"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f199"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f199"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f199"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f200"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f200"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f200"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f200"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f200"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f200"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f201"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f201"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f201"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f201"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f201"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f201"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f202"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f202"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f202"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f202"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f202"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f202"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f202"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f203"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f203"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f203"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f203"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f203"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f203"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f204"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f204"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f204"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f204"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f204"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f204"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f205"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f205"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f205"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f205"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f205"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f205"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f206"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f206"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f206"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f206"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f206"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f206"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f207"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f207"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f207"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f207"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f207"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f207"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f208"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f208"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f208"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f208"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f208"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f208"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f209"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f209"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f209"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f209"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f209"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f209"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f210"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f210"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f210"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f210"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f210"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f210"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f211"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f211"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f211"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f211"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f211"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f211"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f212"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f212"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f212"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f212"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f212"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f212"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f213"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f213"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f213"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f213"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f213"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f213"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f242",
+    "note": "46:131 소량의 말로 앎"
+   }
+  ],
+  "pov_must_hide": [],
+  "ending_hook": "은찬이 단영의 소매를 잡는다. '의원 누나는 그래도 의원 누나예요.'",
+  "end_state": "단영의 정체가 밝혀졌다. 청류회에 낼 증거가 모두 모였다."
+ },
+ {
+  "ep": 47,
+  "title": "청류회",
+  "pov": "seojin",
+  "location": "청류대 청류회장",
+  "characters_present": [
+   "seojin",
+   "soryang",
+   "gangpil",
+   "harin",
+   "yeonho",
+   "danyeong",
+   "eunchan",
+   "masam",
+   "myeonghwa",
+   "gyucheon",
+   "janghun"
+  ],
+  "summary": "청류회 날, 양규천은 수많은 문파 앞에서 서진의 공개 심판을 연다. 서진은 등단 검증 규칙을 내세워 스스로 단상에 올라 사부의 기록과 정혁의 증언서와 방화 명령서, 그리고 장헌의 출동 기록을 내놓는다. 하린이 아버지의 증언서를 소리 내어 읽고, 단영이 자신이 맹주의 딸임을 밝히며 아버지가 수결을 찍어 온 회맥침 처방첩을 명령서 곁에 펼쳐 수결이 아버지의 것이라고 증언하자 회장이 술렁인다. 야화련 련주 옥명화는 적하곡 생존자로서 증언한다. 양규천은 모든 것이 사파의 모함이라며 부인한다. 규천은 검으로 증명하겠다면 검으로 답하겠다며 '장헌, 베어라' 하고 명한다. 장로들이 망설이는 사이 서진과 장헌이 검을 맞댄다.",
+  "beats": [
+   "공개 심판",
+   "단상에 오른 서진",
+   "증언서 낭독",
+   "맹주의 딸과 처방첩의 수결",
+   "명화의 증언",
+   "사파의 모함",
+   "'베어라'"
+  ],
+  "facts_revealed": [
+   "f214",
+   "f215",
+   "f216",
+   "f217",
+   "f218",
+   "f219",
+   "f220"
+  ],
+  "hints_allowed": [
+   "장헌은 칼만 들 뿐 아무 말도 하지 않는다.",
+   "군중 속 마삼과 은찬을 짧게 비춰도 된다(약함).",
+   "불길과 희생은 결과와 감정 위주로 쓰고 신체 손상은 묘사하지 않는다(15세)."
+  ],
+  "relationship_changes": [
+   {
+    "relationship": "r09",
+    "a": "danyeong",
+    "b": "gyucheon",
+    "status": "공개적으로 맞선 부녀",
+    "public": true
+   },
+   {
+    "relationship": "r12",
+    "a": "seojin",
+    "b": "danyeong",
+    "status": "함께 고발한 동지",
+    "public": true
+   },
+   {
+    "relationship": "r13",
+    "a": "seojin",
+    "b": "myeonghwa",
+    "status": "청류회의 고발자와 증인",
+    "public": true
+   }
+  ],
+  "knowledge_events": [
+   {
+    "character": "harin",
+    "fact_id": "f022"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f022"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f022"
+   },
+   {
+    "character": "myeonghwa",
+    "fact_id": "f022"
+   },
+   {
+    "character": "myeonghwa",
+    "fact_id": "f033"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f044",
+    "note": "청류회에서 회맥침 처방첩을 봄"
+   },
+   {
+    "character": "myeonghwa",
+    "fact_id": "f044",
+    "note": "청류회에서 회맥침 처방첩을 봄"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f069"
+   },
+   {
+    "character": "gyucheon",
+    "fact_id": "f069"
+   },
+   {
+    "character": "janghun",
+    "fact_id": "f069"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f071"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f071"
+   },
+   {
+    "character": "gyucheon",
+    "fact_id": "f071"
+   },
+   {
+    "character": "janghun",
+    "fact_id": "f071"
+   },
+   {
+    "character": "myeonghwa",
+    "fact_id": "f085"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f102",
+    "note": "청류회 증언서 낭독"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f112"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f125"
+   },
+   {
+    "character": "myeonghwa",
+    "fact_id": "f125"
+   },
+   {
+    "character": "gyucheon",
+    "fact_id": "f125"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f158",
+    "note": "청류회 증언서 낭독"
+   },
+   {
+    "character": "janghun",
+    "fact_id": "f158",
+    "note": "청류회 증언서 낭독"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f162",
+    "note": "청류회 증언서 낭독"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f178",
+    "note": "청류회 증언서 낭독"
+   },
+   {
+    "character": "myeonghwa",
+    "fact_id": "f178",
+    "note": "청류회 증언서 낭독"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f178",
+    "note": "청류회 증언서 낭독"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f181"
+   },
+   {
+    "character": "myeonghwa",
+    "fact_id": "f181"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f181"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f185",
+    "note": "청류회 증언서 낭독"
+   },
+   {
+    "character": "myeonghwa",
+    "fact_id": "f185",
+    "note": "청류회 증언서 낭독"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f185",
+    "note": "청류회 증언서 낭독"
+   },
+   {
+    "character": "janghun",
+    "fact_id": "f185",
+    "note": "청류회 증언서 낭독"
+   },
+   {
+    "character": "gyucheon",
+    "fact_id": "f185",
+    "note": "청류회 증언서 낭독"
+   },
+   {
+    "character": "myeonghwa",
+    "fact_id": "f198",
+    "note": "청류회에서 들음"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f198",
+    "note": "청류회에서 들음"
+   },
+   {
+    "character": "gyucheon",
+    "fact_id": "f200",
+    "note": "청류회에서 명령서를 봄"
+   },
+   {
+    "character": "janghun",
+    "fact_id": "f200"
+   },
+   {
+    "character": "myeonghwa",
+    "fact_id": "f200"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f200"
+   },
+   {
+    "character": "gyucheon",
+    "fact_id": "f201",
+    "note": "청류회에서 딸이 서진 일행과 함께 맞서는 것을 보고 앎"
+   },
+   {
+    "character": "gyucheon",
+    "fact_id": "f202"
+   },
+   {
+    "character": "janghun",
+    "fact_id": "f202"
+   },
+   {
+    "character": "myeonghwa",
+    "fact_id": "f202"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f202"
+   },
+   {
+    "character": "gyucheon",
+    "fact_id": "f203"
+   },
+   {
+    "character": "janghun",
+    "fact_id": "f205",
+    "note": "청류회에서 단영의 증언을 들음"
+   },
+   {
+    "character": "myeonghwa",
+    "fact_id": "f205",
+    "note": "청류회에서 단영의 증언을 들음"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f205",
+    "note": "청류회에서 단영의 증언을 들음"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f212",
+    "note": "청류회에서 처방첩을 봄"
+   },
+   {
+    "character": "myeonghwa",
+    "fact_id": "f212",
+    "note": "청류회에서 처방첩을 봄"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f214"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f214"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f214"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f214"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f214"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f214"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f214"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f214"
+   },
+   {
+    "character": "myeonghwa",
+    "fact_id": "f214"
+   },
+   {
+    "character": "gyucheon",
+    "fact_id": "f214"
+   },
+   {
+    "character": "janghun",
+    "fact_id": "f214"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f215"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f215"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f215"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f215"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f215"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f215"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f215"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f215"
+   },
+   {
+    "character": "myeonghwa",
+    "fact_id": "f215"
+   },
+   {
+    "character": "gyucheon",
+    "fact_id": "f215"
+   },
+   {
+    "character": "janghun",
+    "fact_id": "f215"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f216"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f216"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f216"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f216"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f216"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f216"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f216"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f216"
+   },
+   {
+    "character": "myeonghwa",
+    "fact_id": "f216"
+   },
+   {
+    "character": "gyucheon",
+    "fact_id": "f216"
+   },
+   {
+    "character": "janghun",
+    "fact_id": "f216"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f217"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f217"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f217"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f217"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f217"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f217"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f217"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f217"
+   },
+   {
+    "character": "myeonghwa",
+    "fact_id": "f217"
+   },
+   {
+    "character": "gyucheon",
+    "fact_id": "f217"
+   },
+   {
+    "character": "janghun",
+    "fact_id": "f217"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f218"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f218"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f218"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f218"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f218"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f218"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f218"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f218"
+   },
+   {
+    "character": "myeonghwa",
+    "fact_id": "f218"
+   },
+   {
+    "character": "gyucheon",
+    "fact_id": "f218"
+   },
+   {
+    "character": "janghun",
+    "fact_id": "f218"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f219"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f219"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f219"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f219"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f219"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f219"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f219"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f219"
+   },
+   {
+    "character": "myeonghwa",
+    "fact_id": "f219"
+   },
+   {
+    "character": "gyucheon",
+    "fact_id": "f219"
+   },
+   {
+    "character": "janghun",
+    "fact_id": "f219"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f220"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f220"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f220"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f220"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f220"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f220"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f220"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f220"
+   },
+   {
+    "character": "myeonghwa",
+    "fact_id": "f220"
+   },
+   {
+    "character": "gyucheon",
+    "fact_id": "f220"
+   },
+   {
+    "character": "janghun",
+    "fact_id": "f220"
+   },
+   {
+    "character": "janghun",
+    "fact_id": "f156",
+    "note": "청류회 증언서 낭독(47:133)"
+   },
+   {
+    "character": "janghun",
+    "fact_id": "f157",
+    "note": "청류회 증언서 낭독(47:133)"
+   },
+   {
+    "character": "janghun",
+    "fact_id": "f162",
+    "note": "청류회 증언서 낭독(47:137)"
+   },
+   {
+    "character": "janghun",
+    "fact_id": "f178",
+    "note": "청류회 증언서 낭독(47:137)"
+   }
+  ],
+  "pov_must_hide": [],
+  "ending_hook": "두 검이 부딪치는 순간 회장이 숨을 죽인다.",
+  "end_state": "결전이 시작되었다."
+ },
+ {
+  "ep": 48,
+  "title": "소리 없는 검",
+  "pov": "seojin",
+  "location": "청류회장 단상",
+  "characters_present": [
+   "seojin",
+   "soryang",
+   "gangpil",
+   "harin",
+   "yeonho",
+   "danyeong",
+   "eunchan",
+   "masam",
+   "myeonghwa",
+   "gyucheon",
+   "janghun"
+  ],
+  "summary": "서진과 장헌의 결전이 벌어진다. 장헌의 쌍현검이 서진의 어깨를 스치지만, 서진은 낙엽무성검의 마지막 초식 '무성'으로 쌍현검을 부러뜨린다. 무릎을 꿇은 장헌은 모두 앞에서 곽태허를 죽였다고 자백한다. 장헌은 맹주의 명으로 그 일을 했다고 밝힌다. 장헌은 자신이 양규천이 거두어 키운 고아였다고 말한다. 양규천은 장헌을 미친 자라 부르며 외면한다. 장로회가 맹주를 둘러싼다.",
+  "beats": [
+   "결전",
+   "쌍현검을 부러뜨린 '무성'",
+   "모두 앞에서 한 자백",
+   "맹주의 명",
+   "거두어 키운 고아",
+   "'미친 자'",
+   "장로회"
+  ],
+  "facts_revealed": [
+   "f221",
+   "f222",
+   "f223",
+   "f224",
+   "f225"
+  ],
+  "hints_allowed": [
+   "싸움은 동작과 소리 위주로 그리고 피를 강조하지 않는다(15세)."
+  ],
+  "relationship_changes": [
+   {
+    "relationship": "r10",
+    "a": "janghun",
+    "b": "gyucheon",
+    "status": "명령한 자와 실행한 자",
+    "public": true
+   },
+   {
+    "relationship": "r10",
+    "a": "janghun",
+    "b": "gyucheon",
+    "status": "버림받은 양자",
+    "public": true
+   },
+   {
+    "relationship": "r11",
+    "a": "seojin",
+    "b": "janghun",
+    "status": "결착",
+    "public": true
+   },
+   {
+    "relationship": "r17",
+    "a": "danyeong",
+    "b": "janghun",
+    "status": "청류회에서 맞선 의붓남매(맹주의 딸과 맹주가 거둔 양자)",
+    "public": true
+   }
+  ],
+  "knowledge_events": [
+   {
+    "character": "eunchan",
+    "fact_id": "f132",
+    "note": "청류회 자백을 들음"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f133",
+    "note": "청류회 자백을 들음"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f175"
+   },
+   {
+    "character": "myeonghwa",
+    "fact_id": "f175"
+   },
+   {
+    "character": "gyucheon",
+    "fact_id": "f175"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f209",
+    "note": "청류회에서 장헌이 맹주가 거둔 고아라고 밝혀 앎"
+   },
+   {
+    "character": "myeonghwa",
+    "fact_id": "f209",
+    "note": "청류회에서 장헌이 맹주가 거둔 고아라고 밝혀 앎"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f221"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f221"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f221"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f221"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f221"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f221"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f221"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f221"
+   },
+   {
+    "character": "myeonghwa",
+    "fact_id": "f221"
+   },
+   {
+    "character": "gyucheon",
+    "fact_id": "f221"
+   },
+   {
+    "character": "janghun",
+    "fact_id": "f221"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f222"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f222"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f222"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f222"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f222"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f222"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f222"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f222"
+   },
+   {
+    "character": "myeonghwa",
+    "fact_id": "f222"
+   },
+   {
+    "character": "gyucheon",
+    "fact_id": "f222"
+   },
+   {
+    "character": "janghun",
+    "fact_id": "f222"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f223"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f223"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f223"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f223"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f223"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f223"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f223"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f223"
+   },
+   {
+    "character": "myeonghwa",
+    "fact_id": "f223"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f224"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f224"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f224"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f224"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f224"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f224"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f224"
+   },
+   {
+    "character": "myeonghwa",
+    "fact_id": "f224"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f225"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f225"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f225"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f225"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f225"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f225"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f225"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f225"
+   },
+   {
+    "character": "myeonghwa",
+    "fact_id": "f225"
+   },
+   {
+    "character": "gyucheon",
+    "fact_id": "f225"
+   },
+   {
+    "character": "janghun",
+    "fact_id": "f225"
+   }
+  ],
+  "pov_must_hide": [],
+  "ending_hook": "은찬이 군중 사이에서 목검을 높이 치켜든다.",
+  "end_state": "장헌이 자백했다. 양규천이 궁지에 몰렸다."
+ },
+ {
+  "ep": 49,
+  "title": "장로회의 결정",
+  "pov": "soryang",
+  "interlude_pov": "danyeong",
+  "interlude_scope": "연금된 아버지 양규천을 찾아가 작별하는 장면",
+  "location": "청류대",
+  "characters_present": [
+   "seojin",
+   "soryang",
+   "gangpil",
+   "harin",
+   "yeonho",
+   "danyeong",
+   "eunchan",
+   "masam",
+   "myeonghwa",
+   "gyucheon",
+   "janghun"
+  ],
+  "summary": "운하맹 장로회는 양규천을 맹주직에서 끌어내리고 청류대 별원에 연금하기로 결정한다. 서진의 사부 살해 누명은 공식으로 벗겨진다. 장헌은 집법당주에서 파면되어 침묵옥에 갇힌다. 장로회는 야화련에 휴전 회담을 제안하고, 명화는 받아들이겠다고 답한다. 소량은 단하세가 가주 대행으로서 적하곡 유족들 앞에 무릎을 꿇고 사죄한다. 막간에서 단영은 연금된 아버지를 찾아가 '이제 끝났어요, 아버지'라고 말한다. 규천은 이름 없는 그 종이가 있어야 명을 따른 자들이 입을 닫았다고만 말하고, 끝내 딸의 얼굴을 보지 않는다.",
+  "beats": [
+   "맹주 폐위와 연금",
+   "벗겨진 누명",
+   "장헌의 파면",
+   "휴전 회담 제안",
+   "소량의 사죄",
+   "막간: 단영과 규천의 작별"
+  ],
+  "facts_revealed": [
+   "f226",
+   "f227",
+   "f228",
+   "f229",
+   "f230",
+   "f231",
+   "f232"
+  ],
+  "hints_allowed": [
+   "막간은 단영 시점의 절제된 대화로 그린다.",
+   "소량 시점에서 단영의 막간 장면을 엿보거나 짐작하지 않는다.",
+   "막간에서 규천이 명령서를 남겨 둔 까닭을 한 줄로 말하는 것까지 그려도 된다(약함)."
+  ],
+  "relationship_changes": [
+   {
+    "relationship": "r01",
+    "a": "seojin",
+    "b": "soryang",
+    "status": "무림이 아는 벗",
+    "public": true
+   },
+   {
+    "relationship": "r09",
+    "a": "danyeong",
+    "b": "gyucheon",
+    "status": "작별한 부녀",
+    "public": false
+   }
+  ],
+  "knowledge_events": [
+   {
+    "character": "myeonghwa",
+    "fact_id": "f191",
+    "note": "청류대에서 가주 대행으로 사죄하는 소량을 보며 앎"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f226"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f226"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f226"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f226"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f226"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f226"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f226"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f226"
+   },
+   {
+    "character": "myeonghwa",
+    "fact_id": "f226"
+   },
+   {
+    "character": "gyucheon",
+    "fact_id": "f226"
+   },
+   {
+    "character": "janghun",
+    "fact_id": "f226"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f227"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f227"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f227"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f227"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f227"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f227"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f227"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f227"
+   },
+   {
+    "character": "myeonghwa",
+    "fact_id": "f227"
+   },
+   {
+    "character": "gyucheon",
+    "fact_id": "f227"
+   },
+   {
+    "character": "janghun",
+    "fact_id": "f227"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f228"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f228"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f228"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f228"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f228"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f228"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f228"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f228"
+   },
+   {
+    "character": "myeonghwa",
+    "fact_id": "f228"
+   },
+   {
+    "character": "gyucheon",
+    "fact_id": "f228"
+   },
+   {
+    "character": "janghun",
+    "fact_id": "f228"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f229"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f229"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f229"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f229"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f229"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f229"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f229"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f229"
+   },
+   {
+    "character": "myeonghwa",
+    "fact_id": "f229"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f230"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f230"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f230"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f230"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f230"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f230"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f230"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f230"
+   },
+   {
+    "character": "myeonghwa",
+    "fact_id": "f230"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f231"
+   },
+   {
+    "character": "gyucheon",
+    "fact_id": "f231"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f232"
+   }
+  ],
+  "pov_must_hide": [],
+  "interlude_pov_must_hide": [],
+  "ending_hook": "서진이 소량에게 묻는다. '이제 어디로 가오?' 소량이 답한다. '네가 가는 데 한 번은 들러야지.'",
+  "end_state": "운하맹이 새 질서를 찾기 시작했다."
+ },
+ {
+  "ep": 50,
+  "title": "대숲의 봄",
+  "pov": "seojin",
+  "location": "운령산 취죽문",
+  "characters_present": [
+   "seojin",
+   "eunchan",
+   "soryang",
+   "gangpil",
+   "harin",
+   "yeonho",
+   "masam",
+   "danyeong"
+  ],
+  "summary": "이듬해 봄, 서진은 운령산으로 돌아와 취죽문을 다시 열고 문주가 된다. 은찬은 다시 연 취죽문의 첫 정식 제자로 절을 올린다. 서진과 연호는 은찬과 함께 사부의 무덤에 술을 올린다. 연호는 약속대로 야화련으로 돌아가며 서진과 소량에게 '바람이 또 바뀌면 오겠네'라고 말한다. 소량은 단하세가 가주 자리를 정식으로 이었고, 하린과 강필의 혼인을 허락했다고 전한다. 단영은 다시 떠돌이 의원의 길을 나선다. 소량은 다음 청류회에서 다시 겨루자고 하고, 서진은 웃으며 손을 내민다.",
+  "beats": [
+   "다시 연 취죽문",
+   "첫 정식 제자 은찬",
+   "사부의 무덤",
+   "야화련으로 돌아가는 연호",
+   "가주 소량과 혼인 허락",
+   "다시 길을 나서는 단영",
+   "다음 청류회의 약속"
+  ],
+  "facts_revealed": [
+   "f233",
+   "f234",
+   "f235",
+   "f236",
+   "f237",
+   "f238",
+   "f239",
+   "f240"
+  ],
+  "hints_allowed": [
+   "서진과 소량, 서진과 연호, 소량과 연호의 관계는 끝까지 우정과 형제애로 그린다(로맨스 없음)."
+  ],
+  "relationship_changes": [
+   {
+    "relationship": "r01",
+    "a": "seojin",
+    "b": "soryang",
+    "status": "다음 청류회 재대결을 약속한 맞수이자 벗",
+    "public": true
+   },
+   {
+    "relationship": "r02",
+    "a": "seojin",
+    "b": "yeonho",
+    "status": "각자의 길을 가는 사형제",
+    "public": true
+   },
+   {
+    "relationship": "r04",
+    "a": "harin",
+    "b": "gangpil",
+    "status": "가주가 허락한 정혼",
+    "public": true
+   },
+   {
+    "relationship": "r05",
+    "a": "seojin",
+    "b": "eunchan",
+    "status": "문주와 첫 정식 제자",
+    "public": true
+   },
+   {
+    "relationship": "r08",
+    "a": "yeonho",
+    "b": "myeonghwa",
+    "status": "다시 함께하는 련주와 부련주",
+    "public": true
+   },
+   {
+    "relationship": "r16",
+    "a": "soryang",
+    "b": "yeonho",
+    "status": "정파 가주와 사파 부련주로 각자 돌아간 벗",
+    "public": true
+   }
+  ],
+  "knowledge_events": [
+   {
+    "character": "masam",
+    "fact_id": "f043"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f233"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f233"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f233"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f233"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f233"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f233"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f233"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f233"
+   },
+   {
+    "character": "myeonghwa",
+    "fact_id": "f233",
+    "offstage": true
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f234"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f234"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f234"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f234"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f234"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f234"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f234"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f234"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f235"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f235"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f235"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f236"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f236"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f236"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f236"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f236"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f236"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f236"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f236"
+   },
+   {
+    "character": "myeonghwa",
+    "fact_id": "f236",
+    "offstage": true
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f237"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f237"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f237"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f237"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f237"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f237"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f237"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f237"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f238"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f238"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f238"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f238"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f238"
+   },
+   {
+    "character": "yeonho",
+    "fact_id": "f238"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f238"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f238"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f239"
+   },
+   {
+    "character": "eunchan",
+    "fact_id": "f239"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f239"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f239"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f239"
+   },
+   {
+    "character": "masam",
+    "fact_id": "f239"
+   },
+   {
+    "character": "danyeong",
+    "fact_id": "f239"
+   },
+   {
+    "character": "soryang",
+    "fact_id": "f240"
+   },
+   {
+    "character": "seojin",
+    "fact_id": "f240"
+   },
+   {
+    "character": "gangpil",
+    "fact_id": "f240"
+   },
+   {
+    "character": "harin",
+    "fact_id": "f240"
+   }
+  ],
+  "pov_must_hide": [],
+  "ending_hook": "대숲에 바람이 불고, 은찬의 목검이 처음으로 낙엽 한 장을 소리 없이 가른다.",
+  "end_state": "취죽문이 다시 섰다. 모두 각자의 길로 돌아갔다."
+ }
+]

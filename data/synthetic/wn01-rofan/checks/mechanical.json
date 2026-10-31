@@ -1,0 +1,526 @@
+{
+ "missing_files": [],
+ "length": {
+  "min": 4620,
+  "max": 5797,
+  "total": 242292,
+  "out_of_range": {}
+ },
+ "format": {},
+ "keyword_before_reveal": [
+  {
+   "id": "f022",
+   "reveal_ep": 5,
+   "twist": false,
+   "statement": "힐다 브룬(61세)은 로스벤 가의 시녀장이자 노엘의 유모로, 카시엘과 로완도 젖먹이 때부터 길렀다.",
+   "early_keywords": {
+    "유모": 2
+   }
+  },
+  {
+   "id": "f023",
+   "reveal_ep": 5,
+   "twist": false,
+   "statement": "세실리아는 마리에게만 약혼이 1년 계약이라는 사실을 털어놓는다.",
+   "early_keywords": {
+    "1년짜리": 3
+   }
+  },
+  {
+   "id": "f030",
+   "reveal_ep": 8,
+   "twist": false,
+   "statement": "카시엘의 왼손 손등에는 오래된 서약흔이 있고, 그는 그것을 가리려고 왼손에만 장갑을 낀다.",
+   "early_keywords": {
+    "손등": 6
+   }
+  },
+  {
+   "id": "f032",
+   "reveal_ep": 9,
+   "twist": false,
+   "statement": "레온 온드레의 이의 신청 서류철은 서약청장 직인으로 봉인되어 하급 직원은 열람할 수 없다.",
+   "early_keywords": {
+    "서류철": 1
+   }
+  },
+  {
+   "id": "f035",
+   "reveal_ep": 10,
+   "twist": false,
+   "statement": "해약 직후 노엘의 열이 내리고, 세실리아는 손끝이 타는 듯한 통증을 느낀다.",
+   "early_keywords": {
+    "손끝": 3,
+    "열이 내리": 6
+   }
+  },
+  {
+   "id": "f048",
+   "reveal_ep": 22,
+   "twist": false,
+   "statement": "리처드 부부의 사고 당일, 마부는 '다리 위에서 마차가 저절로 멈췄다'고 말했었다.",
+   "early_keywords": {
+    "마부": 6
+   }
+  },
+  {
+   "id": "f077",
+   "reveal_ep": 24,
+   "twist": false,
+   "statement": "편지에 따르면 레온은 아델린의 오랜 친구였고, 그녀의 부탁으로 아기를 맡았다. 세실리아가 들어 온 '자신을 낳고 얼마 안 되어 병으로 죽은 어머",
+   "early_keywords": {
+    "부탁": 6,
+    "지어낸 이야기": 6
+   }
+  },
+  {
+   "id": "f080",
+   "reveal_ep": 25,
+   "twist": false,
+   "statement": "로제타는 5년 전 마차 사고에서 자신을 구해 준 로완을 남몰래 연모해 왔다.",
+   "early_keywords": {
+    "귀 끝": 8
+   }
+  },
+  {
+   "id": "f087",
+   "reveal_ep": 28,
+   "twist": true,
+   "statement": "리처드 로스벤의 죽음은 사고가 아니었다. 그의 충성 서약에 숨은 '서약청의 비밀을 발설하려 하면 숨이 멎는다'는 그림자 조항이 발동했고, 그 조",
+   "early_keywords": {
+    "충성 서약": 1
+   }
+  },
+  {
+   "id": "f089",
+   "reveal_ep": 28,
+   "twist": false,
+   "statement": "카시엘은 침묵 서약 때문에 형의 죽음에 대한 의심을 3년 동안 누구에게도 말할 수 없었다.",
+   "early_keywords": {
+    "3년 동안": 2
+   }
+  },
+  {
+   "id": "f096",
+   "reveal_ep": 31,
+   "twist": false,
+   "statement": "모르데인은 서약 서신으로 로완에게 자정에 로스벤 저택 뒷문을 열어 체포대를 들이라고 명령했다.",
+   "early_keywords": {
+    "뒷문": 12
+   }
+  },
+  {
+   "id": "f098",
+   "reveal_ep": 31,
+   "twist": false,
+   "statement": "로완은 떨어지기 전 카시엘을 어릴 적처럼 '카스'라고 부르며 '미안하다'고 말한다.",
+   "early_keywords": {
+    "미안하다": 22
+   }
+  },
+  {
+   "id": "f101",
+   "reveal_ep": 32,
+   "twist": false,
+   "statement": "카시엘은 젖은 장갑을 벗은 채 세실리아 앞에서 처음으로 소리 없이 운다.",
+   "early_keywords": {
+    "소리 없이": 17
+   }
+  },
+  {
+   "id": "f103",
+   "reveal_ep": 33,
+   "twist": false,
+   "statement": "모르데인은 로제타에게 이제 왕세자 테오도르와 혼인하라고 명한다.",
+   "early_keywords": {
+    "혼담": 7
+   }
+  },
+  {
+   "id": "f107",
+   "reveal_ep": 34,
+   "twist": false,
+   "statement": "마리는 서약청을 그만두고 세실리아 일행에 합류한다.",
+   "early_keywords": {
+    "그만두고": 32
+   }
+  },
+  {
+   "id": "f111",
+   "reveal_ep": 36,
+   "twist": false,
+   "statement": "아델린의 수첩에 따르면 두 손으로 서약의 흔적을 감싸고 그 서약에 묶인 사람의 이름을 부르면 서약의 실이 풀린다.",
+   "early_keywords": {
+    "이름을 부르면": 16
+   }
+  },
+  {
+   "id": "f113",
+   "reveal_ep": 36,
+   "twist": false,
+   "statement": "카시엘은 세실리아가 해약하다 쓰러지면 깨어날 때까지 곁에 있겠다는 조건으로 그녀의 해약을 받아들인다.",
+   "early_keywords": {
+    "조건": 16
+   }
+  },
+  {
+   "id": "f123",
+   "reveal_ep": 40,
+   "twist": false,
+   "statement": "세실리아는 테오도르의 그림자 조항을 풀어 주고 사흘 동안 깨어나지 못한다.",
+   "early_keywords": {
+    "마지막 실": 10
+   }
+  },
+  {
+   "id": "f125",
+   "reveal_ep": 40,
+   "twist": false,
+   "statement": "카시엘은 사흘 내내 쓰러진 세실리아의 곁을 떠나지 않는다.",
+   "early_keywords": {
+    "갈매기 깃털": 34
+   }
+  },
+  {
+   "id": "f130",
+   "reveal_ep": 42,
+   "twist": false,
+   "statement": "동지인 '긴 밤'에는 은종탑의 결계가 갱신되느라 한 시진 동안 약해진다.",
+   "early_keywords": {
+    "한 시진": 2
+   }
+  },
+  {
+   "id": "f137",
+   "reveal_ep": 44,
+   "twist": false,
+   "statement": "로제타의 손목에 서약 자국이 없는 것을 본 모르데인은 해약자가 이미 은종탑 안에 있다는 것을 깨닫는다.",
+   "early_keywords": {
+    "탑 안에": 21
+   }
+  },
+  {
+   "id": "f141",
+   "reveal_ep": 45,
+   "twist": false,
+   "statement": "라파엘은 봉인 서고에 누군가 갇혀 있다는 것은 알았지만 그 정체는 몰랐다.",
+   "early_keywords": {
+    "묻지 않았": 4
+   }
+  },
+  {
+   "id": "f143",
+   "reveal_ep": 46,
+   "twist": true,
+   "statement": "모르데인은 젊은 시절 아델린 에어린의 약혼자였다. 아델린이 해약의 힘으로 약혼 서약을 풀고 떠나자, 그 원한으로 에어린 가를 '금지된 혈통'으로",
+   "early_keywords": {
+    "약혼자": 4
+   }
+  },
+  {
+   "id": "f148",
+   "reveal_ep": 47,
+   "twist": false,
+   "statement": "모르데인은 테오도르의 근위대와 로완에게 체포된다.",
+   "early_keywords": {
+    "근위대": 37
+   }
+  },
+  {
+   "id": "f149",
+   "reveal_ep": 48,
+   "twist": false,
+   "statement": "주 서약이 풀리면서 거기에 직접 매여 있던 1급 서약인 카시엘의 침묵 서약도 함께 풀렸다.",
+   "early_keywords": {
+    "흉터": 8
+   }
+  },
+  {
+   "id": "f152",
+   "reveal_ep": 48,
+   "twist": false,
+   "statement": "열흘 만에 깨어난 세실리아의 해약 능력은 크게 약해져, 작은 서약 하나를 푸는 데도 며칠이 걸린다.",
+   "early_keywords": {
+    "열흘": 14,
+    "약해져": 41
+   }
+  },
+  {
+   "id": "f156",
+   "reveal_ep": 49,
+   "twist": false,
+   "statement": "로제타와 로완은 재판 뒤 연인 사이임을 공개한다.",
+   "early_keywords": {
+    "팔짱": 3
+   }
+  },
+  {
+   "id": "f158",
+   "reveal_ep": 50,
+   "twist": false,
+   "statement": "왕국력 813년 봄, 흑송성 예배당에서 카시엘과 세실리아의 결혼식이 열린다.",
+   "early_keywords": {
+    "예배당": 44
+   }
+  },
+  {
+   "id": "f186",
+   "reveal_ep": 36,
+   "twist": false,
+   "statement": "은월령 수배 전단이 미렐 항구에도 나붙고, 현상금을 노린 사냥꾼 하나가 갈매기 집 앞을 기웃거리다 마리의 아버지에게 쫓겨난다.",
+   "early_keywords": {
+    "수배 전단": 33
+   }
+  }
+ ],
+ "keyword_absent_in_reveal_ep": [
+  {
+   "id": "f050",
+   "reveal_ep": 15,
+   "keywords": [
+    "은빛으로 빛나"
+   ],
+   "statement": "세실리아의 회색 눈은 등불이나 햇빛을 받으면 은빛으로 빛난다."
+  },
+  {
+   "id": "f168",
+   "reveal_ep": 39,
+   "keywords": [
+    "봉인 서고로 옮겨졌"
+   ],
+   "statement": "마리가 기억해 낸 순번표 기록에 따르면, 레온의 이의 신청 서류철은 2년 전 봉인 서고로 옮겨졌다."
+  }
+ ],
+ "name_before_first_appearance": [
+  {
+   "character": "카시엘 로스벤",
+   "first_appearance_ep": 2,
+   "ep": 1,
+   "names": [
+    "로스벤 공",
+    "로스벤 공작"
+   ]
+  },
+  {
+   "character": "로제타 벨모어",
+   "first_appearance_ep": 4,
+   "ep": 2,
+   "names": [
+    "벨모어 영애",
+    "로제타",
+    "로제타 벨모어"
+   ]
+  },
+  {
+   "character": "오스윈 모르데인",
+   "first_appearance_ep": 9,
+   "ep": 1,
+   "names": [
+    "청장",
+    "서약청장"
+   ]
+  },
+  {
+   "character": "오스윈 모르데인",
+   "first_appearance_ep": 9,
+   "ep": 2,
+   "names": [
+    "청장",
+    "서약청장"
+   ]
+  },
+  {
+   "character": "오스윈 모르데인",
+   "first_appearance_ep": 9,
+   "ep": 3,
+   "names": [
+    "청장",
+    "서약청장"
+   ]
+  },
+  {
+   "character": "오스윈 모르데인",
+   "first_appearance_ep": 9,
+   "ep": 4,
+   "names": [
+    "청장",
+    "서약청장"
+   ]
+  },
+  {
+   "character": "오스윈 모르데인",
+   "first_appearance_ep": 9,
+   "ep": 7,
+   "names": [
+    "청장",
+    "서약청장"
+   ]
+  },
+  {
+   "character": "레온 온드레",
+   "first_appearance_ep": 45,
+   "ep": 1,
+   "names": [
+    "온드레 남작",
+    "레온",
+    "레온 온드레"
+   ]
+  },
+  {
+   "character": "레온 온드레",
+   "first_appearance_ep": 45,
+   "ep": 3,
+   "names": [
+    "온드레 남작"
+   ]
+  },
+  {
+   "character": "레온 온드레",
+   "first_appearance_ep": 45,
+   "ep": 4,
+   "names": [
+    "온드레 남작"
+   ]
+  },
+  {
+   "character": "레온 온드레",
+   "first_appearance_ep": 45,
+   "ep": 7,
+   "names": [
+    "온드레 남작"
+   ]
+  },
+  {
+   "character": "레온 온드레",
+   "first_appearance_ep": 45,
+   "ep": 9,
+   "names": [
+    "레온"
+   ]
+  },
+  {
+   "character": "레온 온드레",
+   "first_appearance_ep": 45,
+   "ep": 11,
+   "names": [
+    "온드레 남작"
+   ]
+  },
+  {
+   "character": "레온 온드레",
+   "first_appearance_ep": 45,
+   "ep": 32,
+   "names": [
+    "레온",
+    "레온 온드레"
+   ]
+  },
+  {
+   "character": "레온 온드레",
+   "first_appearance_ep": 45,
+   "ep": 35,
+   "names": [
+    "레온",
+    "레온 온드레"
+   ]
+  },
+  {
+   "character": "레온 온드레",
+   "first_appearance_ep": 45,
+   "ep": 37,
+   "names": [
+    "레온",
+    "레온 온드레"
+   ]
+  },
+  {
+   "character": "레온 온드레",
+   "first_appearance_ep": 45,
+   "ep": 39,
+   "names": [
+    "온드레 남작"
+   ]
+  },
+  {
+   "character": "레온 온드레",
+   "first_appearance_ep": 45,
+   "ep": 41,
+   "names": [
+    "레온",
+    "레온 온드레"
+   ]
+  },
+  {
+   "character": "알브레히트 4세",
+   "first_appearance_ep": 30,
+   "ep": 2,
+   "names": [
+    "국왕"
+   ]
+  },
+  {
+   "character": "알브레히트 4세",
+   "first_appearance_ep": 30,
+   "ep": 15,
+   "names": [
+    "폐하",
+    "국왕"
+   ]
+  },
+  {
+   "character": "알브레히트 4세",
+   "first_appearance_ep": 30,
+   "ep": 20,
+   "names": [
+    "국왕"
+   ]
+  },
+  {
+   "character": "알브레히트 4세",
+   "first_appearance_ep": 30,
+   "ep": 21,
+   "names": [
+    "폐하",
+    "알브레히트 4세",
+    "알브레히트"
+   ]
+  },
+  {
+   "character": "알브레히트 4세",
+   "first_appearance_ep": 30,
+   "ep": 28,
+   "names": [
+    "폐하"
+   ]
+  },
+  {
+   "character": "알브레히트 4세",
+   "first_appearance_ep": 30,
+   "ep": 29,
+   "names": [
+    "폐하"
+   ]
+  }
+ ],
+ "minor_near_romance": [
+  {
+   "ep": 10,
+   "character": "노엘 로스벤",
+   "para": "힐다의 목소리였다. 그녀는 노엘을 품에 안은 채, 세실리아를 처음 보는 사람처럼 보고 있었다. 입술이 떨리며 무언가를 말하려 했다."
+  }
+ ],
+ "repeated_paragraphs": [
+  {
+   "eps": [
+    8,
+    18
+   ],
+   "para": "\"꼬마 도련님, 검은 손목이 아니라 허리로 휘두르는 겁니다. 자, 다시.\""
+  }
+ ],
+ "dialogue_ratio": {
+  "min": 0.15,
+  "max": 0.58,
+  "mean": 0.45
+ }
+}

@@ -1,0 +1,308 @@
+[1장]
+새 인물: cecilia_ondre 세실리아 온드레 (별칭: 세실, 온드레 필경사, 아가씨)
+새 인물: mari_fennel 마리 페넬 (별칭: 마리)
+새 인물: raphael_winters 라파엘 윈터스 (별칭: 윈터스 수석님, 수석님)
+새 인물: leon_ondre 레온 온드레 (별칭: 온드레 남작, 아버지) [언급만]
+새 인물: landlady 하숙집 안주인 (별칭: 안주인)
+새 인물: duke_rosven 로스벤 공작 [언급만]
+새 사실: c1-1 서약사는 은가루에 자기 피 한 방울을 섞은 은잉크로 서약을 쓰고 서약 인장을 찍어 봉인하며, 그렇게 봉인된 약속은 사람의 몸과 영혼을 묶는다. | 상식
+새 사실: c1-2 서약을 어기면 살갗에 서약흔이 떠오르고 그 자리가 불에 덴 것처럼 타들어 간다. | 상식
+새 사실: c1-3 할레스 왕국에서는 영지 승계, 거래, 충성 등 중요한 약속이 전부 왕립 서약청을 거쳐야 한다. | 상식
+새 사실: c1-4 필경사는 피를 섞지 않은 은잉크로 서약의 효력 없는 사본만 만든다. | 상식
+새 사실: c1-5 수도 칼리스톤은 은빛 강을 사이에 두고 남북으로 갈라져 있고, 북쪽 언덕의 왕립 서약청은 '은종탑'이라 불린다. | 상식
+새 사실: c1-6 세실리아 온드레는 왕립 서약청 3층 필사실의 하급 필경사로 스물다섯 살이며 올해로 3년째 일하고 있다. | 앎: cecilia_ondre(0) mari_fennel(0) raphael_winters(0)
+새 사실: c1-7 마리 페넬은 남부 항구 도시 미렐 출신의 스물여섯 살 평민 필경사로, 세실리아와 3년째 같은 책상을 쓰는 친구다. | 앎: mari_fennel(0) cecilia_ondre(0)
+새 사실: c1-8 라파엘 윈터스는 서약청 수석 서약사이자 필경사들의 직속 상관인 서른한 살 남자다. | 앎: raphael_winters(0) cecilia_ondre(0) mari_fennel(0)
+새 사실: c1-9 세실리아는 남들이 지나치는 획 끝의 번짐이나 작은 얼룩을 유난히 잘 알아본다. | 앎: cecilia_ondre(0)
+새 사실: c1-10 세실리아의 아버지 레온 온드레 남작은 2년 전 채무 서약에 이의를 제기하러 서약청에 간 뒤 행방불명되었다. | 앎: cecilia_ondre(0) mari_fennel(0)
+새 사실: c1-11 온드레 남작가는 레온 온드레의 채무 서약을 갚지 못해 영지와 저택을 채권자에게 넘기고 무너졌다. | 앎: cecilia_ondre(0)
+새 사실: c1-12 세실리아는 남은 빚을 필경사 월급을 쪼개 갚고 있으며, 이대로면 십일 년이 걸린다. | 앎: cecilia_ondre(0) landlady(0)
+새 사실: c1-13 세실리아의 어머니는 세실리아를 낳고 얼마 안 되어 병으로 죽었고, 세실리아는 아버지 혼자 키웠다. | 앎: cecilia_ondre(0)
+새 사실: c1-14 세실리아는 아버지를 찾을 때까지 은종탑을 떠나지 않겠다고 마음먹고 있다. | 앎: cecilia_ondre(0) mari_fennel(0)
+새 사실: c1-15 세실리아는 은빛 강 남쪽 염색 공방 골목 끝 하숙집의 꼭대기 다락방에 산다. | 앎: cecilia_ondre(0) landlady(0)
+새 사실: c1-16 세실리아와 마리가 북부 로스벤 공작가 영지 갱신 서약의 원본 대조 및 사본 작성 담당으로 배정되었다. | 앎: cecilia_ondre(1) raphael_winters(1)
+새 사실: c1-17 로스벤 공작이 다음 날 오전 서약청에 직접 서명하러 온다. | 앎: cecilia_ondre(1) raphael_winters(1)
+장면: 시점 cecilia_ondre, 왕립 서약청(은종탑) 3층 필사실과 하숙집 다락방, 등장 cecilia_ondre mari_fennel raphael_winters landlady
+
+[2장]
+새 인물: rowan_crow 로완 크로우 (별칭: 로완, 기사단장)
+새 인물: rosetta_belmore 로제타 벨모어 (별칭: 로제타 벨모어 영애) [언급만]
+새 인물: oath_director 서약청장 [언급만]
+새 인물: king_hales 국왕 [언급만]
+새 인물: window_knocker 창을 두드린 사람
+새 별칭: duke_rosven = 카시엘 로스벤
+새 별칭: duke_rosven = 겨울 공작
+새 별칭: duke_rosven = 공작 각하
+새 사실: c2-1 로스벤 공작 카시엘 로스벤은 웃는 걸 본 사람이 없을 만큼 냉정해 '겨울 공작'이라는 별명으로 불린다. | 상식
+새 사실: c2-2 카시엘 로스벤은 북부 로스벤 공작가 당주로 스물여덟 살이다. | 앎: duke_rosven(0) rowan_crow(0) mari_fennel(2) cecilia_ondre(2)
+새 사실: c2-3 로완 크로우는 로스벤 공작가의 서른 살 기사단장으로, 카시엘 로스벤과 같은 유모 손에서 자란 젖형제다. | 앎: rowan_crow(0) duke_rosven(0) mari_fennel(2) cecilia_ondre(2)
+새 사실: c2-4 국왕이 카시엘 로스벤에게 로제타 벨모어와 혼인하라는 왕명을 내렸다. | 앎: duke_rosven(0) mari_fennel(2) cecilia_ondre(2)
+새 사실: c2-5 로제타 벨모어는 서약청장의 피후견인이다. | 앎: mari_fennel(2) cecilia_ondre(2)
+새 사실: c2-6 서약청에서는 귀한 손님이 직접 서명하러 오는 서약을 3층 필사실이 아니라 2층 접견실에서 다룬다. | 앎: cecilia_ondre(0) mari_fennel(0) raphael_winters(0)
+새 사실: c2-7 카시엘 로스벤은 실내에서도 왼손에만 검은 가죽 장갑을 끼고 있다. | 앎: duke_rosven(0) cecilia_ondre(2) mari_fennel(2) raphael_winters(2)
+새 사실: c2-8 세실리아는 로스벤 공작가 기존 영지 서약 원본 제3조 둘째 줄과 셋째 줄 사이에서 희미한 은빛 줄을 보았지만 마리는 아무것도 보지 못했다. | 앎: cecilia_ondre(2) mari_fennel(2) raphael_winters(2) duke_rosven(2)
+새 사실: c2-9 라파엘 윈터스는 세실리아가 말한 줄을 잉크 얼룩이라고 단정하며 대조는 본문만 한다고 말을 막았다. | 앎: raphael_winters(2) cecilia_ondre(2) mari_fennel(2) duke_rosven(2)
+새 사실: c2-10 로스벤 공작가의 갱신 서약이 라파엘 윈터스의 서약 인장으로 봉인되었다. | 앎: raphael_winters(2) duke_rosven(2) cecilia_ondre(2) mari_fennel(2)
+새 사실: c2-11 은종탑 꼭대기의 은빛 종은 서약청에서 서약이 봉인될 때마다 한 번씩 울린다. | 앎: cecilia_ondre(0) mari_fennel(0) raphael_winters(0) duke_rosven(2)
+새 사실: c2-12 로완은 공작이 그 필경사를 마음에 두고 뒤돌아보았다고 놀렸고 공작은 부정하지 않았으며, 세실리아가 이를 엿들었다. | 앎: rowan_crow(2) duke_rosven(2) cecilia_ondre(2)
+새 사실: c2-13 그날 밤 누군가 세실리아의 다락방 창을 두드렸다. | 앎: cecilia_ondre(2) window_knocker(2)
+새로 앎: c1-16 <- mari_fennel(2)
+새로 앎: c1-17 <- mari_fennel(2)
+새로 앎: c1-6 <- duke_rosven(2)
+새로 앎: c1-8 <- duke_rosven(2)
+새로 앎: c1-17 <- duke_rosven(0)
+장면: 시점 cecilia_ondre, 왕립 서약청(은종탑) 2층 접견실과 앞마당, 하숙집 다락방, 등장 cecilia_ondre mari_fennel raphael_winters duke_rosven rowan_crow window_knocker
+
+[3장]
+새 인물: dawn_gentleman 새벽에 온 신사 (별칭: 웬 신사) [언급만]
+새 별칭: cecilia_ondre = 온드레 양
+새 별칭: cecilia_ondre = 온드레 영애
+합침: window_knocker → duke_rosven
+새 사실: c3-1 세실리아의 빚은 원금 금화 삼천육백 닢이며 이번 달 이자까지 합치면 삼천팔백사십 닢이다. | 앎: cecilia_ondre(0) duke_rosven(3)
+새 사실: c3-2 세실리아의 채권자는 셋이며 가장 큰 곳은 남부 상단이다. | 앎: cecilia_ondre(0) duke_rosven(3)
+새 사실: c3-3 할레스 왕국 귀족들 사이에는 이미 약혼한 귀족에게는 왕명으로도 혼인을 강제할 수 없다는 '선약 우선' 관습이 있다. | 앎: duke_rosven(0) leon_ondre(0) cecilia_ondre(3)
+새 사실: c3-4 카시엘 로스벤은 왕명을 피하기 위해 세실리아에게 1년 기한의 약혼을 제안했다. | 앎: duke_rosven(3) cecilia_ondre(3) rowan_crow(3)
+새 사실: c3-5 카시엘 로스벤은 약혼의 대가로 온드레 가의 채무 전액 변제와 실종된 레온 온드레 남작의 행방 조사 지원을 약속했다. | 앎: duke_rosven(3) cecilia_ondre(3)
+새 사실: c3-6 카시엘 로스벤은 세실리아를 고른 이유를 빚이 있고 입이 무거워 보여서라고만 말했다. | 앎: duke_rosven(3) cecilia_ondre(3)
+새 사실: c3-7 세실리아가 쓴 계약서는 제1조 기한과 대가, 제2조 사생활 불간섭, 제3조 계약 종료 뒤 서약청 복직 보장의 세 조항으로 되어 있다. | 앎: cecilia_ondre(3) duke_rosven(3)
+새 사실: c3-8 카시엘 로스벤은 1년 뒤 약혼을 깰 때 세실리아가 자신을 찼다고 하면 된다고 했다. | 앎: duke_rosven(3) cecilia_ondre(3)
+새 사실: c3-9 세실리아는 새벽에 카시엘 로스벤의 약혼 제안을 승낙했다. | 앎: cecilia_ondre(3) duke_rosven(3) rowan_crow(3)
+새 사실: c3-10 카시엘 로스벤은 세실리아의 답을 기다리며 밤새 골목의 마차 안에서 한숨도 자지 않았다. | 앎: duke_rosven(3) rowan_crow(3) cecilia_ondre(3)
+새 사실: c3-11 로완 크로우는 카시엘 로스벤이 세실리아의 다락방을 찾아간 동안 골목에서 망을 보았다. | 앎: rowan_crow(3) duke_rosven(3) cecilia_ondre(3)
+새 사실: c3-12 새벽에 한 신사가 하숙집 대문의 빚 독촉장을 모두 떼어 가며 빚이 다 정리됐다고 말했다. | 앎: landlady(3) dawn_gentleman(3) cecilia_ondre(3)
+새로 앎: c1-15 <- duke_rosven(3)
+새로 앎: c1-15 <- rowan_crow(3)
+새로 앎: c1-10 <- duke_rosven(3)
+새로 앎: c1-11 <- duke_rosven(3)
+새로 앎: c2-13 <- rowan_crow(3)
+장면: 시점 cecilia_ondre, 하숙집 다락방과 골목, 등장 cecilia_ondre duke_rosven rowan_crow landlady
+
+[4장]
+새 인물: theodore_hales 테오도르 할레스 (별칭: 왕세자 전하, 왕세자, 테오도르)
+새 인물: chamberlain 시종장
+새 인물: old_count 노백작
+새 인물: noble_ladies 귀부인 둘 (별칭: 귀부인들)
+새 별칭: rowan_crow = 크로우 경
+새 별칭: rosetta_belmore = 벨모어 영애
+새 별칭: cecilia_ondre = 필경사 아가씨
+새 별칭: duke_rosven = 로스벤 공
+새 사실: c4-1 로스벤 저택은 은빛 강 북쪽, 오래된 귀족 저택들이 모인 언덕에 있다. | 앎: duke_rosven(0) rowan_crow(0) cecilia_ondre(4)
+새 사실: c4-2 카시엘 로스벤은 세실리아의 계약서에 계약 기간 동안 세실리아가 로스벤 저택에 거주한다는 제4조를 추가했고 세실리아가 이를 받아들였다. | 앎: duke_rosven(4) cecilia_ondre(4) rowan_crow(4)
+새 사실: c4-3 카시엘 로스벤은 약혼 계약을 서약청에서 봉인하지 않고 검은 잉크로 쓴 종이 계약서 두 장에 서명해 한 장씩 나눠 갖는 것으로 끝냈다. | 앎: duke_rosven(4) cecilia_ondre(4) rowan_crow(4)
+새 사실: c4-4 로완 크로우가 세실리아와 카시엘의 종이 계약서 증인 칸에 서명했다. | 앎: rowan_crow(4) duke_rosven(4) cecilia_ondre(4)
+새 사실: c4-5 할레스 왕국의 왕궁은 금사자궁이다. | 상식
+새 사실: c4-6 왕궁 무도회에서 카시엘 로스벤과 세실리아 온드레의 약혼이 공개적으로 발표되었다. | 앎: cecilia_ondre(4) duke_rosven(4) rowan_crow(4) chamberlain(4) old_count(4) rosetta_belmore(4) theodore_hales(4) noble_ladies(4)
+새 사실: c4-7 로제타 벨모어는 벨모어 백작가의 외동딸이다. | 앎: rosetta_belmore(0) cecilia_ondre(4) duke_rosven(4)
+새 사실: c4-8 로제타 벨모어는 스물네 살이다. | 앎: rosetta_belmore(0) cecilia_ondre(4)
+새 사실: c4-9 로제타 벨모어는 무도회에서 세실리아의 잉크 묻은 손을 비꼬며 카시엘의 약혼을 축하했다. | 앎: rosetta_belmore(4) cecilia_ondre(4) duke_rosven(4)
+새 사실: c4-10 테오도르 할레스는 할레스 왕국의 왕세자로 스물아홉 살이다. | 앎: theodore_hales(0) duke_rosven(0) rowan_crow(0) cecilia_ondre(4)
+새 사실: c4-11 테오도르 할레스는 급하게 지은 집은 바람에 약하다며 카시엘의 약혼을 꼬집었고, 카시엘은 반말로 맞받았다. | 앎: theodore_hales(4) duke_rosven(4) cecilia_ondre(4)
+새 사실: c4-12 카시엘 로스벤과 테오도르 할레스는 왕립 학원 동기로 한때 서로 등을 맡기던 사이였다. | 앎: duke_rosven(0) theodore_hales(0) rowan_crow(0) cecilia_ondre(4)
+새 사실: c4-13 카시엘 로스벤과 테오도르 할레스는 7년 전 북부 반란 진압 때 있었던 일 이후로 절연했다. | 앎: duke_rosven(0) theodore_hales(0) rowan_crow(0) cecilia_ondre(4)
+새 사실: c4-14 귀부인들이 로스벤 저택에 공작이 데리고 사는 아이가 있다는 소문을 나누었고 세실리아가 이를 엿들었다. | 앎: noble_ladies(4) cecilia_ondre(4)
+새로 앎: c3-7 <- rowan_crow(4)
+새로 앎: c3-5 <- rowan_crow(4)
+새로 앎: c2-5 <- rosetta_belmore(0)
+새로 앎: c2-4 <- rosetta_belmore(4)
+새로 앎: c2-2 <- theodore_hales(0)
+장면: 시점 cecilia_ondre, 로스벤 저택 서재와 금사자궁 무도회장, 등장 cecilia_ondre duke_rosven rowan_crow chamberlain old_count rosetta_belmore theodore_hales noble_ladies
+
+[5장]
+새 인물: hilda_brun 힐다 브룬 (별칭: 힐다 부인, 힐다, 시녀장)
+새 인물: noel_rosven 노엘 로스벤 (별칭: 노엘, 도련님)
+새 인물: richard_rosven 리처드 로스벤 (별칭: 전대 로스벤 공작, 형님) [언급만]
+새 별칭: duke_rosven = 작은아버지
+새 별칭: duke_rosven = 공작님
+새 별칭: rowan_crow = 로완 경
+새 별칭: cecilia_ondre = 세실리아 누나
+새 별칭: cecilia_ondre = 누나
+새 사실: c5-1 세실리아 온드레는 서약청에 휴직계를 냈다. | 앎: cecilia_ondre(5) raphael_winters(5) mari_fennel(5)
+새 사실: c5-2 왕립 서약청 규정상 휴직은 1년까지만 가능하다. | 앎: cecilia_ondre(0) mari_fennel(0) raphael_winters(0)
+새 사실: c5-3 세실리아 온드레는 마리 페넬에게 약혼이 1년짜리 계약이라는 비밀을 털어놓았고 마리는 비밀을 지키겠다고 약속했다. | 앎: cecilia_ondre(5) mari_fennel(5)
+새 사실: c5-4 힐다 브룬은 로스벤 가의 시녀장으로 올해 예순한 살이다. | 앎: hilda_brun(0) duke_rosven(0) rowan_crow(0) noel_rosven(0) cecilia_ondre(5)
+새 사실: c5-5 힐다 브룬은 카시엘 로스벤과 로완 크로우를 젖먹이 때부터 기른 유모다. | 앎: hilda_brun(0) duke_rosven(0) rowan_crow(0) cecilia_ondre(5)
+새 사실: c5-6 힐다 브룬은 지금 노엘 로스벤의 유모 노릇을 하고 있다. | 앎: hilda_brun(0) noel_rosven(0) duke_rosven(0) rowan_crow(0) cecilia_ondre(5)
+새 사실: c5-7 노엘 로스벤은 아홉 살이며 로스벤 가의 후계자다. | 앎: noel_rosven(0) hilda_brun(0) duke_rosven(0) rowan_crow(0) cecilia_ondre(5)
+새 사실: c5-8 노엘 로스벤은 전대 로스벤 공작 리처드 로스벤의 아들이자 카시엘 로스벤의 조카다. | 앎: noel_rosven(0) hilda_brun(0) duke_rosven(0) rowan_crow(0) cecilia_ondre(5)
+새 사실: c5-9 리처드 로스벤 내외는 3년 전 마차 사고로 죽었고 그 뒤로 카시엘 로스벤이 노엘을 맡았다. | 앎: duke_rosven(0) hilda_brun(0) rowan_crow(0) noel_rosven(0) cecilia_ondre(5)
+새 사실: c5-10 노엘 로스벤의 손목에는 피부 아래에서 은빛이 비쳐 나오는 동전만 한 반점이 있다. | 앎: noel_rosven(0) hilda_brun(0) cecilia_ondre(5)
+새 사실: c5-11 노엘 로스벤은 의원도 원인을 모르는 병으로 밤마다 열이 오르며, 로스벤 저택에서는 이를 밤열이라고 부른다. | 앎: hilda_brun(0) noel_rosven(0) duke_rosven(0) cecilia_ondre(5)
+새 사실: c5-12 카시엘 로스벤은 당근을 싫어해 늘 접시 가장자리로 밀어 놓는다. | 앎: duke_rosven(0) noel_rosven(0) hilda_brun(0) cecilia_ondre(5)
+새 사실: c5-13 힐다 브룬은 마차 사고가 어디서 있었느냐는 세실리아의 물음에 대답하지 않고 말을 돌렸다. | 앎: cecilia_ondre(5) hilda_brun(5)
+새 사실: c5-14 자정 무렵 열에 들뜬 노엘 로스벤이 세실리아의 방문을 두드리며 누나라고 불렀다. | 앎: cecilia_ondre(5) noel_rosven(5)
+새로 앎: c3-4 <- mari_fennel(5)
+새로 앎: c3-5 <- mari_fennel(5)
+새로 앎: c4-6 <- mari_fennel(5)
+새로 앎: c4-6 <- noel_rosven(5)
+새로 앎: c4-6 <- hilda_brun(5)
+새로 앎: c2-3 <- hilda_brun(0)
+새로 앎: c2-2 <- hilda_brun(0)
+새로 앎: c3-7 <- mari_fennel(5)
+장면: 시점 cecilia_ondre, 하숙집 다락방과 로스벤 저택, 등장 cecilia_ondre mari_fennel hilda_brun noel_rosven duke_rosven
+
+[6장]
+새 인물: messenger_boy 맨발의 사내아이 (별칭: 처음 보는 아이)
+새 인물: gray_feather 회색 깃털 [언급만]
+새 사실: c6-1 카시엘 로스벤은 밤마다 노엘 로스벤의 방 앞에 와서 노엘이 자는 줄 알고 한참 서 있다 가며, 노엘은 그것을 알고 있다. | 앎: noel_rosven(0) cecilia_ondre(6)
+새 사실: c6-2 노엘 로스벤의 밤열은 늘 새벽이면 내린다. | 앎: hilda_brun(0) noel_rosven(0) cecilia_ondre(6)
+새 사실: c6-3 레온 온드레는 세실리아에게 은종탑의 종이 한 번 우는 것은 하늘이 그 약속을 잊지 말라고 종이 대신 불러 주는 것이라고 말해 주었다. | 앎: cecilia_ondre(0) noel_rosven(6)
+새 사실: c6-4 로스벤 가에는 공작의 약혼녀가 가문 기록실인 '겨울 서고'의 열쇠를 받는 관습이 있다. | 앎: hilda_brun(0) duke_rosven(0) rowan_crow(0) cecilia_ondre(6)
+새 사실: c6-5 로스벤 가의 기록이 모두 모인 겨울 서고는 북부 본가에 있다. | 앎: hilda_brun(0) duke_rosven(0) rowan_crow(0) cecilia_ondre(6)
+새 사실: c6-6 힐다 브룬이 세실리아에게 솔방울 무늬가 새겨진 검은 쇠 열쇠인 겨울 서고 열쇠를 건넸다. | 앎: hilda_brun(6) cecilia_ondre(6) duke_rosven(6)
+새 사실: c6-7 로스벤 저택 옆문 앞에서 맨발의 사내아이가 세실리아에게 이름을 확인하고 받는 이도 보내는 이도 적히지 않은 봉투를 건넨 뒤 달아났다. | 앎: cecilia_ondre(6) messenger_boy(6) gray_feather(6) duke_rosven(6)
+새 사실: c6-8 익명의 편지에는 회색 깃털과 함께 '은종탑의 잉크를 믿지 마시오'라는 한 줄이 검은 잉크로 쓰여 있었고 서명은 '회색 깃털'이었다. | 앎: cecilia_ondre(6) gray_feather(6) duke_rosven(6)
+새 사실: c6-9 카시엘 로스벤은 편지를 보고 은종탑에 대해 무언가 말하려다 그만두고 세실리아에게 조심하라고만 했다. | 앎: duke_rosven(6) cecilia_ondre(6)
+새 사실: c6-10 카시엘 로스벤은 세실리아에게 당분간 혼자 나가지 말고 마차와 마부를 쓰라고 부탁했다. | 앎: duke_rosven(6) cecilia_ondre(6)
+새 사실: c6-11 로제타 벨모어가 세실리아를 금사자궁 장미 정원 다과회에 초대했다. | 앎: rosetta_belmore(6) cecilia_ondre(6)
+새로 앎: c5-14 <- hilda_brun(6)
+새로 앎: c5-14 <- duke_rosven(6)
+새로 앎: c2-11 <- noel_rosven(6)
+새로 앎: c1-6 <- noel_rosven(6)
+장면: 시점 cecilia_ondre, 로스벤 저택(세실리아의 방, 응접실, 옆문, 서재), 등장 cecilia_ondre noel_rosven hilda_brun messenger_boy duke_rosven
+
+[7장]
+새 인물: garden_ladies 다과회 귀부인들 (별칭: 귀부인들)
+새 인물: coachman 로스벤 가 마부 (별칭: 진짜 마부, 마부)
+새 별칭: oath_director = 서약청장 모르데인
+새 별칭: oath_director = 모르데인
+새 사실: c7-1 로제타 벨모어는 카시엘 로스벤과의 혼인을 바란 적이 없다고 세실리아에게 털어놓았다. | 앎: rosetta_belmore(0) cecilia_ondre(7)
+새 사실: c7-2 로제타 벨모어의 부모는 로제타가 열 살 때 일주일 사이에 역병으로 모두 죽었고, 그 뒤로 서약청장이 로제타의 후견인이 되었다. | 앎: rosetta_belmore(0) oath_director(0) cecilia_ondre(7)
+새 사실: c7-3 왕립 서약청장의 이름은 모르데인이다. | 앎: oath_director(0) cecilia_ondre(0) mari_fennel(0) raphael_winters(0) rosetta_belmore(0)
+새 사실: c7-4 로제타 벨모어와 카시엘 로스벤의 혼처는 로제타의 후견인인 서약청장이 받아들인 것이었다. | 앎: rosetta_belmore(0) oath_director(0) cecilia_ondre(7)
+새 사실: c7-5 로제타 벨모어는 사교계가 구경거리를 원하기 때문에 새 약혼녀를 물어뜯는 척했고, 부채를 접어 귀부인들의 날카로운 말을 끊어 주었다. | 앎: rosetta_belmore(7) cecilia_ondre(7)
+새 사실: c7-6 세실리아 온드레는 필경사로서 보통 하루 열두 장, 바쁜 날은 열다섯 장을 썼다. | 앎: cecilia_ondre(0) mari_fennel(0) raphael_winters(0) garden_ladies(7) rosetta_belmore(7)
+새 사실: c7-7 은종탑의 잉크에는 은가루가 섞여 있어 3년쯤 매일 쓰면 피부에 배어 지워지지 않는다. | 앎: cecilia_ondre(0) mari_fennel(0) raphael_winters(0) garden_ladies(7) rosetta_belmore(7)
+새 사실: c7-8 카시엘 로스벤은 마부 대신 직접 마부석에서 고삐를 쥐고 세실리아를 데리러 금사자궁 장미 정원에 왔다. | 앎: duke_rosven(7) cecilia_ondre(7) rosetta_belmore(7) garden_ladies(7) coachman(7)
+새 사실: c7-9 카시엘 로스벤은 조심하라고 한 뒤로 세실리아가 어디에 가는지 꼬박꼬박 묻고 있다. | 앎: duke_rosven(7) cecilia_ondre(7)
+새 사실: c7-10 카시엘 로스벤이 마차 안에서 세실리아에게 형 리처드 로스벤의 이야기를 해 두겠다고 말을 꺼냈다. | 앎: duke_rosven(7) cecilia_ondre(7)
+새로 앎: c2-5 <- oath_director(0)
+새로 앎: c5-4 <- rosetta_belmore(7)
+새로 앎: c1-11 <- garden_ladies(7)
+새로 앎: c1-6 <- garden_ladies(7)
+새로 앎: c4-6 <- garden_ladies(7)
+새로 앎: c1-11 <- rosetta_belmore(7)
+장면: 시점 cecilia_ondre, 금사자궁 장미 정원과 정자, 로스벤 가 마차 안, 등장 cecilia_ondre garden_ladies rosetta_belmore duke_rosven coachman
+
+[8장]
+새 사실: c8-1 카시엘 로스벤은 로스벤 가의 차남으로 열일곱 살에 북부 국경 기사단을 맡으러 갔고, 공작위는 생각해 본 적도 없었다. | 앎: duke_rosven(0) rowan_crow(0) hilda_brun(0) cecilia_ondre(8)
+새 사실: c8-2 리처드 로스벤 부부가 죽던 날 카시엘 로스벤은 국경에 있어 장례가 끝난 뒤에야 내려왔고, 그다음 날 원한 적 없는 공작의 인장을 받았다. | 앎: duke_rosven(0) rowan_crow(0) hilda_brun(0) cecilia_ondre(8)
+새 사실: c8-3 리처드 로스벤은 죽기 몇 달 전부터 몇 년 치 서약청 서약서 사본을 서재에 늘어놓고 밤늦게까지 들여다보았으며, 무엇을 찾는지 묻는 카시엘에게 다 끝나면 이야기해 주겠다고만 했다. | 앎: duke_rosven(0) cecilia_ondre(8)
+새 사실: c8-4 로스벤 저택 2층의 리처드 로스벤의 옛 서재는 지금 닫혀 있다. | 앎: duke_rosven(0) hilda_brun(0) cecilia_ondre(8)
+새 사실: c8-5 카시엘 로스벤의 왼손 등에는 장갑으로 감춘 오래된 서약흔이 있다. | 앎: duke_rosven(0) rowan_crow(0) hilda_brun(0) noel_rosven(0) cecilia_ondre(8)
+새 사실: c8-6 카시엘 로스벤은 무슨 서약이냐는 세실리아의 물음에 계약서 제2조 사생활 불간섭을 들며 대답하지 않았다. | 앎: duke_rosven(8) cecilia_ondre(8)
+새 사실: c8-7 카시엘 로스벤이 장갑 벗는 것을 본 사람은 로완 크로우, 힐다 브룬, 노엘 로스벤 정도뿐이다. | 앎: rowan_crow(0) hilda_brun(0) duke_rosven(0) cecilia_ondre(8)
+새 사실: c8-8 로완 크로우는 노엘 로스벤에게 손목에 힘이 덜 가도록 가볍게 깎은 목검을 만들어 주고 검술을 가르치고 있다. | 앎: rowan_crow(0) noel_rosven(0) hilda_brun(0) cecilia_ondre(8)
+새 사실: c8-9 세실리아 온드레는 지난 2년 동안 달마다 서약청 접수 창구에 아버지 이름을 물었지만 늘 확인 중이라는 대답만 들었다. | 앎: cecilia_ondre(0)
+새 사실: c8-10 세실리아 온드레는 다음 주부터 다시 필사실에 나가 아버지의 실종 서류를 직접 찾아보기로 하고 마리 페넬에게 부탁하는 편지를 썼다. | 앎: cecilia_ondre(8)
+장면: 시점 cecilia_ondre, 로스벤 저택 정원 정자와 훈련장, 세실리아의 방, 등장 cecilia_ondre duke_rosven hilda_brun noel_rosven rowan_crow
+
+[9장]
+새 인물: archive_keeper 기록실 담당 할아버지 (별칭: 백발 노인)
+새 별칭: oath_director = 오스윈 모르데인
+새 별칭: oath_director = 스승님
+새 별칭: oath_director = 청장님
+새 별칭: mari_fennel = 페넬 필경사
+새 사실: c9-1 카시엘 로스벤이 마부석에 앉아 세실리아를 데리러 간 일은 온 수도에 소문이 났다. | 상식
+새 사실: c9-2 세실리아 온드레는 약혼녀가 된 뒤에도 주에 이틀은 필사실에 나가기로 했고 카시엘 로스벤은 마차를 타고 다니라는 조건으로 허락했다. | 앎: cecilia_ondre(9) duke_rosven(9)
+새 사실: c9-3 라파엘 윈터스는 세실리아가 복귀 후 처음 낸 사본을 번짐 반 푼의 규정 위반이라며 되돌려 보냈다. | 앎: raphael_winters(9) cecilia_ondre(9) mari_fennel(9)
+새 사실: c9-4 서약청 기록실 담당 할아버지는 점심을 먹고 나면 반 시진은 꼭 존다. | 앎: mari_fennel(0) archive_keeper(0) cecilia_ondre(9)
+새 사실: c9-5 레온 온드레의 채무 서약 이의 신청 서류는 왕국력 810년 서류로 서약청 기록실에 보관되어 있다. | 앎: cecilia_ondre(9) mari_fennel(9)
+새 사실: c9-6 레온 온드레의 이의 신청 서류철은 은종과 깃펜 문양의 서약청장 직인으로 봉인되어 있으며, 같은 해 이의 신청 서류 중 청장 직인이 찍힌 것은 그것 하나뿐이다. | 앎: cecilia_ondre(9) mari_fennel(9) oath_director(0) raphael_winters(9)
+새 사실: c9-7 서약청장 직인으로 봉한 서류는 청장 허가 없이 아무도 열 수 없고, 하급 직원은 봉인에 손대는 것만으로도 징계를 받는다. | 앎: cecilia_ondre(0) mari_fennel(0) raphael_winters(0) oath_director(0) archive_keeper(0)
+새 사실: c9-8 라파엘 윈터스는 서약청장 오스윈 모르데인을 스승님이라 부르는 제자다. | 앎: raphael_winters(0) oath_director(0) cecilia_ondre(9)
+새 사실: c9-9 서약청장 오스윈 모르데인은 20년 넘게 왕립 서약청을 이끌어 왔으며 올해 쉰네 살이다. | 앎: oath_director(0) cecilia_ondre(0) raphael_winters(0) mari_fennel(0)
+새 사실: c9-10 오스윈 모르데인은 세실리아가 지난 2년 동안 접수 창구에 아버지 이름을 스물네 번 물은 것을 알고 있었다. | 앎: oath_director(9) cecilia_ondre(9) raphael_winters(9)
+새 사실: c9-11 오스윈 모르데인은 세실리아가 로제타의 다과회에 다녀온 것을 알고 있었다. | 앎: oath_director(9) cecilia_ondre(9) raphael_winters(9)
+새 사실: c9-12 오스윈 모르데인은 서류 열람 허가 요청에 답하지 않고 세실리아에게 아버지 일은 잊고 새 삶을 살라고 했다. | 앎: oath_director(9) cecilia_ondre(9) raphael_winters(9)
+새 사실: c9-13 라파엘 윈터스는 세실리아의 기록실 무단 출입에 대해 초범 규정대로 구두 경고만 했다. | 앎: raphael_winters(9) cecilia_ondre(9)
+새 사실: c9-14 세실리아는 서약청장이 준 차를 한 모금도 마시지 않았고 마리에게는 차를 얻어 마셨다고 거짓말했다. | 앎: cecilia_ondre(9)
+새 사실: c9-15 세실리아가 로스벤 저택에 돌아와 현관문을 연 순간 2층에서 힐다 브룬의 비명이 터졌다. | 앎: cecilia_ondre(9) hilda_brun(9)
+새로 앎: c7-8 <- mari_fennel(9)
+새로 앎: c8-10 <- mari_fennel(9)
+새로 앎: c4-6 <- oath_director(9)
+새로 앎: c6-11 <- oath_director(9)
+새로 앎: c8-9 <- oath_director(9)
+장면: 시점 cecilia_ondre, 은종탑 3층 필사실, 기록실, 꼭대기 서약청장실, 로스벤 저택 현관, 등장 cecilia_ondre mari_fennel raphael_winters archive_keeper oath_director hilda_brun
+
+[10장]
+새 인물: physician 노의원 (별칭: 의원)
+새 인물: maids 하녀 둘 (별칭: 하녀들)
+새 사실: c10-1 노엘 로스벤이 낮잠에서 깨어나지 않았고, 손목의 은빛 반점이 줄기처럼 갈라져 팔꿈치 바로 아래까지 번졌다. | 앎: cecilia_ondre(10) hilda_brun(10) duke_rosven(10) physician(10)
+새 사실: c10-2 노의원은 노엘 로스벤의 반점이 의서 어디에도 없는 것이라며 오늘 밤이 고비이고 자신이 할 수 있는 일이 없다고 말했다. | 앎: physician(10) duke_rosven(10) cecilia_ondre(10) hilda_brun(10)
+새 사실: c10-3 세실리아 온드레는 노엘 로스벤의 은빛 무늬가 가늘고 반듯한 선들이 얽혀 숨 쉬듯 빛나는 것임을 보았다. | 앎: cecilia_ondre(10)
+새 사실: c10-4 세실리아 온드레가 노엘 로스벤의 손목을 감싸 쥐고 보이지 않는 실을 끊자 은빛 무늬가 실처럼 풀려 사라졌다. | 앎: cecilia_ondre(10) hilda_brun(10) duke_rosven(10)
+새 사실: c10-5 세실리아 온드레가 실을 모두 끊자 노엘 로스벤의 은빛 반점이 흔적 없이 사라지고 열이 내렸다. | 앎: cecilia_ondre(10) hilda_brun(10) duke_rosven(10)
+새 사실: c10-6 실을 끊은 뒤 세실리아 온드레의 열 손가락 끝이 타는 듯이 아프고 빨갛게 부었다. | 앎: cecilia_ondre(10) duke_rosven(10)
+새 사실: c10-7 서약청 필사실에는 손만 대면 봉인된 서약을 푸는 '해약'의 힘을 가진 사람이 있었다는, 아무도 믿지 않는 옛이야기가 전해진다. | 앎: cecilia_ondre(0) mari_fennel(0)
+새 사실: c10-8 세실리아 온드레에게는 서약을 푸는 힘이 있다. | 앎: cecilia_ondre(10) hilda_brun(10) duke_rosven(10)
+새 사실: c10-9 카시엘 로스벤은 힐다 브룬의 말을 끊고 방에서 본 것을 누구에게도 말하지 말며 열이 저절로 내렸다고 하라고 명했다. | 앎: duke_rosven(10) hilda_brun(10) cecilia_ondre(10)
+새 사실: c10-10 카시엘 로스벤은 노의원에게 열이 내렸다며 들어오지 말라고 하고 방문을 잠갔다. | 앎: duke_rosven(10) cecilia_ondre(10) hilda_brun(10) physician(10)
+새 사실: c10-11 카시엘 로스벤은 세실리아 온드레에게 방금 그 힘이 무엇인지 아느냐고 물었다. | 앎: duke_rosven(10) cecilia_ondre(10) hilda_brun(10)
+새로 앎: c5-10 <- duke_rosven(0)
+새로 앎: c5-10 <- physician(0)
+새로 앎: c5-11 <- physician(0)
+장면: 시점 cecilia_ondre, 로스벤 저택 2층 노엘의 방, 등장 cecilia_ondre hilda_brun noel_rosven duke_rosven physician maids
+
+[11장]
+새 사실: c11-1 해약의 힘은 에어린 가의 핏줄에만 전해졌다고 알려져 있다. | 앎: duke_rosven(0) hilda_brun(11) cecilia_ondre(11)
+새 사실: c11-2 에어린 가는 25년 전 은월 숙청으로 끊겼고, 그 뒤로 아무도 그 집안 이름을 입에 올리지 않았다. | 앎: duke_rosven(0) hilda_brun(0) cecilia_ondre(11)
+새 사실: c11-3 할레스 왕국 법은 해약의 능력을 지닌 자를 금지된 혈통으로 보며, 이를 발견한 자는 지체 없이 왕립 서약청에 신고해야 하고 신고하지 않은 자도 벌을 받는다. | 앎: duke_rosven(0) oath_director(0) raphael_winters(0) cecilia_ondre(11) hilda_brun(11)
+새 사실: c11-4 카시엘 로스벤은 세실리아의 힘을 서약청에 신고하지 않고 이 일을 서재 밖으로 내지 않기로 했다. | 앎: duke_rosven(11) cecilia_ondre(11) hilda_brun(11)
+새 사실: c11-5 세실리아 온드레는 카시엘 로스벤에게 앞으로 노엘이나 마리를 포함해 누구 앞에서도 해약의 힘을 보이지 않겠다고 약속했다. | 앎: duke_rosven(11) cecilia_ondre(11) hilda_brun(11)
+새 사실: c11-6 카시엘 로스벤은 세실리아를 지켜 주는 이유를 노엘을 살린 사람이기 때문이라고 말했다. | 앎: duke_rosven(11) cecilia_ondre(11)
+새 사실: c11-7 힐다 브룬은 그날 밤 본 것을 무덤까지 가져가겠다며 노엘의 열은 약초 덕에 내린 것으로 하겠다고 세실리아에게 약속했다. | 앎: hilda_brun(11) cecilia_ondre(11) duke_rosven(11)
+새 사실: c11-8 레온 온드레는 거짓말을 하면 귀부터 빨개진다. | 앎: cecilia_ondre(0) duke_rosven(11) hilda_brun(11)
+새 사실: c11-9 오스윈 모르데인은 수도 어딘가에서 서약 하나가 끊어진 것을 감지했지만 누가 풀었는지는 알지 못했다. | 앎: oath_director(11) raphael_winters(11)
+새 사실: c11-10 오스윈 모르데인은 라파엘 윈터스에게 수도 안에서 서약이 풀린 곳을 조용히 찾고 수색 기록은 자기 책상 위로만 올리라고 명했다. | 앎: oath_director(11) raphael_winters(11)
+새로 앎: c10-7 <- duke_rosven(0)
+새로 앎: c10-7 <- hilda_brun(11)
+장면: 시점 cecilia_ondre, 로스벤 저택 서재와 세실리아의 방, 은종탑 꼭대기 서약청장실, 등장 cecilia_ondre duke_rosven hilda_brun oath_director raphael_winters
+
+[12장]
+새 인물: gray_forest_bandits 회색 숲 산적들 (별칭: 누더기 차림의 사내들, 산적)
+새 인물: blackpine_people 흑송성 사람들
+새 사실: c12-1 카시엘 로스벤은 사교계에는 약혼녀의 영지 순방이라 알리고 일행의 거처를 북부 본성 흑송성으로 옮기기로 했다. | 앎: duke_rosven(12) cecilia_ondre(12) hilda_brun(12) rowan_crow(12) noel_rosven(12)
+새 사실: c12-2 카시엘 로스벤은 세실리아에게만 들리게 수도가 은종탑과 너무 가까워 당분간 떨어져 있는 편이 안전하다고 말했다. | 앎: duke_rosven(12) cecilia_ondre(12)
+새 사실: c12-3 세실리아 온드레는 마리 페넬 편에 필사실로 휴가 신청서를 보냈다. | 앎: cecilia_ondre(12) mari_fennel(12)
+새 사실: c12-4 흑송성은 검은 소나무 숲에 둘러싸여 이름 붙은 로스벤 공작가의 본성이다. | 앎: duke_rosven(0) rowan_crow(0) hilda_brun(0) noel_rosven(0) cecilia_ondre(12)
+새 사실: c12-5 로완 크로우는 출발 전날 밤 행선지를 밝히지 않고 혼자 나갔다가 새벽닭 울 무렵에야 돌아왔다. | 앎: rowan_crow(12) hilda_brun(12) cecilia_ondre(12)
+새 사실: c12-6 노엘 로스벤은 북부로 가는 여정 내내 한 번도 열이 오르지 않았다. | 앎: noel_rosven(12) hilda_brun(12) cecilia_ondre(12)
+새 사실: c12-7 회색 숲은 수도와 북부 영지 사이의 마지막 관문으로 산적이 자주 나온다. | 상식
+새 사실: c12-8 회색 숲에서 누더기 차림의 사내 열하나가 로스벤 일행의 마차를 습격했다가 카시엘과 로완에게 밀려 흩어졌다. | 앎: cecilia_ondre(12) duke_rosven(12) rowan_crow(12) hilda_brun(12) noel_rosven(12) gray_forest_bandits(12)
+새 사실: c12-9 로완 크로우는 회색 숲 습격에서 산적 넷을 쓰러뜨렸다. | 앎: rowan_crow(12) cecilia_ondre(12) noel_rosven(12) duke_rosven(12)
+새 사실: c12-10 흑송성 사람들 모두가 성문 안쪽 광장에 줄지어 서서 공작의 약혼녀 세실리아를 맞았다. | 앎: cecilia_ondre(12) blackpine_people(12) duke_rosven(12) rowan_crow(12) hilda_brun(12) noel_rosven(12)
+새로 앎: c4-6 <- blackpine_people(12)
+장면: 시점 cecilia_ondre, 로스벤 저택 앞마당, 북행길과 여관, 회색 숲, 흑송성 성문, 등장 cecilia_ondre duke_rosven rowan_crow hilda_brun noel_rosven gray_forest_bandits blackpine_people
+
+[13장]
+새 인물: blackpine_steward 흑송성 늙은 집사 (별칭: 늙은 집사, 백발의 늙은 집사)
+새 사실: c13-1 흑송성의 늙은 집사는 공작이 약혼했다는 소식에 성 전체가 사흘을 떠들었다고 세실리아에게 속삭였다. | 앎: blackpine_steward(13) cecilia_ondre(13) blackpine_people(13)
+새 사실: c13-2 흑송성에서 가장 높은 탑은 북탑으로, 올라가면 회색 숲까지 다 보이고 계단이 백 개가 넘는다. | 앎: noel_rosven(0) hilda_brun(0) duke_rosven(0) rowan_crow(0) blackpine_people(0) blackpine_steward(0) cecilia_ondre(13)
+새 사실: c13-3 흑송성의 겨울 서고는 서쪽 건물 끝, 창 하나 없는 두꺼운 벽의 건물에 있으며 카시엘 로스벤 말고는 아무도 들어가지 않는다. | 앎: noel_rosven(0) duke_rosven(0) hilda_brun(0) rowan_crow(0) blackpine_steward(0) cecilia_ondre(13)
+새 사실: c13-4 노엘 로스벤은 몰래 겨울 서고에 딱 한 번 들어가 본 적이 있다. | 앎: noel_rosven(0) cecilia_ondre(13)
+새 사실: c13-5 흑송성 대연회장에서 공작과 약혼녀 세실리아를 위한 환영 만찬이 열렸다. | 앎: cecilia_ondre(13) duke_rosven(13) rowan_crow(13) noel_rosven(13) hilda_brun(13) blackpine_people(13) blackpine_steward(13)
+새 사실: c13-6 마리 페넬은 북부에 가면 얼어 죽는다며 세실리아에게 털목도리를 두 개 주었다. | 앎: mari_fennel(0) cecilia_ondre(0) duke_rosven(13)
+새 사실: c13-7 카시엘 로스벤은 은종탑 접견실에서 세실리아만 그 줄을 보았기 때문에 그 눈이 필요해서 계약 약혼 상대로 세실리아를 골랐다. | 앎: duke_rosven(0) cecilia_ondre(13)
+새 사실: c13-8 카시엘 로스벤의 왼손 서약흔은 공작위를 이을 때 맺은 '서약청 문서의 내용을 누구에게도 발설하지 않는다'는 침묵 서약의 흔적이다. | 앎: duke_rosven(0) cecilia_ondre(13)
+새 사실: c13-9 카시엘 로스벤이 침묵 서약의 내용을 말하자 손등의 서약흔이 희미하게 붉어지고 손가락 끝이 떨렸다. | 앎: duke_rosven(13) cecilia_ondre(13)
+새 사실: c13-10 세실리아 온드레는 카시엘이 말할 수 없다면 서약청 문서든 무엇이든 자신이 직접 읽겠다고 했고, 카시엘은 이를 받아들이며 자신이 옆에 있겠다고 했다. | 앎: cecilia_ondre(13) duke_rosven(13)
+새 사실: c13-11 로완 크로우는 순찰 중 성벽 아래에 멈춰 서서 카시엘과 세실리아가 이야기하는 쪽을 올려다보고 있었고, 세실리아와 눈이 마주치자 웃지 않고 자리를 떴다. | 앎: rowan_crow(13) cecilia_ondre(13) duke_rosven(13)
+새로 앎: c12-4 <- blackpine_steward(0)
+새로 앎: c4-6 <- blackpine_steward(13)
+새로 앎: c6-5 <- noel_rosven(0)
+장면: 시점 cecilia_ondre, 흑송성 광장, 대연회장, 성벽 위, 세실리아의 방, 등장 cecilia_ondre duke_rosven rowan_crow noel_rosven hilda_brun blackpine_people blackpine_steward
+
+[14장]
+새 인물: blackpine_servant 흑송성 하인 (별칭: 숨이 찬 하인)
+새 사실: c14-1 카시엘 로스벤은 세실리아 온드레가 그날 밤 겨울 서고에 올 것이라 보고 등불을 든 채 서고 문 앞에서 먼저 기다리고 있었다. | 앎: duke_rosven(14) cecilia_ondre(14)
+새 사실: c14-2 흑송성 겨울 서고에는 리처드 로스벤 공작 대의 영지 서약들이 서약사가 은잉크로 베낀 정식 사본으로 보관되어 있고, 원본은 은종탑에 있다. | 앎: duke_rosven(0) cecilia_ondre(14)
+새 사실: c14-3 세실리아 온드레는 리처드 로스벤 대의 서약 사본 몇 장에 하나꼴로, 본문을 쓴 뒤 행간에 은잉크로 덧쓴 숨은 조항이 비스듬한 빛에 떠오르는 것을 발견했다. | 앎: cecilia_ondre(14) duke_rosven(14)
+새 사실: c14-4 리처드 로스벤 대의 서약 사본 행간에 '서약자가 다하지 못한 의무는 후계자에게 옮겨 간다'는 숨은 조항이 또렷하게 쓰여 있었다. | 앎: cecilia_ondre(14) duke_rosven(14) hilda_brun(14)
+새 사실: c14-5 필사실 선배들 사이에는 보통 사람 눈에 보이지 않는 은잉크로 행간에 덧쓴 조항에 서명자가 모르고 묶인다는 '그림자 조항' 괴담이 전해진다. | 앎: cecilia_ondre(0) mari_fennel(0) duke_rosven(14)
+새 사실: c14-6 노엘 로스벤의 밤열은 3년 전 가을, 리처드 로스벤 내외의 장례를 치르고 열흘 뒤 처음 시작되었고 그날 밤 처음 손목에 은빛이 비쳤다. | 앎: hilda_brun(0) duke_rosven(0) cecilia_ondre(14)
+새 사실: c14-7 노엘 로스벤의 은빛 반점은 병이 아니라 그림자 조항에 따라 리처드 로스벤의 의무가 후계자에게 옮겨 가면서 남은 서약흔이었다. | 앎: duke_rosven(0) cecilia_ondre(14) hilda_brun(14)
+새 사실: c14-8 카시엘 로스벤은 노엘의 반점이 그 조항 때문임을 처음부터 알고 있었으며, 침묵 서약 때문에 말로 하지 못하고 고개를 끄덕여 인정했다. | 앎: duke_rosven(0) cecilia_ondre(14) hilda_brun(14)
+새 사실: c14-9 세실리아 온드레는 밤새 리처드 공작 대의 영지 서약을 다시 읽었지만 또렷한 줄은 그 한 줄뿐이었고, 흐린 획들은 자리만 표시해 두었다. | 앎: cecilia_ondre(14) duke_rosven(14) hilda_brun(14)
+새 사실: c14-10 새벽에 금빛 사자 문장을 단 왕실 마차가 흑송성 성문에 들어섰다. | 앎: blackpine_servant(14) duke_rosven(14) cecilia_ondre(14) hilda_brun(14) noel_rosven(14)
+새로 앎: c13-3 <- blackpine_servant(0)
+장면: 시점 cecilia_ondre, 흑송성 겨울 서고, 등장 cecilia_ondre duke_rosven hilda_brun noel_rosven blackpine_servant

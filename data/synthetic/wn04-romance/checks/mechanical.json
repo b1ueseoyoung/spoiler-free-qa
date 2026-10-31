@@ -1,0 +1,122 @@
+{
+ "missing_files": [],
+ "length": {
+  "min": 4595,
+  "max": 5646,
+  "total": 241496,
+  "out_of_range": {}
+ },
+ "format": {
+  "foreshadow_narrator": [
+   [
+    26,
+    "그 겨울, 재인은 열네 살이었다. 아빠가 늦게 들어오는 날이 많았고, 재인은 그게 서운했다. 아빠가 그 시간"
+   ]
+  ]
+ },
+ "keyword_before_reveal": [
+  {
+   "id": "f106",
+   "reveal_ep": 28,
+   "twist": false,
+   "statement": "태석은 화재 날 밤 본관 앞에서 고명수가 별관으로 뛰어드는 것을 보고도 붙잡지 못했다.",
+   "early_keywords": {
+    "붙잡지 못했다": 26
+   }
+  },
+  {
+   "id": "f157",
+   "reveal_ep": 42,
+   "twist": false,
+   "statement": "태석은 도현에게 고명수를 죽게 한 것은 미뤄진 공사이지 열일곱 살 아이의 침묵이 아니라고 말했다.",
+   "early_keywords": {
+    "미뤄진 공사": 34
+   }
+  }
+ ],
+ "keyword_absent_in_reveal_ep": [
+  {
+   "id": "f082",
+   "reveal_ep": 21,
+   "keywords": [
+    "차 안에서 통화하는 지훈의 목소리",
+    "사포 가지러"
+   ],
+   "statement": "나래는 지훈의 차 안 통화를 엿들었다."
+  },
+  {
+   "id": "f098",
+   "reveal_ep": 26,
+   "keywords": [
+    "양평 퇴직 조사관"
+   ],
+   "statement": "17년 전 청운장 화재를 맡았던 조사관은 퇴직해 양평에 살고 있다."
+  },
+  {
+   "id": "f105",
+   "reveal_ep": 28,
+   "keywords": [
+    "국화를 두던 아가씨"
+   ],
+   "statement": "태석은 3년 전 재인이 청운장 담장 밖에 국화를 두는 것을 보았다."
+  },
+  {
+   "id": "f110",
+   "reveal_ep": 29,
+   "keywords": [
+    "일 끝날 때까지 비밀"
+   ],
+   "statement": "재인과 도현은 일이 끝날 때까지 연애를 비밀로 하기로 했다."
+  },
+  {
+   "id": "f114",
+   "reveal_ep": 30,
+   "keywords": [
+    "털어놓은 통화"
+   ],
+   "statement": "나래는 지훈의 통화를 엿들은 일을 재인에게 털어놓았다."
+  },
+  {
+   "id": "f118",
+   "reveal_ep": 32,
+   "keywords": [
+    "이듬해 그만둔"
+   ],
+   "statement": "지훈의 아버지는 청운장 화재 이듬해 조사관 일을 그만두었다."
+  }
+ ],
+ "name_before_first_appearance": [
+  {
+   "character": "고은재",
+   "first_appearance_ep": 43,
+   "ep": 1,
+   "names": [
+    "은재"
+   ]
+  },
+  {
+   "character": "차기철",
+   "first_appearance_ep": 12,
+   "ep": 8,
+   "names": [
+    "차기철"
+   ]
+  },
+  {
+   "character": "민혜련",
+   "first_appearance_ep": 20,
+   "ep": 13,
+   "names": [
+    "혜련",
+    "민혜련"
+   ]
+  }
+ ],
+ "minor_near_romance": [],
+ "repeated_paragraphs": [],
+ "dialogue_ratio": {
+  "min": 0.28,
+  "max": 0.67,
+  "mean": 0.48
+ }
+}

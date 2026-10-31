@@ -1,0 +1,35 @@
+{
+ "id": "wn03-muhyeop",
+ "order": 103,
+ "title": "무성보",
+ "author": "AI 생성",
+ "label": "AI가 생성한 무협 웹소설 「무성보」",
+ "published": "2026-10 생성(합성 데이터)",
+ "chapters": 50,
+ "unit": "화",
+ "blurb": "사부 살해 누명을 쓴 취죽문 대제자가 사라진 비급을 쫓는 무협 장편.",
+ "examples": [
+  {
+   "question": "가면 쓴 야화련 부련주는 누구야?",
+   "chapter": 10
+  },
+  {
+   "question": "곽태허를 죽인 사람은 누구야?",
+   "chapter": 20
+  },
+  {
+   "question": "강필이 밤에 몰래 날린 전서구는 누구에게 가는 거야?",
+   "chapter": 18
+  }
+ ],
+ "default_upto": 3,
+ "evaluated": false,
+ "synthetic": true,
+ "genre": "무협",
+ "generator": "claude-opus-5-5 (Claude Code 워크플로)",
+ "source": {
+  "kind": "synthetic",
+  "created": "2026-10-20",
+  "license": "AI 생성 합성 데이터. 실존 작품·인물과 무관"
+ }
+}

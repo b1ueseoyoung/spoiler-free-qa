@@ -1,0 +1,309 @@
+{
+ "upto": 50,
+ "gold_facts": 189,
+ "full": 153,
+ "partial": 34,
+ "missed": 2,
+ "by_category": {
+  "ability": {
+   "full": 10
+  },
+  "death": {
+   "full": 5
+  },
+  "event": {
+   "full": 59,
+   "partial": 11,
+   "missed": 1
+  },
+  "identity": {
+   "full": 19,
+   "partial": 3
+  },
+  "location": {
+   "full": 5,
+   "partial": 3
+  },
+  "motive": {
+   "partial": 2,
+   "full": 10
+  },
+  "relationship": {
+   "partial": 13,
+   "full": 19,
+   "missed": 1
+  },
+  "secret": {
+   "full": 12,
+   "partial": 1
+  },
+  "world": {
+   "partial": 1,
+   "full": 14
+  }
+ },
+ "twists": {
+  "full": 9
+ },
+ "reveal": {
+  "same": 177,
+  "late": 3,
+  "early": 7
+ },
+ "reveal_early": [
+  {
+   "gold": "f030",
+   "gold_ch": 8,
+   "gold_statement": "카시엘의 왼손 손등에는 오래된 서약흔이 있고, 그는 그것을 가리려고 왼손에만 장갑을 낀다.",
+   "extracted": "c2-8",
+   "extracted_ch": 2,
+   "extracted_statement": "카시엘 로스벤은 실내에서도 왼손에만 검은 가죽 장갑을 끼고 있다."
+  },
+  {
+   "gold": "f065",
+   "gold_ch": 21,
+   "gold_statement": "7년 전 카시엘이 반란군의 포로가 된 것은 테오도르가 약속한 원군을 물렸기 때문이며, 그 일로 카시엘은 테오도르를 용서하지 않았다.",
+   "extracted": "c4-13",
+   "extracted_ch": 4,
+   "extracted_statement": "카시엘 로스벤과 테오도르 할레스는 7년 전 북부 반란 진압 때의 일 이후 절연했다."
+  },
+  {
+   "gold": "f075",
+   "gold_ch": 24,
+   "gold_statement": "세실리아는 레온 온드레의 친딸이 아니라 숙청된 에어린 가의 후계자 아델린 에어린의 딸이다. 숙청 때 갓난아기였던 그녀를 레온이 거두어 친딸처럼 키웠다.",
+   "extracted": "c11-2",
+   "extracted_ch": 11,
+   "extracted_statement": "에어린 가는 25년 전 '은월 숙청'으로 가문이 통째로 사라졌다."
+  },
+  {
+   "gold": "f106",
+   "gold_ch": 34,
+   "gold_statement": "마리의 부모는 미렐 항구에서 여관 '갈매기 집'을 운영하고, 마리가 일행을 그 다락방에 숨긴다.",
+   "extracted": "c32-11",
+   "extracted_ch": 32,
+   "extracted_statement": "마리 페넬의 부모는 미렐 항구에서 마리네 여관이라 불리는 여관을 한다."
+  },
+  {
+   "gold": "f125",
+   "gold_ch": 40,
+   "gold_statement": "카시엘은 사흘 내내 쓰러진 세실리아의 곁을 떠나지 않는다.",
+   "extracted": "c36-14",
+   "extracted_ch": 36,
+   "extracted_statement": "카시엘 로스벤은 쓰러진 세실리아 온드레를 침대로 옮기고 새벽부터 깨어날 때까지 곁을 지켰다."
+  },
+  {
+   "gold": "f177",
+   "gold_ch": 46,
+   "gold_statement": "7년 전 원군을 물린 서약청의 결정은 로스벤 공작가 안에 눈을 심으려던 모르데인이 꾸민 것이었다. 그는 반란군 수장과 몰래 맺은 서약으로 카시엘을 풀어 주게 하고, 그 대가로 카시엘을 구하러 온 로완을 자신에게 묶었다.",
+   "extracted": "c17-7",
+   "extracted_ch": 17,
+   "extracted_statement": "로완 크로우는 스물셋에 포로가 된 카시엘을 살려 내는 대가로 모르데인에게 묶이는 숨은 서약을 맺었다."
+  },
+  {
+   "gold": "f178",
+   "gold_ch": 46,
+   "gold_statement": "다리 위에서 리처드의 숨이 멎어 마차가 멈추자, 모르데인의 사람들이 마차를 강둑 아래로 밀어 사고로 꾸몄고 리처드의 부인은 그때 숨졌다. 리처드가 품고 가던 상소문 정본도 그들이 가져갔다.",
+   "extracted": "c28-12",
+   "extracted_ch": 28,
+   "extracted_statement": "리처드 로스벤은 상소문을 품고 왕궁으로 가던 길에 은빛 강 다리 위에서 숨은 조항이 발동해 숨이 멎었고, 마차 사고는 그 뒤에 꾸며진 것이다."
+  }
+ ],
+ "tp": 917,
+ "fp": 81,
+ "fn": 259,
+ "since_early": [
+  {
+   "gold": "f006",
+   "character": "cassiel",
+   "extracted": 0,
+   "gold_since": 2,
+   "statement": "라파엘 윈터스(31세)는 서약청 수석 서약사로 필경사들의 직속 상관이다."
+  },
+  {
+   "gold": "f011",
+   "character": "cecilia",
+   "extracted": 0,
+   "gold_since": 3,
+   "statement": "할레스 왕국 귀족 관습인 '선약 우선'에 따라, 이미 약혼한 귀족에게는 왕명 혼인을 강제할 수 없다."
+  },
+  {
+   "gold": "f038",
+   "character": "cecilia",
+   "extracted": 0,
+   "gold_since": 11,
+   "statement": "왕국법은 해약 능력자를 '금지된 혈통'으로 규정하고, 발견하면 즉시 서약청에 신고하도록 한다."
+  },
+  {
+   "gold": "f038",
+   "character": "rosetta",
+   "extracted": 0,
+   "gold_since": 30,
+   "statement": "왕국법은 해약 능력자를 '금지된 혈통'으로 규정하고, 발견하면 즉시 서약청에 신고하도록 한다."
+  },
+  {
+   "gold": "f038",
+   "character": "rowan",
+   "extracted": 0,
+   "gold_since": 30,
+   "statement": "왕국법은 해약 능력자를 '금지된 혈통'으로 규정하고, 발견하면 즉시 서약청에 신고하도록 한다."
+  },
+  {
+   "gold": "f042",
+   "character": "cecilia",
+   "extracted": 0,
+   "gold_since": 12,
+   "statement": "회색 숲은 수도와 북부 영지 사이의 마지막 관문으로, 산적이 자주 출몰한다."
+  },
+  {
+   "gold": "f042",
+   "character": "noel",
+   "extracted": 0,
+   "gold_since": 12,
+   "statement": "회색 숲은 수도와 북부 영지 사이의 마지막 관문으로, 산적이 자주 출몰한다."
+  },
+  {
+   "gold": "f046",
+   "character": "cecilia",
+   "extracted": 0,
+   "gold_since": 14,
+   "statement": "'그림자 조항'은 보통 사람 눈에는 보이지 않는 은잉크로 서약서 행간에 덧쓴 조항으로, 서명자는 모른 채 그 조항에도 묶인다."
+  },
+  {
+   "gold": "f052",
+   "character": "cecilia",
+   "extracted": 0,
+   "gold_since": 16,
+   "statement": "북부에서는 첫눈 오는 밤 '횃불제'를 열고, 연인들이 한 횃불에 함께 불을 붙인다. 그 횃불이 꺼지지 않은 채 광장을 한 바퀴 돌면 이듬해 봄 안에 혼인한다는 말이 전해진다."
+  },
+  {
+   "gold": "f052",
+   "character": "noel",
+   "extracted": 0,
+   "gold_since": 16,
+   "statement": "북부에서는 첫눈 오는 밤 '횃불제'를 열고, 연인들이 한 횃불에 함께 불을 붙인다. 그 횃불이 꺼지지 않은 채 광장을 한 바퀴 돌면 이듬해 봄 안에 혼인한다는 말이 전해진다."
+  },
+  {
+   "gold": "f103",
+   "character": "theodore",
+   "extracted": 36,
+   "gold_since": 37,
+   "statement": "모르데인은 로제타에게 이제 왕세자 테오도르와 혼인하라고 명한다."
+  },
+  {
+   "gold": "f105",
+   "character": "cecilia",
+   "extracted": 0,
+   "gold_since": 34,
+   "statement": "미렐 항구는 상인 길드의 자치 서약으로 운영되는 자유항이라 서약청 관리가 함부로 들어올 수 없다."
+  },
+  {
+   "gold": "f105",
+   "character": "noel",
+   "extracted": 0,
+   "gold_since": 34,
+   "statement": "미렐 항구는 상인 길드의 자치 서약으로 운영되는 자유항이라 서약청 관리가 함부로 들어올 수 없다."
+  },
+  {
+   "gold": "f105",
+   "character": "hilda",
+   "extracted": 0,
+   "gold_since": 34,
+   "statement": "미렐 항구는 상인 길드의 자치 서약으로 운영되는 자유항이라 서약청 관리가 함부로 들어올 수 없다."
+  },
+  {
+   "gold": "f154",
+   "character": "marie",
+   "extracted": 49,
+   "gold_since": 50,
+   "statement": "테오도르는 서약청을 해체하고 '서약 감독원'을 세워 라파엘을 첫 감독관으로 임명한다."
+  },
+  {
+   "gold": "f170",
+   "character": "mordain",
+   "extracted": 0,
+   "gold_since": 12,
+   "statement": "북부로 가던 일행을 회색 숲에서 덮친 산적 습격은, 로완의 보고가 정확한지 시험하려는 모르데인의 계산이었다."
+  },
+  {
+   "gold": "f172",
+   "character": "raphael",
+   "extracted": 15,
+   "gold_since": 30,
+   "statement": "모르데인에게 단서를 준 것은 흑송성에 다녀온 라파엘이 서약사 규정에 따라 올린 의무 보고서였다. 보고서에는 '로스벤 후계자의 은빛 반점이 사라졌다'는 것과 그 날짜만 적혀 있었고, 세실리아의 이름은 없었다."
+  },
+  {
+   "gold": "f183",
+   "character": "noel",
+   "extracted": 0,
+   "gold_since": 6,
+   "statement": "서약사는 은가루에 자신의 피 한 방울을 섞어 간 은잉크로 서약을 쓰고, 필경사는 피를 섞지 않은 은잉크로 효력 없는 사본만 베낀다."
+  },
+  {
+   "gold": "f189",
+   "character": "rowan",
+   "extracted": 33,
+   "gold_since": 41,
+   "statement": "은빛 강 하류의 어부들이 로완을 건져 냈고, 로제타가 그를 찾아내 같은 하류에 있는 성녀 수도원에 숨기고 돌보았다."
+  }
+ ],
+ "since_early_partial": [
+  {
+   "gold": "f061",
+   "character": "rowan",
+   "extracted": 18,
+   "gold_since": 19,
+   "statement": "카시엘은 순찰 경로를 아는 사람이 자신과 로완뿐이었다는 점에서 로완이 내통자임을 알아낸다."
+  },
+  {
+   "gold": "f061",
+   "character": "cassiel",
+   "extracted": 18,
+   "gold_since": 19,
+   "statement": "카시엘은 순찰 경로를 아는 사람이 자신과 로완뿐이었다는 점에서 로완이 내통자임을 알아낸다."
+  },
+  {
+   "gold": "f081",
+   "character": "rowan",
+   "extracted": 0,
+   "gold_since": 41,
+   "statement": "로제타는 로완이 밤에 모르데인의 저택을 드나드는 것을 여러 번 보았다."
+  },
+  {
+   "gold": "f107",
+   "character": "marie",
+   "extracted": 32,
+   "gold_since": 34,
+   "statement": "마리는 서약청을 그만두고 세실리아 일행에 합류한다."
+  },
+  {
+   "gold": "f168",
+   "character": "marie",
+   "extracted": 22,
+   "gold_since": 39,
+   "statement": "마리가 기억해 낸 순번표 기록에 따르면, 레온의 이의 신청 서류철은 2년 전 봉인 서고로 옮겨졌다."
+  }
+ ],
+ "since_late": 54,
+ "after_reveal": 270,
+ "after_reveal_hit": 155,
+ "comparable": [
+  "cassiel",
+  "cecilia",
+  "hilda",
+  "king",
+  "marie",
+  "mordain",
+  "noel",
+  "ondre",
+  "raphael",
+  "rosetta",
+  "rowan",
+  "theodore"
+ ],
+ "precision": 0.919,
+ "recall": 0.78,
+ "support": {
+  "yes": 48,
+  "partial": 52
+ }
+}

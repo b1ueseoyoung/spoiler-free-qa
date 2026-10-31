@@ -1,0 +1,135 @@
+{
+ "upto": 14,
+ "gold_facts": 52,
+ "full": 46,
+ "partial": 6,
+ "missed": 0,
+ "by_category": {
+  "ability": {
+   "full": 1
+  },
+  "death": {
+   "full": 1
+  },
+  "event": {
+   "full": 16,
+   "partial": 2
+  },
+  "identity": {
+   "full": 10,
+   "partial": 2
+  },
+  "location": {
+   "full": 2
+  },
+  "motive": {
+   "full": 1
+  },
+  "relationship": {
+   "partial": 1,
+   "full": 5
+  },
+  "secret": {
+   "full": 3
+  },
+  "world": {
+   "partial": 1,
+   "full": 7
+  }
+ },
+ "twists": {
+  "full": 1
+ },
+ "reveal": {
+  "same": 48,
+  "early": 4
+ },
+ "reveal_early": [
+  {
+   "gold": "f017",
+   "gold_ch": 4,
+   "gold_statement": "로제타 벨모어(24세)는 벨모어 백작가의 외동딸이자 서약청장 오스윈 모르데인의 피후견인이다.",
+   "extracted": "c2-6",
+   "extracted_ch": 2,
+   "extracted_statement": "로제타 벨모어는 서약청장의 피후견인이다."
+  },
+  {
+   "gold": "f027",
+   "gold_ch": 7,
+   "gold_statement": "로제타의 부모는 그녀가 열 살 때 역병으로 죽었고, 그 뒤 모르데인이 후견인이 되었다.",
+   "extracted": "c2-6",
+   "extracted_ch": 2,
+   "extracted_statement": "로제타 벨모어는 서약청장의 피후견인이다."
+  },
+  {
+   "gold": "f030",
+   "gold_ch": 8,
+   "gold_statement": "카시엘의 왼손 손등에는 오래된 서약흔이 있고, 그는 그것을 가리려고 왼손에만 장갑을 낀다.",
+   "extracted": "c2-7",
+   "extracted_ch": 2,
+   "extracted_statement": "카시엘 로스벤은 실내에서도 왼손에만 검은 가죽 장갑을 끼고 오른손은 맨손으로 둔다."
+  },
+  {
+   "gold": "f043",
+   "gold_ch": 12,
+   "gold_statement": "흑송성은 검은 소나무 숲으로 둘러싸인 로스벤 공작가의 북부 본성이다.",
+   "extracted": "c1-19",
+   "extracted_ch": 1,
+   "extracted_statement": "로스벤 공작가는 북부의 공작가다."
+  }
+ ],
+ "tp": 208,
+ "fp": 27,
+ "fn": 95,
+ "since_early": [
+  {
+   "gold": "f042",
+   "character": "noel",
+   "extracted": 0,
+   "gold_since": 12,
+   "statement": "회색 숲은 수도와 북부 영지 사이의 마지막 관문으로, 산적이 자주 출몰한다."
+  },
+  {
+   "gold": "f042",
+   "character": "cecilia",
+   "extracted": 0,
+   "gold_since": 12,
+   "statement": "회색 숲은 수도와 북부 영지 사이의 마지막 관문으로, 산적이 자주 출몰한다."
+  },
+  {
+   "gold": "f046",
+   "character": "cecilia",
+   "extracted": 0,
+   "gold_since": 14,
+   "statement": "'그림자 조항'은 보통 사람 눈에는 보이지 않는 은잉크로 서약서 행간에 덧쓴 조항으로, 서명자는 모른 채 그 조항에도 묶인다."
+  },
+  {
+   "gold": "f183",
+   "character": "noel",
+   "extracted": 0,
+   "gold_since": 6,
+   "statement": "서약사는 은가루에 자신의 피 한 방울을 섞어 간 은잉크로 서약을 쓰고, 필경사는 피를 섞지 않은 은잉크로 효력 없는 사본만 베낀다."
+  }
+ ],
+ "since_early_partial": [],
+ "since_late": 13,
+ "after_reveal": 17,
+ "after_reveal_hit": 10,
+ "comparable": [
+  "cassiel",
+  "cecilia",
+  "hilda",
+  "king",
+  "marie",
+  "mordain",
+  "noel",
+  "ondre",
+  "raphael",
+  "rosetta",
+  "rowan",
+  "theodore"
+ ],
+ "precision": 0.885,
+ "recall": 0.686,
+ "support": {}
+}
