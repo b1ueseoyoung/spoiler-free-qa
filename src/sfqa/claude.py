@@ -25,9 +25,10 @@ from sfqa.paths import ROOT
 KEY_ENV = "ANTHROPIC_API_KEY"
 SSM_PARAM_ENV = "ANTHROPIC_API_KEY_SSM_PARAM"
 # 모델 → (thinking, effort). LLMRequest.reasoning_effort에는 "between_tools:high"처럼 적어 카세트 키에 남긴다.
-THINKING_OFF = {"claude-sonnet-5-5": ({"type": "between_tools"}, "high")}
-# $/백만 토큰(입력, 출력). claude-api 스킬 2026-10-06 캐시 기준.
-PRICES = {"claude-sonnet-5-5": (2.00, 10.00)}
+# Haiku 5.5는 disabled를 effort high 이하에서 받는다(대사 화자 표시, sfqa.voices).
+THINKING_OFF = {"claude-sonnet-5-5": ({"type": "between_tools"}, "high"), "claude-haiku-5-5": ({"type": "disabled"}, "high")}
+# $/백만 토큰(입력, 출력). claude-api 스킬 2026-10-06 캐시 기준. Haiku 5.5는 프롬프트 10만 토큰 이하일 때 값이다.
+PRICES = {"claude-sonnet-5-5": (2.00, 10.00), "claude-haiku-5-5": (0.10, 0.50)}
 STOP_TO_FINISH = {"end_turn": "stop", "max_tokens": "length", "refusal": "refusal"}
 
 

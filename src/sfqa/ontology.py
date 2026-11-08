@@ -20,6 +20,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 from collections import Counter
 from collections.abc import Callable, Mapping
 from pathlib import Path
@@ -30,6 +31,13 @@ from sfqa.paths import DATA
 
 SYNTHETIC_ROOT = DATA / "synthetic"
 WORLD_KINDS = {"places": "place", "institutions": "institution", "magic": "magic", "festivals": "festival"}
+# 호칭을 쓰는 자리. 설정집의 context는 자유 글이라 뒤 화 내용이 섞인다(예: '공석·사석 모두(7년 전 서약 뒤로 거리를 둠)',
+# '24화는 편지 속'). 보기에는 자리만 나타내는 이 목록의 값만 넣는다.
+CALL_CONTEXTS = frozenset({"공석", "사석", "평소", "공석·사석 모두", "공석·업무", "사석·화날 때", "사석·혼잣말",
+                           "둘만 있을 때", "꾸짖을 때", "놀릴 때", "비꼴 때"})
+# 관계 상태의 괄호 글은 설정집 메모다. 공개 상태에도 당사자만 아는 내용이 섞인다('약혼 공개(실제로는 종이 계약)'를 노엘은 모른다).
+# 인물 보기에서는 당사자에게만 보여 준다.
+_STATUS_NOTE = re.compile(r"\s*\([^)]*\)")
 
 
 class Knowing(BaseModel):
@@ -229,13 +237,15 @@ def _appeared(onto: Ontology, upto: int) -> dict[str, Character]:
     return {c.id: c for c in onto.characters if c.first_ch is not None and c.first_ch <= upto}
 
 
-def _relations(onto: Ontology, upto: int, keep: Callable[[RelationState], bool]) -> list[RelationItem]:
+def _relations(onto: Ontology, upto: int, keep: Callable[[RelationState], bool], viewer: str | None = None) -> list[RelationItem]:
+    """viewer: 인물 보기의 주인. 그 인물이 당사자가 아닌 관계에서는 상태의 괄호 글을 뺀다."""
     seen = _appeared(onto, upto)
     out = []
     for r in onto.relations:
         if r.a not in seen or r.b not in seen:
             continue
-        states = [StateItem(since=s.from_ch, status=s.status, public=s.public)
+        party = viewer is None or viewer in (r.a, r.b)
+        states = [StateItem(since=s.from_ch, status=s.status if party else _STATUS_NOTE.sub("", s.status), public=s.public)
                   for s in r.states if s.reveal_ch <= upto and keep(s)]
         if states:
             out.append(RelationItem(id=r.id, a=r.a, b=r.b, states=states))
@@ -286,11 +296,11 @@ def character_view(onto: Ontology, character: str, upto: int, at: int | None = N
     known, _, _ = split_facts(onto, character, upto, at)
     facts = [FactItem(id=f.id, statement=f.statement, chapter=f.reveal_ch, since=f.known_from(character), evidence=f.evidence)
              for f in known]
-    calls = [CallItem(target=c.id, name=c.name, form=k.form, context=k.context)
+    calls = [CallItem(target=c.id, name=c.name, form=k.form, context=k.context if k.context in CALL_CONTEXTS else "")
              for c in seen.values() for k in c.called
              if k.by == character and k.from_ch <= at <= (k.to_ch or onto.chapters)]
     return CharacterView(work=onto.work, upto=upto, at=at, character=character, name=seen[character].name, facts=facts,
-                         relations=_relations(onto, upto, lambda s: _knows(s.known_by, character, at)),
+                         relations=_relations(onto, upto, lambda s: _knows(s.known_by, character, at), viewer=character),
                          calls=calls, world=[w for w in onto.world if w.reveal_ch <= upto])
 
 

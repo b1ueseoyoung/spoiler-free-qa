@@ -3,6 +3,7 @@ import json
 import pytest
 
 from sfqa.ontology import (
+    CALL_CONTEXTS,
     SYNTHETIC_ROOT,
     Alias,
     Calling,
@@ -103,6 +104,18 @@ def test_relation_states_pass_both_axes():
     assert [r.id for r in character_view(ONTO, "c", 7).relations] == ["r2"]  # 병철은 갑순·을동 관계를 모른다
 
 
+def test_status_note_is_shown_only_to_the_parties():
+    """'약혼 공개(실제로는 종이 계약)'는 공개 상태지만 괄호 글은 당사자만 안다. 노엘은 계약을 모른다."""
+    onto = from_synthetic("wn01-rofan")
+
+    def statuses(who):
+        return [s.status for r in character_view(onto, who, 6).relations if {r.a, r.b} == {"cecilia", "cassiel"} for s in r.states]
+
+    assert "약혼 공개" in statuses("noel")
+    assert not [x for x in statuses("noel") if "계약" in x]
+    assert "약혼 공개(실제로는 종이 계약)" in statuses("cassiel")
+
+
 def test_calls_follow_chapter_ranges():
     def forms(upto: int) -> list[str]:
         return [c.form for c in character_view(ONTO, "b", upto).calls]
@@ -110,6 +123,17 @@ def test_calls_follow_chapter_ranges():
     assert forms(4) == ["갑순 씨"]  # to_ch는 그 장을 포함한다
     assert forms(5) == ["갑순"]
     assert [c.form for c in character_view(ONTO, "b", 9, at=3).calls] == ["갑순 씨"]
+
+
+@pytest.mark.parametrize("wid", synthetic_ids())
+def test_call_context_keeps_only_the_setting_not_free_text(wid):
+    """호칭 메모는 자유 글이라 뒤 화 내용이 섞인다('공석·사석 모두(7년 전 서약 뒤로 거리를 둠)', '24화는 편지 속')."""
+    onto = from_synthetic(wid)
+    for c in onto.characters:
+        if c.first_ch is None:
+            continue
+        for call in character_view(onto, c.id, onto.chapters).calls + character_view(onto, c.id, c.first_ch).calls:
+            assert call.context in CALL_CONTEXTS or call.context == "", (c.id, call.context)
 
 
 def test_character_view_rejects_bad_requests():
