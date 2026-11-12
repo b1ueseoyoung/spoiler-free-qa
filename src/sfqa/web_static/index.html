@@ -76,6 +76,21 @@
   .chapters input:checked ~ .no, .chapters input:checked ~ .title { color: var(--ink); }
   .chapters input:checked ~ .mark { width: 8px; height: 8px; background: var(--accent); align-self: center; }
   .chapters input:focus-visible ~ .no { outline: 2px solid var(--accent); outline-offset: 2px; }
+  /* 장이 많은 작품(「무정」 126장, 장 제목 없음): 번호 칸으로 고른다. 한 줄에 10장이라 줄이 십의 자리와 맞는다 */
+  .ch-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(10, 1fr);
+             border-top: 1px solid var(--hair); border-left: 1px solid var(--hair); }
+  .ch-grid li { position: relative; border-right: 1px solid var(--hair); border-bottom: 1px solid var(--hair); }
+  .ch-grid label { display: block; padding: 6px 0; text-align: center; cursor: pointer; font-size: 12px; font-weight: 600;
+                   line-height: 1.4; color: var(--mute); font-variant-numeric: tabular-nums; }
+  .ch-grid input { position: absolute; opacity: 0; pointer-events: none; }
+  .ch-grid .read label { background: var(--panel); color: var(--ink); }
+  .ch-grid .unread label { opacity: .5; }
+  .ch-grid label:hover { color: var(--ink); opacity: 1; }
+  .ch-grid label:has(input:checked) { background: var(--accent); color: var(--on-accent); opacity: 1; }
+  .ch-grid label:has(input:focus-visible) { outline: 2px solid var(--ink); outline-offset: -2px; }
+  /* 왼쪽 칸이 좁으면(태블릿 세로) 세 자리 번호가 칸 테두리에 닿지 않게 글자를 줄인다 */
+  .filter { container-type: inline-size; }
+  @container (max-width: 300px) { .ch-grid label { font-size: 10.5px; letter-spacing: -.03em; } }
 
   /* 대화 */
   .chat { display: flex; flex-direction: column; min-height: 68vh; border-left: 1px solid var(--hair); padding-left: var(--gutter); }
@@ -158,7 +173,7 @@
   .book-blurb { color: var(--ink); opacity: .82; word-break: keep-all; text-wrap: pretty; }
   .book-go { color: var(--mute); align-self: end; }
 
-  /* 장이 많은 작품: 번호로 고르기 */
+  /* 인물과 대화: 번호 입력과 막대로 장 고르기 */
   .range { border-top: 1px solid var(--hair); padding-top: 14px; display: grid; gap: 12px; }
   .stepper { display: flex; align-items: stretch; gap: 6px; }
   .stepper button { width: 44px; border: 1px solid var(--hair); background: transparent; cursor: pointer; font-size: 18px; }
@@ -287,7 +302,9 @@ const $ = (id) => document.getElementById(id);
 const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"}[c]));
 const pad = (n) => String(n).padStart(2, "0");
 const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
-const GRID_MAX = 30;  // 이보다 장이 많으면(「무정」 126장) 목록 대신 번호로 고른다
+const LIST_MAX = 30;  // 이보다 장이 많으면(「무정」 126장) 제목 목록 대신 번호 칸으로 고른다
+// 장 번호 표기: 목록은 두 자리(01)로 맞추고, 번호 칸으로 고르는 작품은 칸과 같게 그대로 쓴다(5, 126)
+const chNo = (n, w = work) => (w && w.chapters > LIST_MAX ? String(n) : pad(n));
 let works = [];
 let work = null;      // 지금 고른 작품(/api/works의 카드)
 let chapterList = [];
@@ -352,26 +369,19 @@ function route() {
   if (t) showTalk(t); else if (w) showWork(w); else showHome();
 }
 
-/* 장 고르기: 고른 장까지만 제목을 보여 준다. 장이 많으면 번호 입력과 막대로 고른다 */
+/* 장 고르기: 고른 장까지만 제목을 보여 준다. 장이 많으면 번호 칸으로 고르고, 읽은 칸을 채운다 */
 function setUpto(n) {
   upto = Math.min(Math.max(1, Number(n) || 1), work.chapters);
   renderPicker();
   if ($("thread").querySelector(".empty")) emptyState();  // 예시는 고른 장까지 나온 인물·사건만
 }
 function renderPicker() {
-  if (work.chapters > GRID_MAX) {
-    if (!$("upto-num")) {
-      $("picker").innerHTML = `<div class="range">
-        <div class="stepper">
-          <button type="button" data-step="-1" aria-label="한 장 앞으로">−</button>
-          <input type="number" id="upto-num" min="1" max="${work.chapters}" inputmode="numeric" aria-labelledby="chapters-label">
-          <button type="button" data-step="1" aria-label="한 장 뒤로">+</button>
-        </div>
-        <input type="range" id="upto-range" min="1" max="${work.chapters}" aria-label="읽은 장">
-        <p class="small">전체 ${work.chapters}장</p>
-      </div>`;
-    }
-    $("upto-num").value = upto; $("upto-range").value = upto;
+  if (work.chapters > LIST_MAX) {
+    $("picker").innerHTML = `<ul class="ch-grid" role="radiogroup" aria-labelledby="chapters-label">${chapterList.map((c) => `
+      <li class="${c.chapter <= upto ? "read" : "unread"}"><label>
+        <input type="radio" name="upto" value="${c.chapter}" aria-label="${c.chapter}장" ${c.chapter === upto ? "checked" : ""}>
+        <span>${c.chapter}</span>
+      </label></li>`).join("")}</ul>`;
   } else {
     $("picker").innerHTML = `<ul class="chapters" id="chapters" role="radiogroup" aria-labelledby="chapters-label">${chapterList.map((c) => {
       const read = c.chapter <= upto;
@@ -384,20 +394,13 @@ function renderPicker() {
       </label></li>`;
     }).join("")}</ul>`;
   }
-  $("hint").textContent = `${pad(upto)}장까지 읽은 기준 · Enter 보내기 · Shift+Enter 줄바꿈`;
+  $("hint").textContent = `${chNo(upto)}장까지 읽은 기준 · Enter 보내기 · Shift+Enter 줄바꿈`;
 }
 $("picker").addEventListener("change", (e) => {
   if (e.target.name === "upto") {
     setUpto(e.target.value);
     document.querySelector(`input[name="upto"][value="${upto}"]`)?.focus();
-  } else if (e.target.id === "upto-num" || e.target.id === "upto-range") {
-    setUpto(e.target.value);
   }
-});
-$("picker").addEventListener("input", (e) => { if (e.target.id === "upto-range") setUpto(e.target.value); });
-$("picker").addEventListener("click", (e) => {
-  const b = e.target.closest("[data-step]");
-  if (b) setUpto(upto + Number(b.dataset.step));
 });
 
 /* 대화 */
@@ -418,9 +421,9 @@ function append(html) {
   return last;
 }
 function userMsg(q) {
-  if (lastAskedUpto !== null && lastAskedUpto !== upto) append(`<div class="divider small">이제 ${pad(upto)}장까지 읽음</div>`);
+  if (lastAskedUpto !== null && lastAskedUpto !== upto) append(`<div class="divider small">이제 ${chNo(upto)}장까지 읽음</div>`);
   lastAskedUpto = upto;
-  append(`<div class="msg me"><span class="who small">나 · ${pad(upto)}장까지 읽음</span><span class="bubble">${esc(q)}</span></div>`);
+  append(`<div class="msg me"><span class="who small">나 · ${chNo(upto)}장까지 읽음</span><span class="bubble">${esc(q)}</span></div>`);
 }
 function head(label, scope) {
   return `<div class="head"><span class="who small">${esc(label)}</span>${scope ? `<span class="chip">${esc(scope)}</span>` : ""}</div>`;
@@ -437,7 +440,7 @@ function botHtml(label, scope, r) {
   return `${head(label, scope)}
     <p class="answer ${r.status === "answered" ? "" : "muted"}">${esc(r.answer)}</p>
     ${quotes ? `<ul class="quotes">${quotes}</ul>` : ""}${future}
-    <p class="meta small">찾아본 장 ${r.retrieved_chapters.length ? r.retrieved_chapters.map(pad).join(" · ") : "없음"} — ${r.latency_s ?? "-"}초${r.format_problem ? " — 응답 형식 문제" : ""}</p>`;
+    <p class="meta small">찾아본 장 ${r.retrieved_chapters.length ? r.retrieved_chapters.map((c) => chNo(c)).join(" · ") : "없음"} — ${r.latency_s ?? "-"}초${r.format_problem ? " — 응답 형식 문제" : ""}</p>`;
 }
 async function ask(w, condition, question, n) {
   const res = await fetch("/api/ask", {method: "POST", headers: {"Content-Type": "application/json"},
@@ -467,9 +470,9 @@ async function send(question) {
   try {
     userMsg(question);
     // 범위 표시는 답했든 안 했든 똑같이 붙인다(답하지 않았다는 사실이 '뒤에 뭔가 있다'는 힌트가 되지 않게).
-    await reply(w, "C4", "책갈피", `↳ 01–${pad(n)}장에서 찾음`, question, n);
+    await reply(w, "C4", "책갈피", `↳ ${chNo(1, w)}–${chNo(n, w)}장에서 찾음`, question, n);
     if (work === w && $("compare").getAttribute("aria-pressed") === "true") {
-      await reply(w, "C1", `비교 · 필터 없이 ${w.chapters}장 전체에서 찾으면`, `↳ 01–${pad(w.chapters)}장`, question, n, "compare");
+      await reply(w, "C1", `비교 · 필터 없이 ${w.chapters}장 전체에서 찾으면`, `↳ ${chNo(1, w)}–${chNo(w.chapters, w)}장`, question, n, "compare");
     }
   } finally {
     busy = false; $("send").disabled = false;
