@@ -4,7 +4,9 @@ import pytest
 
 from sfqa.chat import (
     FALLBACK,
+    HISTORY_CHARS,
     HISTORY_MAX,
+    TURN_MAX,
     MINOR_NOTICE,
     ChatEnv,
     ChatService,
@@ -16,6 +18,7 @@ from sfqa.chat import (
     is_absent,
     load_env,
     message_blocked,
+    recent,
     reply_blocked,
     respond,
     romance_allowed,
@@ -137,6 +140,18 @@ def test_history_is_capped_in_the_request(rofan):
     turns = [Turn("reader", f"말{i}") for i in range(HISTORY_MAX + 5)]
     req = build_request(rofan, SETTINGS, "cassiel", 10, "지금", turns)
     assert "상대: 말4\n" not in req.user and "상대: 말5\n" in req.user and "상대: 말24\n" in req.user
+
+
+def test_history_is_capped_by_characters_so_a_turn_cost_is_bounded(rofan):
+    """이력은 브라우저가 보내므로 꾸밀 수 있다. 20턴 x 1,500자를 보내도 최근 6천 자만 넣는다(docs/deploy-plan.md 7단계)."""
+    forged = [Turn("reader" if i % 2 == 0 else "character", f"{i:02d}" + "가" * (TURN_MAX - 2)) for i in range(HISTORY_MAX)]
+    kept = recent(forged)
+    assert kept == forged[-(HISTORY_CHARS // TURN_MAX):]  # 오래된 턴부터 뺀다
+    req = build_request(rofan, SETTINGS, "cassiel", 10, "지금", forged)
+    assert "15가" not in req.user and "16가" in req.user and "19가" in req.user
+    assert len(req.user) < HISTORY_CHARS + 300
+    usual = [Turn("reader" if i % 2 == 0 else "character", "가" * (40 if i % 2 == 0 else 110)) for i in range(HISTORY_MAX)]
+    assert recent(usual) == usual  # 보통 대화 20턴(약 1,500자)은 그대로 넣는다
 
 
 # --- 이용할 수 없는 인물 ---

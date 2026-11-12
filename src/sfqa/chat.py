@@ -7,7 +7,8 @@
 - 독자가 실종·사망으로 아는 동안의 인물과는 이야기할 수 없다(absent.json). 그 인물이 답하는 것 자체가 생사를 흘린다.
 - 미성년 인물은 로맨스 설정을 받지 않고, 연애·성적인 요청은 모델을 부르기 전에 막는다. 나이를 모르면 미성년으로 본다.
 - 대화 이력은 브라우저가 들고 있다가 매번 보낸다. 서버는 상태를 두지 않는다.
-- 작품은 정답 온톨로지가 있는 합성 웹소설(data/synthetic)뿐이다. 공개 모드에서는 열지 않는다(호출 상한을 아직 붙이지 않았다).
+  - 프롬프트에는 최근 20턴, 합계 6천 자까지만 넣는다. 이력은 꾸며 보낼 수 있어서, 글자 수로 한 턴의 비용을 묶는다(docs/deploy-plan.md 7단계).
+- 작품은 정답 온톨로지가 있는 합성 웹소설(data/synthetic)뿐이다. 공개 모드에서는 채팅 턴 상한(limits.py)을 걸고 연다.
 """
 
 from __future__ import annotations
@@ -40,6 +41,7 @@ from sfqa.works import Work, load_work
 MESSAGE_MAX = 300  # 독자가 한 번에 보내는 글자 수(질문 상한과 같다)
 TURN_MAX = 1500  # 이력의 한 턴 글자 수
 HISTORY_MAX = 20  # 프롬프트에 넣는 이력 턴 수
+HISTORY_CHARS = 6000  # 프롬프트에 넣는 이력 글자 수. 보통 대화 20턴은 1,500자 안팎이다(독자 40자, 인물 110자 어림)
 ADULT_AGE = 19  # 청소년 보호법 기준(만 19세 미만이 청소년이다)
 ABSENT_FILE = "absent.json"
 # 말씨가 드러나지 않게 행동으로 쓴다. 뒷이야기가 있다는 말을 넣지 않고, '친딸이 맞아요?'에 답처럼 읽히는 몸짓(고개 젓기, 끄덕이기)을 쓰지 않는다
@@ -223,6 +225,17 @@ def system_prompt(env: ChatEnv, view: CharacterView, voice: list[str], romance: 
     return "\n\n".join(parts)
 
 
+def recent(history: Iterable[Turn], turns: int = HISTORY_MAX, chars: int = HISTORY_CHARS) -> list[Turn]:
+    """프롬프트에 넣을 최근 이력. 턴 수와 글자 수를 넘지 않게 오래된 턴부터 뺀다."""
+    out, used = [], 0
+    for t in reversed(list(history)[-turns:]):
+        used += len(t.text)
+        if used > chars:
+            break
+        out.append(t)
+    return out[::-1]
+
+
 def user_prompt(message: str, history: Iterable[Turn] = ()) -> str:
     lines = [f"{'상대' if t.role == 'reader' else '나'}: {t.text}" for t in history]
     if not lines:
@@ -234,7 +247,7 @@ def build_request(env: ChatEnv, s: Settings, character: str, upto: int, message:
                   history: Iterable[Turn] = (), romance: bool = False) -> LLMRequest:
     view = env.view(character, upto)
     return LLMRequest(model=s.llm_model, system=system_prompt(env, view, env.voice(character, upto), romance),
-                      user=user_prompt(message, list(history)[-HISTORY_MAX:]), schema_name="chat_reply",
+                      user=user_prompt(message, recent(history)), schema_name="chat_reply",
                       schema=CHAT_SCHEMA, max_tokens=s.max_tokens, seed=s.seed, reasoning_effort=s.reasoning_effort)
 
 
@@ -242,7 +255,8 @@ def respond(env: ChatEnv, llm: Llm, character: str, upto: int, message: str, his
             romance: bool = False) -> ChatResult:
     """한 턴. 없는 인물·등장 전 인물은 NotAvailable, 미성년 인물의 로맨스 설정은 RomanceRefused.
 
-    llm은 모델을 부를 때만 쓴다. 거절과 미성년 안내에는 API 키가 필요 없다.
+    llm은 모델을 부르기 직전에 한 번만 부른다. 거절과 미성년 안내에는 API 키가 필요 없다.
+    웹(공개 모드)은 이 llm 안에서 채팅 턴 상한을 센다(web.py). 그래서 모델을 부르지 않는 턴은 세지 않는다.
     """
     history = list(history)
     env.view(character, upto)  # 이용할 수 없는 인물이면 여기서 끝난다

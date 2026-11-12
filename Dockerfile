@@ -25,6 +25,8 @@ COPY --from=build /opt/models /opt/models
 WORKDIR /app
 # 작품마다 설정, 정제 본문, 인물표, 서버용(GGUF) 색인만 넣는다(.dockerignore 허용 목록)
 COPY data/works ./data/works
+# 인물 채팅의 합성 4편(약 4.7MB). 설정집과 사실 장부는 서버만 읽고 화면으로 내보내지 않는다
+COPY data/synthetic ./data/synthetic
 ENV PATH="/app/.venv/bin:$PATH" PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 HF_HUB_OFFLINE=1 \
     AWS_LWA_PORT=8080 AWS_LWA_READINESS_CHECK_PATH=/api/config \
     PUBLIC_DEMO=1 LLM_PROVIDER=anthropic EMBED_PROVIDER=local RETRIEVE_K=20 GGUF_MODELS_DIR=/opt/models

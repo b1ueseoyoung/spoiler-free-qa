@@ -24,6 +24,17 @@ Parameters:
   IpMinuteLimit:
     Type: Number
     Default: 5
+  # 인물 채팅 턴 상한(질문과 따로 센다). 기본값의 근거는 docs/deploy-plan.md 7단계
+  ChatDailyLimit:
+    Type: Number
+    Default: 100
+    Description: 하루 전체 채팅 턴 수. 0이면 공개 데모에서 인물 채팅을 닫는다(이미지를 다시 만들지 않아도 된다)
+  ChatIpDailyLimit:
+    Type: Number
+    Default: 20
+  ChatIpMinuteLimit:
+    Type: Number
+    Default: 5
   PermissionsBoundaryArn:
     Type: String
     Default: ""
@@ -79,6 +90,9 @@ Resources:
           DAILY_LIMIT: !Ref DailyLimit
           IP_DAILY_LIMIT: !Ref IpDailyLimit
           IP_MINUTE_LIMIT: !Ref IpMinuteLimit
+          CHAT_DAILY_LIMIT: !Ref ChatDailyLimit
+          CHAT_IP_DAILY_LIMIT: !Ref ChatIpDailyLimit
+          CHAT_IP_MINUTE_LIMIT: !Ref ChatIpMinuteLimit
       FunctionUrlConfig:
         AuthType: NONE
         InvokeMode: BUFFERED
