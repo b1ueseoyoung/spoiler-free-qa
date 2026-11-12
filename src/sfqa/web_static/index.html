@@ -169,6 +169,20 @@
   .range input[type="range"] { width: 100%; accent-color: var(--accent); }
   .range .small { color: var(--mute); margin: 0; }
 
+  /* 인물과 대화(시험판) */
+  .talk-shelf { margin-top: clamp(28px, 5vh, 48px); }
+  .talk-sub { margin: 22px 0 10px !important; }
+  .people { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--hair); }
+  .people button { display: grid; grid-template-columns: 1fr auto; align-items: baseline; gap: 8px; width: 100%; padding: 8px 0;
+                   background: none; border: 0; border-bottom: 1px solid var(--hair); cursor: pointer; text-align: left;
+                   color: var(--mute); font-size: 14px; }
+  .people button:hover, .people button[aria-pressed="true"] { color: var(--ink); }
+  .people button[aria-pressed="true"]::after { content: ""; width: 8px; height: 8px; background: var(--accent); align-self: center; }
+  .people small { display: block; font-size: 12px; color: var(--mute); }
+  .people button:disabled { cursor: wait; }
+  .switch { display: flex; align-items: baseline; gap: 8px; margin: 14px 0 0; color: var(--mute); cursor: pointer; }
+  .switch input { accent-color: var(--accent); }
+
   @media (max-width: 760px) {
     .intro, .grid { grid-template-columns: 1fr; }
     .intro h1, .intro p, .intro .notice { grid-column: 1; }
@@ -205,13 +219,17 @@
 
 <section class="intro" aria-labelledby="title">
   <h1 id="title">읽은 데까지만 답하는<br>소설 <em>도우미</em></h1>
-  <p>스포일러 걱정 없이 물어보세요.<br>읽은 장까지만 찾아보고, 근거 문장도 함께 보여 드려요.</p>
+  <p id="intro-text">스포일러 걱정 없이 물어보세요.<br>읽은 장까지만 찾아보고, 근거 문장도 함께 보여 드려요.</p>
   <ul class="notice" id="notice" aria-label="이용 안내" hidden></ul>
 </section>
 
 <main class="shelf" id="home" aria-label="소설 고르기">
   <p class="small shelf-label">어떤 소설을 읽고 있나요?</p>
   <ul class="books" id="books"></ul>
+  <div class="talk-shelf" id="talk-shelf" hidden>
+    <p class="small shelf-label">인물과 대화 · 시험판 — AI가 쓴 합성 소설의 인물과, 읽은 데까지만 이야기해요</p>
+    <ul class="books" id="talk-books"></ul>
+  </div>
 </main>
 
 <main class="grid" id="reader" hidden>
@@ -229,6 +247,28 @@
         <button class="send" id="send" type="submit">보내기 ↵</button>
       </form>
       <p class="hint small" id="hint"></p>
+    </div>
+  </section>
+</main>
+
+<main class="grid" id="talk" hidden>
+  <aside class="filter">
+    <p class="small" id="talk-label">어디까지 읽었나요?</p>
+    <div id="talk-picker"></div>
+    <p class="small talk-sub" id="people-label">누구와 이야기할까요?</p>
+    <ul class="people" id="people" aria-labelledby="people-label"></ul>
+    <label class="switch small" id="romance-wrap" hidden><input type="checkbox" id="romance"> 이 인물이 나에게 호감이 있는 설정</label>
+  </aside>
+
+  <section class="chat" aria-label="인물과 대화">
+    <div class="thread" id="talk-thread" aria-live="polite"></div>
+    <div class="composer">
+      <form id="talk-form">
+        <label for="talk-input" hidden>말 걸기</label>
+        <textarea id="talk-input" rows="1" maxlength="300" placeholder="인물을 먼저 골라 주세요" required disabled></textarea>
+        <button class="send" id="talk-send" type="submit" disabled>보내기 ↵</button>
+      </form>
+      <p class="hint small" id="talk-hint"></p>
     </div>
   </section>
 </main>
@@ -255,6 +295,7 @@ let upto = 1;
 let lastAskedUpto = null;
 let busy = false;
 let openSeq = 0;      // 작품을 열 때마다 늘린다. 늦게 온 응답이 지금 작품 화면을 덮지 않게 한다
+const INTRO_ASK = "스포일러 걱정 없이 물어보세요.<br>읽은 장까지만 찾아보고, 근거 문장도 함께 보여 드려요.";
 
 /* 워드마크: 글자마다 span, 글자 수만큼 크기를 줄인다 */
 function setWordmark(text) {
@@ -275,19 +316,21 @@ function renderBooks() {
   </a></li>`).join("");
 }
 function showHome() {
-  work = null; openSeq++;
+  work = null; openSeq++; talk = null;
   document.title = "책갈피 · 스포일러 없는 소설 도우미";
   $("title").innerHTML = "읽은 데까지만 답하는<br>소설 <em>도우미</em>";
-  $("home").hidden = false; $("reader").hidden = true;
+  $("intro-text").innerHTML = INTRO_ASK;
+  $("home").hidden = false; $("reader").hidden = true; $("talk").hidden = true;
   for (const id of ["back", "compare", "reset"]) $(id).hidden = true;
   setWordmark("책갈피");
   setCredits(["저작권이 끝난 한국 소설", "원문 · 위키문헌", "공유 저작물"]);
 }
 async function showWork(w) {
-  work = w;
+  work = w; talk = null;
   document.title = `「${w.title}」 · 책갈피`;
   $("title").innerHTML = `읽은 데까지만 답하는<br>「${esc(w.title)}」 <em>도우미</em>`;
-  $("home").hidden = true; $("reader").hidden = false;
+  $("intro-text").innerHTML = INTRO_ASK;
+  $("home").hidden = true; $("reader").hidden = false; $("talk").hidden = true;
   for (const id of ["back", "compare", "reset"]) $(id).hidden = false;
   $("compare-desc").textContent = `데모용: ${w.chapters}장 전체에서 찾고 스포일러를 막지 않은 답을 같이 보여 준다`;
   setWordmark(w.title);
@@ -304,8 +347,9 @@ async function showWork(w) {
 }
 function route() {
   const id = decodeURIComponent(location.hash.replace(/^#\/?/, ""));
+  const t = id.startsWith("talk/") ? talkWorks.find((x) => x.id === id.slice(5)) : null;
   const w = works.find((x) => x.id === id);
-  if (w) showWork(w); else showHome();
+  if (t) showTalk(t); else if (w) showWork(w); else showHome();
 }
 
 /* 장 고르기: 고른 장까지만 제목을 보여 준다. 장이 많으면 번호 입력과 막대로 고른다 */
@@ -443,9 +487,212 @@ $("thread").addEventListener("click", (e) => { if (e.target.closest(".suggest bu
 $("compare").addEventListener("click", (e) => {
   e.currentTarget.setAttribute("aria-pressed", String(e.currentTarget.getAttribute("aria-pressed") !== "true"));
 });
-$("reset").addEventListener("click", () => { if (!busy) { emptyState(); $("question").focus(); } });
+$("reset").addEventListener("click", () => {
+  if (busy) return;
+  if (talk) { talkReset(); return; }
+  emptyState(); $("question").focus();
+});
 $("back").addEventListener("click", () => { if (!busy) location.hash = "#/"; });
 addEventListener("hashchange", route);
+
+/* 인물과 대화(시험판). 인물은 읽은 장까지 자기가 아는 것만 안다. 대화 이력은 이 브라우저에만 남는다.
+   읽은 장을 앞으로 옮기면 대화를 잇고, 뒤로 옮기면 그때의 대화를 보여 주지도 보내지도 않는다(뒤 장 내용이 섞여 있다). */
+const HISTORY_MAX = 20;  // 서버의 chat.HISTORY_MAX와 같다
+let talkWorks = [];
+let talk = null;         // {work, upto, people, person, romance, thread: {person, upto, romance, turns}}
+let talkSeq = 0;         // 인물 목록을 늦게 받은 응답이 지금 고른 장을 덮지 않게 한다
+
+const threadKey = (workId, personId) => `sfqa.talk.${workId}.${personId}`;
+const uptoKey = (workId) => `sfqa.talk.${workId}.upto`;
+function store(key, value) { try { localStorage.setItem(key, JSON.stringify(value)); } catch {} }
+function recall(key) { try { return JSON.parse(localStorage.getItem(key)); } catch { return null; } }
+function forget(key) { try { localStorage.removeItem(key); } catch {} }
+
+function renderTalkBooks() {
+  $("talk-books").innerHTML = talkWorks.map((w, i) => `<li><a class="book" href="#/talk/${encodeURIComponent(w.id)}">
+    <span class="book-no small">${pad(i + 1)}</span>
+    <strong class="book-title">${esc(w.title)}</strong>
+    <span class="book-meta small">${esc(w.author)} · ${esc(w.published)} · ${w.chapters}장</span>
+    <span class="book-blurb">${esc(w.blurb)}</span>
+    <span class="book-go small">인물과 이야기하기 →</span>
+  </a></li>`).join("");
+  $("talk-shelf").hidden = !talkWorks.length;
+}
+function showTalk(w) {
+  work = null; openSeq++;
+  const saved = recall(uptoKey(w.id));
+  talk = {work: w, upto: Math.min(Math.max(1, Number(saved) || w.default_upto), w.chapters), people: [], person: null, romance: false, thread: null};
+  document.title = `「${w.title}」 인물과 대화 · 책갈피`;
+  $("title").innerHTML = `읽은 데까지만 아는<br>「${esc(w.title)}」 <em>인물들</em>`;
+  $("intro-text").innerHTML = "읽은 장과 인물을 고르면 그 인물과 이야기할 수 있어요.<br>인물은 읽은 장까지 자기가 겪거나 들은 일만 알아요.";
+  $("home").hidden = true; $("reader").hidden = true; $("talk").hidden = false;
+  $("back").hidden = false; $("reset").hidden = false; $("compare").hidden = true;
+  setWordmark(w.title);
+  setCredits(["AI가 쓴 합성 소설", w.published, "인물 대화 시험판"]);
+  $("talk-picker").innerHTML = "";
+  renderTalkPicker();
+  renderTalk();
+  loadPeople();
+  scrollTo({top: 0, behavior: reduce ? "auto" : "smooth"});
+}
+function renderTalkPicker() {
+  const n = talk.work.chapters;
+  if (!$("talk-num")) {
+    $("talk-picker").innerHTML = `<div class="range">
+      <div class="stepper">
+        <button type="button" data-step="-1" aria-label="한 장 앞으로">−</button>
+        <input type="number" id="talk-num" min="1" max="${n}" inputmode="numeric" aria-labelledby="talk-label">
+        <button type="button" data-step="1" aria-label="한 장 뒤로">+</button>
+      </div>
+      <input type="range" id="talk-range" min="1" max="${n}" aria-label="읽은 장">
+      <p class="small">전체 ${n}장</p>
+    </div>`;
+  }
+  $("talk-num").value = talk.upto; $("talk-range").value = talk.upto;
+}
+function setTalkUpto(n) {
+  if (!talk) return;
+  if (busy) { renderTalkPicker(); return; }  // 답을 기다리는 동안에는 장을 옮기지 않는다
+  talk.upto = Math.min(Math.max(1, Number(n) || 1), talk.work.chapters);
+  store(uptoKey(talk.work.id), talk.upto);
+  renderTalkPicker();
+  loadPeople();
+}
+async function loadPeople() {
+  const t = talk, seq = ++talkSeq;
+  let list = [];
+  try {
+    const res = await fetch(`/api/chat/characters?work=${encodeURIComponent(t.work.id)}&upto=${t.upto}`);
+    if (!res.ok) throw new Error(res.statusText);
+    list = await res.json();
+  } catch { /* 목록을 못 받으면 빈 목록으로 둔다 */ }
+  if (t !== talk || seq !== talkSeq) return;
+  t.people = list;
+  t.person = t.person ? list.find((p) => p.id === t.person.id) || null : null;
+  syncThread();
+  renderTalk();
+}
+function syncThread() {
+  const t = talk;
+  if (!t.person) { t.thread = null; t.romance = false; return; }
+  const cur = t.thread;
+  if (!(cur && cur.person === t.person.id && cur.upto <= t.upto && cur.turns.length)) {  // 빈 대화면 저장된 것을 다시 본다(장을 뒤로 옮겼다 돌아온 경우)
+    const saved = recall(threadKey(t.work.id, t.person.id));
+    t.thread = saved && saved.person === t.person.id && saved.upto <= t.upto ? saved : {person: t.person.id, upto: t.upto, romance: false, turns: []};
+  }
+  t.romance = Boolean(t.thread.romance && t.person.romance);
+}
+function renderTalk() {
+  const t = talk;
+  $("people").innerHTML = t.people.map((p) => `<li><button type="button" data-person="${esc(p.id)}" aria-pressed="${t.person?.id === p.id}">
+    <span>${esc(p.name)}${p.aliases.length ? `<small>${esc(p.aliases[0])}</small>` : ""}</span></button></li>`).join("");
+  $("romance-wrap").hidden = !t.person?.romance;
+  $("romance").checked = t.romance;
+  $("talk-input").disabled = !t.person;  // 답을 기다리는 동안에도 다음 말을 쓸 수 있다. 보내기만 막는다
+  $("talk-send").disabled = !t.person || busy;
+  $("talk-input").placeholder = t.person ? `${t.person.name}에게 말을 걸어 보세요` : "인물을 먼저 골라 주세요";
+  $("talk-hint").textContent = `${pad(t.upto)}장까지 읽은 기준 · AI가 연기하는 인물이에요 · Enter 보내기 · Shift+Enter 줄바꿈`;
+  renderTalkThread();
+}
+function renderTalkThread() {
+  const t = talk, box = $("talk-thread");
+  if (!t.person || !t.thread.turns.length) {
+    box.innerHTML = t.person
+      ? `<div class="empty"><p class="hello">${esc(t.person.name)}에게 말을 걸어 보세요.<br><span>이 인물은 ${pad(t.upto)}장까지 자기가 겪거나 들은 일만 알아요.</span></p></div>`
+      : `<div class="empty"><p class="hello">왼쪽에서 인물을 골라 주세요.<br><span>읽은 장까지 나온 인물만 보여요.</span></p></div>`;
+    return;
+  }
+  box.innerHTML = t.thread.turns.map(turnHtml).join("");
+  box.lastElementChild?.scrollIntoView({block: "end", behavior: reduce ? "auto" : "smooth"});
+}
+function turnHtml(x) {
+  if (x.role === "divider") return `<div class="divider small">${esc(x.text)}</div>`;
+  if (x.role === "reader") return `<div class="msg me"><span class="who small">나 · ${pad(x.upto)}장까지 읽음</span><span class="bubble">${esc(x.text)}</span></div>`;
+  if (x.role === "notice") return `<div class="msg bot">${head("책갈피")}<p class="answer muted">${esc(x.text)}</p></div>`;
+  return `<div class="msg bot">${head(talk.person.name)}<p class="answer">${esc(x.text)}</p></div>`;
+}
+function historyOf(thread) {
+  // 안내문과 그 원인이 된 말은 모델에게 보내지 않는다
+  return thread.turns.filter((x) => (x.role === "reader" && !x.blocked) || x.role === "character")
+    .slice(-HISTORY_MAX).map((x) => ({role: x.role, text: x.text}));
+}
+async function talkSend(text) {
+  text = text.trim();
+  if (!text || busy || !talk?.person) return;
+  const t = talk, person = t.person, thread = t.thread, upto = t.upto;
+  busy = true;
+  $("talk-input").value = ""; talkAutosize();
+  const history = historyOf(thread);
+  if (thread.turns.length && thread.upto !== upto) thread.turns.push({role: "divider", text: `이제 ${pad(upto)}장까지 읽음`});
+  thread.upto = upto;
+  const mine = {role: "reader", text, upto};
+  thread.turns.push(mine);
+  renderTalk();
+  $("talk-thread").insertAdjacentHTML("beforeend", `<div class="msg bot">${head(person.name)}<span class="typing" aria-label="답을 기다리는 중"><i></i><i></i><i></i></span></div>`);
+  $("talk-thread").lastElementChild.scrollIntoView({block: "end", behavior: reduce ? "auto" : "smooth"});
+  let failure = null;
+  try {
+    const res = await fetch("/api/chat", {method: "POST", headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({work: t.work.id, character: person.id, upto, message: text, history, romance: t.romance})});
+    if (!res.ok) throw new Error((await res.json()).detail || res.statusText);
+    const r = await res.json();
+    if (r.status === "notice") { mine.blocked = true; thread.turns.push({role: "notice", text: r.reply}); }
+    else thread.turns.push({role: "character", text: r.reply});
+    store(threadKey(t.work.id, person.id), thread);
+  } catch (err) {
+    thread.turns.pop();  // 답을 못 받은 말은 이력에 넣지 않고 입력창으로 돌려준다
+    failure = err.message;
+  }
+  busy = false;
+  if (talk !== t) return;  // 기다리는 사이 다른 화면으로 갔다
+  renderTalk();
+  if (failure) {
+    $("talk-input").value = text; talkAutosize();
+    $("talk-thread").querySelector(".empty")?.remove();
+    $("talk-thread").insertAdjacentHTML("beforeend", `<div class="msg bot">${head("책갈피")}<p class="answer muted">${esc(failure)}</p></div>`);
+    $("talk-thread").lastElementChild.scrollIntoView({block: "end", behavior: reduce ? "auto" : "smooth"});
+  }
+  $("talk-input").focus();
+}
+function talkReset() {
+  const t = talk;
+  if (!t?.person) return;
+  forget(threadKey(t.work.id, t.person.id));
+  t.thread = {person: t.person.id, upto: t.upto, romance: t.romance, turns: []};
+  renderTalk();
+  $("talk-input").focus();
+}
+function talkAutosize() { const a = $("talk-input"); a.style.height = "auto"; a.style.height = Math.min(a.scrollHeight, 160) + "px"; }
+$("talk-input").addEventListener("input", talkAutosize);
+$("talk-input").addEventListener("keydown", (e) => {
+  if (e.key === "Enter" && !e.shiftKey && !e.isComposing) { e.preventDefault(); talkSend($("talk-input").value); }
+});
+$("talk-form").addEventListener("submit", (e) => { e.preventDefault(); talkSend($("talk-input").value); });
+$("talk-picker").addEventListener("change", (e) => { if (e.target.id === "talk-num" || e.target.id === "talk-range") setTalkUpto(e.target.value); });
+$("talk-picker").addEventListener("input", (e) => { if (e.target.id === "talk-range") setTalkUpto(e.target.value); });
+$("talk-picker").addEventListener("click", (e) => {
+  const b = e.target.closest("[data-step]");
+  if (b && talk) setTalkUpto(talk.upto + Number(b.dataset.step));
+});
+$("people").addEventListener("click", (e) => {
+  const b = e.target.closest("[data-person]");
+  if (!b || busy || !talk) return;
+  talk.person = talk.people.find((p) => p.id === b.dataset.person) || null;
+  talk.thread = null;
+  syncThread();
+  renderTalk();
+  $("talk-input").focus();
+});
+$("romance").addEventListener("change", (e) => {
+  const t = talk;
+  if (!t?.person?.romance || busy) { e.target.checked = Boolean(t?.romance); return; }
+  t.romance = e.target.checked;
+  t.thread.romance = t.romance;
+  if (t.thread.turns.length) t.thread.turns.push({role: "divider", text: t.romance ? "호감 설정을 켰어요" : "호감 설정을 껐어요"});
+  store(threadKey(t.work.id, t.person.id), t.thread);
+  renderTalkThread();
+});
+
 
 /* 푸터 워드마크: 화면에 들어오면 글자가 아래에서 차오른다 */
 if (reduce || !("IntersectionObserver" in window)) {
@@ -464,7 +711,10 @@ fetch("/api/config").then((r) => r.json()).then((c) => {
   $("notice").hidden = false;
   $("copy-tech").textContent = "SPOILER-FREE READING · CLAUDE API · AWS LAMBDA";
 }).catch(() => {});
-fetch("/api/works").then((r) => r.json()).then((list) => { works = list; renderBooks(); route(); });
+Promise.all([
+  fetch("/api/works").then((r) => r.json()),
+  fetch("/api/chat/works").then((r) => (r.ok ? r.json() : [])).catch(() => []),  // 공개 모드에는 없다
+]).then(([list, talkList]) => { works = list; talkWorks = talkList; renderBooks(); renderTalkBooks(); route(); });
 </script>
 </body>
 </html>

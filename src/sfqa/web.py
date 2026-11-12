@@ -5,6 +5,8 @@
 - 작품은 data/works/<id>/(정제 본문이 있는 것만). 작품마다 색인·검증기를 처음 쓸 때 올리고, 임베딩·LLM 클라이언트는 같이 쓴다.
 - condition: C4(최종 시스템)가 기본이다. C1(작품 전체 검색, 가드 없음)은 필터가 없을 때 스포일러가 새는 모습을
   비교해 보여 주려는 용도다.
+- 인물 채팅(/api/chat, docs/character-chat.md): 합성 웹소설만 다루는 시험판이다. 로컬에서만 연다. 호출 상한을 아직 붙이지 않았다.
+  - 답이 검사에 걸려 고정 문구로 바뀌어도 응답에는 표시하지 않는다. 표시 자체가 뒷이야기가 있다는 힌트가 된다.
 - 공개 모드(PUBLIC_DEMO=1, docs/deploy-plan.md 4단계): Lambda Web Adapter 뒤에서 돈다(앱은 여전히 127.0.0.1에서 듣는다).
   - 모델을 부르기 전에 호출 상한(limits.py, DynamoDB)을 센다. 상한 표(LIMITS_TABLE)가 없으면 시작하지 않는다.
   - Anthropic 지출 한도·속도 제한은 안내 문구로 바꾸고, 그 밖의 내부 오류 내용은 화면에 보이지 않는다.
@@ -29,6 +31,7 @@ from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
 from sfqa.answer import AnswerResult, Env, build_chain
+from sfqa.chat import HISTORY_MAX, MESSAGE_MAX, TURN_MAX, ChatEnv, ChatService, NotAvailable, RomanceRefused, Turn, respond
 from sfqa.config import check_loopback
 from sfqa.score import KEPT
 from sfqa.works import GOLD_WORK, Work, list_works
@@ -60,6 +63,20 @@ class AskIn(BaseModel):
     question: str = Field(min_length=1, max_length=QUESTION_MAX)
     upto: int = Field(ge=1)  # 위 끝(작품의 마지막 장)은 작품을 알아야 하므로 ask에서 본다
     condition: Literal["C4", "C1"] = "C4"
+
+
+class ChatTurnIn(BaseModel):
+    role: Literal["reader", "character"]
+    text: str = Field(min_length=1, max_length=TURN_MAX)
+
+
+class ChatIn(BaseModel):
+    work: str
+    character: str = Field(min_length=1, max_length=64)
+    upto: int = Field(ge=1)
+    message: str = Field(min_length=1, max_length=MESSAGE_MAX)
+    history: list[ChatTurnIn] = Field(default_factory=list, max_length=HISTORY_MAX)
+    romance: bool = False
 
 
 _GENERIC_TITLE = re.compile(r"^(제?\s*\d+\s*장|[一二三四五六七八九十百]+)$")
@@ -133,12 +150,59 @@ def view(r: AnswerResult) -> dict:
     }
 
 
+def add_chat_routes(app: FastAPI, chat: ChatService, lock: threading.Lock) -> None:
+    def find(work_id: str, upto: int) -> ChatEnv:
+        if work_id not in chat.ids():
+            raise HTTPException(status_code=422, detail=f"없는 작품이다: {work_id}")
+        env = chat.env(work_id)
+        if not 1 <= upto <= env.work.last:
+            raise HTTPException(status_code=422, detail=f"{env.work.title}은 {env.work.last}장까지다")
+        return env
+
+    @app.get("/api/chat/works")
+    def chat_works() -> list[dict]:
+        return chat.cards()
+
+    @app.get("/api/chat/characters")
+    def chat_characters(work: str, upto: int) -> list[dict]:
+        return find(work, upto).people(upto)
+
+    @app.post("/api/chat")
+    def chat_reply(body: ChatIn) -> dict:
+        env = find(body.work, body.upto)
+        message = body.message.strip()
+        if not message:
+            raise HTTPException(status_code=422, detail="보낼 말이 비어 있다")
+        with lock:
+            try:
+                r = respond(env, chat.llm, body.character, body.upto, message,
+                            [Turn(t.role, t.text) for t in body.history], body.romance)
+            except (NotAvailable, RomanceRefused) as e:
+                raise HTTPException(status_code=422, detail=str(e)) from None
+            except Exception as e:  # 키 없음, 모델 서버 꺼짐, 지출 한도 등은 화면에 알린다
+                status, detail = model_error(e, public=False)
+                log.error(json.dumps({"event": "chat_error", "error": type(e).__name__, "status": status}))
+                raise HTTPException(status_code=status, detail=detail) from e
+        resp = r.response
+        # 대화 글은 로그에 남기지 않는다. 검사 결과는 종류와 사실 id만 남긴다.
+        log.info(json.dumps({"event": "chat", "work": env.work.id, "character": body.character, "upto": body.upto,
+                             "status": r.status, "replaced": r.replaced, "invalid": r.invalid,
+                             "findings": sorted({f.kind for f in r.findings}),
+                             "facts": sorted({f.fact for f in r.findings if f.fact}),
+                             "latency_s": resp.get("latency_s"), "input_tokens": resp.get("input_tokens"),
+                             "output_tokens": resp.get("output_tokens")}))
+        return {"status": r.status, "reply": r.reply, "upto": body.upto, "latency_s": resp.get("latency_s")}
+
+
 def create_app(env_factory: Callable[[Work], Env], works: list[Work] | None = None, counter=None,
-               public: bool = False) -> FastAPI:
+               public: bool = False, chat: ChatService | None = None) -> FastAPI:
     """env_factory(work): 작품 하나의 실행 환경. works: 보여 줄 작품(기본: 정제 본문이 있는 전부).
-    counter: limits.MemoryCounter나 DynamoCounter. 공개 모드에서는 반드시 있어야 한다."""
+    counter: limits.MemoryCounter나 DynamoCounter. 공개 모드에서는 반드시 있어야 한다.
+    chat: 인물 채팅. 없으면 /api/chat을 열지 않는다. 호출 상한을 아직 붙이지 않아 공개 모드에서는 받지 않는다."""
     if public and counter is None:
         raise ValueError("공개 모드에는 호출 상한(counter)이 있어야 한다")
+    if public and chat is not None:
+        raise ValueError("공개 모드에서는 인물 채팅을 열지 않는다(호출 상한이 없다)")
     works = list_works(ready_only=True) if works is None else works
     by_id = {w.id: w for w in works}
     app = FastAPI(title="책갈피: 스포일러 없는 소설 도우미", docs_url=None, redoc_url=None, openapi_url=None)
@@ -226,6 +290,8 @@ def create_app(env_factory: Callable[[Work], Env], works: list[Work] | None = No
                              "output_tokens": resp.get("output_tokens")}))
         return view(result)
 
+    if chat is not None:
+        add_chat_routes(app, chat, lock)
     return app
 
 
@@ -253,14 +319,21 @@ def serve(host: str = "127.0.0.1", port: int = 8765, env: dict | None = None) ->
 
     shared: dict = {}
 
+    def llm():
+        # 처음 답할 때 만든다. 키가 없어도 첫 화면과 인물 목록은 열린다.
+        if "client" not in shared:
+            s = load_settings()
+            shared.update(s=s, client=make_client(s))
+        return shared["s"], shared["client"]
+
     def factory(work: Work) -> Env:
         # 임베딩 모델과 LLM 클라이언트는 작품끼리 같이 쓴다(GGUF를 작품마다 올리지 않게).
-        if not shared:
-            s = load_settings()
-            shared.update(s=s, client=make_client(s), embeddings=make_embeddings(s))
-        return make_env(shared["s"], work, client=shared["client"], embeddings=shared["embeddings"])
+        s, client = llm()
+        if "embeddings" not in shared:
+            shared["embeddings"] = make_embeddings(s)
+        return make_env(s, work, client=client, embeddings=shared["embeddings"])
 
     logging.basicConfig(level=logging.INFO, format="%(message)s")
-    app = create_app(factory, counter=counter, public=public)
+    app = create_app(factory, counter=counter, public=public, chat=None if public else ChatService(llm))
     # 공개 모드는 접속 기록을 끈다. 켜 두면 방문자 IP가 그대로 CloudWatch에 남는다(상한은 IP 해시로만 센다)
     uvicorn.run(app, host=host, port=port, log_level="info", access_log=not public)
