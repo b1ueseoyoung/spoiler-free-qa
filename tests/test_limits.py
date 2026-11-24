@@ -3,8 +3,8 @@ from datetime import datetime, timedelta, timezone
 
 import pytest
 
-from sfqa.limits import (DynamoCounter, LimitExceeded, Limits, MemoryCounter, client_ip, ip_hash, load_limits,
-                         slots)
+from sfqa.limits import (CHAT_LIMITS, CHAT_MESSAGES, MESSAGES, DynamoCounter, LimitExceeded, Limits, MemoryCounter,
+                         client_ip, ip_hash, load_limits, slots)
 
 T0 = datetime(2026, 10, 14, 14, 59, 30, tzinfo=timezone.utc)  # 한국 시간 23:59:30
 
@@ -54,6 +54,48 @@ def test_slots_hash_ip_and_set_ttl():
 def test_load_limits_from_env():
     assert load_limits({}) == Limits()
     assert load_limits({"DAILY_LIMIT": "10", "IP_DAILY_LIMIT": "3", "IP_MINUTE_LIMIT": "1"}) == Limits(10, 3, 1)
+
+
+# --- 인물 채팅 턴(질문과 따로 센다) ---
+
+
+def test_chat_limits_come_from_their_own_env_names():
+    assert load_limits({}, CHAT_LIMITS) == CHAT_LIMITS
+    env = {"CHAT_DAILY_LIMIT": "0", "CHAT_IP_DAILY_LIMIT": "3", "CHAT_IP_MINUTE_LIMIT": "1", "DAILY_LIMIT": "9"}
+    assert load_limits(env, CHAT_LIMITS) == Limits(0, 3, 1, kind="chat")
+    assert load_limits(env) == Limits(daily=9)  # 질문 상한은 CHAT_ 값을 읽지 않는다
+
+
+def test_chat_turns_use_their_own_keys_in_the_same_table():
+    ask, chat = slots("203.0.113.7", T0, Limits(), "s"), slots("203.0.113.7", T0, CHAT_LIMITS, "s")
+    assert [key for _, key, _, _ in chat] == ["chat#" + key for _, key, _, _ in ask]
+    assert [limit for _, _, limit, _ in chat] == [CHAT_LIMITS.ip_minute, CHAT_LIMITS.ip_daily, CHAT_LIMITS.daily]
+    assert ask[2][1] == "all#day#20261014"  # 질문 키는 그대로(이미 쌓인 칸과 같다)
+
+
+@pytest.mark.parametrize("scope,limits,word", [
+    ("ip_minute", Limits(daily=100, ip_daily=100, ip_minute=1, kind="chat"), "1분"),
+    ("ip_daily", Limits(daily=100, ip_daily=1, ip_minute=100, kind="chat"), "이 기기"),
+    ("daily", Limits(daily=1, ip_daily=100, ip_minute=100, kind="chat"), "인물 대화 한도"),
+])
+def test_chat_limit_says_conversation_not_question(scope, limits, word):
+    c = MemoryCounter(limits)
+    c.hit("1.1.1.1", T0)
+    with pytest.raises(LimitExceeded) as e:
+        c.hit("1.1.1.1" if scope != "daily" else "2.2.2.2", T0)
+    assert e.value.scope == scope and e.value.kind == "chat"
+    assert e.value.message == CHAT_MESSAGES[scope] and word in e.value.message and "질문" not in e.value.message
+    assert LimitExceeded(scope).message == MESSAGES[scope]  # 질문 쪽 문구는 그대로
+
+
+def test_dynamo_counter_counts_chat_under_chat_keys():
+    db = FakeDynamo()
+    DynamoCounter("limits", CHAT_LIMITS, "s", client=db).hit("1.1.1.1", T0)
+    assert all(x["Update"]["Key"]["pk"]["S"].startswith("chat#") for x in db.calls[0])
+    db = FakeDynamo(fail_codes=["None", "None", "ConditionalCheckFailed"])
+    with pytest.raises(LimitExceeded) as e:
+        DynamoCounter("limits", CHAT_LIMITS, client=db).hit("1.1.1.1", T0)
+    assert e.value.scope == "daily" and e.value.message == CHAT_MESSAGES["daily"]
 
 
 class CanceledError(Exception):

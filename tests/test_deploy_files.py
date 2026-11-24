@@ -14,6 +14,27 @@ def test_dockerignore_is_an_allowlist_without_secrets():
     assert not any("/raw" in x for x in allowed)  # 받은 원문(위키 마크업)은 이미지에 넣지 않는다
 
 
+def test_image_has_exactly_the_synthetic_files_the_chat_reads(monkeypatch):
+    """공개 데모의 인물 채팅에는 data/synthetic이 이미지에 있어야 한다. 채팅이 읽는 파일만 넣고 점검 기록·생성 도구는 뺀다."""
+    from sfqa.chat import ChatService
+
+    read, original = set(), Path.open
+
+    def spy(self, *args, **kwargs):
+        read.add(Path(self).resolve())
+        return original(self, *args, **kwargs)
+
+    monkeypatch.setattr(Path, "open", spy)
+    ChatService(lambda: None).cards()  # 4편을 모두 올린다(설정, 설정집, 줄거리, 사실 장부, 본문, absent.json, lines.jsonl)
+    monkeypatch.undo()
+    synthetic = ROOT / "data" / "synthetic"
+    read = {p for p in read if synthetic in p.parents}
+    lines = [x.strip() for x in (ROOT / ".dockerignore").read_text().splitlines() if x.strip() and not x.startswith("#")]
+    allowed = {p.resolve() for x in lines if x.startswith("!data/synthetic/") for p in ROOT.glob(x[1:]) if p.is_file()}
+    assert len(read) > 200 and read == allowed, sorted(str(p.relative_to(ROOT)) for p in read ^ allowed)
+    assert "COPY data/synthetic ./data/synthetic" in (ROOT / "Dockerfile").read_text()
+
+
 def test_dockerfile_keeps_key_out_and_runs_public_mode():
     d = (ROOT / "Dockerfile").read_text()
     assert "ANTHROPIC_API_KEY=" not in d and ".env" not in d.replace("ENV ", "")
@@ -24,7 +45,9 @@ def test_dockerfile_keeps_key_out_and_runs_public_mode():
 def test_template_wires_limits_key_and_public_url():
     t = (ROOT / "infra" / "template.yaml").read_text()
     for needle in ("LIMITS_TABLE: !Ref LimitsTable", "ANTHROPIC_API_KEY_SSM_PARAM", "AuthType: NONE",
-                   "Architectures: [arm64]", "AttributeName: ttl", "dynamodb:UpdateItem", "RetentionInDays: 14"):
+                   "Architectures: [arm64]", "AttributeName: ttl", "dynamodb:UpdateItem", "RetentionInDays: 14",
+                   "CHAT_DAILY_LIMIT: !Ref ChatDailyLimit", "CHAT_IP_DAILY_LIMIT: !Ref ChatIpDailyLimit",
+                   "CHAT_IP_MINUTE_LIMIT: !Ref ChatIpMinuteLimit"):
         assert needle in t, needle
 
 

@@ -348,21 +348,118 @@ def test_chat_logs_have_no_conversation_text(caplog):
     assert caplog.records and all("아주비밀스러운말" not in r.getMessage() and "숫자부터" not in r.getMessage() for r in caplog.records)
 
 
-def test_chat_is_closed_in_public_mode():
-    with pytest.raises(ValueError):
+# --- 공개 모드의 인물 채팅(docs/deploy-plan.md 7단계): 질문과 따로 세는 채팅 턴 상한 ---
+from sfqa.limits import CHAT_MESSAGES  # noqa: E402
+from sfqa.web import PUBLIC_ERROR_MESSAGE  # noqa: E402
+
+CHAT_TEST_LIMITS = Limits(daily=100, ip_daily=100, ip_minute=2, kind="chat")
+OTHER = {"x-amzn-request-context": _json.dumps({"http": {"sourceIp": "198.51.100.1"}})}
+
+
+def public_chat_client(limits=CHAT_TEST_LIMITS, llm=None, chat_counter=None):
+    fake = ChatFake()
+    service = ChatService(llm or (lambda: (load_settings({"LLM_PROVIDER": "anthropic"}), fake)))
+    service._envs = CHAT_SERVICE
+    counter, chat_counter = MemoryCounter(Limits()), chat_counter or MemoryCounter(limits)
+    app = create_app(lambda w: None, works=[WORK], counter=counter, public=True, chat=service, chat_counter=chat_counter)
+    return TestClient(app), fake, counter, chat_counter
+
+
+def test_public_chat_needs_its_own_turn_limit():
+    with pytest.raises(ValueError, match="chat_counter"):
         create_app(lambda w: None, works=[WORK], counter=MemoryCounter(Limits()), public=True, chat=ChatService(lambda: None))
-    c, _, _ = public_client()
+    c, _, _ = public_client()  # 채팅을 넘기지 않으면 지금처럼 닫혀 있다
     assert c.get("/api/chat/works").status_code == 404
-    assert c.post("/api/chat", json=CHAT_BODY, headers=CTX).status_code == 404
+    c, _, _, _ = public_chat_client()
+    assert [w["id"] for w in c.get("/api/chat/works").json()][0] == "wn01-rofan"
 
 
-def test_serve_opens_chat_locally_and_keeps_it_closed_in_public_mode(monkeypatch):
+def test_public_chat_limit_blocks_before_model_call_and_is_apart_from_questions(caplog):
+    c, fake, ask_counter, chat_counter = public_chat_client()
+    assert c.post("/api/chat", json=CHAT_BODY, headers=CTX).status_code == 200
+    assert c.post("/api/chat", json={**CHAT_BODY, "message": "그럼 이자는요?"}, headers=CTX).status_code == 200
+    with caplog.at_level("INFO", logger="sfqa.web"):
+        r = c.post("/api/chat", json={**CHAT_BODY, "message": "아주비밀스러운말"}, headers=CTX)
+    assert r.status_code == 429 and r.json()["detail"] == CHAT_MESSAGES["ip_minute"]
+    assert len(fake.requests) == 2  # 막힌 턴은 모델을 부르지 않는다
+    assert any('"kind": "chat"' in x.getMessage() for x in caplog.records)
+    assert all("아주비밀스러운말" not in x.getMessage() for x in caplog.records)
+    assert c.post("/api/chat", json=CHAT_BODY, headers=OTHER).status_code == 200  # IP별로 센다
+    assert ask_counter.counts == {} and all(k.startswith("chat#") for k in chat_counter.counts)  # 질문 상한은 그대로
+
+
+@pytest.mark.parametrize("limits,scope", [
+    (Limits(daily=100, ip_daily=1, ip_minute=100, kind="chat"), "ip_daily"),
+    (Limits(daily=1, ip_daily=100, ip_minute=100, kind="chat"), "daily"),
+])
+def test_public_chat_daily_limits_use_chat_words(limits, scope):
+    c, fake, _, _ = public_chat_client(limits)
+    assert c.post("/api/chat", json=CHAT_BODY, headers=CTX).status_code == 200
+    r = c.post("/api/chat", json=CHAT_BODY, headers=CTX if scope == "ip_daily" else OTHER)
+    assert r.status_code == 429 and r.json()["detail"] == CHAT_MESSAGES[scope] and len(fake.requests) == 1
+
+
+def test_public_chat_counts_only_turns_that_call_the_model():
+    c, fake, _, chat_counter = public_chat_client()
+    for body in ({**CHAT_BODY, "character": "noel", "upto": 4},  # 아직 등장하지 않은 인물
+                 {**CHAT_BODY, "character": "rowan", "upto": 35},  # 실종 중
+                 {**CHAT_BODY, "character": "noel", "upto": 6, "romance": True},  # 미성년 인물의 로맨스 설정
+                 {**CHAT_BODY, "message": ""}):
+        assert c.post("/api/chat", json=body, headers=CTX).status_code == 422
+    r = c.post("/api/chat", json={**CHAT_BODY, "character": "noel", "upto": 6, "message": "나랑 사귈래?"}, headers=CTX)
+    assert r.json()["status"] == "notice"  # 미성년 보호 안내도 모델을 부르지 않는다
+    assert chat_counter.counts == {} and fake.requests == []
+    assert c.post("/api/chat", json=CHAT_BODY, headers=CTX).status_code == 200
+    assert len(chat_counter.counts) == 3 and len(fake.requests) == 1  # 세 칸(1분, IP 하루, 전체 하루)을 한 번씩
+
+
+def test_public_chat_counter_failure_fails_closed():
+    class Broken:
+        def hit(self, ip):
+            raise RuntimeError("dynamodb down")
+
+    c, fake, _, _ = public_chat_client(chat_counter=Broken())
+    r = c.post("/api/chat", json=CHAT_BODY, headers=CTX)
+    assert r.status_code == 503 and r.json()["detail"] == PUBLIC_ERROR_MESSAGE and fake.requests == []
+
+
+@pytest.mark.parametrize("err,status,text", [
+    (ApiError(429, "Error code: 429 - enforced_spend_limit_reached"), 503, "사용 한도"),
+    (ApiError(429, "Error code: 429 - rate_limit_error"), 429, "몰려"),
+    (RuntimeError("ANTHROPIC_API_KEY가 없다 /secret/path"), 503, "잠시 뒤"),
+])
+def test_public_chat_errors_are_mapped_without_internals(err, status, text):
+    def broken():
+        raise err
+
+    c, _, _, chat_counter = public_chat_client(llm=broken)
+    r = c.post("/api/chat", json=CHAT_BODY, headers=CTX)
+    detail = r.json()["detail"]
+    assert r.status_code == status and text in detail and "/secret" not in detail and "ANTHROPIC" not in detail
+    assert chat_counter.counts  # 모델 쪽 실패도 센다(질문과 같다)
+
+
+def test_serve_opens_chat_in_public_mode_only_with_turn_limits(monkeypatch):
     seen = {}
     monkeypatch.setattr("uvicorn.run", lambda app, **kw: seen.update(app=app))
     serve(env={})
     assert "/api/chat" in [r.path for r in seen["app"].routes]
-    serve(env={"PUBLIC_DEMO": "1", "LIMITS_TABLE": "memory"})
+    serve(env={"PUBLIC_DEMO": "1", "LIMITS_TABLE": "memory", "CHAT_IP_MINUTE_LIMIT": "1"})
+    assert "/api/chat" in [r.path for r in seen["app"].routes]
+    c = TestClient(seen["app"])
+    assert c.get("/api/chat/characters", params={"work": "wn01-rofan", "upto": 5}).status_code == 200
+    # 키 없이도 상한이 먼저 걸린다: 첫 턴은 세고 나서 키가 없어 503, 둘째 턴은 상한에 닿아 429(모델은 부르지 않는다)
+    monkeypatch.delenv("ANTHROPIC_API_KEY", raising=False)
+    monkeypatch.delenv("CASSETTE_MODE", raising=False)
+    monkeypatch.setattr("sfqa.claude.load_key", lambda: None)
+    monkeypatch.setenv("LLM_PROVIDER", "anthropic")
+    first = c.post("/api/chat", json=CHAT_BODY, headers=CTX)
+    assert first.status_code == 503 and first.json()["detail"] == PUBLIC_ERROR_MESSAGE
+    second = c.post("/api/chat", json=CHAT_BODY, headers=CTX)
+    assert second.status_code == 429 and second.json()["detail"] == CHAT_MESSAGES["ip_minute"]
+    serve(env={"PUBLIC_DEMO": "1", "LIMITS_TABLE": "memory", "CHAT_DAILY_LIMIT": "0"})  # 채팅만 닫는 스위치
     assert "/api/chat" not in [r.path for r in seen["app"].routes]
+    assert "/api/ask" in [r.path for r in seen["app"].routes]
 
 
 def test_page_has_talk_screen_and_hides_shelf_without_chat():

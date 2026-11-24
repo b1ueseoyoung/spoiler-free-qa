@@ -9,4 +9,13 @@
 !data/works/*/clean/**
 !data/works/*/entities.json
 !data/works/*/index/local__mykor__KURE-v1-gguf__KURE-v1-Q8_0.gguf/**
+# 인물 채팅(합성 4편)이 읽는 것만: 설정, 설정집, 줄거리, 사실 장부, 본문, 이야기할 수 없는 인물, 말투 대사(chat.load_env).
+# 점검 기록(checks/)과 생성 도구(_tools/)는 넣지 않는다
+!data/synthetic/*/work.json
+!data/synthetic/*/bible.json
+!data/synthetic/*/outline.json
+!data/synthetic/*/facts.jsonl
+!data/synthetic/*/clean/ch*.txt
+!data/synthetic/*/absent.json
+!data/synthetic/*/lines.jsonl
 **/__pycache__

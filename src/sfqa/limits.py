@@ -8,6 +8,8 @@
 - 동시 요청이 같은 '전체 하루' 칸을 갱신하면 DynamoDB가 한쪽을 TransactionConflict로 취소한다. 상한 때문이 아니므로
   잠깐 쉬었다가 몇 번 다시 시도한다(AWS SDK는 이 경우를 다시 시도하지 않는다).
 - 모델을 부르기 전에 센다. 형식이 틀린 요청(422)은 세지 않는다.
+- 질문(/api/ask)과 인물 채팅 턴(/api/chat)은 따로 센다(Limits.kind). 같은 표에 키 앞머리만 달리 넣고, 넘었을 때 문구도 다르다.
+  채팅은 모델을 부르는 턴만 센다(이야기할 수 없는 인물, 미성년 보호 안내는 세지 않는다). 기본값의 근거는 docs/deploy-plan.md 7단계.
 """
 
 from __future__ import annotations
@@ -30,6 +32,11 @@ MESSAGES = {
     "ip_daily": "오늘 이 기기에서 물을 수 있는 횟수를 다 썼습니다. 내일 다시 써 주세요.",
     "daily": "오늘 데모 한도에 닿았습니다. 내일 다시 써 주세요.",
 }
+CHAT_MESSAGES = {
+    "ip_minute": "말을 너무 빨리 걸었습니다. 1분 뒤에 다시 이야기해 주세요.",
+    "ip_daily": "오늘 이 기기에서 나눌 수 있는 대화를 다 썼습니다. 내일 다시 이야기해 주세요.",
+    "daily": "오늘 인물 대화 한도에 닿았습니다. 내일 다시 이야기해 주세요.",
+}
 
 
 @dataclass(frozen=True)
@@ -37,22 +44,29 @@ class Limits:
     daily: int = 300
     ip_daily: int = 30
     ip_minute: int = 5
+    kind: str = ""  # 세는 것. ""은 질문, "chat"은 인물 채팅 턴. 키 앞머리, 환경 변수 이름, 넘었을 때 문구가 갈린다
 
 
-def load_limits(env: Mapping[str, str]) -> Limits:
-    d = Limits()
-    return Limits(daily=int(env.get("DAILY_LIMIT", d.daily)), ip_daily=int(env.get("IP_DAILY_LIMIT", d.ip_daily)),
-                  ip_minute=int(env.get("IP_MINUTE_LIMIT", d.ip_minute)))
+# 채팅 한 턴은 보통 1~4센트, 최악 6센트다(뒤 장일수록, 이력이 길수록 크다). IP별 하루 최악 약 1.2달러로 질문(약 1달러)과 맞춘다
+CHAT_LIMITS = Limits(daily=100, ip_daily=20, ip_minute=5, kind="chat")
+
+
+def load_limits(env: Mapping[str, str], base: Limits = Limits()) -> Limits:
+    """환경 변수로 기본값을 바꾼다. 질문은 DAILY_LIMIT·IP_DAILY_LIMIT·IP_MINUTE_LIMIT, 채팅은 이름 앞에 CHAT_을 붙인다."""
+    p = f"{base.kind.upper()}_" if base.kind else ""
+    return Limits(daily=int(env.get(f"{p}DAILY_LIMIT", base.daily)),
+                  ip_daily=int(env.get(f"{p}IP_DAILY_LIMIT", base.ip_daily)),
+                  ip_minute=int(env.get(f"{p}IP_MINUTE_LIMIT", base.ip_minute)), kind=base.kind)
 
 
 class LimitExceeded(Exception):
-    def __init__(self, scope: str):
+    def __init__(self, scope: str, kind: str = ""):
         super().__init__(scope)
-        self.scope = scope
+        self.scope, self.kind = scope, kind
 
     @property
     def message(self) -> str:
-        return MESSAGES[self.scope]
+        return (CHAT_MESSAGES if self.kind == "chat" else MESSAGES)[self.scope]
 
 
 def ip_bucket(ip: str) -> str:
@@ -73,15 +87,16 @@ def ip_hash(ip: str, salt: str) -> str:
 
 
 def slots(ip: str, now: datetime, limits: Limits, salt: str) -> list[tuple[str, str, int, int]]:
-    """(scope, 키, 상한, 만료 시각 epoch). 순서는 SCOPES와 같다."""
+    """(scope, 키, 상한, 만료 시각 epoch). 순서는 SCOPES와 같다. 채팅 키는 'chat#'으로 시작한다(질문 키는 앞머리 없이 그대로)."""
     local = now.astimezone(KST)
     day, minute = local.strftime("%Y%m%d"), local.strftime("%Y%m%d%H%M")
     h = ip_hash(ip, salt)
+    p = f"{limits.kind}#" if limits.kind else ""
     day_ttl = int((now + timedelta(days=2)).timestamp())
     return [
-        ("ip_minute", f"ip#{h}#min#{minute}", limits.ip_minute, int((now + timedelta(minutes=10)).timestamp())),
-        ("ip_daily", f"ip#{h}#day#{day}", limits.ip_daily, day_ttl),
-        ("daily", f"all#day#{day}", limits.daily, day_ttl),
+        ("ip_minute", f"{p}ip#{h}#min#{minute}", limits.ip_minute, int((now + timedelta(minutes=10)).timestamp())),
+        ("ip_daily", f"{p}ip#{h}#day#{day}", limits.ip_daily, day_ttl),
+        ("daily", f"{p}all#day#{day}", limits.daily, day_ttl),
     ]
 
 
@@ -100,7 +115,7 @@ class MemoryCounter:
         s = slots(ip, _now(now), self.limits, self.salt)
         for scope, key, limit, _ in s:
             if self.counts.get(key, 0) >= limit:
-                raise LimitExceeded(scope)
+                raise LimitExceeded(scope, self.limits.kind)
         for _, key, _, _ in s:
             self.counts[key] = self.counts.get(key, 0) + 1
 
@@ -139,7 +154,7 @@ class DynamoCounter:
                 codes = [(r or {}).get("Code") for r in response.get("CancellationReasons") or []]
                 for (scope, *_), code in zip(s, codes):
                     if code == "ConditionalCheckFailed":
-                        raise LimitExceeded(scope) from None
+                        raise LimitExceeded(scope, self.limits.kind) from None
                 if "TransactionConflict" not in codes or attempt == self.RETRIES:
                     raise
                 self._sleep(random.uniform(0.02, 0.08) * (attempt + 1))  # 다른 요청과 겹쳤다. 잠깐 뒤 다시

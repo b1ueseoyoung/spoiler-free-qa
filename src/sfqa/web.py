@@ -5,12 +5,13 @@
 - 작품은 data/works/<id>/(정제 본문이 있는 것만). 작품마다 색인·검증기를 처음 쓸 때 올리고, 임베딩·LLM 클라이언트는 같이 쓴다.
 - condition: C4(최종 시스템)가 기본이다. C1(작품 전체 검색, 가드 없음)은 필터가 없을 때 스포일러가 새는 모습을
   비교해 보여 주려는 용도다.
-- 인물 채팅(/api/chat, docs/character-chat.md): 합성 웹소설만 다루는 시험판이다. 로컬에서만 연다. 호출 상한을 아직 붙이지 않았다.
+- 인물 채팅(/api/chat, docs/character-chat.md): 합성 웹소설만 다루는 시험판이다.
   - 답이 검사에 걸려 고정 문구로 바뀌어도 응답에는 표시하지 않는다. 표시 자체가 뒷이야기가 있다는 힌트가 된다.
 - 공개 모드(PUBLIC_DEMO=1, docs/deploy-plan.md 4단계): Lambda Web Adapter 뒤에서 돈다(앱은 여전히 127.0.0.1에서 듣는다).
   - 모델을 부르기 전에 호출 상한(limits.py, DynamoDB)을 센다. 상한 표(LIMITS_TABLE)가 없으면 시작하지 않는다.
+  - 인물 채팅은 질문과 따로 센다(CHAT_* 상한, docs/deploy-plan.md 7단계). CHAT_DAILY_LIMIT=0이면 채팅을 열지 않는다.
   - Anthropic 지출 한도·속도 제한은 안내 문구로 바꾸고, 그 밖의 내부 오류 내용은 화면에 보이지 않는다.
-  - 로그에는 질문 본문을 남기지 않는다(시각·상태·토큰 수만).
+  - 로그에는 질문과 대화 본문을 남기지 않는다(시각·상태·토큰 수만).
 """
 
 from __future__ import annotations
@@ -56,6 +57,21 @@ def model_error(e: Exception, public: bool) -> tuple[int, str]:
     if public:
         return 503, PUBLIC_ERROR_MESSAGE
     return 503, f"답을 만들지 못했다: {type(e).__name__}: {e}"
+
+
+def charge(counter, request: Request, public: bool) -> None:
+    """모델을 부르기 전에 한 번 센다(limits.py). 넘으면 429와 공개용 문구, 셀 수 없으면 503이고 모델을 부르지 않는다."""
+    from sfqa.limits import LimitExceeded, client_ip
+
+    ip = client_ip(request.headers, request.client.host if request.client else None, trust_lambda=public)
+    try:
+        counter.hit(ip)
+    except LimitExceeded as e:
+        log.info(json.dumps({"event": "limited", "kind": e.kind or "ask", "scope": e.scope}))
+        raise HTTPException(status_code=429, detail=e.message) from None
+    except Exception as e:  # 상한을 확인하지 못하면 부르지 않는다(비용 쪽으로 안전하게)
+        log.error(json.dumps({"event": "limit_error", "error": type(e).__name__}))
+        raise HTTPException(status_code=503, detail=PUBLIC_ERROR_MESSAGE) from None
 
 
 class AskIn(BaseModel):
@@ -150,7 +166,9 @@ def view(r: AnswerResult) -> dict:
     }
 
 
-def add_chat_routes(app: FastAPI, chat: ChatService, lock: threading.Lock) -> None:
+def add_chat_routes(app: FastAPI, chat: ChatService, lock: threading.Lock, counter=None, public: bool = False) -> None:
+    """counter: 채팅 턴 상한(limits.Limits(kind="chat")로 만든 것). 공개 모드에서는 반드시 있다(create_app이 확인한다)."""
+
     def find(work_id: str, upto: int) -> ChatEnv:
         if work_id not in chat.ids():
             raise HTTPException(status_code=422, detail=f"없는 작품이다: {work_id}")
@@ -168,19 +186,28 @@ def add_chat_routes(app: FastAPI, chat: ChatService, lock: threading.Lock) -> No
         return find(work, upto).people(upto)
 
     @app.post("/api/chat")
-    def chat_reply(body: ChatIn) -> dict:
+    def chat_reply(body: ChatIn, request: Request) -> dict:
         env = find(body.work, body.upto)
         message = body.message.strip()
         if not message:
             raise HTTPException(status_code=422, detail="보낼 말이 비어 있다")
+
+        def llm():
+            # respond는 모델을 부르기 직전에만 이것을 부른다. 이야기할 수 없는 인물(422)과 미성년 안내는 세지 않는다
+            if counter is not None:
+                charge(counter, request, public)
+            return chat.llm()
+
         with lock:
             try:
-                r = respond(env, chat.llm, body.character, body.upto, message,
+                r = respond(env, llm, body.character, body.upto, message,
                             [Turn(t.role, t.text) for t in body.history], body.romance)
             except (NotAvailable, RomanceRefused) as e:
                 raise HTTPException(status_code=422, detail=str(e)) from None
-            except Exception as e:  # 키 없음, 모델 서버 꺼짐, 지출 한도 등은 화면에 알린다
-                status, detail = model_error(e, public=False)
+            except HTTPException:  # 상한에 닿음(429)이나 상한 확인 실패(503). 모델은 부르지 않았다
+                raise
+            except Exception as e:  # 키 없음, 모델 서버 꺼짐, 지출 한도 등은 화면에 알린다(공개 모드는 내부 내용 없이)
+                status, detail = model_error(e, public)
                 log.error(json.dumps({"event": "chat_error", "error": type(e).__name__, "status": status}))
                 raise HTTPException(status_code=status, detail=detail) from e
         resp = r.response
@@ -195,14 +222,14 @@ def add_chat_routes(app: FastAPI, chat: ChatService, lock: threading.Lock) -> No
 
 
 def create_app(env_factory: Callable[[Work], Env], works: list[Work] | None = None, counter=None,
-               public: bool = False, chat: ChatService | None = None) -> FastAPI:
+               public: bool = False, chat: ChatService | None = None, chat_counter=None) -> FastAPI:
     """env_factory(work): 작품 하나의 실행 환경. works: 보여 줄 작품(기본: 정제 본문이 있는 전부).
-    counter: limits.MemoryCounter나 DynamoCounter. 공개 모드에서는 반드시 있어야 한다.
-    chat: 인물 채팅. 없으면 /api/chat을 열지 않는다. 호출 상한을 아직 붙이지 않아 공개 모드에서는 받지 않는다."""
+    counter: 질문 상한(limits.MemoryCounter나 DynamoCounter). 공개 모드에서는 반드시 있어야 한다.
+    chat: 인물 채팅. 없으면 /api/chat을 열지 않는다. chat_counter: 채팅 턴 상한. 공개 모드에서 채팅을 열려면 있어야 한다."""
     if public and counter is None:
         raise ValueError("공개 모드에는 호출 상한(counter)이 있어야 한다")
-    if public and chat is not None:
-        raise ValueError("공개 모드에서는 인물 채팅을 열지 않는다(호출 상한이 없다)")
+    if public and chat is not None and chat_counter is None:
+        raise ValueError("공개 모드의 인물 채팅에는 채팅 턴 상한(chat_counter)이 있어야 한다")
     works = list_works(ready_only=True) if works is None else works
     by_id = {w.id: w for w in works}
     app = FastAPI(title="책갈피: 스포일러 없는 소설 도우미", docs_url=None, redoc_url=None, openapi_url=None)
@@ -266,17 +293,7 @@ def create_app(env_factory: Callable[[Work], Env], works: list[Work] | None = No
         if body.upto > work.last:
             raise HTTPException(status_code=422, detail=f"{work.title}은 {work.last}장까지다")
         if counter is not None:
-            from sfqa.limits import LimitExceeded, client_ip
-
-            ip = client_ip(request.headers, request.client.host if request.client else None, trust_lambda=public)
-            try:
-                counter.hit(ip)
-            except LimitExceeded as e:
-                log.info(json.dumps({"event": "limited", "scope": e.scope}))
-                raise HTTPException(status_code=429, detail=e.message) from None
-            except Exception as e:  # 상한을 확인하지 못하면 부르지 않는다(비용 쪽으로 안전하게)
-                log.error(json.dumps({"event": "limit_error", "error": type(e).__name__}))
-                raise HTTPException(status_code=503, detail=PUBLIC_ERROR_MESSAGE) from None
+            charge(counter, request, public)
         with lock:
             try:
                 result = build_chain(env(work), body.condition).invoke({"question": body.question.strip(), "n": body.upto})
@@ -291,7 +308,7 @@ def create_app(env_factory: Callable[[Work], Env], works: list[Work] | None = No
         return view(result)
 
     if chat is not None:
-        add_chat_routes(app, chat, lock)
+        add_chat_routes(app, chat, lock, chat_counter, public)
     return app
 
 
@@ -300,17 +317,22 @@ def serve(host: str = "127.0.0.1", port: int = 8765, env: dict | None = None) ->
     env = os.environ if env is None else env
     check_loopback(f"http://{host}:{port}")
     public = env.get("PUBLIC_DEMO") == "1"
-    counter = None
+    counter = chat_counter = None
+    chat_open = True
     if public:
-        from sfqa.limits import DynamoCounter, MemoryCounter, load_limits
+        from sfqa.limits import CHAT_LIMITS, DynamoCounter, MemoryCounter, load_limits
 
         table = env.get("LIMITS_TABLE")
         if not table:
             raise ValueError("PUBLIC_DEMO=1이면 LIMITS_TABLE이 있어야 한다(호출 상한 없이 공개하지 않는다)")
+        salt = env.get("IP_HASH_SALT", "")
+        limits, chat_limits = load_limits(env), load_limits(env, CHAT_LIMITS)
         if table == "memory":  # 이 맥에서 공개 모드 화면을 확인할 때만. Lambda에서는 실행 환경마다 따로 세서 쓰면 안 된다
-            counter = MemoryCounter(load_limits(env), env.get("IP_HASH_SALT", ""))
-        else:
-            counter = DynamoCounter(table, load_limits(env), env.get("IP_HASH_SALT", ""))
+            counter, chat_counter = MemoryCounter(limits, salt), MemoryCounter(chat_limits, salt)
+        else:  # 질문과 채팅은 같은 표에 키 앞머리만 달리 센다
+            counter = DynamoCounter(table, limits, salt)
+            chat_counter = DynamoCounter(table, chat_limits, salt, client=counter.client)
+        chat_open = chat_limits.daily > 0  # CHAT_DAILY_LIMIT=0: 이미지를 다시 만들지 않고 채팅만 닫는다
     import uvicorn
 
     from sfqa.answer import make_env
@@ -334,6 +356,7 @@ def serve(host: str = "127.0.0.1", port: int = 8765, env: dict | None = None) ->
         return make_env(s, work, client=client, embeddings=shared["embeddings"])
 
     logging.basicConfig(level=logging.INFO, format="%(message)s")
-    app = create_app(factory, counter=counter, public=public, chat=None if public else ChatService(llm))
+    app = create_app(factory, counter=counter, public=public, chat=ChatService(llm) if chat_open else None,
+                     chat_counter=chat_counter)
     # 공개 모드는 접속 기록을 끈다. 켜 두면 방문자 IP가 그대로 CloudWatch에 남는다(상한은 IP 해시로만 센다)
     uvicorn.run(app, host=host, port=port, log_level="info", access_log=not public)
